@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022-2023 The SuperiorOS Project
+     Copyright (C) 2022-2024 The SuperiorOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -158,37 +158,44 @@
      <string name="power_button_torch_summary">When the screen is off, long-pressing power button
           will enable torch</string>
 
-    <!-- Cycle through ringer modes gesture -->
-    <string name="prevent_ringing_option_cycle">Cycle through modes</string>
-    <string name="prevent_ringing_option_cycle_summary">On (cycle through modes)</string>
+     <!-- Cycle through ringer modes gesture -->
+     <string name="prevent_ringing_option_cycle">Cycle through modes</string>
+     <string name="prevent_ringing_option_cycle_summary">On (cycle through modes)</string>
 
-    <!-- Black theme -->
-    <string name="system_black_theme_title">Use black theme</string>
-    <string name="system_black_theme_summary">Force black background colors</string>
+     <!-- Black theme -->
+     <string name="system_black_theme_title">Use black theme</string>
+     <string name="system_black_theme_summary">Force black background colors</string>
 
-    <!-- Navigation bar hint -->
-    <string name="show_navbar_gesture_bar_title">Gesture bar</string>
-    <string name="show_navbar_gesture_bar_summary">Show gesture bar at the bottom of the screen</string>
+     <!-- Navigation bar hint -->
+     <string name="show_navbar_gesture_bar_title">Gesture bar</string>
+     <string name="show_navbar_gesture_bar_summary">Show gesture bar at the bottom of the screen</string>
 
-    <!-- Charging control settings -->
-    <string name="charging_control_title">Charging control</string>
-    <string name="charging_control_summary">Customize charging schedule and limits for battery</string>
-    <string name="charging_control_enable_title">Enable charging control</string>
-    <string name="charging_control_mode_title">Charging mode</string>
-    <string name="charging_control_mode_auto_title">Automatic schedule</string>
-    <string name="charging_control_mode_auto_summary">Automatically determine when to start charging based on alarms set</string>
-    <string name="charging_control_mode_custom_title">Custom schedule</string>
-    <string name="charging_control_mode_custom_summary">Set a target time to full charge</string>
-    <string name="charging_control_mode_limit_title">Limit charging</string>
-    <string name="charging_control_mode_limit_summary">Limit charging to a certain percentage</string>
-    <string name="charging_control_start_time_title">Start time</string>
-    <string name="charging_control_start_time_summary">Charging control activates when you start charging after %s</string>
-    <string name="charging_control_target_time_title">Target time to full charge</string>
-    <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
-    <string name="charging_control_limit_title">Limit</string>
-    <string name="reset">Reset</string>
+     <!-- Charging control settings -->
+     <string name="charging_control_title">Charging control</string>
+     <string name="charging_control_summary">Customize charging schedule and limits for battery</string>
+     <string name="charging_control_enable_title">Enable charging control</string>
+     <string name="charging_control_mode_title">Charging mode</string>
+     <string name="charging_control_mode_auto_title">Automatic schedule</string>
+     <string name="charging_control_mode_auto_summary">Automatically determine when to start charging based on alarms set</string>
+     <string name="charging_control_mode_custom_title">Custom schedule</string>
+     <string name="charging_control_mode_custom_summary">Set a target time to full charge</string>
+     <string name="charging_control_mode_limit_title">Limit charging</string>
+     <string name="charging_control_mode_limit_summary">Limit charging to a certain percentage</string>
+     <string name="charging_control_start_time_title">Start time</string>
+     <string name="charging_control_start_time_summary">Charging control activates when you start charging after %s</string>
+     <string name="charging_control_target_time_title">Target time to full charge</string>
+     <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
+     <string name="charging_control_limit_title">Limit</string>
+     <string name="reset">Reset</string>
 
-    <!-- Hotspot extras -->
-    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+     <!-- Hotspot extras -->
+     <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+
+     <!-- Lock screen pattern size -->
+     <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
+     <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
+     <string name="lock_pattern_size_5" translatable="false">5 \u00d7 5</string>
+     <string name="lock_pattern_size_6" translatable="false">6 \u00d7 6</string>
+     <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
 </resources>

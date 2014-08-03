@@ -496,4 +496,8 @@
     <string name="legacy_wfd_video_mode_1080p_30fps">1080p (30fps)</string>
     <string name="legacy_wfd_video_mode_1080p_60fps">1080p (60fps)</string>
 
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
 </resources>

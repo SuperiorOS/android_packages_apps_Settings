@@ -55,6 +55,11 @@
             android:targetClass="@string/config_wallpaper_picker_class" />
     </com.android.settingslib.RestrictedPreference>
 
+    <Preference
+        android:key="expanded_desktop"
+        android:title="@string/expanded_desktop_pref_title"
+        android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.TimeoutListPreference
         android:key="screen_timeout"

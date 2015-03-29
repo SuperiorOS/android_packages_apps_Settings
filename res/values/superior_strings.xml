@@ -51,4 +51,7 @@
     <string name="superior_settings_dash_title">Superior Goodies</string>
     <string name="superior_settings_summary">Extra Features</string>
 
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+
 </resources>

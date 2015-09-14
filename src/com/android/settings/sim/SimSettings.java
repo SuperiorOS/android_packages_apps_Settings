@@ -83,6 +83,8 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private static final String KEY_CALLS = "sim_calls";
     private static final String KEY_SMS = "sim_sms";
     public static final String EXTRA_SLOT_ID = "slot_id";
+    private static final String SIM_ACTIVITIES_CATEGORY = "sim_activities";
+    private static final String KEY_PRIMARY_SUB_SELECT = "select_primary_sub";
 
     /**
      * By UX design we use only one Subscription Information(SubInfo) record per SIM slot.
@@ -107,10 +109,17 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private boolean needUpdate = false;
     private int mPhoneCount = TelephonyManager.getDefault().getPhoneCount();
     private int[] mUiccProvisionStatus = new int[mPhoneCount];
+    private Preference mPrimarySubSelect = null;
 
-    static final String ACTION_UICC_MANUAL_PROVISION_STATUS_CHANGED =
+    private static final String ACTION_UICC_MANUAL_PROVISION_STATUS_CHANGED =
             "org.codeaurora.intent.action.ACTION_UICC_MANUAL_PROVISION_STATUS_CHANGED";
-    static final String EXTRA_NEW_PROVISION_STATE = "newProvisionState";
+    private static final String EXTRA_NEW_PROVISION_STATE = "newProvisionState";
+    private static final String CONFIG_LTE_SUB_SELECT_MODE = "config_lte_sub_select_mode";
+    private static final String CONFIG_PRIMARY_SUB_SETABLE = "config_primary_sub_setable";
+    private static final String CONFIG_CURRENT_PRIMARY_SUB = "config_current_primary_sub";
+    // If this config set to '1' DDS option would be greyed out on UI.
+    // For more info pls refere framework code.
+    private static final String CONFIG_DISABLE_DDS_PREFERENCE = "config_disable_dds_preference";
 
     public SimSettings() {
         super(DISALLOW_CONFIG_SIM);
@@ -131,6 +140,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
                 (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
         addPreferencesFromResource(R.xml.sim_settings);
 
+        mPrimarySubSelect = (Preference) findPreference(KEY_PRIMARY_SUB_SELECT);
         mNumSlots = tm.getSimCount();
         mSimCards = (PreferenceCategory)findPreference(SIM_CARD_CATEGORY);
         mAvailableSubInfos = new ArrayList<SubscriptionInfo>(mNumSlots);
@@ -212,11 +222,11 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         if (DBG) log("[updateSmsValues] mSubInfoList=" + mSubInfoList);
 
         if (sir != null) {
-            simPref.setSummary(sir.getDisplayName());
-            simPref.setEnabled(mSelectableSubInfos.size() > 1);
+            simPref.setSummary(getSubscriptionDisplayName(sir));
+            simPref.setEnabled(mSelectableSubInfos.size() > 1 && !disableDds());
         } else if (sir == null) {
             simPref.setSummary(R.string.sim_selection_required_pref);
-            simPref.setEnabled(mSelectableSubInfos.size() >= 1);
+            simPref.setEnabled(mSelectableSubInfos.size() > 1 && !disableDds());
         }
     }
 
@@ -270,6 +280,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
                         PhoneStateListener.LISTEN_CALL_STATE);
             }
         }
+        initLTEPreference();
     }
 
     @Override
@@ -330,6 +341,8 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         } else if (findPreference(KEY_SMS) == preference) {
             intent.putExtra(SimDialogActivity.DIALOG_TYPE_KEY, SimDialogActivity.SMS_PICK);
             context.startActivity(intent);
+        } else if (preference == mPrimarySubSelect) {
+            startActivity(mPrimarySubSelect.getIntent());
         }
 
         return true;
@@ -923,4 +936,47 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
             }
         }
     };
+
+    // When primarycard feature enabled this provides menu option for user
+    // to view/select current primary slot.
+    private void initLTEPreference() {
+        boolean isPrimarySubFeatureEnable =
+                SystemProperties.getBoolean("persist.radio.primarycard", false);
+        boolean primarySetable = Settings.Global.getInt(mContext.getContentResolver(),
+                 CONFIG_PRIMARY_SUB_SETABLE, 0) == 1;
+
+        log("isPrimarySubFeatureEnable :" + isPrimarySubFeatureEnable +
+                " primarySetable :" + primarySetable);
+
+        if (!isPrimarySubFeatureEnable || !primarySetable) {
+            final PreferenceCategory simActivities =
+                    (PreferenceCategory) findPreference(SIM_ACTIVITIES_CATEGORY);
+            simActivities.removePreference(mPrimarySubSelect);
+            return;
+        }
+        int currentPrimarySlot = Settings.Global.getInt(mContext.getContentResolver(),
+                 CONFIG_CURRENT_PRIMARY_SUB, SubscriptionManager.INVALID_SIM_SLOT_INDEX);
+        boolean isManualMode = Settings.Global.getInt(mContext.getContentResolver(),
+                 CONFIG_LTE_SUB_SELECT_MODE, 1) == 0;
+
+        log("init LTE primary slot : " + currentPrimarySlot + " isManualMode :" + isManualMode);
+
+        if (SubscriptionManager.isValidSlotId(currentPrimarySlot)) {
+            final SubscriptionInfo subInfo = mSubscriptionManager
+                    .getActiveSubscriptionInfoForSimSlotIndex(currentPrimarySlot);
+            CharSequence lteSummary = (subInfo == null ) ? null : subInfo.getDisplayName();
+            mPrimarySubSelect.setSummary(lteSummary);
+        } else {
+            mPrimarySubSelect.setSummary("");
+        }
+        mPrimarySubSelect.setEnabled(isManualMode);
+    }
+
+    private boolean disableDds() {
+        boolean disableDds = Settings.Global.getInt(mContext.getContentResolver(),
+                CONFIG_DISABLE_DDS_PREFERENCE, 0) == 1;
+
+        log(" config disable dds =  " + disableDds);
+        return disableDds;
+    }
 }

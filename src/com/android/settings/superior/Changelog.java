@@ -18,6 +18,13 @@ package com.android.settings.superior;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +39,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 import android.content.res.Resources;
 
@@ -49,9 +58,11 @@ public class Changelog extends SettingsPreferenceFragment {
 
         InputStreamReader inputReader = null;
         String text = null;
-
+        StringBuilder data = new StringBuilder();
+        Pattern p = Pattern.compile("([a-f0-9]{7})\\s\\s(.*)\\s\\s\\[(.*)\\]"); //(?dms)
+        Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
+        Pattern p3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
         try {
-            StringBuilder data = new StringBuilder();
             char tmp[] = new char[2048];
             int numRead;
 
@@ -59,9 +70,9 @@ public class Changelog extends SettingsPreferenceFragment {
             while ((numRead = inputReader.read(tmp)) >= 0) {
                 data.append(tmp, 0, numRead);
             }
-            text = data.toString();
+//            text = data.toString();
         } catch (IOException e) {
-            text = getString(R.string.changelog_error);
+//            text = getString(R.string.changelog_error);
         } finally {
             try {
                 if (inputReader != null) {
@@ -71,14 +82,24 @@ public class Changelog extends SettingsPreferenceFragment {
             }
         }
 
+	SpannableStringBuilder sb = new SpannableStringBuilder(data);
+        Matcher m = p.matcher(data);
+        while (m.find()){
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(96,125,139)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(69,90,100)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        }
+        m = p2.matcher(data);
+        while (m.find()){
+          sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(33,39,43)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        }
+        m = p3.matcher(data);
+        while (m.find()){
+          sb.setSpan(new StyleSpan(Typeface.BOLD+Typeface.ITALIC),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        }
         final TextView textView = new TextView(getActivity());
-
-        LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-        int padding = (int)(16*Resources.getSystem().getDisplayMetrics().density);
-        llp.setMargins(padding, 0, padding, 0);
-        textView.setLayoutParams(llp);
-
-        textView.setText(text);
+        textView.setText(sb);
 
         final ScrollView scrollView = new ScrollView(getActivity());
         scrollView.addView(textView);

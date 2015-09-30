@@ -60,12 +60,11 @@ public class Changelog extends SettingsPreferenceFragment {
                 Bundle savedInstanceState) {
         InputStreamReader inputReader = null;
         String text = null;
-        StringBuilder data = new StringBuilder();
 
-        Pattern date = Pattern.compile("(={20}|\\d{4}-\\d{2}-\\d{2})");
-        Pattern commit = Pattern.compile("([a-f0-9]{7})");
-        Pattern committer = Pattern.compile("\\[(\\D.*?)]");
-        Pattern title = Pattern.compile("([\\*].*)");
+        StringBuilder data = new StringBuilder();
+        Pattern p = Pattern.compile("([a-f0-9]{7})\\s\\s(.*)\\s\\s\\[(.*)\\]"); //(?dms)
+        Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
+        Pattern p3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
 
         try {
             char tmp[] = new char[2048];
@@ -87,36 +86,24 @@ public class Changelog extends SettingsPreferenceFragment {
             }
         }
 
-        SpannableStringBuilder sb = new SpannableStringBuilder(data);
-        Resources.Theme theme = getContext().getTheme();
-        TypedValue typedValue = new TypedValue();
-        theme.resolveAttribute(android.R.attr.colorAccent, typedValue, true);
-        final int color = getContext().getColor(typedValue.resourceId);
-
-        Matcher m = date.matcher(data);
+	SpannableStringBuilder sb = new SpannableStringBuilder(data);
+        Matcher m = p.matcher(data);
         while (m.find()){
-            sb.setSpan(new ForegroundColorSpan(color), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-            sb.setSpan(new StyleSpan(Typeface.BOLD), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(96,125,139)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(69,90,100)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
-        m = commit.matcher(data);
+        m = p2.matcher(data);
         while (m.find()){
-            sb.setSpan(new StyleSpan(Typeface.NORMAL), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(33,39,43)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
-        m = committer.matcher(data);
+        m = p3.matcher(data);
         while (m.find()){
-            sb.setSpan(new ForegroundColorSpan(color), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-            sb.setSpan(new StyleSpan(Typeface.ITALIC), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-        }
-        m = title.matcher(data);
-        while (m.find()){
-            sb.setSpan(new ForegroundColorSpan(color), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-            sb.setSpan(new StyleSpan(Typeface.BOLD), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new StyleSpan(Typeface.BOLD+Typeface.ITALIC),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
 
         final TextView textView = new TextView(getActivity());
-        LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        llp.setMargins(20, 0, 0, 0); // llp.setMargins(left, top, right, bottom);
-        textView.setLayoutParams(llp);
         textView.setText(sb);
 
         final ScrollView scrollView = new ScrollView(getActivity());

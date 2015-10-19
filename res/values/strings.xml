@@ -2765,7 +2765,7 @@
     <!-- About phone screen, dialog title for showing device software information such as android version, security patch level, etc  [CHAR LIMIT=60] -->
     <string name="firmware_title">Android</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
-    <string name="security_patch">Android security patch level</string>
+    <string name="security_patch">Security patch level</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
     <string name="model_info">Model</string>
     <!-- About phone screen, status item summary  [CHAR LIMIT=40] -->

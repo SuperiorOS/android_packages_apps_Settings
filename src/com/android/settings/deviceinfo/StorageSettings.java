@@ -49,6 +49,7 @@ import android.widget.Toast;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.dashboard.SummaryLoader;
@@ -114,6 +115,8 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
         super.onCreate(icicle);
 
         final Context context = getActivity();
+
+        int accentColor = Utils.getColorAttr(context, android.R.attr.colorAccent);
 
         mStorageManager = context.getSystemService(StorageManager.class);
 

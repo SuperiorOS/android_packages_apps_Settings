@@ -50,6 +50,7 @@ public class StorageVolumePreference extends Preference {
     private final VolumeInfo mVolume;
 
     private int mColor;
+    private int mIconColor;
     private int mUsedPercent = -1;
 
     // TODO: ideally, VolumeInfo should have a total physical size.
@@ -59,6 +60,8 @@ public class StorageVolumePreference extends Preference {
         mStorageManager = context.getSystemService(StorageManager.class);
         mVolume = volume;
         mColor = color;
+
+        mIconColor = Utils.getColorAttr(context, android.R.attr.colorControlNormal);
 
         setLayoutResource(R.layout.storage_volume);
 
@@ -106,7 +109,7 @@ public class StorageVolumePreference extends Preference {
             }
 
             if (freeBytes < mStorageManager.getStorageLowBytes(path)) {
-                mColor = Utils.getColorAttr(context, android.R.attr.colorError);
+                mIconColor = Utils.getColorAttr(context, android.R.attr.colorError);
                 icon = context.getDrawable(R.drawable.ic_warning_24dp);
             }
 
@@ -116,7 +119,7 @@ public class StorageVolumePreference extends Preference {
         }
 
         icon.mutate();
-        icon.setTint(mColor);
+        icon.setTint(mIconColor);
         setIcon(icon);
 
         if (volume.getType() == VolumeInfo.TYPE_PUBLIC
@@ -130,7 +133,7 @@ public class StorageVolumePreference extends Preference {
     public void onBindViewHolder(PreferenceViewHolder view) {
         final ImageView unmount = (ImageView) view.findViewById(R.id.unmount);
         if (unmount != null) {
-            unmount.setImageTintList(ColorStateList.valueOf(Color.parseColor("#8a000000")));
+            unmount.setImageTintList(ColorStateList.valueOf(mIconColor));
             unmount.setOnClickListener(mUnmountListener);
         }
 

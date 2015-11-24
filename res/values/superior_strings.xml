@@ -93,4 +93,11 @@
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
 
+    <!-- Customization category -->
+    <string name="customization_category_title">Extra Customizations</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>    
+
 </resources>

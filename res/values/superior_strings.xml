@@ -152,5 +152,10 @@
 
     <!-- Charging vibration -->
     <string name="charging_vibro_title">Charging vibration</string>
+	
+	<!-- Battery Stats -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
 
 </resources>

@@ -111,4 +111,6 @@
      <string name="dashboard_random5">Hi User!</string>
      <string name="dashboard_random6">What\'s up?</string>
 
+     <!-- App details: open play store link if app is user installed -->
+     <string name="app_play_store">Play Store</string>
 </resources>

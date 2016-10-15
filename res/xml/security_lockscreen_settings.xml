@@ -95,6 +95,13 @@
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
             settings:userRestriction="no_ambient_display" />
 
+        <com.superior.support.preferences.RemotePreference
+            android:key="doze_device_settings"
+            android:title="@string/ambient_display_screen_title"
+            settings:replacesKey="ambient_display_always_on|ambient_display_notification">
+            <intent android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
+        </com.superior.support.preferences.RemotePreference>
+
         <Preference
             android:key="ambient_display_tap"
             android:title="@string/ambient_display_tap_screen_title"

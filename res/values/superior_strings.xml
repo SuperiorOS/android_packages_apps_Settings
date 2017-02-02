@@ -56,7 +56,10 @@
      <!-- Superior Lab -->
      <string name="superior_lab_dash_title">Superior Lab</string>
 
-    <!-- Density category -->
-    <string name="density_category">Density options</string>
+     <!-- Density category -->
+     <string name="density_category">Density options</string>
+
+     <!-- Running Services -->
+     <string name="background_processes_settings_title">Process in background</string>
 
 </resources>

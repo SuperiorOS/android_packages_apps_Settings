@@ -522,6 +522,8 @@ public class Settings extends SettingsActivity {
      */
     public static class PreviouslyConnectedDevicesActivity extends SettingsActivity { /* empty */ }
 
-    // SuperiorLab Additoon
+    // Superior Addition
     public static class SuperiorLabActivity extends SettingsActivity {}
+
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }

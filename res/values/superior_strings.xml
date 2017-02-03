@@ -419,4 +419,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifications, notification log</string>
 
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>

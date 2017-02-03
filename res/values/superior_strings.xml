@@ -416,4 +416,7 @@
     <string name="lockscreen_rotation_title">Auto-rotate lockscreen</string>
     <string name="lockscreen_rotation_summary">Allow rotation on the lockscreen</string>
 
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>

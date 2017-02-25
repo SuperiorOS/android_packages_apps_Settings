@@ -455,6 +455,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new FreeformWindowsPreferenceController(context));
         controllers.add(new ShortcutManagerThrottlingPreferenceController(context));
         controllers.add(new EnableGnssRawMeasFullTrackingPreferenceController(context));
+        controllers.add(new ForceAuthorizeSubstratumPreferenceController(context));
         controllers.add(new DefaultLaunchPreferenceController(context, "running_apps"));
         controllers.add(new DefaultLaunchPreferenceController(context, "quick_settings_tiles"));
         controllers.add(new DefaultLaunchPreferenceController(context, "feature_flags_dashboard"));

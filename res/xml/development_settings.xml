@@ -70,6 +70,11 @@
             android:summary="@string/oem_unlock_enable_summary"
             settings:useAdditionalSummary="true" />
 
+        <SwitchPreference
+            android:key="force_authorize_substratum_packages"
+            android:title="@string/force_authorize_substratum_packages_title"
+            android:summary="@string/force_authorize_substratum_packages_summary" />
+
         <Preference
             android:key="running_apps"
             android:title="@string/runningservices_settings_title"

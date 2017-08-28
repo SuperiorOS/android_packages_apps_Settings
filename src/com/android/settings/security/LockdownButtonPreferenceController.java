@@ -43,14 +43,14 @@ public class LockdownButtonPreferenceController extends TogglePreferenceControll
 
     @Override
     public boolean isChecked() {
-        return Settings.Secure.getInt(mContext.getContentResolver(),
-                Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0) != 0;
+        return Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.GLOBAL_ACTIONS_LOCKDOWN, 0) != 0;
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        Settings.Secure.putInt(mContext.getContentResolver(),
-                Settings.Secure.LOCKDOWN_IN_POWER_MENU, isChecked ? 1 : 0);
+        Settings.System.putInt(mContext.getContentResolver(),
+                Settings.System.GLOBAL_ACTIONS_LOCKDOWN, isChecked ? 1 : 0);
         return true;
     }
 }

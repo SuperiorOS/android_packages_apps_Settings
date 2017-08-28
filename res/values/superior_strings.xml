@@ -78,4 +78,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
 
+    <!-- Advanced powermenu -->
+    <string name="global_actions_title">Power menu</string>
+
 </resources>

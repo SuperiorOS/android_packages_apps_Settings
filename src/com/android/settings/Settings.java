@@ -241,4 +241,5 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    public static class PowermenuSettingsActivity extends SettingsActivity { /* empty */ }
 }

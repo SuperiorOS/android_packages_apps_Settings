@@ -51,4 +51,9 @@
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">Battery history stats are going to be reset</string>
+
+    <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Superior Goodies</string>
+    <string name="superior_settings_summary">Extra Features</string>
+
 </resources>

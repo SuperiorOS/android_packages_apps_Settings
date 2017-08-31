@@ -44,7 +44,15 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java",
+           "SuperiorSettings/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.superior.settings"],
+
+    resource_dirs: ["res",
+                    "SuperiorSettings/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -63,6 +71,7 @@ android_library {
         "androidx.lifecycle_lifecycle-runtime",
         "androidx.lifecycle_lifecycle-extensions",
         "guava",
+        "glide",
         "jsr305",
         "settings-contextual-card-protos-lite",
         "settings-log-bridge-protos-lite",
@@ -80,6 +89,9 @@ android_library {
         "ims-common",
         "app-compat-annotations",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

@@ -21,7 +21,6 @@
     android:key="device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <!-- Phone number -->
     <Preference
         android:key="phone_number"
         android:order="0"
@@ -59,11 +58,18 @@
         android:title="@string/firmware_version"
         settings:keywords="@string/keywords_android_version"
         android:summary="@string/summary_placeholder"/>
+		
+    <!-- Device Maintainer -->
+    <Preference
+        android:key="device_maintainer"
+		android:order="32"
+        android:title="@string/device_maintainer"
+        android:summary="@string/device_info_default" />
 
     <!-- Superior OS version --> 
     <Preference 
         android:key="superior_version"
-        android:order="32"
+        android:order="33"
         android:title="@string/superior_version"
         settings:keywords="@string/keywords_superior_version"
         android:summary="@string/superior_version_default"/>
@@ -71,7 +77,7 @@
     <!-- Build date -->
     <Preference 
        android:key="build_date"
-       android:order="33"
+       android:order="34"
        android:title="@string/build_date"
        settings:keywords="@string/keywords_build_date"
        android:summary="@string/build_date_default" />
@@ -79,7 +85,7 @@
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
-        android:order="34"
+        android:order="35"
         android:title="@string/wifi_ip_address"
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
@@ -87,14 +93,14 @@
     <!-- Wi-Fi MAC address -->
     <Preference
         android:key="wifi_mac_address"
-        android:order="35"
+        android:order="36"
         android:title="@string/status_wifi_mac_address"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Bluetooth address -->
     <Preference
         android:key="bt_address"
-        android:order="36"
+        android:order="37"
         android:title="@string/status_bt_address"
         android:summary="@string/summary_placeholder"/>
 
@@ -103,7 +109,7 @@
     <!--
     <Preference
         android:key="legal_container"
-        android:order="37"
+        android:order="38"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"/>-->
@@ -112,7 +118,7 @@
     <!--
     <Preference
         android:key="regulatory_info"
-        android:order="38"
+        android:order="39"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
     </Preference>-->
@@ -120,7 +126,7 @@
     <!-- Safety & regulatory manual -->
     <Preference
         android:key="safety_info"
-        android:order="39"
+        android:order="40"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference>
@@ -128,7 +134,7 @@
     <!-- Manual -->
     <Preference
         android:key="manual"
-        android:order="40"
+        android:order="41"
         android:title="@string/manual">
         <intent android:action="android.settings.SHOW_MANUAL"/>
     </Preference>
@@ -136,20 +142,20 @@
     <!-- Feedback on the device -->
     <!--Preference
         android:key="device_feedback"
-        android:order="41"
+        android:order="42"
         android:title="@string/device_feedback"/>-->
 
     <!-- Device FCC equipment id -->
     <Preference
         android:key="fcc_equipment_id"
-        android:order="42"
+        android:order="43"
         android:title="@string/fcc_equipment_id"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Build number -->
     <Preference
         android:key="build_number"
-        android:order="43"
+        android:order="44"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>

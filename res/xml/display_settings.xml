@@ -202,4 +202,10 @@
 	android:title="@string/theme_accent_picker_title" />
     </PreferenceCategory >
 
+    <com.superior.settings.preferences.SystemSettingSwitchPreference
+        android:key="enable_conditions"
+        android:title="@string/dashboard_conditions_title"
+        android:summaryOn="@string/summary_dashboard_conditions_enabled"
+        android:summaryOff="@string/summary_dashboard_conditions_disabled"
+        android:defaultValue="true" />
 </PreferenceScreen>

@@ -131,4 +131,12 @@
     <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
     <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset counters?</string>
 
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Brightness</string>
+    <string name="night_brightness_value_title">Lower brightness if Night Light</string>
+    <string name="night_bright_disabled">Disabled</string>
+    <string name="night_bright_minimum">Minimum brightness</string>
+    <string name="night_bright_low">Low brightness</string>
+    <string name="night_bright_medium">Medium brightness</string>
+
 </resources>

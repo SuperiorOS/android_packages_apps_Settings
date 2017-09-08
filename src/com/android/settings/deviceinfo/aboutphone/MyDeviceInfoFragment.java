@@ -48,6 +48,8 @@ import com.android.settings.deviceinfo.RegulatoryInfoPreferenceController;
 import com.android.settings.deviceinfo.SafetyInfoPreferenceController;
 import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController;
+import com.android.settings.deviceinfo.BuildDatePreferenceController;
+import com.android.settings.deviceinfo.SuperiorVersionPreferenceController;
 import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -119,6 +121,8 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new DeviceModelPreferenceController(context, fragment));
         controllers.add(new ImeiInfoPreferenceController(context, fragment));
         controllers.add(new FirmwareVersionPreferenceController(context, fragment));
+        controllers.add(new SuperiorVersionPreferenceController(context, lifecycle));
+        controllers.add(new BuildDatePreferenceController(context));
         controllers.add(new IpAddressPreferenceController(context, lifecycle));
         controllers.add(new WifiMacAddressPreferenceController(context, lifecycle));
         controllers.add(new BluetoothAddressPreferenceController(context, lifecycle));

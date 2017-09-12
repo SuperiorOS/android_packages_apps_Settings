@@ -3377,6 +3377,9 @@
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/superior_dashboard_summary"/>
         </activity>
+		
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.superior.settings.hideappfromrecents.HAFRAppListActivity" />
 
     </application>
 </manifest>

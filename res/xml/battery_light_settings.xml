@@ -43,22 +43,22 @@
         <com.superior.support.colorpicker.ColorPickerPreference
             android:key="battery_light_low_color"
             android:title="@string/battery_light_low_color"
-            android:defaultValue="0xFFFF0000" />
+            defaultColorValue="0xFFFF0000" />
 
         <com.superior.support.colorpicker.ColorPickerPreference
             android:key="battery_light_medium_color"
             android:title="@string/battery_light_medium_color"
-            android:defaultValue="0xFFFFFF00" />
+            defaultColorValue="0xFFFFFF00" />
 
         <com.superior.support.colorpicker.ColorPickerPreference
             android:key="battery_light_full_color"
             android:title="@string/battery_light_full_color"
-            android:defaultValue="0xFF00FF00" />
+            defaultColorValue="0xFF00FF00" />
 
         <com.superior.support.colorpicker.ColorPickerPreference
             android:key="battery_light_reallyfull_color"
             android:title="@string/battery_light_reallyfull_color"
-            android:defaultValue="0xFF00FF00" />
+            defaultColorValue="0xFF00FF00" />
     </PreferenceCategory>
 
 </PreferenceScreen>

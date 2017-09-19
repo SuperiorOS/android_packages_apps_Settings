@@ -46,7 +46,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
 
     private static final String LOG_TAG = "DeviceInfoSettings";
 
-    private static final String KEY_LEGAL_CONTAINER = "legal_container";
+    //private static final String KEY_LEGAL_CONTAINER = "legal_container";
 
     @VisibleForTesting
     static final int SIM_PREFERENCES_COUNT = 3;
@@ -136,7 +136,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new IpAddressPreferenceController(context, lifecycle));
         controllers.add(new WifiMacAddressPreferenceController(context, lifecycle));
         controllers.add(new BluetoothAddressPreferenceController(context, lifecycle));
-        controllers.add(new RegulatoryInfoPreferenceController(context));
+        //controllers.add(new RegulatoryInfoPreferenceController(context));
         controllers.add(new SafetyInfoPreferenceController(context));
         controllers.add(new ManualPreferenceController(context));
         controllers.add(new FeedbackPreferenceController(fragment, context));
@@ -170,7 +170,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-                    keys.add(KEY_LEGAL_CONTAINER);
+                    //keys.add(KEY_LEGAL_CONTAINER);
                     return keys;
                 }
             };

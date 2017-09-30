@@ -102,6 +102,12 @@
             android:title="@string/force_authorize_substratum_packages_title"
             android:summary="@string/force_authorize_substratum_packages_summary" />
 
+        <com.superior.settings.preferences.GlobalSettingSwitchPreference
+            android:key="show_cpu_overlay"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary" 
+            android:defaultValue="false" />
+
     <!--<ListPreference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"

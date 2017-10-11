@@ -53,6 +53,14 @@
         android:order="-165"
         settings:controller="com.android.settings.sound.HandsFreeProfileOutputPreferenceController"/>
 
+    <!-- Alarm volume -->
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:key="alarm_volume"
+        android:icon="@*android:drawable/ic_audio_alarm"
+        android:title="@string/alarm_volume_option_title"
+        android:order="-133"
+        settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
+
     <!-- Ring volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="ring_volume"
@@ -76,13 +84,21 @@
         android:defaultValue="true"
         android:order="-140"/>
 
-    <!-- Alarm volume -->
-    <com.android.settings.notification.VolumeSeekBarPreference
-        android:key="alarm_volume"
-        android:icon="@*android:drawable/ic_audio_alarm"
-        android:title="@string/alarm_volume_option_title"
-        android:order="-133"
-        settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
+    <!-- Increasing ring -->
+    <com.superior.settings.preferences.SystemSettingSwitchPreference
+        android:key="increasing_ring"
+        android:title="@string/increasing_ring_volume_option_title"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.IncreasingRingPreferenceController"
+        android:defaultValue="false" />
+
+     <!-- Increasing ring volume -->
+    <com.android.settings.notification.IncreasingRingVolumePreference
+        android:key="increasing_ring_volume"
+        android:icon="@drawable/ring_notif_increasing"
+        android:dependency="increasing_ring"
+        android:order="-135"
+        settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
     <!-- Also vibrate for calls -->
     <SwitchPreference

@@ -173,7 +173,12 @@
         <!-- Charging sounds -->
         <SwitchPreference
           android:key="charging_sounds"
-          android:title="@string/charging_sounds_title"/>
+          android:title="@string/charging_sounds_nos_title"/>
+
+        <!-- Charging vibro -->
+        <SwitchPreference
+          android:key="charging_vibro"
+          android:title="@string/charging_vibro_title" />
 
         <!-- Docking sounds -->
         <SwitchPreference

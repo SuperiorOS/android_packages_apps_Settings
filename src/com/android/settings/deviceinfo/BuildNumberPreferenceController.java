@@ -45,6 +45,7 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.development.DevelopmentSettingsEnabler;
+import java.util.Random;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
@@ -70,6 +71,25 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
         mUm = (UserManager) context.getSystemService(Context.USER_SERVICE);
         mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
     }
+
+    public final static java.lang.String[] insults = {
+            "Hahaha, n00b!",
+            "What are you doing??",
+            "n00b alert!",
+            "Congrats You Are Now Superior Head Developer!",
+            "Break Your phone You Stupid!",
+            "What is this...? Amateur hour!?",
+            "This is not Windows",
+            "Please step away from the device!",
+            "error code: 1D10T",
+            "Go outside",
+            "Pro tip: Stop doing this!",
+            "Y u no speak computer???",
+            "Why are you so stupid?!",
+            "Perhaps this Android thing is not for you...",
+            "Don't you have anything better to do?!",
+            "This is why nobody likes you...",
+            "Are you even trying?!",};
 
     public void setHost(InstrumentedPreferenceFragment fragment) {
         mFragment = fragment;
@@ -197,7 +217,9 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
             if (mDevHitToast != null) {
                 mDevHitToast.cancel();
             }
-            mDevHitToast = Toast.makeText(mContext, R.string.show_dev_already,
+            Random randomInsult = new Random();
+            final int toasts = randomInsult.nextInt(insults.length);
+            mDevHitToast = Toast.makeText(mContext, insults[toasts],
                     Toast.LENGTH_LONG);
             mDevHitToast.show();
             mMetricsFeatureProvider.action(

@@ -45,7 +45,8 @@
                 android:layout_height="@dimen/suggestion_card_icon_size"
                 style="@style/SuggestionCardIcon"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="6dp" />
+                android:layout_marginBottom="6dp"
+                android:tint="@*android:color/accent_device_default_light" />
 
 
             <FrameLayout

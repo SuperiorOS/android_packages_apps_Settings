@@ -155,4 +155,9 @@
      <!-- High touch polling rate -->
      <string name="high_touch_polling_rate_title">High touch polling rate</string>
      <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
+
+     <!-- Proximity wake -->
+     <string name="proximity_wake_title">Prevent accidental wake-up</string>
+     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
 </resources>

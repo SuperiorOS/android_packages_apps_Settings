@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,7 +41,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class AppOpsState {
     static final String TAG = "AppOpsState";
@@ -60,7 +63,7 @@ public class AppOpsState {
         mContext = context;
         mAppOps = (AppOpsManager)context.getSystemService(Context.APP_OPS_SERVICE);
         mPm = context.getPackageManager();
-        mOpSummaries = context.getResources().getTextArray(R.array.app_ops_labels_benzo);
+        mOpSummaries = context.getResources().getTextArray(R.array.app_ops_summaries_benzo);
         mOpLabels = context.getResources().getTextArray(R.array.app_ops_labels_benzo);
         mPreferences = context.getSharedPreferences("appops_manager", Activity.MODE_PRIVATE);
     }
@@ -201,7 +204,11 @@ public class AppOpsState {
                     AppOpsManager.OP_PROJECT_MEDIA,
                     AppOpsManager.OP_ACTIVATE_VPN,
                     AppOpsManager.OP_ASSIST_STRUCTURE,
-                    AppOpsManager.OP_ASSIST_SCREENSHOT},
+                    AppOpsManager.OP_ASSIST_SCREENSHOT,
+                    AppOpsManager.OP_CHANGE_WIFI_STATE,
+                    AppOpsManager.OP_BLUETOOTH_CHANGE,
+                    AppOpsManager.OP_NFC_CHANGE,
+                    AppOpsManager.OP_DATA_CONNECT_CHANGE },
             new boolean[] { false,
                     true,
                     true,
@@ -211,7 +218,11 @@ public class AppOpsState {
                     false,
                     false,
                     false,
-                    false }
+                    false,
+                    true,
+                    true,
+                    true,
+                    true }
             );
 
     public static final OpsTemplate RUN_IN_BACKGROUND_TEMPLATE = new OpsTemplate(
@@ -221,13 +232,55 @@ public class AppOpsState {
 
     public static final OpsTemplate BOOTUP_TEMPLATE = new OpsTemplate(
             new int[] { AppOpsManager.OP_BOOT_COMPLETED },
-            new boolean[] { true, }
+            new boolean[] { true }
             );
+
+    // this template should contain all ops which are not part of any other template in
+    // ALL_TEMPLATES
+    public static final OpsTemplate REMAINING_TEMPLATE = new OpsTemplate(
+            new int[] { AppOpsManager.OP_GET_USAGE_STATS,
+                    AppOpsManager.OP_TOAST_WINDOW,
+                    AppOpsManager.OP_WRITE_WALLPAPER,
+                    AppOpsManager.OP_READ_PHONE_STATE,
+                    AppOpsManager.OP_ADD_VOICEMAIL,
+                    AppOpsManager.OP_USE_SIP,
+                    AppOpsManager.OP_PROCESS_OUTGOING_CALLS,
+                    AppOpsManager.OP_USE_FINGERPRINT,
+                    AppOpsManager.OP_BODY_SENSORS,
+                    AppOpsManager.OP_READ_CELL_BROADCASTS,
+                    AppOpsManager.OP_MOCK_LOCATION,
+                    AppOpsManager.OP_READ_EXTERNAL_STORAGE,
+                    AppOpsManager.OP_WRITE_EXTERNAL_STORAGE,
+                    AppOpsManager.OP_TURN_SCREEN_ON,
+                    AppOpsManager.OP_GET_ACCOUNTS },
+            new boolean[] { true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true }
+    );
 
     public static final OpsTemplate[] ALL_TEMPLATES = new OpsTemplate[] {
             LOCATION_TEMPLATE, PERSONAL_TEMPLATE, MESSAGING_TEMPLATE,
             MEDIA_TEMPLATE, DEVICE_TEMPLATE, RUN_IN_BACKGROUND_TEMPLATE,
             BOOTUP_TEMPLATE
+    };
+
+    // this template contains all permissions grouped by templates
+    public static final OpsTemplate[] ALL_PERMS_TEMPLATES = new OpsTemplate[] {
+            LOCATION_TEMPLATE, PERSONAL_TEMPLATE, MESSAGING_TEMPLATE,
+            MEDIA_TEMPLATE, DEVICE_TEMPLATE, RUN_IN_BACKGROUND_TEMPLATE,
+            BOOTUP_TEMPLATE, REMAINING_TEMPLATE
     };
 
     /**
@@ -549,8 +602,8 @@ public class AppOpsState {
         if (appInfo == null) {
             try {
                 appInfo = mPm.getApplicationInfo(packageName,
-                        PackageManager.MATCH_DISABLED_COMPONENTS
-                        | PackageManager.MATCH_ANY_USER);
+                        PackageManager.GET_DISABLED_COMPONENTS
+                        | PackageManager.GET_UNINSTALLED_PACKAGES);
             } catch (PackageManager.NameNotFoundException e) {
                 Log.w(TAG, "Unable to find info for package " + packageName);
                 return null;
@@ -587,12 +640,27 @@ public class AppOpsState {
         return mPreferences.getBoolean("show_system_apps", true);
     }
 
-    public List<AppOpEntry> buildState(OpsTemplate tpl, int uid, String packageName) {
-        return buildState(tpl, uid, packageName, RECENCY_COMPARATOR);
+    public List<AppOpEntry> buildState(OpsTemplate tpl, int uid, String packageName,
+            boolean privacyGuard) {
+        return buildState(tpl, uid, packageName, RECENCY_COMPARATOR, privacyGuard);
     }
 
     public List<AppOpEntry> buildState(OpsTemplate tpl, int uid, String packageName,
             Comparator<AppOpEntry> comparator) {
+        return buildState(tpl, uid, packageName, comparator, false);
+    }
+
+    private boolean isPrivacyGuardOp(int op) {
+        for (int privacyGuardOp : AppOpsManager.PRIVACY_GUARD_OP_STATES) {
+            if (privacyGuardOp == op) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public List<AppOpEntry> buildState(OpsTemplate tpl, int uid, String packageName,
+            Comparator<AppOpEntry> comparator, boolean privacyGuard) {
         final Context context = mContext;
 
         final HashMap<String, AppEntry> appEntries = new HashMap<String, AppEntry>();
@@ -601,7 +669,25 @@ public class AppOpsState {
         final ArrayList<String> perms = new ArrayList<String>();
         final ArrayList<Integer> permOps = new ArrayList<Integer>();
         final int[] opToOrder = new int[AppOpsManager._NUM_OP];
+
+        final Set<Integer> privacyGuardOps = new HashSet<>();
+
         for (int i=0; i<tpl.ops.length; i++) {
+            if (privacyGuard && isPrivacyGuardOp(tpl.ops[i])) {
+                // If there's a permission for this Privacy Guard OP, then
+                // we don't have to treat it in a special way. The application
+                // should have the permission declared if it uses it, so we
+                // will add this later when we query PackageManager
+                String perm = AppOpsManager.opToPermission(tpl.ops[i]);
+                if (perm != null) {
+                    if (DEBUG) Log.d(TAG, "Adding " + AppOpsManager.opToName(tpl.ops[i])
+                            + " (" + tpl.ops[i] + ") to privacyGuardOps");
+                    privacyGuardOps.add(tpl.ops[i]);
+                } else {
+                    if (DEBUG) Log.d(TAG, "Not adding " + AppOpsManager.opToName(tpl.ops[i])
+                            + " (" + tpl.ops[i] + ") with perm " + perm + " to privacyGuardOps");
+                }
+            }
             if (tpl.showPerms[i]) {
                 String perm = AppOpsManager.opToPermission(tpl.ops[i]);
                 if (perm != null && !perms.contains(perm)) {
@@ -632,6 +718,14 @@ public class AppOpsState {
                 }
                 for (int j=0; j<pkgOps.getOps().size(); j++) {
                     AppOpsManager.OpEntry opEntry = pkgOps.getOps().get(j);
+                    if (privacyGuard && privacyGuardOps.contains(opEntry.getOp())) {
+                        // This OP is here because the user enabled Privacy Guard
+                        // for this application.
+                        if (DEBUG) Log.d(TAG, "Not adding "
+                                + AppOpsManager.opToName(opEntry.getOp())
+                                + " (" + opEntry.getOp() + ")");
+                        continue;
+                    }
                     addOp(entries, pkgOps, appEntry, opEntry, packageName == null,
                             packageName == null ? 0 : opToOrder[opEntry.getOp()]);
                 }
@@ -663,7 +757,7 @@ public class AppOpsState {
             if (appInfo.requestedPermissions != null) {
                 for (int j=0; j<appInfo.requestedPermissions.length; j++) {
                     if (appInfo.requestedPermissionsFlags != null) {
-                        if ((appInfo.requestedPermissionsFlags[j]
+                        if (!privacyGuard && (appInfo.requestedPermissionsFlags[j]
                                 & PackageInfo.REQUESTED_PERMISSION_GRANTED) == 0) {
                             if (DEBUG) Log.d(TAG, "Pkg " + appInfo.packageName + " perm "
                                     + appInfo.requestedPermissions[j] + " not granted; skipping");

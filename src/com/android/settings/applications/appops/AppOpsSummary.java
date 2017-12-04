@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2013 The Android Open Source Project
+ * Copyright (C) 2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy
@@ -24,13 +25,13 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
-import android.content.res.TypedArray;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceFrameLayout;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
+import android.util.Pair;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -41,6 +42,11 @@ import android.view.ViewGroup;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.core.InstrumentedPreferenceFragment;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import com.android.settings.R;
 
 public class AppOpsSummary extends InstrumentedPreferenceFragment {
@@ -56,42 +62,35 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
     private Activity mActivity;
     private SharedPreferences mPreferences;
 
-    CharSequence[] mPageNames;
-    static AppOpsState.OpsTemplate[] sPageTemplates = new AppOpsState.OpsTemplate[] {
-        AppOpsState.LOCATION_TEMPLATE,
-        AppOpsState.PERSONAL_TEMPLATE,
-        AppOpsState.MESSAGING_TEMPLATE,
-        AppOpsState.MEDIA_TEMPLATE,
-        AppOpsState.DEVICE_TEMPLATE,
-        AppOpsState.BOOTUP_TEMPLATE
-    };
-
-    int mCurPos;
-
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.APP_OPS_SUMMARY;
     }
 
-    class MyPagerAdapter extends FragmentPagerAdapter implements ViewPager.OnPageChangeListener {
+    static class MyPagerAdapter extends FragmentPagerAdapter
+            implements ViewPager.OnPageChangeListener {
+        private List<Pair<CharSequence, AppOpsState.OpsTemplate>> mPageData;
+        private int mCurPos;
 
-        public MyPagerAdapter(FragmentManager fm) {
+        public MyPagerAdapter(FragmentManager fm,
+                List<Pair<CharSequence, AppOpsState.OpsTemplate>> data) {
             super(fm);
+            mPageData = data;
         }
 
         @Override
         public Fragment getItem(int position) {
-            return new AppOpsCategory(sPageTemplates[position]);
+            return new AppOpsCategory(mPageData.get(position).second);
         }
 
         @Override
         public int getCount() {
-            return sPageTemplates.length;
+            return mPageData.size();
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return mPageNames[position];
+            return mPageData.get(position).first;
         }
 
         @Override
@@ -133,25 +132,36 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
         mContentContainer = container;
         mRootView = rootView;
 
-        mPageNames = getResources().getTextArray(R.array.app_ops_categories_benzo);
+        CharSequence[] pageNames = getResources().getTextArray(R.array.app_ops_categories_benzo);
+        AppOpsState.OpsTemplate[] templates = AppOpsState.ALL_PERMS_TEMPLATES;
+        assert(pageNames.length == templates.length);
+
+        int specificTab = -1;
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            specificTab = Arrays.asList(pageNames).indexOf(bundle.getString("appops_tab", ""));
+        }
+
+        List<Pair<CharSequence, AppOpsState.OpsTemplate>> pageData = new ArrayList<>();
+        for (int i = 0; i < pageNames.length; i++) {
+            pageData.add(Pair.create(pageNames[i], templates[i]));
+        }
+        filterPageData(pageData, specificTab);
 
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
-        mAdapter = new MyPagerAdapter(getChildFragmentManager());
+        mAdapter = new MyPagerAdapter(getChildFragmentManager(), pageData);
         mViewPager.setAdapter(mAdapter);
         mViewPager.setOnPageChangeListener(mAdapter);
         PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
 
-        ((ViewPager.LayoutParams)tabs.getLayoutParams()).isDecor = true;
+        // HACK - https://code.google.com/p/android/issues/detail?id=213359
+        ((ViewPager.LayoutParams) tabs.getLayoutParams()).isDecor = true;
 
         Resources.Theme theme = tabs.getContext().getTheme();
         TypedValue typedValue = new TypedValue();
         theme.resolveAttribute(android.R.attr.colorAccent, typedValue, true);
-        final int colorAccent = typedValue.resourceId != 0
-                ? getContext().getColor(typedValue.resourceId)
-                : getContext().getColor(R.color.switch_accent_color);
+        final int colorAccent = getContext().getColor(typedValue.resourceId);
         tabs.setTabIndicatorColor(colorAccent);
-
-        getActivity().setTitle(R.string.app_ops_settings);
 
         // We have to do this now because PreferenceFrameLayout looks at it
         // only when the view is added.
@@ -162,6 +172,14 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
         mActivity = getActivity();
 
         return rootView;
+    }
+
+    private void filterPageData(List<Pair<CharSequence, AppOpsState.OpsTemplate>> data, int tab) {
+        if (tab >= 0 && tab < data.size()) {
+            Pair<CharSequence, AppOpsState.OpsTemplate> item = data.get(tab);
+            data.clear();
+            data.add(item);
+        }
     }
 
     private boolean shouldShowUserApps() {

@@ -95,6 +95,12 @@
         android:key="security_settings_misc_category"
         android:title="@string/security_passwords_title">
 
+        <!-- Privacy Guard -->
+        <Preference
+            android:key="privacy_guard_manager"
+            android:title="@string/privacy_guard_manager_title"
+            android:fragment="com.android.settings.privacyguard.PrivacyGuardManager" />
+
         <Preference
             android:key="location"
             android:title="@string/location_settings_title"

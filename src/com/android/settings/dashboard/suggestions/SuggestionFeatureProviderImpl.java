@@ -21,6 +21,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.service.settings.suggestions.Suggestion;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.util.Pair;
@@ -58,7 +59,9 @@ public class SuggestionFeatureProviderImpl implements SuggestionFeatureProvider 
     public boolean isSuggestionEnabled(Context context) {
         final ActivityManager am =
                 (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        return !am.isLowRamDevice();
+        return !am.isLowRamDevice()
+                && (Settings.System.getInt(context.getContentResolver(),
+                Settings.System.ENABLE_SUGGESTIONS, 1) == 1);
     }
 
     @Override

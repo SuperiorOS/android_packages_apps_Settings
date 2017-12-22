@@ -22,6 +22,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settings.core.PreferenceControllerMixin;
 import libcore.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 public class DarkUIPreferenceController extends AbstractPreferenceController implements
-        Preference.OnPreferenceChangeListener {
+        PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
     private static final String SYSTEM_THEME_STYLE = "system_theme_style";
     private ListPreference mSystemThemeStyle;
     public DarkUIPreferenceController(Context context) {

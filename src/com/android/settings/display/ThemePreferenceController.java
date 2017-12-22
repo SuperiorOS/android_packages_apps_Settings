@@ -13,6 +13,7 @@
  */
 package com.android.settings.display;
 
+import android.content.Intent;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -114,6 +115,10 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
             return true;
         }
         mOverlayService.setEnabledExclusiveInCategory((String) newValue, UserHandle.myUserId());
+        Intent goHome = new Intent(Intent.ACTION_MAIN);
+        goHome.addCategory(Intent.CATEGORY_HOME);
+        goHome.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(goHome);
         return true;
     }
 

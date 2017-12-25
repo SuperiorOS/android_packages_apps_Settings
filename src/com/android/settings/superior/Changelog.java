@@ -61,7 +61,7 @@ public class Changelog extends SettingsPreferenceFragment {
         InputStreamReader inputReader = null;
         String text = null;
         StringBuilder data = new StringBuilder();
-        Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
+        Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_.-]+/)+)");
         Pattern p3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
         try {
             char tmp[] = new char[2048];

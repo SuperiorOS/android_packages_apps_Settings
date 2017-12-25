@@ -62,7 +62,7 @@ public class Changelog extends SettingsPreferenceFragment {
         String text = null;
 
         StringBuilder data = new StringBuilder();
-        Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
+        Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_.-]+/)+)");
         Pattern p3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
 
         try {

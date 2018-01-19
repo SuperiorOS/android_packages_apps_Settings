@@ -36,8 +36,9 @@ import android.os.SystemProperties;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceViewHolder;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
 import android.telephony.PhoneNumberUtils;
@@ -55,7 +56,6 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.telephony.IExtTelephony;
 import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.TelephonyProperties;
 import com.android.settings.R;
@@ -63,6 +63,8 @@ import com.android.settings.RestrictedSettingsFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+
+import org.codeaurora.internal.IExtTelephony;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -108,7 +110,6 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private static AlertDialog sAlertDialog = null;
     private static ProgressDialog sProgressDialog = null;
     private boolean needUpdate = false;
-    private int mPhoneCount = TelephonyManager.getDefault().getPhoneCount();
     private int[] mUiccProvisionStatus = new int[mPhoneCount];
     private Preference mPrimarySubSelect = null;
 
@@ -164,9 +165,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         @Override
         public void onSubscriptionsChanged() {
             if (DBG) log("onSubscriptionsChanged:");
-            if (isAdded()) {
-                updateSubscriptions();
-            }
+            updateSubscriptions();
         }
     };
 
@@ -184,7 +183,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         for (int i = 0; i < mNumSlots; ++i) {
             final SubscriptionInfo sir = mSubscriptionManager
                     .getActiveSubscriptionInfoForSimSlotIndex(i);
-            SimPreference simPreference = new SimEnablerPreference(mContext, sir, i);
+            SimPreference simPreference = new SimEnablerPreference(getPrefContext(), sir, i);
             simPreference.setOrder(i-mNumSlots);
             mSimCards.addPreference(simPreference);
             mAvailableSubInfos.add(sir);
@@ -247,7 +246,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         } else if (sir == null) {
             simPref.setSummary(R.string.sim_selection_required_pref);
             // Enable data preference in msim mode and call state idle
-            simPref.setEnabled((mSelectableSubInfos.size() >= 1) && callStateIdle && !ecbMode);
+            simPref.setEnabled((mSelectableSubInfos.size() > 1) && callStateIdle && !ecbMode);
         }
     }
 
@@ -310,7 +309,6 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         // sim causes a modem reset currently and call gets disconnected
         // ToDo : Add subtext on disabled preference to let user know that default data sim cannot
         // be changed while call is going on
-
         final int i = phoneId;
         mPhoneStateListener[phoneId]  = new PhoneStateListener(subId) {
             @Override
@@ -343,7 +341,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
             intent.putExtra(SimDialogActivity.DIALOG_TYPE_KEY, SimDialogActivity.SMS_PICK);
             context.startActivity(intent);
         } else if (preference == mPrimarySubSelect) {
-            startActivity(mPrimarySubSelect.getIntent());
+            context.startActivity(mPrimarySubSelect.getIntent());
         }
 
         return true;
@@ -361,6 +359,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         SubscriptionInfo mSubInfoRecord;
         int mSlotId;
         Context mContext;
+
         public SimPreference(Context context, SubscriptionInfo subInfoRecord, int slotId) {
             super(context);
 
@@ -400,8 +399,8 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         }
 
         @Override
-        protected void onAttachedToActivity() {
-            super.onAttachedToActivity();
+        protected void onAttachedToHierarchy(PreferenceManager preferenceManager) {
+            super.onAttachedToHierarchy(preferenceManager);
             if (needUpdate) {
                 needUpdate = false;
                 updateAllOptions();
@@ -493,17 +492,16 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         }
 
         @Override
-        protected void onBindView(View view) {
-            super.onBindView(view);
+        public void onBindViewHolder(PreferenceViewHolder holder) {
+            super.onBindViewHolder(holder);
             logd("onBindView....");
-            mSwitch = (CompoundButton) view.findViewById(R.id.sub_switch_widget);
+            mSwitch = (CompoundButton) holder.findViewById(R.id.sub_switch_widget);
             mSwitch.setOnCheckedChangeListener(this);
             update();
             // now use other config screen to active/deactive sim card\
             mSwitch.setVisibility(mSwitchVisibility);
 
-            // Disable manual provisioning option to user when
-            // device is in Airplane mode. Hide it if the extphone framework
+            // Hide manual provisioning if the extphone framework
             // is not present, as the operation relies on said framework.
             if (mExtTelephony == null ||
                    !mContext.getResources().getBoolean(R.bool.config_enableManualSubProvisioning)) {
@@ -517,6 +515,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         @Override
         public void update() {
             final Resources res = mContext.getResources();
+            final Handler handler = new Handler();
             logd("update()" + mSir);
             try {
                 //get current provision state of the SIM.
@@ -534,18 +533,20 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
                 mUiccProvisionStatus[mSlotId] = PROVISIONED;
             }
 
-            boolean isSubValid = isCurrentSubValid();
-            setEnabled(isSubValid);
+            handler.post(() -> {
+                boolean isSubValid = isCurrentSubValid();
+                setEnabled(isSubValid);
 
-            logd("update: isSubValid "  + isSubValid + " provision status["
-                    + mSlotId + "] = " + mUiccProvisionStatus[mSlotId]);
-            setTitle(res.getString(R.string.sim_card_number_title, mSlotId + 1));
-            if (isSubValid) {
-                updateSummary();
-                setIcon(new BitmapDrawable(res, (mSir.createIconBitmap(mContext))));
-            } else {
-                setSummary(res.getString(R.string.sim_slot_empty));
-            }
+                logd("update: isSubValid "  + isSubValid + " provision status["
+                        + mSlotId + "] = " + mUiccProvisionStatus[mSlotId]);
+                setTitle(res.getString(R.string.sim_card_number_title, mSlotId + 1));
+                if (isSubValid) {
+                    updateSummary();
+                    setIcon(new BitmapDrawable(res, (mSir.createIconBitmap(mContext))));
+                } else {
+                    setSummary(res.getString(R.string.sim_slot_empty));
+                }
+            });
         }
 
         // This method returns true if SubScription record corresponds to this

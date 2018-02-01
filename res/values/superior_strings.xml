@@ -44,4 +44,7 @@
 
     <!-- Density category -->
     <string name="density_category">Density options</string>
+
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
 </resources>

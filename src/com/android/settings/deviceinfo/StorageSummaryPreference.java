@@ -57,7 +57,6 @@ public class StorageSummaryPreference extends Preference {
         }
 
         final TextView summary = (TextView) view.findViewById(android.R.id.summary);
-        summary.setTextColor(mSecondaryColor);
 
         super.onBindViewHolder(view);
     }

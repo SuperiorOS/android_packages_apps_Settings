@@ -29,13 +29,13 @@
         android:fragment="com.android.settings.language.LanguageAndInputSettings"
         settings:controller="com.android.settings.language.LanguageAndInputPreferenceController"/>
 
-    <Preference
+    <!-- <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
         android:icon="@drawable/ic_settings_gestures"
         android:order="-250"
         android:fragment="com.android.settings.gestures.GestureSettings"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/> -->
 
     <Preference
         android:key="date_time_settings"

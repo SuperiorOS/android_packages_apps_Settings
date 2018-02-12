@@ -79,7 +79,7 @@ public class CreateShortcut extends LauncherActivity {
                 createIcon(activityInfo.icon,
                         R.layout.shortcut_badge_maskable,
                         getResources().getDimensionPixelSize(R.dimen.shortcut_size_maskable))) :
-                Icon.createWithResource(this, R.drawable.ic_launcher_settings);
+                Icon.createWithResource(this, R.mipmap.ic_launcher);
         String shortcutId = SHORTCUT_ID_PREFIX +
                 shortcutIntent.getComponent().flattenToShortString();
         ShortcutInfo info = new ShortcutInfo.Builder(this, shortcutId)

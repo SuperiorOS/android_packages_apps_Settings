@@ -114,6 +114,9 @@ public class Changelog extends SettingsPreferenceFragment {
         }
 
         final TextView textView = new TextView(getActivity());
+        LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        llp.setMargins(20, 0, 0, 0); // llp.setMargins(left, top, right, bottom);
+        textView.setLayoutParams(llp);
         textView.setText(sb);
 
         final ScrollView scrollView = new ScrollView(getActivity());

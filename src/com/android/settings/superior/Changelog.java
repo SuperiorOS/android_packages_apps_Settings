@@ -21,6 +21,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -29,6 +31,8 @@ import com.android.settings.R;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import android.content.res.Resources;
 
 public class Changelog extends Fragment {
 
@@ -62,6 +66,12 @@ public class Changelog extends Fragment {
         }
 
         final TextView textView = new TextView(getActivity());
+
+        LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+        int padding = (int)(16*Resources.getSystem().getDisplayMetrics().density);
+        llp.setMargins(padding, 0, padding, 0);
+        textView.setLayoutParams(llp);
+
         textView.setText(text);
 
         final ScrollView scrollView = new ScrollView(getActivity());

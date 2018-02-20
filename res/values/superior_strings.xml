@@ -71,6 +71,7 @@
     <string name="system_theme_style_superior">Superior</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
     <string name="theme_applied_toast">Theme applied!</string>
+    <string name="substratum_installed_title">System themes are unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>
 
     <!-- device maintainer -->
     <string name="device_maintainer">Your Noob Guy</string>

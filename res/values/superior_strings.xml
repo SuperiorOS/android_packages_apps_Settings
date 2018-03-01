@@ -411,4 +411,8 @@
     <string name="filter_substratum_apps">Substratum overlays</string>
     <string name="menu_show_substratum">Show overlays</string>
     <string name="menu_hide_substratum">Hide overlays</string>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+
 </resources>

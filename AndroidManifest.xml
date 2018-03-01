@@ -99,6 +99,8 @@
 
     <!-- Ambient Indication -->
     <uses-permission android:name="org.pixelexperience.ambient.play.history.MANAGE_HISTORY" />
+    <!-- DU Font Engine -->
+    <uses-permission android:name="android.permission.ACCESS_FONT_MANAGER" />
 
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"

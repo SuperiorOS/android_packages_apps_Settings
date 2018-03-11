@@ -120,4 +120,12 @@
           165hz</string>
      <string name="peak_refresh_rate_summary_custom">Automatically raises the refresh rate from 60
           to %1$d Hz for some content. Increases battery usage.</string>
+
+     <!-- High touch sensitivity -->
+     <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+     <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+
+     <!-- Touchscreen hovering -->
+     <string name="touchscreen_hovering_title">Touchscreen hovering</string>
+     <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
 </resources>

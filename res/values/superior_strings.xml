@@ -213,4 +213,8 @@
     <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
     <string name="private_dns_mode_quad9">Quad9 DNS</string>
 
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+    <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+
 </resources>

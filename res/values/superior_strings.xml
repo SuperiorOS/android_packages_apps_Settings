@@ -27,6 +27,10 @@
      <string name="build_date_default">2015-01-01-0000</string>
      <string name="keywords_build_date">build date, build info</string>
 
+     <!-- Hardware info -->
+     <string name="platform_revision">Platform</string>
+     <string name="total_ram">Total RAM</string>
+
      <!-- Notification log -->
      <string name="notification_log_summary">Show notifications history log</string>
 

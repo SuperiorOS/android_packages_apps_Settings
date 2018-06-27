@@ -72,6 +72,10 @@
     <string name="applying_theme_toast">Applying theme, please wait...</string>
     <string name="theme_applied_toast">Theme applied!</string>
     <string name="substratum_installed_title">System themes are unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>
+    <string name="force_allow_system_themes_title">Allow system themes and fonts alongside substratum</string>
+    <string name="force_allow_system_themes_summary">Allows you to use following themes and fonts options inspite of substratum installed.</string>
+    <string name="force_theme_warning_title">Warning !</string>
+    <string name="force_theme_warning_message">This could cause conflicts between substratum themes and system themes. We hope you know what are you getting into. #DontBlameUsLater :D</string>
 
     <!-- device maintainer -->
     <string name="device_maintainer">Your Noob Guy</string>

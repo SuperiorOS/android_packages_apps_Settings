@@ -17,6 +17,8 @@ package com.android.settings.display;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.ContentResolver;
+import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceClickListener;
 import android.support.v7.preference.PreferenceScreen;
@@ -50,7 +52,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
     @Override
     public void displayPreference(PreferenceScreen screen) {
         mAccentPickerPref  = (Preference) screen.findPreference(KEY_ACCENT_PICKER_FRAGMENT_PREF);
-        if (isSubstratumOverlayInstalled(mContext))
+        if (isSubstratumOverlayInstalled(mContext) && !isForceThemeAllowed())
             mAccentPickerPref.setEnabled(false);
     }
 
@@ -58,6 +60,11 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
     public void onResume() {
         updateEnableState();
         updateSummary();
+    }
+
+    public boolean isForceThemeAllowed() {
+        return Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.FORCE_ALLOW_SYSTEM_THEMES, 0) == 1;
     }
 
     @Override
@@ -79,7 +86,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
             new OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                   if (!isSubstratumOverlayInstalled(mContext)) {
+                   if (!isSubstratumOverlayInstalled(mContext) || isForceThemeAllowed()) {
                         AccentPicker.show(mParent);
                         return true;
                    } else {
@@ -91,12 +98,14 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
 
     public void updateSummary() {
         if (mAccentPickerPref != null) {
-            if (!isSubstratumOverlayInstalled(mContext)) {
+            if (!isSubstratumOverlayInstalled(mContext) || isForceThemeAllowed()) {
                 mAccentPickerPref.setSummary(mContext.getString(
                         com.android.settings.R.string.theme_accent_picker_summary));
+                mAccentPickerPref.setEnabled(true);
             } else {
                 mAccentPickerPref.setSummary(mContext.getString(
                         com.android.settings.R.string.substratum_installed_title));
+                mAccentPickerPref.setEnabled(false);
             }
         }
     }

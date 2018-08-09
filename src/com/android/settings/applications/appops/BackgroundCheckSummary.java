@@ -58,8 +58,8 @@ public class BackgroundCheckSummary extends InstrumentedPreferenceFragment {
         }
 
         FragmentTransaction ft = getChildFragmentManager().beginTransaction();
-        ft.add(R.id.appops_content, new AppOpsCategory(AppOpsState.RUN_IN_BACKGROUND_TEMPLATE),
-                "appops");
+        ft.add(R.id.appops_content, new AppOpsCategory(AppOpsState.RUN_IN_BACKGROUND_TEMPLATE,
+                        true), "appops");
         ft.commitAllowingStateLoss();
 
         return rootView;

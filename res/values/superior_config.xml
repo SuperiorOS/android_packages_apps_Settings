@@ -28,4 +28,7 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+    <!-- Whether USB host mode is supported -->
+    <bool name="config_isUsbDataRoleHostSupported">true</bool>
+
 </resources>

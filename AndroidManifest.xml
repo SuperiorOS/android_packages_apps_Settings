@@ -3327,5 +3327,33 @@
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <activity android:name="Settings$SuperiorSettingsActivity"
+            android:label="@string/superior_settings_title"
+            android:icon="@drawable/ic_settings_superior"
+            android:taskAffinity="">
+            <intent-filter android:priority="1">
+                <action android:name="superior.settings.SuperiorSettings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.superior.settings.SuperiorSettings" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/superior_dashboard_summary"/>
+        </activity>
+
     </application>
 </manifest>

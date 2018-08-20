@@ -143,12 +143,6 @@
                     android:title="@string/dsu_loader_title" />
 
         <Preference
-            android:key="demo_mode"
-            android:title="@string/demo_mode">
-            <intent android:action="com.android.settings.action.DEMO_MODE" />
-        </Preference>
-
-        <Preference
             android:key="quick_settings_tiles"
             android:title="@string/quick_settings_developer_tiles"
             android:fragment="com.android.settings.development.qstile.DevelopmentTileConfigFragment" />

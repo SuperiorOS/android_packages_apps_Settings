@@ -127,8 +127,11 @@ public class ImeiInfoDialogController {
         if (subscriptionInfoList == null) {
             return null;
         }
-
-        return subscriptionInfoList.get(slotId);
+        try {
+            return subscriptionInfoList.get(slotId);
+        }catch(Exception e){
+            return null;
+        }
     }
 
     @VisibleForTesting

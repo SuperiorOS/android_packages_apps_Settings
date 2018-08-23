@@ -97,11 +97,11 @@ public class ImeiInfoPreferenceController extends
         final int phoneType = mTelephonyManager.getPhoneType();
         if (phoneType == PHONE_TYPE_CDMA) {
             preference.setTitle(getTitleForCdmaPhone(simSlot));
-            preference.setSummary(getMeid(simSlot));
+            //preference.setSummary(getMeid(simSlot));
         } else {
             // GSM phone
             preference.setTitle(getTitleForGsmPhone(simSlot));
-            preference.setSummary(mTelephonyManager.getImei(simSlot));
+            //preference.setSummary(mTelephonyManager.getImei(simSlot));
         }
     }
 

@@ -27,6 +27,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -34,13 +35,18 @@ import java.io.InputStreamReader;
 
 import android.content.res.Resources;
 
-public class Changelog extends Fragment {
+import com.android.internal.logging.nano.MetricsProto;
+
+public class Changelog extends SettingsPreferenceFragment {
 
     private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
+
+        getActivity().getActionBar().setTitle(R.string.changelog_title);
+
         InputStreamReader inputReader = null;
         String text = null;
 
@@ -78,5 +84,10 @@ public class Changelog extends Fragment {
         scrollView.addView(textView);
 
         return scrollView;
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.SUPERIOR;
     }
 }

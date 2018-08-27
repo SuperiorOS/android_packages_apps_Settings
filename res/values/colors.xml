@@ -28,7 +28,7 @@
     <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
     <color name="crypt_keeper_password_background">#70606060</color>
 
-    <color name="divider_color">#20ffffff</color>
+    <color name="divider_color">#00ffffff</color>
     <color name="title_color">@android:color/holo_blue_light</color>
     <color name="setup_lock_pattern_view_regular_color_dark">#ffbdbdbd</color>
     <color name="setup_lock_pattern_view_regular_color_light">@color/lock_pattern_view_regular_color</color>

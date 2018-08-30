@@ -105,7 +105,7 @@ public class Changelog extends SettingsPreferenceFragment {
         m = committer.matcher(data);
         while (m.find()){
             sb.setSpan(new ForegroundColorSpan(color), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-            sb.setSpan(new StyleSpan(Typeface.ITALIC), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            sb.setSpan(new StyleSpan(Typeface.NORMAL), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = title.matcher(data);
         while (m.find()){

@@ -20,14 +20,6 @@
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system">
 
-    <Preference
-        android:key="gesture_settings"
-        android:title="@string/gesture_preference_title"
-        android:icon="@drawable/ic_settings_gestures"
-        android:order="-250"
-        android:fragment="com.android.settings.gestures.GestureSettings"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
-
     <!-- Backup -->
     <Preference
         android:key="backup_settings"

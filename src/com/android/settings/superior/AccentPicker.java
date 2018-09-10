@@ -367,11 +367,18 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         Button blackAccent = null;
         if (mView != null) {
             blackAccent = mView.findViewById(R.id.blackAccent);
-            // Change the accent picker button depending on whether or not the dark theme is applied
+            // Change the accent picker button depending on whether or not the dark/black theme is applied
+            if (isUsingDarkTheme() || isUsingBlackTheme()) {
             blackAccent.setBackgroundColor(getResources().getColor(
-                    isUsingDarkTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    R.color.accent_picker_white_accent));
             blackAccent.setBackgroundTintList(getResources().getColorStateList(
-                    isUsingDarkTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    R.color.accent_picker_white_accent));
+            } else {
+            blackAccent.setBackgroundColor(getResources().getColor(
+                    R.color.accent_picker_dark_accent));
+            blackAccent.setBackgroundTintList(getResources().getColorStateList(
+                    R.color.accent_picker_dark_accent));
+            }
         }
         if (blackAccent != null) {
             blackAccent.setOnClickListener(new View.OnClickListener() {
@@ -410,6 +417,19 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         }
         return themeInfo != null && themeInfo.isEnabled();
     }
+
+    // Check for the black theme overlay
+    private boolean isUsingBlackTheme() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black",
+                    UserHandle.USER_CURRENT);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
+    }
+
 
     @Override
     public void onClick(DialogInterface dialog, int which) {

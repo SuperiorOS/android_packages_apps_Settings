@@ -151,6 +151,8 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
                 : getContext().getColor(R.color.switch_accent_color);
         tabs.setTabIndicatorColor(colorAccent);
 
+        getActivity().setTitle(R.string.app_ops_settings);
+
         // We have to do this now because PreferenceFrameLayout looks at it
         // only when the view is added.
         if (container instanceof PreferenceFrameLayout) {
@@ -241,4 +243,11 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
                 return super.onContextItemSelected(item);
         }
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        getActivity().setTitle(R.string.misc_title);
+    }
+
 }

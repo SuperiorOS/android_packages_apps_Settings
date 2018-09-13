@@ -73,7 +73,7 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
         sipper.mPackages = mPackageManager.getPackagesForUid(uid);
         if (sipper.mPackages != null) {
             for (final String packageName : sipper.mPackages) {
-                if (!ArrayUtils.contains(PACKAGES_SERVICE, packageName)) {
+                if (ArrayUtils.contains(PACKAGES_SERVICE, packageName)) {
                     return true;
                 }
             }

@@ -256,4 +256,8 @@
     <string name="accent_preset_68">XiaomiOrange</string>
     <string name="accent_preset_title">Accent preset</string>
 
+    <!-- Home button wake -->
+    <string name="home_wake_button_title">Home button wake-up</string>
+    <string name="home_wake_button_summary">Enable home button to waking up screen</string>
+
 </resources>

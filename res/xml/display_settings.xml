@@ -157,6 +157,11 @@
         android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
         settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
 
+    <com.superior.settings.preferences.SystemSettingSwitchPreference
+        android:key="home_wake_button"
+        android:title="@string/home_wake_button_title"
+        android:summary="@string/home_wake_button_summary" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/device_theme"

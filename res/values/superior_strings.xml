@@ -450,4 +450,7 @@
     <string name="switch_telegram">Telegram</string>
     <string name="switch_md2">Material Design 2</string>
     <string name="switch_oos">OxygenOS 11</string>
+
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
 </resources>

@@ -108,21 +108,6 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
-    <Preference
-        android:key="font_size"
-        android:title="@string/title_font_size"
-        android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
-        settings:controller="com.android.settings.display.FontSizePreferenceController" />
-
-    <com.android.settings.display.ScreenZoomPreference
-        android:key="display_settings_screen_zoom"
-        android:title="@string/screen_zoom_title"
-        android:fragment="com.android.settings.display.ScreenZoomSettings"/>
-
-    <com.android.settings.display.DensityPreference
-        android:key="density"
-        android:title="@string/developer_smallest_width" />
-
     <ListPreference
         android:key="refresh_rate"
         android:title="@string/refresh_rate_title"
@@ -186,6 +171,27 @@
         android:summary="@string/touch_sensitivity_summary"
         settings:controller="com.android.settings.touch.TouchSensitivityPreferenceController"
         settings:keywords="@string/keywords_touch_sensitivity" />
+
+    <PreferenceCategory
+        android:key="density_category"
+        android:title="@string/density_category">
+
+        <Preference
+            android:key="font_size"
+            android:title="@string/title_font_size"
+            android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
+            settings:controller="com.android.settings.display.FontSizePreferenceController" />
+
+        <com.android.settings.display.ScreenZoomPreference
+            android:key="display_settings_screen_zoom"
+            android:title="@string/screen_zoom_title"
+            android:fragment="com.android.settings.display.ScreenZoomSettings"
+            settings:searchable="false"/>
+
+        <com.android.settings.display.DensityPreference
+            android:key="density"
+            android:title="@string/developer_smallest_width" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="theme_customization_category"

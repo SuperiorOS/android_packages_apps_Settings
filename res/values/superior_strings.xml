@@ -41,4 +41,7 @@
 
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
+
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
 </resources>

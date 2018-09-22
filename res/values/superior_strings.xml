@@ -225,5 +225,8 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+	
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
 
 </resources>

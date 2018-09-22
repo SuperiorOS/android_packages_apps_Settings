@@ -45,7 +45,11 @@
         settings:iconStartContentDescription="@string/screen_zoom_make_smaller_desc"
         settings:keywords="@string/keywords_display_size" />
 
-    <SwitchPreferenceCompat
+    <com.android.settings.display.DensityPreference
+        android:key="density"
+        android:title="@string/developer_smallest_width" />
+
+    <SSwitchPreferenceCompat
         android:key="toggle_force_bold_text"
         android:persistent="false"
         android:title="@string/force_bold_text"

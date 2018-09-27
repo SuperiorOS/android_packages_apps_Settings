@@ -28,17 +28,15 @@
        <LinearLayout
     	   android:gravity="center"
 	   android:layout_width="match_parent"
-	   android:layout_height="16dp"
+	   android:layout_height="wrap_content"
            android:selectable="false">
 
            <ImageView
 	       android:layout_width="match_parent"
  	       android:layout_height="match_parent"
- 	       android:layout_marginLeft="36dp"
- 	       android:layout_marginRight="36dp"
 	       android:src="@drawable/ic_superior_banner"
 	       android:adjustViewBounds="true"
-	       android:scaleType="fitCenter" />
+	       android:scaleType="centerInside" />
 
         </LinearLayout>
 

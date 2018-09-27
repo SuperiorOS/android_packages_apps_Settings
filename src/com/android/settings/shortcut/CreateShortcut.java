@@ -92,7 +92,7 @@ public class CreateShortcut extends LauncherActivity {
             intent = new Intent();
         }
         intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
-                Intent.ShortcutIconResource.fromContext(this, R.mipmap.ic_launcher_settings));
+                Intent.ShortcutIconResource.fromContext(this, R.mipmap.ic_launcher));
         intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, label);
 

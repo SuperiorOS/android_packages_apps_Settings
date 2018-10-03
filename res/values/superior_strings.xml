@@ -138,14 +138,6 @@
     <string name="night_bright_minimum">Minimum brightness</string>
     <string name="night_bright_low">Low brightness</string>
     <string name="night_bright_medium">Medium brightness</string>
-	
-	<!-- Scramble PIN Layout on Lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
-	
-	<!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>

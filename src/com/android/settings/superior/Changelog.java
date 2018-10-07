@@ -65,7 +65,7 @@ public class Changelog extends SettingsPreferenceFragment {
         Pattern date = Pattern.compile("(={20}|\\d{4}-\\d{2}-\\d{2})");
         Pattern commit = Pattern.compile("([a-f0-9]{7})");
         Pattern committer = Pattern.compile("\\[(\\D.*?)]");
-        Pattern title = Pattern.compile("([\\*].*)");
+        Pattern title = Pattern.compile("(\\R\\s+[\\*]\\s.*)");
 
         try {
             char tmp[] = new char[2048];

@@ -203,13 +203,13 @@
                 android:layout_gravity="fill_horizontal"
                 android:background="#607D8B" />
 
-            <Button
+           <!-- <Button
                 android:id="@+id/blackAccent"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
-                android:layout_gravity="fill_horizontal" />
+                android:layout_gravity="fill_horizontal" /> -->
 				
             <Button
                 android:id="@+id/candyRedAccent"

@@ -363,6 +363,77 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 }
             });
         }
+		
+		        Button candyRedAccent = null;
+        if (mView != null) {
+            candyRedAccent = mView.findViewById(R.id.candyRedAccent);
+        }
+        if (candyRedAccent != null) {
+            candyRedAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 20, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+         Button paleRedAccent = null;
+        if (mView != null) {
+            paleRedAccent = mView.findViewById(R.id.paleRedAccent);
+        }
+        if (paleRedAccent != null) {
+            paleRedAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 21, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+         Button extendedGreenAccent = null;
+        if (mView != null) {
+            extendedGreenAccent = mView.findViewById(R.id.extendedGreenAccent);
+        }
+        if (extendedGreenAccent != null) {
+            extendedGreenAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 22, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+         Button paleBlueAccent = null;
+        if (mView != null) {
+            paleBlueAccent = mView.findViewById(R.id.paleBlueAccent);
+        }
+        if (paleBlueAccent != null) {
+            paleBlueAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 23, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+         Button jadeGreenAccent = null;
+        if (mView != null) {
+            jadeGreenAccent = mView.findViewById(R.id.jadeGreenAccent);
+        }
+        if (jadeGreenAccent != null) {
+            jadeGreenAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 24, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
 
         Button blackAccent = null;
         if (mView != null) {

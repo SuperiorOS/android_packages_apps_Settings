@@ -210,6 +210,47 @@
                 android:layout_columnWeight="1"
                 android:gravity="center"
                 android:layout_gravity="fill_horizontal" />
+				
+            <Button
+                android:id="@+id/candyRedAccent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FF1744" />
+            <Button
+                android:id="@+id/paleRedAccent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#F05361" />
+            <Button
+                android:id="@+id/extendedGreenAccent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#21ef8b" />
+            <Button
+                android:id="@+id/paleBlueAccent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#A1B6ED" />
+            <Button
+                android:id="@+id/jadeGreenAccent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#9ABC98" />
 
         </GridLayout>
     </ScrollView>

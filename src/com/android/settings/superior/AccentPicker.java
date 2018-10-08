@@ -481,7 +481,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
     private boolean isUsingDarkTheme() {
         OverlayInfo themeInfo = null;
         try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark.superior",
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
                     UserHandle.USER_CURRENT);
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -493,7 +493,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
     private boolean isUsingBlackTheme() {
         OverlayInfo themeInfo = null;
         try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black.superior",
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black",
                     UserHandle.USER_CURRENT);
         } catch (RemoteException e) {
             e.printStackTrace();

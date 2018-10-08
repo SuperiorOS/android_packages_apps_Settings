@@ -488,4 +488,8 @@
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- Toolbar -->
+    <string name="settings_head_title">Superior OS</string>
+
 </resources>

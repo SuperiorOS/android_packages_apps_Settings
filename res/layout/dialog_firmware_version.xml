@@ -35,6 +35,7 @@
 	       android:layout_width="match_parent"
  	       android:layout_height="match_parent"
 	       android:src="@drawable/ic_superior_banner"
+		   android:tint="?android:attr/colorAccent"
 	       android:adjustViewBounds="true"
 	       android:scaleType="centerInside" />
 

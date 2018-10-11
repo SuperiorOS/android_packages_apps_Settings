@@ -34,4 +34,7 @@
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
 
+    <!-- Whether dual band ap is supported -->
+    <bool name="is_dual_band_ap_supported">true</bool>
+
 </resources>

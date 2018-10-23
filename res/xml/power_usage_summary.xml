@@ -69,6 +69,12 @@
         android:title="@string/battery_temp"
         android:selectable="false" />
 
+    <Preference
+        android:key="battery_charging_light"
+        android:fragment="com.android.settings.superior.BatteryLightSettings"
+        android:title="@string/battery_light_settings"
+        android:summary="@string/battery_light_summary" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"

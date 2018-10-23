@@ -228,6 +228,7 @@
 
     <!-- Battery light -->
     <string name="battery_light_settings">Battery charging light</string>
+    <string name="battery_light_summary">Battery light behaviour while on DND, low battery</string>
     <string name="battery_light_enable">Battery light</string>
     <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
     <string name="battery_light_low_blinking_title">Blinking light on low battery</string>

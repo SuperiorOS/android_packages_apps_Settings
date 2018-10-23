@@ -28,6 +28,9 @@ import android.os.BatteryManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings.Global;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
+import androidx.preference.PreferenceScreen;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -69,6 +72,8 @@ public class PowerUsageSummary extends PowerUsageBase implements
     static final String KEY_BATTERY_USAGE = "battery_usage_summary";
     private static final String KEY_BATTERY_TEMP = "battery_temp";
 
+    private static final String KEY_BATTERY_CHARGING_LIGHT = "battery_charging_light";
+
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
     @VisibleForTesting
@@ -86,6 +91,7 @@ public class PowerUsageSummary extends PowerUsageBase implements
     BatteryInfo mBatteryInfo;
     @VisibleForTesting
     PowerGaugePreference mBatteryTempPref;
+    Preference mBatteryLightPref;
 
     @VisibleForTesting
     BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
@@ -185,6 +191,14 @@ public class PowerUsageSummary extends PowerUsageBase implements
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+
+	mBatteryLightPref = (Preference) findPreference(KEY_BATTERY_CHARGING_LIGHT);
+	PreferenceScreen prefSet = getPreferenceScreen();
+	if (!getResources()
+                .getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed))
+	{
+		prefSet.removePreference(mBatteryLightPref);
+	}
     }
 
     @Override

@@ -405,4 +405,10 @@
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+	
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Cellular data</string>
+    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
 </resources>

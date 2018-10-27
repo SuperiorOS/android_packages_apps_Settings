@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018 Superior OS Project
-	 Copyright (C) 2018 Project dotOS
+      Copyright (C) 2018 Project dotOS
 	 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
 	
-	<!-- App Ops Categories -->
+    <!-- App Ops Categories -->
     <string name="app_ops_cat_location">Location</string>
     <string name="app_ops_cat_personal">Personal</string>
     <string name="app_ops_cat_messaging">Messaging</string>
@@ -145,7 +145,7 @@
     <!-- Charging vibration -->
     <string name="charging_vibro_title">Charging vibration</string>
 	
-	<!-- Battery Stats -->
+    <!-- Battery Stats -->
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">Battery history stats are going to be reset</string>
     <string name="ok_string">Ok</string>
@@ -219,4 +219,11 @@
     <string name="expanded_desktop_style">Expanded desktop style</string>
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
+
+    <!-- Selinux -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
 </resources>

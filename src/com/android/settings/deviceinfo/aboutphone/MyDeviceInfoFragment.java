@@ -34,6 +34,7 @@ import com.android.settings.deviceinfo.BuildNumberPreferenceController;
 import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.deviceinfo.FccEquipmentIdPreferenceController;
 import com.android.settings.deviceinfo.IpAddressPreferenceController;
+import com.android.settings.deviceinfo.SELinuxStatusPreferenceController;
 import com.android.settings.deviceinfo.UptimePreferenceController;
 import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
@@ -105,6 +106,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new BluetoothAddressPreferenceController(context, lifecycle));
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new UptimePreferenceController(context, lifecycle));
+        controllers.add(new SELinuxStatusPreferenceController(context));
         return controllers;
     }
 

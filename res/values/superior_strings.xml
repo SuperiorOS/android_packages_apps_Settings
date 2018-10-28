@@ -26,6 +26,12 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">build date, build info</string>
 
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
      <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default" translatable="false">Locate the fingerprint sensor on the front of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default" translatable="false">Locate the fingerprint sensor on the left side of your phone.</string>

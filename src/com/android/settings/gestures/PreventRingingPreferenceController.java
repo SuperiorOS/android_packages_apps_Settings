@@ -18,6 +18,7 @@ package com.android.settings.gestures;
 
 import static android.provider.Settings.Secure.VOLUME_HUSH_GESTURE;
 import static android.provider.Settings.Secure.VOLUME_HUSH_MUTE;
+import static android.provider.Settings.Secure.VOLUME_HUSH_MUTE_NO_MEDIA;
 import static android.provider.Settings.Secure.VOLUME_HUSH_OFF;
 import static android.provider.Settings.Secure.VOLUME_HUSH_VIBRATE;
 
@@ -87,6 +88,9 @@ public class PreventRingingPreferenceController extends BasePreferenceController
                     case VOLUME_HUSH_MUTE:
                         pref.setValue(String.valueOf(value));
                         break;
+                    case VOLUME_HUSH_MUTE_NO_MEDIA:
+                        pref.setValue(String.valueOf(value));
+                        break;
                     default:
                         pref.setValue(String.valueOf(VOLUME_HUSH_OFF));
                 }
@@ -105,6 +109,9 @@ public class PreventRingingPreferenceController extends BasePreferenceController
                 break;
             case VOLUME_HUSH_MUTE:
                 summary = R.string.prevent_ringing_option_mute_summary;
+                break;
+            case VOLUME_HUSH_MUTE_NO_MEDIA:
+                summary = R.string.prevent_ringing_option_mute_no_media_summary;
                 break;
             default:
                 summary = R.string.prevent_ringing_option_none_summary;

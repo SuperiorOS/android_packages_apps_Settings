@@ -3334,5 +3334,8 @@
                 android:value="com.superior.settings.SuperiorSettings" />
         </activity>
 
+        <!-- Gesture Anywhere -->
+        <activity android:name="com.superior.settings.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name="com.superior.settings.gestureanywhere.GestureAnywhereCreateGestureActivity" />
     </application>
 </manifest>

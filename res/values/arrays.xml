@@ -1171,6 +1171,7 @@
     <string-array name="gesture_prevent_ringing_entries" translatable="false">
         <item>@string/prevent_ringing_option_vibrate</item>
         <item>@string/prevent_ringing_option_mute</item>
+        <item>@string/prevent_ringing_option_mute_no_media</item>
         <item>@string/prevent_ringing_option_none</item>
     </string-array>
 
@@ -1178,6 +1179,7 @@
     <string-array name="gesture_prevent_ringing_values" translatable="false">
         <item>1</item>
         <item>2</item>
+        <item>3</item>
         <item>0</item>
     </string-array>
 

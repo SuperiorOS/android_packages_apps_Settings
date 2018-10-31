@@ -20,25 +20,47 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.UserManager;
+import android.os.Bundle;
 import android.provider.Settings;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
 
 import com.android.internal.R;
+import com.android.settings.core.BasePreferenceController;
+import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settings.widget.VideoPreference;
+import com.android.settingslib.core.lifecycle.LifecycleObserver;
+import com.android.settingslib.core.lifecycle.events.OnCreate;
+import com.android.settingslib.core.lifecycle.events.OnPause;
+import com.android.settingslib.core.lifecycle.events.OnResume;
+import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 
-public class SwipeUpPreferenceController extends GesturePreferenceController {
+public class SwipeUpPreferenceController extends BasePreferenceController
+        implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener,
+        LifecycleObserver, OnResume, OnPause, OnCreate, OnSaveInstanceState {
 
     private final int ON = 1;
     private final int OFF = 0;
 
     private static final String ACTION_QUICKSTEP = "android.intent.action.QUICKSTEP_SERVICE";
     private static final String PREF_KEY_VIDEO = "gesture_swipe_up_video";
-    private final UserManager mUserManager;
+    @VisibleForTesting
+    static final String KEY_VIDEO_PAUSED = "key_video_paused";
+
+    private static final String PREF_SWIPE_UP = "gesture_swipe_up";
+    private static final String PREF_FULL_MODE = "full_gesture_mode";
+
+    private VideoPreference mVideoPreference;
+    @VisibleForTesting
+    boolean mVideoPaused;
+
+    private PreferenceScreen mPreferenceScreen;
 
     public SwipeUpPreferenceController(Context context, String key) {
         super(context, key);
-        mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
     }
 
     static boolean isGestureAvailable(Context context) {
@@ -67,34 +89,94 @@ public class SwipeUpPreferenceController extends GesturePreferenceController {
         return isGestureAvailable(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
-    @Override
+    /*@Override
     public boolean isSliceable() {
         return TextUtils.equals(getPreferenceKey(), "gesture_swipe_up");
+    }*/
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        if (isAvailable()) {
+            mVideoPreference = (VideoPreference) screen.findPreference(PREF_KEY_VIDEO);
+        }
+        mPreferenceScreen = screen;
     }
 
     @Override
-    protected String getVideoPrefKey() {
-        return PREF_KEY_VIDEO;
+    public void onCreate(Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            mVideoPaused = savedInstanceState.getBoolean(KEY_VIDEO_PAUSED, false);
+        }
+    }
+     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putBoolean(KEY_VIDEO_PAUSED, mVideoPaused);
     }
 
     @Override
-    public boolean setChecked(boolean isChecked) {
-        setSwipeUpPreference(mContext, mUserManager, isChecked ? ON : OFF);
-        return true;
+    public void onPause() {
+        if (mVideoPreference != null) {
+            mVideoPaused = mVideoPreference.isVideoPaused();
+            mVideoPreference.onViewInvisible();
+        }
     }
-
-    public static void setSwipeUpPreference(Context context, UserManager userManager,
-            int enabled) {
-        Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, enabled);
+     @Override
+    public void onResume() {
+        if (mVideoPreference != null) {
+            mVideoPreference.onViewVisible(mVideoPaused);
+        }
     }
 
     @Override
-    public boolean isChecked() {
-        final int defaultValue = mContext.getResources()
+    public void updateState(Preference preference) {
+        super.updateState(preference);
+        if (preference != null && preference instanceof SwitchPreference) {
+            SwitchPreference pref = (SwitchPreference) preference;
+            if (TextUtils.equals(pref.getKey(), PREF_SWIPE_UP)) {
+                boolean enabled = Settings.Secure.getInt(
+                        mContext.getContentResolver(),
+                        Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, defaultSwipeUpValue()) == ON;
+                pref.setChecked(enabled);
+            } else if (TextUtils.equals(pref.getKey(), PREF_FULL_MODE)) {
+                boolean enabled = Settings.System.getInt(
+                        mContext.getContentResolver(),
+                        Settings.System.FULL_GESTURE_NAVBAR, OFF) == ON;
+                pref.setChecked(enabled);
+                pref.setEnabled(swipeUpenabled());
+            }
+        }
+    }
+
+    private boolean swipeUpenabled() {
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, defaultSwipeUpValue()) == ON;
+    }
+
+    private int defaultSwipeUpValue() {
+        return mContext.getResources()
                 .getBoolean(R.bool.config_swipe_up_gesture_default) ? ON : OFF;
-        final int swipeUpEnabled = Settings.Secure.getInt(mContext.getContentResolver(),
-                Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, defaultValue);
-        return swipeUpEnabled != OFF;
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        SwitchPreference pref = (SwitchPreference) preference;
+        if (TextUtils.equals(pref.getKey(), PREF_SWIPE_UP)) {
+            boolean enabled = ((Boolean) newValue).booleanValue();
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                    Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, enabled ? ON : OFF);
+            pref.setChecked(enabled);
+            SwitchPreference fullModePref = (SwitchPreference) mPreferenceScreen.findPreference(PREF_FULL_MODE);
+            if (fullModePref != null) {
+                fullModePref.setEnabled(enabled);
+            }
+        } else if (TextUtils.equals(pref.getKey(), PREF_FULL_MODE)) {
+            boolean enabled = ((Boolean) newValue).booleanValue();
+            Settings.System.putInt(mContext.getContentResolver(),
+                    Settings.System.FULL_GESTURE_NAVBAR, enabled ? ON : OFF);
+            pref.setChecked(enabled);
+        }
+
+         return true;
     }
 }

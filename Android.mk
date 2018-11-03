@@ -22,6 +22,7 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../SuperiorSettings/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
+    $(ANDROID_SUPPORT_DESIGN_TARGETS) \
     android-slices-builders \
     android-slices-core \
     android-slices-view \

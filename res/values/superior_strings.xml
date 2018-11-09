@@ -124,4 +124,8 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+
+    <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
 </resources>

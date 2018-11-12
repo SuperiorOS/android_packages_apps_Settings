@@ -78,8 +78,12 @@ public class DisplayRotation extends SettingsPreferenceFragment implements OnPre
         mRotation180Pref = (SwitchPreference) findPreference(ROTATION_180_PREF);
         mRotation270Pref = (SwitchPreference) findPreference(ROTATION_270_PREF);
 
+        int mAllowAllRotations = getResources().getBoolean(
+                          com.android.internal.R.bool.config_allowAllRotations) ? 1 : 0;
+
         int mode = Settings.System.getInt(getContentResolver(),
                         Settings.System.ACCELEROMETER_ROTATION_ANGLES,
+                        mAllowAllRotations == 1 ? ROTATION_0_MODE|ROTATION_90_MODE|ROTATION_180_MODE|ROTATION_270_MODE:
                         ROTATION_0_MODE|ROTATION_90_MODE|ROTATION_270_MODE);
 
         mRotation0Pref.setChecked((mode & ROTATION_0_MODE) != 0);

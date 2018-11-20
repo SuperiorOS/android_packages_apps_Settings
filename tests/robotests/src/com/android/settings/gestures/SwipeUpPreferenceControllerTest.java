@@ -55,7 +55,7 @@ public class SwipeUpPreferenceControllerTest {
 
     @Before
     public void setUp() {
-        SettingsShadowResources.overrideResource(R.bool.config_swipe_up_gesture_setting_available,
+        SettingsShadowResources.overrideResource(R.bool.config_custom_swipe_up_gesture_setting_available,
                 true);
         SettingsShadowResources.overrideResource(R.bool.config_swipe_up_gesture_default, true);
 
@@ -82,7 +82,7 @@ public class SwipeUpPreferenceControllerTest {
 
     @Test
     public void testIsGestureAvailable_overlayDisabled_matchingServiceExists_shouldReturnFalse() {
-        SettingsShadowResources.overrideResource(R.bool.config_swipe_up_gesture_setting_available,
+        SettingsShadowResources.overrideResource(R.bool.config_custom_swipe_up_gesture_setting_available,
                 false);
 
         final ComponentName recentsComponentName = ComponentName.unflattenFromString(

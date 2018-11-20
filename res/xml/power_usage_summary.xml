@@ -55,4 +55,9 @@
         android:title="@string/device_screen_usage"
         android:selectable="false" />
 
+    <com.android.settings.fuelgauge.PowerGaugePreference
+        android:key="battery_temp"
+        android:title="@string/battery_temp"
+        android:selectable="false" />
+
 </PreferenceScreen>

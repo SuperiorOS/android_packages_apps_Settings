@@ -84,7 +84,7 @@
         android:order="22"
         android:title="@string/status_imei"
         settings:keywords="@string/keywords_imei_info"
-        android:summary="@string/imei_information_summary"/>
+        android:summary="@string/summary_placeholder"/>
 
     <!-- Android version -->
     <Preference

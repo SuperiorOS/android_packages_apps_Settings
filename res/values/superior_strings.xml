@@ -394,4 +394,9 @@
     <string name="app_ops_labels_write_external_storage">Write to external storage</string>
     <string name="app_ops_labels_write_mms">Write an MMS message</string>
     <string name="app_ops_labels_write_sms">Write SMS</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
 </resources>

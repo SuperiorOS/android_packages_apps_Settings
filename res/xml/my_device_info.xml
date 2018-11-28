@@ -27,17 +27,25 @@
         android:layout="@layout/settings_entity_header"
         android:selectable="false"/>
 
+	<!-- Changelog -->
+       <Preference
+        android:key="changelog"
+        android:order="1"
+        android:title="@string/changelog_title"
+        android:summary="@string/changelog_summary"
+        android:fragment="com.android.settings.superior.Changelog" />
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
-        android:order="1"
+        android:order="2"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="2"
+        android:order="3"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"/>
 
@@ -49,14 +57,14 @@
 
     <Preference
         android:key="emergency_info"
-        android:order="4"
+        android:order="5"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- SIM status -->
     <Preference
         android:key="sim_status"
-        android:order="8"
+        android:order="9"
         android:title="@string/sim_status_title"
         settings:keywords="@string/keywords_sim_status"
         android:summary="@string/summary_placeholder"

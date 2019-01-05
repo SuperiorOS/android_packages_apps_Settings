@@ -52,15 +52,12 @@ public class SwipeUpPreferenceController extends BasePreferenceController
 
     private static final String PREF_SWIPE_UP = "gesture_swipe_up";
     private static final String PREF_FULL_MODE = "full_gesture_mode";
-    private static final String PREF_FULL_MODE_DT2S = "full_gesture_mode_dt2s";
 
     private VideoPreference mVideoPreference;
     @VisibleForTesting
     boolean mVideoPaused;
 
-    private SwitchPreference mSwipeUpPreference;
-    private SwitchPreference mFullGestureModePreference;
-    private SwitchPreference mFullGestureModeDt2sPreference;
+    private PreferenceScreen mPreferenceScreen;
 
     public SwipeUpPreferenceController(Context context, String key) {
         super(context, key);
@@ -104,11 +101,8 @@ public class SwipeUpPreferenceController extends BasePreferenceController
         super.displayPreference(screen);
         if (isAvailable()) {
             mVideoPreference = (VideoPreference) screen.findPreference(PREF_KEY_VIDEO);
-
-            mSwipeUpPreference = (SwitchPreference) screen.findPreference(PREF_SWIPE_UP);
-            mFullGestureModePreference = (SwitchPreference) screen.findPreference(PREF_FULL_MODE);
-            mFullGestureModeDt2sPreference = (SwitchPreference) screen.findPreference(PREF_FULL_MODE_DT2S);
         }
+        mPreferenceScreen = screen;
     }
 
     @Override
@@ -147,14 +141,11 @@ public class SwipeUpPreferenceController extends BasePreferenceController
                         Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, defaultSwipeUpValue()) == ON;
                 pref.setChecked(enabled);
             } else if (TextUtils.equals(pref.getKey(), PREF_FULL_MODE)) {
-                pref.setChecked(fullGestureModeEnabled());
-                pref.setEnabled(swipeUpenabled());
-            } else if (TextUtils.equals(pref.getKey(), PREF_FULL_MODE_DT2S)) {
                 boolean enabled = Settings.System.getInt(
                         mContext.getContentResolver(),
-                        Settings.System.FULL_GESTURE_NAVBAR_DT2S, OFF) == ON;
+                        Settings.System.FULL_GESTURE_NAVBAR, OFF) == ON;
                 pref.setChecked(enabled);
-                pref.setEnabled(swipeUpenabled() && fullGestureModeEnabled());
+                pref.setEnabled(swipeUpenabled());
             }
         }
     }
@@ -169,11 +160,6 @@ public class SwipeUpPreferenceController extends BasePreferenceController
                 .getBoolean(R.bool.config_swipe_up_gesture_default) ? ON : OFF;
     }
 
-    private boolean fullGestureModeEnabled() {
-        return Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.FULL_GESTURE_NAVBAR, OFF) == ON;
-    }
-
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         SwitchPreference pref = (SwitchPreference) preference;
@@ -182,24 +168,14 @@ public class SwipeUpPreferenceController extends BasePreferenceController
             Settings.Secure.putInt(mContext.getContentResolver(),
                     Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, enabled ? ON : OFF);
             pref.setChecked(enabled);
-            if (mFullGestureModePreference != null) {
-                mFullGestureModePreference.setEnabled(enabled);
-            }
-            if (mFullGestureModeDt2sPreference != null) {
-                mFullGestureModeDt2sPreference.setEnabled(enabled);
+            SwitchPreference fullModePref = (SwitchPreference) mPreferenceScreen.findPreference(PREF_FULL_MODE);
+            if (fullModePref != null) {
+                fullModePref.setEnabled(enabled);
             }
         } else if (TextUtils.equals(pref.getKey(), PREF_FULL_MODE)) {
             boolean enabled = ((Boolean) newValue).booleanValue();
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.FULL_GESTURE_NAVBAR, enabled ? ON : OFF);
-            pref.setChecked(enabled);
-            if (mFullGestureModeDt2sPreference != null) {
-                mFullGestureModeDt2sPreference.setEnabled(enabled);
-            }
-        } else if (TextUtils.equals(pref.getKey(), PREF_FULL_MODE_DT2S)) {
-            boolean enabled = ((Boolean) newValue).booleanValue();
-            Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.FULL_GESTURE_NAVBAR_DT2S, enabled ? ON : OFF);
             pref.setChecked(enabled);
         }
 

@@ -474,14 +474,6 @@
     <item msgid="4338089220026248848">"A la memòria cau (client de l\'activitat)"</item>
     <item msgid="6652164677254579050">"A la memòria cau (buit)"</item>
   </string-array>
-  <string-array name="color_picker">
-    <item msgid="7631642672260600032">"Verd blavós"</item>
-    <item msgid="8332294763632946560">"Blau"</item>
-    <item msgid="2023216417616991392">"Anyil"</item>
-    <item msgid="3170497246594232819">"Porpra"</item>
-    <item msgid="4608643045752965568">"Rosa"</item>
-    <item msgid="6131821495505931173">"Vermell"</item>
-  </string-array>
   <string-array name="automatic_storage_management_days">
     <item msgid="687318592238852312">"Més de 30 dies d\'antiguitat"</item>
     <item msgid="2900554746706302178">"Més de 60 dies d\'antiguitat"</item>

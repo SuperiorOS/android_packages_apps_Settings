@@ -474,14 +474,6 @@
     <item msgid="4338089220026248848">"Imewekwa akiba (kiteja cha shughuli)"</item>
     <item msgid="6652164677254579050">"Imewekwa akiba (tupu)"</item>
   </string-array>
-  <string-array name="color_picker">
-    <item msgid="7631642672260600032">"Teal"</item>
-    <item msgid="8332294763632946560">"Samawati"</item>
-    <item msgid="2023216417616991392">"Bluu"</item>
-    <item msgid="3170497246594232819">"Zambarau"</item>
-    <item msgid="4608643045752965568">"Waridi"</item>
-    <item msgid="6131821495505931173">"Nyekundu"</item>
-  </string-array>
   <string-array name="automatic_storage_management_days">
     <item msgid="687318592238852312">"Zilizokaa zaidi ya siku 30"</item>
     <item msgid="2900554746706302178">"Zilizokaa zaidi ya siku 60"</item>

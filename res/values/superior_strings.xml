@@ -411,4 +411,26 @@
     <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
+	
+    <!-- Titles for sim color for multi-sim -->
+    <string name="color_Amber_700">Amber</string>
+    <string name="color_Carbon_700">Carbon</string>
+    <string name="color_Blue_700">Blue</string>
+    <string name="color_Light_Blue_700">Light Blue</string>
+    <string name="color_Brown_700">Brown</string>
+    <string name="color_Cyan_700">Cyan</string>
+    <string name="color_Green_700">Green</string>
+    <string name="color_Light_Green_700">Light Green</string>
+    <string name="color_Grey_700">Grey</string>
+    <string name="color_Blue_Grey_700">Blue Grey</string>
+    <string name="color_Indigo_700">Indigo</string>
+    <string name="color_Lime_700">Lime</string>
+    <string name="color_Orange_700">Orange</string>
+    <string name="color_Deep_Orange_700">Deep Orange</string>
+    <string name="color_Pink_700">Pink</string>
+    <string name="color_Purple_700">Purple</string>
+    <string name="color_Deep_Purple_700">Deep Purple</string>
+    <string name="color_Vermilion_700">Red</string>
+    <string name="color_Teal_700">Teal</string>
+    <string name="color_Yellow_700">Yellow</string>
 </resources>

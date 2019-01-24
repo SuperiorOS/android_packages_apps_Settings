@@ -474,14 +474,6 @@
     <item msgid="4338089220026248848">"හැඹිලි ගත කළ (ක්‍රියාකාරකම් සේවාලාභියා)"</item>
     <item msgid="6652164677254579050">"හැඹිලි ගත කළ (හිස්)"</item>
   </string-array>
-  <string-array name="color_picker">
-    <item msgid="7631642672260600032">"සේරා"</item>
-    <item msgid="8332294763632946560">"නිල්"</item>
-    <item msgid="2023216417616991392">"ඉන්ඩිගෝ"</item>
-    <item msgid="3170497246594232819">"දම්"</item>
-    <item msgid="4608643045752965568">"රෝස"</item>
-    <item msgid="6131821495505931173">"රතු"</item>
-  </string-array>
   <string-array name="automatic_storage_management_days">
     <item msgid="687318592238852312">"දින 30කට වඩා පැරණි"</item>
     <item msgid="2900554746706302178">"දින 60කට වඩා පැරණි"</item>

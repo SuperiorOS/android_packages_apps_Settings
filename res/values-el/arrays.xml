@@ -474,14 +474,6 @@
     <item msgid="4338089220026248848">"Αποθηκευμένο στην κρυφή μνήμη (δραστηριότητα πελάτη)"</item>
     <item msgid="6652164677254579050">"Αποθηκευμένο στην κρυφή μνήμη (κενό)"</item>
   </string-array>
-  <string-array name="color_picker">
-    <item msgid="7631642672260600032">"Γαλαζοπράσινο"</item>
-    <item msgid="8332294763632946560">"Μπλε"</item>
-    <item msgid="2023216417616991392">"Indigo"</item>
-    <item msgid="3170497246594232819">"Μοβ"</item>
-    <item msgid="4608643045752965568">"Ροζ"</item>
-    <item msgid="6131821495505931173">"Κόκκινο"</item>
-  </string-array>
   <string-array name="automatic_storage_management_days">
     <item msgid="687318592238852312">"Πάνω από 30 ημερών"</item>
     <item msgid="2900554746706302178">"Πάνω από 60 ημερών"</item>

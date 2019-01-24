@@ -474,14 +474,6 @@
     <item msgid="4338089220026248848">"Кэшавана (кліент дзейнасці)"</item>
     <item msgid="6652164677254579050">"Кэшавана (пуста)"</item>
   </string-array>
-  <string-array name="color_picker">
-    <item msgid="7631642672260600032">"Сіне-зялёны"</item>
-    <item msgid="8332294763632946560">"Сiнi"</item>
-    <item msgid="2023216417616991392">"Індыга"</item>
-    <item msgid="3170497246594232819">"Фіялетавы"</item>
-    <item msgid="4608643045752965568">"Ружовы"</item>
-    <item msgid="6131821495505931173">"Чырвоны"</item>
-  </string-array>
   <string-array name="automatic_storage_management_days">
     <item msgid="687318592238852312">"Старэйшыя за 30 дзён"</item>
     <item msgid="2900554746706302178">"Старэйшыя за 60 дзён"</item>

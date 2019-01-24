@@ -474,14 +474,6 @@
     <item msgid="4338089220026248848">"কেশ্ব কৰা হোৱা (কাৰ্যকলাপ গ্ৰাহক)"</item>
     <item msgid="6652164677254579050">"কেশ্ব কৰা হোৱা (খালী)"</item>
   </string-array>
-  <string-array name="color_picker">
-    <item msgid="7631642672260600032">"গাঢ় সেউজ-নীলা"</item>
-    <item msgid="8332294763632946560">"নীলা"</item>
-    <item msgid="2023216417616991392">"ইণ্ডিগ\'"</item>
-    <item msgid="3170497246594232819">"বেঙুনীয়া"</item>
-    <item msgid="4608643045752965568">"গুলপীয়া"</item>
-    <item msgid="6131821495505931173">"ৰঙা"</item>
-  </string-array>
   <string-array name="automatic_storage_management_days">
     <item msgid="687318592238852312">"৩০দিনতকৈ অধিক পুৰণি"</item>
     <item msgid="2900554746706302178">"৬০ দিনতকৈ অধিক পুৰণি"</item>

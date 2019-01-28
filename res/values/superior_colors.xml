@@ -19,4 +19,7 @@
     <!-- SuperiorSettings Color -->
     <color name="homepage_superior_background">#536dfe</color>
 
+    <!-- Shortcuts -->
+    <color name="icon_accent_custom">@*android:color/accent_device_default_light</color> 
+
 </resources>

@@ -418,4 +418,15 @@
     <string name="color_Vermilion_700">Red</string>
     <string name="color_Teal_700">Teal</string>
     <string name="color_Yellow_700">Yellow</string>
+
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Thermal control profile</string>
+    <string name="thermal_control_per_app_default">No optimization</string>
+    <string name="thermal_control_per_app_benchmark">Performance</string>
+    <string name="thermal_control_per_app_games">Games</string>
+    <string name="thermal_control_per_app_browser">Browser</string>
+    <string name="thermal_control_per_app_video_playback">Video playback</string>
+    <string name="thermal_control_per_app_dialer">Dialer</string>
+    <string name="thermal_control_per_app_camera">Camera</string>
+
 </resources>

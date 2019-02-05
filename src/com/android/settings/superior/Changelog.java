@@ -48,11 +48,6 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Changelog extends SettingsPreferenceFragment {
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
-    }
-
     private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";
 
     @Override
@@ -60,7 +55,6 @@ public class Changelog extends SettingsPreferenceFragment {
                 Bundle savedInstanceState) {
         InputStreamReader inputReader = null;
         String text = null;
-
         StringBuilder data = new StringBuilder();
 
         Pattern date = Pattern.compile("(={20}|\\d{4}-\\d{2}-\\d{2})");
@@ -106,7 +100,7 @@ public class Changelog extends SettingsPreferenceFragment {
         m = committer.matcher(data);
         while (m.find()){
             sb.setSpan(new ForegroundColorSpan(color), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-            sb.setSpan(new StyleSpan(Typeface.NORMAL), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            sb.setSpan(new StyleSpan(Typeface.ITALIC), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = title.matcher(data);
         while (m.find()){
@@ -124,5 +118,10 @@ public class Changelog extends SettingsPreferenceFragment {
         scrollView.addView(textView);
 
         return scrollView;
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.SUPERIOR;
     }
 }

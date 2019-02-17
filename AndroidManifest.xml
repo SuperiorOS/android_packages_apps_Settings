@@ -96,9 +96,6 @@
     <uses-permission android:name="android.permission.USE_RESERVED_DISK" />
     <uses-permission android:name="android.permission.MANAGE_SCOPED_ACCESS_DIRECTORY_PERMISSIONS" />
 
-    <!-- DU Font Engine -->
-    <uses-permission android:name="android.permission.ACCESS_FONT_MANAGER" />
-
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""

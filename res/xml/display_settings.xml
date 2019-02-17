@@ -149,11 +149,6 @@
         android:key="theme_category"
         android:title="@string/theme_category_title">
 
-    <com.android.settings.display.FontDialogPreference
-        android:key="custom_font"
-        android:title="@string/font_picker_title"
-        android:persistent="false" />
-
     <com.superior.settings.preferences.SystemSettingSwitchPreference
          android:key="force_allow_system_themes"
          android:title="@string/force_allow_system_themes_title"

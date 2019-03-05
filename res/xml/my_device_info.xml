@@ -87,14 +87,6 @@
         settings:keywords="@string/keywords_android_version"
         android:summary="@string/summary_placeholder"/>
 
-    <!-- Superior OS version --> 
-    <Preference 
-        android:key="superior_version"
-        android:order="32"
-        android:title="@string/superior_version"
-        settings:keywords="@string/keywords_superior_version"
-        android:summary="@string/superior_version_default"/>
-
      <!-- Build date -->
     <Preference 
        android:key="build_date"

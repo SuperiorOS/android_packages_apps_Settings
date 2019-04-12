@@ -27,7 +27,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-		android:orientation="vertical"
+        android:orientation="vertical"
         android:background="?android:attr/colorPrimary">
 
         <RelativeLayout
@@ -42,10 +42,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
                 android:fontFamily="@font/google_sans_bold"
-                android:text="@string/settings_label"
-                android:textColor="?android:attr/textColorPrimary"
-                android:textSize="32sp"
+                android:text="@string/settings_head_title"
+                android:textColor="?android:attr/colorAccent"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 				
 			<com.android.settings.dashboard.DashboardProfileIcon

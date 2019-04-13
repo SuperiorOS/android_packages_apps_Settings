@@ -390,7 +390,7 @@
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
-
+	
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_data">Cellular data</string>
     <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
@@ -418,10 +418,4 @@
     <string name="color_Vermilion_700">Red</string>
     <string name="color_Teal_700">Teal</string>
     <string name="color_Yellow_700">Yellow</string>
-
-    <string name="full_gesture_mode_title">Enable full gesture mode</string>
-    <string name="full_gesture_mode_summary">This mode disables the back button and you can trigger a back button action by a left swipe on navbar. Right swipe still triggers the last-app and the overview apps scrolling. To go home you can tap on any navbar empty space, not only the home button. When keyboard is showing, long press on navbar to move the text cursor.</string>
-    <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
-    <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
-
 </resources>

@@ -1,0 +1,25 @@
+<!--
+    Copyright (C) 2019 The Superior OS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24.0dp"
+    android:height="24.0dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M13,7 L11,11.8125 L9.09375,8.6875 C8.89453,8.28906,8.40625,8,7.90625,8 L0,8 C0,8,1.21094,10,1.8125,10 L7.5,10 C7.89844,10,8.20703,10.1055,8.40625,10.4063 L11,14.5938 L13,10 L15,14.5938 L17.6875,10.5 C17.8867,10.1992,18.0938,10,18.5938,10 L24.1875,10 C24.5859,10,26,8,26,8 L18,8 C17.6016,8,17.1055,8.28906,16.9063,8.6875 L15,11.8125 Z M2,11 L2.8125,12.3125 C3.01172,12.7109,3.21094,13,3.8125,13 L8.6875,13 L8,11.6875 C7.89844,11.3867,7.49219,11.1016,7.09375,11 Z M18.9063,11 C18.5078,11.1016,18.1016,11.3867,18,11.6875 L17.3125,13 L22.3125,13 C22.9141,13,23.1133,12.7109,23.3125,12.3125 L24,11 Z M13,12.5938 L11,16.5938 L9.8125,14.6875 C9.61328,14.2891,9.09375,14,8.59375,14 L3.6875,14 C3.6875,14,4.89844,16,5.5,16 L8.1875,16 C8.58594,16,8.89453,16.1055,9.09375,16.4063 L11,19.4063 L13,15.6875 L15,19.4063 L17,16.5 C17.1992,16.1992,17.4063,16,17.9063,16 L20.5,16 C20.8984,16,22.3125,14,22.3125,14 L17.3125,14 C16.8125,14,16.293,14.2891,16.0938,14.6875 L15,16.5938 Z" />
+</vector>

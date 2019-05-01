@@ -3415,7 +3415,7 @@
 
         <activity android:name="Settings$SuperiorSettingsActivity"
             android:label="@string/superior_settings_title"
-            android:icon="@drawable/ic_superiorsettings"
+            android:icon="@drawable/ic_homepage_superiorsettings"
             android:taskAffinity="com.android.settings">
             <intent-filter android:priority="1">
                 <action android:name="superior.settings.SuperiorSettings" />

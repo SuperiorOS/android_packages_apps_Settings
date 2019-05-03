@@ -165,6 +165,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.superior.settings.SuperiorSettings;
 import com.superior.settings.fragments.PowermenuSettings;
 
+import com.android.settings.livedisplay.LiveDisplaySettings;
+
 public class SettingsGateway {
 
     /**
@@ -316,7 +318,8 @@ public class SettingsGateway {
             MediaControlsSettings.class.getName(),
             SuperiorSettings.class.getName(),
             PowermenuSettings.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            LiveDisplaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

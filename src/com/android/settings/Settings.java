@@ -180,4 +180,8 @@ public class Settings extends SettingsActivity {
 
     // SuperiorOS Additions.
     public static class SuperiorSettingsActivity extends SettingsActivity {}
+
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
+
 }

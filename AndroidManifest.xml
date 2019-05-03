@@ -100,6 +100,10 @@
     <!-- Thermal controller -->
     <uses-permission android:name="org.pixelexperience.thermalcontroller.MANAGE_SETTINGS" />
 
+    <!-- LiveDisplay -->
+    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
@@ -3363,6 +3367,10 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.applications.manageapplications.ManageApplications" />
         </activity>
+
+    <!-- LiveDisplay -->
+    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="lineageos.permission.MANAGE_LIVEDISPLAY" />
 
         <provider android:name=".slices.SettingsSliceProvider"
                   android:authorities="com.android.settings.slices;android.settings.slices"

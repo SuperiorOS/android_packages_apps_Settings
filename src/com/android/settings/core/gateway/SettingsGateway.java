@@ -145,6 +145,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.superior.settings.SuperiorSettings;
 import com.superior.settings.fragments.SmartPixels;
+import com.android.settings.livedisplay.LiveDisplaySettings;
 
 public class SettingsGateway {
 
@@ -278,6 +279,7 @@ public class SettingsGateway {
             FlingSettingsActivity.class.getName(),
             PulseSettingsActivity.class.getName(),
             SmartPixels.class.getName(),
+            LiveDisplaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

@@ -46,7 +46,6 @@ import com.android.settings.deviceinfo.SELinuxStatusPreferenceController;
 import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController;
 import com.android.settings.deviceinfo.BuildDatePreferenceController;
-import com.android.settings.deviceinfo.DeviceMaintainerPreference;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.widget.EntityHeaderController;

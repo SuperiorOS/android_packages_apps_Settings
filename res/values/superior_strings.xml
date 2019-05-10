@@ -77,9 +77,6 @@
     <string name="force_theme_warning_title">Warning !</string>
     <string name="force_theme_warning_message">This could cause conflicts between substratum themes and system themes. We hope you know what are you getting into. #DontBlameUsLater :D</string>
 
-    <!-- device maintainer -->
-    <string name="device_maintainer">Your Noob Guy</string>
-
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_disabled">Disabled</string>

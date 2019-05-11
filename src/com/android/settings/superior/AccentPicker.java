@@ -448,6 +448,20 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 }
             });
         }
+         Button qGreenAccent = null;
+        if (mView != null) {
+            qGreenAccent = mView.findViewById(R.id.qGreenAccent);
+        }
+        if (qGreenAccent != null) {
+            qGreenAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 26, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
 
 /*        Button blackAccent = null;
         if (mView != null) {

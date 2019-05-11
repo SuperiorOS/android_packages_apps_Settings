@@ -253,12 +253,20 @@
                 android:background="#9ABC98" />
             <Button
                 android:id="@+id/qPurpleAccent"
-                android:layout_width="70dp"
+                android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
                 android:layout_gravity="fill_horizontal"
                 android:background="#B39DDB" />
+            <Button
+                android:id="@+id/qGreenAccent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#1B873B" />
 
         </GridLayout>
     </ScrollView>

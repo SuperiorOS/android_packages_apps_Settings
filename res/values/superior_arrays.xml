@@ -423,30 +423,6 @@
         <item>@string/app_ops_permissions_always_ask</item>
     </string-array>
 
-    <!-- Array of titles for sim color for multi-sim -->
-    <string-array name="color_picker">
-        <item>@string/color_Amber_700</item>
-        <item>@string/color_Carbon_700</item>
-        <item>@string/color_Blue_700</item>
-        <item>@string/color_Light_Blue_700</item>
-        <item>@string/color_Brown_700</item>
-        <item>@string/color_Cyan_700</item>
-        <item>@string/color_Green_700</item>
-        <item>@string/color_Light_Green_700</item>
-        <item>@string/color_Grey_700</item>
-        <item>@string/color_Blue_Grey_700</item>
-        <item>@string/color_Indigo_700</item>
-        <item>@string/color_Lime_700</item>
-        <item>@string/color_Orange_700</item>
-        <item>@string/color_Deep_Orange_700</item>
-        <item>@string/color_Pink_700</item>
-        <item>@string/color_Purple_700</item>
-        <item>@string/color_Deep_Purple_700</item>
-        <item>@string/color_Vermilion_700</item>
-        <item>@string/color_Teal_700</item>
-        <item>@string/color_Yellow_700</item>
-    </string-array>
-
     <!-- Thermal control per app -->
     <string-array name="thermal_control_per_app_entries" translatable="false">
         <item>@string/thermal_control_per_app_default</item>
@@ -466,5 +442,4 @@
         <item>8</item>
         <item>12</item>
     </string-array>
-
 </resources>

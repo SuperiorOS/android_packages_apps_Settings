@@ -25,6 +25,7 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.BrightnessLevelPreferenceController;
 import com.android.settings.display.CameraGesturePreferenceController;
 import com.android.settings.display.LiftToWakePreferenceController;
+import com.android.settings.display.LiveDisplayPreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
 import com.android.settings.display.HomeWakeButtonPreferenceController;
@@ -99,6 +100,7 @@ public class DisplaySettings extends DashboardFragment {
                 "android.theme.customization.font"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.adaptive_icon_shape"));
+        controllers.add(new LiveDisplayPreferenceController(context));
         return controllers;
     }
 

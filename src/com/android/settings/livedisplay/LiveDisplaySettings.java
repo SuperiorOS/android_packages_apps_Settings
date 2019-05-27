@@ -375,7 +375,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.SUPERIOR;
     }
 
     @Override

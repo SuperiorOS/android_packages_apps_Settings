@@ -15,6 +15,7 @@
 <resources>
 
     <!-- Interval seekbar -->
+    <!-- For LiveDisplay -->
     <declare-styleable name="IntervalSeekBar">
         <attr name="minI" format="float" />
         <attr name="maxI" format="float" />
@@ -23,13 +24,5 @@
     </declare-styleable>
 	
     <attr name="customPreferenceStyle" format="reference" />
-
-    <!-- For LiveDisplay -->
-    <declare-styleable name="IntervalSeekBar">
-        <attr name="minValue" format="float" />
-        <attr name="maxValue" format="float" />
-        <attr name="defaultValue" />
-        <attr name="digits" format="integer" />
-    </declare-styleable>
 
 </resources>

@@ -275,6 +275,14 @@
                 android:gravity="center"
                 android:layout_gravity="fill_horizontal"
                 android:background="#ea0024" />
+            <Button
+                android:id="@+id/pixel"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#1a73e8" />
 
         </GridLayout>
     </ScrollView>

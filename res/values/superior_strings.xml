@@ -200,4 +200,8 @@
     <string name="model_summary">Model, phone number, IMEI, etc</string>
     <string name="model_name">Device status</string>
     <string name="legal_summary">Licenses and legal</string>
+
+    <!-- Cloudflare DNS Option -->
+    <string name="private_dns_mode_cloudflare" translatable="false">Cloudflare DNS</string>
+
 </resources>

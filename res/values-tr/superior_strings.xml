@@ -428,6 +428,10 @@
     <string name="adj_intensity_title">Yoğunluk</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- Battery saving mode for Location - GPS will be disabled -->
-    <string name="location_mode_battery_saving_title">Battery saving mode</string>
-    <string name="location_mode_battery_saving_summary">Use only Wi\u2011Fi, Bluetooth, or mobile networks to determine location (less accurate)</string>
+    <string name="location_mode_battery_saving_title">Pil tasarrufu modu</string>
+    <string name="location_mode_battery_saving_summary">Konum belirlemek için yalnızca Wi\u2011Fi, Bluetooth veya hücresel ağları kullanın (önerilmez)</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 </resources>

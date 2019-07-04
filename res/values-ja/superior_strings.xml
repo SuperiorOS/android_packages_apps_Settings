@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
-    <string name="superior_version">SuperiorOS バージョン</string>
+    <string name="superior_version">SuperiorOSバージョン</string>
     <string name="superior_version_default">不明</string>
     <string name="keywords_superior_version">SuperiorOS バージョン, superior バージョン</string>
     <!-- About phone screen, build date -->
@@ -156,7 +156,7 @@
     <string name="app_ops_categories_media">メディア</string>
     <string name="app_ops_categories_device">端末</string>
     <string name="app_ops_categories_run_in_background">バックグラウンドでの実行</string>
-    <string name="app_ops_categories_bootup">ブート時の実行</string>
+    <string name="app_ops_categories_bootup">ブート</string>
     <string name="app_ops_categories_other">その他</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_summaries_accept_handover">別のアプリからの通話の引き継ぎ</string>
@@ -431,7 +431,7 @@
     <string name="location_mode_battery_saving_title">バッテリー節約モード</string>
     <string name="location_mode_battery_saving_summary">Wi‑Fi・Bluetooth・モバイルネットワークのみで現在地を特定する (低精度)</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-    <string name="show_cpu_info">Show CPU info</string>
+    <string name="show_cpu_info">CPU 情報の表示</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <string name="show_cpu_info_summary">現在の CPU 情報をオーバーレイ表示する</string>
 </resources>

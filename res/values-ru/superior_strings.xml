@@ -87,7 +87,7 @@
     <string name="custom_light_title">Цвет светодиода</string>
     <string name="custom_light_on_time_title">Время свечения светодиода (мс)</string>
     <string name="custom_light_off_time_title">Время паузы светодиода во время пульсации (мс)\"</string>
-    <string name="value_equals_default">Def</string>
+    <string name="value_equals_default">По умолчанию</string>
     <string name="show_light_on_zen_title">Мерцание во время режима Не беспокоить</string>
     <!-- Expanded desktop -->
     <string name="expanded_desktop_pref_title">Расширенный рабочий стол</string>
@@ -366,7 +366,6 @@
     <string name="selinux_status">Статус SELinux</string>
     <string name="selinux_status_disabled">Отключено</string>
     <string name="selinux_status_permissive">Рекомендуемый</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Smart charging -->
     <string name="smart_charging_title">Умная зарядка</string>
     <string name="smart_charging_summary">Установить максимальный уровень зарядки</string>
@@ -403,7 +402,7 @@
     <string name="live_display_color_profile_astronomy_summary">Глубокий красный для сохранения видимости ночью</string>
     <string name="live_display_color_profile_photography_title">Фотография</string>
     <string name="live_display_color_profile_photography_summary">Идеальная цветопередача для фото</string>
-    <string name="live_display_color_profile_basic_title">Basic</string>
+    <string name="live_display_color_profile_basic_title">Базовый</string>
     <string name="live_display_color_profile_basic_summary">Использовать неоткалиброванный дисплей</string>
     <string name="live_display_color_profile_adaptive_title">Адаптивный</string>
     <string name="live_display_color_profile_adaptive_summary">Цвета адаптируются к условиям окружающей среды</string>
@@ -428,10 +427,10 @@
     <string name="adj_intensity_title">Интенсивность</string>
     <string name="adj_contrast_title">Контрастность</string>
     <!-- Battery saving mode for Location - GPS will be disabled -->
-    <string name="location_mode_battery_saving_title">Battery saving mode</string>
-    <string name="location_mode_battery_saving_summary">Use only Wi\u2011Fi, Bluetooth, or mobile networks to determine location (less accurate)</string>
+    <string name="location_mode_battery_saving_title">Режим энергосбережения</string>
+    <string name="location_mode_battery_saving_summary">Использовать только Wi-Fi, Bluetooth или мобильные сети для определения местоположения (менее точно)</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-    <string name="show_cpu_info">Show CPU info</string>
+    <string name="show_cpu_info">Показывать информацию о процессоре</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <string name="show_cpu_info_summary">Накладываемый слой, показывающий текущую информацию о процессоре</string>
 </resources>

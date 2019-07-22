@@ -22,7 +22,7 @@
     <!-- About phone screen, build date -->
     <string name="build_date">Дата сборки</string>
     <string name="build_date_default">2015-01-01-0000</string>
-    <string name="keywords_build_date">Дата сборки, информация о сборке</string>
+    <string name="keywords_build_date">дата сборки, информация о сборке</string>
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Найдите сканер отпечатков пальцев на задней поверхности телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Сканер отпечатков пальцев расположен в левой части телефона.</string>
@@ -64,9 +64,9 @@
     <string name="force_allow_system_themes_title">Разрешить использовать системные темы и шрифты вместе с Substratum</string>
     <string name="force_allow_system_themes_summary">Позволяет использовать следующие темы и шрифты, несмотря на установленный Substratum.</string>
     <string name="force_theme_warning_title">Внимание !</string>
-    <string name="force_theme_warning_message">Это может привести к конфликтам между темами Substratum и системными темами. Мы надеемся, что вы знаете, что вы делаете. #НеВинитеНасПотом: D</string>
+    <string name="force_theme_warning_message">Это может привести к конфликтам между темами Substratum и системными темами. Мы надеемся, что вы знаете, что вы делаете. #НеВинитеНасПотом :D</string>
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Вращение</string>
+    <string name="display_rotation_title">Автоповорот</string>
     <string name="display_rotation_disabled">Отключено</string>
     <string name="display_rotation_unit">градусов</string>
     <string name="display_rotation_category_title">Режимы поворота экрана</string>
@@ -86,16 +86,16 @@
     <!-- Custom light color -->
     <string name="custom_light_title">Цвет светодиода</string>
     <string name="custom_light_on_time_title">Время свечения светодиода (мс)</string>
-    <string name="custom_light_off_time_title">Время паузы светодиода во время пульсации (мс)\"</string>
+    <string name="custom_light_off_time_title">Длительность затухания светодиода (мс)</string>
     <string name="value_equals_default">По умолчанию</string>
-    <string name="show_light_on_zen_title">Мерцание во время режима Не беспокоить</string>
+    <string name="show_light_on_zen_title">Мерцание во время режима \"Не беспокоить\"</string>
     <!-- Expanded desktop -->
-    <string name="expanded_desktop_pref_title">Расширенный рабочий стол</string>
+    <string name="expanded_desktop_pref_title">Расширенный экран</string>
     <string name="expanded_hide_nothing">Ничего не скрывать</string>
     <string name="expanded_hide_status">Скрывать строку состояния</string>
     <string name="expanded_hide_navigation">Скрывать панель навигации</string>
     <string name="expanded_hide_both">Скрывать строку состояния и панель навигации</string>
-    <string name="expanded_nothing_to_show">Для настройки параметров расширенного экрана для отдельных приложений, переведите переключатель \"Включить для всех\" в отключенное состояние.</string>
+    <string name="expanded_nothing_to_show">Для настройки параметров расширенного экрана для отдельных приложений, переведите переключатель \"Включить для всех\" в отключенное состояние</string>
     <string name="expanded_desktop_state">Расширенный экран</string>
     <string name="expanded_enabled_for_all">Включить для всех</string>
     <string name="expanded_user_configurable">Пользоваьельские кофигурации</string>
@@ -115,7 +115,7 @@
     <string name="fp_swipe_to_dismiss_notifications_title">Проведите по сканеру отпечатка влево или вправо, чтобы убрать уведомления</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы убрать Ваши уведомления, проведите пальцем влево или право по сканеру отпечатка пальца.</string>
     <!-- Privacy Guard -->
-    <string name="loading">Загрузка\u2026</string>
+    <string name="loading">Загрузка…</string>
     <string name="privacy_guard_manager_title">Защита конфиденциальности</string>
     <string name="privacy_guard_switch_label">Включить Защиту конфиденциальности</string>
     <string name="privacy_guard_dlg_title">Включить Защиту конфиденциальности?</string>
@@ -159,32 +159,32 @@
     <string name="app_ops_categories_bootup">Автозапуск</string>
     <string name="app_ops_categories_other">Другое</string>
     <!-- User display names for app ops codes - extension of AOSP -->
-    <string name="app_ops_summaries_accept_handover">Передача вызова из другого приложения</string>
-    <string name="app_ops_summaries_access_camera">Доступ к камере</string>
-    <string name="app_ops_summaries_access_notifications">Доступ к уведомлениям</string>
-    <string name="app_ops_summaries_activate_vpn">Активация VPN</string>
-    <string name="app_ops_summaries_add_voicemail">Добавление голосового сообщения</string>
-    <string name="app_ops_summaries_app_start_foreground">Запуск приложений без установки</string>
-    <string name="app_ops_summaries_assist_screenshot">Помощь в снимке экрана</string>
-    <string name="app_ops_summaries_assist_structure">Использовать структуру ассистента</string>
-    <string name="app_ops_summaries_audio_accessibility_volume">Доступ к изменению громкости</string>
-    <string name="app_ops_summaries_auto_start">Запуск при включении</string>
-    <string name="app_ops_summaries_bind_accessibility_service">Подключение к службе спец. возможностей</string>
-    <string name="app_ops_summaries_bluetooth_scan">Поиск Bluetooth-устройств</string>
-    <string name="app_ops_summaries_change_wallpaper">Изменить обои</string>
-    <string name="app_ops_summaries_coarse_location">Приблизительное местоположение</string>
-    <string name="app_ops_summaries_delete_call_log">Удаление журнала вызовов</string>
-    <string name="app_ops_summaries_delete_contacts">Удалять ваши контакты</string>
-    <string name="app_ops_summaries_delete_mms">Удалять ваши MMS-сообщения</string>
-    <string name="app_ops_summaries_delete_sms">Удалять ваши MMS-сообщения</string>
-    <string name="app_ops_summaries_draw_on_top">Отображение поверх других элементов</string>
-    <string name="app_ops_summaries_fine_location">Точное местоположение</string>
-    <string name="app_ops_summaries_get_accounts">Получение аккаунтов</string>
-    <string name="app_ops_summaries_get_usage_stats">Статистика использования приложений</string>
+    <string name="app_ops_summaries_accept_handover">передача вызова из другого приложения</string>
+    <string name="app_ops_summaries_access_camera">доступ к камере</string>
+    <string name="app_ops_summaries_access_notifications">доступ к уведомлениям</string>
+    <string name="app_ops_summaries_activate_vpn">активация VPN</string>
+    <string name="app_ops_summaries_add_voicemail">добавление голосового сообщения</string>
+    <string name="app_ops_summaries_app_start_foreground">запуск приложений без установки</string>
+    <string name="app_ops_summaries_assist_screenshot">помощь в снимке экрана</string>
+    <string name="app_ops_summaries_assist_structure">использовать структуру ассистента</string>
+    <string name="app_ops_summaries_audio_accessibility_volume">доступ к изменению громкости</string>
+    <string name="app_ops_summaries_auto_start">запуск при включении</string>
+    <string name="app_ops_summaries_bind_accessibility_service">подключение к службе спец. возможностей</string>
+    <string name="app_ops_summaries_bluetooth_scan">поиск Bluetooth-устройств</string>
+    <string name="app_ops_summaries_change_wallpaper">изменить обои</string>
+    <string name="app_ops_summaries_coarse_location">приблизительное местоположение</string>
+    <string name="app_ops_summaries_delete_call_log">удалить журнал звонков</string>
+    <string name="app_ops_summaries_delete_contacts">удалять ваши контакты</string>
+    <string name="app_ops_summaries_delete_mms">удалять ваши MMS-сообщения</string>
+    <string name="app_ops_summaries_delete_sms">удалять ваши MMS-сообщения</string>
+    <string name="app_ops_summaries_draw_on_top">отображение поверх других элементов</string>
+    <string name="app_ops_summaries_fine_location">точное местоположение</string>
+    <string name="app_ops_summaries_get_accounts">получение аккаунтов</string>
+    <string name="app_ops_summaries_get_usage_stats">получение статистики использования</string>
     <string name="app_ops_summaries_gps">GPS</string>
-    <string name="app_ops_summaries_install_packages">Установка пакетов</string>
-    <string name="app_ops_summaries_keep_device_awake">Запретить устройству переход в спящий режим</string>
-    <string name="app_ops_summaries_make_phone_call">выполнять телефонный звонок</string>
+    <string name="app_ops_summaries_install_packages">установка пакетов</string>
+    <string name="app_ops_summaries_keep_device_awake">запретить устройству переход в спящий режим</string>
+    <string name="app_ops_summaries_make_phone_call">выполнить телефонный звонок</string>
     <string name="app_ops_summaries_manage_ipsec_tunnels">управление Ipsec-тунелями</string>
     <string name="app_ops_summaries_mock_location">фиктивное местоположение</string>
     <string name="app_ops_summaries_modify_calendar">изменение календаря</string>
@@ -230,20 +230,20 @@
     <string name="app_ops_summaries_turn_on_screen">включение экрана</string>
     <string name="app_ops_summaries_use_alarm_volume">управление громкостью будильника</string>
     <string name="app_ops_summaries_use_audio_focus">управление аудио фокусом</string>
-    <string name="app_ops_summaries_use_bluetooth_volume">Управление громкостью Bluetooth-устройств</string>
-    <string name="app_ops_summaries_use_body_sensors">Использовать датчики тела</string>
-    <string name="app_ops_summaries_use_fingerprint">Использование отпечатка пальца</string>
-    <string name="app_ops_summaries_use_master_volume">Управление общей громкостью</string>
-    <string name="app_ops_summaries_use_media_buttons">Использовать кнопки мультимедиа</string>
-    <string name="app_ops_summaries_use_media_volume">Управление громкостью мультимедиа</string>
-    <string name="app_ops_summaries_use_notification_volume">Управление громкостью уведомлений</string>
-    <string name="app_ops_summaries_use_ring_volume">Управление громкостью звонка</string>
-    <string name="app_ops_summaries_use_vibrate">Использовать виброотклик</string>
-    <string name="app_ops_summaries_use_voice_volume">Управление громкостью голосового вызова</string>
-    <string name="app_ops_summaries_wifi_change">Изменять состояние Wi-Fi</string>
-    <string name="app_ops_summaries_write_external_storage">Запись на внешний накопитель</string>
-    <string name="app_ops_summaries_write_mms">Создавать MMS-сообщения</string>
-    <string name="app_ops_summaries_write_sms">Создание СМС</string>
+    <string name="app_ops_summaries_use_bluetooth_volume">управление громкостью Bluetooth-устройств</string>
+    <string name="app_ops_summaries_use_body_sensors">использовать датчики тела</string>
+    <string name="app_ops_summaries_use_fingerprint">использование отпечатка пальца</string>
+    <string name="app_ops_summaries_use_master_volume">управление общей громкостью</string>
+    <string name="app_ops_summaries_use_media_buttons">использовать кнопки мультимедиа</string>
+    <string name="app_ops_summaries_use_media_volume">управление громкостью мультимедиа</string>
+    <string name="app_ops_summaries_use_notification_volume">управление громкостью уведомлений</string>
+    <string name="app_ops_summaries_use_ring_volume">управление громкостью звонка</string>
+    <string name="app_ops_summaries_use_vibrate">использовать виброотклик</string>
+    <string name="app_ops_summaries_use_voice_volume">управление громкостью голосового вызова</string>
+    <string name="app_ops_summaries_wifi_change">изменять состояние Wi-Fi</string>
+    <string name="app_ops_summaries_write_external_storage">запись на внешний накопитель</string>
+    <string name="app_ops_summaries_write_mms">создавать MMS-сообщения</string>
+    <string name="app_ops_summaries_write_sms">создание SMS</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_accept_handover">Передача вызова из другого приложения</string>
     <string name="app_ops_labels_access_camera">Доступ к камере</string>
@@ -259,7 +259,7 @@
     <string name="app_ops_labels_bluetooth_scan">Поиск Bluetooth-устройств</string>
     <string name="app_ops_labels_change_wallpaper">Изменить обои</string>
     <string name="app_ops_labels_coarse_location">Приблизительное местоположение</string>
-    <string name="app_ops_labels_delete_call_log">Удаление журнала вызовов</string>
+    <string name="app_ops_labels_delete_call_log">Удалять журнал звонков</string>
     <string name="app_ops_labels_delete_contacts">Удалять ваши контакты</string>
     <string name="app_ops_labels_delete_mms">Удалять ваши MMS-сообщения</string>
     <string name="app_ops_labels_delete_sms">Удалять ваши MMS-сообщения</string>
@@ -338,7 +338,7 @@
     <string name="volume_link_notification_title">Связать громкость рингтона и уведомлений</string>
     <!-- Font picker -->
     <string name="font_picker_title">Шрифт</string>
-    <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
+    <string name="font_picker_progress">Применение нового шрифта...</string>
     <string name="battery_temp">Температура батареи</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Фоновые процессы</string>
@@ -349,16 +349,16 @@
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
     <string name="data_usage_app_restrict_data_summary">Включить использование мобильных данных</string>
-    <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi">Данные Wi-Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi-Fi</string>
     <!-- Thermal control per app -->
-    <string name="thermal_control_per_app">Профиль терморегулятора</string>
+    <string name="thermal_control_per_app">Профили производительности</string>
     <string name="thermal_control_per_app_default">Без оптимизации</string>
     <string name="thermal_control_per_app_benchmark">Производительность</string>
     <string name="thermal_control_per_app_games">Игры</string>
     <string name="thermal_control_per_app_browser">Браузер</string>
     <string name="thermal_control_per_app_video_playback">Воспроизведение видео</string>
-    <string name="thermal_control_per_app_dialer">Телефон</string>
+    <string name="thermal_control_per_app_dialer">Телефон (звонки)</string>
     <string name="thermal_control_per_app_camera">Камера</string>
     <!-- About phone, uptime. Deep sleep ratio since last reboot. -->
     <string name="status_deep_sleep">(Глубокий сон: %1$d%2$s)</string>
@@ -366,6 +366,7 @@
     <string name="selinux_status">Статус SELinux</string>
     <string name="selinux_status_disabled">Отключено</string>
     <string name="selinux_status_permissive">Рекомендуемый</string>
+    <string name="selinux_status_enforcing">Блокировка</string>
     <!-- Smart charging -->
     <string name="smart_charging_title">Умная зарядка</string>
     <string name="smart_charging_summary">Установить максимальный уровень зарядки</string>
@@ -379,8 +380,8 @@
     <string name="live_display_summary">Подстраивание экрана в зависимости от времени суток и освещения для улучшения читаемости текста и снижения утомляемости глаз</string>
     <string name="live_display_mode">Режим отображения</string>
     <string name="live_display_color_temperature_title">Цветовая температура</string>
-    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d </xliff:g> K Ночь: <xliff:g id="night_temperature">%2$d </xliff:g> K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d </xliff:g> K</string>
+    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d </xliff:g>K Ночь: <xliff:g id="night_temperature">%2$d </xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d </xliff:g>K</string>
     <string name="live_display_day">День</string>
     <string name="live_display_night">Ночь</string>
     <string name="live_display_outdoor_mode_title">Автоматический режим \"На улице\"</string>
@@ -409,9 +410,9 @@
     <string name="live_display_color_profile_reading_title">Чтение</string>
     <string name="live_display_color_profile_reading_summary">Теплые цвета для меньшего напряжения глаз</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
-    <string name="live_display_color_profile_srgb_summary">Цвета, соответствующие цветовому пространству sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Цвета, схожие с пространством sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
-    <string name="live_display_color_profile_dci_p3_summary">Цвета, соответствующие цветовому пространству DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Цвета, схожие с пространством DCI-P3</string>
     <string name="live_display_reading_mode_title">Режим чтения</string>
     <string name="live_display_reading_mode_summary">Режим оттенков серого для долговременного чтения</string>
     <string name="color_calibration_title">Калибровка цвета</string>

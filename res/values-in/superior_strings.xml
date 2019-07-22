@@ -16,62 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
-    <string name="superior_version_default">Tidal diketahui</string>
     <!-- About phone screen, build date -->
-    <string name="build_date">Tanggal Pembuatan</string>
-    <string name="keywords_build_date">tanggal pembuatan, info pembuatan</string>
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Temukan lokasi pemindai sidik jari di bagian depan telepon anda.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Temukan lokasi pemindai sidik jari di sisi kiri telepon anda.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Temukan lokasi pemindai sidik jari di sisi kanan telepon anda.</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Advanced night mode brightness -->
-    <string name="night_brightness_category">Kecerahan</string>
-    <string name="night_brightness_value_title">Menurunkan Kecerahan jika Cahaya Malam</string>
-    <string name="night_bright_disabled">Dinonaktifkan</string>
-    <string name="night_bright_minimum">Kecerahan Minimal</string>
-    <string name="night_bright_low">Kecerahan Rendah</string>
-    <string name="night_bright_medium">Kecerahan sedang</string>
     <!-- Screenshot sound -->
-    <string name="screenshot_sound_title">Suara tangkapan layar</string>
     <!-- Charging vibration -->
-    <string name="charging_vibro_title">Getaran pengisian</string>
     <!-- Battery Stats -->
-    <string name="battery_stats_reset">Atur ulang statistik</string>
-    <string name="battery_stats_message">Statistik penggunaan baterai akan di atur ulang</string>
-    <string name="ok_string">Ok</string>
     <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Membuka dengan cepat</string>
-    <string name="unlock_quick_unlock_control_summary">Kunci terbuka secara otomatis pada saat PIN/kata sandi yang dimasukkan benar</string>
     <!-- Scramble PIN Layout on Lockscreen -->
-    <string name="theme_category_title">Tema Sistem</string>
     <!-- SystemUI theme -->
-    <string name="systemui_theme_style_title">Tema SystemUI</string>
-    <string name="systemui_theme_style_auto">Otomatis (berbasis wallpaper)</string>
-    <string name="systemui_theme_style_light">Terang</string>
-    <string name="systemui_theme_style_dark">Gelap</string>
-    <string name="system_theme_style_black">Hitam</string>
-    <string name="applying_theme_toast">Menerapkan tema, silahkan tunggu...</string>
-    <string name="theme_applied_toast">Tema diterapkan!</string>
-    <string name="substratum_installed_title">Tema sistem tidak tersedia karena overlay Substratum terpasang. Silakan hapus semua overlay pada sistem Android untuk melanjutkan.</string>
-    <string name="force_allow_system_themes_title">Memungkinkan tema dan font sistem bersama substratum</string>
-    <string name="force_allow_system_themes_summary">Memungkinkan Anda untuk menggunakan font dan tema pilihan meskipun substratum diinstal.</string>
-    <string name="force_theme_warning_title">Peringatan!</string>
-    <string name="force_theme_warning_message">Hal ini dapat menyebabkan konflik antara tema substratum dan tema sistem. Kami berharap Anda tahu apa yang Anda lakukan. #JanganSalahkanKami :D</string>
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Rotasi</string>
-    <string name="display_rotation_disabled">Dinonaktifkan</string>
-    <string name="display_rotation_category_title">Mode rotasi</string>
-    <string name="display_rotation_0_title">0 derajat</string>
-    <string name="display_rotation_90_title">90 derajat</string>
-    <string name="display_rotation_180_title">180 derajat</string>
-    <string name="display_rotation_270_title">270 derajat</string>
     <!-- Sizes for pattern lockscreen -->
-    <string name="lock_settings_picker_pattern_size_message">Pilih ukuran pola</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <string name="lockpattern_settings_enable_error_path_title">Tampilkan kesalahan pola</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <string name="lockpattern_settings_enable_dots_title">Tampilkan titik-titik pola</string>
     <!-- Lock screen vibrate settings -->
     <!-- Custom light color -->
     <!-- Expanded desktop -->
@@ -82,87 +40,12 @@
     <!-- Swipe fp to dismiss notifications -->
     <!-- Privacy Guard -->
     <!-- App ops permissions -->
-    <string name="app_ops_permissions_allowed">Diizinkan</string>
-    <string name="app_ops_permissions_ignored">Abaikan</string>
-    <string name="app_ops_permissions_always_ask">Selalu tanyakan</string>
     <!-- App ops detail -->
-    <string name="app_ops_no_blockable_permissions">Tidak ada izin yang tersedia untuk memblokir</string>
     <!-- App ops menu options -->
-    <string name="app_ops_show_user_apps">Tampilkan aplikasi pengguna</string>
-    <string name="app_ops_show_system_apps">Menampilkan aplikasi bawaan</string>
-    <string name="app_ops_reset_counters">Atur ulang hitungan diizinkan/ditolak</string>
-    <string name="app_ops_reset_confirm_title">Konfirmasi penghitung ulang</string>
-    <string name="app_ops_reset_confirm_mesg">Apakah anda yakin ingin mengatur ulang penghitung?</string>
     <!-- Memory -->
-    <string name="memory_startup_apps_title">Aplikasi yang dimulai saat boot</string>
     <!-- Names of categories of app ops tabs - extension of AOSP -->
-    <string name="app_ops_categories_location">Lokasi</string>
-    <string name="app_ops_categories_personal">Pribadi</string>
-    <string name="app_ops_categories_messaging">Pesan</string>
-    <string name="app_ops_categories_media">Media</string>
-    <string name="app_ops_categories_device">Perangkat</string>
-    <string name="app_ops_categories_run_in_background">Berjalan dilatar belakang</string>
-    <string name="app_ops_categories_bootup">Bootup</string>
-    <string name="app_ops_categories_other">Lainnya</string>
     <!-- User display names for app ops codes - extension of AOSP -->
-    <string name="app_ops_summaries_accept_handover">memindahkan panggilan dari aplikasi lain</string>
-    <string name="app_ops_summaries_access_camera">mengakses kamera</string>
-    <string name="app_ops_summaries_access_notifications">akses pemberitahuan</string>
-    <string name="app_ops_summaries_activate_vpn">mengatifkan VPN</string>
-    <string name="app_ops_summaries_add_voicemail">menambahkan pesan suara</string>
-    <string name="app_ops_summaries_app_start_foreground">memulai aplikasi instan di latar depan</string>
-    <string name="app_ops_summaries_assist_screenshot">membantu tangkapan layar</string>
-    <string name="app_ops_summaries_assist_structure">struktur pembantu</string>
-    <string name="app_ops_summaries_audio_accessibility_volume">aksesibilitas volume audio</string>
-    <string name="app_ops_summaries_auto_start">mulai pada saat dinyalakan</string>
-    <string name="app_ops_summaries_bind_accessibility_service">tautkan layanan aksesibilitas</string>
-    <string name="app_ops_summaries_bluetooth_scan">pemindaian bluetooth</string>
-    <string name="app_ops_summaries_change_wallpaper">mengubah wallpaper</string>
-    <string name="app_ops_summaries_coarse_location">lokasi sementara</string>
-    <string name="app_ops_summaries_delete_call_log">menghapus daftar riwayat panggilan Anda</string>
-    <string name="app_ops_summaries_delete_contacts">menghapus kontak Anda</string>
-    <string name="app_ops_summaries_delete_mms">menghapus pesan MMS Anda</string>
-    <string name="app_ops_summaries_delete_sms">hapus pesan SMS Anda</string>
-    <string name="app_ops_summaries_draw_on_top">menampilkan di atas</string>
-    <string name="app_ops_summaries_fine_location">lokasi bagus</string>
-    <string name="app_ops_summaries_get_accounts">mendapatkan akun</string>
-    <string name="app_ops_summaries_get_usage_stats">mendapatkan statistik penggunaan aplikasi</string>
-    <string name="app_ops_summaries_gps">GPS</string>
-    <string name="app_ops_summaries_install_packages">memasang paket</string>
-    <string name="app_ops_summaries_keep_device_awake">menjaga perangkat Anda tetap menyala</string>
-    <string name="app_ops_summaries_make_phone_call">membuat panggilan telepon</string>
-    <string name="app_ops_summaries_manage_ipsec_tunnels">mengatur penghubung ip</string>
-    <string name="app_ops_summaries_mock_location">lokasi palsu</string>
-    <string name="app_ops_summaries_use_master_volume">kontrol volume utama</string>
-    <string name="app_ops_summaries_use_media_buttons">menggunakan tombol media</string>
-    <string name="app_ops_summaries_use_media_volume">kontrol volume media</string>
-    <string name="app_ops_summaries_use_notification_volume">nengatur volume pemberitahuan</string>
-    <string name="app_ops_summaries_use_ring_volume">mengatur volume nada dering</string>
-    <string name="app_ops_summaries_use_vibrate">gunakan tanggapan sentuhan</string>
-    <string name="app_ops_summaries_use_voice_volume">kontrol volume panggilan suara</string>
-    <string name="app_ops_summaries_wifi_change">mengubah status Wi-Fi</string>
-    <string name="app_ops_summaries_write_external_storage">menulis ke penyimpanan eksternal</string>
-    <string name="app_ops_summaries_write_mms">menulis pesan MMS</string>
-    <string name="app_ops_summaries_write_sms">menulis SMS</string>
     <!-- User display names for app ops codes - extension of AOSP -->
-    <string name="app_ops_labels_accept_handover">Memindahkan panggilan dari aplikasi lain</string>
-    <string name="app_ops_labels_access_camera">Mengakses kamera</string>
-    <string name="app_ops_labels_access_notifications">Akses pemberitahuan</string>
-    <string name="app_ops_labels_activate_vpn">Mengatifkan VPN</string>
-    <string name="app_ops_labels_add_voicemail">Tambahkan pesan suara</string>
-    <string name="app_ops_labels_app_start_foreground">Mulai aplikasi instant di latar depan</string>
-    <string name="app_ops_labels_assist_screenshot">Bantuan tangkapan layar</string>
-    <string name="app_ops_labels_assist_structure">Membantu struktur</string>
-    <string name="app_ops_labels_audio_accessibility_volume">Aksesibilitas volume audio</string>
-    <string name="app_ops_labels_auto_start">Mulai pada saat dinyalakan</string>
-    <string name="app_ops_labels_bind_accessibility_service">Tautkan layanan aksesibilitas</string>
-    <string name="app_ops_labels_bluetooth_scan">Pemindaian bluetooth</string>
-    <string name="app_ops_labels_change_wallpaper">Mengubah wallpaper</string>
-    <string name="app_ops_labels_coarse_location">Lokasi sementara</string>
-    <string name="app_ops_labels_delete_call_log">Menghapus daftar riwayat panggilan Anda</string>
-    <string name="app_ops_labels_delete_contacts">Menghapus kontak Anda</string>
-    <string name="app_ops_labels_delete_mms">Menghapus pesan MMS Anda</string>
-    <string name="app_ops_labels_delete_sms">Hapus pesan SMS Anda</string>
     <!-- Changelog -->
     <!-- Volume link notification -->
     <!-- Font picker -->

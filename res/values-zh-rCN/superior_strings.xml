@@ -26,6 +26,7 @@
     <!-- Quick unlock -->
     <!-- Scramble PIN Layout on Lockscreen -->
     <!-- SystemUI theme -->
+    <string name="system_theme_style_black">黑色</string>
     <!-- Display : Rotation -->
     <!-- Sizes for pattern lockscreen -->
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -39,11 +40,13 @@
     <!-- Media gestures -->
     <!-- Swipe fp to dismiss notifications -->
     <!-- Privacy Guard -->
+    <string name="privacy_guard_help_title">帮助</string>
     <!-- App ops permissions -->
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- Memory -->
     <!-- Names of categories of app ops tabs - extension of AOSP -->
+    <string name="app_ops_categories_location">地点</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <!-- User display names for app ops codes - extension of AOSP -->
     <!-- Changelog -->
@@ -53,11 +56,15 @@
     <!-- Increasing ring tone volume -->
     <!-- Per-app data restrictions -->
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app_games">游戏</string>
     <!-- About phone, uptime. Deep sleep ratio since last reboot. -->
     <!-- Selinux -->
     <!-- Smart charging -->
     <!-- Notch: Full screen apps -->
     <!-- LiveDisplay -->
+    <string name="color_red_title">红色</string>
+    <string name="color_green_title">绿色</string>
+    <string name="color_blue_title">蓝色</string>
     <!-- LiveDisplay : Picture Adjustment -->
     <!-- Battery saving mode for Location - GPS will be disabled -->
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->

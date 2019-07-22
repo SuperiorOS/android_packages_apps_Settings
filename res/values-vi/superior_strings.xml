@@ -26,79 +26,25 @@
     <!-- Quick unlock -->
     <!-- Scramble PIN Layout on Lockscreen -->
     <!-- SystemUI theme -->
-    <string name="systemui_theme_style_light">Sáng</string>
-    <string name="systemui_theme_style_dark">Tối</string>
-    <string name="system_theme_style_black">Màu đen</string>
-    <string name="system_theme_style_superior">Superior</string>
-    <string name="applying_theme_toast">Đang áp dụng chủ đề, vui lòng chờ...</string>
-    <string name="theme_applied_toast">Chủ đề đã được áp dụng!</string>
-    <string name="substratum_installed_title">Tùy chọn giao diện hệ thống không có bởi một giao diện Substratum đã cài đặt. Hãy xoá tất cả những giao diện chỉnh sửa hệ thống để tiếp tục.</string>
-    <string name="force_allow_system_themes_title">Cho phép các chủ đề hệ thống và các phông chữ hoạt động song song với substratum</string>
-    <string name="force_allow_system_themes_summary">Cho phép bạn sử dụng những tùy chọn theo chủ đề và các phông chữ sau mặc cho substratum đã được cài đặt.</string>
-    <string name="force_theme_warning_title">Cảnh báo!</string>
-    <string name="force_theme_warning_message">Điều này có thể gây ra xung đột giữa chủ đề substratum và chủ đề của hệ thống. Chúng tôi hy vọng bạn biết những gì bạn đang làm. #DontBlameUsLater :D</string>
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Xoay</string>
-    <string name="display_rotation_disabled">Đã tắt</string>
-    <string name="display_rotation_unit">độ</string>
-    <string name="display_rotation_category_title">Chế độ xoay</string>
-    <string name="display_rotation_0_title">0 độ</string>
-    <string name="display_rotation_90_title">90 độ</string>
-    <string name="display_rotation_180_title">180 độ</string>
-    <string name="display_rotation_270_title">270 độ</string>
     <!-- Sizes for pattern lockscreen -->
-    <string name="lock_settings_picker_pattern_size_message">Chọn một kích cỡ mẫu hình</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <string name="lockpattern_settings_enable_error_path_title">Hiển thị lỗi mẫu hình</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <string name="lockpattern_settings_enable_dots_title">Hiển thị các dấu chấm mẫu hình</string>
     <!-- Lock screen vibrate settings -->
-    <string name="lockscreen_vibrate_enabled_title">Rung</string>
-    <string name="lockscreen_vibrate_enabled_head">Rung khi mở khóa</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Màu sắc đèn</string>
-    <string name="custom_light_on_time_title">Thời gian SÁNG đèn khi nhấp nháy (ms)</string>
-    <string name="custom_light_off_time_title">Thời gian TẮT đèn khi nhấp nháy (ms)</string>
-    <string name="value_equals_default">Mặc định</string>
-    <string name="show_light_on_zen_title">Nháy đèn trong chế độ Không làm phiền</string>
     <!-- Expanded desktop -->
-    <string name="expanded_desktop_pref_title">Mở rộng màn hình</string>
-    <string name="expanded_hide_nothing">Không ẩn gì cả</string>
-    <string name="expanded_hide_status">Ẩn thanh trạng thái</string>
-    <string name="expanded_hide_navigation">Ẩn thanh điều hướng</string>
-    <string name="expanded_hide_both">Ẩn cả hai</string>
-    <string name="expanded_nothing_to_show">Để thêm cấu hình cho mỗi ứng dụng tùy chỉnh cho trạng thái mở rộng, hãy tắt \"Bật cho tất cả\"</string>
-    <string name="expanded_desktop_state">Trạng thái mở rộng</string>
-    <string name="expanded_enabled_for_all">Bật cho tất cả</string>
-    <string name="expanded_user_configurable">Cấu hình người dùng</string>
-    <string name="expanded_desktop_style">Kiểu mở rộng màn hình</string>
-    <string name="expanded_desktop_style_description">Chọn mặc định một kiểu mở rộng màn hình</string>
-    <string name="expanded_desktop_title">Tùy chọn mở rộng màn hình</string>
     <!-- Density category -->
-    <string name="density_category">Tùy chọn mật độ</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Chuông điện thoại - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Chuông điện thoại - SIM 2</string>
     <!-- Media gestures -->
-    <string name="prevent_ringing_option_mute_no_media">Tắt tiếng, không có phương tiện</string>
-    <string name="prevent_ringing_option_mute_no_media_summary">Bật (tắt tiếng, không có phương tiện)</string>
     <!-- Swipe fp to dismiss notifications -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Trượt dấu vân tay sang trái hoặc phải để loại bỏ thông báo</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">Để loại bỏ thông báo của bạn, hãy vuốt sang trái hoặc phải trên bộ cảm biến dấu vân tay ở mặt sau của điện thoại.</string>
     <!-- Privacy Guard -->
-    <string name="loading">Đang tải\u2026</string>
-    <string name="privacy_guard_manager_title">Bảo Vệ Quyền Riêng Tư</string>
     <!-- App ops permissions -->
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- Memory -->
     <!-- Names of categories of app ops tabs - extension of AOSP -->
     <!-- User display names for app ops codes - extension of AOSP -->
-    <string name="app_ops_summaries_delete_call_log">xóa nhật ký cuộc gọi</string>
-    <string name="app_ops_summaries_delete_contacts">xóa danh bạ của bạn</string>
-    <string name="app_ops_summaries_delete_mms">xoá tin nhắn MMS</string>
-    <string name="app_ops_summaries_delete_sms">xoá tin nhắn SMS</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <!-- Changelog -->
     <!-- Volume link notification -->

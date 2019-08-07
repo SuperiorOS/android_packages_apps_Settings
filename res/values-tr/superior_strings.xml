@@ -371,7 +371,6 @@
     <string name="smart_charging_title">Akıllı şarj</string>
     <string name="smart_charging_summary">Maksimum şarj seviyesi ayarlayın</string>
     <string name="smart_charging_switch_title">Akıllı şarj kullan</string>
-    <string name="smart_charging_level_title">Tetikleme seviyesi</string>
     <string name="smart_charging_footer">Akıllı şarj, pilinizin ömrünü uzatmak için maksimum şarj seviyesini ayarlamanıza olanak verir</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Tam ekran uygulamalar</string>

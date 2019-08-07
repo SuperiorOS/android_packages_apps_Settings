@@ -371,7 +371,6 @@
     <string name="smart_charging_title">Carga inteligente</string>
     <string name="smart_charging_summary">Definir o nível máximo de carregamento</string>
     <string name="smart_charging_switch_title">Usar carregamento inteligente</string>
-    <string name="smart_charging_level_title">Nível de disparo</string>
     <string name="smart_charging_footer">A carga inteligente permite que você defina o nível máximo de carregamento para estender a duração da sua bateria</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicativos em tela cheia</string>

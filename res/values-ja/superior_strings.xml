@@ -371,7 +371,6 @@
     <string name="smart_charging_title">スマート充電</string>
     <string name="smart_charging_summary">最大充電レベルを設定する</string>
     <string name="smart_charging_switch_title">スマート充電の使用</string>
-    <string name="smart_charging_level_title">充電停止レベル</string>
     <string name="smart_charging_footer">スマート充電を使用すると充電量を制限することでバッテリー寿命を延ばすことができます</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">全画面表示のアプリ</string>

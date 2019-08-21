@@ -492,4 +492,8 @@
     <!-- Toolbar -->
     <string name="settings_head_title">Superior OS</string>
 
+    <!-- Ambient category -->
+    <string name="custom_ambient_display_title">Ambient options</string>
+    <string name="custom_ambient_display_summary">Configure advanced ambient display behaviour</string>
+
 </resources>

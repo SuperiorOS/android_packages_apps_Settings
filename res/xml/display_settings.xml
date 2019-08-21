@@ -104,11 +104,15 @@
         android:title="@string/screensaver_settings_title"
         android:fragment="com.android.settings.dream.DreamSettings" />
 
-    <com.android.settingslib.RestrictedPreference
-        android:key="ambient_display"
-        android:title="@string/ambient_display_screen_title"
-        android:fragment="com.android.settings.display.AmbientDisplaySettings"
-        settings:userRestriction="no_ambient_display" />
+    <Preference
+        android:key="ambient_display_custom"
+        android:persistent="false"
+        android:title="@string/custom_ambient_display_title"
+        android:summary="@string/custom_ambient_display_summary" >
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.custom.ambient.display"
+            android:targetClass="com.custom.ambient.display.DozeSettings"/>
+    </Preference>
 
         <Preference
             android:key="force_ambient_for_media_pref"

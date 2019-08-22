@@ -33,6 +33,11 @@
         android:summary="@string/use_open_wifi_automatically_summary" />
 
     <SwitchPreference
+        android:key="wifi_connected_mac_randomization"
+        android:title="@string/wifi_connected_mac_randomization"
+        android:summary="@string/wifi_connected_mac_randomization_summary" />
+
+    <SwitchPreference
         android:key="notify_open_networks"
         android:title="@string/wifi_notify_open_networks"
         android:icon="@drawable/ic_open_wifi_notifications"

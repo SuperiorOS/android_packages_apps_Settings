@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development;
+package com.android.settings.wifi;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -26,9 +26,8 @@ import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.development.DeveloperOptionsPreferenceController;
 
-public class WifiConnectedMacRandomizationPreferenceController extends
-        DeveloperOptionsPreferenceController implements Preference.OnPreferenceChangeListener,
-        PreferenceControllerMixin {
+public class WifiConnectedMacRandomizationPreferenceController extends DeveloperOptionsPreferenceController 
+        implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
 
     private static final String WIFI_CONNECTED_MAC_RANDOMIZATION_KEY =
             "wifi_connected_mac_randomization";

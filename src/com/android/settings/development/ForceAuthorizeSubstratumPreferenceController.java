@@ -54,7 +54,7 @@ public class ForceAuthorizeSubstratumPreferenceController extends
     @Override
     public void updateState(Preference preference) {
         final int mForceAuthorizeSubstratumPackages = Settings.Secure.getInt(mContext.getContentResolver(),
-                Settings.Secure.FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES, 0);
+                Settings.Secure.FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES, 1);
 
         ((SwitchPreference) mPreference).setChecked(mForceAuthorizeSubstratumPackages != DISABLE_FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES);
     }
@@ -63,7 +63,7 @@ public class ForceAuthorizeSubstratumPreferenceController extends
     protected void onDeveloperOptionsSwitchDisabled() {
         super.onDeveloperOptionsSwitchDisabled();
         Settings.Secure.putInt(mContext.getContentResolver(),
-                Settings.Secure.FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES, DISABLE_FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES);
-        ((SwitchPreference) mPreference).setChecked(false);
+                Settings.Secure.FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES, ENABLE_FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES);
+        ((SwitchPreference) mPreference).setChecked(true);
     }
 }

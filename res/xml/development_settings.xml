@@ -100,7 +100,8 @@
         <SwitchPreference
             android:key="force_authorize_substratum_packages"
             android:title="@string/force_authorize_substratum_packages_title"
-            android:summary="@string/force_authorize_substratum_packages_summary" />
+            android:summary="@string/force_authorize_substratum_packages_summary"
+            android:defaultValue="true" />
 
         <com.superior.settings.preferences.GlobalSettingSwitchPreference
             android:key="show_cpu_overlay"

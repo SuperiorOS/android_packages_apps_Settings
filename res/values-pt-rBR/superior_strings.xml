@@ -433,4 +433,6 @@
     <string name="show_cpu_info">Mostrar informações da CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Sobreposição de tela mostrando informações atuais da CPU</string>
+    <!-- Toolbar -->
+    <!-- Ambient category -->
 </resources>

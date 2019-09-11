@@ -250,4 +250,6 @@
     <!-- Battery saving mode for Location - GPS will be disabled -->
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <!-- Toolbar -->
+    <!-- Ambient category -->
 </resources>

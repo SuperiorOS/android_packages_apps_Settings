@@ -16,15 +16,30 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">اصدار SuperiorOS</string>
+    <string name="superior_version_default">غير معروف</string>
     <!-- About phone screen, build date -->
+    <string name="build_date">تاريخ البناء</string>
     <!-- Fingerprint location message -->
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Advanced night mode brightness -->
+    <string name="night_bright_disabled">معطل</string>
+    <string name="night_bright_minimum">سطوع متوسط</string>
+    <string name="night_bright_low">سطوع منخفض</string>
+    <string name="night_bright_medium">سطـوع متوسط</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">إهتزاز عند الشحن</string>
     <!-- Battery Stats -->
+    <string name="battery_stats_reset">إعادة تعيين الإحصائيات</string>
+    <string name="battery_stats_message">سيتم إعـادة تعيين إحصاءات البطارية</string>
+    <string name="ok_string">موافق</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">إلغاء قفل سريع</string>
+    <string name="unlock_quick_unlock_control_summary">فتح تلقائي عندما يتم إدخال PIN/كلمة السر صحيحة</string>
     <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">تخطيط التدافع</string>
     <!-- SystemUI theme -->
     <!-- Display : Rotation -->
     <!-- Sizes for pattern lockscreen -->
@@ -62,4 +77,6 @@
     <!-- Battery saving mode for Location - GPS will be disabled -->
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <!-- Toolbar -->
+    <!-- Ambient category -->
 </resources>

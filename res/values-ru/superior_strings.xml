@@ -351,6 +351,8 @@
     <string name="data_usage_app_restrict_data_summary">Включить использование мобильных данных</string>
     <string name="data_usage_app_restrict_wifi">Данные Wi-Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi-Fi</string>
+    <string name="data_usage_app_restrict_vpn">Данные VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Профили производительности</string>
     <string name="thermal_control_per_app_default">Без оптимизации</string>
@@ -371,6 +373,10 @@
     <string name="smart_charging_title">Умная зарядка</string>
     <string name="smart_charging_summary">Установить максимальный уровень зарядки</string>
     <string name="smart_charging_switch_title">Использовать Умную зарядку</string>
+    <string name="smart_charging_level_title">Уровень остановки Умной зарядки</string>
+    <string name="smart_charging_resume_level_title">Уровень начала работы Умной зарядки</string>
+    <string name="smart_charging_reset_stats_title">Сбросить статистику батареи</string>
+    <string name="smart_charging_reset_stats_summary">Сбросить статистику батареи после достижения определенного уровня зарядки</string>
     <string name="smart_charging_footer">Умная зарядка позволяет установить максимальный уровень зарядки для продления срока службы батареи</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
@@ -433,4 +439,15 @@
     <string name="show_cpu_info">Показывать информацию о процессоре</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Накладываемый слой, показывающий текущую информацию о процессоре</string>
+    <!-- Toolbar -->
+    <string name="settings_head_title">Superior OS</string>
+    <!-- Ambient category -->
+    <string name="custom_ambient_display_title">Настройки Ambient Display</string>
+    <string name="custom_ambient_display_summary">Расширенные настройки</string>
+    <string name="dashboard_conditions_title">Уведомления в меню настроек</string>
+    <string name="summary_dashboard_conditions_enabled">Уведомления в меню настроек включены</string>
+    <string name="summary_dashboard_conditions_disabled">Уведомления в меню настроек выключены</string>
+    <string name="dashboard_suggestions_title">Подсказки в меню настроек</string>
+    <string name="summary_dashboard_suggestions_enabled">Подсказки меню настроек включены</string>
+    <string name="summary_dashboard_suggestions_disabled">Подсказки меню настроек выключены</string>
 </resources>

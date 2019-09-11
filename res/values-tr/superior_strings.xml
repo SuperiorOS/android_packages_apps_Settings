@@ -351,6 +351,8 @@
     <string name="data_usage_app_restrict_data_summary">Hücresel veri kullanımını etkinleştir</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi veri</string>
     <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri kullanımını etkinleştir</string>
+    <string name="data_usage_app_restrict_vpn">VPN verileri</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN veri kullanımını etkinleştir</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Termal kontrol profili</string>
     <string name="thermal_control_per_app_default">Optimizasyon yok</string>
@@ -371,6 +373,10 @@
     <string name="smart_charging_title">Akıllı şarj</string>
     <string name="smart_charging_summary">Maksimum şarj seviyesi ayarlayın</string>
     <string name="smart_charging_switch_title">Akıllı şarj kullan</string>
+    <string name="smart_charging_level_title">Durdurma tetikleyici seviyesi</string>
+    <string name="smart_charging_resume_level_title">Başlatma tetikleyici seviyesi</string>
+    <string name="smart_charging_reset_stats_title">Pil istatistiklerini sıfırla</string>
+    <string name="smart_charging_reset_stats_summary">Kullanıcı tanımlı şarj seviyesine ulaştıktan sonra pil istatistiklerini sıfırlayın</string>
     <string name="smart_charging_footer">Akıllı şarj, pilinizin ömrünü uzatmak için maksimum şarj seviyesini ayarlamanıza olanak verir</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Tam ekran uygulamalar</string>
@@ -433,4 +439,15 @@
     <string name="show_cpu_info">İşlemci bilgisi</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Geçerli işlemci bilgisini gösteren ekran yer paylaşımı</string>
+    <!-- Toolbar -->
+    <string name="settings_head_title">Superior OS</string>
+    <!-- Ambient category -->
+    <string name="custom_ambient_display_title">Ortam ekranı seçenekleri</string>
+    <string name="custom_ambient_display_summary">Gelişmiş ortam ekranı davranışını yapılandırma</string>
+    <string name="dashboard_conditions_title">Ayarlar menüsü durumları</string>
+    <string name="summary_dashboard_conditions_enabled">Ayarlar menüsü durumları etkin</string>
+    <string name="summary_dashboard_conditions_disabled">Ayarlar menüsü durumları devre dışı</string>
+    <string name="dashboard_suggestions_title">Ayarlar menüsü önerileri</string>
+    <string name="summary_dashboard_suggestions_enabled">Ayarlar menüsü önerileri etkin</string>
+    <string name="summary_dashboard_suggestions_disabled">Ayarlar menüsü önerileri devre dışı</string>
 </resources>

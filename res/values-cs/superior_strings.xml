@@ -351,6 +351,8 @@
     <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Profil tepelného řízení</string>
     <string name="thermal_control_per_app_default">Žádná optimalizace</string>
@@ -437,4 +439,15 @@
     <string name="show_cpu_info">Zobrazit využití CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Překrytí obrazovky informacemi o aktuálním vytížení CPU</string>
+    <!-- Toolbar -->
+    <string name="settings_head_title">Superior OS</string>
+    <!-- Ambient category -->
+    <string name="custom_ambient_display_title">Možnosti Ambientního displeje</string>
+    <string name="custom_ambient_display_summary">Pokročilá konfigurace Ambientního displeje</string>
+    <string name="dashboard_conditions_title">Podmínky Hlavního panelu</string>
+    <string name="summary_dashboard_conditions_enabled">Podmínky Hlavního panelu jsou povoleny</string>
+    <string name="summary_dashboard_conditions_disabled">Podmínky Hlavního panelu jsou zakázány</string>
+    <string name="dashboard_suggestions_title">Návrhy Hlavního panelu</string>
+    <string name="summary_dashboard_suggestions_enabled">Návrhy Hlavního panelu jsou povoleny</string>
+    <string name="summary_dashboard_suggestions_disabled">Návrhy Hlavního panelu jsou zakázány</string>
 </resources>

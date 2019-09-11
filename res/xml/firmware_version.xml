@@ -30,6 +30,15 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- Superior version -->
+    <Preference
+         android:key="superior_version"
+         android:title="@string/superior_version"
+         android:summary="@string/summary_placeholder"
+         settings:enableCopying="true"
+         settings:controller="com.android.settings.deviceinfo.firmwareversion.SuperiorVersionPreferenceController"/>
+
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
@@ -53,6 +62,14 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+
+    <!-- Build date -->
+    <Preference 
+        android:key="build_date"
+        android:title="@string/build_date"
+        android:summary="@string/build_date_default"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- Kernel -->
     <Preference

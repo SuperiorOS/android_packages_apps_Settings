@@ -136,8 +136,8 @@ public class OverlayCategoryPreferenceController extends AbstractPreferenceContr
                         }
                     }
                     return true;
-                } catch (RemoteException re) {
-                    Log.w(TAG, "Error enabling overlay.", re);
+                } catch (Exception e) {
+                    Log.w(TAG, "Error enabling overlay.", e);
                     return false;
                 }
             }

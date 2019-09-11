@@ -24,4 +24,14 @@
     <string name="face_unlock_method_default">When the screen is turned on</string>
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
 
+    <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">SuperiorOS version</string>
+    <string name="superior_version_default">Unknown</string>
+    <string name="keywords_superior_version">SuperiorOS version, superior version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
+
 </resources>

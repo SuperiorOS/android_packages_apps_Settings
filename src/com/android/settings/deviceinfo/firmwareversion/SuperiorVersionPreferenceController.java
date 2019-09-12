@@ -29,7 +29,9 @@ import com.android.settings.core.BasePreferenceController;
 public class SuperiorVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String SUPERIOR_VERSION_PROPERTY = "ro.superior.display.version";
+    static final String SUPERIOR_VERSION_PROPERTY = "ro.modversion";
+    static final String SUPERIOR_RELEASETYPE_PROPERTY = "ro.superior.releasetype";
+    static final String SUPERIOR_ZIPTYPE_PROPERTY = "ro.superior.edition";
 
     public SuperiorVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -37,12 +39,20 @@ public class SuperiorVersionPreferenceController extends BasePreferenceControlle
 
     @Override
     public int getAvailabilityStatus() {
-        return !TextUtils.isEmpty(SystemProperties.get(SUPERIOR_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !TextUtils.isEmpty(SystemProperties.get(SUPERIOR_VERSION_PROPERTY)) && !TextUtils.isEmpty(SystemProperties.get(SUPERIOR_RELEASETYPE_PROPERTY)) && !TextUtils.isEmpty(SystemProperties.get(SUPERIOR_ZIPTYPE_PROPERTY))
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(SUPERIOR_VERSION_PROPERTY,
-                mContext.getString(R.string.device_info_default));
+        String superiorVersion = SystemProperties.get(SUPERIOR_VERSION_PROPERTY);
+        String superiorReleaseType = SystemProperties.get(SUPERIOR_RELEASETYPE_PROPERTY);
+        String superiorZipType = SystemProperties.get(SUPERIOR_ZIPTYPE_PROPERTY);
+        if (!superiorVersion.isEmpty() && !superiorReleaseType.isEmpty() && !superiorZipType.isEmpty()) {
+            return superiorVersion + " | " + superiorReleaseType + " | " + superiorZipType;
+        } else {
+            return
+                mContext.getString(R.string.device_info_default);
+        }
     }
 }

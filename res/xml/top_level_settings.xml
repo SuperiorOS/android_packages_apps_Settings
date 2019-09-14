@@ -40,6 +40,14 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <Preference
+        android:key="top_level_superior_settings"
+        android:title="@string/superior_settings_dash_title"
+        android:summary="@string/superior_settings_summary"
+        android:icon="@drawable/ic_homepage_superior"
+        android:order="-105"
+        android:fragment="com.superior.settings.SuperiorSettings"/>
+
+    <Preference
         android:key="top_level_apps_and_notifs"
         android:title="@string/app_and_notification_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"

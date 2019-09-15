@@ -70,6 +70,11 @@
         android:summary="@string/low_battery_light_summary"
         settings:controller="com.android.settings.notification.BatteryLightPreferenceController"/>
 
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:key="battery_temperature"
+        android:title="@string/battery_temperature"
+        android:selectable="false" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"

@@ -49,4 +49,10 @@
     <string name="package_version">Package version</string> 
     <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
 
+    <!-- SELinux Status --> 
+    <string name="selinux_status">SELinux status</string> 
+    <string name="selinux_status_disabled">Disabled</string> 
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
 </resources>

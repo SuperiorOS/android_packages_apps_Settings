@@ -351,6 +351,8 @@
     <string name="data_usage_app_restrict_data_summary">Mobile Datennutzung aktivieren</string>
     <string name="data_usage_app_restrict_wifi">WLAN-Datennutzung</string>
     <string name="data_usage_app_restrict_wifi_summary">WLAN Datennutzung aktivieren</string>
+    <string name="data_usage_app_restrict_vpn">VPN-Daten</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN-Datennutzung erlauben</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Temperaturregel-Profil</string>
     <string name="thermal_control_per_app_default">Keine Optimierung</string>
@@ -438,5 +440,14 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Bildschirm-Overlay mit aktuellen CPU-Infos</string>
     <!-- Toolbar -->
+    <string name="settings_head_title">Superior OS</string>
     <!-- Ambient category -->
+    <string name="custom_ambient_display_title">Ambient-Optionen</string>
+    <string name="custom_ambient_display_summary">Erweiterte Ambient-Darstellung konfigurieren</string>
+    <string name="dashboard_conditions_title">Dashboard-Zustände</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard-Zustände sind aktiviert</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard-Zustände sind deaktiviert</string>
+    <string name="dashboard_suggestions_title">Dashboard-Vorschläge</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard-Vorschläge sind aktiviert</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard-Vorschläge sind deaktiviert</string>
 </resources>

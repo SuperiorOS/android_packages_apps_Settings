@@ -16,35 +16,171 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Версія SuperiorOS</string>
+    <string name="superior_version_default">Невідомо</string>
+    <string name="keywords_superior_version">Версія SuperiorOS</string>
     <!-- About phone screen, build date -->
+    <string name="build_date">Дата збірки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">дата збірки, інформація збірки</string>
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Знайдіть сенсор відбитків пальців на лівій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Яскравість</string>
+    <string name="night_brightness_value_title">Зниження яскравості при використанні нічного режиму</string>
+    <string name="night_bright_disabled">Вимкнено</string>
+    <string name="night_bright_minimum">Мінімальна яскравість</string>
+    <string name="night_bright_low">Низька яскравість</string>
+    <string name="night_bright_medium">Середня яскравість</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скріншота</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Вібрація при підкл. зарядки</string>
     <!-- Battery Stats -->
+    <string name="battery_stats_reset">Скинути статистику</string>
+    <string name="battery_stats_message">Історія використання батареї буде скинута</string>
+    <string name="ok_string">ОК</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+    <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
     <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Перемішана розкладка</string>
+    <string name="unlock_scramble_pin_layout_summary">Перемішувати розкладку PIN-коду підчас розблокування пристрою</string>
+    <string name="theme_category_title">Тема системи</string>
     <!-- SystemUI theme -->
+    <string name="systemui_theme_style_title">Тема SystemUI</string>
+    <string name="systemui_theme_style_auto">Автоматично (на основі шпалер)</string>
+    <string name="systemui_theme_style_light">Світла</string>
+    <string name="systemui_theme_style_dark">Темна</string>
+    <string name="system_theme_style_black">Чорна</string>
+    <string name="system_theme_style_superior">Superior</string>
+    <string name="applying_theme_toast">Застосування теми, будь ласка, зачекайте...</string>
+    <string name="theme_applied_toast">Тему застосовано!</string>
+    <string name="substratum_installed_title">Системні теми недоступні через встановлений Substratum. Будь ласка, видаліть всі теми, що змінюють вигляд Андроїд, щоб продовжити.</string>
+    <string name="force_allow_system_themes_title">Дозволити використовувати системні оформлення і шрифти спільно з Substratum</string>
+    <string name="force_allow_system_themes_summary">Дозволяє використовувати наступні налаштування тем і шрифтів незважаючи на встановлений Substratum.</string>
+    <string name="force_theme_warning_title">Увага!</string>
+    <string name="force_theme_warning_message">Це може призвести до суперечок між оформленнями Substratum і системними оформленнями. Ми сподіваємось, що ти розумієш, що робиш. #НеЗвинувачуйНасПотім :D</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">Обертання</string>
+    <string name="display_rotation_disabled">Вимкнено</string>
+    <string name="display_rotation_unit">градусів</string>
+    <string name="display_rotation_category_title">Режими обертання</string>
+    <string name="display_rotation_0_title">0 градусів</string>
+    <string name="display_rotation_90_title">90 градусів</string>
+    <string name="display_rotation_180_title">180 градусів</string>
+    <string name="display_rotation_270_title">270 градусів</string>
     <!-- Sizes for pattern lockscreen -->
+    <string name="lock_settings_picker_pattern_size_message">Оберіть розмір графічного ключа</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Показувати неправильний код</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Показувати точки ключа</string>
     <!-- Lock screen vibrate settings -->
+    <string name="lockscreen_vibrate_enabled_title">Вібрація</string>
+    <string name="lockscreen_vibrate_enabled_head">Вібрувати при розблокуванні</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Колір світлодіоду</string>
+    <string name="custom_light_on_time_title">Час увімкненого LED (мс)</string>
+    <string name="custom_light_off_time_title">Час вимкненого LED (мс)\"</string>
+    <string name="value_equals_default">За замовчуванням</string>
+    <string name="show_light_on_zen_title">Блимати під час режиму \"Не турбувати\"</string>
     <!-- Expanded desktop -->
+    <string name="expanded_desktop_pref_title">Розширений робочий стіл</string>
+    <string name="expanded_hide_nothing">Не ховати</string>
+    <string name="expanded_hide_status">Приховувати рядок стану</string>
+    <string name="expanded_hide_navigation">Приховувати панель навігації</string>
+    <string name="expanded_hide_both">Приховувати обидва</string>
+    <string name="expanded_nothing_to_show">Додати спеціальну конфігурацію для кожного додатка для розширеного режиму, установіть прапорець \"Увімкнено для всіх\" у положення \"Вимкнено\"</string>
+    <string name="expanded_desktop_state">Розширений екран</string>
+    <string name="expanded_enabled_for_all">Увімкнуто для всіх</string>
+    <string name="expanded_user_configurable">Налаштовується користувачем</string>
+    <string name="expanded_desktop_style">Режим разширенного екрану</string>
+    <string name="expanded_desktop_style_description">Виберіть типовий стиль розширеного робочого столу</string>
+    <string name="expanded_desktop_title">Параметри розширеного екрану</string>
     <!-- Density category -->
+    <string name="density_category">Параметри щільності</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Мелодія дзвінка - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Мелодія дзвінка - SIM 2</string>
     <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Без звуку, без медіа</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Ввімкнено (без звуку, без медіа)</string>
     <!-- Swipe fp to dismiss notifications -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Проведіть пальцем по сканеру відбитка вліво або вправо щоб прибрати сповіщення</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Щоб прибрати сповіщення, свайпніть ліворуч або праворуч по сканеру відбитка пальця на задній стороні телефону.</string>
     <!-- Privacy Guard -->
+    <string name="loading">Завантаження\u2026</string>
+    <string name="privacy_guard_manager_title">Вартовий Приватності</string>
+    <string name="privacy_guard_switch_label">Увімкнути Вартового Приватності</string>
+    <string name="privacy_guard_dlg_title">Увімкнути Вартового Приватності?</string>
+    <string name="privacy_guard_dlg_text">Коли налаштування приватності увімкнені, додаток не зможе отримати доступ до особистих даних, таких як контакти, повідомлення або журнали викликів.</string>
+    <string name="privacy_guard_dlg_system_app_text">Увімкнувши Вартового Приватності, для системних програм, програма не зможе отримати доступ або надати персональні дані. Це може призвести до неправильної роботи інших програм.</string>
+    <string name="privacy_guard_default_title">Увімкнено за замовчуванням</string>
+    <string name="privacy_guard_manager_summary">Налаштуйте додатки, які матимуть доступ до ваших персональних даних</string>
+    <string name="privacy_guard_no_user_apps">Немає встановлених додатків</string>
+    <string name="privacy_guard_help_title">Допомога</string>
     <!-- App ops permissions -->
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- Memory -->
     <!-- Names of categories of app ops tabs - extension of AOSP -->
     <!-- User display names for app ops codes - extension of AOSP -->
+    <string name="app_ops_summaries_gps">GPS</string>
+    <string name="app_ops_summaries_install_packages">встановлення пакетів</string>
+    <string name="app_ops_summaries_keep_device_awake">заборонити пристрою переходити в сплячий режим</string>
+    <string name="app_ops_summaries_make_phone_call">робити телефонні дзвінки</string>
+    <string name="app_ops_summaries_manage_ipsec_tunnels">керувати ipsec тунелями</string>
+    <string name="app_ops_summaries_mock_location">підробляти розташування</string>
+    <string name="app_ops_summaries_modify_calendar">зміна даних календаря</string>
+    <string name="app_ops_summaries_modify_call_log">зміна списку дзвінків</string>
+    <string name="app_ops_summaries_modify_clipboard">Зміна буфера обміну</string>
+    <string name="app_ops_summaries_modify_contacts">Зміна даних контактів</string>
+    <string name="app_ops_summaries_modify_settings">зміна налаштувань</string>
+    <string name="app_ops_summaries_monitor_high_power_location">відстеження розташування з високою точністю</string>
+    <string name="app_ops_summaries_monitor_location">відстеження розташування</string>
+    <string name="app_ops_summaries_mute_unmute_microphone">увімк./вимк. мікрофон</string>
+    <string name="app_ops_summaries_neighboring_cells">сусідні мережі</string>
+    <string name="app_ops_summaries_phone_calls">відповідати на телефонні дзвінки</string>
+    <string name="app_ops_summaries_picture_in_picture">використовувати картинку в картинці</string>
+    <string name="app_ops_summaries_play_audio">відтворення аудіо</string>
+    <string name="app_ops_summaries_post_notification">виводити сповіщення</string>
+    <string name="app_ops_summaries_project_media">трансляція контенту</string>
+    <string name="app_ops_summaries_read_calendar">читати дані календаря</string>
+    <string name="app_ops_summaries_read_call_log">читати журнал викликів</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">читання інформації про мережу</string>
+    <string name="app_ops_summaries_read_clipboard">читання буфера обміну</string>
+    <string name="app_ops_summaries_read_contacts">читання даних контактів</string>
+    <string name="app_ops_summaries_read_external_storage">читання зовнішнього накопичувача</string>
+    <string name="app_ops_summaries_read_mms">перегляд MMS-повідомлень</string>
+    <string name="app_ops_summaries_read_phone_numbers">перегляд телефонних номерів</string>
+    <string name="app_ops_summaries_read_phone_state">читати стан телефона</string>
+    <string name="app_ops_summaries_read_sms">читати SMS</string>
+    <string name="app_ops_summaries_receive_emergency_broadcast">отримувати повідомлення екстрених служб</string>
+    <string name="app_ops_summaries_receive_sms">отримання SMS</string>
+    <string name="app_ops_summaries_record_audio">запис аудіо</string>
+    <string name="app_ops_summaries_request_delete_packages">запити на видалення пакетів</string>
+    <string name="app_ops_summaries_run_any_in_background">запускати у фоновому режимі</string>
+    <string name="app_ops_summaries_run_in_background">запустити у фоновому режимі</string>
+    <string name="app_ops_summaries_scan_wifi">сканувати Wi-Fi мережі</string>
+    <string name="app_ops_summaries_send_mms">надсилати MMS-повідомлення</string>
+    <string name="app_ops_summaries_send_sms">надсилання SMS</string>
+    <string name="app_ops_summaries_start_at_bootup">запуск при ввікненні пристрою</string>
+    <string name="app_ops_summaries_start_foreground">запускати на передньому плані</string>
+    <string name="app_ops_summaries_toast_window">показувати спливаючі сповіщення</string>
+    <string name="app_ops_summaries_toggle_bluetooth">перемикати Bluetooth</string>
+    <string name="app_ops_summaries_toggle_mobile_data">перемикати стільникові дані</string>
+    <string name="app_ops_summaries_toggle_nfc">увімк./вимк. NFC</string>
+    <string name="app_ops_summaries_toggle_wifi">перемикати Wi-Fi</string>
+    <string name="app_ops_summaries_turn_on_screen">увімкнути екран</string>
+    <string name="app_ops_summaries_use_alarm_volume">керувати гучністю будильника</string>
+    <string name="app_ops_summaries_use_audio_focus">керувати аудіо-фокусом</string>
+    <string name="app_ops_summaries_use_bluetooth_volume">керування гучністю Bluetooth</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <!-- Changelog -->
     <!-- Volume link notification -->

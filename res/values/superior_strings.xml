@@ -412,4 +412,8 @@
     <string name="adj_intensity_title">Intensity</string>
     <string name="adj_contrast_title">Contrast</string>
 
+    <!-- Lockscreen rotation -->
+    <string name="lockscreen_rotation_title">Auto-rotate lockscreen</string>
+    <string name="lockscreen_rotation_summary">Allow rotation on the lockscreen</string>
+
 </resources>

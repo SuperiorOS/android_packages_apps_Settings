@@ -3276,8 +3276,8 @@
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
-        <!-- SyberiaSettings -->
-        <activity android:name=".Settings$SyberiaSettingsActivity"
+        <!-- SuperiorSettings -->
+        <activity android:name=".Settings$SuperiorSettingsActivity"
             android:label="@string/superior_settings_title"
             android:icon="@drawable/ic_homepage_superiorsettings"
             android:parentActivityName="com.android.settings">

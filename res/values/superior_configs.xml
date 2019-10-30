@@ -26,4 +26,7 @@
     <!-- Whether SELinux status should be shown or not. -->
     <bool name="config_show_selinux_status">true</bool>
 
+    <!-- Whether the given language capitalizes nouns -->
+    <bool name="language_capitalizes_nouns">false</bool>
+
 </resources>

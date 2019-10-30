@@ -239,4 +239,7 @@
      <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
      <string name="battery_maximum_capacity_not_available">@string/battery_cycle_count_not_available</string>
 
+     <!-- Pocket judge -->
+     <string name="pocket_judge_title">Pocket detection</string>
+     <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 </resources>

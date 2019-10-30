@@ -564,7 +564,7 @@
     <com.android.settings.development.autofill.AutofillPreferenceCategory
         android:key="debug_autofill_category"
         android:title="@string/debug_autofill_category"
-        android:order="1100">
+        android:order="1100"> <!-- Incremented by 100 from last order (i.e. 1000) -->
 
         <ListPreference
             android:key="autofill_logging_level"

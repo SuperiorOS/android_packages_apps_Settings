@@ -100,6 +100,10 @@
         android:fragment="com.android.settings.display.ScreenZoomSettings"
         settings:searchable="false"/>
 
+    <com.android.settings.display.DensityPreference
+        android:key="density"
+        android:title="@string/developer_smallest_width" />
+
     <SwitchPreference
         android:key="show_operator_name"
         android:title="@string/show_operator_name_title"
@@ -131,6 +135,13 @@
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
+    <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary"
+        android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+        settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/device_theme"
@@ -140,7 +151,7 @@
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
-		
+
     <Preference
         android:key="game_driver_dashboard"
         android:title="@string/game_driver_dashboard_title"
@@ -151,7 +162,7 @@
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category"
         android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
-		
+
     <SwitchPreference
         android:key="dark_ui_mode"
         android:title="@string/dark_ui_mode"

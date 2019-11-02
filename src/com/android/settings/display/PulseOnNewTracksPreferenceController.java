@@ -13,7 +13,7 @@
  */
 package com.android.settings.display;
 
-import static android.provider.Settings.System.AMBIENT_WAKE_GESTURES;
+import static android.provider.Settings.System.PULSE_ON_NEW_TRACKS;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -29,20 +29,21 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
-public class AmbientWakeGesturesPreferenceController extends
+public class PulseOnNewTracksPreferenceController extends
         TogglePreferenceController implements Preference.OnPreferenceChangeListener {
 
     private final int ON = 1;
     private final int OFF = 0;
 
     @VisibleForTesting
-    static final String KEY_AMBIENT_WAKE_GESTURES = "ambient_wake_gestures";
+    static final String KEY_PULSE_ON_NEW_TRACKS = "pulse_on_new_tracks";
+    static final String KEY_PULSE_ON_NEW_TRACKS_SOLI = "pulse_on_new_tracks_soli";
     private static final int MY_USER = UserHandle.myUserId();
 
     private final MetricsFeatureProvider mMetricsFeatureProvider;
     private AmbientDisplayConfiguration mConfig;
 
-    public AmbientWakeGesturesPreferenceController(Context context, String key) {
+    public PulseOnNewTracksPreferenceController(Context context, String key) {
         super(context, key);
         mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
     }
@@ -52,7 +53,7 @@ public class AmbientWakeGesturesPreferenceController extends
      *
      * @param config AmbientDisplayConfiguration for this controller
      */
-    public AmbientWakeGesturesPreferenceController setConfig(
+    public PulseOnNewTracksPreferenceController setConfig(
             AmbientDisplayConfiguration config) {
         mConfig = config;
         return this;
@@ -60,7 +61,8 @@ public class AmbientWakeGesturesPreferenceController extends
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
-        if (KEY_AMBIENT_WAKE_GESTURES.equals(preference.getKey())) {
+        if (KEY_PULSE_ON_NEW_TRACKS.equals(preference.getKey())
+                || KEY_PULSE_ON_NEW_TRACKS_SOLI.equals(preference.getKey())) {
             mMetricsFeatureProvider.action(mContext, SettingsEnums.ACTION_AMBIENT_DISPLAY);
         }
         return false;
@@ -68,12 +70,14 @@ public class AmbientWakeGesturesPreferenceController extends
 
     @Override
     public boolean isChecked() {
-        return getAmbientConfig().isAmbientGestureEnabled(MY_USER);
+         return Settings.System.getIntForUser(mContext.getContentResolver(),
+                PULSE_ON_NEW_TRACKS, 1,
+                MY_USER) == 1;
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        Settings.System.putInt(mContext.getContentResolver(), AMBIENT_WAKE_GESTURES, isChecked ? ON : OFF);
+        Settings.System.putInt(mContext.getContentResolver(), PULSE_ON_NEW_TRACKS, isChecked ? ON : OFF);
         return true;
     }
 
@@ -85,10 +89,11 @@ public class AmbientWakeGesturesPreferenceController extends
 
     @Override
     public boolean isSliceable() {
-        return TextUtils.equals(getPreferenceKey(), "ambient_wake_gestures");
+        return TextUtils.equals(getPreferenceKey(), KEY_PULSE_ON_NEW_TRACKS)
+                || TextUtils.equals(getPreferenceKey(), KEY_PULSE_ON_NEW_TRACKS_SOLI);
     }
 
-    private AmbientDisplayConfiguration getAmbientConfig() {
+    protected AmbientDisplayConfiguration getAmbientConfig() {
         if (mConfig == null) {
             mConfig = new AmbientDisplayConfiguration(mContext);
         }

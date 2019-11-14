@@ -150,6 +150,11 @@
         android:summary="@string/tap_to_wake_summary" />
 
     <ListPreference
+        android:key="display_cutout_emulation"
+        android:title="@string/display_cutout_emulation"
+        settings:keywords="@string/display_cutout_emulation_keywords" />
+
+    <ListPreference
         android:key="theme"
         android:title="@string/device_theme"
         android:summary="@string/summary_placeholder" />

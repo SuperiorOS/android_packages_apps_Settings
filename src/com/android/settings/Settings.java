@@ -179,4 +179,5 @@ public class Settings extends SettingsActivity {
 
     // SuperiorOS Additions.
     public static class SuperiorSettingsActivity extends SettingsActivity {}
+    public static class GamingModeActivity extends SettingsActivity {}
 }

@@ -150,6 +150,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.android.settings.livedisplay.LiveDisplaySettings;
 
 import com.superior.settings.SuperiorSettings;
+import com.superior.settings.fragments.GamingMode;
 
 public class SettingsGateway {
 
@@ -289,6 +290,7 @@ public class SettingsGateway {
             SuperiorSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
             LiveDisplaySettings.class.getName(),
+            GamingMode.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -328,5 +330,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.SuperiorSettingsActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
     };
 }

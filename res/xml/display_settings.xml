@@ -160,12 +160,6 @@
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
-    <Preference
-        android:key="game_driver_dashboard"
-        android:title="@string/game_driver_dashboard_title"
-        android:summary="@string/game_driver_dashboard_summary"
-        android:fragment="com.android.settings.development.gamedriver.GameDriverDashboard" />
-
     <PreferenceCategory
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category"

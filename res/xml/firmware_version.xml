@@ -21,14 +21,14 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Android version -->
+    <!-- Device Name -->
     <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
     <!-- Superior version -->
     <Preference
@@ -38,6 +38,14 @@
          settings:enableCopying="true"
          settings:controller="com.android.settings.deviceinfo.firmwareversion.SuperiorVersionPreferenceController"/>
 
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference

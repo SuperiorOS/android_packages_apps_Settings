@@ -25,14 +25,14 @@
     android:layout="@layout/superior_logo"
     android:key="superior_logo" />
 
-    <!-- Android version -->
+    <!-- Device name -->
     <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
     <!-- Superior version -->
     <Preference
@@ -43,6 +43,14 @@
          android:selectable="false"
          settings:controller="com.android.settings.deviceinfo.firmwareversion.SuperiorVersionPreferenceController"/>
 
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference

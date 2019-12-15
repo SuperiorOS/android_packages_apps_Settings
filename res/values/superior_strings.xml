@@ -298,4 +298,14 @@
     <string name="action_clear_notifications">Clear notifications</string>
     <string name="action_ringer_modes">Ringer modes</string>
 
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom</string>
+    <string name="back_options_dialog_title">Options</string>
+    <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
+    <string name="back_gesture_area_dead_zone_title">Back area dead zone</string>
+    <string name="back_gesture_area_dead_zone_message">Set the area of the screen where the swipe can be triggered, to avoid conflicts with in-app gestures.</string>
+    <string name="smallest_tick_label">Full screen</string>
+    <string name="greatest_tick_label">Half screen</string>
+
 </resources>

@@ -41,8 +41,9 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
     private static final String KEY_BACK_SENSITIVITY = "back_sensitivity";
     private static final String KEY_HOME_HANDLE_SIZE = "home_handle_width";
+    private static final String KEY_BACK_DEAD_Y_ZONE = "back_dead_y_zone";
 
-    public static void show(SystemNavigationGestureSettings parent, int sensitivity, int length) {
+    public static void show(SystemNavigationGestureSettings parent, int sensitivity, int backDeadYZoneMode, int length) {
         if (!parent.isAdded()) {
             return;
         }
@@ -51,6 +52,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 new GestureNavigationBackSensitivityDialog();
         final Bundle bundle = new Bundle();
         bundle.putInt(KEY_BACK_SENSITIVITY, sensitivity);
+        bundle.putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
         bundle.putInt(KEY_HOME_HANDLE_SIZE, length);
         dialog.setArguments(bundle);
         dialog.setTargetFragment(parent, 0);
@@ -70,17 +72,23 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         seekBarSensitivity.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
         final SeekBar seekBarHandleSize = view.findViewById(R.id.home_handle_seekbar);
         seekBarHandleSize.setProgress(getArguments().getInt(KEY_HOME_HANDLE_SIZE));
+        final SeekBar backDeadzoneSeekbar = view.findViewById(R.id.back_deadzone_seekbar);
+        backDeadzoneSeekbar.setProgress(getArguments().getInt(KEY_BACK_DEAD_Y_ZONE));
         return new AlertDialog.Builder(getContext())
                 .setTitle(R.string.back_sensitivity_dialog_title)
                 .setMessage(R.string.back_sensitivity_dialog_message)
                 .setView(view)
                 .setPositiveButton(R.string.okay, (dialog, which) -> {
-                    int sensitivity = seekBar.getProgress();
+                    int sensitivity = seekBarSensitivity.getProgress();
                     getArguments().putInt(KEY_BACK_SENSITIVITY, sensitivity);
                     int length = seekBarHandleSize.getProgress();
                     getArguments().putInt(KEY_HOME_HANDLE_SIZE, length);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
+                    int backDeadYZoneMode = backDeadzoneSeekbar.getProgress();
+                    getArguments().putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
+                    SystemNavigationGestureSettings.setBackDeadYZone(getActivity(),
+                            backDeadYZoneMode);
                     SystemNavigationGestureSettings.setHomeHandleSize(getActivity(), length);
                     SystemNavigationGestureSettings.setBackGestureOverlaysToUse(getActivity());
                     SystemNavigationGestureSettings.setCurrentSystemNavigationMode(getActivity(),

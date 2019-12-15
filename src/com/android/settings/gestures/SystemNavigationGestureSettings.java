@@ -75,6 +75,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
     static final String SHARED_PREFERENCES_NAME = "system_navigation_settings_preferences";
     @VisibleForTesting
     static final String PREFS_BACK_SENSITIVITY_KEY = "system_navigation_back_sensitivity";
+    static final String PREFS_BACK_DEAD_Y_ZONE_KEY = "system_navigation_back_sensitivity";
 
     @VisibleForTesting
     static final String KEY_SYSTEM_NAV_3BUTTONS = "system_nav_3buttons";
@@ -215,12 +216,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         if (info.getKey() == KEY_SYSTEM_NAV_GESTURAL) {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
             p.setExtraWidgetOnClickListener((v) -> GestureNavigationBackSensitivityDialog
-<<<<<<< HEAD
-                    .show(this, getBackSensitivity(getContext(), mOverlayManager),
-                    getBackHeight(getContext()), getHomeHandleSize(getContext())));
-=======
-                    .show(this, getBackSensitivity(getContext(), mOverlayManager)));
->>>>>>> parent of f21cc31ccd... Settings: Navigation mode settings [2/2]
+                    .show(this, getBackSensitivity(getContext(), mOverlayManager), getBackDeadZoneMode(getContext()), getHomeHandleSize(getContext())));
         } else {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
         }
@@ -302,6 +298,19 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         }
     }
 
+    static int getBackDeadZoneMode(Context context) {
+        int value = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, 0,
+                USER_CURRENT);
+        return value;
+    }
+
+    static void setBackDeadYZone(Context context, int backDeadYZoneMode) {
+        Settings.System.putIntForUser(context.getContentResolver(),
+                Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, backDeadYZoneMode,
+                USER_CURRENT);
+    }
+
     @VisibleForTesting
     static int getBackSensitivity(Context context, IOverlayManager overlayManager) {
         for (int i = 0; i < BACK_GESTURE_OVERLAYS_TO_USE.length; i++) {
@@ -316,22 +325,6 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         // If Gesture nav is not selected, read the value from shared preferences.
         return context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE)
                 .getInt(PREFS_BACK_SENSITIVITY_KEY, BACK_GESTURE_INSET_DEFAULT_OVERLAY);
-    }
-
-<<<<<<< HEAD
-    static void setBackHeight(Context context, int height) {
-        // height cant be range 0 - 3
-        // 0 means full height
-        // 1 measns half of the screen
-        // 2 means lower third of the screen
-        // 3 means lower sixth of the screen
-        Settings.System.putInt(context.getContentResolver(),
-                Settings.System.BACK_GESTURE_HEIGHT, height);
-    }
-
-    static int getBackHeight(Context context) {
-        return Settings.System.getInt(context.getContentResolver(),
-                Settings.System.BACK_GESTURE_HEIGHT, 0);
     }
 
     static void setHomeHandleSize(Context context, int length) {
@@ -352,8 +345,6 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         }
     }
 
-=======
->>>>>>> parent of f21cc31ccd... Settings: Navigation mode settings [2/2]
     @VisibleForTesting
     static String getCurrentSystemNavigationMode(Context context) {
         if (SystemNavigationPreferenceController.isEdgeToEdgeEnabled(context)) {

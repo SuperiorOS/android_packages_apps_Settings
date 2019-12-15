@@ -68,6 +68,67 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/back_gesture_area_dead_zone_title"
+        android:textAppearance="@style/TextAppearance.Switch" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/back_gesture_area_dead_zone_message"
+        android:textAppearance="?android:attr/textAppearance" />
+
+    <SeekBar
+        android:id="@+id/back_deadzone_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:min="0"
+        android:max="3"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:theme="@*android:style/ThemeOverlay.DeviceDefault.Accent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView android:id="@+id/smallest_tick"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginBottom="2dp"
+                  android:layout_marginStart="12dp"
+                  android:gravity="start"
+                  android:text="@string/smallest_tick_label"
+                  android:textAppearance="?android:attr/textAppearance"
+                  android:singleLine="true"
+                  android:ellipsize="marquee" />
+
+        <TextView android:id="@+id/greatest_tiick"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginBottom="2dp"
+                  android:layout_marginEnd="12dp"
+                  android:gravity="end"
+                  android:text="@string/greatest_tick_label"
+                  android:textAppearance="?android:attr/textAppearance"
+                  android:singleLine="true"
+                  android:ellipsize="marquee" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginStart="12dp"
         android:textAppearance="?android:attr/textAppearance"

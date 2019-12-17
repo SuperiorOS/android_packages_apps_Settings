@@ -28,6 +28,7 @@
         android:title="@string/model_info"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController"
+        android:selectable="false"
         settings:enableCopying="true"/>
 
     <!-- Platform -->
@@ -52,6 +53,7 @@
         android:title="@string/status_serial_number"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController"
+        android:selectable="false"
         settings:enableCopying="true"/>
 
     <!-- Hardware revision -->
@@ -60,6 +62,7 @@
         android:title="@string/hardware_revision"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController"
+        android:selectable="false"
         settings:enableCopying="true"/>
 
 </PreferenceScreen>

@@ -56,6 +56,7 @@
         android:title="@string/module_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
     <!-- Baseband -->
@@ -64,6 +65,7 @@
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Build date -->
@@ -80,6 +82,7 @@
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
     <!-- Build -->
@@ -88,6 +91,7 @@
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
 </PreferenceScreen>

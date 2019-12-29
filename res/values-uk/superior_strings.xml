@@ -30,21 +30,61 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Знайдіть сканер відбитків пальців на лівій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Сканер відбитків пальців знаходиться на лівій грані вашого планшета.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Сканер відбитків пальців знаходиться на правій грані вашого смартфона.</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="battery_temp">Температура батареї</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Вібрація при підкл. зарядки</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скріншота</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+    <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Колір світлодіоду</string>
+    <string name="custom_light_on_time_title">Час увімкненого LED (мс)</string>
+    <string name="custom_light_off_time_title">Час вимкненого LED (мс)\"</string>
+    <string name="value_equals_default">за замовчуванням</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Скинути статистику</string>
+    <string name="battery_stats_message">Історія використання батареї буде скинута</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Натисніть, щоб відобразити інформацію</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Мелодія дзвінка - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Мелодія дзвінка - SIM 2</string>
     <!-- Changelog -->
+    <string name="changelog_title">Журнал змін</string>
+    <string name="changelog_summary">Нещодавні зміни</string>
+    <string name="changelog_loading">Завантажується журнал змін\u2026</string>
+    <string name="changelog_error">Помилка завантаження списку змін</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Зв\'язати гучність рінгтона &amp; повідомлень</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Повноекранні додатки</string>
+    <string name="display_cutout_force_fullscreen_summary">Змусити додатки ігнорувати виріз</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Повний</string>
+    <string name="back_height_high_label">Нижнє</string>
+    <string name="back_options_dialog_title">Параметри</string>
+    <string name="back_height_message">Довжина екрану використовується як сенсорний регіон для жесту \"Назад\".</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Платформа</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Загалом ОЗП</string>
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Display : Rotation -->
+    <!-- Media gestures -->
+    <!-- Fingerprint to dismiss -->
+    <!-- Notch behavior -->
 </resources>

@@ -37,4 +37,11 @@
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Display : Rotation -->
+    <!-- Media gestures -->
+    <!-- Fingerprint to dismiss -->
+    <!-- Notch behavior -->
 </resources>

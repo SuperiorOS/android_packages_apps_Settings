@@ -17,24 +17,77 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Phiên bản SuperiorOS</string>
+    <string name="superior_version_default">Không rõ</string>
+    <string name="keywords_superior_version">Phiên bản SuperiorOS, phiên bản superior</string>
     <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Vị trí cảm biến vân tay ở mặt trước của điện thoại.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vị trí cảm biến vân tay ở bên trái điện thoại của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vị trí cảm biến vân tay ở bên phải điện thoại của bạn.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vị trí cảm biến vân tay ở mặt trước của thiết bị.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vị trí cảm biến vân tay ở bên trái của thiết bị.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vị trí cảm biến vân tay ở bên phải của thiết bị.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vị trí cảm biến vân tay trên mặt trước máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vị trí cảm biến vân tay trên cạnh trái máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vị trí cảm biến vân tay trên cạnh phải máy tính bảng của bạn.</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="battery_temp">Nhiệt độ pin</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Rung khi sạc</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Âm thanh chụp màn hình</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Mở khóa nhanh</string>
+    <string name="unlock_quick_unlock_control_summary">Tự động mở khóa khi nhập mã PIN/mật khẩu chính xác</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Màu sắc đèn</string>
+    <string name="custom_light_on_time_title">Thời gian SÁNG đèn khi nhấp nháy (ms)</string>
+    <string name="custom_light_off_time_title">Thời gian TẮT đèn khi nhấp nháy (ms)</string>
+    <string name="value_equals_default">def</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Đặt lại thống kê</string>
+    <string name="battery_stats_message">Dữ liệu thống kê pin sẽ được đặt lại</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Chạm để hiện thông tin</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Nhạc chuông - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Nhạc chuông - SIM 2</string>
     <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Thay đổi gần đây</string>
     <!-- Volume link notification -->
     <!-- Notch: Full screen apps -->
     <!-- Back Gesture Height -->
+    <string name="back_options_dialog_title">Tùy chọn</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Nền tảng</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Tổng RAM</string>
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Display : Rotation -->
+    <string name="display_rotation_disabled">Đã tắt</string>
+    <string name="display_rotation_unit">độ</string>
+    <string name="display_rotation_0_title">0 độ</string>
+    <string name="display_rotation_90_title">90 độ</string>
+    <string name="display_rotation_180_title">180 độ</string>
+    <string name="display_rotation_270_title">270 độ</string>
+    <!-- Media gestures -->
+    <!-- Fingerprint to dismiss -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Trượt cảm biến vân tay sang trái hoặc phải để loại bỏ thông báo</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Để loại bỏ thông báo của bạn, hãy vuốt sang trái hoặc phải trên cảm biến vân tay ở mặt sau của điện thoại.</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Trạng thái tai thỏ</string>
+    <string name="display_cutout_mode_normal">Mặc định</string>
+    <string name="display_cutout_mode_hidden">Ẩn</string>
 </resources>

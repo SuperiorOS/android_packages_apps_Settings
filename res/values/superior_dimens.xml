@@ -17,4 +17,8 @@
 
     <!-- Fingerprint -->
     <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
+
+    <!-- circle avatar size dimensions-->
+    <dimen name="circle_avatar_size">40dp</dimen>
+
 </resources>

@@ -169,6 +169,12 @@
         android:title="@string/theme_customization_category"
         android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
 
+     <Preference
+         android:key="themes"
+         android:title="@string/themes_title"
+         android:summary="@string/themes_summary"
+         android:fragment="com.android.settings.superior.SuperiorThemes" />
+
         <ListPreference
             android:key="android.theme.customization.accent_color"
             android:title="@string/theme_customization_accent_color_title"/>

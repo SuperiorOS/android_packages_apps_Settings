@@ -181,9 +181,16 @@
         settings:controller="com.android.settings.display.DarkUIPreferenceController"
         settings:searchable="false"/>
 
+     <Preference
+         android:key="theme_room"
+         android:title="@string/themeroom_title"
+         android:summary="@string/themeroom_summary"
+         android:fragment="com.android.settings.superior.SuperiorThemes" />
+
         <ListPreference
             android:key="android.theme.customization.accent_color"
             android:title="@string/theme_customization_accent_color_title"/>
+
         <ListPreference
             android:key="android.theme.customization.font"
             android:title="@string/theme_customization_font_title"/>

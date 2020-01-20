@@ -140,6 +140,6 @@ public class DarkUIPreferenceController extends TogglePreferenceController imple
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 SuperiorOS Project
+<!-- Copyright (C) 2018-2020 SuperiorOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,11 +21,10 @@
         <ListPreference
             android:key="theme_switch"
             android:title="@string/theme_type_title"
-            android:summary="@string/theme_type_summary"
+            android:summary="%s"
             android:dialogTitle="@string/theme_type_summary"
             android:entries="@array/theme_type_titles"
             android:entryValues="@array/theme_type_values"
             android:defaultValue="1"/>
-
 </PreferenceScreen>
 

@@ -99,6 +99,7 @@
 
     <com.android.settings.network.PrivateDnsModeDialogPreference
         android:key="private_dns_settings"
+        android:icon="@drawable/ic_private_dns_settings"
         android:title="@string/select_private_dns_configuration_title"
         android:order="20"
         android:dialogTitle="@string/select_private_dns_configuration_dialog_title"

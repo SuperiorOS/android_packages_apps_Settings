@@ -255,4 +255,8 @@
     <string name="ambient_notification_light_accent_title">System accent color</string>
     <string name="ambient_notification_light_color_automatic_title">Notification color</string>
     <string name="pulse_ambient_light_color">When pulsing, use</string>
+
+    <!-- 3 Button Navbar options -->
+    <string name="navbar_invert_layout_title">Invert navigation bar layout</string>
+    <string name="navbar_invert_info">Invert navigation bar layout</string>
 </resources>

@@ -440,4 +440,7 @@
     <!-- Lockscreen timeout -->
     <string name="lockscreen_timeout_title">Lockscreen timeout</string>
 
+    <!-- Back gesture vibration -->
+    <string name="back_gesture_haptic_message">Enable haptic feedback for back gesture.</string>
+
 </resources>

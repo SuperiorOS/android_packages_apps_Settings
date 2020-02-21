@@ -36,6 +36,7 @@ import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
  */
 public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFragment {
 
+    private boolean mHapticSwitchChecked;
     private boolean mGesturePillSwitchChecked;
 
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
@@ -74,6 +75,16 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         seekBarHandleSize.setProgress(getArguments().getInt(KEY_HOME_HANDLE_SIZE));
         final SeekBar backDeadzoneSeekbar = view.findViewById(R.id.back_deadzone_seekbar);
         backDeadzoneSeekbar.setProgress(getArguments().getInt(KEY_BACK_DEAD_Y_ZONE));
+        final Switch hapticSwitch = view.findViewById(R.id.back_gesture_haptic);
+        mHapticSwitchChecked = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.BACK_GESTURE_HAPTIC, 1) == 1;
+        hapticSwitch.setChecked(mHapticSwitchChecked);
+        hapticSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mHapticSwitchChecked = hapticSwitch.isChecked() ? true : false;
+            }
+        });
         return new AlertDialog.Builder(getContext())
                 .setTitle(R.string.back_sensitivity_dialog_title)
                 .setMessage(R.string.back_sensitivity_dialog_message)
@@ -85,6 +96,8 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                     getArguments().putInt(KEY_HOME_HANDLE_SIZE, length);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
+                    Settings.System.putInt(getContext().getContentResolver(),
+                            Settings.System.BACK_GESTURE_HAPTIC, mHapticSwitchChecked ? 1 : 0);
                     int backDeadYZoneMode = backDeadzoneSeekbar.getProgress();
                     getArguments().putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
                     SystemNavigationGestureSettings.setBackDeadYZone(getActivity(),

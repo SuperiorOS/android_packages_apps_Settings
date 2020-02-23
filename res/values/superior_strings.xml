@@ -179,9 +179,10 @@
     <string name="theme_type_title">System theme</string>
     <string name="theme_type_summary">Select theme</string>
     <string name="theme_type_light">Light</string>
-    <string name="theme_type_pitch_black">Pitch black</string>
+    <string name="theme_type_pitch_black">Google Dark</string>
     <string name="theme_type_solarized_dark">Solarized dark</string>
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Pitch black</string>
 
 </resources>

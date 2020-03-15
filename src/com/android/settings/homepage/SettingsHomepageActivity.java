@@ -42,6 +42,7 @@ import com.android.internal.util.UserIcons;
 
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
+import com.android.settings.core.HideNonSystemOverlayMixin;
 import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 

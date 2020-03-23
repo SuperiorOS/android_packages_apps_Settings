@@ -133,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:min="0"
-        android:max="2"
+        android:max="3"
         style="@android:style/Widget.Material.SeekBar.Discrete"
         android:theme="@*android:style/ThemeOverlay.DeviceDefault.Accent.DayNight"
         android:layout_marginTop="12dp" />
@@ -196,13 +196,4 @@
 
     </LinearLayout>
 
-    <Switch
-        android:id="@+id/gesture_pill_switch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="12dp"
-        android:text="@string/gesture_pill_message"
-        android:textAppearance="?android:attr/textAppearance"
-        style="@android:style/TextAppearance.Material.Subhead" />
 </LinearLayout>

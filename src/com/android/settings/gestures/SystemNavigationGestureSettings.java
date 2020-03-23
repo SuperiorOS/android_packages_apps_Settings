@@ -292,29 +292,21 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
     }
 
     static void setHomeHandleSize(Context context, int length) {
-        // length cant be range 0 - 2
-        // 2 means long
-        // 1 measns middle
-        // 0 means aosp size
         Settings.System.putInt(context.getContentResolver(),
                 Settings.System.NAVIGATION_HANDLE_WIDTH, length);
     }
 
     static int getHomeHandleSize(Context context) {
         return Settings.System.getInt(context.getContentResolver(),
-                Settings.System.NAVIGATION_HANDLE_WIDTH, 0);
-    }
-
-    static int getPillToggleState(Context context) {
-        return Settings.System.getInt(context.getContentResolver(),
-                Settings.System.GESTURE_PILL_TOGGLE, 0);
+                Settings.System.NAVIGATION_HANDLE_WIDTH, 1);
     }
 
     static void setBackGestureOverlaysToUse(Context context) {
-        if (getPillToggleState(context) == 1)
+        if (getHomeHandleSize(context) == 0) {
             BACK_GESTURE_OVERLAYS_TO_USE = BACK_GESTURE_INSET_OVERLAYS_NO_PILL;
-        else
+        } else {
             BACK_GESTURE_OVERLAYS_TO_USE = BACK_GESTURE_INSET_OVERLAYS;
+        }
     }
 
     static void setBackBlockIme(Context context, boolean blockIme) {

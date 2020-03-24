@@ -26,5 +26,19 @@
             android:entries="@array/theme_type_titles"
             android:entryValues="@array/theme_type_values"
             android:defaultValue="1"/>
+
+        <ListPreference
+            android:key="accent_preset"
+            android:title="@string/accent_preset_title"
+            android:persistent="false"
+            android:entries="@array/accent_presets_entries"
+            android:entryValues="@array/accent_presets_values" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="accent_color"
+            android:title="@string/rgb_accenter_title"
+            settings:defaultColorValue="0xff1a73e8"
+            android:persistent="false" />
+
 </PreferenceScreen>
 

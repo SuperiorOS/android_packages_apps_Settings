@@ -30,12 +30,14 @@ import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 
+import java.util.List;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Objects;
 
 import com.android.internal.util.superior.ThemesUtils;
 import com.android.internal.util.superior.SuperiorUtils;
+import com.superior.settings.utils.DeviceUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -43,7 +45,12 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String PREF_THEME_SWITCH = "theme_switch";
+    private static final String ACCENT_PRESET = "accent_preset";
+    private static final String ACCENT_COLOR = "accent_color";
+    static final int DEFAULT_ACCENT_COLOR = 0xff1a73e8;
 
+    private ColorPickerPreference mAccentColor;
+    private ListPreference mAccentPreset;
     private IOverlayManager mOverlayService;
     private UiModeManager mUiModeManager;
 
@@ -56,6 +63,27 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.superior_themes);
 
         mUiModeManager = getContext().getSystemService(UiModeManager.class);
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mAccentColor = (ColorPickerPreference) findPreference(ACCENT_COLOR);
+        mAccentColor.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getIntForUser(resolver,
+                Settings.System.ACCENT_COLOR, DEFAULT_ACCENT_COLOR, UserHandle.USER_CURRENT);
+        String hexColor = String.format("#%08x", (0xff1a73e8 & intColor));
+        if (hexColor.equals("#ff1a73e8")) {
+            mAccentColor.setSummary(R.string.default_string);
+        } else {
+            mAccentColor.setSummary(hexColor);
+        }
+        mAccentColor.setNewPreviewColor(intColor);
+
+        mAccentPreset = (ListPreference) findPreference(ACCENT_PRESET);
+        mAccentPreset.setOnPreferenceChangeListener(this);
+        if (hexColor.equals("#ff1a73e8")) {
+            mAccentPreset.setSummary(R.string.default_string);
+        } else {
+            mAccentPreset.setSummary(hexColor);
+        }
 
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
@@ -65,7 +93,36 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mThemeSwitch) {
+        if (preference == mAccentColor) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            if (hex.equals("#ff1a73e8")) {
+                mAccentColor.setSummary(R.string.default_string);
+            } else {
+                mAccentColor.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.ACCENT_COLOR, intHex, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mAccentPreset) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+            String value = (String) objValue;
+            List<String> colorPresets = Arrays.asList(
+                    getResources().getStringArray(R.array.accent_presets_values));
+            int index = mAccentPreset.findIndexOfValue(value);
+            int color = DeviceUtils.convertToColorInt(colorPresets.get(index));
+            if (colorPresets.get(index).equals("ff1a73e8")) {
+                mAccentPreset.setSummary(R.string.default_string);
+            } else {
+                mAccentPreset.setSummary(mAccentPreset.getEntries()[index]);
+            }
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.ACCENT_COLOR, color, UserHandle.USER_CURRENT);
+            return true;
+        }
+        else if (preference == mThemeSwitch) {
             String theme_switch = (String) objValue;
             final Context context = getContext();
             switch (theme_switch) {

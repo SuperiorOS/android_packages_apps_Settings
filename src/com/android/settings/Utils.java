@@ -1065,4 +1065,26 @@ public final class Utils extends com.android.settingslib.Utils {
             ActionBarShadowController.attachToView(activity, lifecycle, scrollView);
         }
     }
+
+    public static String normalizeTitleCaseIfRequired(Context context, String input) {
+        if (!context.getResources().getBoolean(R.bool.language_capitalizes_nouns)) {
+            return input.toLowerCase();
+        }
+        return input;
+    }
+
+    public static boolean isFaceDisabledByAdmin(Context context) {
+        DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
+        try {
+            if (devicePolicyManager.getPasswordQuality(null) > DevicePolicyManager.PASSWORD_QUALITY_MANAGED) {
+                return true;
+            }
+        } catch (SecurityException e) {
+            Log.e("Settings", "isFaceDisabledByAdmin error:", e);
+        }
+        if ((devicePolicyManager.getKeyguardDisabledFeatures(null) & DevicePolicyManager.KEYGUARD_DISABLE_FACE) != 0) {
+            return true;
+        }
+        return false;
+    }
 }

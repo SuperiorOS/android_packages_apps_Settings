@@ -39,14 +39,6 @@
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
         settings:enableCopying="true"/>
 
-    <!-- Changelog -->
-    <Preference
-        android:key="changelog"
-        android:order="7"
-        android:title="@string/changelog_title"
-        android:summary="@string/changelog_summary"
-        android:fragment="com.android.settings.superior.Changelog" />
-
     <!-- Account name -->
     <Preference
         android:key="branded_account"

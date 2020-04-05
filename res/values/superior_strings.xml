@@ -95,4 +95,8 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- Low battery light -->
+    <string name="low_battery_light_title">Low battery light</string>
+    <string name="low_battery_light_summary">Blink LED when battery is low</string>
+
 </resources>

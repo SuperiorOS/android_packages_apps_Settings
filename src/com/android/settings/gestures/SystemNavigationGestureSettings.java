@@ -215,8 +215,12 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         if (info.getKey() == KEY_SYSTEM_NAV_GESTURAL) {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
             p.setExtraWidgetOnClickListener((v) -> GestureNavigationBackSensitivityDialog
+<<<<<<< HEAD
                     .show(this, getBackSensitivity(getContext(), mOverlayManager),
                     getBackHeight(getContext()), getHomeHandleSize(getContext())));
+=======
+                    .show(this, getBackSensitivity(getContext(), mOverlayManager)));
+>>>>>>> parent of f21cc31ccd... Settings: Navigation mode settings [2/2]
         } else {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
         }
@@ -314,6 +318,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
                 .getInt(PREFS_BACK_SENSITIVITY_KEY, BACK_GESTURE_INSET_DEFAULT_OVERLAY);
     }
 
+<<<<<<< HEAD
     static void setBackHeight(Context context, int height) {
         // height cant be range 0 - 3
         // 0 means full height
@@ -347,6 +352,8 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         }
     }
 
+=======
+>>>>>>> parent of f21cc31ccd... Settings: Navigation mode settings [2/2]
     @VisibleForTesting
     static String getCurrentSystemNavigationMode(Context context) {
         if (SystemNavigationPreferenceController.isEdgeToEdgeEnabled(context)) {

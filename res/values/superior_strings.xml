@@ -265,9 +265,6 @@
     <string name="home_handle_low_label">Hidden</string>
     <string name="home_handle_high_label">Long</string>
 
-    <!-- Dont block IME space for back gesture -->
-    <string name="back_block_ime_title">Disable height of virtual keyboard as touchable region for back gesture</string>
-
     <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Less than 1 minute</string>
     <string name="screen_time_summary_usage_today">%1$s today</string>

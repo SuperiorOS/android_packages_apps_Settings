@@ -301,6 +301,9 @@
     <string name="action_notifications">Notifications</string>
     <string name="action_clear_notifications">Clear notifications</string>
     <string name="action_ringer_modes">Ringer modes</string>
+    <string name="kill_app">Kill foreground app</string>
+    <string name="skip_song">Skip song</string>
+    <string name="prev_song">Previous song</string>
 
     <!-- Back Gesture Height -->
     <string name="back_height_low_label">Full</string>

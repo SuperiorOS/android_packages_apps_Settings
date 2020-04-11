@@ -235,6 +235,9 @@
         <item>@string/action_qs_panel</item>
         <item>@string/action_clear_notifications</item>
         <item>@string/action_ringer_modes</item>
+        <item>@string/kill_app</item>
+        <item>@string/skip_song</item>
+        <item>@string/prev_song</item>
     </string-array>
 
     <string-array name="active_edge_actions_values" translatable="false">
@@ -251,6 +254,9 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
     </string-array>
 
 </resources>

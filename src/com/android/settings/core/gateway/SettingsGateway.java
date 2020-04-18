@@ -149,7 +149,6 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.superior.settings.SuperiorSettings;
-import com.superior.settings.fragments.GamingMode;
 
 public class SettingsGateway {
 
@@ -287,7 +286,6 @@ public class SettingsGateway {
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
             SuperiorSettings.class.getName(),
-            GamingMode.class.getName(),
             DarkModeSettingsFragment.class.getName()
     };
 
@@ -328,6 +326,5 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.SuperiorSettingsActivity.class.getName(),
-            Settings.GamingModeActivity.class.getName(),
     };
 }

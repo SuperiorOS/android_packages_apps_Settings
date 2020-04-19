@@ -397,7 +397,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         BatteryInfo batteryInfo = BatteryInfo.getBatteryInfoOld(context, batteryBroadcast,
                 mStatsHelper.getStats(), elapsedRealtimeUs, false);
         updateHeaderPreference(batteryInfo);
-        mBatteryTempPref.setSubtitle(BatteryInfo.batteryTemp+" "+Character.toString ((char) 176) + "C");
+        mBatteryTempPref.setSummary(BatteryInfo.batteryTemp+" "+Character.toString ((char) 176) + "C");
     }
 
     @VisibleForTesting

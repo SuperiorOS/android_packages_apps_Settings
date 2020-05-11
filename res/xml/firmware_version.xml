@@ -40,6 +40,7 @@
          android:title="@string/superior_version"
          android:summary="@string/summary_placeholder"
          settings:enableCopying="true"
+         android:selectable="false"
          settings:controller="com.android.settings.deviceinfo.firmwareversion.SuperiorVersionPreferenceController"/>
 
 
@@ -74,6 +75,7 @@
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
         settings:enableCopying="true"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- Kernel -->

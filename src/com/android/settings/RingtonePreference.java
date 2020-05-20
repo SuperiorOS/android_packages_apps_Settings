@@ -24,6 +24,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.UserHandle;
 import android.provider.Settings.System;
+import android.telecom.PhoneAccountHandle;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
@@ -58,6 +59,7 @@ public class RingtonePreference extends Preference {
     private int mRingtoneType;
     private boolean mShowDefault;
     private boolean mShowSilent;
+    private PhoneAccountHandle mPhoneAccountHandle;
 
     private int mRequestCode;
     protected int mUserId;
@@ -89,22 +91,22 @@ public class RingtonePreference extends Preference {
     }
 
     /**
-     * Sets the slot id that this preference belongs to.
+     * Sets the {@link PhoneAccountHandle} that this preference belongs to.
      *
-     * @param slotId The slot id that this preference belongs to.
+     * @param phoneAccountHandle The {@link PhoneAccountHandle} that this preference belongs to.
      */
-    public void setSlotId(int slotId) {
-        mSlotId = slotId;
+    public void setPhoneAccountHandle(PhoneAccountHandle phoneAccountHandle) {
+        mPhoneAccountHandle = phoneAccountHandle;
     }
 
     /**
-     * Returns the slot id that this preference belongs to.
+     * Returns the {@link PhoneAccountHandle} that this preference belongs to.
      *
-     * @return The slot id that this preference belongs to.
-     * @see #setSlotId(int)
+     * @return The {@link PhoneAccountHandle} that this preference belongs to.
+     * @see #setPhoneAccountHandle(PhoneAccountHandle)
      */
-    public int getSlotId() {
-        return mSlotId;
+    public PhoneAccountHandle getPhoneAccountHandle() {
+        return mPhoneAccountHandle;
     }
 
     /**

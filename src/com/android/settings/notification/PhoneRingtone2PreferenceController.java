@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The Android Open Source Project
+ * Copyright (C) 2019 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,31 +17,16 @@
 package com.android.settings.notification;
 
 import android.content.Context;
-import android.media.RingtoneManager;
-import android.telephony.TelephonyManager;
 
-import androidx.preference.PreferenceScreen;
-
-import com.android.settings.DefaultRingtonePreference;
 import com.android.settings.Utils;
 
-public class PhoneRingtone2PreferenceController extends RingtonePreferenceControllerBase {
+public class PhoneRingtone2PreferenceController extends PhoneRingtonePreferenceController {
 
-    private static final int SLOT_ID = 1;
     private static final String KEY_PHONE_RINGTONE2 = "ringtone2";
+    private static final int PHONE_RINGTONE_PREFERENCE_ID = 1;
 
     public PhoneRingtone2PreferenceController(Context context) {
         super(context);
-    }
-
-    @Override
-    public void displayPreference(PreferenceScreen screen) {
-        super.displayPreference(screen);
-
-        DefaultRingtonePreference ringtonePreference =
-                (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE2);
-        ringtonePreference.setSlotId(SLOT_ID);
-        ringtonePreference.setEnabled(hasCard());
     }
 
     @Override
@@ -51,19 +36,11 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
 
     @Override
     public boolean isAvailable() {
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return Utils.isVoiceCapable(mContext) && telephonyManager.isMultiSimEnabled();
+        return Utils.isVoiceCapable(mContext) && hasMultiPhoneAccountHandle();
     }
 
     @Override
-    public int getRingtoneType() {
-        return RingtoneManager.TYPE_RINGTONE;
-    }
-
-    private boolean hasCard() {
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.hasIccCard(SLOT_ID);
+    public int getIdForPhoneRingtonePreference() {
+        return PHONE_RINGTONE_PREFERENCE_ID;
     }
 }

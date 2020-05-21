@@ -286,8 +286,6 @@
     <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the apps picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
     <string name="back_swipe_extended_title">Extended swipe action</string>
     <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
-    <string name="gesture_navbar_browser_action_title">Browser forward page</string>
-    <string name="gesture_navbar_browser_action_summary">When default browser is running, extended left swipe triggers a Forward Page action</string>
 
     <!-- Custom actions -->
     <string name="action_nothing">No action</string>

@@ -48,13 +48,6 @@
             android:targetClass="com.android.systemui.statusbar.phone.LeftBackSwipeCustomApp" />
     </Preference>
 
-    <com.superior.settings.preferences.SystemSettingSwitchPreference
-        android:key="gesture_navbar_browser_action"
-        android:title="@string/gesture_navbar_browser_action_title"
-        android:summary="@string/gesture_navbar_browser_action_summary"
-        android:dependency="back_swipe_extended"
-        android:defaultValue="false" />
-
     <ListPreference
         android:key="right_swipe_actions"
         android:title="@string/right_swipe_actions_title"

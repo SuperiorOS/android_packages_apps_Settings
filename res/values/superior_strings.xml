@@ -416,4 +416,7 @@
     <string name="lockscreen_rotation_title">Auto-rotate lockscreen</string>
     <string name="lockscreen_rotation_summary">Allow rotation on the lockscreen</string>
 
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
+
 </resources>

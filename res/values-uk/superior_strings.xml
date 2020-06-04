@@ -24,17 +24,8 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">дата збірки, інформація збірки</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Знайдіть сенсор відбитків пальців на лівій грані вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Знайдіть сканер відбитків пальців на лівій грані вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Сканер відбитків пальців знаходиться на лівій грані вашого планшета.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Сканер відбитків пальців знаходиться на правій грані вашого смартфона.</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <string name="battery_temp">Температура батареї</string>
@@ -47,8 +38,8 @@
     <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
     <!-- Custom light color -->
     <string name="custom_light_title">Колір світлодіоду</string>
-    <string name="custom_light_on_time_title">Час увімкненого LED (мс)</string>
-    <string name="custom_light_off_time_title">Час вимкненого LED (мс)\"</string>
+    <string name="custom_light_on_time_title">Час увімкненого LED під час пульсації (мс)</string>
+    <string name="custom_light_off_time_title">Час викненого LED під час пульсації (мс)</string>
     <string name="value_equals_default">за замовчуванням</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Скинути статистику</string>
@@ -60,15 +51,10 @@
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">Мелодія дзвінка - SIM 2</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Зв\'язати гучність рінгтона &amp; повідомлень</string>
+    <string name="volume_link_notification_title">Зв\'язати гучність рингтона &amp; та повідомлень</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Повноекранні додатки</string>
     <string name="display_cutout_force_fullscreen_summary">Змусити додатки ігнорувати виріз</string>
-    <!-- Back Gesture Height -->
-    <string name="back_height_low_label">Повний</string>
-    <string name="back_height_high_label">Нижнє</string>
-    <string name="back_options_dialog_title">Параметри</string>
-    <string name="back_height_message">Довжина екрану використовується як сенсорний регіон для жесту \"Назад\".</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <string name="platform_revision">Платформа</string>
@@ -92,7 +78,7 @@
     <string name="display_rotation_270_title">270 градусів</string>
     <!-- Media gestures -->
     <string name="prevent_ringing_option_mute_no_media">Без звуку, без медіа</string>
-    <string name="prevent_ringing_option_mute_no_media_summary">Ввімкнено (без звуку, без медіа)</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Увімкнено (без звуку, без медіа)</string>
     <!-- Fingerprint to dismiss -->
     <string name="fp_swipe_to_dismiss_notifications_title">Проведіть пальцем по сканеру відбитка вліво або вправо щоб прибрати сповіщення</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Щоб прибрати сповіщення, свайпніть ліворуч або праворуч по сканеру відбитка пальця на задній стороні телефону.</string>
@@ -101,11 +87,267 @@
     <string name="display_cutout_mode_normal">За замовчуванням</string>
     <string name="display_cutout_mode_hidden">Приховані</string>
     <!-- Pulse Ambient Light -->
+    <string name="pulse_ambient_light_title">Імпульс</string>
+    <string name="pulse_ambient_light_summary">Підсвічувати краї екрана при сповіщеннях</string>
+    <string name="ambient_notification_light_accent_title">Колір акценту системи</string>
+    <string name="ambient_notification_light_color_automatic_title">Колір сповіщення</string>
+    <string name="pulse_ambient_light_color">Використовувати при пульсації</string>
     <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Вібрація &amp; тактильний відгук</string>
+    <string name="summary_vibration_preferences">Змінити інтенсивність, шаблони і багато іншого</string>
+    <string name="keywords_vibration_preferences">шаблон вібросигналу, інтенсивність, вібрація під час виклику, тактильна вібрація, дотик, сила вібрації</string>
+    <string name="ringtone_vibration_pattern">Шаблон для вібрації дзвінка</string>
+    <string name="vibration_intensity_ringer">Інтенсивність вібрації при дзвінку</string>
+    <string name="vibration_intensity_notification">Інтенсивність вібрації при сповіщенні</string>
+    <string name="vibration_intensity_disabled">Вимкнено</string>
+    <string name="vibration_intensity_light">Світлий</string>
+    <string name="vibration_intensity_medium">Середній</string>
+    <string name="vibration_intensity_strong">Сильне</string>
+    <string name="vibration_intensity_custom">Власний</string>
+    <string name="pattern_dzzz_dzzz">дззз-дззз</string>
+    <string name="pattern_dzzz_da">дззз-да</string>
+    <string name="pattern_mm_mm_mm">мм-мм-мм</string>
+    <string name="pattern_da_da_dzzz">да-да-дззз</string>
+    <string name="pattern_da_dzzz_da">да-дззз-да</string>
     <!-- Smart charging -->
+    <string name="smart_charging_title">«Розумне» заряджання</string>
+    <string name="smart_charging_summary">Встановіть максимальний рівень зарядки</string>
+    <string name="smart_charging_switch_title">Використовувати «Розумне» заряджання</string>
+    <string name="smart_charging_level_title">Рівень зупинки «Розумного» заряджання</string>
+    <string name="smart_charging_resume_level_title">Рівень початку «Розумного» заряджання</string>
+    <string name="smart_charging_reset_stats_title">Скинути статистику батареї</string>
+    <string name="smart_charging_reset_stats_summary">Скинути статистику акумулятора після досягнення визначеного користувачем рівня зарядки</string>
+    <string name="smart_charging_footer">«Розумне» заряджання дозволяє встановити максимальний рівень зарядки для збільшення терміну служби батареї</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Приховати панель навігації для жестів в повноекранному режимі.</string>
+    <string name="themeroom_title">Кімната тем</string>
+    <string name="themeroom_summary">Теми</string>
     <!-- Themes -->
+    <string name="theme_type_title">Тема системи</string>
+    <string name="theme_type_summary">Обрати тему</string>
+    <string name="theme_type_light">Світла</string>
+    <string name="theme_type_pitch_black">Google Темний</string>
+    <string name="theme_type_solarized_dark">Solarized темна</string>
+    <string name="theme_type_baked_green">Печена зелена</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">PitchBlack</string>
+    <string name="theme_type_dark_grey">Темно-сірий</string>
+    <string name="theme_type_material_ocean">Матеріальний океан</string>
     <!-- Rgb Accenter -->
+    <string name="rgb_accenter_title">RGB акцентер</string>
     <!-- Accent presets -->
+    <string name="default_string">За замовчуванням</string>
+    <string name="accent_preset_0">Блісс</string>
+    <string name="accent_preset_1">Синій понеділок</string>
+    <string name="accent_preset_2">BubblegumPink</string>
+    <string name="accent_preset_3">Бернінг-Ред</string>
+    <string name="accent_preset_4">Кендічервод</string>
+    <string name="accent_preset_5">ColdEveningBleu</string>
+    <string name="accent_preset_6">ColdSummerYellow</string>
+    <string name="accent_preset_7">DeadRed</string>
+    <string name="accent_preset_8">Глибокий помаранчевий</string>
+    <string name="accent_preset_9">Багряний</string>
+    <string name="accent_preset_10">DiffDayGreen</string>
+    <string name="accent_preset_11">Мрії Пурпурні</string>
+    <string name="accent_preset_12">DuskPurple</string>
+    <string name="accent_preset_13">Розширений зелений</string>
+    <string name="accent_preset_14">Спалах</string>
+    <string name="accent_preset_15">Пурпурний слід</string>
+    <string name="accent_preset_16">FrenchBleu</string>
+    <string name="accent_preset_17">FromHell</string>
+    <string name="accent_preset_18">Золотушник</string>
+    <string name="accent_preset_19">HazedPink</string>
+    <string name="accent_preset_20">Гайрлоомблю</string>
+    <string name="accent_preset_21">Голілюзія</string>
+    <string name="accent_preset_22">Ілюзійний фіолетовий</string>
+    <string name="accent_preset_23">JadeGreen</string>
+    <string name="accent_preset_24">ManiaAmber</string>
+    <string name="accent_preset_25">МістікБраун</string>
+    <string name="accent_preset_26">MoveMint</string>
+    <string name="accent_preset_27">NewHouseOrange</string>
+    <string name="accent_preset_28">Нотімпульсний</string>
+    <string name="accent_preset_29">ObfusBleu</string>
+    <string name="accent_preset_30">OrangeCoral</string>
+    <string name="accent_preset_31">Синій палець</string>
+    <string name="accent_preset_32">Палеруд</string>
+    <string name="accent_preset_33">Pixel</string>
+    <string name="accent_preset_34">PureLust</string>
+    <string name="accent_preset_35">Quepal</string>
+    <string name="accent_preset_36">Роттенапельсин</string>
+    <string name="accent_preset_37">SeasideMint</string>
+    <string name="accent_preset_38">ShadesOfGrey</string>
+    <string name="accent_preset_39">Сінсіті-Червоний</string>
+    <string name="accent_preset_40">SluttyPink</string>
+    <string name="accent_preset_41">Смокінгрін</string>
+    <string name="accent_preset_42">SpokedPurple</string>
+    <string name="accent_preset_43">Sublime</string>
+    <string name="accent_preset_44">Teal</string>
+    <string name="accent_preset_45">TruFilPink</string>
+    <string name="accent_preset_46">WarmthOrange</string>
+    <string name="accent_preset_47">Білий</string>
+    <string name="accent_preset_48">ColorMint</string>
+    <string name="accent_preset_49">AndroidOneGreen</string>
+    <string name="accent_preset_50">АоспаГрін</string>
+    <string name="accent_preset_51">Кока-Коларед</string>
+    <string name="accent_preset_52">Пурпурний</string>
+    <string name="accent_preset_53">Фейсбук</string>
+    <string name="accent_preset_54">InstagramCerise</string>
+    <string name="accent_preset_55">JollibeeCrimson</string>
+    <string name="accent_preset_56">MonsterEnergyGreen</string>
+    <string name="accent_preset_57">NextbitMint</string>
+    <string name="accent_preset_58">OneplusRed</string>
+    <string name="accent_preset_59">PepsiBlue</string>
+    <string name="accent_preset_60">PocophoneYellow</string>
+    <string name="accent_preset_61">RazerGreen</string>
+    <string name="accent_preset_62">SamsungBlue</string>
+    <string name="accent_preset_63">SpotifyGreen</string>
+    <string name="accent_preset_64">StarbucksGreen</string>
+    <string name="accent_preset_65">Твітчфіолетовий</string>
+    <string name="accent_preset_66">Твіттер-блакитний</string>
+    <string name="accent_preset_67">XboxGreen</string>
+    <string name="accent_preset_68">XiaomiOrange</string>
+    <string name="accent_preset_title">Пресет акценту</string>
     <!-- Home button wake -->
+    <string name="home_wake_button_title">Кнопка \"Додому\" пробуджує пристрій</string>
+    <string name="home_wake_button_summary">Дозволити кнопці \"Додому\" пробуджувати екран</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Довжина панелі навігації для жестів.</string>
+    <string name="home_handle_low_label">Приховані</string>
+    <string name="home_handle_high_label">Довгий</string>
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Менше хвилини</string>
+    <string name="screen_time_summary_usage_today">%1$s сьогодні</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Увімкнути адаптивний акумулятор</string>
+    <string name="smart_battery_footer_custom">"Щоб пристрій працював довше, адаптивний акумулятор обмежує споживання заряду для додатків, які рідко використовуються. Телефон із часом визначить, як ви ними користуєтесь.
+
+Сповіщення з цих додатків можуть надходити із затримкою."</string>
+    <string name="smart_battery_manager_title_custom">Адаптивний акумулятор</string>
+    <string name="smart_battery_title_custom">Увімкнути адаптивний акумулятор</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">Додаткові жести</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Налаштування жестів і настроювання спеціальних дій</string>
+    <string name="navbar_gesture_tweaks_cat_title">Розширені</string>
+    <string name="long_back_swipe_timeout_title">Тривалість довгого свайпу</string>
+    <string name="left_swipe_actions_title">Дія для довгого лівого свайпу</string>
+    <string name="left_swipe_app_action_title">Вибрати додаток для довгого лівого свайпу</string>
+    <string name="right_swipe_actions_title">Дія для довгого правого свайпу</string>
+    <string name="right_swipe_app_action_title">Додаток для довгого правого свайпу</string>
+    <string name="left_vertical_swipe_actions_title">Свайп по вертикалі від лівої дії</string>
+    <string name="left_vertical_swipe_app_action_title">Вибрати додаток для довгого лівого свайпу</string>
+    <string name="right_vertical_swipe_actions_title">Вертикальна дія свайпу вправо</string>
+    <string name="right_vertical_swipe_app_action_title">Вибрати додаток для довгого правого свайпу</string>
+    <string name="gesture_nav_tweaks_footer_info">Щоб вибрати певні дії додатку, довго натисніть на будь-який додаток у розділі вибору програм.\n\nЯкщо відображається лаунчер, зробіть свайп в самій нижній області екрана, щоб запустити дію.</string>
+    <string name="back_swipe_extended_title">Розширена дія свайпу</string>
+    <string name="back_swipe_extended_summary">Запуск дії при широкому свайпі (більше половини розміру екрану), або свайп з L (вертикально довше достатньо)</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Немає дій</string>
+    <string name="action_search">Помічник</string>
+    <string name="action_voice_search">Голосовий пошук</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_flashlight">Ліхтарик</string>
+    <string name="action_volume_panel">Панель гучності</string>
+    <string name="action_screen_off">Екран вимкнено</string>
+    <string name="action_screenshot">Скріншот</string>
+    <string name="action_app_action">Програма</string>
+    <string name="active_edge_app_select_summary">Виберіть додаток для запуску з дією клавіші затиснення</string>
+    <string name="action_qs_panel">Панель швидких налаштувань</string>
+    <string name="action_notifications">Сповіщення</string>
+    <string name="action_clear_notifications">Очистити сповіщення</string>
+    <string name="action_ringer_modes">Режими дзвінка</string>
+    <string name="kill_app">Закрити фоновий додаток</string>
+    <string name="skip_song">Пропустити пісню</string>
+    <string name="prev_song">Попередня пісня</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Повний</string>
+    <string name="back_height_high_label">Нижнє</string>
+    <string name="back_options_dialog_title">Параметри</string>
+    <string name="back_height_message">Висота екрану, що використовується як сенсорна ділянка для жесту \"Назад\".</string>
+    <string name="back_gesture_area_dead_zone_title">\"Мертва\" зона жесту \"Назад\"</string>
+    <string name="back_gesture_area_dead_zone_message">Встановіть область екрану, де можна використовувати свайп, щоб уникнути конфліктів із жестами у програмі.</string>
+    <string name="smallest_tick_label">Повноекранний режим</string>
+    <string name="greatest_tick_label">Половина екрана</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивне відтворення</string>
+    <string name="adaptive_playback_timeout_title">Використовувати тайм-аут</string>
+    <string name="adaptive_playback_timeout_none_summary">Вимк.</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Увімкнено (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 хвилина</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Увімкнено (1 хвилина)</string>
+    <string name="adaptive_playback_timeout_2_min">2 хвилини</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Увімкнено (2 хвилини)</string>
+    <string name="adaptive_playback_timeout_5_min">5 хвилин</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Увімкнено (5 хвилин)</string>
+    <string name="adaptive_playback_timeout_10_min">10 хвилин</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Увімкнено (10 хвилин)</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Закрити</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Мобільні дані</string>
+    <string name="data_usage_app_restrict_data_summary">Увімкнути використання мобільного інтернету</string>
+    <string name="data_usage_app_restrict_vpn">Дані VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Увімкнути використання даних VPN</string>
+    <string name="data_usage_app_restrict_wifi">Передача даних по Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Увімкнути використання Wi\u2011Fi даних</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Показати історію сповіщень</string>
+    <!-- Dashboard Conditions & Suggestions -->
+    <string name="dashboard_conditions_title">Стан меню налаштувань</string>
+    <string name="summary_dashboard_conditions_enabled">Сповіщення в головному меню ввімкнено</string>
+    <string name="summary_dashboard_conditions_disabled">Сповіщення в головному меню вимкнено</string>
+    <string name="dashboard_suggestions_title">Поради в головному меню</string>
+    <string name="summary_dashboard_suggestions_enabled">Підказки в головному меню ввімкнено</string>
+    <string name="summary_dashboard_suggestions_disabled">Підказки в меню налаштувань вимкнено</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Оптимізуйте ваш екран залежно від часу доби та умов навколишнього середовища для поліпшення читабельності та зменшення напруги очей</string>
+    <string name="live_display_mode">Режим відображення</string>
+    <string name="live_display_color_temperature_title">Температура кольору</string>
+    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d</xliff:g>K  Ніч: <xliff:g id="night_temperature">%2$d</xliff:g>К</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">День</string>
+    <string name="live_display_night">Ніч</string>
+    <string name="live_display_outdoor_mode_title">Автоматичний режим \"На вулиці\"</string>
+    <string name="live_display_outdoor_mode_summary">Збільшити яскравість та насиченість автоматично при яскравому сонячному світлі</string>
+    <string name="live_display_low_power_title">Зменшення споживання енергії</string>
+    <string name="live_display_low_power_summary">Налаштування екрану для найнижчого енергоспоживання без погіршення зображення</string>
+    <string name="live_display_enhance_color_title">Поліпшення передачі кольору</string>
+    <string name="live_display_enhance_color_summary">Покращити насиченість кольору для пастельних тонів, пейзажів та інших зображень</string>
+    <string name="live_display_color_profile_title">Профіль кольорів</string>
+    <string name="live_display_color_profile_standard_title">Стандартний</string>
+    <string name="live_display_color_profile_standard_summary">Точні кольори і яскраві білі</string>
+    <string name="live_display_color_profile_natural_title">Натуральний</string>
+    <string name="live_display_color_profile_natural_summary">Реалістичні кольори та відтінки</string>
+    <string name="live_display_color_profile_dynamic_title">Динамічний</string>
+    <string name="live_display_color_profile_dynamic_summary">Підвищена контрастність та яскравість зображення</string>
+    <string name="live_display_color_profile_cinema_title">Кінотеатр</string>
+    <string name="live_display_color_profile_cinema_summary">Ідеальна передача кольору для відео</string>
+    <string name="live_display_color_profile_astronomy_title">Астрономія</string>
+    <string name="live_display_color_profile_astronomy_summary">Глибокий червоний для збереження видимості вночі</string>
+    <string name="live_display_color_profile_photography_title">Фотографія</string>
+    <string name="live_display_color_profile_photography_summary">Ідеальна передача кольору для фотографій</string>
+    <string name="live_display_color_profile_basic_title">Базовий</string>
+    <string name="live_display_color_profile_basic_summary">Використовувати невідкалібрований екран</string>
+    <string name="live_display_color_profile_adaptive_title">Адаптивний колір</string>
+    <string name="live_display_color_profile_adaptive_summary">Адаптація кольору до навколишнього середовища</string>
+    <string name="live_display_color_profile_reading_title">Читання</string>
+    <string name="live_display_color_profile_reading_summary">Теплі кольори для зменьшення напруги очей</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Кольори, що відповідають колірному простору sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Кольори з точністю до колірного простору DCI-P3</string>
+    <string name="live_display_reading_mode_title">Режим читання</string>
+    <string name="live_display_reading_mode_summary">Режим відтінків сірого для тривалого читання</string>
+    <string name="color_calibration_title">Калібрування кольору</string>
+    <string name="color_calibration_summary">Калібрування кольору на екрані</string>
+    <string name="color_red_title">Червоний</string>
+    <string name="color_green_title">Зелений</string>
+    <string name="color_blue_title">Синій</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Налаштування зображення</string>
+    <string name="picture_adjustment_summary">Налаштуйте відтінок, насиченість, інтенсивність і контраст</string>
+    <string name="adj_hue_title">Тон</string>
+    <string name="adj_saturation_title">Насиченість</string>
+    <string name="adj_intensity_title">Інтенсивність</string>
+    <string name="adj_contrast_title">Контрастність</string>
 </resources>

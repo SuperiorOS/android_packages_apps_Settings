@@ -16,38 +16,338 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Versión de SuperiorOS</string>
+    <string name="superior_version_default">Desconocido</string>
+    <string name="keywords_superior_version">Versión de SuperiorOS, versión de SuperiorOS</string>
     <!-- About phone screen, build date -->
+    <string name="build_date">Fecha de compilación</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">fecha de compilación, Información de compilación</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="battery_temp">Temperatura de la batería</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Vibración al cargar</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN o contraseña correctos</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Color del LED</string>
+    <string name="custom_light_on_time_title">Duración del parpadeo del led encendido (ms)</string>
+    <string name="custom_light_off_time_title">Duración del parpadeo del led apagado (ms)\"</string>
+    <string name="value_equals_default">def</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Restablecer estadísticas</string>
+    <string name="battery_stats_message">Las estadísticas de la batería van a restablecerse</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Toca para mostrar información</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Tono de llamada - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Tono de llamada - SIM 2</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Vincular tono &amp; volumen de notificaciones</string>
     <!-- Notch: Full screen apps -->
-    <!-- Back Gesture Height -->
+    <string name="display_cutout_force_fullscreen_title">Aplicaciones en pantalla completa</string>
+    <string name="display_cutout_force_fullscreen_summary">Forzar a las aplicaciones para ignorar el espacio de notch</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plataforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">RAM Total</string>
     <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">Elije un tamaño de patrón</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">Opciones de rotación automática</string>
+    <string name="display_rotation_summary">Configurar funciones de rotación automática de pantalla</string>
+    <string name="display_rotation_disabled">Desactivada</string>
+    <string name="display_rotation_unit">grados</string>
+    <string name="display_rotation_category_title">Modos de rotación</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
     <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Silenciado, sin sonido multimedia</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Encendido (silenciado, sin sonido multimedia)</string>
     <!-- Fingerprint to dismiss -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslice huella hacia la izquierda o derecha para eliminar notificaciones</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar tus notificaciones, deslice hacia la derecha o izquierda en el lector de huellas de su teléfono.</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Comportamiento del Notch</string>
+    <string name="display_cutout_mode_normal">Por defecto</string>
+    <string name="display_cutout_mode_hidden">Oculto</string>
     <!-- Pulse Ambient Light -->
+    <string name="pulse_ambient_light_title">Pulso</string>
+    <string name="pulse_ambient_light_summary">Enciende los bordes de la pantalla al recibir una notificación</string>
+    <string name="ambient_notification_light_accent_title">Color acentuado del sistema</string>
+    <string name="ambient_notification_light_color_automatic_title">Color de notificación</string>
+    <string name="pulse_ambient_light_color">Al pulsar, usar</string>
     <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Intensidad de la respuesta táctil &amp; vibración</string>
+    <string name="summary_vibration_preferences">Cambiar intensidades, patrones y más</string>
+    <string name="keywords_vibration_preferences">patrón de vibración, intensidad de vibración, háptica, toque, fuerza de vibración</string>
+    <string name="ringtone_vibration_pattern">Patrón de vibración de tono de llamada</string>
+    <string name="vibration_intensity_ringer">Intensidad de vibración de tono de llamada</string>
+    <string name="vibration_intensity_notification">Intensidad de vibración de notificación</string>
+    <string name="vibration_intensity_disabled">Desactivado</string>
+    <string name="vibration_intensity_light">Suave</string>
+    <string name="vibration_intensity_medium">Medio</string>
+    <string name="vibration_intensity_strong">Fuerte</string>
+    <string name="vibration_intensity_custom">Personalizado</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzz-da</string>
     <!-- Smart charging -->
+    <string name="smart_charging_title">Carga inteligente</string>
+    <string name="smart_charging_summary">Establecer nivel máximo de carga</string>
+    <string name="smart_charging_switch_title">Usar carga inteligente</string>
+    <string name="smart_charging_level_title">Detener al nivel</string>
+    <string name="smart_charging_resume_level_title">Iniciar al nivel</string>
+    <string name="smart_charging_reset_stats_title">Restaurar estadísticas de la batería</string>
+    <string name="smart_charging_reset_stats_summary">Restablecer estadísticas de batería después de alcanzar el nivel de carga definido por el usuario</string>
+    <string name="smart_charging_footer">Carga inteligente le permite establecer el nivel máximo de carga para ampliar la duración de su batería</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Ocultar el indicador de la barra de navegación al usar gestos en pantalla completa.</string>
+    <string name="themeroom_title">Sala de Temas</string>
+    <string name="themeroom_summary">Temas</string>
     <!-- Themes -->
+    <string name="theme_type_title">Tema del sistema</string>
+    <string name="theme_type_summary">Selecciona un tema</string>
+    <string name="theme_type_light">Claro</string>
+    <string name="theme_type_pitch_black">Google Oscuro</string>
+    <string name="theme_type_solarized_dark">Solarizado oscuro</string>
+    <string name="theme_type_baked_green">Verde horneado</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Pitch black</string>
+    <string name="theme_type_dark_grey">Gris oscuro</string>
+    <string name="theme_type_material_ocean">Tema material Océano</string>
     <!-- Rgb Accenter -->
+    <string name="rgb_accenter_title">Rgb Accenter</string>
     <!-- Accent presets -->
+    <string name="default_string">Por defecto</string>
+    <string name="accent_preset_0">Bliss</string>
+    <string name="accent_preset_1">BlueMonday</string>
+    <string name="accent_preset_2">BubblegumPink</string>
+    <string name="accent_preset_3">BurningRed</string>
+    <string name="accent_preset_4">CandyRed</string>
+    <string name="accent_preset_5">ColdEveningBleu</string>
+    <string name="accent_preset_6">ColdSummerYellow</string>
+    <string name="accent_preset_7">DeadRed</string>
+    <string name="accent_preset_8">Naranja oscuro</string>
+    <string name="accent_preset_9">Morado profundo</string>
+    <string name="accent_preset_10">DiffDayGreen</string>
+    <string name="accent_preset_11">DreamyPurple</string>
+    <string name="accent_preset_12">DuskPurple</string>
+    <string name="accent_preset_13">ExtendedGreen</string>
+    <string name="accent_preset_14">Flara</string>
+    <string name="accent_preset_15">FootprintPurple</string>
+    <string name="accent_preset_16">FrenchBleu</string>
+    <string name="accent_preset_17">FromHell</string>
+    <string name="accent_preset_18">GoldenShower</string>
+    <string name="accent_preset_19">HazedPink</string>
+    <string name="accent_preset_20">HeirloomBleu</string>
+    <string name="accent_preset_21">Holillusion</string>
+    <string name="accent_preset_22">IllusionsPurple</string>
+    <string name="accent_preset_23">JadeGreen</string>
+    <string name="accent_preset_24">ManiaAmber</string>
+    <string name="accent_preset_25">MisticBrown</string>
+    <string name="accent_preset_26">MoveMint</string>
+    <string name="accent_preset_27">NewHouseOrange</string>
+    <string name="accent_preset_28">NotImpPurple</string>
+    <string name="accent_preset_29">ObfusBleu</string>
+    <string name="accent_preset_30">OrangeCoral</string>
+    <string name="accent_preset_31">PaleBlue</string>
+    <string name="accent_preset_32">PaleRed</string>
+    <string name="accent_preset_33">Pixel</string>
+    <string name="accent_preset_34">PureLust</string>
+    <string name="accent_preset_35">Quepal</string>
+    <string name="accent_preset_36">RottenOrange</string>
+    <string name="accent_preset_37">SeasideMint</string>
+    <string name="accent_preset_38">ShadesOfGrey</string>
+    <string name="accent_preset_39">SincityRed</string>
+    <string name="accent_preset_40">SluttyPink</string>
+    <string name="accent_preset_41">SmokingGreen</string>
+    <string name="accent_preset_42">SpokedPurple</string>
+    <string name="accent_preset_43">Sublime</string>
+    <string name="accent_preset_44">Teal</string>
+    <string name="accent_preset_45">TruFilPink</string>
+    <string name="accent_preset_46">WarmthOrange</string>
+    <string name="accent_preset_47">White</string>
+    <string name="accent_preset_48">ColorMint</string>
+    <string name="accent_preset_49">AndroidOneGreen</string>
+    <string name="accent_preset_50">AospaGreen</string>
+    <string name="accent_preset_51">CocaColaRed</string>
+    <string name="accent_preset_52">DiscordPurple</string>
+    <string name="accent_preset_53">FacebookBlue</string>
+    <string name="accent_preset_54">InstagramCerise</string>
+    <string name="accent_preset_55">JollibeeCrimson</string>
+    <string name="accent_preset_56">MonsterEnergyGreen</string>
+    <string name="accent_preset_57">NextbitMint</string>
+    <string name="accent_preset_58">OneplusRed</string>
+    <string name="accent_preset_59">PepsiBlue</string>
+    <string name="accent_preset_60">PocophoneYellow</string>
+    <string name="accent_preset_61">RazerGreen</string>
+    <string name="accent_preset_62">SamsungBlue</string>
+    <string name="accent_preset_63">SpotifyGreen</string>
+    <string name="accent_preset_64">StarbucksGreen</string>
+    <string name="accent_preset_65">TwitchPurple</string>
+    <string name="accent_preset_66">TwitterBlue</string>
+    <string name="accent_preset_67">XboxGreen</string>
+    <string name="accent_preset_68">XiaomiOrange</string>
+    <string name="accent_preset_title">Accent preset</string>
     <!-- Home button wake -->
+    <string name="home_wake_button_title">Despertar con botón Inicio</string>
+    <string name="home_wake_button_summary">Habilitar el botón de inicio para encender la pantalla</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Longitud barra de navegación.</string>
+    <string name="home_handle_low_label">Oculto</string>
+    <string name="home_handle_high_label">Larga</string>
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
+    <string name="screen_time_summary_usage_today">%1$s hoy</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Activar Batería Inteligente</string>
+    <string name="smart_battery_footer_custom">"Para aumentar la duración de la batería, el gestor de batería inteligente limita el consumo por parte de aplicaciones que se utilizan con poca frecuencia. Con el tiempo, el teléfono sabrá cómo utilizas las aplicaciones.
+
+Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."</string>
+    <string name="smart_battery_manager_title_custom">Batería inteligente</string>
+    <string name="smart_battery_title_custom">Usar Batería Inteligente</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">Gestos avanzados</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personaliza los gestos y añade acciones personalizadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzadas</string>
+    <string name="long_back_swipe_timeout_title">Tiempo de acción de deslizamiento largo</string>
+    <string name="left_swipe_actions_title">Acción con deslizamiento izquierdo largo</string>
+    <string name="left_swipe_app_action_title">Seleccionar aplicación de deslizamiento izquierdo largo</string>
+    <string name="right_swipe_actions_title">Acción con deslizamiento derecho largo</string>
+    <string name="right_swipe_app_action_title">Seleccionar aplicación de deslizamiento derecho largo</string>
+    <string name="left_vertical_swipe_actions_title">Deslizamiento vertical desde accion izquierda</string>
+    <string name="left_vertical_swipe_app_action_title">Elegir app con deslizamiento vertical a la izquierda</string>
+    <string name="right_vertical_swipe_actions_title">Acción con deslizamiento vertical a la izquierda</string>
+    <string name="right_vertical_swipe_app_action_title">Elegir app con deslizamiento vertical a la izquierda</string>
+    <string name="gesture_nav_tweaks_footer_info">Para elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones.\n\nSi se muestra el iniciador, deslice el dedo en la parte inferior de la pantalla para activar la acción.</string>
+    <string name="back_swipe_extended_title">Acción de deslizamiento extendida</string>
+    <string name="back_swipe_extended_summary">Acción de activación en un deslizado más ancho (más de la mitad del tamaño de la pantalla), o un deslizado L (lo suficientemente largo verticalmente)</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Sin acción</string>
+    <string name="action_search">Asistente</string>
+    <string name="action_voice_search">Búsqueda por voz</string>
+    <string name="action_launch_camera">Cámara</string>
+    <string name="action_flashlight">Linterna</string>
+    <string name="action_volume_panel">Panel de volumen</string>
+    <string name="action_screen_off">Apagar pantalla</string>
+    <string name="action_screenshot">Captura de pantalla</string>
+    <string name="action_app_action">Aplicación</string>
+    <string name="active_edge_app_select_summary">Seleccione una aplicación para iniciar con la acción \"squeeze\"</string>
+    <string name="action_qs_panel">Panel de ajustes rápidos</string>
+    <string name="action_notifications">Notificaciones</string>
+    <string name="action_clear_notifications">Limpiar notificaciones</string>
+    <string name="action_ringer_modes">Modos de timbre</string>
+    <string name="kill_app">Cerrar aplicación en primer plano</string>
+    <string name="skip_song">Saltar canción</string>
+    <string name="prev_song">Canción anterior</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Inferior</string>
+    <string name="back_options_dialog_title">Opciones</string>
+    <string name="back_height_message">Altura de pantalla usada como región tocada para gesto atrás.</string>
+    <string name="back_gesture_area_dead_zone_title">Zona muerta del área trasera</string>
+    <string name="back_gesture_area_dead_zone_message">Establece el área de la pantalla donde se puede activar el deslizamiento, para evitar conflictos con los gestos dentro de la aplicación.</string>
+    <string name="smallest_tick_label">Pantalla completa</string>
+    <string name="greatest_tick_label">Media pantalla</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Reproducción adaptativa</string>
+    <string name="adaptive_playback_timeout_title">Use un tiempo de espera de</string>
+    <string name="adaptive_playback_timeout_none_summary">Apagado</string>
+    <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Activado (30 segundos)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuto</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Activado (1 minuto)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutos</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Activado (2 minutos)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutos</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Activado (5 minutos)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutos</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Activado (10 minutos)</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Cerrar</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Datos móviles</string>
+    <string name="data_usage_app_restrict_data_summary">Habilitar el uso de datos móviles</string>
+    <string name="data_usage_app_restrict_vpn">Datos VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Habilitar uso de datos VPN</string>
+    <string name="data_usage_app_restrict_wifi">Uso de datos con Wi‑Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Habilitar el uso de datos Wi\u2011Fi</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Mostrar historial de notificaciones</string>
+    <!-- Dashboard Conditions & Suggestions -->
+    <string name="dashboard_conditions_title">Condiciones del panel</string>
+    <string name="summary_dashboard_conditions_enabled">Las condiciones en el panel de ajustes están habilitadas</string>
+    <string name="summary_dashboard_conditions_disabled">Condiciones deshabilitadas en la pantalla de ajustes</string>
+    <string name="dashboard_suggestions_title">Sugerencias del panel de ajustes</string>
+    <string name="summary_dashboard_suggestions_enabled">Sugerencias del panel de ajustes están habilitadas</string>
+    <string name="summary_dashboard_suggestions_disabled">El panel de sugerencias está desactivado</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Optimizar su pantalla basada en la hora del día y las condiciones ambientales para mejorar la lectura y reducir la fatiga visual</string>
+    <string name="live_display_mode">Modo de visualización</string>
+    <string name="live_display_color_temperature_title">Temperatura del color</string>
+    <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K Noche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Dia</string>
+    <string name="live_display_night">Noche</string>
+    <string name="live_display_outdoor_mode_title">Modo exterior automático</string>
+    <string name="live_display_outdoor_mode_summary">Aumentar el brillo y la saturación automáticamente bajo la luz del sol</string>
+    <string name="live_display_low_power_title">Reducir el consumo de energía</string>
+    <string name="live_display_low_power_summary">Ajustar la pantalla al mínimo consumo de energía sin degradación</string>
+    <string name="live_display_enhance_color_title">Mejorar colores</string>
+    <string name="live_display_enhance_color_summary">Mejorar la intensidad de color de tonos de piel, paisajes y otras imágenes</string>
+    <string name="live_display_color_profile_title">Perfil de color</string>
+    <string name="live_display_color_profile_standard_title">Estándar</string>
+    <string name="live_display_color_profile_standard_summary">Colores precisos y blancos brillantes</string>
+    <string name="live_display_color_profile_natural_title">Natural</string>
+    <string name="live_display_color_profile_natural_summary">Colores realistas y tonos cálidos</string>
+    <string name="live_display_color_profile_dynamic_title">Dinámico</string>
+    <string name="live_display_color_profile_dynamic_summary">Colores mejorados y blancos brillantes</string>
+    <string name="live_display_color_profile_cinema_title">Cine</string>
+    <string name="live_display_color_profile_cinema_summary">Reproducción perfecta de color para video</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomía</string>
+    <string name="live_display_color_profile_astronomy_summary">Rojo oscuro para preservar la visión nocturna</string>
+    <string name="live_display_color_profile_photography_title">Fotografía</string>
+    <string name="live_display_color_profile_photography_summary">Reproducción perfecta de color para fotos</string>
+    <string name="live_display_color_profile_basic_title">Básico</string>
+    <string name="live_display_color_profile_basic_summary">Usar pantalla sin calibrar</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptativo</string>
+    <string name="live_display_color_profile_adaptive_summary">Los colores se adaptan a las condiciones ambientales</string>
+    <string name="live_display_color_profile_reading_title">Lectura</string>
+    <string name="live_display_color_profile_reading_summary">Colores cálidos para reducir la fatiga visual</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Colores precisos para el espacio de color sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Colores precisos al espacio de color DCI-P3</string>
+    <string name="live_display_reading_mode_title">Modo de lectura</string>
+    <string name="live_display_reading_mode_summary">Modo escala de grises para lectura prolongada</string>
+    <string name="color_calibration_title">Calibración de color</string>
+    <string name="color_calibration_summary">Calibrar colores de pantalla</string>
+    <string name="color_red_title">Rojo</string>
+    <string name="color_green_title">Verde</string>
+    <string name="color_blue_title">Azul</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Ajuste de imagen</string>
+    <string name="picture_adjustment_summary">Ajustar tono, saturación, intensidad y contraste</string>
+    <string name="adj_hue_title">Matiz</string>
+    <string name="adj_saturation_title">Saturación</string>
+    <string name="adj_intensity_title">Intensidad</string>
+    <string name="adj_contrast_title">Contraste</string>
 </resources>

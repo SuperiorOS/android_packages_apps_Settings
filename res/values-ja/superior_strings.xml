@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
-    <string name="superior_version">SuperiorOSバージョン</string>
+    <string name="superior_version">SuperiorOS バージョン</string>
     <string name="superior_version_default">不明</string>
     <string name="keywords_superior_version">SuperiorOS バージョン, superior バージョン</string>
     <!-- About phone screen, build date -->
@@ -24,17 +24,8 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">ビルド日時、ビルド情報</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">端末前面にある指紋認証センサーを探します</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">端末左側にある指紋認証センサーを探します</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">端末右側にある指紋認証センサーを探します</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">端末前面にある指紋認証センサーを探します</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">端末左側にある指紋認証センサーを探します</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">端末右側にある指紋認証センサーを探します</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">端末前面にある指紋認証センサーを探します</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">端末左側にある指紋認証センサーを探します</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">端末右側にある指紋認証センサーを探します</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <string name="battery_temp">バッテリー温度</string>
@@ -64,11 +55,6 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">全画面表示のアプリ</string>
     <string name="display_cutout_force_fullscreen_summary">強制的にアプリのノッチ領域を無視する</string>
-    <!-- Back Gesture Height -->
-    <string name="back_height_low_label">フル</string>
-    <string name="back_height_high_label">下部</string>
-    <string name="back_options_dialog_title">オプション</string>
-    <string name="back_height_message">戻るジェスチャーに使用される操作可能な画面領域の高さ</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <string name="platform_revision">プラットフォーム</string>
@@ -101,14 +87,14 @@
     <string name="display_cutout_mode_normal">既定</string>
     <string name="display_cutout_mode_hidden">非表示</string>
     <!-- Pulse Ambient Light -->
-    <string name="pulse_ambient_light_title">パルス</string>
-    <string name="pulse_ambient_light_summary">通知パルスで画面の両端をライトアップする</string>
-    <string name="ambient_notification_light_accent_title">システムアクセントカラー</string>
+    <string name="pulse_ambient_light_title">Pulse</string>
+    <string name="pulse_ambient_light_summary">通知の点滅で画面の両端をライトアップする</string>
+    <string name="ambient_notification_light_accent_title">システムアクセント色</string>
     <string name="ambient_notification_light_color_automatic_title">通知の色</string>
-    <string name="pulse_ambient_light_color">パルス時に使用されます</string>
+    <string name="pulse_ambient_light_color">点滅時に使用されます</string>
     <!-- Custom Vibration fragment -->
     <string name="vibration_preferences">振動と触覚フィードバック</string>
-    <string name="summary_vibration_preferences">強さ、パターンやその他を変更する</string>
+    <string name="summary_vibration_preferences">強さやパターンなど変更する</string>
     <string name="keywords_vibration_preferences">振動パターン、振動強度、触覚、タップ</string>
     <string name="ringtone_vibration_pattern">着信音の振動のパターン</string>
     <string name="vibration_intensity_ringer">着信音の振動の強さ</string>
@@ -144,81 +130,224 @@
     <string name="theme_type_solarized_dark">Solarized ダーク</string>
     <string name="theme_type_baked_green">Baked グリーン</string>
     <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">Pitch black</string>
+    <string name="theme_type_du_pitchblack">Pitch Black</string>
     <string name="theme_type_dark_grey">ダークグレー</string>
+    <string name="theme_type_material_ocean">Material Ocean</string>
     <!-- Rgb Accenter -->
     <string name="rgb_accenter_title">RGB アクセンター</string>
     <!-- Accent presets -->
     <string name="default_string">既定</string>
     <string name="accent_preset_0">Bliss</string>
     <string name="accent_preset_1">BlueMonday</string>
-    <string name="accent_preset_2">Bubblegumピンク</string>
+    <string name="accent_preset_2">Bubblegum ピンク</string>
     <string name="accent_preset_3">バーニングレッド</string>
     <string name="accent_preset_4">キャンディレッド</string>
-    <string name="accent_preset_5">ColdEveningブルー</string>
-    <string name="accent_preset_6">ColdSummerイエロー</string>
+    <string name="accent_preset_5">ColdEvening ブルー</string>
+    <string name="accent_preset_6">ColdSummer イエロー</string>
     <string name="accent_preset_7">デッドレッド</string>
     <string name="accent_preset_8">ディープオレンジ</string>
     <string name="accent_preset_9">ディープパープル</string>
-    <string name="accent_preset_10">DiffDayグリーン</string>
+    <string name="accent_preset_10">DiffDay グリーン</string>
     <string name="accent_preset_11">ドリーミーパープル</string>
-    <string name="accent_preset_12">Duskパープル</string>
-    <string name="accent_preset_13">Extendedグリーン</string>
+    <string name="accent_preset_12">Dusk パープル</string>
+    <string name="accent_preset_13">Extended グリーン</string>
     <string name="accent_preset_14">フレア</string>
-    <string name="accent_preset_15">Footprintパープル</string>
-    <string name="accent_preset_16">Frenchブルー</string>
+    <string name="accent_preset_15">Footprint パープル</string>
+    <string name="accent_preset_16">フレンチブルー</string>
     <string name="accent_preset_17">FromHell</string>
     <string name="accent_preset_18">GoldenShower</string>
-    <string name="accent_preset_19">Hazedピンク</string>
-    <string name="accent_preset_20">Heirloomブルー</string>
+    <string name="accent_preset_19">Hazed ピンク</string>
+    <string name="accent_preset_20">Heirloom ブルー</string>
     <string name="accent_preset_21">Holillusion</string>
-    <string name="accent_preset_22">Illusionsパープル</string>
-    <string name="accent_preset_23">Jadeグリーン</string>
-    <string name="accent_preset_24">Maniaアンバー</string>
+    <string name="accent_preset_22">Illusions パープル</string>
+    <string name="accent_preset_23">Jade グリーン</string>
+    <string name="accent_preset_24">Mania アンバー</string>
     <string name="accent_preset_25">ミスティックブラウン</string>
-    <string name="accent_preset_26">Moveミント</string>
-    <string name="accent_preset_27">NewHouseオレンジ</string>
-    <string name="accent_preset_28">NotImpパープル</string>
-    <string name="accent_preset_29">Obfusブルー</string>
+    <string name="accent_preset_26">Move ミント</string>
+    <string name="accent_preset_27">NewHouse オレンジ</string>
+    <string name="accent_preset_28">NotImp パープル</string>
+    <string name="accent_preset_29">Obfus ブルー</string>
     <string name="accent_preset_30">オレンジコーラル</string>
     <string name="accent_preset_31">ペイルブルー</string>
     <string name="accent_preset_32">ペイルレッド</string>
     <string name="accent_preset_33">Pixel</string>
     <string name="accent_preset_34">PureLust</string>
     <string name="accent_preset_35">Quepal</string>
-    <string name="accent_preset_36">Rottenオレンジ</string>
+    <string name="accent_preset_36">Rotten オレンジ</string>
     <string name="accent_preset_37">シーサイドミント</string>
     <string name="accent_preset_38">ShadesOfGrey</string>
-    <string name="accent_preset_39">Sincityレッド</string>
-    <string name="accent_preset_40">Sluttyピンク</string>
-    <string name="accent_preset_41">Smokingグリーン</string>
-    <string name="accent_preset_42">Spokedパープル</string>
-    <string name="accent_preset_43">Sublime</string>
+    <string name="accent_preset_39">Sincity レッド</string>
+    <string name="accent_preset_40">Slutty ピンク</string>
+    <string name="accent_preset_41">Smoking グリーン</string>
+    <string name="accent_preset_42">Spoked パープル</string>
+    <string name="accent_preset_43">サブマリン</string>
     <string name="accent_preset_44">ティール</string>
-    <string name="accent_preset_45">TruFilピンク</string>
-    <string name="accent_preset_46">Warmthオレンジ</string>
+    <string name="accent_preset_45">TruFil ピンク</string>
+    <string name="accent_preset_46">Warmth オレンジ</string>
     <string name="accent_preset_47">ホワイト</string>
-    <string name="accent_preset_48">Colorミント</string>
-    <string name="accent_preset_49">AndroidOneグリーン</string>
-    <string name="accent_preset_50">Aospaグリーン</string>
+    <string name="accent_preset_48">Color ミント</string>
+    <string name="accent_preset_49">AndroidOne グリーン</string>
+    <string name="accent_preset_50">Aospa グリーン</string>
     <string name="accent_preset_51">コカコーラレッド</string>
-    <string name="accent_preset_52">Discordパープル</string>
-    <string name="accent_preset_53">Facebookブルー</string>
-    <string name="accent_preset_54">Instagramチェリー</string>
-    <string name="accent_preset_55">Jollibeeクリムゾン</string>
+    <string name="accent_preset_52">Discord パープル</string>
+    <string name="accent_preset_53">Facebook ブルー</string>
+    <string name="accent_preset_54">Instagram チェリー</string>
+    <string name="accent_preset_55">Jollibee クリムゾン</string>
     <string name="accent_preset_56">モンスターエナジーグリーン</string>
-    <string name="accent_preset_57">Nextbitミント</string>
-    <string name="accent_preset_58">Oneplusレッド</string>
+    <string name="accent_preset_57">Nextbit ミント</string>
+    <string name="accent_preset_58">Oneplus レッド</string>
     <string name="accent_preset_59">ペプシブルー</string>
-    <string name="accent_preset_60">Pocophoneイエロー</string>
-    <string name="accent_preset_61">Razerグリーン</string>
-    <string name="accent_preset_62">Samsungブルー</string>
-    <string name="accent_preset_63">Spotifyグリーン</string>
+    <string name="accent_preset_60">Pocophone イエロー</string>
+    <string name="accent_preset_61">Razer グリーン</string>
+    <string name="accent_preset_62">Samsung ブルー</string>
+    <string name="accent_preset_63">Spotify グリーン</string>
     <string name="accent_preset_64">スターバックスグリーン</string>
-    <string name="accent_preset_65">Twitchパープル</string>
-    <string name="accent_preset_66">Twitterブルー</string>
-    <string name="accent_preset_67">Xboxグリーン</string>
-    <string name="accent_preset_68">Xiaomiオレンジ</string>
+    <string name="accent_preset_65">Twitch パープル</string>
+    <string name="accent_preset_66">Twitter ブルー</string>
+    <string name="accent_preset_67">Xbox グリーン</string>
+    <string name="accent_preset_68">Xiaomi オレンジ</string>
     <string name="accent_preset_title">アクセントのプリセット</string>
     <!-- Home button wake -->
+    <string name="home_wake_button_title">ホームボタンでスリープ解除</string>
+    <string name="home_wake_button_summary">ホームボタンでの画面のスリープ解除を有効にする</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">ジェスチャーナビゲーションバーの操作に使用される長さ</string>
+    <string name="home_handle_low_label">非表示</string>
+    <string name="home_handle_high_label">長い</string>
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">1分未満</string>
+    <string name="screen_time_summary_usage_today">今日: %1$s</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">自動調整バッテリーを ON にしてください</string>
+    <string name="smart_battery_footer_custom">"自動調整バッテリーで使用頻度の低いアプリの電池使用を制限すると、電池が長持ちします。時間の経過とともに、スマートフォンがアプリの使用状況を学習します。
+
+このアプリの通知は遅れることがあります。"</string>
+    <string name="smart_battery_manager_title_custom">自動調整バッテリー</string>
+    <string name="smart_battery_title_custom">自動調整バッテリーの使用</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">高度なジェスチャー</string>
+    <string name="navbar_gesture_tweaks_pref_summary">ジェスチャー編集とカスタムアクション設定</string>
+    <string name="navbar_gesture_tweaks_cat_title">詳細</string>
+    <string name="long_back_swipe_timeout_title">長いスワイプアクションの制限時間</string>
+    <string name="left_swipe_actions_title">長い左スワイプアクション</string>
+    <string name="left_swipe_app_action_title">長い左スワイプアクションのアプリ選択</string>
+    <string name="right_swipe_actions_title">長い右スワイプアクション</string>
+    <string name="right_swipe_app_action_title">長い右スワイプアクションのアプリ選択</string>
+    <string name="left_vertical_swipe_actions_title">左側から上スワイプのアクション</string>
+    <string name="left_vertical_swipe_app_action_title">アプリを選択</string>
+    <string name="right_vertical_swipe_actions_title">長い右スワイプのアクション</string>
+    <string name="right_vertical_swipe_app_action_title">アプリを選択</string>
+    <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押しして下さい。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
+    <string name="back_swipe_extended_title">拡張スワイプアクション</string>
+    <string name="back_swipe_extended_summary">より広いスワイプ (少なくとも画面の半分より広い) か、「L」スワイプ (縦の方が長い) でアクションを起動する。</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">なし</string>
+    <string name="action_search">アシスタント</string>
+    <string name="action_voice_search">音声検索</string>
+    <string name="action_launch_camera">カメラ</string>
+    <string name="action_flashlight">フラッシュライト</string>
+    <string name="action_volume_panel">音量パネル</string>
+    <string name="action_screen_off">画面を消灯</string>
+    <string name="action_screenshot">スクリーンショット</string>
+    <string name="action_app_action">アプリ</string>
+    <string name="active_edge_app_select_summary">握りアクションで起動するアプリを選択する</string>
+    <string name="action_qs_panel">クイック設定パネル</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_clear_notifications">通知を消去</string>
+    <string name="action_ringer_modes">着信モード</string>
+    <string name="kill_app">フォアグラウンドアプリを終了</string>
+    <string name="skip_song">曲をスキップ</string>
+    <string name="prev_song">前の曲</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">全画面</string>
+    <string name="back_height_high_label">下部</string>
+    <string name="back_options_dialog_title">オプション</string>
+    <string name="back_height_message">戻るジェスチャーに使用される操作可能な画面領域の高さ</string>
+    <string name="back_gesture_area_dead_zone_title">戻るジェスチャーの無反応エリア</string>
+    <string name="back_gesture_area_dead_zone_message">アプリ内のジェスチャーとの競合を避けるために、スワイプを起動できる画面エリアを設定します。</string>
+    <string name="smallest_tick_label">全画面</string>
+    <string name="greatest_tick_label">半画面</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">アダプティブ再生</string>
+    <string name="adaptive_playback_timeout_title">使用する点灯時間</string>
+    <string name="adaptive_playback_timeout_none_summary">OFF</string>
+    <string name="adaptive_playback_timeout_30_secs">30秒</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">ON (30秒)</string>
+    <string name="adaptive_playback_timeout_1_min">1分</string>
+    <string name="adaptive_playback_timeout_1_min_summary">ON (1分)</string>
+    <string name="adaptive_playback_timeout_2_min">2分</string>
+    <string name="adaptive_playback_timeout_2_min_summary">ON (2分)</string>
+    <string name="adaptive_playback_timeout_5_min">5分</string>
+    <string name="adaptive_playback_timeout_5_min_summary">ON (5分)</string>
+    <string name="adaptive_playback_timeout_10_min">10分</string>
+    <string name="adaptive_playback_timeout_10_min_summary">ON (10分)</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">閉じる</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">モバイルデータ</string>
+    <string name="data_usage_app_restrict_data_summary">モバイルデータ使用量を有効化する</string>
+    <string name="data_usage_app_restrict_vpn">VPN データ</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN データ使用量を有効化する</string>
+    <string name="data_usage_app_restrict_wifi">Wi-Fi データ</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi-Fi データ使用量を有効化する</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">通知履歴を表示する</string>
+    <!-- Dashboard Conditions & Suggestions -->
+    <string name="dashboard_conditions_title">ダッシュボードの状態</string>
+    <string name="summary_dashboard_conditions_enabled">ダッシュボードの状態が有効です</string>
+    <string name="summary_dashboard_conditions_disabled">ダッシュボードの状態が無効です</string>
+    <string name="dashboard_suggestions_title">ダッシュボードの候補</string>
+    <string name="summary_dashboard_suggestions_enabled">ダッシュボードの候補が有効です</string>
+    <string name="summary_dashboard_suggestions_disabled">ダッシュボードの候補が無効です</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">画面を見やすく目の疲れを軽減するために時間と周囲の環境に合わせて画面を最適化する</string>
+    <string name="live_display_mode">画面モード</string>
+    <string name="live_display_color_temperature_title">色温度</string>
+    <string name="live_display_color_temperature_summary">昼: <xliff:g id="day_temperature">%1$d</xliff:g>K  夜: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">昼</string>
+    <string name="live_display_night">夜</string>
+    <string name="live_display_outdoor_mode_title">自動屋外モード</string>
+    <string name="live_display_outdoor_mode_summary">明るい日差しが照射する環境下で明るさと彩度を自動的に向上させる</string>
+    <string name="live_display_low_power_title">消費電力を削減</string>
+    <string name="live_display_low_power_summary">性能を低下させずに画面を最低の消費電力に調整する</string>
+    <string name="live_display_enhance_color_title">色を拡張</string>
+    <string name="live_display_enhance_color_summary">肌の色・風景・他の画像の色の鮮やかさを補正する</string>
+    <string name="live_display_color_profile_title">カラープロファイル</string>
+    <string name="live_display_color_profile_standard_title">標準</string>
+    <string name="live_display_color_profile_standard_summary">正確な色と明るい白</string>
+    <string name="live_display_color_profile_natural_title">ナチュラル</string>
+    <string name="live_display_color_profile_natural_summary">写実的な色と肌色</string>
+    <string name="live_display_color_profile_dynamic_title">ダイナミック</string>
+    <string name="live_display_color_profile_dynamic_summary">補正した色と明るい白</string>
+    <string name="live_display_color_profile_cinema_title">シネマ</string>
+    <string name="live_display_color_profile_cinema_summary">ビデオの完全な色再現</string>
+    <string name="live_display_color_profile_astronomy_title">夜空</string>
+    <string name="live_display_color_profile_astronomy_summary">夜間視力に優しい深い赤</string>
+    <string name="live_display_color_profile_photography_title">写真</string>
+    <string name="live_display_color_profile_photography_summary">写真の完全な色再現</string>
+    <string name="live_display_color_profile_basic_title">基本</string>
+    <string name="live_display_color_profile_basic_summary">無調整のディスプレイを使用する</string>
+    <string name="live_display_color_profile_adaptive_title">自動</string>
+    <string name="live_display_color_profile_adaptive_summary">色を周囲の状況に適応する</string>
+    <string name="live_display_color_profile_reading_title">読書</string>
+    <string name="live_display_color_profile_reading_summary">目の負担を軽減するため暖かい色にする</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">正確な sRGB 色空間に補正する</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">正確な DCI-P3 色空間に補正する</string>
+    <string name="live_display_reading_mode_title">読書モード</string>
+    <string name="live_display_reading_mode_summary">長期間読書するのに適したグレースケールモードに変更する</string>
+    <string name="color_calibration_title">色の補正</string>
+    <string name="color_calibration_summary">画面の色を調整する</string>
+    <string name="color_red_title">赤</string>
+    <string name="color_green_title">緑</string>
+    <string name="color_blue_title">青</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">画像調整</string>
+    <string name="picture_adjustment_summary">色彩・彩度・輝度・コントラストを調整する</string>
+    <string name="adj_hue_title">色彩</string>
+    <string name="adj_saturation_title">彩度</string>
+    <string name="adj_intensity_title">輝度</string>
+    <string name="adj_contrast_title">コントラスト</string>
 </resources>

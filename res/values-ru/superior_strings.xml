@@ -24,17 +24,8 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">дата сборки, информация о сборке</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Найдите сканер отпечатков пальцев на задней поверхности телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Сканер отпечатков пальцев расположен в левой части телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Найдите сканер отпечатков пальцев на правой грани телефона.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Найдите сканер отпечатков пальцев на задней поверхности телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Найдите датчик отпечатков пальцев на левой грани вашего устройства.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Найдите датчик отпечатков пальцев на правой грани вашего устройства.</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Найдите датчик отпечатков пальцев на задней поверхности вашего планшета.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Найдите датчик отпечатков пальцев на левой грани вашего планшета.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Найдите датчик отпечатков пальцев на правой грани вашего планшета.</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <string name="battery_temp">Температура батареи</string>
@@ -49,7 +40,7 @@
     <string name="custom_light_title">Цвет светодиода</string>
     <string name="custom_light_on_time_title">Время свечения светодиода (мс)</string>
     <string name="custom_light_off_time_title">Длительность затухания светодиода (мс)</string>
-    <string name="value_equals_default">стд</string>
+    <string name="value_equals_default">по умолчанию</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Сбросить статистику</string>
     <string name="battery_stats_message">Статистика батареи будет сброшена</string>
@@ -60,15 +51,10 @@
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">Рингтон - SIM 2</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Связать громкость рингтона и уведомлений</string>
+    <string name="volume_link_notification_title">Связать громкость рингтона &amp;amp уведомлений</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
-    <string name="display_cutout_force_fullscreen_summary">Ингорирование выреза выбранными приложениями</string>
-    <!-- Back Gesture Height -->
-    <string name="back_height_low_label">Расширенный</string>
-    <string name="back_height_high_label">Вниз</string>
-    <string name="back_options_dialog_title">Параметры</string>
-    <string name="back_height_message">Количество высоты экрана, используемое в качестве пригодной для обратного жеста.</string>
+    <string name="display_cutout_force_fullscreen_title">Приложения на весь экран</string>
+    <string name="display_cutout_force_fullscreen_summary">Приложения принудительно игнорируют вырез (бровь-челку)</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <string name="platform_revision">Платформа</string>
@@ -94,7 +80,7 @@
     <string name="prevent_ringing_option_mute_no_media">Без звука, без мультимедиа</string>
     <string name="prevent_ringing_option_mute_no_media_summary">Включено (без звука, без мультимедиа)</string>
     <!-- Fingerprint to dismiss -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Проведите по сканеру отпечатка влево или вправо, чтобы убрать уведомления</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Проведите пальцем по сканеру отпечатка пальца влево или вправо, чтобы убрать уведомления</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы убрать Ваши уведомления, проведите пальцем влево или право по сканеру отпечатка пальца.</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Настройки выреза</string>
@@ -102,12 +88,12 @@
     <string name="display_cutout_mode_hidden">Скрытый</string>
     <!-- Pulse Ambient Light -->
     <string name="pulse_ambient_light_title">Эффект пульсации</string>
-    <string name="pulse_ambient_light_summary">Подсвечивать края экрана при пульсации уведомлений</string>
-    <string name="ambient_notification_light_accent_title">Цвет темы системы</string>
+    <string name="pulse_ambient_light_summary">Подсвечивать края экрана при получении уведомления</string>
+    <string name="ambient_notification_light_accent_title">Цвет акцента системы</string>
     <string name="ambient_notification_light_color_automatic_title">Цвет уведомления</string>
     <string name="pulse_ambient_light_color">При пульсации, использовать</string>
     <!-- Custom Vibration fragment -->
-    <string name="vibration_preferences">Сила вибрации</string>
+    <string name="vibration_preferences">Вибрация &amp; тактильность</string>
     <string name="summary_vibration_preferences">Изменить интенсивность, паттерн и многое другое</string>
     <string name="keywords_vibration_preferences">шаблон вибрации, интенсивность вибрации, отклик, нажатие, сила вибрации</string>
     <string name="ringtone_vibration_pattern">Тип вибрации при звонке</string>
@@ -127,8 +113,8 @@
     <string name="smart_charging_title">Умная зарядка</string>
     <string name="smart_charging_summary">Установить максимальный уровень заряда</string>
     <string name="smart_charging_switch_title">Использовать Умную зарядку</string>
-    <string name="smart_charging_level_title">Уровень остановки Умной зарядки</string>
-    <string name="smart_charging_resume_level_title">Уровень начала работы Умной зарядки</string>
+    <string name="smart_charging_level_title">Уровень остановки зарядки</string>
+    <string name="smart_charging_resume_level_title">Уровень возобновления зарядки</string>
     <string name="smart_charging_reset_stats_title">Сбросить статистику батареи</string>
     <string name="smart_charging_reset_stats_summary">Сбросить статистику батареи после достижения определённого уровня зарядки</string>
     <string name="smart_charging_footer">Умная зарядка позволяет установить максимальный уровень зарядки для продления срока службы батареи</string>
@@ -139,23 +125,229 @@
     <!-- Themes -->
     <string name="theme_type_title">Тема системы</string>
     <string name="theme_type_summary">Выберите тему</string>
-    <string name="theme_type_light">Светлая</string>
-    <string name="theme_type_pitch_black">Тёмная </string>
+    <string name="theme_type_light">Легкий</string>
+    <string name="theme_type_pitch_black">Тёмная</string>
     <string name="theme_type_solarized_dark">Соляризованная темная</string>
     <string name="theme_type_baked_green">Зелёная</string>
-    <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">Тёмно-чёрная</string>
-    <string name="theme_type_dark_grey">Тёмно-серая</string>
+    <string name="theme_type_choco_x">Шоко X</string>
+    <string name="theme_type_du_pitchblack">Тёмно-синий</string>
+    <string name="theme_type_dark_grey">Тёмно-серый</string>
+    <string name="theme_type_material_ocean">Материал Океан</string>
     <!-- Rgb Accenter -->
-    <string name="rgb_accenter_title">Акцентер</string>
+    <string name="rgb_accenter_title">RGB Акцент</string>
     <!-- Accent presets -->
     <string name="default_string">По умолчанию</string>
-    <string name="accent_preset_2">Розовый баблгам</string>
-    <string name="accent_preset_3">Огненный красный</string>
-    <string name="accent_preset_4">Конфетно-красный</string>
-    <string name="accent_preset_7">Глубокий красный</string>
-    <string name="accent_preset_8">Глубокий оранжевый</string>
-    <string name="accent_preset_9">Глубокий фиолетовый</string>
+    <string name="accent_preset_0">Блисс</string>
+    <string name="accent_preset_1">Синие утро</string>
+    <string name="accent_preset_2">Bubblegum Розовый</string>
+    <string name="accent_preset_3">Горящий Красный</string>
+    <string name="accent_preset_4">Конфетно-Красный</string>
+    <string name="accent_preset_5">Холодящий Синий</string>
+    <string name="accent_preset_6">Холодящий Жёлтый</string>
+    <string name="accent_preset_7">Мертвый Красный</string>
+    <string name="accent_preset_8">Глубинный Оранжевый</string>
+    <string name="accent_preset_9">Глубинный Фиолетовый</string>
+    <string name="accent_preset_10">Дневной Зелёный</string>
+    <string name="accent_preset_11">Фиолетовая мечта</string>
+    <string name="accent_preset_12">Пурпурный</string>
+    <string name="accent_preset_13">Зелёный</string>
+    <string name="accent_preset_14">Вспышка</string>
+    <string name="accent_preset_15">Фиолетовый след</string>
+    <string name="accent_preset_16">Френч</string>
+    <string name="accent_preset_17">Адский</string>
+    <string name="accent_preset_18">Дождь</string>
+    <string name="accent_preset_19">Розовый</string>
+    <string name="accent_preset_20">HeirloomBleu</string>
+    <string name="accent_preset_21">Holillusion</string>
+    <string name="accent_preset_22">Фиолетовая иллюзия</string>
+    <string name="accent_preset_23">Нефритово-Зелёный</string>
+    <string name="accent_preset_24">ManiaAmber</string>
+    <string name="accent_preset_25">Мистико-коричневый</string>
+    <string name="accent_preset_26">MoveMint</string>
+    <string name="accent_preset_27">NewHouseOrange</string>
+    <string name="accent_preset_28">NotImpPurple</string>
+    <string name="accent_preset_29">ObfusBleu</string>
+    <string name="accent_preset_30">Оранжевый корал</string>
+    <string name="accent_preset_31">Палесиний</string>
+    <string name="accent_preset_32">Палекрасный</string>
+    <string name="accent_preset_33">Пиксель</string>
+    <string name="accent_preset_34">PureLust</string>
+    <string name="accent_preset_35">Quepal</string>
+    <string name="accent_preset_36">Гнило-оранжевый</string>
+    <string name="accent_preset_37">Морско-мятный</string>
+    <string name="accent_preset_38">Оттенки серого</string>
+    <string name="accent_preset_39">Красный</string>
+    <string name="accent_preset_40">Распутно-розовый</string>
+    <string name="accent_preset_41">Дымящий зелёный</string>
+    <string name="accent_preset_42">Фиолетовый</string>
+    <string name="accent_preset_43">Лаймовый</string>
+    <string name="accent_preset_44">Бирюзовый</string>
+    <string name="accent_preset_45">Заполненный розовый</string>
+    <string name="accent_preset_46">Тепло-оранжевый</string>
+    <string name="accent_preset_47">Белый</string>
+    <string name="accent_preset_48">Цветастый Мятный</string>
+    <string name="accent_preset_49">AndroidOne зелёный</string>
+    <string name="accent_preset_50">Aospa зелёный</string>
+    <string name="accent_preset_51">Кока-Кола красный</string>
+    <string name="accent_preset_52">Дискорд фиолетовый</string>
+    <string name="accent_preset_53">Фейсбук синий</string>
+    <string name="accent_preset_54">Инстаграм вишневый</string>
+    <string name="accent_preset_55">Jollibee малиновый</string>
+    <string name="accent_preset_56">Monster Energy зелёный</string>
+    <string name="accent_preset_57">Nextbit мятный</string>
+    <string name="accent_preset_58">OnePlus красный</string>
+    <string name="accent_preset_59">Pepsi синий</string>
+    <string name="accent_preset_60">Pocophone Жёлтый</string>
+    <string name="accent_preset_61">Razer Зелёный</string>
+    <string name="accent_preset_62">Samsung Синий</string>
+    <string name="accent_preset_63">Spotify Зелёный</string>
+    <string name="accent_preset_64">Starbucks Зелёный</string>
+    <string name="accent_preset_65">Twitch Фиолетовый</string>
+    <string name="accent_preset_66">Twitter Синий</string>
+    <string name="accent_preset_67">Xbox Зелёный</string>
+    <string name="accent_preset_68">Xiaomi Оранжевый</string>
     <string name="accent_preset_title">Выбор акцента</string>
     <!-- Home button wake -->
+    <string name="home_wake_button_title">Пробуждение кнопкой \"Домой\"</string>
+    <string name="home_wake_button_summary">Пробуждение экрана кнопкой Дом</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Длина, используемая для срабатывания панели навигации жеста.</string>
+    <string name="home_handle_low_label">Скрыта</string>
+    <string name="home_handle_high_label">Длинный</string>
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Менее 1 минуты</string>
+    <string name="screen_time_summary_usage_today">Сегодня: %1$s</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Включите Adaptive Battery</string>
+    <string name="smart_battery_footer_custom">"Чтобы продлить время работы от батареи, функция Adaptive Battery ограничивает фоновые процессы редко используемых приложений. Со временем ваш телефон запоминает, какие приложения вы используете чаще, а какие реже.
+
+Уведомления от приложений, работу которых вы ограничиваете, могут приходить с задержкой."</string>
+    <string name="smart_battery_manager_title_custom">Адаптивное энергопотребление</string>
+    <string name="smart_battery_title_custom">Включить Адаптивное Энергопотребление</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">Расширенная настройка жестов</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Настройка жестов и пользовательских действий</string>
+    <string name="navbar_gesture_tweaks_cat_title">Дополнительно</string>
+    <string name="long_back_swipe_timeout_title">Задержка длинного свайпа</string>
+    <string name="left_swipe_actions_title">Действие при длинном свайпе влево</string>
+    <string name="left_swipe_app_action_title">Выбрать приложение для запуска при длинном свайпе влево</string>
+    <string name="right_swipe_actions_title">Действие для длинного свайпа вправо</string>
+    <string name="right_swipe_app_action_title">Выбрать приложение для запуска при длинном свайпе вправо</string>
+    <string name="left_vertical_swipe_actions_title">Действие на вертикальный свайп слева</string>
+    <string name="left_vertical_swipe_app_action_title">Выберите приложение на вертикальный свайп слева</string>
+    <string name="right_vertical_swipe_actions_title">Действие на вертикальный свайп справа</string>
+    <string name="right_vertical_swipe_app_action_title">Выберите приложение на вертикальный свайп справа</string>
+    <string name="gesture_nav_tweaks_footer_info">Чтобы выбрать приложение на действие, удерживайте нажатие на любом приложении в меню выбора приложений.\n\nВ лончере выполните свайп в самой нижней части экрана, чтобы запустить действие.</string>
+    <string name="back_swipe_extended_title">Действие на расширенный свайп</string>
+    <string name="back_swipe_extended_summary">Запуск действия на широкий свайп (более чем на половину экрана), или L-свайп (существенно длиннее по вертикали)</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Нет действия</string>
+    <string name="action_search">Ассистент</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Экран выкл</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_app_action">Приложение</string>
+    <string name="active_edge_app_select_summary">Выберите приложение, которое хотите запустить при сжатии</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_ringer_modes">Режимы звонков</string>
+    <string name="kill_app">Закрыть активное приложение</string>
+    <string name="skip_song">Пропустить трек</string>
+    <string name="prev_song">Предыдущий трек</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Расширенный</string>
+    <string name="back_height_high_label">Снизу</string>
+    <string name="back_options_dialog_title">Параметры</string>
+    <string name="back_height_message">Высота экрана, используемая в качестве сенсорной области для жеста \"Назад\".</string>
+    <string name="back_gesture_area_dead_zone_title">Мертвая зона жеста назад</string>
+    <string name="back_gesture_area_dead_zone_message">Установить область экрана, где можно вызвать свайп, чтобы избежать конфликтов с жестом внутри приложений.</string>
+    <string name="smallest_tick_label">Полноэкранный режим</string>
+    <string name="greatest_tick_label">В пол-экрана</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_timeout_title">Использовать тайм-аут</string>
+    <string name="adaptive_playback_timeout_none_summary">Выкл</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунды</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Вкл (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Вкл (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Вкл (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Вкл (5 минуты)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Вкл (10 минуты)</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Закрыть</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Мобильные данные</string>
+    <string name="data_usage_app_restrict_data_summary">Включить мониторинг мобильных данных</string>
+    <string name="data_usage_app_restrict_vpn">VPN-данные</string>
+    <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
+    <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Включить мониторинг Wi\u2011Fi data</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Показать историю уведомлений</string>
+    <!-- Dashboard Conditions & Suggestions -->
+    <string name="dashboard_conditions_title">Уведомления в меню настроек</string>
+    <string name="summary_dashboard_conditions_enabled">Уведомления в меню настроек включены</string>
+    <string name="summary_dashboard_conditions_disabled">Уведомления в меню настроек выключены</string>
+    <string name="dashboard_suggestions_title">Подсказки в меню настроек</string>
+    <string name="summary_dashboard_suggestions_enabled">Подсказки меню настроек включены</string>
+    <string name="summary_dashboard_suggestions_disabled">Подсказки меню настроек выключены</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Подстраивание экрана в зависимости от времени суток и освещения для улучшения читаемости текста и снижения утомляемости глаз</string>
+    <string name="live_display_mode">Режим отображения</string>
+    <string name="live_display_color_temperature_title">Цветовая температура</string>
+    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d </xliff:g>K Ночь: <xliff:g id="night_temperature">%2$d </xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d </xliff:g>K</string>
+    <string name="live_display_day">День</string>
+    <string name="live_display_night">Ночь</string>
+    <string name="live_display_outdoor_mode_title">Автоматический режим \"На улице\"</string>
+    <string name="live_display_outdoor_mode_summary">Увеличивать яркость и насыщенность при ярком солнечном свете автоматически</string>
+    <string name="live_display_low_power_title">Снизить энергопотребление</string>
+    <string name="live_display_low_power_summary">Уменьшения энергопотребления без видимой разницы</string>
+    <string name="live_display_enhance_color_title">Улучшение цветопередачи</string>
+    <string name="live_display_enhance_color_summary">Улучшить сочность оттенков кожи, пейзажей и других изображений</string>
+    <string name="live_display_color_profile_title">Цветовой профиль</string>
+    <string name="live_display_color_profile_standard_title">Стандарт</string>
+    <string name="live_display_color_profile_standard_summary">Точная цветопередача и контрастность</string>
+    <string name="live_display_color_profile_natural_title">Естественный</string>
+    <string name="live_display_color_profile_natural_summary">Реалистичные цвета и тона</string>
+    <string name="live_display_color_profile_dynamic_title">Динамический</string>
+    <string name="live_display_color_profile_dynamic_summary">Улучшенные цвета и повышенная контрастность</string>
+    <string name="live_display_color_profile_cinema_title">Кинотеатр</string>
+    <string name="live_display_color_profile_cinema_summary">Безупречная передача цвета для видео</string>
+    <string name="live_display_color_profile_astronomy_title">Астрономия</string>
+    <string name="live_display_color_profile_astronomy_summary">Глубокий красный для сохранения видимости ночью</string>
+    <string name="live_display_color_profile_photography_title">Фотография</string>
+    <string name="live_display_color_profile_photography_summary">Идеальная цветопередача для фото</string>
+    <string name="live_display_color_profile_basic_title">Базовый</string>
+    <string name="live_display_color_profile_basic_summary">Использовать неоткалиброванный дисплей</string>
+    <string name="live_display_color_profile_adaptive_title">Адаптивный</string>
+    <string name="live_display_color_profile_adaptive_summary">Цвета адаптируются к условиям окружающей среды</string>
+    <string name="live_display_color_profile_reading_title">Чтение</string>
+    <string name="live_display_color_profile_reading_summary">Теплые цвета для меньшего напряжения глаз</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Цвета, соответствующие цветовому пространству sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Цвета, соответствующие цветовому пространству DCI-P3</string>
+    <string name="live_display_reading_mode_title">Режим чтения</string>
+    <string name="live_display_reading_mode_summary">Режим оттенков серого для долговременного чтения</string>
+    <string name="color_calibration_title">Калибровка цвета</string>
+    <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
+    <string name="color_red_title">Красный</string>
+    <string name="color_green_title">Зелёный</string>
+    <string name="color_blue_title">Синий</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Настройка изображения</string>
+    <string name="picture_adjustment_summary">Регулировка оттенка, насыщенности, интенсивности и контрастности</string>
+    <string name="adj_hue_title">Оттенок</string>
+    <string name="adj_saturation_title">Насыщенность</string>
+    <string name="adj_intensity_title">Интенсивность</string>
+    <string name="adj_contrast_title">Контрастность</string>
 </resources>

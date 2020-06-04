@@ -24,17 +24,8 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">datum sestavení, info o sestavení</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Vyhledejte snímač otisků prstů na přední straně telefonu.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vyhledejte snímač otisků prstů na levé straně telefonu.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vyhledejte snímač otisků prstů na pravé straně telefonu.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vyhledejte snímač otisků prstů na přední straně zařízení.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vyhledejte snímač otisků prstů na levé straně zařízení.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vyhledejte snímač otisků prstů na pravé straně zařízení.</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhledejte snímač otisků prstů na přední straně tabletu.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhledejte snímač otisků prstů na levé straně tabletu.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhledejte snímač otisků prstů na pravé straně tabletu.</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Obchod Play</string>
     <string name="battery_temp">Teplota baterie</string>
@@ -64,11 +55,6 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikace přes celou obrazovku</string>
     <string name="display_cutout_force_fullscreen_summary">Vynutit, aby aplikace ignorovaly výřez v displeji</string>
-    <!-- Back Gesture Height -->
-    <string name="back_height_low_label">Plná</string>
-    <string name="back_height_high_label">Spodní</string>
-    <string name="back_options_dialog_title">Možnosti</string>
-    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto Zpět.</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <string name="platform_revision">Platforma</string>
@@ -146,79 +132,220 @@
     <string name="theme_type_choco_x">Choco X</string>
     <string name="theme_type_du_pitchblack">Pitch Black</string>
     <string name="theme_type_dark_grey">Tmavě šedý</string>
+    <string name="theme_type_material_ocean">Material Ocean</string>
     <!-- Rgb Accenter -->
     <string name="rgb_accenter_title">Rgb Accenter</string>
     <!-- Accent presets -->
     <string name="default_string">Výchozí</string>
     <string name="accent_preset_0">Bliss</string>
-    <string name="accent_preset_1">BlueMonday</string>
-    <string name="accent_preset_2">BubblegumPink</string>
-    <string name="accent_preset_3">BurningRed</string>
-    <string name="accent_preset_4">CandyRed</string>
-    <string name="accent_preset_5">ColdEveningBleu</string>
-    <string name="accent_preset_6">ColdSummerYellow</string>
-    <string name="accent_preset_7">DeadRed</string>
-    <string name="accent_preset_8">DeepOrange</string>
-    <string name="accent_preset_9">DeepPurple</string>
-    <string name="accent_preset_10">DiffDayGreen</string>
-    <string name="accent_preset_11">DreamyPurple</string>
-    <string name="accent_preset_12">DuskPurple</string>
-    <string name="accent_preset_13">ExtendedGreen</string>
+    <string name="accent_preset_1">Modrý - Monday</string>
+    <string name="accent_preset_2">Růžový - Bubblegum</string>
+    <string name="accent_preset_3">Červený - Burning</string>
+    <string name="accent_preset_4">Červený - Candy</string>
+    <string name="accent_preset_5">Modrý - ColdEvening</string>
+    <string name="accent_preset_6">Žlutý - ColdSummer</string>
+    <string name="accent_preset_7">Červený - Dead</string>
+    <string name="accent_preset_8">Tmavě oranžový</string>
+    <string name="accent_preset_9">Tmavě fialový</string>
+    <string name="accent_preset_10">Zelený - DiffDay</string>
+    <string name="accent_preset_11">Fialový - Dreamy</string>
+    <string name="accent_preset_12">Fialový - Dusk</string>
+    <string name="accent_preset_13">Zelený - Extended</string>
     <string name="accent_preset_14">Flare</string>
-    <string name="accent_preset_15">FootprintPurple</string>
-    <string name="accent_preset_16">FrenchBleu</string>
+    <string name="accent_preset_15">Fialový - Footprint</string>
+    <string name="accent_preset_16">Modrý - French</string>
     <string name="accent_preset_17">FromHell</string>
     <string name="accent_preset_18">GoldenShower</string>
-    <string name="accent_preset_19">HazedPink</string>
-    <string name="accent_preset_20">HeirloomBleu</string>
+    <string name="accent_preset_19">Růžový - Hazed</string>
+    <string name="accent_preset_20">Modrý - Heirloom</string>
     <string name="accent_preset_21">Holillusion</string>
-    <string name="accent_preset_22">IllusionsPurple</string>
-    <string name="accent_preset_23">JadeGreen</string>
-    <string name="accent_preset_24">ManiaAmber</string>
-    <string name="accent_preset_25">MisticBrown</string>
-    <string name="accent_preset_26">MoveMint</string>
-    <string name="accent_preset_27">NewHouseOrange</string>
-    <string name="accent_preset_28">NotImpPurple</string>
-    <string name="accent_preset_29">ObfusBleu</string>
-    <string name="accent_preset_30">OrangeCoral</string>
-    <string name="accent_preset_31">PaleBlue</string>
-    <string name="accent_preset_32">PaleRed</string>
+    <string name="accent_preset_22">Fialový - Illusions</string>
+    <string name="accent_preset_23">Zelený - Jade</string>
+    <string name="accent_preset_24">Jantarový - Mania</string>
+    <string name="accent_preset_25">Hnědý - Mistic</string>
+    <string name="accent_preset_26">Mentolový - Move</string>
+    <string name="accent_preset_27">Oranžový - NewHouse</string>
+    <string name="accent_preset_28">Fialový - NotImp</string>
+    <string name="accent_preset_29">Modrý - Obfus</string>
+    <string name="accent_preset_30">Oranžový - Coral</string>
+    <string name="accent_preset_31">Modrý - Pale</string>
+    <string name="accent_preset_32">Červený - Pale</string>
     <string name="accent_preset_33">Pixel</string>
     <string name="accent_preset_34">PureLust</string>
     <string name="accent_preset_35">Quepal</string>
-    <string name="accent_preset_36">RottenOrange</string>
-    <string name="accent_preset_37">SeasideMint</string>
-    <string name="accent_preset_38">ShadesOfGrey</string>
-    <string name="accent_preset_39">SincityRed</string>
-    <string name="accent_preset_40">SluttyPink</string>
-    <string name="accent_preset_41">SmokingGreen</string>
-    <string name="accent_preset_42">SpokedPurple</string>
+    <string name="accent_preset_36">Oranžový - Rotten</string>
+    <string name="accent_preset_37">Mentolový - Seaside</string>
+    <string name="accent_preset_38">Šedý - ShadesOfGrey</string>
+    <string name="accent_preset_39">Červený - Sincity</string>
+    <string name="accent_preset_40">Růžový - Slutty</string>
+    <string name="accent_preset_41">Zelený - Smoking</string>
+    <string name="accent_preset_42">Fialový - Spoked</string>
     <string name="accent_preset_43">Sublime</string>
     <string name="accent_preset_44">Modrozelený</string>
-    <string name="accent_preset_45">TruFilPink</string>
-    <string name="accent_preset_46">WarmthOrange</string>
+    <string name="accent_preset_45">Růžový - TruFil</string>
+    <string name="accent_preset_46">Oranžový - Warmth</string>
     <string name="accent_preset_47">Bílý</string>
-    <string name="accent_preset_48">ColorMint</string>
-    <string name="accent_preset_49">AndroidOneGreen</string>
-    <string name="accent_preset_50">AospaGreen</string>
-    <string name="accent_preset_51">CocaColaRed</string>
-    <string name="accent_preset_52">DiscordPurple</string>
-    <string name="accent_preset_53">FacebookBlue</string>
+    <string name="accent_preset_48">Mentolový - Color</string>
+    <string name="accent_preset_49">Zelený - AndroidOne</string>
+    <string name="accent_preset_50">Zelený - AOSPA</string>
+    <string name="accent_preset_51">Červený - CocaCola</string>
+    <string name="accent_preset_52">Fialový - Discord</string>
+    <string name="accent_preset_53">Modrý - Facebook</string>
     <string name="accent_preset_54">InstagramCerise</string>
     <string name="accent_preset_55">JollibeeCrimson</string>
-    <string name="accent_preset_56">MonsterEnergyGreen</string>
-    <string name="accent_preset_57">NextbitMint</string>
-    <string name="accent_preset_58">OneplusRed</string>
-    <string name="accent_preset_59">PepsiBlue</string>
-    <string name="accent_preset_60">PocophoneYellow</string>
-    <string name="accent_preset_61">RazerGreen</string>
-    <string name="accent_preset_62">SamsungBlue</string>
-    <string name="accent_preset_63">SpotifyGreen</string>
-    <string name="accent_preset_64">StarbucksGreen</string>
-    <string name="accent_preset_65">TwitchPurple</string>
-    <string name="accent_preset_66">TwitterBlue</string>
-    <string name="accent_preset_67">XboxGreen</string>
-    <string name="accent_preset_68">XiaomiOrange</string>
+    <string name="accent_preset_56">Zelený - MonsterEnergy</string>
+    <string name="accent_preset_57">Mentolový - Nextbit</string>
+    <string name="accent_preset_58">Červený - Oneplus</string>
+    <string name="accent_preset_59">Modrý - Pepsi</string>
+    <string name="accent_preset_60">Žlutý - Pocophone</string>
+    <string name="accent_preset_61">Zelený - Razer</string>
+    <string name="accent_preset_62">Modrý - Samsung</string>
+    <string name="accent_preset_63">Zelený - Spotify</string>
+    <string name="accent_preset_64">Zelený - Starbucks</string>
+    <string name="accent_preset_65">Fialový - Twitch</string>
+    <string name="accent_preset_66">Modrý - Twitter</string>
+    <string name="accent_preset_67">Zelený - Xbox</string>
+    <string name="accent_preset_68">Oranžový - Xiaomi</string>
     <string name="accent_preset_title">Nastavení odstínu</string>
     <!-- Home button wake -->
+    <string name="home_wake_button_title">Probudit tlačítkem Domů</string>
+    <string name="home_wake_button_summary">Povolit tlačítko Domů pro probuzení obrazovky</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Délka použitá pro provedení gesta na navigačním panelu.</string>
+    <string name="home_handle_low_label">Skryté</string>
+    <string name="home_handle_high_label">Dlouhé</string>
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Méně než 1 minuta</string>
+    <string name="screen_time_summary_usage_today">Dnes %1$s</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Zapněte adaptivní baterii</string>
+    <string name="smart_battery_footer_custom">"Adaptivní baterie prodlužuje výdrž baterie tím, že omezuje využití baterie aplikacemi, které nepoužíváte tak často. Telefon postupem času sám zjistí, jak aplikace využíváte. Oznámení z těchto aplikací se mohou zobrazovat se zpožděním."</string>
+    <string name="smart_battery_manager_title_custom">Adaptivní baterie</string>
+    <string name="smart_battery_title_custom">Použít adaptivní baterii</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">Pokročilá gesta</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Přizpůsobte gesta a nastavte vlastní akce</string>
+    <string name="navbar_gesture_tweaks_cat_title">Pokročilé</string>
+    <string name="long_back_swipe_timeout_title">Časový limit akce dlouhým přejetím vlevo</string>
+    <string name="left_swipe_actions_title">Akce dlouhým přejetím vlevo</string>
+    <string name="left_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vlevo</string>
+    <string name="right_swipe_actions_title">Akce dlouhým přejetím vpravo</string>
+    <string name="right_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vpravo</string>
+    <string name="left_vertical_swipe_actions_title">Svislé přejetí od akce vlevo</string>
+    <string name="left_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vlevo</string>
+    <string name="right_vertical_swipe_actions_title">Akce svislým přejetím vpravo</string>
+    <string name="right_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vpravo</string>
+    <string name="gesture_nav_tweaks_footer_info">Chcete-li vybrat konkrétní aktivitu aplikace pro akci, podržte stisknutou libovolnou aplikaci ve výběru aplikací.\n\nPokud se zobrazuje spouštěč, proveďte akci přejetím prstem v dolní dolní části obrazovky.</string>
+    <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
+    <string name="back_swipe_extended_summary">Aktivovat akci širším přejetím (více než polovina velikosti displeje) nebo gestem L (dostatečně svisle)</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Žádná akce</string>
+    <string name="action_search">Asistent</string>
+    <string name="action_voice_search">Hlasové vyhledávání</string>
+    <string name="action_launch_camera">Fotoaparát</string>
+    <string name="action_flashlight">Svítilna</string>
+    <string name="action_volume_panel">Panel hlasitosti</string>
+    <string name="action_screen_off">Vypnout obrazovku</string>
+    <string name="action_screenshot">Snímek obrazovky</string>
+    <string name="action_app_action">Aplikace</string>
+    <string name="active_edge_app_select_summary">Vyberte aplikaci, která se spustí při zmáčknutí</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_notifications">Oznámení</string>
+    <string name="action_clear_notifications">Vymazat oznámení</string>
+    <string name="action_ringer_modes">Režimy vyzvánění</string>
+    <string name="kill_app">Ukončit aplikaci na popředí</string>
+    <string name="skip_song">Přeskočit skladbu</string>
+    <string name="prev_song">Předchozí skladba</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Plná</string>
+    <string name="back_height_high_label">Spodní</string>
+    <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
+    <string name="back_gesture_area_dead_zone_title">Zadní část mrtvé zóny</string>
+    <string name="back_gesture_area_dead_zone_message">Nastavte oblast obrazovky, na které lze spustit přejetí prstem, abyste předešli konfliktům s gesty v aplikaci.</string>
+    <string name="smallest_tick_label">Celá obrazovka</string>
+    <string name="greatest_tick_label">Polovina obrazovky</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Adaptivní přehrávání</string>
+    <string name="adaptive_playback_timeout_title">Použít tento časový limit</string>
+    <string name="adaptive_playback_timeout_none_summary">Vyp.</string>
+    <string name="adaptive_playback_timeout_30_secs">30 sekund</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Zap. (30 sekund)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuta</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Zap. (1 minuta)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minuty</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Zap. (2 minuty)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minut</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Zap. (5 minut)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minut</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Zap. (10 minut)</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Zavřít</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Mobilní data</string>
+    <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
+    <!-- Dashboard Conditions & Suggestions -->
+    <string name="dashboard_conditions_title">Podmínky Hlavního panelu</string>
+    <string name="summary_dashboard_conditions_enabled">Podmínky Hlavního panelu jsou povoleny</string>
+    <string name="summary_dashboard_conditions_disabled">Podmínky Hlavního panelu jsou zakázány</string>
+    <string name="dashboard_suggestions_title">Návrhy Hlavního panelu</string>
+    <string name="summary_dashboard_suggestions_enabled">Návrhy Hlavního panelu jsou povoleny</string>
+    <string name="summary_dashboard_suggestions_disabled">Návrhy Hlavního panelu jsou zakázány</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
+    <string name="live_display_mode">Režim displeje</string>
+    <string name="live_display_color_temperature_title">Teplota barev</string>
+    <string name="live_display_color_temperature_summary">Den: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noc: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Den</string>
+    <string name="live_display_night">Noc</string>
+    <string name="live_display_outdoor_mode_title">Automatický režim venku</string>
+    <string name="live_display_outdoor_mode_summary">Automaticky zvýšit jas a sytost za slunečného světla</string>
+    <string name="live_display_low_power_title">Snížit spotřebu energie</string>
+    <string name="live_display_low_power_summary">Upravit zobrazení pro nejnižší spotřebu energie bez zhoršení čitelnosti</string>
+    <string name="live_display_enhance_color_title">Vylepšit barvy</string>
+    <string name="live_display_enhance_color_summary">Zlepšit živost barev pleťových odstínů, scenérie a dalších obrázků</string>
+    <string name="live_display_color_profile_title">Barevný profil</string>
+    <string name="live_display_color_profile_standard_title">Standardní</string>
+    <string name="live_display_color_profile_standard_summary">Přesné barvy a jasná bílá</string>
+    <string name="live_display_color_profile_natural_title">Přirozený</string>
+    <string name="live_display_color_profile_natural_summary">Reálné barvy a tělové tóny</string>
+    <string name="live_display_color_profile_dynamic_title">Dynamický</string>
+    <string name="live_display_color_profile_dynamic_summary">Vylepšené barvy a jasná bílá</string>
+    <string name="live_display_color_profile_cinema_title">Kino</string>
+    <string name="live_display_color_profile_cinema_summary">Perfektní zobrazení barev pro video</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomie</string>
+    <string name="live_display_color_profile_astronomy_summary">Hluboká červená pro zachování vidění v noci</string>
+    <string name="live_display_color_profile_photography_title">Fotografie</string>
+    <string name="live_display_color_profile_photography_summary">Perfektní zobrazení barev pro fotografie</string>
+    <string name="live_display_color_profile_basic_title">Základní</string>
+    <string name="live_display_color_profile_basic_summary">Použít nezkalibrovaný displej</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptivní</string>
+    <string name="live_display_color_profile_adaptive_summary">Přizpůsobit barvy okolním podmínkám</string>
+    <string name="live_display_color_profile_reading_title">Čtení</string>
+    <string name="live_display_color_profile_reading_summary">Teplejší barvy pro menší namáhání očí</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Barvy s přesností na barevný prostor sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Barvy s přesností na barevný prostor DCI-P3</string>
+    <string name="live_display_reading_mode_title">Režim čtení</string>
+    <string name="live_display_reading_mode_summary">Režim stupňů šedi pro dlouhodobé čtení</string>
+    <string name="color_calibration_title">Kalibrace barev</string>
+    <string name="color_calibration_summary">Kalibrace barev na displeji</string>
+    <string name="color_red_title">Červená</string>
+    <string name="color_green_title">Zelená</string>
+    <string name="color_blue_title">Modrá</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Přizpůsobení obrazu</string>
+    <string name="picture_adjustment_summary">Přizpůsobit odstín, sytost, intenzitu a kontrast</string>
+    <string name="adj_hue_title">Odstín</string>
+    <string name="adj_saturation_title">Sytost</string>
+    <string name="adj_intensity_title">Intenzita</string>
+    <string name="adj_contrast_title">Kontrast</string>
 </resources>

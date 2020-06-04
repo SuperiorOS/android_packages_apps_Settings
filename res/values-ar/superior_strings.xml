@@ -16,38 +16,336 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">إصدار SuperiorOS</string>
+    <string name="superior_version_default">غير معروف</string>
+    <string name="keywords_superior_version">إصدار SuperiorOS ، الإصدار المتفوق</string>
     <!-- About phone screen, build date -->
+    <string name="build_date">تاريخ البناء</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">تاريخ البناء، معلومات البناء</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">جوجل بلاي</string>
+    <string name="battery_temp">درجة حرارة البطارية</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">اهتزاز الشحن</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">فتح سريع</string>
+    <string name="unlock_quick_unlock_control_summary">فتح تلقائياً عند إدخال رمز PIN/كلمة المرور الصحيحة</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">لون الضوء</string>
+    <string name="custom_light_on_time_title">مدة تشغيل الضوء النابض LED (ملي ثانية)</string>
+    <string name="custom_light_off_time_title">مدة إيقاف الضوء النابض LED (ملي ثانية)</string>
+    <string name="value_equals_default">افتراضي</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">إعادة تعيين الإحصائيات</string>
+    <string name="battery_stats_message">سيتم إعـادة تعيين إحصاءات البطارية</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">انقر لعرض المعلومات</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">نغمة رنين الهاتف - بطاقة SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">نغمة رنين الهاتف - بطاقة SIM 2</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">ربط مستوى الرنين &amp; مع الاشعارات</string>
     <!-- Notch: Full screen apps -->
-    <!-- Back Gesture Height -->
+    <string name="display_cutout_force_fullscreen_title">تطبيقات ملء الشاشة</string>
+    <string name="display_cutout_force_fullscreen_summary">ٱجبار التطبيقات على تجاهل مساحة النوتش</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">المنصة</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">إجمالي ذاكرة الوصول العشوائي</string>
     <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">اختيار حجم نمط النقش</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">إظهار خطأ النمط</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">إظهار نقاط النمط</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">خيارات الدوران التلقائي</string>
+    <string name="display_rotation_summary">تهيئة ميزة التدوير التلقائي للشاشة</string>
+    <string name="display_rotation_disabled">معطل</string>
+    <string name="display_rotation_unit">درجة</string>
+    <string name="display_rotation_category_title">أوضاع التدوير</string>
+    <string name="display_rotation_0_title">٠ درجة</string>
+    <string name="display_rotation_90_title">٩٠ درجة</string>
+    <string name="display_rotation_180_title">١٨٠ درجة</string>
+    <string name="display_rotation_270_title">٢٧٠ درجة</string>
     <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">كتم، لا توجد وسائط</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">تشغيل (كتم، بدون صوت ااوسائط)</string>
     <!-- Fingerprint to dismiss -->
+    <string name="fp_swipe_to_dismiss_notifications_title">تمرير بصمة الإصبع إلى اليسار أو اليمين لتجاهل الإشعارات</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">لاستبعاد الاشعارات الخاصة بك، إسحب لليمين أو اليسار على البصمة في الجزء الخلفي لجهازك.</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">سلوك نتوء الشاشة</string>
+    <string name="display_cutout_mode_normal">الإفتراضي</string>
+    <string name="display_cutout_mode_hidden">مخفي</string>
     <!-- Pulse Ambient Light -->
+    <string name="pulse_ambient_light_title">النبض</string>
+    <string name="pulse_ambient_light_summary">إضاءة الحواف الجانبية للشاشة على نبض الإشعارات</string>
+    <string name="ambient_notification_light_accent_title">لون لكنة النظام</string>
+    <string name="ambient_notification_light_color_automatic_title">لون الإشعارات</string>
+    <string name="pulse_ambient_light_color">عند النبض، استخدم</string>
     <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">الاهتزاز &amp; وقوة اللمس</string>
+    <string name="summary_vibration_preferences">تغيير الكثافة والنمط والمزيد</string>
+    <string name="keywords_vibration_preferences">نمط الاهتزاز، شدة الاهتزاز، أثناء المكالمة، ردود فعل اللمس، النقر، قوة الاهتزاز</string>
+    <string name="ringtone_vibration_pattern">نمط الاهتزاز للمكالمة</string>
+    <string name="vibration_intensity_ringer">نمط اهتزاز نغمة الرنين</string>
+    <string name="vibration_intensity_notification">شدة الاهتزاز للإشعار</string>
+    <string name="vibration_intensity_disabled">معطل</string>
+    <string name="vibration_intensity_light">خفيف</string>
+    <string name="vibration_intensity_medium">متوسط</string>
+    <string name="vibration_intensity_strong">قوي</string>
+    <string name="vibration_intensity_custom">مُخصّص</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <!-- Smart charging -->
+    <string name="smart_charging_title">الشحن الذًكي</string>
+    <string name="smart_charging_summary">ضبط الحد الأقصى لمستوى الشحن</string>
+    <string name="smart_charging_switch_title">استخدام الشحن الذكي</string>
+    <string name="smart_charging_level_title">مستوى إيقاف الشحن</string>
+    <string name="smart_charging_resume_level_title">مستوى بدء الشحن</string>
+    <string name="smart_charging_reset_stats_title">إعادة تعيين إحصائيات البطارية</string>
+    <string name="smart_charging_reset_stats_summary">إعادة تعيين إحصائيات البطارية بعد الوصول إلى مستوى الشحن المحدد من قبل المستخدم</string>
+    <string name="smart_charging_footer">يتيح لك الشحن الذكي ضبط مستوى الشحن الأقصى لتمديد عمر البطارية</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">إخفاء قرص شريط التنقل لإيماءات ملء الشاشة.</string>
+    <string name="themeroom_title">غرفة السمات</string>
+    <string name="themeroom_summary">السمات</string>
     <!-- Themes -->
+    <string name="theme_type_title">سمة النظام</string>
+    <string name="theme_type_summary">اختر السمة</string>
+    <string name="theme_type_light">فاتح</string>
+    <string name="theme_type_pitch_black">جوجل داكن</string>
+    <string name="theme_type_solarized_dark">مظلمة متشمسة</string>
+    <string name="theme_type_baked_green">Baked Green</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Pitch black</string>
+    <string name="theme_type_dark_grey">Dark Grey</string>
+    <string name="theme_type_material_ocean">Material Ocean</string>
     <!-- Rgb Accenter -->
+    <string name="rgb_accenter_title">Rgb Accenter</string>
     <!-- Accent presets -->
+    <string name="default_string">الإفتراضي</string>
+    <string name="accent_preset_0">Bliss</string>
+    <string name="accent_preset_1">BlueMonday</string>
+    <string name="accent_preset_2">BubblegumPink</string>
+    <string name="accent_preset_3">BurningRed</string>
+    <string name="accent_preset_4">CandyRed</string>
+    <string name="accent_preset_5">ColdEveningBleu</string>
+    <string name="accent_preset_6">ColdSummerYellow</string>
+    <string name="accent_preset_7">DeadRed</string>
+    <string name="accent_preset_8">DeepOrange</string>
+    <string name="accent_preset_9">DeepPurple</string>
+    <string name="accent_preset_10">DiffDayGreen</string>
+    <string name="accent_preset_11">DreamyPurple</string>
+    <string name="accent_preset_12">DuskPurple</string>
+    <string name="accent_preset_13">ExtendedGreen</string>
+    <string name="accent_preset_14">Flare</string>
+    <string name="accent_preset_15">FootprintPurple</string>
+    <string name="accent_preset_16">FrenchBleu</string>
+    <string name="accent_preset_17">FromHell</string>
+    <string name="accent_preset_18">GoldenShower</string>
+    <string name="accent_preset_19">HazedPink</string>
+    <string name="accent_preset_20">HeirloomBleu</string>
+    <string name="accent_preset_21">Holillusion</string>
+    <string name="accent_preset_22">IllusionsPurple</string>
+    <string name="accent_preset_23">JadeGreen</string>
+    <string name="accent_preset_24">ManiaAmber</string>
+    <string name="accent_preset_25">MisticBrown</string>
+    <string name="accent_preset_26">MoveMint</string>
+    <string name="accent_preset_27">NewHouseOrange</string>
+    <string name="accent_preset_28">NotImpPurple</string>
+    <string name="accent_preset_29">ObfusBleu</string>
+    <string name="accent_preset_30">OrangeCoral</string>
+    <string name="accent_preset_31">PaleBlue</string>
+    <string name="accent_preset_32">PaleRed</string>
+    <string name="accent_preset_33">بكسل</string>
+    <string name="accent_preset_34">PureLust</string>
+    <string name="accent_preset_35">Quepal</string>
+    <string name="accent_preset_36">RottenOrange</string>
+    <string name="accent_preset_37">SeasideMint</string>
+    <string name="accent_preset_38">ShadesOfGrey</string>
+    <string name="accent_preset_39">SincityRed</string>
+    <string name="accent_preset_40">SluttyPink</string>
+    <string name="accent_preset_41">SmokingGreen</string>
+    <string name="accent_preset_42">SpokedPurple</string>
+    <string name="accent_preset_43">Sublime</string>
+    <string name="accent_preset_44">Teal</string>
+    <string name="accent_preset_45">TruFilPink</string>
+    <string name="accent_preset_46">WarmthOrange</string>
+    <string name="accent_preset_47">أبيض</string>
+    <string name="accent_preset_48">ColorMint</string>
+    <string name="accent_preset_49">AndroidOneGreen</string>
+    <string name="accent_preset_50">AospaGreen</string>
+    <string name="accent_preset_51">CocaColaRed</string>
+    <string name="accent_preset_52">DiscordPurple</string>
+    <string name="accent_preset_53">FacebookBlue</string>
+    <string name="accent_preset_54">InstagramCerise</string>
+    <string name="accent_preset_55">JollibeeCrimson</string>
+    <string name="accent_preset_56">MonsterEnergyGreen</string>
+    <string name="accent_preset_57">NextbitMint</string>
+    <string name="accent_preset_58">OneplusRed</string>
+    <string name="accent_preset_59">PepsiBlue</string>
+    <string name="accent_preset_60">PocophoneYellow</string>
+    <string name="accent_preset_61">RazerGreen</string>
+    <string name="accent_preset_62">SamsungBlue</string>
+    <string name="accent_preset_63">SpotifyGreen</string>
+    <string name="accent_preset_64">StarbucksGreen</string>
+    <string name="accent_preset_65">TwitchPurple</string>
+    <string name="accent_preset_66">TwitterBlue</string>
+    <string name="accent_preset_67">XboxGreen</string>
+    <string name="accent_preset_68">XiaomiOrange</string>
+    <string name="accent_preset_title">مظاهر معدة مسبقا</string>
     <!-- Home button wake -->
+    <string name="home_wake_button_title">إيقاظ عبر زر الصفحة الرئيسية</string>
+    <string name="home_wake_button_summary">تمكين زر الصفحة الرئيسية لإيقاظ الشاشة</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">الطول المستخدم في شريط التنقل.</string>
+    <string name="home_handle_low_label">إخفاء</string>
+    <string name="home_handle_high_label">طويل</string>
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">اقل من دقيقة</string>
+    <string name="screen_time_summary_usage_today">%1$s اليوم</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">تشغيل البطارية المتكيفة</string>
+    <string name="smart_battery_footer_custom">"لتمديد عمر البطارية، البطارية المتكيفة تحد من البطارية للتطبيقات التي تستخدم بشكل غير متكرر. سيتعلم هاتفك كيفية استخدام التطبيقات على مر الزمن. قد تتأخر الإشعارات لهذه التطبيقات."</string>
+    <string name="smart_battery_manager_title_custom">البطارية المتكيفة</string>
+    <string name="smart_battery_title_custom">استخدام البطارية المتكيفة</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">إيماءات متقدمة</string>
+    <string name="navbar_gesture_tweaks_pref_summary">تخصيص الإيماءات وتعيين إجراءات مخصصة</string>
+    <string name="navbar_gesture_tweaks_cat_title">متقدم</string>
+    <string name="long_back_swipe_timeout_title">مهلة إجراء السحب الطويل</string>
+    <string name="left_swipe_actions_title">إجراء السحب لليسار الطويل</string>
+    <string name="left_swipe_app_action_title">حدد تطبيق السحب لليسار الطويل</string>
+    <string name="right_swipe_actions_title">إجراء السحب الطويل لليمين</string>
+    <string name="right_swipe_app_action_title">حدد تطبيق التمرير الطويل لليمين</string>
+    <string name="left_vertical_swipe_actions_title">السحب العمودي من الإجراء الأيسر</string>
+    <string name="left_vertical_swipe_app_action_title">حدد تطبيق السحب الرأسي لليسار</string>
+    <string name="right_vertical_swipe_actions_title">إجراء السحب العمودي لليمين</string>
+    <string name="right_vertical_swipe_app_action_title">حدد تطبيق السحب الرأسي لليمين</string>
+    <string name="gesture_nav_tweaks_footer_info">لاختيار نشاط تطبيق محدد للعمل، اضغط مطولاً على أي تطبيق في منتقي التطبيقات.\n\nإذا كان المشغل يظهر، قم بالسحب في الجزء السفلي من الشاشة لتفعيل الإجراء.</string>
+    <string name="back_swipe_extended_title">إجراء السحب الموسع</string>
+    <string name="back_swipe_extended_summary">إجراء التفعيل على التمرير الأوسع (أكثر من نصف حجم العرض)، أو التمرير L (أطول رأسياً بما فيه الكفاية)</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">لا يوجد إجراء</string>
+    <string name="action_search">مساعد</string>
+    <string name="action_voice_search">البحث الصوتي</string>
+    <string name="action_launch_camera">الكاميرا</string>
+    <string name="action_flashlight">الفلاش</string>
+    <string name="action_volume_panel">لوحة الصوت</string>
+    <string name="action_screen_off">قفل الشاشة</string>
+    <string name="action_screenshot">لقطة الشاشة</string>
+    <string name="action_app_action">التطبيق</string>
+    <string name="active_edge_app_select_summary">حدد تطبيقًا لتشغيله باستخدام إجراء الضغط</string>
+    <string name="action_qs_panel">لوحة الإعدادات السريعة</string>
+    <string name="action_notifications">الإشعارات</string>
+    <string name="action_clear_notifications">مسح الإشعارات</string>
+    <string name="action_ringer_modes">اوضاع الرنين</string>
+    <string name="kill_app">قتل التطبيقات في الخلفية</string>
+    <string name="skip_song">تخطي الأغنية</string>
+    <string name="prev_song">الأغنية السابقة</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">كامل</string>
+    <string name="back_height_high_label">الأسفل</string>
+    <string name="back_options_dialog_title">الخيارات</string>
+    <string name="back_height_message">مقدار ارتفاع الشاشة المستخدم كمنطقة ملموسة لإيماءة الرجوع.</string>
+    <string name="back_gesture_area_dead_zone_title">المنطقة الخلفية الميتة</string>
+    <string name="back_gesture_area_dead_zone_message">تعيين منطقة الشاشة حيث يمكن تشغيل السحب لتجنب التعارض مع الإيماءات داخل التطبيق.</string>
+    <string name="smallest_tick_label">شاشة كاملة</string>
+    <string name="greatest_tick_label">تقسيم الشاشة</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">التشغيل التكيفي</string>
+    <string name="adaptive_playback_timeout_title">استخدام مهلة من</string>
+    <string name="adaptive_playback_timeout_none_summary">إيقاف</string>
+    <string name="adaptive_playback_timeout_30_secs">٣٠ ثانية</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">تشغيل (30 ثانية)</string>
+    <string name="adaptive_playback_timeout_1_min">١ دقيقة</string>
+    <string name="adaptive_playback_timeout_1_min_summary">تشغيل (دقيقه)</string>
+    <string name="adaptive_playback_timeout_2_min">دقيقتان</string>
+    <string name="adaptive_playback_timeout_2_min_summary">تشغيل (2 دقيقه)</string>
+    <string name="adaptive_playback_timeout_5_min">٥ دقائق</string>
+    <string name="adaptive_playback_timeout_5_min_summary">تشغيل (5 دقيقه)</string>
+    <string name="adaptive_playback_timeout_10_min">١٠ دقائق</string>
+    <string name="adaptive_playback_timeout_10_min_summary">تشغيل (10 دقيقه)</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">إغلاق</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">بيانات الجوّال</string>
+    <string name="data_usage_app_restrict_data_summary">تمكين استخدام البيانات الخلوية</string>
+    <string name="data_usage_app_restrict_vpn">بيانات VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">تمكين استخدام بيانات VPN</string>
+    <string name="data_usage_app_restrict_wifi">بيانات Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">تمكين استخدام بيانات Wi\u2011Fi</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">إظهار سجل سجل الإشعارات</string>
+    <!-- Dashboard Conditions & Suggestions -->
+    <string name="dashboard_conditions_title">شروط لوحة التحكم</string>
+    <string name="summary_dashboard_conditions_enabled">شروط لوحة التحكم مفعلة</string>
+    <string name="summary_dashboard_conditions_disabled">شروط لوحة التحكم معطلة</string>
+    <string name="dashboard_suggestions_title">اقتراحات لوحة التحكم</string>
+    <string name="summary_dashboard_suggestions_enabled">اقتراحات لوحة التحكم مفعلة</string>
+    <string name="summary_dashboard_suggestions_disabled">اقتراحات لوحة التحكم معطلة</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">تحسين الشاشة بحسب الوقت من اليوم والإضاءة المحيطة لتسهيل القراءة وتقليل إجهاد العين</string>
+    <string name="live_display_mode">وضع العرض</string>
+    <string name="live_display_color_temperature_title">درجة حرارة اللون</string>
+    <string name="live_display_color_temperature_summary">النهار: <xliff:g id="day_temperature">%1$d</xliff:g>K  الليل: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">النهار</string>
+    <string name="live_display_night">الليل</string>
+    <string name="live_display_outdoor_mode_title">الوضع التلقائي في الخارج</string>
+    <string name="live_display_outdoor_mode_summary">زيادة الإضاءة والإشباع تلقائيًا تحت أشعة الشمس</string>
+    <string name="live_display_low_power_title">تقليل استهلاك الطاقة</string>
+    <string name="live_display_low_power_summary">ضبط الشاشة بحيث تستهلك أقل قدر من الإضاءة دون تشويش ما يُعرض</string>
+    <string name="live_display_enhance_color_title">تحسين الألوان</string>
+    <string name="live_display_enhance_color_summary">تحسين حيوية درجات ألوان البشرة والمشاهد الطبيعية وغيرها من الصور</string>
+    <string name="live_display_color_profile_title">الملف التعريفي للون</string>
+    <string name="live_display_color_profile_standard_title">قياسي</string>
+    <string name="live_display_color_profile_standard_summary">الألوان الدقيقة والأبيض اللامع</string>
+    <string name="live_display_color_profile_natural_title">الطبيعية</string>
+    <string name="live_display_color_profile_natural_summary">ألوان ودرجات لون بشرة واقعية</string>
+    <string name="live_display_color_profile_dynamic_title">ديناميكي</string>
+    <string name="live_display_color_profile_dynamic_summary">ألوان محسنة وبياض ناصع</string>
+    <string name="live_display_color_profile_cinema_title">السينما</string>
+    <string name="live_display_color_profile_cinema_summary">إعادة إنتاج لون مطابق للفيديو</string>
+    <string name="live_display_color_profile_astronomy_title">فلكِي</string>
+    <string name="live_display_color_profile_astronomy_summary">أحمر عميق للحفاظ على الرؤية الليلية</string>
+    <string name="live_display_color_profile_photography_title">الفوتوغرافي</string>
+    <string name="live_display_color_profile_photography_summary">إعادة إنتاج لون مطابق للصور</string>
+    <string name="live_display_color_profile_basic_title">أساسي</string>
+    <string name="live_display_color_profile_basic_summary">استخدام العرض غير المعاير</string>
+    <string name="live_display_color_profile_adaptive_title">التكيّفي</string>
+    <string name="live_display_color_profile_adaptive_summary">تتكيف الألوان مع الإضاءة المحيطة</string>
+    <string name="live_display_color_profile_reading_title">القراءة</string>
+    <string name="live_display_color_profile_reading_summary">ألوان أكثر دفئًا لإجهاد أقل للعين</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">ألوان دقيقة لمساحة ألوان sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">ألوان دقيقة لمساحة ألوان DCI-P3</string>
+    <string name="live_display_reading_mode_title">وضع القراءة</string>
+    <string name="live_display_reading_mode_summary">وضع التدرج الرمادي للقراءة على المدى الطويل</string>
+    <string name="color_calibration_title">معايرة الألوان</string>
+    <string name="color_calibration_summary">معايرة الألوان الظاهرة على الشاشة</string>
+    <string name="color_red_title">أحمر</string>
+    <string name="color_green_title">أخضر</string>
+    <string name="color_blue_title">أزرق</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">ضبط الصورة</string>
+    <string name="picture_adjustment_summary">ضبط تدرج اللون والتشبع، والكثافة، والتباين</string>
+    <string name="adj_hue_title">تدرج اللون</string>
+    <string name="adj_saturation_title">التشبع</string>
+    <string name="adj_intensity_title">الكثافة</string>
+    <string name="adj_contrast_title">التباين</string>
 </resources>

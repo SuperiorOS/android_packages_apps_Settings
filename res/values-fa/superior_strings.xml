@@ -16,116 +16,116 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
-    <string name="superior_version">Phiên bản SuperiorOS</string>
-    <string name="superior_version_default">Không rõ</string>
-    <string name="keywords_superior_version">Phiên bản SuperiorOS, phiên bản superior</string>
+    <string name="superior_version">نسخه SuperiorOS</string>
+    <string name="superior_version_default">ناشناخته</string>
+    <string name="keywords_superior_version">نسخه SuperiorOS</string>
     <!-- About phone screen, build date -->
-    <string name="build_date">Ngày dựng</string>
-    <string name="build_date_default">2015-01-01-0000</string>
-    <string name="keywords_build_date">ngày dựng, thông tin bản dựng</string>
+    <string name="build_date">تاریخ ساخت:</string>
+    <string name="build_date_default">۲۰۱۵-۰۱-۰۱-۰۰۰۰</string>
+    <string name="keywords_build_date">تاریخ ساخت، اطلاعات ساخت</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
     <!-- App details: open play store link if app is user installed -->
-    <string name="app_play_store">Google Play</string>
-    <string name="battery_temp">Nhiệt độ pin</string>
+    <string name="app_play_store">گوگل پلی</string>
+    <string name="battery_temp">دمای باتری</string>
     <!-- Charging vibration -->
-    <string name="charging_vibro_title">Rung khi sạc</string>
+    <string name="charging_vibro_title">ویبره هنگام شارژ</string>
     <!-- Screenshot sound -->
-    <string name="screenshot_sound_title">Âm thanh chụp màn hình</string>
+    <string name="screenshot_sound_title">پخش صدا هنگام عکس گرفتن از صفحه</string>
     <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Mở khóa nhanh</string>
-    <string name="unlock_quick_unlock_control_summary">Tự động mở khóa khi nhập mã PIN/mật khẩu chính xác</string>
+    <string name="unlock_quick_unlock_control_title">بازکردن سریع</string>
+    <string name="unlock_quick_unlock_control_summary">در صورت وارد کردن پسورد یا پین‌کد صحیح، قفل به صورت خودکار باز شود</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Màu sắc đèn</string>
-    <string name="custom_light_on_time_title">Thời gian SÁNG đèn khi nhấp nháy (ms)</string>
-    <string name="custom_light_off_time_title">Thời gian TẮT đèn khi nhấp nháy (ms)</string>
-    <string name="value_equals_default">mặc định</string>
+    <string name="custom_light_title">رنگ نور</string>
+    <string name="custom_light_on_time_title">زمان روشن بودن چراغ ledدر هر پالس ( میلی ثانیه)</string>
+    <string name="custom_light_off_time_title">زمان خاموش بودن چراغ ledدر هر پالس ( میلی ثانیه)\"</string>
+    <string name="value_equals_default">پیش فرض</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Đặt lại thống kê</string>
-    <string name="battery_stats_message">Dữ liệu thống kê pin sẽ được đặt lại</string>
+    <string name="battery_stats_reset">تنظیم مجدد آمار</string>
+    <string name="battery_stats_message">آمار تاریخچه باتری در حال تنظیم مجدد شدن</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
-    <string name="device_info_protected_single_press">Chạm để hiện thông tin</string>
+    <string name="device_info_protected_single_press">برای نمایش اطلاعات ضربه بزن</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Nhạc chuông - SIM 1</string>
+    <string name="ringtone1_title">صدای زنگ - سیم 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Nhạc chuông - SIM 2</string>
+    <string name="ringtone2_title">صدای زنگ - سیم 2</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Liên kết âm lượng nhạc chuông &amp; thông báo</string>
+    <string name="volume_link_notification_title">یکی کردن میزان صدای زنگ &amp; اعلانات</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
-    <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua không gian tai thỏ</string>
+    <string name="display_cutout_force_fullscreen_title">برنامه های تمام صفحه</string>
+    <string name="display_cutout_force_fullscreen_summary">مجبور کردن برنامه ها به نادیده گرفتن فضای ناچ</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
-    <string name="platform_revision">Nền tảng</string>
+    <string name="platform_revision">پلتفرم</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
-    <string name="total_ram">Tổng RAM</string>
+    <string name="total_ram">کل RAM</string>
     <!-- Lock screen pattern size -->
-    <string name="lock_settings_picker_pattern_size_message">Chọn một kích cỡ mẫu hình</string>
+    <string name="lock_settings_picker_pattern_size_message">یک اندازهٔ الگو برگزینید</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <string name="lockpattern_settings_enable_error_path_title">Hiển thị lỗi mẫu hình</string>
+    <string name="lockpattern_settings_enable_error_path_title">نمایش الگوی نادرست</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <string name="lockpattern_settings_enable_dots_title">Hiển thị các dấu chấm mẫu hình</string>
+    <string name="lockpattern_settings_enable_dots_title">نمایش نقطه‌های الگو</string>
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Tùy chọn Tự động xoay màn hình</string>
-    <string name="display_rotation_summary">Cấu hình xoay màn hình tự động</string>
-    <string name="display_rotation_disabled">Đã vô hiệu</string>
-    <string name="display_rotation_unit">độ</string>
-    <string name="display_rotation_category_title">Chế độ xoay</string>
-    <string name="display_rotation_0_title">0 độ</string>
-    <string name="display_rotation_90_title">90 độ</string>
-    <string name="display_rotation_180_title">180 độ</string>
-    <string name="display_rotation_270_title">270 độ</string>
+    <string name="display_rotation_title">تنظیمات چرخش خودکار</string>
+    <string name="display_rotation_summary">عملکردهای چرخش خودکار صفحه را پیکربندی کنید</string>
+    <string name="display_rotation_disabled">غیر فعال</string>
+    <string name="display_rotation_unit">درجه</string>
+    <string name="display_rotation_category_title">حالت‌های چرخش</string>
+    <string name="display_rotation_0_title">۰ درجه</string>
+    <string name="display_rotation_90_title">90 درجه</string>
+    <string name="display_rotation_180_title">۱۸۰ درجه</string>
+    <string name="display_rotation_270_title">۲۷۰ درجه</string>
     <!-- Media gestures -->
-    <string name="prevent_ringing_option_mute_no_media">Tắt tiếng, không có phương tiện</string>
-    <string name="prevent_ringing_option_mute_no_media_summary">Bật (tắt tiếng, không có phương tiện)</string>
+    <string name="prevent_ringing_option_mute_no_media">سکوت، بدون هیچ رسانه ای</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">در حال(سکوت، بدون هیچ رسانه ای)</string>
     <!-- Fingerprint to dismiss -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Trượt cảm biến vân tay sang trái hoặc phải để loại bỏ thông báo</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">Để loại bỏ thông báo của bạn, hãy vuốt sang trái hoặc phải trên cảm biến vân tay ở mặt sau của điện thoại.</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">کشیدن به سمت چپ و راست روی اثر انگشت برای ردکردن اعلانات</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">برای رد کردن اعلانات تان، روی سنسور اثر انگشت به‌سمت راست یا چپ بکشید.</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Trạng thái tai thỏ</string>
-    <string name="display_cutout_mode_normal">Mặc định</string>
-    <string name="display_cutout_mode_hidden">Ẩn</string>
+    <string name="display_cutout_mode_title">رفتار ناچ</string>
+    <string name="display_cutout_mode_normal">پیش‌فرض</string>
+    <string name="display_cutout_mode_hidden">نادیده گرفته شده</string>
     <!-- Pulse Ambient Light -->
-    <string name="pulse_ambient_light_title">Pulse</string>
-    <string name="pulse_ambient_light_summary">Làm sáng các cạnh bên của màn hình trên thông báo đẩy</string>
-    <string name="ambient_notification_light_accent_title">Dùng màu hệ thống</string>
-    <string name="ambient_notification_light_color_automatic_title">Màu thông báo</string>
-    <string name="pulse_ambient_light_color">Trong khi sóng nhạc</string>
+    <string name="pulse_ambient_light_title">تپش</string>
+    <string name="pulse_ambient_light_summary">روشن کردن لبه های صفحه نمایش در هنگام دریافت اعلان</string>
+    <string name="ambient_notification_light_accent_title">رنگ Accent</string>
+    <string name="ambient_notification_light_color_automatic_title">رنگ اعلان</string>
+    <string name="pulse_ambient_light_color">رنگ ال ای دی چشمک زن</string>
     <!-- Custom Vibration fragment -->
-    <string name="vibration_preferences">Vibration &amp; haptics</string>
-    <string name="summary_vibration_preferences">Change intensities, pattern and more</string>
-    <string name="keywords_vibration_preferences">vibration pattern, vibration intensity, haptics, tap, vibration strength</string>
-    <string name="ringtone_vibration_pattern">Ringtone vibration pattern</string>
-    <string name="vibration_intensity_ringer">Ringtone vibration intensity</string>
-    <string name="vibration_intensity_notification">Notification vibration intensity</string>
-    <string name="vibration_intensity_disabled">Disabled</string>
-    <string name="vibration_intensity_light">Light</string>
-    <string name="vibration_intensity_medium">Medium</string>
-    <string name="vibration_intensity_strong">Strong</string>
-    <string name="vibration_intensity_custom">Custom</string>
+    <string name="vibration_preferences">لرزش &amp; عکس‌العمل‌ها</string>
+    <string name="summary_vibration_preferences">تغییر شدت، الگو ها و غیره</string>
+    <string name="keywords_vibration_preferences">الگو لرزش، شدت لرزش، در حین تماس، عکس‌العمل‌ها، ضربه، سختی لرزش</string>
+    <string name="ringtone_vibration_pattern">الگوی لرزش در هنگام زنگ خوردن</string>
+    <string name="vibration_intensity_ringer">شدت لرزش در هنگام زنگ خوردن</string>
+    <string name="vibration_intensity_notification">شدت لرزش اعلان</string>
+    <string name="vibration_intensity_disabled">غیر فعال</string>
+    <string name="vibration_intensity_light">ضعیف</string>
+    <string name="vibration_intensity_medium">متوسط</string>
+    <string name="vibration_intensity_strong">شدید</string>
+    <string name="vibration_intensity_custom">سفارشی</string>
     <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
     <string name="pattern_dzzz_da">dzzz-da</string>
     <string name="pattern_mm_mm_mm">mm-mm-mm</string>
     <string name="pattern_da_da_dzzz">da-da-dzzz</string>
     <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <!-- Smart charging -->
-    <string name="smart_charging_title">Smart Charging</string>
-    <string name="smart_charging_summary">Set maximum charging level</string>
-    <string name="smart_charging_switch_title">Use Smart charging</string>
-    <string name="smart_charging_level_title">Stop trigger level</string>
-    <string name="smart_charging_resume_level_title">Start trigger level</string>
-    <string name="smart_charging_reset_stats_title">Reset battery statistics</string>
-    <string name="smart_charging_reset_stats_summary">Reset battery statistics after reaching user defined charging level</string>
-    <string name="smart_charging_footer">Smart Charging allows you to set maximum charging level to extend the lifespan of your battery</string>
+    <string name="smart_charging_title">شارژ هوشمند</string>
+    <string name="smart_charging_summary">تنظیم حداکثر مقدار شارژ</string>
+    <string name="smart_charging_switch_title">استفاده از شارژ هوشمند</string>
+    <string name="smart_charging_level_title">مقدار توقف شارژ</string>
+    <string name="smart_charging_resume_level_title">مقدار شروع شارژ</string>
+    <string name="smart_charging_reset_stats_title">تنظیم مجدد آمار کارکرد باتری</string>
+    <string name="smart_charging_reset_stats_summary">تنظیم مجدد آمار کارکرد باتری بعد از رسیدن به مقدار شارژ تعیین شده</string>
+    <string name="smart_charging_footer">شارژ هوشمند این امکان را به شما میدهد تا برای مقدار شارژ باتری خود حد تعیین کنید. این قابلیت عمر باتری شما را افزایش می‌دهد</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Hide the navigation bar pill for seamless fullscreen gestures.</string>
-    <string name="themeroom_title">Theme Room</string>
-    <string name="themeroom_summary">Themes</string>
+    <string name="gesture_pill_message">مخفی کردن کیلید پیمایش برای حرکات لمسی یکپارچه</string>
+    <string name="themeroom_title">اتاق مضمون ها</string>
+    <string name="themeroom_summary">مضامین</string>
     <!-- Themes -->
-    <string name="theme_type_title">System theme</string>
-    <string name="theme_type_summary">Select theme</string>
-    <string name="theme_type_light">Light</string>
+    <string name="theme_type_title">تم سیستم</string>
+    <string name="theme_type_summary">انتخاب تم</string>
+    <string name="theme_type_light">روشن</string>
     <string name="theme_type_pitch_black">Google Dark</string>
     <string name="theme_type_solarized_dark">Solarized dark</string>
     <string name="theme_type_baked_green">Baked Green</string>
@@ -136,7 +136,7 @@
     <!-- Rgb Accenter -->
     <string name="rgb_accenter_title">Rgb Accenter</string>
     <!-- Accent presets -->
-    <string name="default_string">Default</string>
+    <string name="default_string">پیش‌فرض</string>
     <string name="accent_preset_0">Bliss</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
@@ -145,24 +145,24 @@
     <string name="accent_preset_5">ColdEveningBleu</string>
     <string name="accent_preset_6">ColdSummerYellow</string>
     <string name="accent_preset_7">DeadRed</string>
-    <string name="accent_preset_8">DeepOrange</string>
-    <string name="accent_preset_9">DeepPurple</string>
-    <string name="accent_preset_10">DiffDayGreen</string>
-    <string name="accent_preset_11">DreamyPurple</string>
-    <string name="accent_preset_12">Tím</string>
-    <string name="accent_preset_13">Xanh đầy đủ</string>
-    <string name="accent_preset_14">Pháo Sáng</string>
-    <string name="accent_preset_15">Tím bàn chân</string>
-    <string name="accent_preset_16">Xanh Pháp</string>
-    <string name="accent_preset_17">Từ địa ngục</string>
-    <string name="accent_preset_18">Vàng</string>
-    <string name="accent_preset_19">Hồng</string>
-    <string name="accent_preset_20">Xanh</string>
+    <string name="accent_preset_8">نارنجی عمیق</string>
+    <string name="accent_preset_9">بنفش سیر</string>
+    <string name="accent_preset_10">سبز</string>
+    <string name="accent_preset_11">بنفش رویایی</string>
+    <string name="accent_preset_12">بنفش غروب</string>
+    <string name="accent_preset_13">سبز وسیع</string>
+    <string name="accent_preset_14">شعله ور</string>
+    <string name="accent_preset_15">FootprintPurple</string>
+    <string name="accent_preset_16">FrenchBleu</string>
+    <string name="accent_preset_17">FromHell</string>
+    <string name="accent_preset_18">آبشار طلایی</string>
+    <string name="accent_preset_19">HazedPink</string>
+    <string name="accent_preset_20">HeirloomBleu</string>
     <string name="accent_preset_21">Holillusion</string>
-    <string name="accent_preset_22">Tím</string>
-    <string name="accent_preset_23">Xanh lá</string>
+    <string name="accent_preset_22">IllusionsPurple</string>
+    <string name="accent_preset_23">یشمی</string>
     <string name="accent_preset_24">ManiaAmber</string>
-    <string name="accent_preset_25">Nâu</string>
+    <string name="accent_preset_25">MisticBrown</string>
     <string name="accent_preset_26">MoveMint</string>
     <string name="accent_preset_27">NewHouseOrange</string>
     <string name="accent_preset_28">NotImpPurple</string>
@@ -181,10 +181,10 @@
     <string name="accent_preset_41">SmokingGreen</string>
     <string name="accent_preset_42">SpokedPurple</string>
     <string name="accent_preset_43">Sublime</string>
-    <string name="accent_preset_44">Teal</string>
+    <string name="accent_preset_44">فیروزه ای</string>
     <string name="accent_preset_45">TruFilPink</string>
     <string name="accent_preset_46">WarmthOrange</string>
-    <string name="accent_preset_47">White</string>
+    <string name="accent_preset_47">سفید</string>
     <string name="accent_preset_48">ColorMint</string>
     <string name="accent_preset_49">AndroidOneGreen</string>
     <string name="accent_preset_50">AospaGreen</string>
@@ -257,10 +257,10 @@
     <string name="skip_song">Skip song</string>
     <string name="prev_song">Previous song</string>
     <!-- Back Gesture Height -->
-    <string name="back_height_low_label">Full</string>
-    <string name="back_height_high_label">Bottom</string>
-    <string name="back_options_dialog_title">Options</string>
-    <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
+    <string name="back_height_low_label">پر</string>
+    <string name="back_height_high_label">پایین</string>
+    <string name="back_options_dialog_title">گزینه‌ها</string>
+    <string name="back_height_message">مقدار ارتفاع صفحه نمایش که به عنوان منطقه قابل لمس برای حرکت بازگشت استفاده می شود.</string>
     <string name="back_gesture_area_dead_zone_title">Back area dead zone</string>
     <string name="back_gesture_area_dead_zone_message">Set the area of the screen where the swipe can be triggered, to avoid conflicts with in-app gestures.</string>
     <string name="smallest_tick_label">Full screen</string>

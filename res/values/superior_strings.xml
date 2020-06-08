@@ -270,4 +270,10 @@
     <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
     <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
 
+    <!-- Ambient music ticker location -->
+    <string name="ambient_music_location">Show ambient music ticker</string>
+    <string name="ambient_music_disabled">Disabled</string>
+    <string name="ambient_music_bottom">At the bottom (default)</string>
+    <string name="ambient_music_center">Centered (under the cLock)</string>
+
 </resources>

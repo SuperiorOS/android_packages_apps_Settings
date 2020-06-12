@@ -72,7 +72,6 @@
     <com.android.settings.widget.HomepagePreference
         android:key="top_level_superior_lab"
         android:title="@string/superior_lab_dash_title"
-        android:summary="@string/superior_lab_summary"
         android:icon="@drawable/ic_settings_superior"
         android:order="-110"
         android:fragment="com.superior.lab.SuperiorLab"/>

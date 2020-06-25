@@ -51,9 +51,9 @@ public abstract class RingtonePreferenceControllerBase extends AbstractPreferenc
     }
 
     private void updateSummary(Preference preference) {
-        final Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUriBySlot(mContext,
-                getRingtoneType(), ((RingtonePreference)preference).getSlotId());
-
+        final Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUriForPhoneAccountHandle(
+                mContext, getRingtoneType(),
+                        ((RingtonePreference)preference).getPhoneAccountHandle());
         final CharSequence summary;
         if (ringtoneUri == null) {
             summary = mContext.getString(com.android.internal.R.string.ringtone_silent);

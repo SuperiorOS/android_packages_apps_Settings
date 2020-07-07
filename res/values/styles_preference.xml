@@ -25,7 +25,21 @@
         <item name="slicePreferenceStyle">@style/SlicePreference</item>
         <item name="seekBarPreferenceStyle">@style/SettingsSeekBarPreference</item>
         <item name="twoStateButtonPreferenceStyle">@style/TwoStateButtonPreference</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Superior.Category</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle</item>
         <item name="preferenceFragmentCompatStyle">@style/SettingsPreferenceFragmentStyle</item>
+    </style>
+
+    <style name="Preference.Superior.Category" parent="@style/Preference.Category">
+        <item name="android:layout">@layout/superior_preference_category_material</item>
+        <item name="android:selectable">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+
+    <style name="PreferenceCategoryTitleTextStyle">
+        <item name="android:textAppearance">?preferenceCategoryTitleTextAppearance</item>
+        <item name="android:textColor">?android:colorAccent</item>
     </style>
 
     <style name="PreferenceTheme.SetupWizard" parent="@style/SettingsPreferenceTheme">

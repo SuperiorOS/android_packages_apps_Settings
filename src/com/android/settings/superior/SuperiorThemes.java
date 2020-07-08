@@ -47,13 +47,14 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String ACCENT_PRESET = "accent_preset";
     private static final String ACCENT_COLOR = "accent_color";
+    private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
     static final int DEFAULT_ACCENT_COLOR = 0xff1a73e8;
 
     private ColorPickerPreference mAccentColor;
     private ListPreference mAccentPreset;
     private IOverlayManager mOverlayService;
     private UiModeManager mUiModeManager;
-
+    private int mAccentIndex;
     private ListPreference mThemeSwitch;
 
     @Override
@@ -79,11 +80,8 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
 
         mAccentPreset = (ListPreference) findPreference(ACCENT_PRESET);
         mAccentPreset.setOnPreferenceChangeListener(this);
-        if (hexColor.equals("#ff1a73e8")) {
-            mAccentPreset.setSummary(R.string.default_string);
-        } else {
-            mAccentPreset.setSummary(hexColor);
-        }
+        String colorVal = SystemProperties.get(ACCENT_COLOR_PROP, "-1");
+        checkColorPreset(colorVal);
 
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
@@ -111,13 +109,8 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
             String value = (String) objValue;
             List<String> colorPresets = Arrays.asList(
                     getResources().getStringArray(R.array.accent_presets_values));
-            int index = mAccentPreset.findIndexOfValue(value);
-            int color = DeviceUtils.convertToColorInt(colorPresets.get(index));
-            if (colorPresets.get(index).equals("ff1a73e8")) {
-                mAccentPreset.setSummary(R.string.default_string);
-            } else {
-                mAccentPreset.setSummary(mAccentPreset.getEntries()[index]);
-            }
+            mAccentIndex = mAccentPreset.findIndexOfValue(value);
+            int color = DeviceUtils.convertToColorInt(colorPresets.get(mAccentIndex));
             Settings.System.putIntForUser(resolver,
                     Settings.System.ACCENT_COLOR, color, UserHandle.USER_CURRENT);
             return true;
@@ -236,6 +229,19 @@ public class SuperiorThemes extends SettingsPreferenceFragment implements
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private void checkColorPreset(String colorValue) {
+        List<String> colorPresets = Arrays.asList(
+                getResources().getStringArray(R.array.accent_presets_values));
+        if (colorPresets.contains(colorValue)) {
+            mAccentPreset.setValue(colorValue);
+            int index = mAccentPreset.findIndexOfValue(colorValue);
+            mAccentPreset.setSummary(mAccentPreset.getEntries()[index]);
+        }
+        else {
+            mAccentPreset.setSummary(R.string.default_string);
         }
     }
 

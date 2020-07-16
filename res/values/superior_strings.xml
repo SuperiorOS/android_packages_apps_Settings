@@ -167,7 +167,7 @@
     <string name="gesture_pill_message">Hide the navigation bar pill for seamless fullscreen gestures.</string>
 
     <string name="themeroom_title">Theme Room</string>
-    <string name="themeroom_summary">Themes</string>
+    <string name="themeroom_summary">Themes & Accents</string>
 
     <!-- Themes -->
     <string name="theme_type_title">System theme</string>

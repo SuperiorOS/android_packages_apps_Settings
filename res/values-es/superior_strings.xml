@@ -23,6 +23,11 @@
     <string name="build_date">Fecha de compilación</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">fecha de compilación, Información de compilación</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Desactivado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Obligatorio (Enforcing)</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -350,4 +355,11 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="adj_saturation_title">Saturación</string>
     <string name="adj_intensity_title">Intensidad</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Lockscreen rotation -->
+    <string name="lockscreen_rotation_title">Rotación automática de la pantalla de bloqueo</string>
+    <string name="lockscreen_rotation_summary">Permitir rotación en la pantalla de bloqueo</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">Notificaciones, log de notificación</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Procesos en segundo plano</string>
 </resources>

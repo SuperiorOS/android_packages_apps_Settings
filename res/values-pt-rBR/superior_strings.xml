@@ -16,13 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
-    <string name="superior_version">Versão do SuperiorOS</string>
+    <string name="superior_version">Versão SuperiorOS</string>
     <string name="superior_version_default">Desconhecida</string>
     <string name="keywords_superior_version">Versão do SuperiorOS, versão superior</string>
     <!-- About phone screen, build date -->
     <string name="build_date">Data da compilação</string>
     <string name="build_date_default">01-01-2015-0000</string>
     <string name="keywords_build_date">data da compilação, informações da compilação</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Status do SELinux</string>
+    <string name="selinux_status_disabled">Desativado</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Impondo</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -348,4 +353,11 @@
     <string name="adj_saturation_title">Saturação</string>
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Lockscreen rotation -->
+    <string name="lockscreen_rotation_title">Rotação automática da tela de bloqueio</string>
+    <string name="lockscreen_rotation_summary">Permitir rotação na tela de bloqueio</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notificações, histórico de notificações</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Processos em segundo plano</string>
 </resources>

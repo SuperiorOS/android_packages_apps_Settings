@@ -23,6 +23,7 @@
     <string name="build_date">تاريخ البناء</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">تاريخ البناء، معلومات البناء</string>
+    <!-- About phone screen,  SELinux status -->
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -348,4 +349,7 @@
     <string name="adj_saturation_title">التشبع</string>
     <string name="adj_intensity_title">الكثافة</string>
     <string name="adj_contrast_title">التباين</string>
+    <!-- Lockscreen rotation -->
+    <!-- Search keywords -->
+    <!-- Running services -->
 </resources>

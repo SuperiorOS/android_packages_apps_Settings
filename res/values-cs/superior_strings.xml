@@ -23,6 +23,11 @@
     <string name="build_date">Datum sestavení</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">datum sestavení, info o sestavení</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Stav SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -348,4 +353,11 @@
     <string name="adj_saturation_title">Sytost</string>
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Lockscreen rotation -->
+    <string name="lockscreen_rotation_title">Autom. otočení zamykací obrazovky</string>
+    <string name="lockscreen_rotation_summary">Povolit otáčení na zamykací obrazovce</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">oznámení, protokol oznámení</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Procesy na pozadí</string>
 </resources>

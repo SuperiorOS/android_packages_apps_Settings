@@ -23,6 +23,11 @@
     <string name="build_date">ビルド日時</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">ビルド日時、ビルド情報</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">SELinux ステータス</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -350,4 +355,11 @@
     <string name="adj_saturation_title">彩度</string>
     <string name="adj_intensity_title">輝度</string>
     <string name="adj_contrast_title">コントラスト</string>
+    <!-- Lockscreen rotation -->
+    <string name="lockscreen_rotation_title">ロック画面の自動回転</string>
+    <string name="lockscreen_rotation_summary">ロック画面の自動回転を許可する</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">通知、通知ログ</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">バックグラウンドプロセス</string>
 </resources>

@@ -296,7 +296,7 @@
             android:entryValues="@array/a2dp_source_codec_priority_values"
             android:defaultValue="0" />
 
-        <com.bliss.support.preferences.SystemSettingSwitchPreference
+        <com.superior.settings.preferences.SystemSettingSwitchPreference
             android:key="sbc_hd_priority"
             android:title="@string/sbc_hd_priority_title"
             android:summary="@string/sbc_hd_priority_summary"

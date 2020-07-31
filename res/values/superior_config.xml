@@ -37,4 +37,9 @@
 
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">false</bool>
+
+    <!-- Battery Health -->
+    <string name="config_batCurCap"></string>
+    <string name="config_batDesCap"></string>
+    <bool name="config_supportBatteryHealth">false</bool>
 </resources>

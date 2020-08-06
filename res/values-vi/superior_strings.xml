@@ -142,7 +142,7 @@
     <string name="rgb_accenter_title">Màu nhấn RGB</string>
     <!-- Accent presets -->
     <string name="default_string">Mặc định</string>
-    <string name="accent_preset_0">Bliss</string>
+    <string name="accent_preset_0">Superior</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">BurningRed</string>
@@ -274,8 +274,10 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="greatest_tick_label">Một nửa màn hình</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Phát nhạc linh động</string>
+    <string name="adaptive_playback_disabled_summary">Tắt</string>
     <string name="adaptive_playback_timeout_title">Sử dụng thời gian chờ của</string>
-    <string name="adaptive_playback_timeout_none_summary">Tắt</string>
+    <string name="adaptive_playback_timeout_none">Không có thời gian chờ</string>
+    <string name="adaptive_playback_timeout_none_summary">Bật (không có thời gian chờ)</string>
     <string name="adaptive_playback_timeout_30_secs">30 giây</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Bật (30 giây)</string>
     <string name="adaptive_playback_timeout_1_min">1 phút</string>
@@ -289,6 +291,8 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Đóng</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
+    <string name="data_usage_app_restrict_all_summary">Cho phép sử dụng mạng</string>
     <string name="data_usage_app_restrict_data">Dữ liệu di động</string>
     <string name="data_usage_app_restrict_data_summary">Bật sử dụng dữ liệu di động</string>
     <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
@@ -362,4 +366,11 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="keywords_notification_log">thông báo, báo cáo thông báo</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Tiến trình nền</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bộ giải mã âm thanh Bluetooth (ưu tiên)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">Âm thanh SBC HD</string>
+    <string name="sbc_hd_priority_summary">Nên sử dụng chế độ Kênh đôi cho codec SBC theo mặc định</string>
 </resources>

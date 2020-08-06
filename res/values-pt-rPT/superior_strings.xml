@@ -66,4 +66,7 @@
     <!-- Lockscreen rotation -->
     <!-- Search keywords -->
     <!-- Running services -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- A2DP codec priority -->
+    <!-- SBC HD (Dual Channel) priority -->
 </resources>

@@ -142,7 +142,7 @@
     <string name="rgb_accenter_title">Rgb Accenter</string>
     <!-- Accent presets -->
     <string name="default_string">Por defecto</string>
-    <string name="accent_preset_0">Bliss</string>
+    <string name="accent_preset_0">Superior</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">BurningRed</string>
@@ -274,8 +274,10 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="greatest_tick_label">Media pantalla</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Reproducción adaptativa</string>
+    <string name="adaptive_playback_disabled_summary">Apagado</string>
     <string name="adaptive_playback_timeout_title">Use un tiempo de espera de</string>
-    <string name="adaptive_playback_timeout_none_summary">Apagado</string>
+    <string name="adaptive_playback_timeout_none">Sin tiempo de espera</string>
+    <string name="adaptive_playback_timeout_none_summary">Encendido (sin tiempo de espera)</string>
     <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Activado (30 segundos)</string>
     <string name="adaptive_playback_timeout_1_min">1 minuto</string>
@@ -289,6 +291,8 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Cerrar</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir acceso a la red</string>
+    <string name="data_usage_app_restrict_all_summary">Habilitar uso de red</string>
     <string name="data_usage_app_restrict_data">Datos móviles</string>
     <string name="data_usage_app_restrict_data_summary">Habilitar el uso de datos móviles</string>
     <string name="data_usage_app_restrict_vpn">Datos VPN</string>
@@ -362,4 +366,11 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="keywords_notification_log">Notificaciones, log de notificación</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Procesos en segundo plano</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Auriculares guardados</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Códec de audio Bluetooth (preferido)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">Audio SBC HD</string>
+    <string name="sbc_hd_priority_summary">Usar el modo de canal dual para el códec SBC por defecto</string>
 </resources>

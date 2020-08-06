@@ -142,7 +142,6 @@
     <string name="rgb_accenter_title">RGB Accenter</string>
     <!-- Accent presets -->
     <string name="default_string">Domyślne</string>
-    <string name="accent_preset_0">Bliss</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">BurningRed</string>
@@ -223,7 +222,6 @@
     <string name="duration_less_than_one_minute">Poniżej minuty</string>
     <string name="screen_time_summary_usage_today">%1$s dzisiaj</string>
     <!-- Adaptive battery -->
-    <string name="battery_tip_smart_battery_summary_custom">Włącz Baterię adaptacyjną</string>
     <string name="smart_battery_footer_custom">"Aby wydłużyć czas pracy na baterii, bateria adaptacyjna ogranicza wykorzystanie baterii przez rzadko używane aplikacje. Z biegiem czasu telefon zacznie uwzględniać, jak używasz aplikacji. Powiadomienia z takich aplikacji mogą być opóźnione."</string>
     <string name="smart_battery_manager_title_custom">Bateria adaptacyjna</string>
     <string name="smart_battery_title_custom">Użyj Baterii adaptacyjnej</string>
@@ -273,7 +271,6 @@
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Odtwarzanie adaptacyjne</string>
     <string name="adaptive_playback_timeout_title">Użyj limit czasu wynoszący</string>
-    <string name="adaptive_playback_timeout_none_summary">Wyłączony</string>
     <string name="adaptive_playback_timeout_30_secs">30 sekund</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Włączone (30 sekund)</string>
     <string name="adaptive_playback_timeout_1_min">1 minuta</string>
@@ -360,4 +357,7 @@
     <string name="keywords_notification_log">powiadomienia, dziennik powiadomień</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Procesy w tle</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- A2DP codec priority -->
+    <!-- SBC HD (Dual Channel) priority -->
 </resources>

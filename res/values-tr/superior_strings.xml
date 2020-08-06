@@ -137,7 +137,6 @@
     <string name="rgb_accenter_title">Rgb Aksanı</string>
     <!-- Accent presets -->
     <string name="default_string">Varsayılan</string>
-    <string name="accent_preset_0">Bliss</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">BurningRed</string>
@@ -230,4 +229,7 @@
     <!-- Lockscreen rotation -->
     <!-- Search keywords -->
     <!-- Running services -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- A2DP codec priority -->
+    <!-- SBC HD (Dual Channel) priority -->
 </resources>

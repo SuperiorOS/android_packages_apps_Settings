@@ -142,7 +142,7 @@
     <string name="rgb_accenter_title">RGB Акцент</string>
     <!-- Accent presets -->
     <string name="default_string">По умолчанию</string>
-    <string name="accent_preset_0">Блисс</string>
+    <string name="accent_preset_0">Superior</string>
     <string name="accent_preset_1">Синие утро</string>
     <string name="accent_preset_2">Bubblegum Розовый</string>
     <string name="accent_preset_3">Горящий Красный</string>
@@ -223,7 +223,7 @@
     <string name="duration_less_than_one_minute">Менее 1 минуты</string>
     <string name="screen_time_summary_usage_today">Сегодня: %1$s</string>
     <!-- Adaptive battery -->
-    <string name="battery_tip_smart_battery_summary_custom">Включите Adaptive Battery</string>
+    <string name="battery_tip_smart_battery_summary_custom">Включить Адаптивную батарею</string>
     <string name="smart_battery_footer_custom">"Чтобы продлить время работы от батареи, функция Adaptive Battery ограничивает фоновые процессы редко используемых приложений. Со временем ваш телефон запоминает, какие приложения вы используете чаще, а какие реже.
 
 Уведомления от приложений, работу которых вы ограничиваете, могут приходить с задержкой."</string>
@@ -274,8 +274,10 @@
     <string name="greatest_tick_label">В пол-экрана</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Выкл</string>
     <string name="adaptive_playback_timeout_title">Использовать тайм-аут</string>
-    <string name="adaptive_playback_timeout_none_summary">Выкл</string>
+    <string name="adaptive_playback_timeout_none">Без времени ожидания</string>
+    <string name="adaptive_playback_timeout_none_summary">Включен (без времени ожидания)</string>
     <string name="adaptive_playback_timeout_30_secs">30 секунды</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Вкл (30 секунд)</string>
     <string name="adaptive_playback_timeout_1_min">1 минута</string>
@@ -289,6 +291,8 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Закрыть</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
+    <string name="data_usage_app_restrict_all_summary">Включить отслеживание использования сети</string>
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
     <string name="data_usage_app_restrict_data_summary">Включить мониторинг мобильных данных</string>
     <string name="data_usage_app_restrict_vpn">VPN-данные</string>
@@ -362,4 +366,11 @@
     <string name="keywords_notification_log">Уведомления, журнал уведомлений</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Фоновые процессы</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Аудиокодек Bluetooth (предпочтительный)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD</string>
+    <string name="sbc_hd_priority_summary">Использовать двухканальный режим для SBC кодека по умолчанию</string>
 </resources>

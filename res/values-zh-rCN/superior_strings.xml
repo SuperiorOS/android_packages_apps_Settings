@@ -137,7 +137,6 @@
     <string name="rgb_accenter_title">RGB 中心</string>
     <!-- Accent presets -->
     <string name="default_string">默认</string>
-    <string name="accent_preset_0">Bliss</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">火焰红</string>
@@ -218,7 +217,6 @@
     <string name="duration_less_than_one_minute">少于 1 分钟</string>
     <string name="screen_time_summary_usage_today">今日%1$s</string>
     <!-- Adaptive battery -->
-    <string name="battery_tip_smart_battery_summary_custom">开启自适应电池</string>
     <string name="smart_battery_footer_custom">"为了延长电池续航时间，“自适应电池”功能会针对不常用的应用限制用电量。久而久之，您的手机就会逐渐了解应用的使用情况。
 
 这些应用的通知可能会有所延迟。"</string>
@@ -270,7 +268,6 @@
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">自适应播放</string>
     <string name="adaptive_playback_timeout_title">超时</string>
-    <string name="adaptive_playback_timeout_none_summary">关闭</string>
     <string name="adaptive_playback_timeout_30_secs">30 秒</string>
     <string name="adaptive_playback_timeout_30_secs_summary">开启(30秒)</string>
     <string name="adaptive_playback_timeout_1_min">1 分钟</string>
@@ -298,4 +295,7 @@
     <!-- Lockscreen rotation -->
     <!-- Search keywords -->
     <!-- Running services -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- A2DP codec priority -->
+    <!-- SBC HD (Dual Channel) priority -->
 </resources>

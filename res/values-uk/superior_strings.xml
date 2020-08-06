@@ -138,7 +138,6 @@
     <string name="rgb_accenter_title">RGB акцентер</string>
     <!-- Accent presets -->
     <string name="default_string">За замовчуванням</string>
-    <string name="accent_preset_0">Блісс</string>
     <string name="accent_preset_1">Синій понеділок</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">Бернінг-Ред</string>
@@ -219,7 +218,6 @@
     <string name="duration_less_than_one_minute">Менше хвилини</string>
     <string name="screen_time_summary_usage_today">%1$s сьогодні</string>
     <!-- Adaptive battery -->
-    <string name="battery_tip_smart_battery_summary_custom">Увімкнути адаптивний акумулятор</string>
     <string name="smart_battery_footer_custom">"Щоб пристрій працював довше, адаптивний акумулятор обмежує споживання заряду для додатків, які рідко використовуються. Телефон із часом визначить, як ви ними користуєтесь.
 
 Сповіщення з цих додатків можуть надходити із затримкою."</string>
@@ -271,7 +269,6 @@
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Адаптивне відтворення</string>
     <string name="adaptive_playback_timeout_title">Використовувати тайм-аут</string>
-    <string name="adaptive_playback_timeout_none_summary">Вимк.</string>
     <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Увімкнено (30 секунд)</string>
     <string name="adaptive_playback_timeout_1_min">1 хвилина</string>
@@ -354,4 +351,7 @@
     <!-- Lockscreen rotation -->
     <!-- Search keywords -->
     <!-- Running services -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- A2DP codec priority -->
+    <!-- SBC HD (Dual Channel) priority -->
 </resources>

@@ -467,4 +467,9 @@
         <item quantity="other">%d apps locked</item>
     </plurals>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_auto">Automatic</string>
+    <string name="refresh_rate_60">60Hz (saves battery)</string>
+
 </resources>

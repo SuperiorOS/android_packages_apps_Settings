@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
     <string name="superior_version_default">Neznámá</string>
     <string name="keywords_superior_version">Verze SuperiorOS, verze superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Kódové označení zařízení</string>
     <string name="build_date">Datum sestavení</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">datum sestavení, info o sestavení</string>
@@ -290,7 +291,7 @@
     <string name="suggestion_button_close">Zavřít</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
-    <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
+    <string name="data_usage_app_restrict_all_summary">Povolit aplikaci přístup k síti</string>
     <string name="data_usage_app_restrict_data">Mobilní data</string>
     <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
     <string name="data_usage_app_restrict_vpn">VPN data</string>
@@ -371,4 +372,14 @@
     <!-- SBC HD (Dual Channel) priority -->
     <string name="sbc_hd_priority_title">SBC HD audio</string>
     <string name="sbc_hd_priority_summary">Zvolte, zda má být ve výchozím nastavení SBC kodeku použit režim Dual Channel</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Časový limit zámku obrazovky</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Dvojí poklepání</string>
+    <string name="doze_double_tap_title">Dvojitým klepnutím zkontrolujte telefon</string>
+    <string name="doze_double_tap_summary">Pulzující oznámení dvojitým poklepáním</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Písmo</string>
+    <string name="disable_fonts_installed_title">Výběr písma není k dispozici, aby se předešlo konfliktům se Substratum. Pokud chcete použít výběr písma, odinstalujte Substratum.</string>
+    <string name="font_picker_progress">Aplikuji nové písmo\u2026</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
     <string name="superior_version_default">不明</string>
     <string name="keywords_superior_version">SuperiorOS バージョン, superior バージョン</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">デバイスのコードネーム</string>
     <string name="build_date">ビルド日時</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">ビルド日時、ビルド情報</string>
@@ -142,6 +143,7 @@
     <string name="rgb_accenter_title">RGB アクセンター</string>
     <!-- Accent presets -->
     <string name="default_string">既定</string>
+    <string name="accent_preset_0">Superior</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">Bubblegum ピンク</string>
     <string name="accent_preset_3">バーニングレッド</string>
@@ -222,6 +224,7 @@
     <string name="duration_less_than_one_minute">1分未満</string>
     <string name="screen_time_summary_usage_today">今日: %1$s</string>
     <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">自動調整バッテリーを ON にしてください</string>
     <string name="smart_battery_footer_custom">"自動調整バッテリーで使用頻度の低いアプリの電池使用を制限すると、電池が長持ちします。時間の経過とともに、スマートフォンがアプリの使用状況を学習します。
 
 このアプリの通知は遅れることがあります。"</string>
@@ -272,7 +275,10 @@
     <string name="greatest_tick_label">半画面</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">アダプティブ再生</string>
+    <string name="adaptive_playback_disabled_summary">OFF</string>
     <string name="adaptive_playback_timeout_title">使用する点灯時間</string>
+    <string name="adaptive_playback_timeout_none">制限なし</string>
+    <string name="adaptive_playback_timeout_none_summary">OFF</string>
     <string name="adaptive_playback_timeout_30_secs">30秒</string>
     <string name="adaptive_playback_timeout_30_secs_summary">ON (30秒)</string>
     <string name="adaptive_playback_timeout_1_min">1分</string>
@@ -286,6 +292,8 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">閉じる</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">ネットワークアクセスを許可</string>
+    <string name="data_usage_app_restrict_all_summary">アプリのネットワークへのアクセスを許可する</string>
     <string name="data_usage_app_restrict_data">モバイルデータ</string>
     <string name="data_usage_app_restrict_data_summary">モバイルデータ使用量を有効化する</string>
     <string name="data_usage_app_restrict_vpn">VPN データ</string>
@@ -360,6 +368,20 @@
     <!-- Running services -->
     <string name="background_processes_settings_title">バックグラウンドプロセス</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
     <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth オーディオコーデック (優先)</string>
     <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD オーディオ</string>
+    <string name="sbc_hd_priority_summary">SBC コーデックにデュアルチャンネルモードを既定で使用するかどうかを設定する</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">ロック画面の点灯時間</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">ダブルタップ</string>
+    <string name="doze_double_tap_title">ダブルタップで端末を確認</string>
+    <string name="doze_double_tap_summary">ダブルタップで通知を点滅させる</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">フォント</string>
+    <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のため使用できません。フォントピッカーを使用したい場合は Substratum をアンインストールして下さい。</string>
+    <string name="font_picker_progress">新規フォントの適用中\u2026</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
     <string name="superior_version_default">Tidak diketahui</string>
     <string name="keywords_superior_version">Versi SuperiorOS, versi superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Nama Kode Perangkat</string>
     <string name="build_date">Tanggal pembuatan</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">tanggal pembuatan, info pembuatan</string>
@@ -142,6 +143,7 @@
     <string name="rgb_accenter_title">Aksen Rgb</string>
     <!-- Accent presets -->
     <string name="default_string">Bawaan</string>
+    <string name="accent_preset_0">Superior</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">Merah terbakar</string>
@@ -222,6 +224,7 @@
     <string name="duration_less_than_one_minute">Kurang dari 1 menit</string>
     <string name="screen_time_summary_usage_today">%1$s Hari ini</string>
     <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Aktifkan Baterai Adaptif</string>
     <string name="smart_battery_footer_custom">"Untuk memperpanjang usia baterai, Baterai Adaptif membatasi baterai untuk aplikasi yang jarang digunakan. Ponsel Anda akan mempelajari cara Anda menggunakan aplikasi dari waktu ke waktu. Pemberitahuan mungkin ditunda untuk aplikasi ini."</string>
     <string name="smart_battery_manager_title_custom">Baterai Adaptif</string>
     <string name="smart_battery_title_custom">Gunakan Baterai Adaptif</string>
@@ -270,7 +273,10 @@
     <string name="greatest_tick_label">Setengah layar</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Pemutaran adaptif</string>
+    <string name="adaptive_playback_disabled_summary">Nonaktif</string>
     <string name="adaptive_playback_timeout_title">Gunakan batas waktu</string>
+    <string name="adaptive_playback_timeout_none">Tanpa batas waktu</string>
+    <string name="adaptive_playback_timeout_none_summary">Aktif (tidak ada batas waktu)</string>
     <string name="adaptive_playback_timeout_30_secs">30 detik</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Hidup (30 detik)</string>
     <string name="adaptive_playback_timeout_1_min">1 menit</string>
@@ -284,6 +290,8 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Tutup</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Izinkan akses jaringan</string>
+    <string name="data_usage_app_restrict_all_summary">Izinkan aplikasi untuk mengakses jaringan</string>
     <string name="data_usage_app_restrict_data">Data seluler</string>
     <string name="data_usage_app_restrict_data_summary">Aktifkan penggunaan data seluler</string>
     <string name="data_usage_app_restrict_vpn">Data VPN</string>
@@ -358,6 +366,20 @@
     <!-- Running services -->
     <string name="background_processes_settings_title">Proses latar belakang</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
     <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (lebih disukai)</string>
     <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">Audio SBC HD</string>
+    <string name="sbc_hd_priority_summary">Apakah akan menggunakan mode Dual Channel untuk SBC codec secara default</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Batas waktu layar kunci</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Ketuk dua kali</string>
+    <string name="doze_double_tap_title">Ketuk dua kali untuk memeriksa telepon</string>
+    <string name="doze_double_tap_summary">Tampilkan pemberitahuan dengan ketukan ganda</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Huruf</string>
+    <string name="disable_fonts_installed_title">Pemlih font tidak tersedia untuk menghindari konflik dengan Substratum. Copot pemasangannya jika Anda ingin menggunakan pemilih font.</string>
+    <string name="font_picker_progress">Menerapkan huruf baru\u2026</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
     <string name="superior_version_default">Неизвестно</string>
     <string name="keywords_superior_version">Версия SuperiorOS, версия superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Кодовое имя устройства</string>
     <string name="build_date">Дата сборки</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">дата сборки, информация о сборке</string>
@@ -292,7 +293,7 @@
     <string name="suggestion_button_close">Закрыть</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
-    <string name="data_usage_app_restrict_all_summary">Включить отслеживание использования сети</string>
+    <string name="data_usage_app_restrict_all_summary">Разрешить приложению доступ к сети</string>
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
     <string name="data_usage_app_restrict_data_summary">Включить мониторинг мобильных данных</string>
     <string name="data_usage_app_restrict_vpn">VPN-данные</string>
@@ -373,4 +374,14 @@
     <!-- SBC HD (Dual Channel) priority -->
     <string name="sbc_hd_priority_title">SBC HD</string>
     <string name="sbc_hd_priority_summary">Использовать двухканальный режим для SBC кодека по умолчанию</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Тайм-аут экрана блокировки</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Двойное нажатие</string>
+    <string name="doze_double_tap_title">Просмотр времени и уведомлений двойным нажатием</string>
+    <string name="doze_double_tap_summary">Пульсирующие уведомления двойным нажатием</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Шрифт</string>
+    <string name="disable_fonts_installed_title">Выбор шрифта недоступен для предотвращения конфликтов с Substratum. Удалите его, если хотите и дальше использовать выбор шрифта.</string>
+    <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
 </resources>

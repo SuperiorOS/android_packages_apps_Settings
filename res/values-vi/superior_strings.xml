@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
     <string name="superior_version_default">Không rõ</string>
     <string name="keywords_superior_version">Phiên bản SuperiorOS, phiên bản superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Tên mã thiết bị</string>
     <string name="build_date">Ngày dựng</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">ngày dựng, thông tin bản dựng</string>
@@ -292,7 +293,7 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="suggestion_button_close">Đóng</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
-    <string name="data_usage_app_restrict_all_summary">Cho phép sử dụng mạng</string>
+    <string name="data_usage_app_restrict_all_summary">Cho phép ứng dụng truy cập mạng</string>
     <string name="data_usage_app_restrict_data">Dữ liệu di động</string>
     <string name="data_usage_app_restrict_data_summary">Bật sử dụng dữ liệu di động</string>
     <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
@@ -373,4 +374,14 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <!-- SBC HD (Dual Channel) priority -->
     <string name="sbc_hd_priority_title">Âm thanh SBC HD</string>
     <string name="sbc_hd_priority_summary">Nên sử dụng chế độ Kênh đôi cho codec SBC theo mặc định</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Thời gian chờ màn hình khóa</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Chạm 2 lần</string>
+    <string name="doze_double_tap_title">Chạm 2 lần để kiểm tra điện thoại</string>
+    <string name="doze_double_tap_summary">Hiển thị thông báo xung bằng cách chạm hai lần</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Phông chữ</string>
+    <string name="disable_fonts_installed_title">Trình chọn phông chữ không hoạt động do xung đột với Substratum. Xóa nó nếu bạn muốn chọn phông chữ.</string>
+    <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
 </resources>

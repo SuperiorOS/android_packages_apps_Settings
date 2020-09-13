@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,10 +20,15 @@
     <string name="superior_version_default">Невідомо</string>
     <string name="keywords_superior_version">Версія SuperiorOS</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Кодове ім\'я пристрою</string>
     <string name="build_date">Дата збірки</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">дата збірки, інформація збірки</string>
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Вимкнено</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -138,6 +143,7 @@
     <string name="rgb_accenter_title">RGB акцентер</string>
     <!-- Accent presets -->
     <string name="default_string">За замовчуванням</string>
+    <string name="accent_preset_0">Superior</string>
     <string name="accent_preset_1">Синій понеділок</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">Бернінг-Ред</string>
@@ -218,6 +224,7 @@
     <string name="duration_less_than_one_minute">Менше хвилини</string>
     <string name="screen_time_summary_usage_today">%1$s сьогодні</string>
     <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Увімкнути адаптивний акумулятор</string>
     <string name="smart_battery_footer_custom">"Щоб пристрій працював довше, адаптивний акумулятор обмежує споживання заряду для додатків, які рідко використовуються. Телефон із часом визначить, як ви ними користуєтесь.
 
 Сповіщення з цих додатків можуть надходити із затримкою."</string>
@@ -268,7 +275,10 @@
     <string name="greatest_tick_label">Половина екрана</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Адаптивне відтворення</string>
+    <string name="adaptive_playback_disabled_summary">Вимкнено</string>
     <string name="adaptive_playback_timeout_title">Використовувати тайм-аут</string>
+    <string name="adaptive_playback_timeout_none">Безперервно</string>
+    <string name="adaptive_playback_timeout_none_summary">Увімкнено (безперервно)</string>
     <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Увімкнено (30 секунд)</string>
     <string name="adaptive_playback_timeout_1_min">1 хвилина</string>
@@ -282,6 +292,8 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Закрити</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Дозволити доступ до мережі</string>
+    <string name="data_usage_app_restrict_all_summary">Дозволити додатку доступ до мережі</string>
     <string name="data_usage_app_restrict_data">Мобільні дані</string>
     <string name="data_usage_app_restrict_data_summary">Увімкнути використання мобільного інтернету</string>
     <string name="data_usage_app_restrict_vpn">Дані VPN</string>
@@ -349,9 +361,27 @@
     <string name="adj_intensity_title">Інтенсивність</string>
     <string name="adj_contrast_title">Контрастність</string>
     <!-- Lockscreen rotation -->
+    <string name="lockscreen_rotation_title">Автоповорот екрану блокування</string>
+    <string name="lockscreen_rotation_summary">Дозволити поворот на екрані блокування</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">сповіщення, журнал сповіщень</string>
     <!-- Running services -->
+    <string name="background_processes_settings_title">Фонові процеси</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Збережені навушники</string>
     <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Аудіо кодек Bluetooth (бажаний)</string>
     <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">Аудіо SBC HD</string>
+    <string name="sbc_hd_priority_summary">Чи використовувати двохканальний режим для кодека SBC за замовчуванням</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Час очікування екрана блокування</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Подвійний дотик</string>
+    <string name="doze_double_tap_title">Двічі торкніться, щоб перевірити телефон</string>
+    <string name="doze_double_tap_summary">Перегляд сповіщення подвійним натисканням</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Шрифт</string>
+    <string name="disable_fonts_installed_title">Вибір шрифтів недоступний щоб уникнути конфліктів із Substratum. Видаліть його, якщо бажаєте використовувати системні шрифти.</string>
+    <string name="font_picker_progress">Застосовується новий шрифт\u2026</string>
 </resources>

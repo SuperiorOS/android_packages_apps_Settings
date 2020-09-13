@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 Superior OS Project
+     Copyright (C) 2018-2020 Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -64,7 +64,7 @@
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <string name="platform_revision">Plataforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
-    <string name="total_ram">RAM total</string>
+    <string name="total_ram">Total de RAM</string>
     <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Escolha um tamanho de padrão</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -142,6 +142,7 @@
     <string name="rgb_accenter_title">Rgb Accenter</string>
     <!-- Accent presets -->
     <string name="default_string">Padrão</string>
+    <string name="accent_preset_0">Interface Superior</string>
     <string name="accent_preset_1">BlueMonday</string>
     <string name="accent_preset_2">BubblegumPink</string>
     <string name="accent_preset_3">BurningRed</string>
@@ -222,6 +223,7 @@
     <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
     <string name="screen_time_summary_usage_today">%1$s hoje</string>
     <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Ativar bateria adaptável</string>
     <string name="smart_battery_footer_custom">"Para prolongar a vida da bateria, a Bateria Adaptativa limita a bateria para aplicativos usados ​​com pouca frequência. Seu telefone aprenderá como você usa os aplicativos ao longo do tempo. As notificações podem atrasar esses aplicativos."</string>
     <string name="smart_battery_manager_title_custom">Bateria adaptável</string>
     <string name="smart_battery_title_custom">Usar Bateria Adaptável</string>
@@ -270,7 +272,10 @@
     <string name="greatest_tick_label">Tela dividida</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Reprodução adaptável</string>
+    <string name="adaptive_playback_disabled_summary">Desativado</string>
     <string name="adaptive_playback_timeout_title">Use um tempo limite de</string>
+    <string name="adaptive_playback_timeout_none">Sem tempo limite</string>
+    <string name="adaptive_playback_timeout_none_summary">Ativado (sem limite de tempo)</string>
     <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Ativado (30 segundos)</string>
     <string name="adaptive_playback_timeout_1_min">1 minuto</string>
@@ -284,6 +289,7 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fechar</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir o acesso a rede</string>
     <string name="data_usage_app_restrict_data">Dados de celular</string>
     <string name="data_usage_app_restrict_data_summary">Habilitar o uso de dados celulares</string>
     <string name="data_usage_app_restrict_vpn">Dados de VPN</string>
@@ -358,6 +364,13 @@
     <!-- Running services -->
     <string name="background_processes_settings_title">Processos em segundo plano</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Fones de ouvido salvos</string>
     <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Codec de áudio Bluetooth (preferencial)</string>
     <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">Áudio SBC HD</string>
+    <string name="sbc_hd_priority_summary">Se usar o modo Dual Channel deve ser usado para o codec SBC por padrão</string>
+    <!-- Lockscreen timeout -->
+    <!-- Doze on double tap -->
+    <!-- FontEngine -->
 </resources>

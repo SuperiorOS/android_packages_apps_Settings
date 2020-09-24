@@ -3409,8 +3409,8 @@
         <!-- SuperiorSettings -->
         <activity android:name=".Settings$SuperiorSettingsActivity"
             android:label="@string/superior_settings_dash_title"
-            android:icon="@drawable/ic_settings_superior"
-            android:taskAffinity="">
+            android:icon="@drawable/ic_homepage_superior"
+            android:taskAffinity="com.android.settings">
             <intent-filter android:priority="1">
                 <action android:name="com.superior.settings.SuperiorSettings" />
                 <category android:name="android.intent.category.DEFAULT" />

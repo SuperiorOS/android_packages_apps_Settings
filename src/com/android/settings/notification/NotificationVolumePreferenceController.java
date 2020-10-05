@@ -35,7 +35,8 @@ public class NotificationVolumePreferenceController extends
     @Override
     public int getAvailabilityStatus() {
         return mContext.getResources().getBoolean(R.bool.config_show_notification_volume)
-                && !mHelper.isSingleVolume() ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+                && !Utils.isVoiceCapable(mContext) && !mHelper.isSingleVolume()
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override

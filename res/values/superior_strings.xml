@@ -379,4 +379,9 @@
     <string name="app_lock_timeout_5mins">5 minutes</string>
     <string name="app_lock_timeout_10mins">10 minutes</string>
     <string name="app_lock_timeout_30mins">30 minutes</string>
+
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Haptic feedback</string>
+    <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
+
 </resources>

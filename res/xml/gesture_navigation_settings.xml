@@ -66,7 +66,7 @@
     <PreferenceCategory
         android:title="@string/navbar_category">
 
-     <com.android.settings.widget.LabeledSeekBarPreference
+        <com.android.settings.widget.LabeledSeekBarPreference
             android:key="gesture_back_height"
             android:title="@string/back_height_message"
             android:max="3"
@@ -86,6 +86,12 @@
             android:key="immersive_navigation"
             android:title="@string/immersive_navigation_title"
             android:summary="@string/immersive_navigation_summary" />
+
+        <com.superior.support.preferences.SystemSettingSwitchPreference
+            android:key="back_gesture_haptic"
+            android:title="@string/back_gesture_haptic_title"
+            android:summary="@string/back_gesture_haptic_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 

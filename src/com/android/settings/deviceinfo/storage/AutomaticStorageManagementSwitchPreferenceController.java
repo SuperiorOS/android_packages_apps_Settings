@@ -28,7 +28,6 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
-import com.android.settings.deletionhelper.ActivationWarningFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.widget.GenericSwitchController;
 import com.android.settings.widget.PrimarySwitchPreference;
@@ -94,21 +93,6 @@ public class AutomaticStorageManagementSwitchPreferenceController extends
         Settings.Secure.putInt(mContext.getContentResolver(),
                 Settings.Secure.AUTOMATIC_STORAGE_MANAGER_ENABLED,
                 isChecked ? 1 : 0);
-
-        final boolean storageManagerEnabledByDefault =
-                SystemProperties.getBoolean(STORAGE_MANAGER_ENABLED_BY_DEFAULT_PROPERTY, false);
-        final boolean storageManagerDisabledByPolicy =
-                Settings.Secure.getInt(
-                        mContext.getContentResolver(),
-                        Settings.Secure.AUTOMATIC_STORAGE_MANAGER_TURNED_OFF_BY_POLICY,
-                        0)
-                        != 0;
-        // Show warning if it is disabled by default and turning it on or if it was disabled by
-        // policy and we're turning it on.
-        if (isChecked && (!storageManagerEnabledByDefault || storageManagerDisabledByPolicy)) {
-            ActivationWarningFragment fragment = ActivationWarningFragment.newInstance();
-            fragment.show(mFragmentManager, ActivationWarningFragment.TAG);
-        }
 
         return true;
     }

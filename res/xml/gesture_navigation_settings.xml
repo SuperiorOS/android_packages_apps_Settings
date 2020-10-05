@@ -81,6 +81,13 @@
             android:selectable="true"
             settings:textStart="@string/hide_label"
             settings:textEnd="@string/long_label"/>
+
+     <com.superior.support.preferences.SystemSettingSwitchPreference
+            android:key="back_gesture_haptic"
+            android:title="@string/back_gesture_haptic_title"
+            android:summary="@string/back_gesture_haptic_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 </PreferenceScreen>
 

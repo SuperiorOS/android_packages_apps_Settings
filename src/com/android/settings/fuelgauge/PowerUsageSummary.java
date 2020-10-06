@@ -171,12 +171,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     protected void updateViews(List<BatteryInfo> batteryInfos) {
         final BatteryMeterView batteryView = mBatteryLayoutPref
                 .findViewById(R.id.battery_header_icon);
-        final TextView percentRemaining =
-                mBatteryLayoutPref.findViewById(R.id.battery_percent);
         final TextView summary1 = mBatteryLayoutPref.findViewById(R.id.summary1);
         BatteryInfo oldInfo = batteryInfos.get(0);
         BatteryInfo newInfo = batteryInfos.get(1);
-        percentRemaining.setText(Utils.formatPercentage(oldInfo.batteryLevel));
+        batteryView.setText(Utils.formatPercentage(oldInfo.batteryLevel));
 
         // set the text to the old estimate (copied from battery info). Note that this
         // can sometimes say 0 time remaining because battery stats requires the phone
@@ -429,7 +427,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         final BatteryMeterView batteryView = (BatteryMeterView) mBatteryLayoutPref
                 .findViewById(R.id.battery_header_icon);
-        final TextView timeText = (TextView) mBatteryLayoutPref.findViewById(R.id.battery_percent);
         final TextView summary1 = (TextView) mBatteryLayoutPref.findViewById(R.id.summary1);
         if (info.remainingLabel == null ) {
             summary1.setText(info.statusLabel);
@@ -438,8 +435,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         batteryView.setCharging(!info.discharging);
         batteryView.setPowerSave(mPowerManager.isPowerSaveMode());
-        startBatteryHeaderAnimationIfNecessary(batteryView, timeText, mBatteryLevel,
-                info.batteryLevel);
+        startBatteryHeaderAnimationIfNecessary(batteryView, mBatteryLevel, info.batteryLevel);
     }
 
     @VisibleForTesting
@@ -447,17 +443,14 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         if (getContext() != null) {
             final BatteryMeterView batteryView = (BatteryMeterView) mBatteryLayoutPref
                   .findViewById(R.id.battery_header_icon);
-            final TextView timeText = (TextView) mBatteryLayoutPref.findViewById(R.id.battery_percent);
-
             batteryView.setBatteryLevel(mBatteryLevel);
             batteryView.setPowerSave(mPowerManager.isPowerSaveMode());
-            timeText.setText(formatBatteryPercentageText(mBatteryLevel));
+            batteryView.setText(formatBatteryPercentageText(mBatteryLevel));
         }
     }
 
     @VisibleForTesting
-    void startBatteryHeaderAnimationIfNecessary(BatteryMeterView batteryView, TextView timeTextView,
-                int prevLevel, int currentLevel) {
+    void startBatteryHeaderAnimationIfNecessary(BatteryMeterView batteryView, int prevLevel, int currentLevel) {
         if (getContext() != null) {
         mBatteryLevel = currentLevel;
         final int diff = Math.abs(prevLevel - currentLevel);
@@ -472,7 +465,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                     final Integer level = (Integer) animation.getAnimatedValue();
                     batteryView.setBatteryLevel(level);
                     batteryView.setPowerSave(mPowerManager.isPowerSaveMode());
-                    timeTextView.setText(formatBatteryPercentageText(level));
+                    batteryView.setText(formatBatteryPercentageText(level));
                 }
             });
             animator.start();

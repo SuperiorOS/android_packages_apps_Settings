@@ -48,8 +48,7 @@
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
         android:title="@string/battery_last_full_charge"
-        android:selectable="false"
-        settings:allowDividerAbove="true" />
+        android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="screen_usage"

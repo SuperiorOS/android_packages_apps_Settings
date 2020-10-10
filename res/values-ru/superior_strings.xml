@@ -384,4 +384,22 @@
     <string name="font_picker_title">Шрифт</string>
     <string name="disable_fonts_installed_title">Выбор шрифта недоступен для предотвращения конфликтов с Substratum. Удалите его, если хотите и дальше использовать выбор шрифта.</string>
     <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
+    <!-- App lock -->
+    <string name="applock_locked">Заблокировано</string>
+    <string name="applock_unlocked">Разблокировано</string>
+    <string name="applock_locked_apps">Заблокированные приложения</string>
+    <string name="applock_unlocked_apps">Разблокированные приложения</string>
+    <string name="applock_show_only_on_wake">Аутентифицировать только один раз</string>
+    <string name="applock_show_only_on_wake_on_summary">После аутентификации приложение будет разблокировано до отключения экрана</string>
+    <string name="applock_show_only_on_wake_off_summary">После аутентификации приложение остается разблокированным в течение 15 секунд после выхода</string>
+    <string name="applock_lock_notifications">Скрыть содержимое уведомлений, пока приложение заблокировано</string>
+    <string name="applock_setup">Настройка блокировки приложений</string>
+    <string name="applock_overlay_summary">Эта функция недоступна, так как приложение заблокировано</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 приложение заблокировано</item>
+        <item quantity="few">%d приложений заблокировано</item>
+        <item quantity="many">%d приложений заблокировано</item>
+        <item quantity="other">%d приложений заблокировано</item>
+    </plurals>
+    <!-- Refresh rate -->
 </resources>

@@ -382,4 +382,23 @@
     <string name="font_picker_title">Písmo</string>
     <string name="disable_fonts_installed_title">Výběr písma není k dispozici, aby se předešlo konfliktům se Substratum. Pokud chcete použít výběr písma, odinstalujte Substratum.</string>
     <string name="font_picker_progress">Aplikuji nové písmo\u2026</string>
+    <!-- App lock -->
+    <string name="applock_title">Zámek aplikací</string>
+    <string name="applock_locked">Uzamčeno</string>
+    <string name="applock_unlocked">Odemčeno</string>
+    <string name="applock_locked_apps">Uzamčené aplikace</string>
+    <string name="applock_unlocked_apps">Odemčené aplikace</string>
+    <string name="applock_show_only_on_wake">Ověřit pouze jednou</string>
+    <string name="applock_show_only_on_wake_on_summary">Po ověření zůstane aplikace odemknutá, dokud se nevypne obrazovka</string>
+    <string name="applock_show_only_on_wake_off_summary">Po ověření zůstane aplikace odemknutá po dobu 15 sekund od jejího ukončení</string>
+    <string name="applock_lock_notifications">Skrýt obsah oznámení, když je aplikace uzamčena</string>
+    <string name="applock_setup">Nastavení zámku aplikací</string>
+    <string name="applock_overlay_summary">Tato funkce není k dispozici, protože tato aplikace je uzamčena</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 aplikace uzamčena</item>
+        <item quantity="few">%d aplikace uzamčeny</item>
+        <item quantity="many">%d aplikací uzamčeno</item>
+        <item quantity="other">%d aplikací uzamčeno</item>
+    </plurals>
+    <!-- Refresh rate -->
 </resources>

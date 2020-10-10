@@ -384,4 +384,12 @@
     <string name="font_picker_title">Шрифт</string>
     <string name="disable_fonts_installed_title">Вибір шрифтів недоступний щоб уникнути конфліктів із Substratum. Видаліть його, якщо бажаєте використовувати системні шрифти.</string>
     <string name="font_picker_progress">Застосовується новий шрифт\u2026</string>
+    <!-- App lock -->
+    <string name="applock_title">Блокування додатків</string>
+    <string name="applock_locked">Заблоковано</string>
+    <string name="applock_unlocked">Розблоковано</string>
+    <string name="applock_locked_apps">Заблоковані додатки</string>
+    <string name="applock_unlocked_apps">Розблоковані додатки</string>
+    <string name="applock_show_only_on_wake">Автентифікувати лише один раз</string>
+    <!-- Refresh rate -->
 </resources>

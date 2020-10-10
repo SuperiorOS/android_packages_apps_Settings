@@ -235,4 +235,6 @@
     <!-- Lockscreen timeout -->
     <!-- Doze on double tap -->
     <!-- FontEngine -->
+    <!-- App lock -->
+    <!-- Refresh rate -->
 </resources>

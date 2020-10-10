@@ -384,4 +384,20 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="font_picker_title">Phông chữ</string>
     <string name="disable_fonts_installed_title">Trình chọn phông chữ không hoạt động do xung đột với Substratum. Xóa nó nếu bạn muốn chọn phông chữ.</string>
     <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
+    <!-- App lock -->
+    <string name="applock_title">Khóa ứng dụng</string>
+    <string name="applock_locked">Đã khóa</string>
+    <string name="applock_unlocked">Đã mở khóa</string>
+    <string name="applock_locked_apps">Khóa ứng dụng</string>
+    <string name="applock_unlocked_apps">Mở khóa ứng dụng</string>
+    <string name="applock_show_only_on_wake">Chỉ xác thực một lần</string>
+    <string name="applock_show_only_on_wake_on_summary">Sau khi xác thực, ứng dụng vẫn mở khóa cho đến khi màn hình tắt</string>
+    <string name="applock_show_only_on_wake_off_summary">Sau khi được xác thực, ứng dụng vẫn mở khóa trong 15 giây sau khi thoát</string>
+    <string name="applock_lock_notifications">Ẩn nội dung thông báo khi ứng dụng bị khóa</string>
+    <string name="applock_setup">Cài đặt khóa ứng dụng</string>
+    <string name="applock_overlay_summary">Tính năng này không khả dụng vì ứng dụng này đã bị khóa</string>
+    <plurals name="applock_summary">
+        <item quantity="other">1 ứng dụng đã khóa</item>
+    </plurals>
+    <!-- Refresh rate -->
 </resources>

@@ -384,4 +384,20 @@
     <string name="font_picker_title">フォント</string>
     <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のため使用できません。フォントピッカーを使用したい場合は Substratum をアンインストールして下さい。</string>
     <string name="font_picker_progress">新規フォントの適用中\u2026</string>
+    <!-- App lock -->
+    <string name="applock_title">アプリロッカー</string>
+    <string name="applock_locked">ロック中</string>
+    <string name="applock_unlocked">ロック解除中</string>
+    <string name="applock_locked_apps">ロックしたアプリ</string>
+    <string name="applock_unlocked_apps">未ロックのアプリ</string>
+    <string name="applock_show_only_on_wake">一度だけ認証</string>
+    <string name="applock_show_only_on_wake_on_summary">認証が完了すると、画面が消灯するまでアプリがロックされたままになります</string>
+    <string name="applock_show_only_on_wake_off_summary">認証が完了すると、終了後15秒間アプリがロック解除されたままになります</string>
+    <string name="applock_lock_notifications">アプリがロックされている間は通知内容を非表示にする</string>
+    <string name="applock_setup">アプリロッカーのセットアップ</string>
+    <string name="applock_overlay_summary">このアプリはロックされているためこの機能は利用できません</string>
+    <plurals name="applock_summary">
+        <item quantity="other">%d個のアプリがロックされました</item>
+    </plurals>
+    <!-- Refresh rate -->
 </resources>

@@ -59,7 +59,7 @@ public class EnableVerboseVendorLoggingPreferenceController
     public boolean isAvailable() {
         // Only show preference when IDumpstateDevice v1.1 is avalaible
         // This is temperary strategy that may change later.
-        return isIDumpstateDeviceV1_1ServiceAvailable();
+        return /*isIDumpstateDeviceV1_1ServiceAvailable();*/false;
     }
 
     @Override

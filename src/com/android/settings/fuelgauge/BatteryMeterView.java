@@ -131,7 +131,7 @@ public class BatteryMeterView extends CardView {
     }
 
     public void setText(CharSequence prog) {
-        progress_Text.setText(prog);
+        progress_Text.setText(prog.toString().replace(" ", ""));
     }
     
     public void setBatteryLevel(int progress) {

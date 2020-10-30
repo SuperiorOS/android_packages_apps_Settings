@@ -239,7 +239,7 @@ public class AppButtonsPreferenceController extends BasePreferenceController imp
                 RestrictedLockUtils.sendShowAdminSupportDetailsIntent(mActivity, admin);
             } else if ((mAppEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
                 if (mAppEntry.info.enabled && !isDisabledUntilUsed()) {
-                    showDialogInner(ButtonActionDialogFragment.DialogType.DISABLE);
+                    handleDialogClick(ButtonActionDialogFragment.DialogType.DISABLE);
                 } else {
                     mMetricsFeatureProvider.action(
                             mActivity,
@@ -276,7 +276,7 @@ public class AppButtonsPreferenceController extends BasePreferenceController imp
                 RestrictedLockUtils.sendShowAdminSupportDetailsIntent(
                         mActivity, mAppsControlDisallowedAdmin);
             } else {
-                showDialogInner(ButtonActionDialogFragment.DialogType.FORCE_STOP);
+                handleDialogClick(ButtonActionDialogFragment.DialogType.FORCE_STOP);
             }
         }
     }

@@ -89,4 +89,7 @@
     <!-- Volume link notification --> 
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 
+    <!-- Sound: Title for the option managing ring volume. When unlinked [CHAR LIMIT=30] -->
+    <string name="ring_volume_unlinked_option_title">Ring volume</string>
+
 </resources>

@@ -246,6 +246,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
         // Volumes are added via xml
 
         // === Phone & notification ringtone ===
+        controllers.add(new LinkedVolumesPreferenceController(context));
         controllers.add(new PhoneRingtonePreferenceController(context));
         controllers.add(new AlarmRingtonePreferenceController(context));
         controllers.add(new NotificationRingtonePreferenceController(context));

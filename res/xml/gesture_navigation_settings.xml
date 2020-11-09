@@ -88,6 +88,11 @@
             android:summary="@string/back_gesture_haptic_summary"
             android:defaultValue="false" />
 
+        <SwitchPreference
+            android:key="immersive_navigation"
+            android:title="@string/immersive_navigation_title"
+            android:summary="@string/immersive_navigation_summary" />
+
     </PreferenceCategory>
 
     <Preference
@@ -98,4 +103,3 @@
         settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>
-

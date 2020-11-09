@@ -81,6 +81,12 @@
             android:selectable="true"
             settings:textStart="@string/hide_label"
             settings:textEnd="@string/long_label"/>
+
+        <SwitchPreference
+            android:key="immersive_navigation"
+            android:title="@string/immersive_navigation_title"
+            android:summary="@string/immersive_navigation_summary" />
+
     </PreferenceCategory>
 
     <Preference
@@ -91,4 +97,3 @@
         settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>
-

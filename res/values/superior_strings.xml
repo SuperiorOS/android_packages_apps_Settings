@@ -56,4 +56,7 @@
     <string name="superior_settings_dash_title">Superior Goodies</string>
     <string name="superior_settings_summary">Extra Features</string>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+
 </resources>

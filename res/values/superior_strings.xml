@@ -124,4 +124,7 @@
     <!-- Keywords for Touch Sensitivity feature [CHAR_LIMIT=none] -->
     <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+
 </resources>

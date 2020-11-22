@@ -174,6 +174,7 @@
     <string name="show_powermenu">Show Power menu</string>
     <string name="partial_screenshot">Partial screenshot</string>
     <string name="hush_mute">Silence notifications</string>
+
     <!-- Long back swipe options -->
     <string name="navbar_gesture_tweaks_pref_title">Advanced gestures</string>
     <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
@@ -223,5 +224,9 @@
     <string name="pulse_custom_div">Bar spacing</string>
     <string name="pulse_filled_block_size">Block size</string>
     <string name="pulse_empty_block_size">Block spacing</string>
+
+    <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Show pill</string>
+    <string name="show_gestures_navbar_switch_summary">Show gestures navbar</string>
 
 </resources>

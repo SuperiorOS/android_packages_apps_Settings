@@ -109,11 +109,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
     void setHomepageContainerPaddingTop() {
         final View view = this.findViewById(R.id.homepage_container);
 
-        final int searchBarHeight = getResources().getDimensionPixelSize(R.dimen.search_bar_height);
-        final int searchBarMargin = getResources().getDimensionPixelSize(R.dimen.search_bar_margin);
-
-        // The top padding is the height of action bar(48dp) + top/bottom margins(16dp)
-        final int paddingTop = searchBarHeight + searchBarMargin * 2;
+        final int paddingTop = getResources().getDimensionPixelSize(R.dimen.superior_settings_bar_height);
         view.setPadding(0 /* left */, paddingTop, 0 /* right */, 0 /* bottom */);
 
         // Prevent inner RecyclerView gets focus and invokes scrolling.

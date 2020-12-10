@@ -53,14 +53,6 @@
         <intent android:action="com.android.settings.LIVEDISPLAY_SETTINGS" />
     </Preference>
 
-    <com.android.settingslib.RestrictedPreference
-        android:key="wallpaper"
-        android:title="@string/wallpaper_settings_title"
-        settings:keywords="@string/keywords_display_wallpaper"
-        settings:useAdminDisabledSummary="true"
-        settings:controller="com.android.settings.display.WallpaperPreferenceController">
-    </com.android.settingslib.RestrictedPreference>
-
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.display.TimeoutListPreference
         android:key="screen_timeout"
@@ -207,6 +199,15 @@
             settings:widgetLayout="@null"
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
             settings:keywords="@string/keywords_dark_ui_mode"/>
+
+        <com.android.settingslib.RestrictedPreference
+            android:key="wallpaper"
+            android:title="@string/wallpaper_settings_title"
+            android:icon="@drawable/ic_styles"
+            settings:keywords="@string/keywords_display_wallpaper"
+            settings:useAdminDisabledSummary="true"
+            settings:controller="com.android.settings.display.WallpaperPreferenceController">
+        </com.android.settingslib.RestrictedPreference>
 
         <com.android.settings.display.FontDialogPreference
             android:key="custom_font"

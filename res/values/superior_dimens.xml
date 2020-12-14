@@ -12,8 +12,15 @@
      limitations under the License.
 -->
 
+<<<<<<< HEAD:res/values/superior_dimens.xml
 <resources>
     <!-- Action bar height -->
     <dimen name="superior_settings_bar_height">243dp</dimen>
+=======
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Clear usage data?</string>
+    <string name="battery_stats_message">Battery usage data will be lost</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
+>>>>>>> c847d59a5b... Settings: Improve battery stats reset strings:res/values/custom_strings.xml
 
 </resources>

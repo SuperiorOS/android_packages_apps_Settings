@@ -122,7 +122,7 @@
             android:dependency="lights"
             android:order="17"
             android:title="@string/custom_light_title"
-            settings:defaultColorValue="0xFFFFFFFF" />
+            android:defaultValue="0xFFFFFFFF" />
 
         <com.superior.settings.preferences.CustomSeekBarPreference
             android:key="custom_light_on_time"

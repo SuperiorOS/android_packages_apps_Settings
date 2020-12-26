@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2020 Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Versión de SuperiorOS</string>
+    <string name="superior_version_default">Desconocida</string>
+    <string name="keywords_superior_version">Versión de SuperiorOS, versión de SuperiorOS</string>
+    <!-- About phone screen, build date -->
+    <string name="about_device_name">Nombre clave del dispositivo</string>
+    <string name="build_date">Fecha de compilación</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">fecha de compilación, Información de compilación</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Restablecer estadísticas</string>
+    <string name="battery_stats_message">Las estadísticas de la batería van a restablecerse</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura de la batería</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plataforma</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">RAM Total</string>
+    <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localiza el sensor de huella digital en el frontal del teléfono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localice el sensor de huella digital en el lado izquierdo de su teléfono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localice el sensor de huella digital en el lado derecho de su teléfono.</string>
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localiza el sensor de huella digital en el frontal del teléfono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localiza el lector de huellas digitales en el lado izquierdo de tu dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localiza el sensor de huella digital en el lado derecho de tu teléfono.</string>
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localice el sensor de huella digital en la parte delantera de su tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localiza el lector de huellas digitales en el lado izquierdo de tu tableta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza el sensor de huella digital en el lado derecho del tablet.</string>
+    <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Superior Goodies</string>
+    <string name="superior_settings_summary">Opciones Extra</string>
+    <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Sonidos de carga de batería</string>
+    <string name="charging_vibro_title">Vibración al cargar</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
+    <!-- Advanced powermenu -->
+    <string name="global_actions_title">Menú de apagado</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">Color del LED</string>
+    <string name="custom_light_on_time_title">Duración del parpadeo del led encendido (ms)</string>
+    <string name="custom_light_off_time_title">Duración del parpadeo del led apagado (ms)\"</string>
+    <string name="value_equals_default">def</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN o contraseña correctos</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Desactivado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Obligatorio (Enforcing)</string>
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotación</string>
+    <string name="display_rotation_summary">Elegir ángulo de rotación</string>
+    <string name="display_rotation_disabled">Desactivada</string>
+    <string name="display_rotation_unit">Grados</string>
+    <string name="display_rotation_category_title">Modos de rotación</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Respuesta háptica</string>
+    <string name="back_gesture_haptic_summary">Activar efecto vibración en el gesto atrás</string>
+    <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Gestos de pantalla ambiente</string>
+    <string name="ambient_wake_gestures_summary">Mostrar Ambient Display en lugar de la pantalla de bloqueo normal al despertar con gestos</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Siempre encendido al cargar</string>
+    <string name="doze_on_charge_summary">Mantener pantalla ambiente encendida al cargar</string>
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Tiempo mínimo entre sonidos de notificaciones</string>
+    <string name="app_notification_sound_timeout_summary_template">Permite sonidos o vibraciones no más de una vez cada <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Sin restricciones</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+    <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslice huella hacia la izquierda o derecha para eliminar notificaciones</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar tus notificaciones, deslice hacia la derecha o izquierda en el lector de huellas de su teléfono.</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Vincular tono &amp; volumen de notificaciones</string>
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Saltar pistas de música</string>
+    <string name="volume_skiptrack_title">Teclas de volumen saltan la pista de música</string>
+    <string name="volume_skiptrack_summary">Pulsación larga de las teclas de volumen para pasar canciones al reproducir música, incluso a distancia en TV o PC (ej. Spotify) (la aplicación debe ejecutarse en el teléfono y mostrar la notificación).</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Indicador de música en pantalla ambiente</string>
+    <string name="pulse_on_new_tracks_summary">Mostrar pantalla ambiente cuando se reproduce una nueva pista de música. Doble toque en la información de la pista para saltar a la siguiente pista.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Mostrar pantalla ambiente cuando se reproduce una nueva pista</string>
+    <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Procesos en segundo plano</string>
+    <!-- Back Gestures -->
+    <string name="smallest_tick_label">Apagado</string>
+    <string name="greatest_tick_label">Media pantalla</string>
+    <string name="gesture_back_deadzone_label">Zona muerta</string>
+    <string name="back_sensitivity_dialog_message_cust">\nUtilice la primera y segunda barra de búsqueda para configurar la sensibilidad del deslizado trasero la última barra de búsqueda para establecer un área muerta en la parte superior de la pantalla en la que el deslizamiento no se puede activar, para evitar conflictos con gestos en la aplicación.</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Sin acción</string>
+    <string name="action_search">Asistente</string>
+    <string name="action_voice_search">Búsqueda por voz</string>
+    <string name="action_launch_camera">Cámara</string>
+    <string name="action_flashlight">Linterna</string>
+    <string name="action_volume_panel">Panel de volumen</string>
+    <string name="action_screen_off">Apagar pantalla</string>
+    <string name="action_screenshot">Captura de pantalla</string>
+    <string name="action_app_action">Aplicación</string>
+    <string name="active_edge_ss_app_select_title">Seleccionar aplicación para deslizamiento corto</string>
+    <string name="active_edge_ls_app_select_title">Seleccione una aplicación para deslizamiento largo</string>
+    <string name="active_edge_app_select_summary">Seleccione una aplicación para iniciar con la acción \"squeeze\"</string>
+    <string name="action_qs_panel">Panel de ajustes rápidos</string>
+    <string name="action_notifications">Notificaciones</string>
+    <string name="action_clear_notifications">Limpiar notificaciones</string>
+    <string name="action_ringer_modes">Modos de timbre</string>
+    <string name="kill_app">Cerrar aplicación en primer plano</string>
+    <string name="skip_song">Saltar canción</string>
+    <string name="prev_song">Canción anterior</string>
+    <string name="show_powermenu">Mostrar menú de apagado</string>
+    <string name="partial_screenshot">Captura de pantalla parcial</string>
+    <string name="hush_mute">Silenciar todas las notificaciones</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gestos avanzados</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personaliza los gestos y añade acciones personalizadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzadas</string>
+    <string name="long_back_swipe_timeout_title">Tiempo de acción de deslizamiento largo</string>
+    <string name="left_swipe_actions_title">Acción con deslizamiento izquierdo largo</string>
+    <string name="left_swipe_app_action_title">Seleccionar aplicación de deslizamiento izquierdo largo</string>
+    <string name="right_swipe_actions_title">Acción con deslizamiento derecho largo</string>
+    <string name="right_swipe_app_action_title">Seleccionar aplicación de deslizamiento derecho largo</string>
+    <string name="left_vertical_swipe_actions_title">Acción con deslizamiento vertical a la izquierda</string>
+    <string name="left_vertical_swipe_app_action_title">Seleccionar aplicación de deslizamiento vertical en la izquierda</string>
+    <string name="right_vertical_swipe_actions_title">Acción de deslizamiento vertical en la derecha</string>
+    <string name="right_vertical_swipe_app_action_title">Seleccionar aplicación de deslizamiento vertical en la derecha</string>
+    <string name="gesture_nav_tweaks_footer_info">Para elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones.\n\nSi se muestra el iniciador, deslice el dedo en la parte inferior de la pantalla para activar la acción.</string>
+    <string name="back_swipe_extended_title">Acción de deslizamiento extendida</string>
+    <string name="back_swipe_extended_summary">Acción de activación en un deslizado más ancho (más de la mitad del tamaño de la pantalla), o un deslizado L (lo suficientemente largo verticalmente)</string>
+</resources>

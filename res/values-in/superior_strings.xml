@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2020 Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Versi SuperiorOS</string>
+    <string name="superior_version_default">Tidak diketahui</string>
+    <string name="keywords_superior_version">Versi SuperiorOS, versi superior</string>
+    <!-- About phone screen, build date -->
+    <string name="about_device_name">Nama kode Perangkat</string>
+    <string name="build_date">Tanggal pembuatan</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">tanggal pembuatan, info pembuatan</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Atur ulang statistik</string>
+    <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="nama_paket">%1$s</xliff:g></string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Suhu Baterai</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plaform</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Total RAM</string>
+    <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Temukan sensor sidik jari di bagian depan ponsel Anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Temukan sensor sidik jari di sisi kiri ponsel Anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Temukan sensor sidik jari di sisi kanan ponsel Anda.</string>
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Temukan sensor sidik jari di bagian depan perangkat Anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Temukan sensor sidik jari di sisi kiri perangkat Anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Temukan sensor sidik jari di sisi kanan perangkat Anda.</string>
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Temukan sensor sidik jari di bagian depan tablet Anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Temukan sensor sidik jari di sisi kiri tablet Anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Temukan sensor sidik jari di sisi kanan tablet Anda.</string>
+    <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Superior Goodies</string>
+    <string name="superior_settings_summary">Fitur Tambahan</string>
+    <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Suara pengisian</string>
+    <string name="charging_vibro_title">Getaran saat pengisian</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suara tangkapan layar</string>
+    <!-- Advanced powermenu -->
+    <string name="global_actions_title">Menu daya</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">Warna terang</string>
+    <string name="custom_light_on_time_title">Durasi lampu aktif selama led berkedip (ms)</string>
+    <string name="custom_light_off_time_title">Durasi lampu mati saat led berkedip (ms)\"</string>
+    <string name="value_equals_default">def</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Buka kunci cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/kata sandi yang benar dimasukkan</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dinonaktifkan</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotasi</string>
+    <string name="display_rotation_summary">Pilih sudut rotasi</string>
+    <string name="display_rotation_disabled">Dinonaktifkan</string>
+    <string name="display_rotation_unit">derajat</string>
+    <string name="display_rotation_category_title">Mode rotasi</string>
+    <string name="display_rotation_0_title">0 derajat</string>
+    <string name="display_rotation_90_title">90 derajat</string>
+    <string name="display_rotation_180_title">180 derajat</string>
+    <string name="display_rotation_270_title">270 derajat</string>
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Umpan balik sentuhan</string>
+    <string name="back_gesture_haptic_summary">Aktifkan efek getaran pada tombol gestur kembali</string>
+    <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Gestur bangun ambient</string>
+    <string name="ambient_wake_gestures_summary">Tampilkan Tampilan Ambient sebagai ganti dari layar kunci normal pada gestur bangun</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Selalu menyala saat mengisi daya</string>
+    <string name="doze_on_charge_summary">Tampilkan layar tidur sepanjang waktu saat mengisi daya</string>
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Waktu minimum antara suara notifikasi</string>
+    <string name="app_notification_sound_timeout_summary_template">Izinkan suara atau getaran tidak lebih dari sekali setiap <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Tidak ada batasan</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 detik</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 detik</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 menit</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 menit</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 menit</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 menit</string>
+    <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Usap menggunakan sidik jari ke kiri atau ke kanan untuk menghapus pemberitahuan</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Untuk mengabaikan pemberitahuan Anda, usap ke kiri atau kanan pada sensor sidik jari di bagian belakang telepon Anda.</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Hubungkan volume nada dering &amp; notifikasi</string>
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Lewati trek lagu</string>
+    <string name="volume_skiptrack_title">Tombol volume untuk lewati trek</string>
+    <string name="volume_skiptrack_summary">Tekan lama tombol volume untuk melewati trek saat memutar musik, bahkan dari jarak jauh di TV atau PC dengan mis. Spotify (aplikasi harus dijalankan di telepon dan menunjukkan pemberitahuan).</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Ticker musik ambient</string>
+    <string name="pulse_on_new_tracks_summary">Tampilkan Tampilan Ambient saat trek musik baru diputar. Ketuk dua kali pada info trek untuk melompat ke trek berikutnya.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Perlihatkan Tampilan Ambient ketika trek musik baru dimainkan</string>
+    <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Proses latar belakang</string>
+    <!-- Back Gestures -->
+    <string name="smallest_tick_label">Nonaktif</string>
+    <string name="greatest_tick_label">Setengah layar</string>
+    <string name="gesture_back_deadzone_label">Zona mati</string>
+    <string name="back_sensitivity_dialog_message_cust">\nGunakan seekbar pertama dan kedua untuk mengonfigurasi sensitivitas geser ke belakang, seekbar terakhir untuk mengatur area mati di atas layar di mana gesekan tidak dapat dipicu, untuk menghindari konflik dengan isyarat dalam aplikasi.</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Tidak ada tindakan</string>
+    <string name="action_search">Asisten</string>
+    <string name="action_voice_search">Penelusuran suara</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_flashlight">Senter</string>
+    <string name="action_volume_panel">Panel volume</string>
+    <string name="action_screen_off">Layar mati</string>
+    <string name="action_screenshot">Tangkapan Layar</string>
+    <string name="action_app_action">Aplikasi</string>
+    <string name="active_edge_ss_app_select_title">Pilih aplikasi tekan pendek</string>
+    <string name="active_edge_ls_app_select_title">Pilih aplikasi tekan panjang</string>
+    <string name="active_edge_app_select_summary">Pilih aplikasi untuk memulai dengan tindakan squeeze</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_notifications">Notifikasi</string>
+    <string name="action_clear_notifications">Bersihkan notifikasi</string>
+    <string name="action_ringer_modes">Mode dering</string>
+    <string name="kill_app">Tutup paksa aplikasi saat ini</string>
+    <string name="skip_song">Lewati lagu</string>
+    <string name="prev_song">Lagu sebelumnya</string>
+    <string name="show_powermenu">Tampilkan Menu Daya</string>
+    <string name="partial_screenshot">Tangkapan Layar sebagian</string>
+    <string name="hush_mute">Pemberitahuan senyap</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gestur tingkat lanjut</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Kustomisasi gerakan dan atur tindakan khusus</string>
+    <string name="navbar_gesture_tweaks_cat_title">Lanjutan</string>
+    <string name="long_back_swipe_timeout_title">Batas waktu usap panjang</string>
+    <string name="left_swipe_actions_title">Tindakan usap panjang ke kiri</string>
+    <string name="left_swipe_app_action_title">Pilih aplikasi usap panjang ke kiri</string>
+    <string name="right_swipe_actions_title">Tindakan usap panjang ke kanan</string>
+    <string name="right_swipe_app_action_title">Pilih aplikasi usap panjang ke kanan</string>
+    <string name="left_vertical_swipe_actions_title">Ubah tindakan menggesek kiri</string>
+    <string name="left_vertical_swipe_app_action_title">Pilih aplikasi usap panjang ke kiri</string>
+    <string name="right_vertical_swipe_actions_title">Ubah tindakan menggesek kanan</string>
+    <string name="right_vertical_swipe_app_action_title">Pilih aplikasi usap panjang ke kanan</string>
+    <string name="gesture_nav_tweaks_footer_info">Untuk memilih aktivitas aplikasi tertentu untuk tindakan, tekan lama pada aplikasi apa pun di pemilih aplikasi. \n\n Jika peluncur ditampilkan, lakukan gesek di bagian paling bawah layar untuk memicu tindakan.</string>
+    <string name="back_swipe_extended_title">Tindakan menggesek yang diperpanjang</string>
+    <string name="back_swipe_extended_summary">Tindakan pemicu pada gesekan yang lebih luas (lebih dari setengah ukuran tampilan), atau gesekan L (cukup panjang secara vertikal)</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2020 Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Phiên bản SuperiorOS</string>
+    <string name="superior_version_default">Không xác định</string>
+    <string name="keywords_superior_version">Phiên bản SuperiorOS, phiên bản superior</string>
+    <!-- About phone screen, build date -->
+    <string name="about_device_name">Tên mã thiết bị</string>
+    <string name="build_date">Ngày dựng</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">ngày dựng, thông tin bản dựng</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Đặt lại thống kê</string>
+    <string name="battery_stats_message">Dữ liệu thống kê pin sẽ được đặt lại</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">CH Play</string>
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Nhiệt độ pin</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Nền tảng</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Tổng RAM</string>
+    <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Vị trí cảm biến vân tay ở mặt trước của điện thoại.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vị trí cảm biến vân tay ở bên trái điện thoại của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vị trí cảm biến vân tay ở bên phải điện thoại của bạn.</string>
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vị trí cảm biến vân tay ở mặt trước của thiết bị.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vị trí cảm biến vân tay ở bên trái của thiết bị.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vị trí cảm biến vân tay ở bên phải của thiết bị.</string>
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vị trí cảm biến vân tay trên mặt trước máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vị trí cảm biến vân tay trên cạnh trái máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vị trí cảm biến vân tay trên cạnh phải máy tính bảng của bạn.</string>
+    <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Tùy biến Superior</string>
+    <string name="superior_settings_summary">Tính năng bổ sung</string>
+    <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Âm thanh sạc</string>
+    <string name="charging_vibro_title">Rung khi sạc</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Âm thanh chụp ảnh màn hình</string>
+    <!-- Advanced powermenu -->
+    <string name="global_actions_title">Menu nguồn</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">Màu sắc đèn</string>
+    <string name="custom_light_on_time_title">Thời gian sáng đèn khi nhấp nháy (ms)</string>
+    <string name="custom_light_off_time_title">Thời gian tắt đèn khi nhấp nháy (ms)\"</string>
+    <string name="value_equals_default">mặc định</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Mở khóa nhanh</string>
+    <string name="unlock_quick_unlock_control_summary">Tự động mở khóa khi nhập mã PIN/mật khẩu chính xác</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Trạng thái SELinux</string>
+    <string name="selinux_status_disabled">Vô hiệu hóa</string>
+    <string name="selinux_status_permissive">Cho phép</string>
+    <string name="selinux_status_enforcing">Thực thi</string>
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Xoay</string>
+    <string name="display_rotation_summary">Chọn góc xoay</string>
+    <string name="display_rotation_disabled">Đã vô hiệu</string>
+    <string name="display_rotation_unit">độ</string>
+    <string name="display_rotation_category_title">Chế độ xoay</string>
+    <string name="display_rotation_0_title">0 độ</string>
+    <string name="display_rotation_90_title">90 độ</string>
+    <string name="display_rotation_180_title">180 độ</string>
+    <string name="display_rotation_270_title">270 độ</string>
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Phản hồi rung</string>
+    <string name="back_gesture_haptic_summary">Kích hoạt hiệu ứng đánh dấu haptic trên cử chỉ quay lại</string>
+    <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Cử chỉ màn hình hiển thị xung quanh</string>
+    <string name="ambient_wake_gestures_summary">Hiển thị tính năng Hiển thị nhanh thay cho màn hình khoá bình thường khi sử dụng vuốt đánh thức.</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Luôn bật khi sạc</string>
+    <string name="doze_on_charge_summary">Hiển thị màn hình ngủ mọi lúc khi đang sạc</string>
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
+    <string name="app_notification_sound_timeout_summary_template">Cho phép âm thanh hoặc rung không nhiều hơn một lần mỗi <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Không giới hạn</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 giây</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 giây</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 phút</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 phút</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 phút</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 phút</string>
+    <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Trượt cảm biến vân tay sang trái hoặc phải để loại bỏ thông báo</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Để loại bỏ thông báo của bạn, hãy vuốt sang trái hoặc phải trên cảm biến vân tay ở mặt sau của điện thoại.</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Liên kết âm lượng nhạc chuông &amp; thông báo</string>
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Bỏ qua các bản nhạc</string>
+    <string name="volume_skiptrack_title">Âm lượng rocker bỏ qua bài hát</string>
+    <string name="volume_skiptrack_summary">Nhấn và giữ nút chỉnh âm lượng để bỏ qua các bản nhạc khi phát nhạc, thậm chí từ xa trên tv hoặc PC với ví dụ: Spotify (ứng dụng phải chạy trên điện thoại và hiển thị thông báo).</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Thẻ âm nhạc trên Màn hình sáng</string>
+    <string name="pulse_on_new_tracks_summary">Hiển thị Ambient Display khi một bản nhạc mới được phát. Nhấn đúp vào thông tin theo dõi để bỏ qua bài hát tiếp theo.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Hiển thị màn hình luôn bật khi một bản nhạc mới được phát</string>
+    <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Giới hạn quá trình chạy nền</string>
+    <!-- Back Gestures -->
+    <string name="smallest_tick_label">Tắt</string>
+    <string name="greatest_tick_label">Một nửa màn hình</string>
+    <string name="gesture_back_deadzone_label">Vùng chết</string>
+    <string name="back_sensitivity_dialog_message_cust">\nSử dụng thanh tìm kiếm thứ nhất và thứ hai để định cấu hình độ nhạy của thao tác vuốt ngược, thanh tìm kiếm cuối cùng để đặt vùng chết trên đầu màn hình nơi không thể kích hoạt thao tác vuốt, để tránh xung đột với cử chỉ trong ứng dụng.</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Không có hành động</string>
+    <string name="action_search">Trợ lý</string>
+    <string name="action_voice_search">Tìm kiếm bằng giọng nói</string>
+    <string name="action_launch_camera">Máy ảnh</string>
+    <string name="action_flashlight">Đèn pin</string>
+    <string name="action_volume_panel">Bảng điều chỉnh âm lượng</string>
+    <string name="action_screen_off">Tắt màn hình</string>
+    <string name="action_screenshot">Chụp màn hình</string>
+    <string name="action_app_action">Ứng dụng</string>
+    <string name="active_edge_ss_app_select_title">Chọn ứng dụng bóp ngắn</string>
+    <string name="active_edge_ls_app_select_title">Chọn ứng dụng bóp dài</string>
+    <string name="active_edge_app_select_summary">Chọn một ứng dụng để khởi chạy với cử chỉ quay lại</string>
+    <string name="action_qs_panel">Bảng cài đặt nhanh</string>
+    <string name="action_notifications">Thông báo</string>
+    <string name="action_clear_notifications">Xóa thông báo</string>
+    <string name="action_ringer_modes">Chế độ chuông</string>
+    <string name="kill_app">Xoá ứng dụng khác</string>
+    <string name="skip_song">Bỏ qua bài hát</string>
+    <string name="prev_song">Bài hát trước</string>
+    <string name="show_powermenu">Hiển thị Menu nguồn</string>
+    <string name="partial_screenshot">Chụp một phần màn hình</string>
+    <string name="hush_mute">Xóa thông báo</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Cử chỉ nâng cao</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Tùy chỉnh cử chỉ và thiết lập hành động tùy chỉnh</string>
+    <string name="navbar_gesture_tweaks_cat_title">Nâng cao</string>
+    <string name="long_back_swipe_timeout_title">Thời gian chờ hành động vuốt dài</string>
+    <string name="left_swipe_actions_title">Thao tác vuốt trái dài</string>
+    <string name="left_swipe_app_action_title">Chọn ứng dụng vuốt dài bên trái</string>
+    <string name="right_swipe_actions_title">Thao tác vuốt dài phải</string>
+    <string name="right_swipe_app_action_title">Chọn ứng dụng vuốt dài bên phải</string>
+    <string name="left_vertical_swipe_actions_title">Thao tác vuốt dọc phải</string>
+    <string name="left_vertical_swipe_app_action_title">Chọn ứng dụng vuốt bên trái</string>
+    <string name="right_vertical_swipe_actions_title">Thao tác vuốt dọc phải</string>
+    <string name="right_vertical_swipe_app_action_title">Chọn ứng dụng vuốt bên phải</string>
+    <string name="gesture_nav_tweaks_footer_info">Để chọn một hoạt động của ứng dụng cụ thể cho một hành động, nhấn giữ một ứng dụng bất kì trong bộ chọn ứng dụng.\n\nNếu trình khởi chạy đang được hiển thị, hãy vuốt lên từ khu vực phía dưới màn hình để thực hiện hành động.</string>
+    <string name="back_swipe_extended_title">Hành động vuốt mở rộng</string>
+    <string name="back_swipe_extended_summary">Hành động kích hoạt khi vuốt rộng hơn (hơn một nửa kích thước hiển thị) hoặc vuốt L (đủ dài hơn theo chiều dọc)</string>
+</resources>

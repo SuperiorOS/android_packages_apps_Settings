@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2020 Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">SuperiorOS バージョン</string>
+    <string name="superior_version_default">不明</string>
+    <string name="keywords_superior_version">SuperiorOS バージョン, superior バージョン</string>
+    <!-- About phone screen, build date -->
+    <string name="about_device_name">端末のコードネーム</string>
+    <string name="build_date">ビルド日時</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">ビルド日時、ビルド情報</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">統計のリセット</string>
+    <string name="battery_stats_message">バッテリーの使用統計はリセットされます</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">バッテリー温度</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">プラットフォーム</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">合計 RAM</string>
+    <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">スマートフォン前面にある指紋認証センサーを探します</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">スマートフォン左側にある指紋認証センサーを探します</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">スマートフォン右側にある指紋認証センサーを探します</string>
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">端末前面にある指紋認証センサーを探します</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">端末左側にある指紋認証センサーを探します</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">端末右側にある指紋認証センサーを探します</string>
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">タブレット前面にある指紋認証センサーを探します</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">タブレット左側にある指紋認証センサーを探します</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">タブレット右側にある指紋認証センサーを探します</string>
+    <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">すばらしいご馳走</string>
+    <string name="superior_settings_summary">その他の機能</string>
+    <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">充電時の音</string>
+    <string name="charging_vibro_title">充電時の振動</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">スクリーンショットの音</string>
+    <!-- Advanced powermenu -->
+    <string name="global_actions_title">電源メニュー</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">ライトカラー</string>
+    <string name="custom_light_on_time_title">LED 点滅時の光っている時間 (ms)</string>
+    <string name="custom_light_off_time_title">LED 点滅時の消えている時間 (ms)</string>
+    <string name="value_equals_default">既定</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
+    <string name="unlock_quick_unlock_control_summary">正しい PIN/パスワード が入力された時はロックを自動的に解除する</string>
+    <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">SELinux ステータス</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">回転</string>
+    <string name="display_rotation_summary">回転角度を選択する</string>
+    <string name="display_rotation_disabled">無効</string>
+    <string name="display_rotation_unit">角度</string>
+    <string name="display_rotation_category_title">回転モード</string>
+    <string name="display_rotation_0_title">0度</string>
+    <string name="display_rotation_90_title">90度</string>
+    <string name="display_rotation_180_title">180度</string>
+    <string name="display_rotation_270_title">270度</string>
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">振動フィードバック</string>
+    <string name="back_gesture_haptic_summary">戻るジェスチャー時に振動を有効化する</string>
+    <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">アンビエント復帰ジェスチャー</string>
+    <string name="ambient_wake_gestures_summary">復帰ジェスチャーで通常のロック画面の代わりにアンビエント画面を表示する</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">充電時は常に有効</string>
+    <string name="doze_on_charge_summary">充電時は常に Doze 画面を表示する</string>
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">通知音の最小間隔</string>
+    <string name="app_notification_sound_timeout_summary_template"><xliff:g id="duration">%1$s</xliff:g>間に1回以上の通知音または振動を許可しない</string>
+    <string name="app_notification_sound_timeout_value_none">無制限</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10秒</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30秒</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1分</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5分</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10分</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30分</string>
+    <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">指紋センサーで左右にスワイプして通知を削除</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">通知を削除するには端末裏側の指紋センサー上で左右にスワイプして下さい</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">着信と通知の音量をリンク</string>
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">音楽トラックをスキップ</string>
+    <string name="volume_skiptrack_title">音量ボタンで音楽スキップ</string>
+    <string name="volume_skiptrack_summary">音量ボタンを長押しすると、テレビや PC でリモート操作を行っても、音楽再生時にトラックをスキップできます。例: Spotify (アプリは端末で実行し通知を表示する必要があります)</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">アンビエント音楽ティッカー</string>
+    <string name="pulse_on_new_tracks_summary">新しい音楽トラックの再生時にアンビエント表示をします。トラック情報をダブルタップして次のトラックにスキップします。</string>
+    <string name="pulse_on_new_tracks_soli_summary">新規楽曲再生時にアンビエント表示をする</string>
+    <!-- Running services toggle -->
+    <string name="background_processes_settings_title">バックグラウンドプロセス</string>
+    <!-- Back Gestures -->
+    <string name="smallest_tick_label">OFF</string>
+    <string name="greatest_tick_label">半画面</string>
+    <string name="gesture_back_deadzone_label">非認識範囲</string>
+    <string name="back_sensitivity_dialog_message_cust">\n最初と2番目のシークバーで戻るジェスチャースワイプ感度を編集し、最後のシークバーでスワイプを認識しない画面領域を設定し、アプリ内ジェスチャーとの競合を回避します。</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">なし</string>
+    <string name="action_search">アシスタント</string>
+    <string name="action_voice_search">音声検索</string>
+    <string name="action_launch_camera">カメラ</string>
+    <string name="action_flashlight">フラッシュライト</string>
+    <string name="action_volume_panel">音量パネル</string>
+    <string name="action_screen_off">画面を消灯</string>
+    <string name="action_screenshot">スクリーンショット</string>
+    <string name="action_app_action">アプリ</string>
+    <string name="active_edge_ss_app_select_title">短い握りのアクションのアプリを選択</string>
+    <string name="active_edge_ls_app_select_title">長い握りのアクションのアプリを選択</string>
+    <string name="active_edge_app_select_summary">握りアクションで起動するアプリを選択する</string>
+    <string name="action_qs_panel">クイック設定パネル</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_clear_notifications">通知を消去</string>
+    <string name="action_ringer_modes">着信モード</string>
+    <string name="kill_app">フォアグラウンドアプリを終了</string>
+    <string name="skip_song">曲をスキップ</string>
+    <string name="prev_song">前の曲</string>
+    <string name="show_powermenu">電源メニューを表示</string>
+    <string name="partial_screenshot">範囲選択</string>
+    <string name="hush_mute">通知をミュート</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">高度なジェスチャー</string>
+    <string name="navbar_gesture_tweaks_pref_summary">ジェスチャーとカスタムアクション設定を編集する</string>
+    <string name="navbar_gesture_tweaks_cat_title">高度な設定</string>
+    <string name="long_back_swipe_timeout_title">長いスワイプアクションの制限時間</string>
+    <string name="left_swipe_actions_title">長い左スワイプアクション</string>
+    <string name="left_swipe_app_action_title">長い左スワイプアクションのアプリ選択</string>
+    <string name="right_swipe_actions_title">長い右スワイプアクション</string>
+    <string name="right_swipe_app_action_title">長い右スワイプアクションのアプリ選択</string>
+    <string name="left_vertical_swipe_actions_title">垂直左スワイプのアクション</string>
+    <string name="left_vertical_swipe_app_action_title">垂直左スワイプアプリを選択</string>
+    <string name="right_vertical_swipe_actions_title">垂直右スワイプのアクション</string>
+    <string name="right_vertical_swipe_app_action_title">垂直右スワイプアプリを選択</string>
+    <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押しして下さい。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
+    <string name="back_swipe_extended_title">拡張スワイプアクション</string>
+    <string name="back_swipe_extended_summary">より広いスワイプ (少なくとも画面の半分より広い) か、「L」スワイプ (縦の方が長い) でアクションを起動する。</string>
+</resources>

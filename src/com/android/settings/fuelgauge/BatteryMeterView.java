@@ -96,13 +96,14 @@ public class BatteryMeterView extends CardView {
         progress_Text.setTextColor(Utils.getColorAttrDefaultColor(context, android.R.attr.textColorSecondary));
         progress_Text.setGravity(Gravity.CENTER_HORIZONTAL);
         progress_Text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
-        progress_Text.setAlpha((float) 0.9);
+        progress_Text.setAlpha(0.9f);
         LinearLayout linearLayout = new LinearLayout(context);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
         linearLayout.setGravity(Gravity.CENTER);
         linearLayout.addView(progress_Text);
         RelativeLayout layout = new RelativeLayout(context);
+        waveView.setAlpha(0.5f);
         layout.addView(waveView);
         layout.addView(linearLayout);
         addView(layout);
@@ -198,7 +199,7 @@ public class BatteryMeterView extends CardView {
     }
 
     class Wave extends View {
-        private final int WAVE_HEIGHT_HUGE = 36;
+        private final int WAVE_HEIGHT_HUGE = 24;
         private final int WAVE_HEIGHT_LARGE = 16;
         private final int WAVE_HEIGHT_MIDDLE = 8;
         private final int WAVE_HEIGHT_LITTLE = 5;

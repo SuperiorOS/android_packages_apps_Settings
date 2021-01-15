@@ -16,26 +16,76 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Versione SuperiorOS</string>
+    <string name="superior_version_default">Sconosciuto</string>
+    <string name="keywords_superior_version">Versione SuperiorOS, versione superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Nome del dispositivo</string>
+    <string name="build_date">Data di creazione</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">data di compilazione, informazioni di compilazione</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Ripristina le statistiche</string>
+    <string name="battery_stats_message">Le statistiche della batteria stanno per essere resettate</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura della batteria</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Piattaforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Memoria RAM totale</string>
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Individua il sensore d\'impronte digitali sulla parte anteriore del tuo telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Individua il sensore d\'impronte digitali sul lato sinistro del tuo telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Individua il sensore d\'impronte digitali sul lato destro del tuo telefono.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Individua il sensore di impronte digitali nella parte anteriore del dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Individua il sensore di impronte digitali sul lato sinistro del dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Individuare il sensore di impronte digitali sul lato destro del dispositivo.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Individua il sensore di impronte digitali nella parte anteriore del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Individua il sensore di impronte digitali sul lato sinistro del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Individuare il sensore di impronte digitali sul lato destro del tablet.</string>
     <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Prelibatezze Superior</string>
+    <string name="superior_settings_summary">Funzioni aggiuntive</string>
     <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Suono di ricarica</string>
+    <string name="charging_vibro_title">Vibrazione alla ricarica</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suono di cattura di schermata</string>
     <!-- Advanced powermenu -->
+    <string name="global_actions_title">Menu del tasto accensione</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Colore Led</string>
+    <string name="custom_light_on_time_title">Tempo di luce accesa durante l\'impulso del led (ms)</string>
+    <string name="custom_light_off_time_title">Tempo di luce spenta durante l\'impulso del led (ms)\"</string>
+    <string name="value_equals_default">predefinito</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti il PIN o la password corretti</string>
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Stato SELinux</string>
+    <string name="selinux_status_disabled">Disabilitato</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Forzato</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotazione</string>
+    <string name="display_rotation_summary">Seleziona angoli di rotazione</string>
+    <string name="display_rotation_disabled">Disabilitato</string>
+    <string name="display_rotation_unit">gradi</string>
+    <string name="display_rotation_category_title">Modalità rotazione schermo</string>
+    <string name="display_rotation_0_title">0 gradi</string>
+    <string name="display_rotation_90_title">90 gradi</string>
+    <string name="display_rotation_180_title">180 gradi</string>
+    <string name="display_rotation_270_title">270 gradi</string>
     <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Feedback tattile</string>
+    <string name="back_gesture_haptic_summary">Abilita l\'effetto feedback tattile al gesto indietro</string>
     <!-- Ambient Display wake gestures -->
     <!-- Doze on charge -->
     <!-- Notification sound timeout -->
@@ -47,4 +97,6 @@
     <!-- Back Gestures -->
     <!-- Custom actions -->
     <!-- Long back swipe options -->
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

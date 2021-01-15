@@ -61,7 +61,7 @@
     <!-- Advanced powermenu -->
     <string name="global_actions_title">Menu daya</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Warna terang</string>
+    <string name="custom_light_title">Warna lampu</string>
     <string name="custom_light_on_time_title">Durasi lampu aktif selama led berkedip (ms)</string>
     <string name="custom_light_off_time_title">Durasi lampu mati saat led berkedip (ms)\"</string>
     <string name="value_equals_default">def</string>
@@ -161,4 +161,6 @@
     <string name="gesture_nav_tweaks_footer_info">Untuk memilih aktivitas aplikasi tertentu untuk tindakan, tekan lama pada aplikasi apa pun di pemilih aplikasi. \n\n Jika peluncur ditampilkan, lakukan gesek di bagian paling bawah layar untuk memicu tindakan.</string>
     <string name="back_swipe_extended_title">Tindakan menggesek yang diperpanjang</string>
     <string name="back_swipe_extended_summary">Tindakan pemicu pada gesekan yang lebih luas (lebih dari setengah ukuran tampilan), atau gesekan L (cukup panjang secara vertikal)</string>
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

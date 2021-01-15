@@ -16,35 +16,151 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">SuperiorOS sürümü</string>
+    <string name="superior_version_default">Bilinmiyor</string>
+    <string name="keywords_superior_version">SuperiorOS sürümü, superior sürümü</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Cihaz kod adı</string>
+    <string name="build_date">Yapı tarihi</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">yapı tarihi, yapı bilgisi</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">İstatistikleri sıfırla</string>
+    <string name="battery_stats_message">Pil kullanım geçmişi sıfırlanacak</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google play</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Pil sıcaklığı</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Platform</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Toplam RAM</string>
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Telefonunuzun önünde bulunan parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Telefonunuzun sol tarafında bulunan parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Telefonunuzun sağ tarafında bulunan parmak izi sensörünü bulun.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Telefonunuzun önünde bulunan parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Telefonunuzun sol tarafında bulunan parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Telefonunuzun sağ tarafında bulunan parmak izi sensörünü bulun.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Tabletinizin önünde bulunan parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Tabletinizin sol tarafında bulunan parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Tabletinizin sağ tarafında bulunan parmak izi sensörünü bulun.</string>
     <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Superior özelleştirmeleri</string>
+    <string name="superior_settings_summary">Ekstra özellikler</string>
     <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Şarj sesleri</string>
+    <string name="charging_vibro_title">Şarj titreşimi</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
     <!-- Advanced powermenu -->
+    <string name="global_actions_title">Güç menüsü</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Işık rengi</string>
+    <string name="custom_light_on_time_title">Işık açıkken yanıp sönme hızı (ms)</string>
+    <string name="custom_light_off_time_title">Işık kapalıyken yanıp sönme hızı (ms)</string>
+    <string name="value_equals_default">varsayılan</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
+    <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde otomatik olarak kilidi aç</string>
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">SELinux durumu</string>
+    <string name="selinux_status_disabled">Devre dışı</string>
+    <string name="selinux_status_permissive">Permissive (Serbest)</string>
+    <string name="selinux_status_enforcing">Enforcing (Zorunlu)</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">Döndürme</string>
+    <string name="display_rotation_summary">Döndürme açılarını seçin</string>
+    <string name="display_rotation_disabled">Devre dışı</string>
+    <string name="display_rotation_unit">dereceler</string>
+    <string name="display_rotation_category_title">Döndürme modları</string>
+    <string name="display_rotation_0_title">0 derece</string>
+    <string name="display_rotation_90_title">90 derece</string>
+    <string name="display_rotation_180_title">180 derece</string>
+    <string name="display_rotation_270_title">270 derece</string>
     <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Dokunumsal geri bildirim</string>
+    <string name="back_gesture_haptic_summary">Geri hareketinde dokunumsal tıklama efektini etkinleştirir</string>
     <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Ortam ekranı uyandırma hareketleri</string>
+    <string name="ambient_wake_gestures_summary">Uyandırma hareketlerinde normal kilit ekranı yerine ortam ekranını göster</string>
     <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Şarj olurken her zaman açık</string>
+    <string name="doze_on_charge_summary">Şarj olurken her zaman ortam ekranını göster</string>
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Bildirim sesleri arasında en az süre</string>
+    <string name="app_notification_sound_timeout_summary_template">Bir defadan fazla olmayacak şekilde her <xliff:g id="duration">%1$s</xliff:g>\'da bir titreme veya sese izin ver</string>
+    <string name="app_notification_sound_timeout_value_none">Kısıtlama yok</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 saniye</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 saniye</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 dakika</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 dakika</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 dakika</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 dakika</string>
     <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Bildirimleri kapatmak için parmağınızı parmak izinde sağa veya sola kaydırın</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Bildirimlerinizi kapatmak için telefonunuzun parmak izi sensöründe sola veya sağa kaydırın.</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Zil sesi ve bildirim sesini bağla</string>
     <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Müzik parçalarını atla</string>
+    <string name="volume_skiptrack_title">Ses tuşlarıyla parçaları atla</string>
+    <string name="volume_skiptrack_summary">Müzik çalarken, örneğin Spotify ile uzaktan televizyonda veya PC\'de bile parçaları değiştirmek için ses tuşlarına uzun basın (uygulama telefonda olmalı ve bildirim göstermelidir).</string>
     <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Ortam müzik bilgisi</string>
+    <string name="pulse_on_new_tracks_summary">Yeni bir şarkı başladığında ortam ekranını göster. Bir sonraki şarkıya geçmek için şarkı bilgilerine çift dokunun.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Yeni bir şarkı başladığında ortam ekranında göster</string>
     <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Arka plan işlemleri</string>
     <!-- Back Gestures -->
+    <string name="smallest_tick_label">Kapalı</string>
+    <string name="greatest_tick_label">Yarım ekran</string>
+    <string name="gesture_back_deadzone_label">Ölü alan</string>
+    <string name="back_sensitivity_dialog_message_cust">\nGeri kaydırma hassasiyetini yapılandırmak için ilk arama çubuğunu, uygulama içi hareketlerle çakışmaları önlemek üzere ekranın kaydırmanın tetiklenebileceği alanını ayarlamak için ikinci arama çubuğunu kullanın.</string>
     <!-- Custom actions -->
+    <string name="action_nothing">Eylem yok</string>
+    <string name="action_search">Asistan</string>
+    <string name="action_voice_search">Sesli arama</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_flashlight">El feneri</string>
+    <string name="action_volume_panel">Ses paneli</string>
+    <string name="action_screen_off">Ekranı kapat</string>
+    <string name="action_screenshot">Ekran görüntüsü</string>
+    <string name="action_app_action">Uygulama</string>
+    <string name="active_edge_ss_app_select_title">Kısa sıkıştırma uygulaması seçin</string>
+    <string name="active_edge_ls_app_select_title">Uzun sıkıştırma uygulamasını seçin</string>
+    <string name="active_edge_app_select_summary">Sıkma eylemiyle başlatılacak bir uygulama seçin</string>
+    <string name="action_qs_panel">Hızlı ayarlar paneli</string>
+    <string name="action_notifications">Bildirimler</string>
+    <string name="action_clear_notifications">Bildirimleri temizle</string>
+    <string name="action_ringer_modes">Zil sesi modu</string>
+    <string name="kill_app">Önplan uygulamasını sonlandır</string>
+    <string name="skip_song">Şarkıyı atla</string>
+    <string name="prev_song">Önceki şarkı</string>
+    <string name="show_powermenu">Güç menüsünü göster</string>
+    <string name="partial_screenshot">Kısmi ekran görüntüsü</string>
+    <string name="hush_mute">Bildirimleri sessize al</string>
     <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gelişmiş hareketler</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Hareketleri özelleştirin ve özel eylemler ayarlayın</string>
+    <string name="navbar_gesture_tweaks_cat_title">Gelişmiş</string>
+    <string name="long_back_swipe_timeout_title">Uzun kaydırma hareketi zaman aşımı</string>
+    <string name="left_swipe_actions_title">Uzun sola kaydırma hareketi</string>
+    <string name="left_swipe_app_action_title">Sola uzun kaydırma uygulaması seçin</string>
+    <string name="right_swipe_actions_title">Sağa uzun kaydırma hareketi</string>
+    <string name="right_swipe_app_action_title">Sağa uzun kaydırma uygulaması seçin</string>
+    <string name="left_vertical_swipe_actions_title">Dikey sola kaydırma hareketi</string>
+    <string name="left_vertical_swipe_app_action_title">Dikey sola kaydırma uygulamasını seçin</string>
+    <string name="right_vertical_swipe_actions_title">Dikey sağa kaydırma hareketi</string>
+    <string name="right_vertical_swipe_app_action_title">Dikey sağa kaydırma uygulamasını seçin</string>
+    <string name="gesture_nav_tweaks_footer_info">Eylem için belirli bir uygulama etkinliği seçmek için uygulama seçicideki herhangi bir uygulamaya uzun basın.\n\nBaşlatıcıda gösteriliyorsa, eylemi tetiklemek için ekranın en alt kısmındaki kaydırmayı yapın.</string>
+    <string name="back_swipe_extended_title">Genişletilmiş kaydırma hareketi</string>
+    <string name="back_swipe_extended_summary">Geniş kaydırmada (ekran boyutunun yarısından fazlası) veya L kaydırmada (dikey olarak yeterince uzun) tetikleme eylemi</string>
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

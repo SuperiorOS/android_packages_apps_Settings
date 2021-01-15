@@ -161,4 +161,6 @@
     <string name="gesture_nav_tweaks_footer_info">Chcete-li vybrat konkrétní aktivitu aplikace pro akci, podržte stisknutou libovolnou aplikaci ve výběru aplikací.\n\nPokud se zobrazuje spouštěč, proveďte akci přejetím prstem v dolní dolní části obrazovky.</string>
     <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
     <string name="back_swipe_extended_summary">Aktivovat akci širším přejetím (více než polovina velikosti displeje) nebo gestem L (dostatečně svisle)</string>
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

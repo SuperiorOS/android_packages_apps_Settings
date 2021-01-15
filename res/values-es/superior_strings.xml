@@ -161,4 +161,6 @@
     <string name="gesture_nav_tweaks_footer_info">Para elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones.\n\nSi se muestra el iniciador, deslice el dedo en la parte inferior de la pantalla para activar la acción.</string>
     <string name="back_swipe_extended_title">Acción de deslizamiento extendida</string>
     <string name="back_swipe_extended_summary">Acción de activación en un deslizado más ancho (más de la mitad del tamaño de la pantalla), o un deslizado L (lo suficientemente largo verticalmente)</string>
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

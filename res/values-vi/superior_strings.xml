@@ -161,4 +161,6 @@
     <string name="gesture_nav_tweaks_footer_info">Để chọn một hoạt động của ứng dụng cụ thể cho một hành động, nhấn giữ một ứng dụng bất kì trong bộ chọn ứng dụng.\n\nNếu trình khởi chạy đang được hiển thị, hãy vuốt lên từ khu vực phía dưới màn hình để thực hiện hành động.</string>
     <string name="back_swipe_extended_title">Hành động vuốt mở rộng</string>
     <string name="back_swipe_extended_summary">Hành động kích hoạt khi vuốt rộng hơn (hơn một nửa kích thước hiển thị) hoặc vuốt L (đủ dài hơn theo chiều dọc)</string>
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

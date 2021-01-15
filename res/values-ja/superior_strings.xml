@@ -161,4 +161,6 @@
     <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押しして下さい。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
     <string name="back_swipe_extended_title">拡張スワイプアクション</string>
     <string name="back_swipe_extended_summary">より広いスワイプ (少なくとも画面の半分より広い) か、「L」スワイプ (縦の方が長い) でアクションを起動する。</string>
+    <!-- Pulse -->
+    <!-- Navbar Pill hide -->
 </resources>

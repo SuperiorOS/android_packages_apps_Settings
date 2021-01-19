@@ -210,21 +210,25 @@
         <com.android.settings.display.FontDialogPreference
             android:key="custom_font"
             android:title="@string/font_picker_title"
+            android:icon="@drawable/ic_font"
             android:persistent="false" />
 
         <ListPreference
             android:key="android.theme.customization.accent_color"
-            android:title="@string/theme_customization_accent_color_title"/>
+            android:title="@string/theme_customization_accent_color_title"
+            android:icon="@drawable/ic_accent"/>
         <ListPreference
             android:key="android.theme.customization.font"
             android:title="@string/theme_customization_font_title"/>
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"/>
+            android:title="@string/theme_customization_icon_shape_title"
+            android:icon="@drawable/ic_icon_shape"/>
         
         <com.android.settings.superior.preference.SystemSettingListPreference
             android:key="switch_style"
             android:title="@string/switch_style_title"
+            android:icon="@drawable/ic_switch"
             android:persistent="false"
             android:entries="@array/switch_style_entries"
             android:entryValues="@array/switch_style_values"

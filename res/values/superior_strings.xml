@@ -443,4 +443,11 @@
     <string name="face_unlock_method_title">Allow face unlock on lock screen</string>
     <string name="face_unlock_method_default">When the screen is turned on</string>
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
+
+    <!-- Switch styles -->
+    <string name="switch_style_title">Switch style</string>
+    <string name="switch_default">Default</string>
+    <string name="switch_telegram">Telegram</string>
+    <string name="switch_md2">Material Design 2</string>
+    <string name="switch_oos">OxygenOS 11</string>
 </resources>

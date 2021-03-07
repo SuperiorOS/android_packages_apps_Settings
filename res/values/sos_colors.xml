@@ -31,4 +31,7 @@
     <color name="dashboard_sos_about">#00000000</color>
     <color name="dashboard_sos_google">#00000000</color>
     <color name="dashboard_sos_wellbeing">#00000000</color>
+
+    <!-- DashBoard card Colors -->
+    <color name="sos_pref_ripple">#1f000000</color>
 </resources> 

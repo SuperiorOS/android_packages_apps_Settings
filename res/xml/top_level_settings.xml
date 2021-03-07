@@ -27,6 +27,7 @@
 
     <Preference
         android:key="top_level_network"
+        android:layout="@layout/sos_preference_top_card"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_network"
@@ -36,6 +37,7 @@
 
     <Preference
         android:key="top_level_connected_devices"
+        android:layout="@layout/sos_preference_bottom_card"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_connected_device"
@@ -49,6 +51,7 @@
 
     <Preference
         android:key="top_level_superior_settings"
+        android:layout="@layout/sos_preference_top_card"
         android:title="@string/superior_settings_dash_title"
         android:summary="@string/superior_settings_summary"
         android:icon="@drawable/ic_homepage_superior"
@@ -57,6 +60,7 @@
 
     <Preference
         android:key="top_level_display"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/display_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_display"
@@ -66,6 +70,7 @@
 
     <Preference
         android:key="top_level_sound"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/sound_settings"
         android:summary="@string/sound_dashboard_summary"
         android:icon="@drawable/ic_homepage_sound"
@@ -74,6 +79,7 @@
 
     <Preference
         android:key="top_level_battery"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_battery"
@@ -83,6 +89,7 @@
 
     <Preference
         android:key="top_level_apps_and_notifs"
+        android:layout="@layout/sos_preference_bottom_card"
         android:title="@string/app_and_notification_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"
         android:icon="@drawable/ic_homepage_apps"
@@ -95,6 +102,7 @@
 
     <Preference
         android:key="top_level_privacy"
+        android:layout="@layout/sos_preference_top_card"
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         android:icon="@drawable/ic_homepage_privacy"
@@ -103,6 +111,7 @@
 
     <Preference
         android:key="top_level_location"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/location_settings_title"
         android:summary="@string/location_settings_loading_app_permission_stats"
         android:icon="@drawable/ic_homepage_location"
@@ -112,6 +121,7 @@
 
     <Preference
         android:key="top_level_security"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/security_settings_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_security"
@@ -121,6 +131,7 @@
 
     <Preference
         android:key="top_level_accounts"
+        android:layout="@layout/sos_preference_bottom_card"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_accounts"
@@ -134,6 +145,7 @@
 
     <Preference
         android:key="top_level_accessibility"
+        android:layout="@layout/sos_preference_top_card"
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
         android:icon="@drawable/ic_homepage_accessibility"
@@ -143,6 +155,7 @@
 
     <Preference
         android:key="top_level_storage"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_storage"
@@ -152,6 +165,7 @@
 
     <Preference
         android:key="top_level_system"
+        android:layout="@layout/sos_preference_middle_card"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
         android:icon="@drawable/ic_homepage_system_dashboard"
@@ -160,6 +174,7 @@
 
     <Preference
         android:key="top_level_about_device"
+        android:layout="@layout/sos_preference_bottom_card"
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_about"
@@ -169,6 +184,7 @@
 
     <Preference
         android:key="top_level_support"
+        android:layout="@layout/sos_preference_full_alone_card"
         android:summary="@string/support_summary"
         android:title="@string/page_tab_title_support"
         android:icon="@drawable/ic_homepage_support"

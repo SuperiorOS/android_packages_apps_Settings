@@ -163,4 +163,20 @@
     <string name="back_swipe_extended_summary">Acción de activación en un deslizado más ancho (más de la mitad del tamaño de la pantalla), o un deslizado L (lo suficientemente largo verticalmente)</string>
     <!-- Pulse -->
     <!-- Navbar Pill hide -->
+    <!-- Adaptive Playback -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Theming -->
+    <!-- Themes customization -->
+    <!-- Navbar length -->
+    <!-- Ambient music ticker location -->
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <!-- Navbar radius -->
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

@@ -162,5 +162,89 @@
     <string name="back_swipe_extended_title">Tindakan menggesek yang diperpanjang</string>
     <string name="back_swipe_extended_summary">Tindakan pemicu pada gesekan yang lebih luas (lebih dari setengah ukuran tampilan), atau gesekan L (cukup panjang secara vertikal)</string>
     <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Visual Audio tidak bekerja dengan beberapa sumber audio saat mendengarkan di speaker perangkat</string>
+    <string name="pulse_cat_title">Equalizer Visual Audio</string>
+    <string name="pulse_settings">Visual Audio</string>
+    <string name="pulse_settings_summary">Equalizer Grafis Audio</string>
+    <string name="show_navbar_pulse_title">Visual Audio bilah navigasi</string>
+    <string name="show_navbar_pulse_summary">Equalizer Grafis Audio di area bilah navigasi, juga jika bilah disembunyikan</string>
+    <string name="show_lockscreen_pulse_title">Grafis Audio Layar Kunci</string>
+    <string name="show_lockscreen_pulse_summary">Grafis Equalizer Audio pada Layar Kunci</string>
+    <string name="show_ambient_pulse_title">Grafis Audio Layar Ambien</string>
+    <string name="show_ambient_pulse_summary">Grafis Equalizer Audio pada Layar Ambien</string>
+    <string name="pulse_render_mode_title">Mode Render</string>
+    <string name="pulse_render_mode_fading_bars">Blok memudar</string>
+    <string name="pulse_render_mode_solid_lines">Garis-garis padat</string>
+    <string name="pulse_color">Warna</string>
+    <string name="pulse_color_mode">Mode warna</string>
+    <string name="pulse_color_accent">Aksen</string>
+    <string name="pulse_color_custom">Kustom</string>
+    <string name="pulse_color_lava_lamp">Lampu lava</string>
+    <string name="pulse_color_auto">Sampul Album</string>
+    <string name="pulse_color_chooser">Pilih warna</string>
+    <string name="smoothing_enabled_title">Hidupkan smoothing</string>
+    <string name="smoothing_enabled_summary">Setiap bar dianimasikan lebih halus</string>
+    <string name="pulse_advanced_category">Lanjutan</string>
+    <string name="pulse_legacy_mode_advanced_category">Setelan mode blok memudar</string>
+    <string name="pulse_custom_fudge_factor">Tingkat sanitas</string>
+    <string name="lavamp_speed_title">Kecepatan lampu lava</string>
+    <string name="pulse_solid_units_count">Jumlah garis-garis padat</string>
+    <string name="pulse_solid_units_opacity">Keburaman garis-garis padat</string>
+    <string name="pulse_solid_dimen_category">Setelan mode garis-garis padat</string>
+    <string name="pulse_custom_dimen">Lebar Bar</string>
+    <string name="pulse_custom_div">Jarak Bar</string>
+    <string name="pulse_filled_block_size">Ukuran Blok</string>
+    <string name="pulse_empty_block_size">Jarak Blok</string>
     <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Tampilkan pill</string>
+    <string name="show_gestures_navbar_switch_summary">Tampilkan isyarat bilah navigasi</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Pemutaran Adaptif</string>
+    <string name="adaptive_playback_disabled_summary">Nonaktif</string>
+    <string name="adaptive_playback_timeout_title">Gunakan batas waktu</string>
+    <string name="adaptive_playback_timeout_none">Tanpa batas waktu</string>
+    <string name="adaptive_playback_timeout_none_summary">Aktif (tidak ada batas waktu)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 detik</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Hidup (30 detik)</string>
+    <string name="adaptive_playback_timeout_1_min">1 menit</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Hidup (1 menit)</string>
+    <string name="adaptive_playback_timeout_2_min">2 menit</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Hidup (2 menit)</string>
+    <string name="adaptive_playback_timeout_5_min">5 menit</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Hidup (5 menit)</string>
+    <string name="adaptive_playback_timeout_10_min">10 menit</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Hidup (10 menit)</string>
+    <string name="adaptive_playback_explainer">Pemutaran Adaptif secara otomatis menjeda media saat volume dimatikan dan akan dilanjutkan secara otomatis saat volume dipulihkan dalam waktu yang ditentukan.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
+    <!-- Theming -->
+    <string name="themes_title">Warna aksen</string>
+    <string name="themes_summary">Pemilih aksen</string>
+    <string name="accent_color">Pemilih aksen RGB</string>
+    <string name="accent_summary">Buat bebas aksen sistem</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Macam-macam warna</string>
+    <!-- Navbar length -->
+    <string name="navbar_length">Panjang bilah gestur</string>
+    <string name="short_label">Pendek</string>
+    <string name="long_label">Panjang</string>
+    <!-- Ambient music ticker location -->
+    <string name="ambient_music_location">Tampilkan ticker musik ambien</string>
+    <string name="ambient_music_disabled">Dinonaktifkan</string>
+    <string name="ambient_music_bottom">Di bagian bawah (default)</string>
+    <string name="ambient_music_center">Tengah (di bawah jam)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Sentuh untuk melihat info</string>
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Radius bilah gestur</string>
+    <string name="small_label">Kecil</string>
+    <string name="big_label">iOS</string>
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

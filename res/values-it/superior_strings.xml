@@ -87,16 +87,164 @@
     <string name="back_gesture_haptic_title">Feedback tattile</string>
     <string name="back_gesture_haptic_summary">Abilita l\'effetto feedback tattile al gesto indietro</string>
     <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Gesti Ambient display</string>
+    <string name="ambient_wake_gestures_summary">Mostra Ambient Display invece del blocco schermo normale con i gesti di accensione</string>
     <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Schermo sempre attivo durante la ricarica</string>
+    <string name="doze_on_charge_summary">Tieni sempre acceso lo schermo durante la ricarica</string>
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Tempo minimo tra i suoni di notifica</string>
+    <string name="app_notification_sound_timeout_summary_template">Consenti suoni o vibrazioni non più di una volta ogni <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Nessuna limitazione</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 secondi</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 secondi</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuti</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minuti</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minuti</string>
     <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Scorri a sinistra o destra sul sensore d\'impronte per rimuovere le notifiche</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Per rimuovere le notifiche, scorri a sinistra o destra sul sensore d\'impronte posto sul retro del tuo dispositivo.</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Collega volumi suoneria &amp; notifiche</string>
     <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Salta brani musicali</string>
+    <string name="volume_skiptrack_title">Salta brani musicali con i tasti del volume</string>
+    <string name="volume_skiptrack_summary">Premi a lungo i tasti volume per saltare le tracce durante la riproduzione, anche da remoto su TV o PC con ad es. Spotify. (L\'app deve essere attiva sul telefono con la relativa notifica).</string>
     <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Ticker Ambient musicale</string>
+    <string name="pulse_on_new_tracks_summary">Mostra Ambient Display quando una nuova traccia viene riprodotta. Doppio tap sulla traccia per passare alla successiva.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Visualizza il Display Ambient quando viene riprodotto un nuovo brano musicale</string>
     <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Processi in background</string>
     <!-- Back Gestures -->
+    <string name="smallest_tick_label">Disattivato</string>
+    <string name="greatest_tick_label">Metà schermo</string>
+    <string name="gesture_back_deadzone_label">Zona morta</string>
+    <string name="back_sensitivity_dialog_message_cust">\nUsa la prima e la seconda barra di ricerca per configurare la sensibilità dello scorrimento indietro, l\'ultima barra di ricerca per impostare un\'area morta sulla parte superiore dello schermo in cui lo scorrimento non può essere attivato, per evitare conflitti con i gesti in-app.</string>
     <!-- Custom actions -->
+    <string name="action_nothing">Nessuna azione</string>
+    <string name="action_search">Assistente</string>
+    <string name="action_voice_search">Ricerca vocale</string>
+    <string name="action_launch_camera">Fotocamera</string>
+    <string name="action_flashlight">Torcia</string>
+    <string name="action_volume_panel">Pannelo del volume</string>
+    <string name="action_screen_off">Spegni schermo</string>
+    <string name="action_screenshot">Cattura schermata</string>
+    <string name="action_app_action">Applicazione</string>
+    <string name="active_edge_ss_app_select_title">Seleziona un\'app con una pressione breve</string>
+    <string name="active_edge_ls_app_select_title">Seleziona un\'app con pressione prolungata</string>
+    <string name="active_edge_app_select_summary">Seleziona un\'app da avviare con la pressione</string>
+    <string name="action_qs_panel">Pannello impostazioni rapide</string>
+    <string name="action_notifications">Notifiche</string>
+    <string name="action_clear_notifications">Cancella le notifiche</string>
+    <string name="action_ringer_modes">Modalità suoneria</string>
+    <string name="kill_app">Termina app in primo piano</string>
+    <string name="skip_song">Salta brano</string>
+    <string name="prev_song">Brano precedente</string>
+    <string name="show_powermenu">Mostra menù alimentazione</string>
+    <string name="partial_screenshot">Cattura di schermata parziale</string>
+    <string name="hush_mute">Silenzia le notifiche</string>
     <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gesti avanzati</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalizza gesti e imposta azioni personalizzate</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzate</string>
+    <string name="long_back_swipe_timeout_title">Timeout azione di scorrimento prolungato</string>
+    <string name="left_swipe_actions_title">Azione di scorrimento prolungato a sinistra</string>
+    <string name="left_swipe_app_action_title">Seleziona l\'app a scorrimento prolungato a sinistra</string>
+    <string name="right_swipe_actions_title">Azione di scorrimento lungo a destra</string>
+    <string name="right_swipe_app_action_title">Seleziona l\'app per lo scorrimento prolungato a destra</string>
+    <string name="left_vertical_swipe_actions_title">Azione di scorrimento verticale a sinistra</string>
+    <string name="left_vertical_swipe_app_action_title">Seleziona l\'app di scorrimento a sinistra verticale</string>
+    <string name="right_vertical_swipe_actions_title">Azione di scorrimento verticale a destra</string>
+    <string name="right_vertical_swipe_app_action_title">Seleziona l\'app di scorrimento destro verticale</string>
+    <string name="gesture_nav_tweaks_footer_info">Per scegliere un\'attività specifica dell\'applicazione per l\'azione, premi a lungo su qualsiasi app nella selezione dell\'app.\n\nSe il launcher sta mostrando, fai lo swipe nell\'area inferiore dello schermo per attivare l\'azione.</string>
+    <string name="back_swipe_extended_title">Azione scorrimento esteso</string>
+    <string name="back_swipe_extended_summary">Innesca l\'azione su scorrimento più ampio (più di metà della dimensione del display), o uno scorrimento a L (abbastanza più lungo verticalmente)</string>
     <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse non funziona con alcune sorgenti audio durante l\'ascolto sull\'altoparlante del dispositivo</string>
+    <string name="pulse_cat_title">Equalizzatore Pulse</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Equalizzatore grafico audio</string>
+    <string name="show_navbar_pulse_title">Barra di navigazione Pulse</string>
+    <string name="show_navbar_pulse_summary">Equalizzatore grafico audio nell\'area della barra di navigazione, anche se la barra è nascosta</string>
+    <string name="show_lockscreen_pulse_title">Pulse su blocco schermo</string>
+    <string name="show_lockscreen_pulse_summary">Equalizzatore grafico audio sulla schermata di blocco</string>
+    <string name="show_ambient_pulse_title">Pulse Ambient</string>
+    <string name="show_ambient_pulse_summary">Equalizzatore grafico audio su Ambiental Display</string>
+    <string name="pulse_render_mode_title">Modalità di esecuzione</string>
+    <string name="pulse_render_mode_fading_bars">Dissolvenza blocchi</string>
+    <string name="pulse_render_mode_solid_lines">Linee continue</string>
+    <string name="pulse_color">Colore</string>
+    <string name="pulse_color_mode">Modalità colore</string>
+    <string name="pulse_color_accent">Colore primario</string>
+    <string name="pulse_color_custom">Personalizzato</string>
+    <string name="pulse_color_lava_lamp">Lampada di lava</string>
+    <string name="pulse_color_auto">Copertina album</string>
+    <string name="pulse_color_chooser">Scegli un colore</string>
+    <string name="smoothing_enabled_title">Attiva fluidità</string>
+    <string name="smoothing_enabled_summary">Ogni barra è animata in modo più fluido</string>
+    <string name="pulse_advanced_category">Avanzate</string>
+    <string name="pulse_legacy_mode_advanced_category">Impostazioni della modalità dissolvenza blocchi</string>
+    <string name="pulse_custom_fudge_factor">Livello di sicurezza</string>
+    <string name="lavamp_speed_title">Velocità lampada di lava</string>
+    <string name="pulse_solid_units_count">Linee continue solide</string>
+    <string name="pulse_solid_units_opacity">Opacità delle linee piene</string>
+    <string name="pulse_solid_dimen_category">Impostazioni della modalità linee continue</string>
+    <string name="pulse_custom_dimen">Larghezza barra</string>
+    <string name="pulse_custom_div">Spaziatura barra</string>
+    <string name="pulse_filled_block_size">Dimensione del blocco</string>
+    <string name="pulse_empty_block_size">Spaziatura blocco</string>
     <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Mostra pillola</string>
+    <string name="show_gestures_navbar_switch_summary">Mostra i gesti della barra di navigazione</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Riproduzione adattiva</string>
+    <string name="adaptive_playback_disabled_summary">Disattivato</string>
+    <string name="adaptive_playback_timeout_title">Usa fino alla fine del tempo</string>
+    <string name="adaptive_playback_timeout_none">No tempo scaduto</string>
+    <string name="adaptive_playback_timeout_none_summary">Acceso (no tempo scaduto)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 secondi</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Attivo (30 secondi)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuto</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Attivo (1 minuto)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minuti</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Attivo (2 minuti)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minuti</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Attivo (5 minuti)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minuti</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Attivo (10 minuti)</string>
+    <string name="adaptive_playback_explainer">La riproduzione adattiva si interrompe automaticamente quando il volume della riproduzione è abbassato e riprenderà automaticamente quando il volume viene ripristinato entro il tempo impostato.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Auricolari salvati</string>
+    <!-- Theming -->
+    <string name="themes_title">Palette di colori</string>
+    <string name="themes_summary">Selettore di colore</string>
+    <string name="accent_color">Palette di colore RGB</string>
+    <string name="accent_summary">Creatore di palette di colore a livello di sistema</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Secchio di colore</string>
+    <!-- Navbar length -->
+    <string name="navbar_length">Lunghezza barra dei gesti</string>
+    <string name="short_label">Corto</string>
+    <string name="long_label">Lungo</string>
+    <!-- Ambient music ticker location -->
+    <string name="ambient_music_location">Mostra il cuore della musica ambiente</string>
+    <string name="ambient_music_disabled">Disabilitato</string>
+    <string name="ambient_music_bottom">In basso (impostazione predefinita)</string>
+    <string name="ambient_music_center">Centrato (sotto l\'orologio)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tocca per mostrare le informazioni</string>
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Raggio della barra dei gesti</string>
+    <string name="small_label">Piccolo</string>
+    <string name="big_label">iOS</string>
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

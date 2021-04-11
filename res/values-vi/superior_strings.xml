@@ -162,5 +162,89 @@
     <string name="back_swipe_extended_title">Hành động vuốt mở rộng</string>
     <string name="back_swipe_extended_summary">Hành động kích hoạt khi vuốt rộng hơn (hơn một nửa kích thước hiển thị) hoặc vuốt L (đủ dài hơn theo chiều dọc)</string>
     <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Sóng nhạc không hoạt động với một số nguồn âm thanh khi nghe trên loa thiết bị</string>
+    <string name="pulse_cat_title">Bộ cân bằng xung</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Bộ cân bằng đồ họa âm thanh</string>
+    <string name="show_navbar_pulse_title">Thanh điều hướng Pulse</string>
+    <string name="show_navbar_pulse_summary">Bộ cân bằng đồ họa âm thanh trên khu vực thanh điều hướng, cũng như nếu thanh bị ẩn</string>
+    <string name="show_lockscreen_pulse_title">Chỉ màn hình khoá</string>
+    <string name="show_lockscreen_pulse_summary">Trình trực quan đồ họa âm thanh trên thanh điều hướng</string>
+    <string name="show_ambient_pulse_title">Hiển thị tương tác</string>
+    <string name="show_ambient_pulse_summary">Trình trực quan đồ họa âm thanh trên thanh điều hướng</string>
+    <string name="pulse_render_mode_title">Chế độ hiển thị</string>
+    <string name="pulse_render_mode_fading_bars">Khối mờ dần</string>
+    <string name="pulse_render_mode_solid_lines">Đường liền nét</string>
+    <string name="pulse_color">Màu sắc</string>
+    <string name="pulse_color_mode">Chế độ màu</string>
+    <string name="pulse_color_accent">Màu chủ đạo</string>
+    <string name="pulse_color_custom">Tùy chỉnh</string>
+    <string name="pulse_color_lava_lamp">Đèn dung nham</string>
+    <string name="pulse_color_auto">Ảnh album</string>
+    <string name="pulse_color_chooser">Chọn màu</string>
+    <string name="smoothing_enabled_title">Bật làm mượt</string>
+    <string name="smoothing_enabled_summary">Thanh hoạt cảnh mượt hơn</string>
+    <string name="pulse_advanced_category">Nâng cao</string>
+    <string name="pulse_legacy_mode_advanced_category">Cài đặt chế độ khối mờ dần</string>
+    <string name="pulse_custom_fudge_factor">Độ mạnh</string>
+    <string name="lavamp_speed_title">Tốc độ đèn dung nham</string>
+    <string name="pulse_solid_units_count">Số đường liền nét</string>
+    <string name="pulse_solid_units_opacity">Độ đậm đường liền nét</string>
+    <string name="pulse_solid_dimen_category">Cài đặt chế độ đường liền nét</string>
+    <string name="pulse_custom_dimen">Độ rộng thanh</string>
+    <string name="pulse_custom_div">Khoảng cách thanh</string>
+    <string name="pulse_filled_block_size">Kích thước khối</string>
+    <string name="pulse_empty_block_size">Khoảng cách khối</string>
     <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Hiển thị thanh điều hướng</string>
+    <string name="show_gestures_navbar_switch_summary">Hiển thị cử chỉ thanh điều hướng</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Phát nhạc linh động</string>
+    <string name="adaptive_playback_disabled_summary">Tắt</string>
+    <string name="adaptive_playback_timeout_title">Sử dụng thời gian chờ của</string>
+    <string name="adaptive_playback_timeout_none">Không có thời gian chờ</string>
+    <string name="adaptive_playback_timeout_none_summary">Bật (không có thời gian chờ)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 giây</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Bật (30 giây)</string>
+    <string name="adaptive_playback_timeout_1_min">1 phút</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Bật (1 phút)</string>
+    <string name="adaptive_playback_timeout_2_min">2 phút</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Bật (2 phút)</string>
+    <string name="adaptive_playback_timeout_5_min">5 phút</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Bật (5 phút)</string>
+    <string name="adaptive_playback_timeout_10_min">10 phút</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Bật (10 phút)</string>
+    <string name="adaptive_playback_explainer">Tính năng phát lại thích ứng sẽ tự động tạm dừng phương tiện khi âm lượng bị tắt và sẽ tự động tiếp tục khi âm lượng được khôi phục trong thời gian đã đặt.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
+    <!-- Theming -->
+    <string name="themes_title">Màu nhấn</string>
+    <string name="themes_summary">Chọn màu nhấn</string>
+    <string name="accent_color">Màu nhấn RGB</string>
+    <string name="accent_summary">Mở rộng màu nhấn hệ thống</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Màu giao diện</string>
+    <!-- Navbar length -->
+    <string name="navbar_length">Độ dài thanh cử chỉ</string>
+    <string name="short_label">Ngắn</string>
+    <string name="long_label">Dài</string>
+    <!-- Ambient music ticker location -->
+    <string name="ambient_music_location">Hiện thẻ âm nhạc trên màn hình xem nhanh</string>
+    <string name="ambient_music_disabled">Tắt</string>
+    <string name="ambient_music_bottom">Ở dưới cùng (mặc định)</string>
+    <string name="ambient_music_center">Căn giữa (dưới đồng hồ)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Chạm để hiện thông tin</string>
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Bán kính thanh cử chỉ</string>
+    <string name="small_label">Nhỏ</string>
+    <string name="big_label">iOS</string>
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

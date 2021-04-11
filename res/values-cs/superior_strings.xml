@@ -162,5 +162,89 @@
     <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
     <string name="back_swipe_extended_summary">Aktivovat akci širším přejetím (více než polovina velikosti displeje) nebo gestem L (dostatečně svisle)</string>
     <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse nefunguje s některými zdroji zvuku při poslechu z reproduktoru zařízení</string>
+    <string name="pulse_cat_title">Ekvalizér Pulse</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Grafický ekvalizér</string>
+    <string name="show_navbar_pulse_title">Pulse v navigačním panelu</string>
+    <string name="show_navbar_pulse_summary">Grafický ekvalizér v oblasti navigačního panelu bude zobrazen, i když se navigační panel skryje</string>
+    <string name="show_lockscreen_pulse_title">Pulse na obrazovce uzamčení</string>
+    <string name="show_lockscreen_pulse_summary">Audio grafický ekvalizér na obrazovce uzamčení</string>
+    <string name="show_ambient_pulse_title">Ambientní přehrávání</string>
+    <string name="show_ambient_pulse_summary">Audio grafický ekvalizér při ambientním přehrávání</string>
+    <string name="pulse_render_mode_title">Režim vykreslení</string>
+    <string name="pulse_render_mode_fading_bars">Vyblednutí sloupců</string>
+    <string name="pulse_render_mode_solid_lines">Sloupce</string>
+    <string name="pulse_color">Barva</string>
+    <string name="pulse_color_mode">Barevný režim</string>
+    <string name="pulse_color_accent">Barva zvýraznění</string>
+    <string name="pulse_color_custom">Vlastní</string>
+    <string name="pulse_color_lava_lamp">Lávová lampa</string>
+    <string name="pulse_color_auto">Obal interpreta</string>
+    <string name="pulse_color_chooser">Vybrat barvu</string>
+    <string name="smoothing_enabled_title">Zapnout vyhlazování</string>
+    <string name="smoothing_enabled_summary">Animace sloupců je mnohem hladší</string>
+    <string name="pulse_advanced_category">Pokročilé</string>
+    <string name="pulse_legacy_mode_advanced_category">Nastavení režimu zahalujících se bloků</string>
+    <string name="pulse_custom_fudge_factor">Úroveň výkonu</string>
+    <string name="lavamp_speed_title">Rychlost lávové lampy</string>
+    <string name="pulse_solid_units_count">Počet sloupců</string>
+    <string name="pulse_solid_units_opacity">Průhlednost sloupců</string>
+    <string name="pulse_solid_dimen_category">Nastavení režimu sloupců</string>
+    <string name="pulse_custom_dimen">Šířka sloupce</string>
+    <string name="pulse_custom_div">Mezera mezi sloupci</string>
+    <string name="pulse_filled_block_size">Výška bloku</string>
+    <string name="pulse_empty_block_size">Odsazení bloků</string>
     <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Zobrazit pilulku</string>
+    <string name="show_gestures_navbar_switch_summary">Zobrazit gesta navigačního panelu</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Adaptivní přehrávání</string>
+    <string name="adaptive_playback_disabled_summary">Vyp.</string>
+    <string name="adaptive_playback_timeout_title">Použít tento časový limit</string>
+    <string name="adaptive_playback_timeout_none">Bez časového limitu</string>
+    <string name="adaptive_playback_timeout_none_summary">Zap. (bez časového limitu)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 sekund</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Zap. (30 sekund)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuta</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Zap. (1 minuta)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minuty</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Zap. (2 minuty)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minut</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Zap. (5 minut)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minut</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Zap. (10 minut)</string>
+    <string name="adaptive_playback_explainer">Adaptivní přehrávání automaticky pozastaví média, když je hlasitost ztlumena a automaticky se obnoví při obnově hlasitosti v daném čase.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
+    <!-- Theming -->
+    <string name="themes_title">Barvy zvýraznění</string>
+    <string name="themes_summary">Výběr barvy zvýraznění</string>
+    <string name="accent_color">Výběr RGB barev zvýraznění</string>
+    <string name="accent_summary">Barva zvýraznění pro celý systém</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Nastavení barev</string>
+    <!-- Navbar length -->
+    <string name="navbar_length">Délka panelu gesta</string>
+    <string name="short_label">Krátká</string>
+    <string name="long_label">Dlouhá</string>
+    <!-- Ambient music ticker location -->
+    <string name="ambient_music_location">Hudební oznámení na Ambientním displeji</string>
+    <string name="ambient_music_disabled">Vypnuto</string>
+    <string name="ambient_music_bottom">V dolní části (výchozí)</string>
+    <string name="ambient_music_center">Uprostřed (pod cLock)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Klepnutím zobrazit informace</string>
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Poloměr panelu pro gesta</string>
+    <string name="small_label">Malý</string>
+    <string name="big_label">iOS</string>
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

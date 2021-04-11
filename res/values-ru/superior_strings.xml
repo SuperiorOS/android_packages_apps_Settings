@@ -163,5 +163,72 @@
     <string name="back_swipe_extended_summary">Запуск действия на широкий свайп (более чем на половину экрана), или L-свайп (существенно длиннее по вертикали)</string>
     <!-- Pulse -->
     <string name="pulse_help_policy_notice_summary">Пульсация не работает с некоторыми источниками звука во время прослушивания через динамик устройства</string>
+    <string name="pulse_cat_title">Импульс эквалайзера</string>
+    <string name="pulse_settings">Импульс</string>
+    <string name="pulse_settings_summary">Аудио графический эквалайзер</string>
+    <string name="show_navbar_pulse_title">Импульс в панели навигации</string>
+    <string name="show_navbar_pulse_summary">Включить аудио эквалайзер на панели навигации (даже если панель скрыта)</string>
+    <string name="show_lockscreen_pulse_title">Импульс на экране блокировки</string>
+    <string name="show_lockscreen_pulse_summary">Включить графический эквалайзер на экране блокировки</string>
+    <string name="show_ambient_pulse_title">Окружение импульса</string>
+    <string name="show_ambient_pulse_summary">Аудио графический эквалайзер на окружающем экране</string>
+    <string name="pulse_render_mode_title">Режим Предоставления</string>
+    <string name="pulse_render_mode_fading_bars">Затухающие блоки</string>
+    <string name="pulse_render_mode_solid_lines">Сплошные линии</string>
+    <string name="pulse_color">Цвет</string>
+    <string name="pulse_color_mode">Цветовой режим</string>
+    <string name="pulse_color_accent">Акцент</string>
+    <string name="pulse_color_custom">Пользовательское</string>
+    <string name="pulse_color_lava_lamp">Лавовая лампа</string>
+    <string name="pulse_color_auto">Обложка альбома</string>
+    <string name="pulse_color_chooser">Выбрать цвет</string>
+    <string name="smoothing_enabled_title">Включить сглаживание</string>
+    <string name="smoothing_enabled_summary">Более плавная анимация столбцов</string>
+    <string name="pulse_advanced_category">Дополнительно</string>
+    <string name="pulse_legacy_mode_advanced_category">Настройки режима затухающих блоков</string>
+    <string name="pulse_custom_fudge_factor">Уровень чувствительности</string>
+    <string name="lavamp_speed_title">Скорость Лавовой лампы</string>
+    <string name="pulse_solid_units_count">Количество сплошных линий</string>
+    <string name="pulse_solid_units_opacity">Прозрачность сплошных линий</string>
+    <string name="pulse_solid_dimen_category">Настройки режима сплошных линий</string>
+    <string name="pulse_custom_dimen">Ширина панели</string>
+    <string name="pulse_custom_div">Расстояние между панелями</string>
+    <string name="pulse_filled_block_size">Размер блока</string>
+    <string name="pulse_empty_block_size">Расстояние между блоками</string>
     <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Показать капсулу</string>
+    <string name="show_gestures_navbar_switch_summary">Показывать панель навигации жестов</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Выкл</string>
+    <string name="adaptive_playback_timeout_title">Использовать тайм-аут</string>
+    <string name="adaptive_playback_timeout_none">Нет таймаута</string>
+    <string name="adaptive_playback_timeout_none_summary">Вкл (без таймаута)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Вкл. (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Вкл (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Вкл (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Вкл (5 минут)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Вкл (10 минут)</string>
+    <string name="adaptive_playback_explainer">Адаптивное воспроизведение автоматически приостанавливает медиа когда звук выключен и возобновляет автоматически при восстановлении громкости в течение заданного времени.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+    <!-- Theming -->
+    <!-- Themes customization -->
+    <!-- Navbar length -->
+    <!-- Ambient music ticker location -->
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <!-- Navbar radius -->
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

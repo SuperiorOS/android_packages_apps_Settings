@@ -34,6 +34,7 @@
     <!-- Custom light color -->
     <!-- Quick unlock -->
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status_disabled">Deaktiviert</string>
     <!-- Display : Rotation -->
     <!-- Misc gesture settings -->
     <!-- Ambient Display wake gestures -->
@@ -49,4 +50,20 @@
     <!-- Long back swipe options -->
     <!-- Pulse -->
     <!-- Navbar Pill hide -->
+    <!-- Adaptive Playback -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Theming -->
+    <!-- Themes customization -->
+    <!-- Navbar length -->
+    <!-- Ambient music ticker location -->
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <!-- Navbar radius -->
+    <!-- Per-app data restrictions -->
+    <!-- Face Unlock -->
+    <!-- Refresh rate -->
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <!-- App Lock -->
 </resources>

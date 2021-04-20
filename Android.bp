@@ -65,6 +65,7 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "faceunlock_framework",
         "airbnb-lottie",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     libs: [

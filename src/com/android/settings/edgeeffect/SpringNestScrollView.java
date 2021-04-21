@@ -9,10 +9,15 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.EdgeEffect;
+
 import androidx.core.widget.NestedScrollView;
 import androidx.dynamicanimation.animation.FloatPropertyCompat;
 import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.dynamicanimation.animation.SpringForce;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Field;
 
 public class SpringNestScrollView extends NestedScrollView {
     private static final FloatPropertyCompat<SpringNestScrollView> DAMPED_SCROLL = new FloatPropertyCompat<SpringNestScrollView>("value") {
@@ -25,52 +30,46 @@ public class SpringNestScrollView extends NestedScrollView {
             springNestScrollView.setDampedScrollShift(f);
         }
     };
+    private static final float DAMPING_RATIO = 0.5f;
+    private static final float STIFFNESS = 590.0f;
+    private static final float VELOCITY_MULTIPLIER = 0.3f;
+    boolean mOverScrollNested = false;
+    float mPullGrowBottom = 0.9f;
+    float mPullGrowTop = 0.1f;
+    int[] mScrollConsumed;
+    int[] mScrollStepConsumed;
     private SpringEdgeEffect mActiveEdge;
     private EdgeEffect mBottomGlow;
     private float mDampedScrollShift = 0.0f;
+    private float mDamping = 0.5f;
+    private int mDisableEdgeEffect = 0;
+    private boolean mDisableEffectBottom = false;
+    private boolean mDisableEffectTop = false;
     private int mDispatchScrollCounter;
     private float mDistance = 0.0f;
     private SEdgeEffectFactory mEdgeEffectFactory;
     private boolean mGlowingBottom = false;
     private boolean mGlowingTop = false;
+    private int mInitialTouchY;
+    private boolean mIsEmpty = false;
+    private int mLastTouchX;
     private int mLastTouchY;
     private float mLastX;
     private float mLastY;
     private float mLastYVel;
     private int mMaxFlingVelocity;
     private int[] mNestedOffsets;
-    boolean mOverScrollNested = false;
     private int mPullCount = 0;
-    float mPullGrowBottom = 0.9f;
-    float mPullGrowTop = 0.1f;
-    int[] mScrollConsumed;
+    private boolean mRecycleScrolled = false;
     private int[] mScrollOffset;
     private int mScrollPointerId;
     private int mScrollState;
-    int[] mScrollStepConsumed;
     private SpringAnimation mSpring;
+    private float mStif = STIFFNESS;
     private EdgeEffect mTopGlow;
     private int mTouchSlop;
     private VelocityTracker mVelocityTracker;
-
-    public int getCanvasClipTopForOverscroll() {
-        return 0;
-    }
-
-    public void onScrolled(int i, int i2) {
-    }
-
-    static float access$316(SpringNestScrollView springNestScrollView, float f) {
-        float f2 = springNestScrollView.mDistance + f;
-        springNestScrollView.mDistance = f2;
-        return f2;
-    }
-
-    static int access$508(SpringNestScrollView springNestScrollView) {
-        int i = springNestScrollView.mPullCount;
-        springNestScrollView.mPullCount = i + 1;
-        return i;
-    }
+    private float mVelocity_multiplier = 0.3f;
 
     public SpringNestScrollView(Context context) {
         super(context);
@@ -87,92 +86,119 @@ public class SpringNestScrollView extends NestedScrollView {
         init();
     }
 
+    static int pullCount(SpringNestScrollView springNestScrollView) {
+        int i = springNestScrollView.mPullCount;
+        springNestScrollView.mPullCount = i + 1;
+        return i;
+    }
+
+    public int getCanvasClipTopForOverscroll() {
+        return 0;
+    }
+
+    public void onScrolled(int i, int i2) {
+    }
+
     private void init() {
         ViewConfiguration viewConfiguration = ViewConfiguration.get(getContext());
-        this.mTouchSlop = viewConfiguration.getScaledTouchSlop();
-        this.mMaxFlingVelocity = viewConfiguration.getScaledMaximumFlingVelocity();
-        this.mScrollStepConsumed = new int[2];
-        this.mScrollOffset = new int[2];
-        this.mNestedOffsets = new int[2];
-        this.mScrollConsumed = new int[2];
+        mTouchSlop = viewConfiguration.getScaledTouchSlop();
+        mMaxFlingVelocity = viewConfiguration.getScaledMaximumFlingVelocity();
+        mScrollStepConsumed = new int[2];
+        mScrollOffset = new int[2];
+        mNestedOffsets = new int[2];
+        mScrollConsumed = new int[2];
         ViewEdgeEffectFactory createViewEdgeEffectFactory = createViewEdgeEffectFactory();
-        this.mEdgeEffectFactory = createViewEdgeEffectFactory;
+        mEdgeEffectFactory = createViewEdgeEffectFactory;
         setEdgeEffectFactory(createViewEdgeEffectFactory);
         SpringAnimation springAnimation = new SpringAnimation(this, DAMPED_SCROLL, 0.0f);
-        this.mSpring = springAnimation;
-        SpringForce springForce = new SpringForce(0.0f);
-        springForce.setStiffness(590.0f);
-        springForce.setDampingRatio(0.5f);
-        springAnimation.setSpring(springForce);
+        mSpring = springAnimation;
+        springAnimation.setSpring(new SpringForce(0.0f).setStiffness(STIFFNESS).setDampingRatio(0.5f));
+    }
+
+    private Object getSuperField(Object obj, String str) {
+        Object obj2;
+        try {
+            Field declaredField = obj.getClass().getSuperclass().getDeclaredField(str);
+            declaredField.setAccessible(true);
+            obj2 = declaredField.get(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+            obj2 = null;
+        }
+        if (obj2 != null) {
+            return obj2;
+        }
+        try {
+            Field declaredField2 = obj.getClass().getSuperclass().getSuperclass().getDeclaredField(str);
+            declaredField2.setAccessible(true);
+            return declaredField2.get(obj);
+        } catch (Exception e2) {
+            e2.printStackTrace();
+            return obj2;
+        }
     }
 
     public void setEdgeEffectFactory(SEdgeEffectFactory sEdgeEffectFactory) {
-        this.mEdgeEffectFactory = sEdgeEffectFactory;
+        mEdgeEffectFactory = sEdgeEffectFactory;
         invalidateGlows();
     }
 
     public void invalidateGlows() {
-        this.mBottomGlow = null;
-        this.mTopGlow = null;
+        mBottomGlow = null;
+        mTopGlow = null;
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         boolean z;
-        if (this.mVelocityTracker == null) {
-            this.mVelocityTracker = VelocityTracker.obtain();
+        if (mVelocityTracker == null) {
+            mVelocityTracker = VelocityTracker.obtain();
         }
-        this.mVelocityTracker.addMovement(motionEvent);
+        mVelocityTracker.addMovement(motionEvent);
         int actionMasked = motionEvent.getActionMasked();
         int actionIndex = motionEvent.getActionIndex();
         MotionEvent obtain = MotionEvent.obtain(motionEvent);
         if (actionMasked == 0) {
-            this.mScrollPointerId = motionEvent.getPointerId(0);
-            this.mLastTouchY = (int) (motionEvent.getY() + 0.5f);
-            if (this.mScrollState == 2) {
+            mScrollPointerId = motionEvent.getPointerId(0);
+            int y = (int) (motionEvent.getY() + 0.5f);
+            mLastTouchY = y;
+            mInitialTouchY = y;
+            if (mScrollState == 2) {
                 getParent().requestDisallowInterceptTouchEvent(true);
                 setScrollState(1);
             }
-            int[] iArr = this.mNestedOffsets;
+            int[] iArr = mNestedOffsets;
             iArr[1] = 0;
             iArr[0] = 0;
+            mRecycleScrolled = false;
         } else if (actionMasked == 1) {
-            this.mVelocityTracker.addMovement(obtain);
-            this.mVelocityTracker.computeCurrentVelocity(1000, (float) this.mMaxFlingVelocity);
-            float f = -this.mVelocityTracker.getYVelocity(this.mScrollPointerId);
+            mVelocityTracker.addMovement(obtain);
+            mVelocityTracker.computeCurrentVelocity(1000, (float) mMaxFlingVelocity);
+            float f = -mVelocityTracker.getYVelocity(mScrollPointerId);
             if (f == 0.0f) {
                 setScrollState(0);
             } else {
-                this.mLastYVel = f;
-                this.mLastX = motionEvent.getX();
-                this.mLastY = motionEvent.getY();
+                mLastYVel = f;
+                mLastX = motionEvent.getX();
+                mLastY = motionEvent.getY();
             }
             resetTouch();
             stopNestedScroll();
         } else if (actionMasked == 2) {
-            int findPointerIndex = motionEvent.findPointerIndex(this.mScrollPointerId);
+            int findPointerIndex = motionEvent.findPointerIndex(mScrollPointerId);
             if (findPointerIndex < 0) {
-                Log.e("SpringScrollView", "Error processing scroll; pointer index for id " + this.mScrollPointerId + " not found. Did any MotionEvents get skipped?");
+                Log.e("SpringScrollView", "Error processing scroll; pointer index for id " + mScrollPointerId + " not found. Did any MotionEvents get skipped?");
+                obtain.recycle();
                 return false;
             }
             motionEvent.getX(findPointerIndex);
-            int y = (int) (motionEvent.getY(findPointerIndex) + 0.5f);
-            int i = this.mLastTouchY - y;
-            if (dispatchNestedPreScroll(0, i, this.mScrollConsumed, this.mScrollOffset)) {
-                i -= this.mScrollConsumed[1];
-                int[] iArr2 = this.mScrollOffset;
-                obtain.offsetLocation((float) iArr2[0], (float) iArr2[1]);
-                int[] iArr3 = this.mNestedOffsets;
-                int i2 = iArr3[0];
-                int[] iArr4 = this.mScrollOffset;
-                iArr3[0] = i2 + iArr4[0];
-                iArr3[1] = iArr3[1] + iArr4[1];
-            }
-            if (this.mScrollState != 1) {
+            int y2 = (int) (motionEvent.getY(findPointerIndex) + 0.5f);
+            int i = mLastTouchY - y2;
+            if (mScrollState != 1) {
                 int abs = Math.abs(i);
-                int i3 = this.mTouchSlop;
-                if (abs > i3) {
-                    i = i > 0 ? i - i3 : i + i3;
+                int i2 = mTouchSlop;
+                if (abs > i2) {
+                    i = i > 0 ? i - i2 : i + i2;
                     z = true;
                 } else {
                     z = false;
@@ -181,8 +207,8 @@ public class SpringNestScrollView extends NestedScrollView {
                     setScrollState(1);
                 }
             }
-            if (this.mScrollState == 1) {
-                this.mLastTouchY = y - this.mScrollOffset[1];
+            if (mScrollState == 1) {
+                mLastTouchY = y2 - mScrollOffset[1];
                 if (scrollByInternal(0, i, obtain)) {
                     getParent().requestDisallowInterceptTouchEvent(true);
                 }
@@ -190,71 +216,70 @@ public class SpringNestScrollView extends NestedScrollView {
         } else if (actionMasked == 3) {
             cancelTouch();
         } else if (actionMasked == 5) {
-            this.mScrollPointerId = motionEvent.getPointerId(actionIndex);
-            this.mLastTouchY = (int) (motionEvent.getY(actionIndex) + 0.5f);
+            mScrollPointerId = motionEvent.getPointerId(actionIndex);
+            int y3 = (int) (motionEvent.getY(actionIndex) + 0.5f);
+            mLastTouchY = y3;
+            mInitialTouchY = y3;
         } else if (actionMasked == 6) {
             onPointerUp(motionEvent);
         }
+        obtain.recycle();
+        mLastX = motionEvent.getX();
+        mLastY = motionEvent.getY();
         return super.onInterceptTouchEvent(motionEvent);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
         boolean z;
-        if (this.mVelocityTracker == null) {
-            this.mVelocityTracker = VelocityTracker.obtain();
+        if (mVelocityTracker == null) {
+            mVelocityTracker = VelocityTracker.obtain();
         }
         MotionEvent obtain = MotionEvent.obtain(motionEvent);
         int actionMasked = motionEvent.getActionMasked();
         int actionIndex = motionEvent.getActionIndex();
-        boolean z2 = false;
         if (actionMasked == 0) {
-            int[] iArr = this.mNestedOffsets;
+            int[] iArr = mNestedOffsets;
             iArr[1] = 0;
             iArr[0] = 0;
         }
-        int[] iArr2 = this.mNestedOffsets;
+        int[] iArr2 = mNestedOffsets;
         obtain.offsetLocation((float) iArr2[0], (float) iArr2[1]);
         if (actionMasked == 0) {
-            this.mScrollPointerId = motionEvent.getPointerId(0);
-            this.mLastTouchY = (int) (motionEvent.getY() + 0.5f);
+            mScrollPointerId = motionEvent.getPointerId(0);
+            int y = (int) (motionEvent.getY() + 0.5f);
+            mLastTouchY = y;
+            mInitialTouchY = y;
+            mRecycleScrolled = false;
         } else if (actionMasked == 1) {
-            this.mVelocityTracker.addMovement(obtain);
-            this.mVelocityTracker.computeCurrentVelocity(1000, (float) this.mMaxFlingVelocity);
-            float f = -this.mVelocityTracker.getYVelocity(this.mScrollPointerId);
+            mVelocityTracker.addMovement(obtain);
+            mVelocityTracker.computeCurrentVelocity(1000, (float) mMaxFlingVelocity);
+            float f = -mVelocityTracker.getYVelocity(mScrollPointerId);
             if (f == 0.0f) {
                 setScrollState(0);
             } else {
-                this.mLastYVel = f;
-                this.mLastX = motionEvent.getX();
-                this.mLastY = motionEvent.getY();
+                mLastYVel = f;
             }
             resetTouch();
-            z2 = true;
+            obtain.recycle();
+            mLastX = motionEvent.getX();
+            mLastY = motionEvent.getY();
+            return super.onTouchEvent(motionEvent);
         } else if (actionMasked == 2) {
-            int findPointerIndex = motionEvent.findPointerIndex(this.mScrollPointerId);
+            int findPointerIndex = motionEvent.findPointerIndex(mScrollPointerId);
             if (findPointerIndex < 0) {
-                Log.e("SpringScrollView", "Error processing scroll; pointer index for id " + this.mScrollPointerId + " not found. Did any MotionEvents get skipped?");
+                Log.e("SpringScrollView", "Error processing scroll; pointer index for id " + mScrollPointerId + " not found. Did any MotionEvents get skipped?");
+                obtain.recycle();
                 return false;
             }
             motionEvent.getX(findPointerIndex);
-            int y = (int) (motionEvent.getY(findPointerIndex) + 0.5f);
-            int i = this.mLastTouchY - y;
-            if (dispatchNestedPreScroll(0, i, this.mScrollConsumed, this.mScrollOffset)) {
-                i -= this.mScrollConsumed[1];
-                int[] iArr3 = this.mScrollOffset;
-                obtain.offsetLocation((float) iArr3[0], (float) iArr3[1]);
-                int[] iArr4 = this.mNestedOffsets;
-                int i2 = iArr4[0];
-                int[] iArr5 = this.mScrollOffset;
-                iArr4[0] = i2 + iArr5[0];
-                iArr4[1] = iArr4[1] + iArr5[1];
-            }
-            if (this.mScrollState != 1) {
+            int y2 = (int) (motionEvent.getY(findPointerIndex) + 0.5f);
+            int i = mLastTouchY - y2;
+            if (mScrollState != 1) {
                 int abs = Math.abs(i);
-                int i3 = this.mTouchSlop;
-                if (abs > i3) {
-                    i = i > 0 ? i - i3 : i + i3;
+                int i2 = mTouchSlop;
+                if (abs > i2) {
+                    i = i > 0 ? i - i2 : i + i2;
                     z = true;
                 } else {
                     z = false;
@@ -263,8 +288,8 @@ public class SpringNestScrollView extends NestedScrollView {
                     setScrollState(1);
                 }
             }
-            if (this.mScrollState == 1) {
-                this.mLastTouchY = y - this.mScrollOffset[1];
+            if (mScrollState == 1) {
+                mLastTouchY = y2 - mScrollOffset[1];
                 if (scrollByInternal(0, i, obtain)) {
                     getParent().requestDisallowInterceptTouchEvent(true);
                 }
@@ -272,42 +297,43 @@ public class SpringNestScrollView extends NestedScrollView {
         } else if (actionMasked == 3) {
             cancelTouch();
         } else if (actionMasked == 5) {
-            this.mScrollPointerId = motionEvent.getPointerId(actionIndex);
-            this.mLastTouchY = (int) (motionEvent.getY(actionIndex) + 0.5f);
+            mScrollPointerId = motionEvent.getPointerId(actionIndex);
+            int y3 = (int) (motionEvent.getY(actionIndex) + 0.5f);
+            mLastTouchY = y3;
+            mInitialTouchY = y3;
         } else if (actionMasked == 6) {
             onPointerUp(motionEvent);
         }
-        if (!z2) {
-            this.mVelocityTracker.addMovement(obtain);
-        }
         obtain.recycle();
+        mLastX = motionEvent.getX();
+        mLastY = motionEvent.getY();
         return super.onTouchEvent(motionEvent);
     }
 
     public void ensureTopGlow() {
-        SEdgeEffectFactory sEdgeEffectFactory = this.mEdgeEffectFactory;
+        SEdgeEffectFactory sEdgeEffectFactory = mEdgeEffectFactory;
         if (sEdgeEffectFactory == null) {
-            throw new IllegalStateException("setEdgeEffectFactory first, please!");
-        } else if (this.mTopGlow == null) {
-            this.mTopGlow = sEdgeEffectFactory.createEdgeEffect(this, 1);
+            Log.e("SpringNestScrollView", "setEdgeEffectFactory first, please!");
+        } else if (mTopGlow == null) {
+            mTopGlow = sEdgeEffectFactory.createEdgeEffect(this, 1);
             if (getClipToPadding()) {
-                this.mTopGlow.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
+                mTopGlow.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
             } else {
-                this.mTopGlow.setSize(getMeasuredWidth(), getMeasuredHeight());
+                mTopGlow.setSize(getMeasuredWidth(), getMeasuredHeight());
             }
         }
     }
 
     public void ensureBottomGlow() {
-        SEdgeEffectFactory sEdgeEffectFactory = this.mEdgeEffectFactory;
+        SEdgeEffectFactory sEdgeEffectFactory = mEdgeEffectFactory;
         if (sEdgeEffectFactory == null) {
-            throw new IllegalStateException("setEdgeEffectFactory first, please!");
-        } else if (this.mBottomGlow == null) {
-            this.mBottomGlow = sEdgeEffectFactory.createEdgeEffect(this, 3);
+            Log.e("SpringNestScrollView", "setEdgeEffectFactory first, please!");
+        } else if (mBottomGlow == null) {
+            mBottomGlow = sEdgeEffectFactory.createEdgeEffect(this, 3);
             if (getClipToPadding()) {
-                this.mBottomGlow.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
+                mBottomGlow.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
             } else {
-                this.mBottomGlow.setSize(getMeasuredWidth(), getMeasuredHeight());
+                mBottomGlow.setSize(getMeasuredWidth(), getMeasuredHeight());
             }
         }
     }
@@ -315,32 +341,38 @@ public class SpringNestScrollView extends NestedScrollView {
     private void pullGlows(float f, float f2, float f3, float f4) {
         if (f3 <= ((float) getHeight()) && f3 >= 0.0f) {
             float height = f3 / ((float) getHeight());
-            boolean z = true;
-            if (f4 < 0.0f && height < this.mPullGrowBottom && height > this.mPullGrowTop) {
+            if (f4 < 0.0f && height < mPullGrowBottom && height > mPullGrowTop) {
                 ensureTopGlow();
-                this.mTopGlow.onPull((-f4) / ((float) getHeight()), f / ((float) getWidth()));
-                this.mGlowingTop = true;
-            } else if (f4 <= 0.0f || height <= this.mPullGrowTop || height >= this.mPullGrowBottom) {
-                z = false;
-            } else {
+                EdgeEffect edgeEffect = mTopGlow;
+                if (edgeEffect != null) {
+                    edgeEffect.onPull((-f4) / ((float) getHeight()), f / ((float) getWidth()));
+                    mGlowingTop = true;
+                    postInvalidateOnAnimation();
+                }
+            } else if (f4 > 0.0f && height > mPullGrowTop && height < mPullGrowBottom) {
                 ensureBottomGlow();
-                this.mBottomGlow.onPull(f4 / ((float) getHeight()), 1.0f - (f / ((float) getWidth())));
-                this.mGlowingBottom = true;
+                EdgeEffect edgeEffect2 = mBottomGlow;
+                if (edgeEffect2 != null) {
+                    edgeEffect2.onPull(f4 / ((float) getHeight()), 1.0f - (f / ((float) getWidth())));
+                    mGlowingBottom = true;
+                    if (f2 != 0.0f || f4 != 0.0f) {
+                        postInvalidateOnAnimation();
+                    }
+                    return;
+                }
             }
-            if (z || f2 != 0.0f || f4 != 0.0f) {
-                postInvalidateOnAnimation();
-            }
+            postInvalidateOnAnimation();
         }
     }
 
     public void setScrollState(int i) {
-        if (i != this.mScrollState) {
-            this.mScrollState = i;
+        if (i != mScrollState) {
+            mScrollState = i;
         }
     }
 
     private void resetTouch() {
-        VelocityTracker velocityTracker = this.mVelocityTracker;
+        VelocityTracker velocityTracker = mVelocityTracker;
         if (velocityTracker != null) {
             velocityTracker.clear();
         }
@@ -349,19 +381,19 @@ public class SpringNestScrollView extends NestedScrollView {
 
     private void releaseGlows() {
         boolean z;
-        EdgeEffect edgeEffect = this.mTopGlow;
+        EdgeEffect edgeEffect = mTopGlow;
         if (edgeEffect != null) {
             edgeEffect.onRelease();
-            this.mGlowingTop = false;
-            z = this.mTopGlow.isFinished() | false;
+            mGlowingTop = false;
+            z = mTopGlow.isFinished();
         } else {
             z = false;
         }
-        EdgeEffect edgeEffect2 = this.mBottomGlow;
+        EdgeEffect edgeEffect2 = mBottomGlow;
         if (edgeEffect2 != null) {
             edgeEffect2.onRelease();
-            this.mGlowingBottom = false;
-            z |= this.mBottomGlow.isFinished();
+            mGlowingBottom = false;
+            z |= mBottomGlow.isFinished();
         }
         if (z) {
             postInvalidateOnAnimation();
@@ -375,20 +407,22 @@ public class SpringNestScrollView extends NestedScrollView {
 
     private void onPointerUp(MotionEvent motionEvent) {
         int actionIndex = motionEvent.getActionIndex();
-        if (motionEvent.getPointerId(actionIndex) == this.mScrollPointerId) {
+        if (motionEvent.getPointerId(actionIndex) == mScrollPointerId) {
             int i = actionIndex == 0 ? 1 : 0;
-            this.mScrollPointerId = motionEvent.getPointerId(i);
-            this.mLastTouchY = (int) (motionEvent.getY(i) + 0.5f);
+            mScrollPointerId = motionEvent.getPointerId(i);
+            int y = (int) (motionEvent.getY(i) + 0.5f);
+            mLastTouchY = y;
+            mInitialTouchY = y;
         }
     }
 
     public void dispatchOnScrolled(int i, int i2) {
-        this.mDispatchScrollCounter++;
+        mDispatchScrollCounter++;
         int scrollX = getScrollX();
         int scrollY = getScrollY();
         onScrollChanged(scrollX, scrollY, scrollX, scrollY);
         onScrolled(i, i2);
-        this.mDispatchScrollCounter--;
+        mDispatchScrollCounter--;
     }
 
     public boolean scrollByInternal(int i, int i2, MotionEvent motionEvent) {
@@ -400,8 +434,8 @@ public class SpringNestScrollView extends NestedScrollView {
             return false;
         }
         if (getChildCount() >= 0) {
-            scrollStep(i, i2, this.mScrollStepConsumed);
-            int[] iArr = this.mScrollStepConsumed;
+            scrollStep(i, i2, mScrollStepConsumed);
+            int[] iArr = mScrollStepConsumed;
             i5 = iArr[0];
             i6 = iArr[1];
             i4 = i - i5;
@@ -413,21 +447,7 @@ public class SpringNestScrollView extends NestedScrollView {
             i3 = 0;
         }
         invalidate();
-        boolean dispatchNestedScroll = dispatchNestedScroll(i5, i6, i4, i3, this.mScrollOffset);
-        if (dispatchNestedScroll) {
-            int i7 = this.mLastTouchY;
-            int[] iArr2 = this.mScrollOffset;
-            this.mLastTouchY = i7 - iArr2[1];
-            if (motionEvent != null) {
-                motionEvent.offsetLocation((float) iArr2[0], (float) iArr2[1]);
-            }
-            int[] iArr3 = this.mNestedOffsets;
-            int i8 = iArr3[0];
-            int[] iArr4 = this.mScrollOffset;
-            iArr3[0] = i8 + iArr4[0];
-            iArr3[1] = iArr3[1] + iArr4[1];
-        }
-        if ((!dispatchNestedScroll || this.mOverScrollNested) && getOverScrollMode() != 2) {
+        if (getOverScrollMode() != 2) {
             if (motionEvent != null && !motionEvent.isFromSource(8194)) {
                 pullGlows(motionEvent.getX(), (float) i4, motionEvent.getY(), (float) i3);
             }
@@ -439,7 +459,20 @@ public class SpringNestScrollView extends NestedScrollView {
         if (!awakenScrollBars()) {
             invalidate();
         }
-        return (i5 == 0 && i6 == 0) ? false : true;
+        return i5 != 0 || i6 != 0;
+    }
+
+    @Override
+    public void fling(int i) {
+        if (i <= 10000 || !mIsEmpty) {
+            super.fling(i);
+        } else {
+            super.fling(1200);
+        }
+    }
+
+    public void setIsEmpty(boolean z) {
+        mIsEmpty = z;
     }
 
     public void scrollStep(int i, int i2, int[] iArr) {
@@ -455,23 +488,20 @@ public class SpringNestScrollView extends NestedScrollView {
         if (z) {
             return !canScrollVertically(-1);
         }
-        if (!z) {
-            return !canScrollVertically(1);
-        }
-        return false;
+        return !canScrollVertically(1);
     }
 
     public void considerReleasingGlowsOnScroll(int i, int i2) {
-        EdgeEffect edgeEffect = this.mTopGlow;
+        EdgeEffect edgeEffect = mTopGlow;
         boolean z = false;
         if (edgeEffect != null && !edgeEffect.isFinished() && i2 > 0) {
-            this.mTopGlow.onRelease();
-            z = false | this.mTopGlow.isFinished();
+            mTopGlow.onRelease();
+            z = mTopGlow.isFinished();
         }
-        EdgeEffect edgeEffect2 = this.mBottomGlow;
+        EdgeEffect edgeEffect2 = mBottomGlow;
         if (edgeEffect2 != null && !edgeEffect2.isFinished() && i2 < 0) {
-            this.mBottomGlow.onRelease();
-            z |= this.mBottomGlow.isFinished();
+            mBottomGlow.onRelease();
+            z = mBottomGlow.isFinished();
         }
         if (z) {
             postInvalidateOnAnimation();
@@ -480,31 +510,136 @@ public class SpringNestScrollView extends NestedScrollView {
 
     @Override
     public void onScrollChanged(int i, int i2, int i3, int i4) {
-        super.onScrollChanged(i, i2, i3, i4);
-        if (this.mGlowingTop && canScrollVertically(-1) && i2 > i4) {
+        if (mGlowingTop && canScrollVertically(-1) && i2 > i4) {
             onRecyclerViewScrolled();
+            mRecycleScrolled = true;
         }
-        if (this.mGlowingBottom && canScrollVertically(1) && i2 < i4) {
+        if (mGlowingBottom && canScrollVertically(1) && i2 < i4) {
             onRecyclerViewScrolled();
+            mRecycleScrolled = true;
         }
-        if (!this.mGlowingTop && !canScrollVertically(-1) && i2 < i4) {
-            pullGlows(this.mLastX, 0.0f, this.mLastY, this.mLastYVel / 20.0f);
-            EdgeEffect edgeEffect = this.mTopGlow;
+        if (!mGlowingTop && !canScrollVertically(-1) && i2 < i4) {
+            float f = mLastYVel;
+            if (f >= 0.0f) {
+                f = computeVelocity();
+            }
+            float f2 = f / 20.0f;
+            pullGlows(mLastX, 0.0f, mLastY, f2);
+            EdgeEffect edgeEffect = mTopGlow;
             if (edgeEffect != null) {
-                edgeEffect.onAbsorb((int) (this.mLastYVel / 20.0f));
+                edgeEffect.onAbsorb((int) f2);
             }
         }
-        if (!this.mGlowingBottom && !canScrollVertically(1) && i2 > i4) {
-            pullGlows(this.mLastX, 0.0f, this.mLastY, this.mLastYVel / 20.0f);
-            EdgeEffect edgeEffect2 = this.mBottomGlow;
-            if (edgeEffect2 != null) {
-                edgeEffect2.onAbsorb((int) (this.mLastYVel / 20.0f));
+        if (!mGlowingBottom && !canScrollVertically(1) && i2 > i4) {
+            float f3 = mLastYVel;
+            if (f3 <= 0.0f) {
+                f3 = computeVelocity();
             }
-       }
+            float f4 = f3 / 20.0f;
+            pullGlows(mLastX, 0.0f, mLastY, f4);
+            EdgeEffect edgeEffect2 = mBottomGlow;
+            if (edgeEffect2 != null) {
+                edgeEffect2.onAbsorb((int) f4);
+            }
+        }
+        super.onScrollChanged(i, i2, i3, i4);
     }
 
     public ViewEdgeEffectFactory createViewEdgeEffectFactory() {
         return new ViewEdgeEffectFactory();
+    }
+
+    public void setDampedScrollShift(float f) {
+        if (f != mDampedScrollShift) {
+            mDampedScrollShift = f;
+            invalidate();
+        }
+    }
+
+    private void setActiveEdge(SpringEdgeEffect springEdgeEffect) {
+        SpringEdgeEffect springEdgeEffect2 = mActiveEdge;
+        mActiveEdge = springEdgeEffect;
+    }
+
+    private void finishScrollWithVelocity(float f) {
+        float f2 = mDampedScrollShift;
+        if (f2 > Float.MAX_VALUE || f2 < -3.4028235E38f) {
+            Log.e("SpringNestScrollView", "animation parameter out of range!");
+        } else if (f > 0.0f && mDisableEffectTop) {
+        } else {
+            if (f >= 0.0f || !mDisableEffectBottom) {
+                mSpring.setStartVelocity(f);
+                mSpring.setStartValue(mDampedScrollShift);
+                mSpring.start();
+            }
+        }
+    }
+
+    public void onRecyclerViewScrolled() {
+        if (mPullCount != 1 && !mSpring.isRunning()) {
+            mDistance = 0.0f;
+            mPullCount = 0;
+            finishScrollWithVelocity(0.0f);
+        }
+    }
+
+    @Override
+    public void draw(Canvas canvas) {
+        if (mDampedScrollShift != 0.0f) {
+            int save = canvas.save();
+            canvas.translate(0.0f, mDampedScrollShift);
+            super.draw(canvas);
+            canvas.restoreToCount(save);
+            return;
+        }
+        super.draw(canvas);
+    }
+
+    public float computeVelocity() {
+        if (mVelocityTracker == null) {
+            mVelocityTracker = VelocityTracker.obtain();
+        }
+        mVelocityTracker.computeCurrentVelocity(1000, (float) mMaxFlingVelocity);
+        return -mVelocityTracker.getYVelocity(mScrollPointerId);
+    }
+
+    public void setVelocityMultiplier(float f) {
+        mVelocity_multiplier = f;
+    }
+
+    public void setStiffness(float f) {
+        mStif = (1500.0f * f) + ((1.0f - f) * 200.0f);
+        mSpring.getSpring().setStiffness(mStif);
+    }
+
+    public void setBouncy(float f) {
+        mDamping = f;
+        mSpring.getSpring().setDampingRatio(mDamping);
+    }
+
+    public void setEdgeEffectDisable(int i) {
+        mDisableEdgeEffect = i;
+        if ((i & 1) != 0) {
+            mDisableEffectTop = true;
+        }
+        if ((i & 2) != 0) {
+            mDisableEffectBottom = true;
+        }
+    }
+
+    public static class SEdgeEffectFactory {
+        public static final int DIRECTION_BOTTOM = 3;
+        public static final int DIRECTION_LEFT = 0;
+        public static final int DIRECTION_RIGHT = 2;
+        public static final int DIRECTION_TOP = 1;
+
+        public EdgeEffect createEdgeEffect(View view, int i) {
+            return new EdgeEffect(view.getContext());
+        }
+
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface EdgeDirection {
+        }
     }
 
     public class ViewEdgeEffectFactory extends SEdgeEffectFactory {
@@ -515,30 +650,31 @@ public class SpringNestScrollView extends NestedScrollView {
         public EdgeEffect createEdgeEffect(View view, int i) {
             if (i == 0 || i == 1) {
                 SpringNestScrollView springNestScrollView = SpringNestScrollView.this;
-                return new SpringEdgeEffect(springNestScrollView.getContext(), 0.3f);
+                return new SpringEdgeEffect(springNestScrollView.getContext(), SpringNestScrollView.this.mVelocity_multiplier);
             } else if (i != 2 && i != 3) {
                 return super.createEdgeEffect(view, i);
             } else {
                 SpringNestScrollView springNestScrollView2 = SpringNestScrollView.this;
-                return new SpringEdgeEffect(springNestScrollView2.getContext(), -0.3f);
+                return new SpringEdgeEffect(springNestScrollView2.getContext(), -SpringNestScrollView.this.mVelocity_multiplier);
             }
         }
     }
-
+    
     public class SpringEdgeEffect extends EdgeEffect {
         private final float mVelocityMultiplier;
+        private boolean mReleased = true;
+
+        public SpringEdgeEffect(Context context, float f) {
+            super(context);
+            mVelocityMultiplier = f;
+        }
 
         public boolean draw(Canvas canvas) {
             return false;
         }
 
-        public SpringEdgeEffect(Context context, float f) {
-            super(context);
-            this.mVelocityMultiplier = f;
-        }
-
         public void onAbsorb(int i) {
-            SpringNestScrollView.this.finishScrollWithVelocity(((float) i) * this.mVelocityMultiplier);
+            SpringNestScrollView.this.finishScrollWithVelocity(((float) i) * mVelocityMultiplier);
             SpringNestScrollView.this.mDistance = 0.0f;
         }
 
@@ -546,61 +682,26 @@ public class SpringNestScrollView extends NestedScrollView {
             if (SpringNestScrollView.this.mSpring.isRunning()) {
                 SpringNestScrollView.this.mSpring.cancel();
             }
-            SpringNestScrollView.access$508(SpringNestScrollView.this);
+            SpringNestScrollView.pullCount(SpringNestScrollView.this);
             SpringNestScrollView.this.setActiveEdge(this);
-            SpringNestScrollView.access$316(SpringNestScrollView.this, f * (this.mVelocityMultiplier / 3.0f));
+            SpringNestScrollView.this.mDistance += f * (mVelocityMultiplier / 3.0f);
+            if (SpringNestScrollView.this.mDistance > 0.0f && SpringNestScrollView.this.mDisableEffectTop) {
+                SpringNestScrollView.this.mDistance = 0.0f;
+            } else if (SpringNestScrollView.this.mDistance < 0.0f && SpringNestScrollView.this.mDisableEffectBottom) {
+                SpringNestScrollView.this.mDistance = 0.0f;
+            }
             SpringNestScrollView springNestScrollView = SpringNestScrollView.this;
             springNestScrollView.setDampedScrollShift(springNestScrollView.mDistance * ((float) SpringNestScrollView.this.getHeight()));
+            mReleased = false;
         }
 
         public void onRelease() {
-            SpringNestScrollView.this.mDistance = 0.0f;
-            SpringNestScrollView.this.mPullCount = 0;
-            SpringNestScrollView.this.finishScrollWithVelocity(0.0f);
+            if (!mReleased) {
+                SpringNestScrollView.this.mDistance = 0.0f;
+                SpringNestScrollView.this.mPullCount = 0;
+                SpringNestScrollView.this.finishScrollWithVelocity(0.0f);
+                mReleased = true;
+            }
         }
-    }
-
-    public static class SEdgeEffectFactory {
-        public EdgeEffect createEdgeEffect(View view, int i) {
-            return new EdgeEffect(view.getContext());
-        }
-    }
-
-    public void setDampedScrollShift(float f) {
-        if (f != this.mDampedScrollShift) {
-            this.mDampedScrollShift = f;
-            invalidate();
-        }
-    }
-
-    private void setActiveEdge(SpringEdgeEffect springEdgeEffect) {
-        SpringEdgeEffect springEdgeEffect2 = this.mActiveEdge;
-        this.mActiveEdge = springEdgeEffect;
-    }
-
-    private void finishScrollWithVelocity(float f) {
-        this.mSpring.setStartVelocity(f);
-        this.mSpring.setStartValue(this.mDampedScrollShift);
-        this.mSpring.start();
-    }
-
-    public void onRecyclerViewScrolled() {
-        if (this.mPullCount != 1) {
-            this.mDistance = 0.0f;
-            this.mPullCount = 0;
-            finishScrollWithVelocity(0.0f);
-        }
-    }
-
-    @Override
-    public void draw(Canvas canvas) {
-        if (this.mDampedScrollShift != 0.0f) {
-            int save = canvas.save();
-            canvas.translate(0.0f, this.mDampedScrollShift);
-            super.draw(canvas);
-            canvas.restoreToCount(save);
-            return;
-        }
-        super.draw(canvas);
     }
 }

@@ -16,53 +16,308 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Versão SuperiorOS</string>
+    <string name="superior_version_default">Desconhecida</string>
+    <string name="keywords_superior_version">Versão SuperiorOS, versão superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Nome do dispositivo</string>
+    <string name="build_date">Data da compilação</string>
+    <string name="build_date_default">01-01-2015-0000</string>
+    <string name="keywords_build_date">data da compilação, informações da compilação</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Redefinir estatísticas</string>
+    <string name="battery_stats_message">Os históricos e estatísticas da bateria serão redefinidos</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura da bateria</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plataforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Total de RAM</string>
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localize o sensor de impressão digital na parte frontal do seu telefone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localize o sensor de impressão digital na parte lateral esquerda de seu telefone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localize o sensor de impressão digital no lado direito do seu telefone.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localize o sensor de impressão digital na parte frontal do seu dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localize o sensor de impressão digital no lado esquerdo do seu dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localize o sensor de impressão digital no lado direito do seu dispositivo.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localize o sensor de impressão digital na parte frontal do seu tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localize o sensor de impressão digital no lado esquerdo do seu tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localize o sensor de impressão digital no lado direito do seu tablet.</string>
     <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Superior Extras</string>
+    <string name="superior_settings_summary">Recursos adicionais</string>
     <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Som ao carregar</string>
+    <string name="charging_vibro_title">Vibrar ao carregar</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Som de captura de tela</string>
     <!-- Advanced powermenu -->
+    <string name="global_actions_title">Menu de energia</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Cor do Led</string>
+    <string name="custom_light_on_time_title">Tempo de ativação da luz durante o pulso do led (ms)</string>
+    <string name="custom_light_off_time_title">Tempo de desativação da luz durante o pulso do LED (ms)</string>
+    <string name="value_equals_default">def</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueio Rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando a PIN/senha correta é inserida</string>
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Status do SELinux</string>
+    <string name="selinux_status_disabled">Desativado</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Impondo</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotação</string>
+    <string name="display_rotation_summary">Selecione os ângulos de rotação</string>
+    <string name="display_rotation_disabled">Desativado</string>
+    <string name="display_rotation_unit">graus</string>
+    <string name="display_rotation_category_title">Modos de rotação</string>
+    <string name="display_rotation_0_title">0 graus</string>
+    <string name="display_rotation_90_title">90 graus</string>
+    <string name="display_rotation_180_title">180 graus</string>
+    <string name="display_rotation_270_title">270 graus</string>
     <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Resposta tátil</string>
+    <string name="back_gesture_haptic_summary">Ativar o efeito tátil no gesto de voltar</string>
     <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Gestos do modo tela ambiente</string>
+    <string name="ambient_wake_gestures_summary">Mostrar a tela ambiente ao invés da tela de bloqueio quando usar gestos de despertar</string>
     <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Tela sempre ligada durante o carregamento</string>
+    <string name="doze_on_charge_summary">Mostrar a tela ambiente o tempo todo quando estiver carregando</string>
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
+    <string name="app_notification_sound_timeout_summary_template">Permitir que sons ou vibrações não mais do que uma vez todos os <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Sem restrições</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <!-- Fp gesture -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslize para a esquerda ou para a direita para dispensar as notificações</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para dispensar suas notificações, deslize para a esquerda ou para a direita no sensor de impressão digital na traseira do seu celular.</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Associar volumes de toque &amp; notificação</string>
     <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Pular faixas de música</string>
+    <string name="volume_skiptrack_title">Botões de volume pulam músicas</string>
+    <string name="volume_skiptrack_summary">Pressione e segure o botão de volume para pular faixas ao reproduzir música, mesmo remotamente na TV ou PC com, por exemplo, Spotify (o aplicativo deve ser executado no telefone e mostrar a notificação).</string>
     <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Ícone de música ambiente</string>
+    <string name="pulse_on_new_tracks_summary">Mostrar a tela ambiente quando uma nova música for reproduzida. Toque duas vezes na informação da música para pular para a próxima faixa.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Ligar a tela para mostrar a música em reprodução</string>
     <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Processos em segundo plano</string>
     <!-- Back Gestures -->
+    <string name="smallest_tick_label">Desligado</string>
+    <string name="greatest_tick_label">Tela dividida</string>
+    <string name="gesture_back_deadzone_label">Zona Inativa</string>
+    <string name="back_sensitivity_dialog_message_cust">\nUse a primeira e segunda barra de pesquisa para configurar a sensibilidade de deslizar para trás, a última barra de busca para definir uma área morta no topo da tela, onde o deslize não pode ser acionado, para evitar conflitos com gestos no aplicativo.</string>
     <!-- Custom actions -->
+    <string name="action_nothing">Nenhuma ação</string>
+    <string name="action_search">Assistente</string>
+    <string name="action_voice_search">Pesquisa por voz</string>
+    <string name="action_launch_camera">Câmera</string>
+    <string name="action_flashlight">Lanterna</string>
+    <string name="action_volume_panel">Painel de volume</string>
+    <string name="action_screen_off">Desligar a tela</string>
+    <string name="action_screenshot">Capturar tela</string>
+    <string name="action_app_action">Aplicativo</string>
+    <string name="active_edge_ss_app_select_title">Selecionar aplicativo ao pressionar curtamente</string>
+    <string name="active_edge_ls_app_select_title">Selecione o aplicativo de toque longo</string>
+    <string name="active_edge_app_select_summary">Selecione um aplicativo a ser aberto com a ação apertar</string>
+    <string name="action_qs_panel">Painel de Configurações Rápidas</string>
+    <string name="action_notifications">Notificações</string>
+    <string name="action_clear_notifications">Limpar notificações</string>
+    <string name="action_ringer_modes">Modos de toque</string>
+    <string name="kill_app">Fechar aplicativo em primeiro plano</string>
+    <string name="skip_song">Pular músicas</string>
+    <string name="prev_song">Música anterior</string>
+    <string name="show_powermenu">Mostrar menu de energia</string>
+    <string name="partial_screenshot">Captura de tela parcial</string>
+    <string name="hush_mute">Silenciar notificações</string>
     <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gestos avançados</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalizar gestos e definir ações personalizadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avançado</string>
+    <string name="long_back_swipe_timeout_title">Tempo limite do deslize longo</string>
+    <string name="left_swipe_actions_title">Ação do deslize longo à esquerda</string>
+    <string name="left_swipe_app_action_title">Selecionar aplicativo de deslize longo para a esquerda</string>
+    <string name="right_swipe_actions_title">Ação do deslize longo à direita</string>
+    <string name="right_swipe_app_action_title">Selecionar aplicativo de deslize longo para a direita</string>
+    <string name="left_vertical_swipe_actions_title">Vertical ação de deslizar para esquerda</string>
+    <string name="left_vertical_swipe_app_action_title">Selecionar aplicativo ao deslizar verticalmente para a esquerda</string>
+    <string name="right_vertical_swipe_actions_title">Ação ao deslizar verticalmente para a direita</string>
+    <string name="right_vertical_swipe_app_action_title">Selecione o aplicativo ao deslizar verticalmente para a direita</string>
+    <string name="gesture_nav_tweaks_footer_info">Para escolher uma atividade de aplicativo específica para a ação, pressione e segure qualquer aplicativo no seletor de aplicativos. \n\nSe o iniciador estiver sendo exibido, deslize o dedo na área inferior da tela para acionar a ação.</string>
+    <string name="back_swipe_extended_title">Ação ao fazer um deslize estendido</string>
+    <string name="back_swipe_extended_summary">Ação do gatilho em um deslize mais amplo (mais de metade do tamanho da exibição) ou um deslize L (verticalmente mais longo o suficiente)</string>
     <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">O Pulse não funciona com algumas fontes de áudio ao ouvir no alto-falante do dispositivo</string>
+    <string name="pulse_cat_title">Equalizador do pulse</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Equalizador de áudio</string>
+    <string name="show_navbar_pulse_title">Pulse na Barra de navegação</string>
+    <string name="show_navbar_pulse_summary">Equalizador gráfico de áudio na área da barra de navegação, também se a barra estiver escondida</string>
+    <string name="show_lockscreen_pulse_title">Pulse na Tela de Bloqueio</string>
+    <string name="show_lockscreen_pulse_summary">Equalizador gráfico de áudio na tela de bloqueio</string>
+    <string name="show_ambient_pulse_title">Pulse Ambiente</string>
+    <string name="show_ambient_pulse_summary">Equalizador gráfico de áudio na tela de bloqueio</string>
+    <string name="pulse_render_mode_title">Modo de renderização</string>
+    <string name="pulse_render_mode_fading_bars">Blocos de desvanecimento</string>
+    <string name="pulse_render_mode_solid_lines">Linhas sólidas</string>
+    <string name="pulse_color">Cor</string>
+    <string name="pulse_color_mode">Modo de cor</string>
+    <string name="pulse_color_accent">Destaque</string>
+    <string name="pulse_color_custom">Personalizado</string>
+    <string name="pulse_color_lava_lamp">Lâmpada de lava</string>
+    <string name="pulse_color_auto">Arte do álbum</string>
+    <string name="pulse_color_chooser">Escolher a cor</string>
+    <string name="smoothing_enabled_title">Ativar suavização</string>
+    <string name="smoothing_enabled_summary">Cada barra é animada mais suavemente</string>
+    <string name="pulse_advanced_category">Avançado</string>
+    <string name="pulse_legacy_mode_advanced_category">Configurações do modo de blocos de desvanecimento</string>
+    <string name="pulse_custom_fudge_factor">Nível de sanidade</string>
+    <string name="lavamp_speed_title">Velocidade da Lâmpada de Lava</string>
+    <string name="pulse_solid_units_count">Contador de linhas sólidas</string>
+    <string name="pulse_solid_units_opacity">Opacidade das linhas sólidas</string>
+    <string name="pulse_solid_dimen_category">Configurações do modo de linhas sólidas</string>
+    <string name="pulse_custom_dimen">Largura da barra</string>
+    <string name="pulse_custom_div">Espaçamento da barra</string>
+    <string name="pulse_filled_block_size">Tamanho do bloco</string>
+    <string name="pulse_empty_block_size">Espaçamento do bloco</string>
     <!-- Navbar Pill hide -->
+    <string name="show_gestures_navbar_switch_title">Mostrar pílula</string>
+    <string name="show_gestures_navbar_switch_summary">Mostrar barra de navegação por gestos</string>
     <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Reprodução adaptável</string>
+    <string name="adaptive_playback_disabled_summary">Desligado</string>
+    <string name="adaptive_playback_timeout_title">Use um tempo limite de</string>
+    <string name="adaptive_playback_timeout_none">Sem tempo limite</string>
+    <string name="adaptive_playback_timeout_none_summary">Ativado (sem limite de tempo)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Ativado (30 segundos)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuto</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Ativado (1 minuto)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutos</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Ativado (2 minutos)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutos</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Ativado (5 minutos)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutos</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Ativado (10 minutos)</string>
+    <string name="adaptive_playback_explainer">Adaptive playback automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Fones de ouvido salvos</string>
     <!-- Theming -->
+    <string name="themes_title">Cores de destaque</string>
+    <string name="themes_summary">Seletor da cor de destaque</string>
+    <string name="accent_color">Seletor de realce RGB</string>
+    <string name="accent_summary">Gerador de acento do sistema</string>
     <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Seletor de cores</string>
     <!-- Navbar length -->
+    <string name="navbar_length">Tamanho da barra de gestos</string>
+    <string name="short_label">Curto</string>
+    <string name="long_label">Longo</string>
     <!-- Ambient music ticker location -->
+    <string name="ambient_music_location">Mostrar ícone de música ambiente</string>
+    <string name="ambient_music_disabled">Desabilitado</string>
+    <string name="ambient_music_bottom">Em baixo (padrão)</string>
+    <string name="ambient_music_center">Centralizado (no relógio)</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Toque para mostrar informações</string>
     <!-- Navbar radius -->
+    <string name="navbar_radius">Tamanho da barra de gestos</string>
+    <string name="small_label">Pequeno</string>
+    <string name="big_label">iOS</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir o acesso a rede</string>
+    <string name="data_usage_app_restrict_all_summary">Permitir o uso da rede</string>
+    <string name="data_usage_app_restrict_mobile">Dados móveis</string>
+    <string name="data_usage_app_restrict_mobile_summary">Permitir o uso de dados móveis</string>
+    <string name="data_usage_app_restrict_vpn">Dados de VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Permitir o uso de dados via VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Ativar o uso de dados Wi\u2011Fi</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Fazer um novo escaneamento facial e remover o existente</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refazer escaneamento facial</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Bloqueio da tela, impressão digital, desbloqueio facial</string>
+    <string name="face_redo_confirm_btn">Refazer</string>
+    <string name="face_redo_warning_msg">Deseja remover o escaneamento facial existente e criar um novo?</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Taxa de atualização da tela</string>
+    <string name="refresh_rate_auto">Automático</string>
+    <string name="refresh_rate_60">60Hz (economiza bateria)</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Tempo limite do Bluetooth</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">O Bluetooth será desativado após <xliff:g id="timeout_description">%1$s</xliff:g> se nenhum dispositivo estiver conectado</string>
+    <string name="bluetooth_timeout_summary2">Não desative automaticamente o Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nunca</string>
+    <string name="bluetooth_timeout_summary_15secs">15 segundos</string>
+    <string name="bluetooth_timeout_summary_30secs">30 segundos</string>
+    <string name="bluetooth_timeout_summary_1min">1 minuto</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minutos</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minutos</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minutos</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minutos</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hora</string>
+    <string name="bluetooth_timeout_summary_2hours">2 horas</string>
+    <string name="bluetooth_timeout_summary_4hours">4 horas</string>
+    <string name="bluetooth_timeout_summary_8hours">8 horas</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Desativar o Wi-Fi automaticamente</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">O Wi-Fi será desativado após <xliff:g id="timeout_description">%1$s</xliff:g> se nenhuma rede estiver conectada</string>
+    <string name="wifi_timeout_summary2">Desabilitado</string>
+    <string name="wifi_timeout_summary_never">Nunca</string>
+    <string name="wifi_timeout_summary_15secs">15 segundos</string>
+    <string name="wifi_timeout_summary_30secs">30 segundos</string>
+    <string name="wifi_timeout_summary_1min">1 minuto</string>
+    <string name="wifi_timeout_summary_2mins">2 minutos</string>
+    <string name="wifi_timeout_summary_5mins">5 minutos</string>
+    <string name="wifi_timeout_summary_10mins">10 minutos</string>
+    <string name="wifi_timeout_summary_30mins">30 minutos</string>
+    <string name="wifi_timeout_summary_1hour">1 hora</string>
+    <string name="wifi_timeout_summary_2hours">2 horas</string>
+    <string name="wifi_timeout_summary_4hours">4 horas</string>
+    <string name="wifi_timeout_summary_8hours">8 horas</string>
     <!-- App Lock -->
+    <string name="applock_title">Bloqueador de aplicativo</string>
+    <string name="applock_locked">Bloqueado</string>
+    <string name="applock_unlocked">Desbloqueado</string>
+    <string name="applock_locked_apps">Aplicativos bloqueados</string>
+    <string name="applock_unlocked_apps">Aplicativos desbloqueados</string>
+    <string name="applock_lock_after_title">Bloquear aplicativo depois</string>
+    <string name="applock_lock_after_instantly">Instantaneamente</string>
+    <string name="applock_lock_after_15_seconds">15 Segundos</string>
+    <string name="applock_lock_after_screen_off">Tela desligada</string>
+    <string name="applock_lock_after_summary">O aplicativo será bloqueado após tempo selecionado</string>
+    <string name="applock_lock_after_instantly_summary">O aplicativo será bloqueado instantaneamente quando fechado</string>
+    <string name="applock_lock_after_15_seconds_summary">O aplicativo será bloqueado 15 segundos após fechado</string>
+    <string name="applock_lock_after_screen_off_summary">O aplicativo será bloqueado quando a tela for desligada</string>
+    <string name="applock_notification_info">Você pode mostrar/ocultar o conteúdo da notificação por aplicativo, clicando no ícone de notificação mostrado na preferência de cada aplicativo bloqueado</string>
+    <string name="applock_show_notif">Mostrando conteúdo de notificação</string>
+    <string name="applock_hide_notif">Ocultar o conteúdo das notificações</string>
+    <string name="applock_setup">Configurar bloqueio de app</string>
+    <string name="applock_overlay_summary">Este recurso não está disponível porque este aplicativo está bloqueado</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 aplicativo bloqueado</item>
+        <item quantity="other">%d aplicativos bloqueados</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, bloqueio de apps, bloqueador de apps</string>
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- FontEngine -->
+    <!-- Refresh rate -->
 </resources>

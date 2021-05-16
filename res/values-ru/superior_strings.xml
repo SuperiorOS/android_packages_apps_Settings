@@ -231,4 +231,16 @@
     <!--  screen, setting option name to change wifi timeout -->
     <!--  screen, setting option summary to change wifi timeout -->
     <!-- App Lock -->
+    <string name="applock_lock_after_title">Блокировка приложения после</string>
+    <string name="applock_lock_after_instantly">Мгновенно</string>
+    <string name="applock_lock_after_15_seconds">15 Секунд</string>
+    <string name="applock_lock_after_screen_off">Отключение экрана</string>
+    <string name="applock_lock_after_summary">Приложение будет заблокировано после выбранного тайм-аута</string>
+    <string name="applock_lock_after_instantly_summary">Приложение будет заблокировано мгновенно при закрытии</string>
+    <string name="applock_lock_after_15_seconds_summary">Приложение будет заблокировано через 15 секунд после закрытия</string>
+    <string name="applock_lock_after_screen_off_summary">Приложение будет заблокировано при выключении экрана</string>
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- FontEngine -->
+    <!-- Refresh rate -->
 </resources>

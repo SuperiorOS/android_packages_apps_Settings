@@ -247,4 +247,8 @@
     <!--  screen, setting option name to change wifi timeout -->
     <!--  screen, setting option summary to change wifi timeout -->
     <!-- App Lock -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- FontEngine -->
+    <!-- Refresh rate -->
 </resources>

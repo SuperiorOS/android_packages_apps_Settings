@@ -240,11 +240,83 @@
     <string name="small_label">小</string>
     <string name="big_label">iOS</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">ネットワークアクセスを許可</string>
+    <string name="data_usage_app_restrict_all_summary">ネットワークの使用状況を有効化する</string>
+    <string name="data_usage_app_restrict_mobile">モバイルデータ</string>
+    <string name="data_usage_app_restrict_mobile_summary">モバイルデータ使用量を有効化する</string>
+    <string name="data_usage_app_restrict_vpn">VPN データ</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN データ使用量を有効化する</string>
+    <string name="data_usage_app_restrict_wifi">Wi-Fi データ</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi-Fi データ使用量を有効化する</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">既存の顔スキャンを削除して新しいスキャンを作成する</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">顔スキャンを再実行</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">画面ロック、指紋、顔認証でロック解除</string>
+    <string name="face_redo_confirm_btn">やり直す</string>
+    <string name="face_redo_warning_msg">既存の顔スキャンを削除して新しいスキャンを作成しますか?</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">画面リフレッシュレート</string>
+    <string name="refresh_rate_auto">自動</string>
+    <string name="refresh_rate_60">60Hz (バッテリー節約)</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Bluetooth の制限時間</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">端末が接続されていない場合は<xliff:g id="timeout_description">%1$s</xliff:g>後に Bluetooth は オフになります</string>
+    <string name="bluetooth_timeout_summary2">自動的に Bluetooth をオフにしない</string>
+    <string name="bluetooth_timeout_summary_never">なし</string>
+    <string name="bluetooth_timeout_summary_15secs">15秒</string>
+    <string name="bluetooth_timeout_summary_30secs">30秒</string>
+    <string name="bluetooth_timeout_summary_1min">1分</string>
+    <string name="bluetooth_timeout_summary_2mins">2分</string>
+    <string name="bluetooth_timeout_summary_5mins">5分</string>
+    <string name="bluetooth_timeout_summary_10mins">10分</string>
+    <string name="bluetooth_timeout_summary_30mins">30分</string>
+    <string name="bluetooth_timeout_summary_1hour">1時間</string>
+    <string name="bluetooth_timeout_summary_2hours">2時間</string>
+    <string name="bluetooth_timeout_summary_4hours">4時間</string>
+    <string name="bluetooth_timeout_summary_8hours">8時間</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Wi-Fi を自動的にオフにする</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">ネットワークに接続していない場合は<xliff:g id="timeout_description">%1$s</xliff:g>後に Wi-Fi はオフになります</string>
+    <string name="wifi_timeout_summary2">無効</string>
+    <string name="wifi_timeout_summary_never">なし</string>
+    <string name="wifi_timeout_summary_15secs">15秒</string>
+    <string name="wifi_timeout_summary_30secs">30秒</string>
+    <string name="wifi_timeout_summary_1min">1分</string>
+    <string name="wifi_timeout_summary_2mins">2分</string>
+    <string name="wifi_timeout_summary_5mins">5分</string>
+    <string name="wifi_timeout_summary_10mins">10分</string>
+    <string name="wifi_timeout_summary_30mins">30分</string>
+    <string name="wifi_timeout_summary_1hour">1時間</string>
+    <string name="wifi_timeout_summary_2hours">2時間</string>
+    <string name="wifi_timeout_summary_4hours">4時間</string>
+    <string name="wifi_timeout_summary_8hours">8時間</string>
     <!-- App Lock -->
+    <string name="applock_title">アプリロッカー</string>
+    <string name="applock_locked">ロック済み</string>
+    <string name="applock_unlocked">ロック解除済み</string>
+    <string name="applock_locked_apps">ロックしたアプリ</string>
+    <string name="applock_unlocked_apps">未ロックのアプリ</string>
+    <string name="applock_lock_after_title">以下の後にアプリをロック</string>
+    <string name="applock_lock_after_instantly">すぐに</string>
+    <string name="applock_lock_after_15_seconds">15秒</string>
+    <string name="applock_lock_after_screen_off">画面を消灯</string>
+    <string name="applock_lock_after_summary">選択した制限時間後にアプリはロックされます</string>
+    <string name="applock_lock_after_instantly_summary">アプリを終了すると即座にロックされます</string>
+    <string name="applock_lock_after_15_seconds_summary">アプリは終了から15秒後にロックされます</string>
+    <string name="applock_lock_after_screen_off_summary">アプリは画面消灯時にロックされます</string>
+    <string name="applock_notification_info">それぞれのロック済みのアプリの設定に表示される通知アイコンをクリックすることで、アプリごとの通知の内容の表示/非表示を切り替えることができます。</string>
+    <string name="applock_show_notif">通知の内容を表示中です</string>
+    <string name="applock_hide_notif">通知の内容を非表示中です</string>
+    <string name="applock_setup">アプリのロックを設定</string>
+    <string name="applock_overlay_summary">このアプリはロックされているためこの機能は利用できません</string>
+    <plurals name="applock_summary">
+        <item quantity="other">%d個のアプリがロックされました</item>
+    </plurals>
+    <string name="keywords_applock_settings">アプリロック、アプリブロッカー、アプリ ロック、アプリ ロッカー</string>
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- FontEngine -->
+    <!-- Refresh rate -->
 </resources>

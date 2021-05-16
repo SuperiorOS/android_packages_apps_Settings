@@ -240,11 +240,86 @@
     <string name="small_label">Malý</string>
     <string name="big_label">iOS</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
+    <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
+    <string name="data_usage_app_restrict_mobile">Mobilní data</string>
+    <string name="data_usage_app_restrict_mobile_summary">Povolit používání mobilních dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Zámek obrazovky, otisk prstu, odemknutí obličejem</string>
+    <string name="face_redo_confirm_btn">Znovu</string>
+    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Obnovovací frekvence obrazovky</string>
+    <string name="refresh_rate_auto">Automaticky</string>
+    <string name="refresh_rate_60">60Hz (šetří baterii)</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Časový limit Bluetooth</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">Pokud nejsou připojena žádná zařízení, Bluetooth se vypne za <xliff:g id="timeout_description">%1$s</xliff:g></string>
+    <string name="bluetooth_timeout_summary2">Automaticky nevypínat Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nikdy</string>
+    <string name="bluetooth_timeout_summary_15secs">15 sek.</string>
+    <string name="bluetooth_timeout_summary_30secs">30 sek.</string>
+    <string name="bluetooth_timeout_summary_1min">1 min.</string>
+    <string name="bluetooth_timeout_summary_2mins">2 min.</string>
+    <string name="bluetooth_timeout_summary_5mins">5 min.</string>
+    <string name="bluetooth_timeout_summary_10mins">10 min.</string>
+    <string name="bluetooth_timeout_summary_30mins">30 min.</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hod.</string>
+    <string name="bluetooth_timeout_summary_2hours">2 hod.</string>
+    <string name="bluetooth_timeout_summary_4hours">4 hod.</string>
+    <string name="bluetooth_timeout_summary_8hours">8 hod.</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Automaticky vypnout Wi\u2011Fi</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">Wi-Fi se vypne za <xliff:g id="timeout_description">%1$s</xliff:g>, pokud není připojena žádná síť</string>
+    <string name="wifi_timeout_summary2">Vypnuto</string>
+    <string name="wifi_timeout_summary_never">Nikdy</string>
+    <string name="wifi_timeout_summary_15secs">15 sek.</string>
+    <string name="wifi_timeout_summary_30secs">30 sek.</string>
+    <string name="wifi_timeout_summary_1min">1 min.</string>
+    <string name="wifi_timeout_summary_2mins">2 min.</string>
+    <string name="wifi_timeout_summary_5mins">5 min.</string>
+    <string name="wifi_timeout_summary_10mins">10 min.</string>
+    <string name="wifi_timeout_summary_30mins">30 min.</string>
+    <string name="wifi_timeout_summary_1hour">1 hod.</string>
+    <string name="wifi_timeout_summary_2hours">2 hod.</string>
+    <string name="wifi_timeout_summary_4hours">4 hod.</string>
+    <string name="wifi_timeout_summary_8hours">8 hod.</string>
     <!-- App Lock -->
+    <string name="applock_title">Zámek aplikací</string>
+    <string name="applock_locked">Uzamčeno</string>
+    <string name="applock_unlocked">Odemčeno</string>
+    <string name="applock_locked_apps">Uzamčené aplikace</string>
+    <string name="applock_unlocked_apps">Odemčené aplikace</string>
+    <string name="applock_lock_after_title">Zamknout aplikaci po</string>
+    <string name="applock_lock_after_instantly">Okamžitě</string>
+    <string name="applock_lock_after_15_seconds">15 Sek.</string>
+    <string name="applock_lock_after_screen_off">Vypnout obrazovku</string>
+    <string name="applock_lock_after_summary">Po zvoleném časovém limitu bude aplikace uzamčena</string>
+    <string name="applock_lock_after_instantly_summary">Po zavření bude aplikace okamžitě uzamčena</string>
+    <string name="applock_lock_after_15_seconds_summary">15 sekund po ukončení bude aplikace uzamčena</string>
+    <string name="applock_lock_after_screen_off_summary">Po vypnutí obrazovky bude aplikace uzamčena</string>
+    <string name="applock_notification_info">Obsah oznámení můžete zobrazit nebo skrýt pro jednotlivé aplikace klepnutím na ikonu oznámení zobrazenou v\u00a0předvolbách každé zamčené aplikace</string>
+    <string name="applock_show_notif">Obsah oznámení je zobrazován</string>
+    <string name="applock_hide_notif">Obsah oznámení je skrýván</string>
+    <string name="applock_setup">Nastavení zámku aplikací</string>
+    <string name="applock_overlay_summary">Tato funkce není k dispozici, protože tato aplikace je uzamčena</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 aplikace uzamčena</item>
+        <item quantity="few">%d aplikace uzamčeny</item>
+        <item quantity="many">%d aplikací uzamčeno</item>
+        <item quantity="other">%d aplikací uzamčeno</item>
+    </plurals>
+    <string name="keywords_applock_settings">uzamknout aplikaci, uzamykání aplikace, uzamčení aplikace, zámek aplikací</string>
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- FontEngine -->
+    <!-- Refresh rate -->
 </resources>

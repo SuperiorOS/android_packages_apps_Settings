@@ -59,15 +59,6 @@
     <PreferenceCategory
         android:title="@string/category_name_appearance">
 
-        <com.android.settings.display.darkmode.DarkModePreference
-            android:key="dark_ui_mode"
-            android:title="@string/dark_ui_mode"
-            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-            android:widgetLayout="@null"
-            settings:widgetLayout="@null"
-            settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:keywords="@string/keywords_dark_ui_mode"/>
-
         <Preference
             android:key="font_size"
             android:title="@string/title_font_size"

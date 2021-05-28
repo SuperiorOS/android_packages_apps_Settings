@@ -129,9 +129,6 @@
     <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
 
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
-
     <!-- Volume rocker gestures -->
     <string name="volume_skiptrack_screen_title">Skip music tracks</string>
     <string name="volume_skiptrack_title">Volume rocker skip tracks</string>

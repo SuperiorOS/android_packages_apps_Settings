@@ -12226,6 +12226,7 @@
     <string name="duration_less_than_one_minute">Less than 1 minute</string>
     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
     <string name="screen_time_summary_usage_today">%1$s today</string>
+
     <!-- Bluetooth message permission alert for notification content [CHAR LIMIT=none] -->
     <string name="bluetooth_message_access_notification_content">Untrusted device wants to access your messages. Tap for details.</string>
     <!-- Bluetooth message permission alert for dialog title [CHAR LIMIT=none] -->

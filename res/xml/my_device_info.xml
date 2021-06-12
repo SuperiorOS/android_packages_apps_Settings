@@ -37,7 +37,6 @@
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-        android:icon="@drawable/sos_device_name_icon"
         settings:enableCopying="true"/>
 
     <!-- Account name -->
@@ -46,7 +45,6 @@
         android:order="2"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/sos_account_icon"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
 
     <!-- Phone number
@@ -56,7 +54,6 @@
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        android:icon="@drawable/sos_ph_icon"
         settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
         settings:enableCopying="true"/> -->
 
@@ -65,7 +62,6 @@
         android:order="14"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/sos_emergency_info_icon"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
 
     <!-- Legal information -->
@@ -74,14 +70,12 @@
         android:order="15"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"
-        android:icon="@drawable/sos_legal_info_icon"/>
+        settings:allowDividerAbove="true"/>
 
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
         android:order="16"
-        android:icon="@drawable/sos_regulatory_info_icon"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
     </Preference>
@@ -90,7 +84,6 @@
     <Preference
         android:key="safety_info"
         android:order="17"
-        android:icon="@drawable/sos_safety_info_icon"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference>
@@ -103,7 +96,6 @@
         settings:keywords="@string/keywords_sim_status"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        android:icon="@drawable/sos_sim_status_icon"
         settings:allowDividerAbove="true"/>
 
     <!-- Model & hardware -->
@@ -112,7 +104,6 @@
         android:order="31"
         android:title="@string/model_info"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/sos_device_model_icon"
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         settings:enableCopying="true"
         settings:keywords="@string/keywords_model_and_hardware"
@@ -126,7 +117,6 @@
         android:summary="@string/summary_placeholder"
         settings:keywords="@string/keywords_imei_info"
         settings:enableCopying="true"
-        android:icon="@drawable/sos_imei_info_icon"
         settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
     <!-- Android version -->
@@ -135,7 +125,6 @@
         android:order="42"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/sos_fw_version_icon"
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
@@ -147,7 +136,6 @@
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:allowDividerAbove="true"
-        android:icon="@drawable/sos_ip_info_icon"
         settings:enableCopying="true"/>
 
     <!-- Wi-Fi MAC address -->
@@ -157,7 +145,6 @@
         android:title="@string/status_wifi_mac_address"
         android:summary="@string/view_saved_network"
         android:fragment="com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings"
-        android:icon="@drawable/sos_mac_add_icon1"
         settings:enableCopying="false"/>
 
     <!-- Factory Wi-Fi MAC address -->
@@ -167,7 +154,6 @@
         android:title="@string/status_device_wifi_mac_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        android:icon="@drawable/sos_mac_add_icon"
         settings:enableCopying="true"/>
 
     <!-- Bluetooth address -->
@@ -177,7 +163,6 @@
         android:title="@string/status_bt_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        android:icon="@drawable/sos_bt_info_icon"
         settings:enableCopying="true"/>
 
     <!-- Device up time -->
@@ -186,14 +171,12 @@
         android:order="48"
         android:title="@string/status_up_time"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/sos_up_time_icon"
         android:selectable="false"/>
 
     <!-- Manual -->
     <Preference
         android:key="manual"
         android:order="50"
-        android:icon="@drawable/sos_manual_icon"
         android:title="@string/manual">
         <intent android:action="android.settings.SHOW_MANUAL"/>
     </Preference>
@@ -202,7 +185,6 @@
     <Preference
         android:key="device_feedback"
         android:order="51"
-        android:icon="@drawable/sos_feedback_icon"
         android:title="@string/device_feedback"
         settings:keywords="@string/keywords_device_feedback"/>
 
@@ -210,7 +192,6 @@
     <Preference
         android:key="fcc_equipment_id"
         android:order="52"
-        android:icon="@drawable/sos_eq_icon"
         android:title="@string/fcc_equipment_id"
         android:summary="@string/summary_placeholder"/>
 
@@ -222,7 +203,6 @@
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"
         settings:enableCopying="true"
-        android:icon="@drawable/sos_build_info_icon"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
 
     <!-- SELinux status information -->
@@ -230,6 +210,6 @@
         android:key="selinux_status"
         android:order="54"
         android:title="@string/selinux_status"
-        android:summary="@string/selinux_status_enforcing"
-        android:icon="@drawable/sos_selinux_status_icon"/>
+        android:summary="@string/selinux_status_enforcing"/>
+
 </PreferenceScreen>

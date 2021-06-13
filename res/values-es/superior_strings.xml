@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018-2020 Superior OS Project
+     Copyright (C) 2018-2021 The Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -105,8 +105,6 @@
     <!-- Fp gesture -->
     <string name="fp_swipe_to_dismiss_notifications_title">Deslice huella hacia la izquierda o derecha para eliminar notificaciones</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar tus notificaciones, deslice hacia la derecha o izquierda en el lector de huellas de su teléfono.</string>
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Vincular tono &amp; volumen de notificaciones</string>
     <!-- Volume rocker gestures -->
     <string name="volume_skiptrack_screen_title">Saltar pistas de música</string>
     <string name="volume_skiptrack_title">Teclas de volumen saltan la pista de música</string>
@@ -183,4 +181,8 @@
     <!-- LiveDisplay : Picture Adjustment -->
     <!-- FontEngine -->
     <!-- Refresh rate -->
+    <!-- Battery health -->
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Vincular tono &amp; volumen de notificaciones</string>
+    <!-- global cleartext penalties -->
 </resources>

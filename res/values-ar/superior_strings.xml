@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018-2020 Superior OS Project
+     Copyright (C) 2018-2021 The Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,32 +16,98 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">إصدار SuperiorOS</string>
+    <string name="superior_version_default">غير معروف</string>
+    <string name="keywords_superior_version">إصدار SuperiorOS ، إصدار Superior</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">اسم الجهاز</string>
+    <string name="build_date">تاريخ الإنشاء</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">تاريخ الإنشاء، معلومات النسخة</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">إعادة تعيين</string>
+    <string name="battery_stats_message">سيتم إعادة تعيين إحصائية البطارية</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">متجر play</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">درجة حرارة البطارية</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">معلومات Hardware</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">إجمالي ذاكرة الوصول العشوائي</string>
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">حدد موقع مستشعر بصمة الإصبع في الجزء الأمامي من هاتفك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">حدد موقع مستشعر بصمة الإصبع على الجانب الأيسر من هاتفك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">حدد موقع مستشعر بصمة الإصبع على الجانب الأيمن من هاتفك.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">حدد موقع مستشعر بصمة الإصبع في واجهة جهازك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">حدد موقع حساس البصمة على يسار جهازك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">حدد موقع حساس البصمة على يمين جهازك.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">حدد موقع مستشعر البصمة في مقدمة جهازك اللوحي.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">حدد موقع حساس البصمة على يسار جهازك اللوحي.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">حدد موقع حساس البصمة على يمين جهازك اللوحي.</string>
     <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">مميزات فائقة</string>
+    <string name="superior_settings_summary">مميزات إضافية</string>
     <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">صوت ألشحن</string>
+    <string name="charging_vibro_title">إهتزاز عند الشحن</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
     <!-- Advanced powermenu -->
+    <string name="global_actions_title">قائمة زر التشغيل</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">لون الضوء</string>
+    <string name="custom_light_on_time_title">مدة تشغيل الضوء النابض LED (ملي ثانية)</string>
+    <string name="custom_light_off_time_title">مدة إيقاف الضوء النابض LED (ملي ثانية)</string>
+    <string name="value_equals_default">الافتراضي</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">الفتح السريع</string>
+    <string name="unlock_quick_unlock_control_summary">فتح تلقائياً عند إدخال رمز PIN او كلمة المرور الصحيحة</string>
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">‏حالة SELinux</string>
+    <string name="selinux_status_disabled">معطل</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">التدوير</string>
+    <string name="display_rotation_summary">حدد زوايا الدوران</string>
+    <string name="display_rotation_disabled">غير مفعل</string>
+    <string name="display_rotation_unit">درجات</string>
+    <string name="display_rotation_category_title">أوضاع تدوير الشاشة</string>
+    <string name="display_rotation_0_title">0 درجة</string>
+    <string name="display_rotation_90_title">٩٠ درجة</string>
+    <string name="display_rotation_180_title">١٨٠ درجة</string>
+    <string name="display_rotation_270_title">٢٧٠ درجة</string>
     <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">اهتزاز عند نقر الأزرار</string>
+    <string name="back_gesture_haptic_summary">تفعيل الإهتزاز عند إيماء الرجوع</string>
     <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">إيماءات الإيقاظ المحيطية</string>
+    <string name="ambient_wake_gestures_summary">إظهار العرض المحيط بدلاً من شاشة القفل العادية عند إيماءات الإيقاظ</string>
     <!-- Doze on charge -->
+    <string name="doze_on_charge_title">التشغيل دائماً عند الشحن</string>
+    <string name="doze_on_charge_summary">إظهار شاشة الغفو طوال الوقت أثناء الشحن</string>
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">الحد الأدنى من الوقت بين أصوات الإشعارات</string>
+    <string name="app_notification_sound_timeout_summary_template">السماح بالصوت أو الاهتزاز ليس لأكثر من مرة واحدة كل <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">بدون قيود</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 ثوانٍ</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">٣٠ ثانية</string>
+    <string name="app_notification_sound_timeout_value_1_minute">١ دقيقة</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">٥ دقائق</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">١٠ دقائق</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 دقيقة</string>
     <!-- Fp gesture -->
-    <!-- Volume link notification -->
+    <string name="fp_swipe_to_dismiss_notifications_title">اسحب بإصبعك يمينا ويسارا لتجاهل الإشعارات</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">لإزالة الإشعارات، قم بالتمرير إلى اليسار أو اليمين في مستشعر بصمة الإصبع خلف الجهاز.</string>
     <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">تخطي الموسيقى</string>
+    <string name="volume_skiptrack_title">أزرار الصوت لتخطي الموسيقى</string>
     <!-- Ambient music ticker -->
     <!-- Running services toggle -->
     <!-- Back Gestures -->
@@ -69,4 +135,8 @@
     <!-- LiveDisplay : Picture Adjustment -->
     <!-- FontEngine -->
     <!-- Refresh rate -->
+    <!-- Battery health -->
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">ربط مستوى الرنين &amp; مع الاشعارات</string>
+    <!-- global cleartext penalties -->
 </resources>

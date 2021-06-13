@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018-2020 Superior OS Project
+     Copyright (C) 2018-2021 The Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -105,8 +105,6 @@
     <!-- Fp gesture -->
     <string name="fp_swipe_to_dismiss_notifications_title">Scorri a sinistra o destra sul sensore d\'impronte per rimuovere le notifiche</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Per rimuovere le notifiche, scorri a sinistra o destra sul sensore d\'impronte posto sul retro del tuo dispositivo.</string>
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Collega volumi suoneria &amp; notifiche</string>
     <!-- Volume rocker gestures -->
     <string name="volume_skiptrack_screen_title">Salta brani musicali</string>
     <string name="volume_skiptrack_title">Salta brani musicali con i tasti del volume</string>
@@ -240,15 +238,102 @@
     <string name="small_label">Piccolo</string>
     <string name="big_label">iOS</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Consenti l\'accesso alla rete</string>
+    <string name="data_usage_app_restrict_all_summary">Abilita l\'utilizzo della rete</string>
+    <string name="data_usage_app_restrict_mobile">Dati mobili</string>
+    <string name="data_usage_app_restrict_mobile_summary">Abilita l\'utilizzo dei dati mobili</string>
+    <string name="data_usage_app_restrict_vpn">Dati VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Abilita l\'utilizzo dei dati VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dati Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Abilita l\'utilizzo dei dati Wi \u2011Fi</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Rimuovi la scansione del viso esistente e crea una nuova scansione</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ripeti scansione del viso</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Blocco schermo, impronta digitale, sblocco facciale</string>
+    <string name="face_redo_confirm_btn">Ripeti</string>
+    <string name="face_redo_warning_msg">Vuoi rimuovere la scansione del viso esistente e crearne una nuova?</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Frequenza di aggiornamento dello schermo</string>
+    <string name="refresh_rate_auto">Automatico</string>
+    <string name="refresh_rate_60">60Hz (risparmia batteria)</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Tempo scaduto Bluetooth</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">Il Bluetooth si spegnerà dopo <xliff:g id="timeout_description">%1$s</xliff:g> se nessun dispositivo è connesso</string>
+    <string name="bluetooth_timeout_summary2">Non disattivare automaticamente il Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Mai</string>
+    <string name="bluetooth_timeout_summary_15secs">15 secondi</string>
+    <string name="bluetooth_timeout_summary_30secs">30 secondi</string>
+    <string name="bluetooth_timeout_summary_1min">1 minuto</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minuti</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minuti</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minuti</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minuti</string>
+    <string name="bluetooth_timeout_summary_1hour">1 ora</string>
+    <string name="bluetooth_timeout_summary_2hours">2 ore</string>
+    <string name="bluetooth_timeout_summary_4hours">4 ore</string>
+    <string name="bluetooth_timeout_summary_8hours">8 ore</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Disattiva automaticamente il Wi-Fi</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">Il Wi-Fi si spegnerà dopo <xliff:g id="timeout_description">%1$s</xliff:g> se nessuna rete è connessa</string>
+    <string name="wifi_timeout_summary2">Disabilitato</string>
+    <string name="wifi_timeout_summary_never">Mai</string>
+    <string name="wifi_timeout_summary_15secs">15 secondi</string>
+    <string name="wifi_timeout_summary_30secs">30 secondi</string>
+    <string name="wifi_timeout_summary_1min">1 minuto</string>
+    <string name="wifi_timeout_summary_2mins">2 minuti</string>
+    <string name="wifi_timeout_summary_5mins">5 minuti</string>
+    <string name="wifi_timeout_summary_10mins">10 minuti</string>
+    <string name="wifi_timeout_summary_30mins">30 minuti</string>
+    <string name="wifi_timeout_summary_1hour">1 ora</string>
+    <string name="wifi_timeout_summary_2hours">2 ore</string>
+    <string name="wifi_timeout_summary_4hours">4 ore</string>
+    <string name="wifi_timeout_summary_8hours">8 ore</string>
     <!-- App Lock -->
+    <string name="applock_title">Armadietto App</string>
+    <string name="applock_locked">Bloccato</string>
+    <string name="applock_unlocked">Sbloccato</string>
+    <string name="applock_locked_apps">App bloccate</string>
     <!-- LiveDisplay -->
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Colori accurati allo spazio colore sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Colori accurati allo spazio colore DCI-P3</string>
+    <string name="live_display_reading_mode_title">Modalità di lettura</string>
+    <string name="live_display_reading_mode_summary">Modalità scala di grigi per letture a lungo termine</string>
+    <string name="color_calibration_title">Calibrazione del colore</string>
+    <string name="color_calibration_summary">Calibra i colori sullo schermo</string>
+    <string name="color_red_title">Rosso</string>
+    <string name="color_green_title">Verde</string>
+    <string name="color_blue_title">Blu</string>
     <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Regolazione dell\'immagine</string>
+    <string name="picture_adjustment_summary">Regola tonalità, saturazione, intensità e contrasto</string>
+    <string name="adj_hue_title">Tonalità</string>
+    <string name="adj_saturation_title">Saturazione</string>
+    <string name="adj_intensity_title">Intensità</string>
+    <string name="adj_contrast_title">Contrasto</string>
     <!-- FontEngine -->
+    <string name="font_picker_title">Font</string>
+    <string name="disable_fonts_installed_title">Il selettore di caratteri non è disponibile per evitare conflitti con Substratum. Disinstallalo se desideri utilizzare il selettore di caratteri.</string>
+    <string name="font_picker_progress">Applicazione nuovo carattere\u2026</string>
     <!-- Refresh rate -->
+    <string name="min_refresh_rate_title">Frequenza di aggiornamento minima</string>
+    <string name="max_refresh_rate_title">Frequenza di aggiornamento massima</string>
+    <string name="battery_saver_refresh_rate_title">Riduci la frequenza di aggiornamento</string>
+    <string name="battery_saver_refresh_rate_summary">Usa la frequenza di aggiornamento dello schermo a 60 Hz per risparmiare energia quando è attivo il risparmio energetico</string>
+    <!-- Battery health -->
+    <string name="battery_health_title">Stato della batteria</string>
+    <string name="battery_health_summary">Monitora lo stato della batteria del tuo dispositivo</string>
+    <string name="current_battery_capacity">Capacità attuale della batteria</string>
+    <string name="current_battery_capacity_summary">La capacità attuale della batteria misurata dal kernel</string>
+    <string name="designed_battery_capacity">Capacità della batteria progettata</string>
+    <string name="designed_battery_capacity_summary">La capacità della batteria progettata dal produttore</string>
+    <string name="battery_charge_cycles">Cicli di carica completati</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Collega volumi suoneria &amp; notifiche</string>
+    <!-- global cleartext penalties -->
+    <string name="cleartext_network_policy_title">Limita il traffico di rete in chiaro</string>
+    <string name="cleartext_network_policy_summary">Blocca tutto il traffico di rete non TLS. Richiede la configurazione del DNS privato. Nota: senza esenzioni esplicite, Tor e la maggior parte delle VPN non funzioneranno</string>
 </resources>

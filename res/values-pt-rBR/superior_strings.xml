@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018-2020 Superior OS Project
+     Copyright (C) 2018-2021 The Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -105,8 +105,6 @@
     <!-- Fp gesture -->
     <string name="fp_swipe_to_dismiss_notifications_title">Deslize para a esquerda ou para a direita para dispensar as notificações</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Para dispensar suas notificações, deslize para a esquerda ou para a direita no sensor de impressão digital na traseira do seu celular.</string>
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Associar volumes de toque &amp; notificação</string>
     <!-- Volume rocker gestures -->
     <string name="volume_skiptrack_screen_title">Pular faixas de música</string>
     <string name="volume_skiptrack_title">Botões de volume pulam músicas</string>
@@ -320,4 +318,8 @@
     <!-- LiveDisplay : Picture Adjustment -->
     <!-- FontEngine -->
     <!-- Refresh rate -->
+    <!-- Battery health -->
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Associar volumes de toque &amp; notificação</string>
+    <!-- global cleartext penalties -->
 </resources>

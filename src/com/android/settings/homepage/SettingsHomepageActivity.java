@@ -30,6 +30,7 @@ import android.os.UserManager;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 import androidx.annotation.VisibleForTesting;
@@ -48,6 +49,8 @@ import com.android.settings.overlay.FeatureFactory;
 
 import com.android.settingslib.drawable.CircleFramedDrawable;
 
+import java.util.Calendar;
+
 public class SettingsHomepageActivity extends FragmentActivity {
 
     Context context;
@@ -64,6 +67,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
         setHomepageContainerPaddingTop();
+        goodVibesPlease();
 
         Context context = getApplicationContext();
 
@@ -73,7 +77,11 @@ public class SettingsHomepageActivity extends FragmentActivity {
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        avatarView = root.findViewById(R.id.account_avatar);
+      final TextView homepageUsernameTextView = root.findViewById(R.id.userNameTextView); 
+      getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+
+        View avroot = findViewById(R.id.settings_homepage_spacer);
+        avatarView = avroot.findViewById(R.id.account_avatar_mirror);
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
         avatarView.setImageDrawable(getCircularUserIcon(context));
         avatarView.setOnClickListener(new View.OnClickListener() {
@@ -85,14 +93,17 @@ public class SettingsHomepageActivity extends FragmentActivity {
             }
         });
 
+	String name = mUserManager.getUserName();
+	homepageUsernameTextView.setText(name!=null?name:"User");
+
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
         showFragment(new TopLevelSettings(), R.id.main_content);
         ((FrameLayout) findViewById(R.id.main_content))
                 .getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
-    }
+      }
 
-    private void showFragment(Fragment fragment, int id) {
+      private void showFragment(Fragment fragment, int id) {
         final FragmentManager fragmentManager = getSupportFragmentManager();
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         final Fragment showFragment = fragmentManager.findFragmentById(id);
@@ -103,6 +114,37 @@ public class SettingsHomepageActivity extends FragmentActivity {
             fragmentTransaction.show(showFragment);
         }
         fragmentTransaction.commit();
+    }
+
+     private void goodVibesPlease(){
+
+     Calendar c = Calendar.getInstance();
+     int hours = c.get(Calendar.HOUR_OF_DAY);
+     String greeting=null;
+     TextView homePageGreetingTextView=(TextView) findViewById(R.id.greetingsTextView);
+     View root = findViewById(R.id.settings_homepage_container);
+
+     if(hours>=0 && hours<=11){
+         greeting = "Good Morning, ";
+
+     } else if(hours>=12 && hours<=15){
+
+         greeting = "Good AfterNoon, ";
+
+     } else if(hours>=16 && hours<=20){
+
+         greeting = "Good Evening, ";
+
+     } else if(hours>=21 && hours<=24){
+
+         greeting = "Good Night, ";
+
+     } else {
+         greeting = "Welcome To Earth, ";
+     }
+
+     homePageGreetingTextView.setText(greeting);
+
     }
 
     @VisibleForTesting
@@ -136,6 +178,5 @@ public class SettingsHomepageActivity extends FragmentActivity {
     public void onResume() {
         super.onResume();
         avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
-
     }
 }

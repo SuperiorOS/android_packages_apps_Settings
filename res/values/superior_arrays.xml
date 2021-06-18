@@ -88,76 +88,86 @@
           <item>@string/dashboard_random6</item>
      </string-array>
 
-    <!-- Values for the charging control modes -->
-    <string-array name="charging_control_mode_entries" translatable="false">
-        <item>@string/charging_control_mode_auto_title</item>
-        <item>@string/charging_control_mode_custom_title</item>
-    </string-array>
+     <!-- Values for the charging control modes -->
+     <string-array name="charging_control_mode_entries" translatable="false">
+          <item>@string/charging_control_mode_auto_title</item>
+          <item>@string/charging_control_mode_custom_title</item>
+     </string-array>
 
-    <string-array name="charging_control_mode_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-    </string-array>
+     <string-array name="charging_control_mode_values" translatable="false">
+          <item>1</item>
+          <item>2</item>
+     </string-array>
 
-    <!-- Values for the additional charging control modes if fine-grained control is supported -->
-    <string-array name="charging_control_mode_entries_fine_grained_control" translatable="false">
-        <item>@string/charging_control_mode_limit_title</item>
-    </string-array>
+     <!-- Values for the additional charging control modes if fine-grained control is supported -->
+     <string-array name="charging_control_mode_entries_fine_grained_control" translatable="false">
+          <item>@string/charging_control_mode_limit_title</item>
+     </string-array>
 
-    <string-array name="charging_control_mode_values_fine_grained_control" translatable="false">
-        <item>3</item>
-    </string-array>
+     <string-array name="charging_control_mode_values_fine_grained_control" translatable="false">
+          <item>3</item>
+     </string-array>
 
-    <!-- Back swipe actions -->
-    <string-array name="swipe_actions_entries" translatable="false">
-        <item>@string/action_nothing</item>
-        <item>@string/action_voice_search</item>
-        <item>@string/action_launch_camera</item>
-        <item>@string/action_flashlight</item>
-        <item>@string/action_app_action</item>
-        <item>@string/action_volume_panel</item>
-        <item>@string/action_screen_off</item>
-        <item>@string/action_screenshot</item>
-        <item>@string/action_notifications</item>
-        <item>@string/action_qs_panel</item>
-        <item>@string/action_clear_notifications</item>
-        <item>@string/action_ringer_modes</item>
-        <item>@string/kill_app</item>
-        <item>@string/recent_app_toggle</item>
-    </string-array>
+     <!-- Back swipe actions -->
+     <string-array name="swipe_actions_entries" translatable="false">
+          <item>@string/action_nothing</item>
+          <item>@string/action_voice_search</item>
+          <item>@string/action_launch_camera</item>
+          <item>@string/action_flashlight</item>
+          <item>@string/action_app_action</item>
+          <item>@string/action_volume_panel</item>
+          <item>@string/action_screen_off</item>
+          <item>@string/action_screenshot</item>
+          <item>@string/action_notifications</item>
+          <item>@string/action_qs_panel</item>
+          <item>@string/action_clear_notifications</item>
+          <item>@string/action_ringer_modes</item>
+          <item>@string/kill_app</item>
+          <item>@string/recent_app_toggle</item>
+     </string-array>
 
-    <string-array name="swipe_actions_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-    </string-array>
+     <string-array name="swipe_actions_values" translatable="false">
+          <item>0</item>
+          <item>1</item>
+          <item>2</item>
+          <item>3</item>
+          <item>4</item>
+          <item>5</item>
+          <item>6</item>
+          <item>7</item>
+          <item>8</item>
+          <item>9</item>
+          <item>10</item>
+          <item>11</item>
+          <item>12</item>
+          <item>13</item>
+     </string-array>
 
-    <string-array name="long_back_swipe_timeout_entries">
-       <item>250 ms</item>
-       <item>300 ms</item>
-       <item>500 ms</item>
-       <item>1000 ms</item>
-       <item>1500 ms</item>
-       <item>2000 ms</item>
-    </string-array>
+     <string-array name="long_back_swipe_timeout_entries">
+          <item>250 ms</item>
+          <item>300 ms</item>
+          <item>500 ms</item>
+          <item>1000 ms</item>
+          <item>1500 ms</item>
+          <item>2000 ms</item>
+     </string-array>
 
-    <string-array name="long_back_swipe_timeout_values" translatable="false">
-       <item>250</item>
-       <item>300</item>
-       <item>500</item>
-       <item>1000</item>
-       <item>1500</item>
-       <item>2000</item>
-    </string-array>
+     <string-array name="long_back_swipe_timeout_values" translatable="false">
+          <item>250</item>
+          <item>300</item>
+          <item>500</item>
+          <item>1000</item>
+          <item>1500</item>
+          <item>2000</item>
+     </string-array>
+
+     <!-- Face Unlock -->
+     <string-array name="face_unlock_method_entries">
+          <item>@string/face_unlock_method_default</item>
+          <item>@string/face_unlock_method_swipe</item>
+     </string-array>
+     <string-array name="face_unlock_method_values">
+          <item>0</item>
+          <item>1</item>
+     </string-array>
 </resources>

@@ -16,6 +16,24 @@
       "message": "Let\u0027s make it 42 it will match the search button radius.",
       "revId": "61beb67076b4d6aef436d018021b1aec5614e93b",
       "serverId": "cff56331-b3cb-4e5e-bf6a-abac220d6299"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6e7263a_a01f8665",
+        "filename": "res/layout/search_bar.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2021-06-30T11:35:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f99475d_235421cf",
+      "revId": "61beb67076b4d6aef436d018021b1aec5614e93b",
+      "serverId": "cff56331-b3cb-4e5e-bf6a-abac220d6299"
     }
   ]
 }

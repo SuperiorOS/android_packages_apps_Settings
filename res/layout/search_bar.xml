@@ -88,8 +88,8 @@
 
     <ImageView
         android:id="@+id/account_avatar_mirror"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="26dp" 
         android:layout_gravity="bottom|right" />

@@ -250,12 +250,6 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Saved Earbuds</string>
 
-    <!-- Theming -->
-    <string name="themes_title">Accent and Themes</string>
-    <string name="themes_summary">Accent and Dark theme picker</string>
-    <string name="accent_color">RGB Accent picker</string>
-    <string name="accent_summary">System wide accent maker</string>
-
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Color bucket</string>
 

@@ -37,7 +37,6 @@ import com.android.settings.display.ThemePreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.display.VrDisplayPreferenceController;
 import com.android.settings.display.EmulateDisplayCutoutPreferenceController;
-import com.android.settings.display.OverlayCategoryPreferenceController;
 import com.android.settings.display.FontPickerPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -130,14 +129,6 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new EmulateDisplayCutoutPreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
         controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
-        controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.accent_color"));
-        controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.font"));
-        controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.adaptive_icon_shape"));
-	controllers.add(new OverlayCategoryPreferenceController(context,
-		"android.theme.customization.icon_pack.android"));
         return controllers;
     }
 

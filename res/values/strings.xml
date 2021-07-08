@@ -2744,6 +2744,14 @@
     <string name="color_mode_option_saturated">Saturated</string>
     <!-- Display settings screen, Color mode option for "Adaptive color"  [CHAR LIMIT=45] -->
     <string name="color_mode_option_automatic">Adaptive</string>
+    <!-- Display settings screen, color balance category title [CHAR LIMIT=30] -->
+    <string name="color_mode_balance_category">Color balance</string>
+    <!-- Display settings screen, red color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_red">Red strength</string>
+    <!-- Display settings screen, green color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_green">Green strength</string>
+    <!-- Display settings screen, blue color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_blue">Blue strength</string>
 
     <!-- Key for the brightness level preference -->
     <string name="preference_key_brightness_level" translatable="false">brightness</string>
@@ -7646,6 +7654,7 @@
     <!-- Search keyword for "screen resolution" settings [CHAR_LIMIT=NONE]-->
     <string name="keywords_screen_resolution">FHD, QHD, resolution, 1080p, 1440p</string>
     <string name="keywords_color_temperature">color, temperature, D65, D73, white, yellow, blue, warm, cool</string>
+    <string name="keywords_color_balance">color, color balance, color correction, red, green, blue, LiveDisplay</string>
     <string name="keywords_lockscreen">slide to unlock, password, pattern, PIN</string>
     <!-- Search keyword for App pinning Settings [CHAR LIMIT=NONE] -->
     <string name="keywords_app_pinning">screen pinning</string>

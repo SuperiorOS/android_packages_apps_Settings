@@ -25,8 +25,9 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">data di compilazione, informazioni di compilazione</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Ripristina le statistiche</string>
-    <string name="battery_stats_message">Le statistiche della batteria stanno per essere resettate</string>
+    <string name="battery_stats_reset">Cancellare i dati di utilizzo?</string>
+    <string name="battery_stats_message">I dati sull\'utilizzo della batteria andranno persi</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +216,6 @@
     <string name="adaptive_playback_explainer">La riproduzione adattiva si interrompe automaticamente quando il volume della riproduzione è abbassato e riprenderà automaticamente quando il volume viene ripristinato entro il tempo impostato.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Auricolari salvati</string>
-    <!-- Theming -->
-    <string name="themes_title">Palette di colori</string>
-    <string name="themes_summary">Selettore di colore</string>
-    <string name="accent_color">Palette di colore RGB</string>
-    <string name="accent_summary">Creatore di palette di colore a livello di sistema</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Secchio di colore</string>
     <!-- Navbar length -->
@@ -295,6 +291,9 @@
     <string name="applock_locked">Bloccato</string>
     <string name="applock_unlocked">Sbloccato</string>
     <string name="applock_locked_apps">App bloccate</string>
+    <string name="applock_unlocked_apps">App sbloccate</string>
+    <string name="applock_lock_after_title">Blocca app dopo</string>
+    <string name="applock_lock_after_instantly">Immediatamente</string>
     <!-- LiveDisplay -->
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Colori accurati allo spazio colore sRGB</string>
@@ -336,4 +335,8 @@
     <!-- global cleartext penalties -->
     <string name="cleartext_network_policy_title">Limita il traffico di rete in chiaro</string>
     <string name="cleartext_network_policy_summary">Blocca tutto il traffico di rete non TLS. Richiede la configurazione del DNS privato. Nota: senza esenzioni esplicite, Tor e la maggior parte delle VPN non funzioneranno</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Consenti sblocco con il volto sulla schermata di blocco</string>
+    <string name="face_unlock_method_default">Quando lo schermo è acceso</string>
+    <string name="face_unlock_method_swipe">Quando si scorre sulla schermata di blocco</string>
 </resources>

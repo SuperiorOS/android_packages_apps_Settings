@@ -25,8 +25,9 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">ngày dựng, thông tin bản dựng</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Đặt lại thống kê</string>
-    <string name="battery_stats_message">Dữ liệu thống kê pin sẽ được đặt lại</string>
+    <string name="battery_stats_reset">Xoá hết thống kê pin?</string>
+    <string name="battery_stats_message">Thống kê Pin sẽ bị mất hết tất cả</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">CH Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +216,6 @@
     <string name="adaptive_playback_explainer">Tính năng phát lại thích ứng sẽ tự động tạm dừng phương tiện khi âm lượng bị tắt và sẽ tự động tiếp tục khi âm lượng được khôi phục trong thời gian đã đặt.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
-    <!-- Theming -->
-    <string name="themes_title">Màu nhấn</string>
-    <string name="themes_summary">Chọn màu nhấn</string>
-    <string name="accent_color">Màu nhấn RGB</string>
-    <string name="accent_summary">Mở rộng màu nhấn hệ thống</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Màu giao diện</string>
     <!-- Navbar length -->
@@ -388,4 +384,8 @@
     <!-- global cleartext penalties -->
     <string name="cleartext_network_policy_title">Hạn chế xóa văn bản tốc bộ mạng</string>
     <string name="cleartext_network_policy_summary">Chặn tất cả không bảo mật tầng vận tải lưu thông mạng. Lời khuyên cấu hình DNS bảo mật. Chú ý ngoài sự rõ ràng miễn trừ, Tor và hầu hết các VPN sẽ không hoạt động</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Cho phép mở khóa bằng khuôn mặt trên màn hình khóa</string>
+    <string name="face_unlock_method_default">Khi màn hình được bật</string>
+    <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
 </resources>

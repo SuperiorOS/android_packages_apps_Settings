@@ -51,7 +51,6 @@
     <!-- Navbar Pill hide -->
     <!-- Adaptive Playback -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Theming -->
     <!-- Themes customization -->
     <!-- Navbar length -->
     <!-- Ambient music ticker location -->
@@ -72,4 +71,5 @@
     <!-- Battery health -->
     <!-- Volume link notification -->
     <!-- global cleartext penalties -->
+    <!-- Face Unlock -->
 </resources>

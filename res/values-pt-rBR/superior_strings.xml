@@ -25,8 +25,6 @@
     <string name="build_date_default">01-01-2015-0000</string>
     <string name="keywords_build_date">data da compilação, informações da compilação</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Redefinir estatísticas</string>
-    <string name="battery_stats_message">Os históricos e estatísticas da bateria serão redefinidos</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +213,6 @@
     <string name="adaptive_playback_explainer">Adaptive playback automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Fones de ouvido salvos</string>
-    <!-- Theming -->
-    <string name="themes_title">Cores de destaque</string>
-    <string name="themes_summary">Seletor da cor de destaque</string>
-    <string name="accent_color">Seletor de realce RGB</string>
-    <string name="accent_summary">Gerador de acento do sistema</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Seletor de cores</string>
     <!-- Navbar length -->
@@ -322,4 +315,5 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Associar volumes de toque &amp; notificação</string>
     <!-- global cleartext penalties -->
+    <!-- Face Unlock -->
 </resources>

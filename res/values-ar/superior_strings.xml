@@ -25,8 +25,6 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">تاريخ الإنشاء، معلومات النسخة</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">إعادة تعيين</string>
-    <string name="battery_stats_message">سيتم إعادة تعيين إحصائية البطارية</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">متجر play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -117,7 +115,6 @@
     <!-- Navbar Pill hide -->
     <!-- Adaptive Playback -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Theming -->
     <!-- Themes customization -->
     <!-- Navbar length -->
     <!-- Ambient music ticker location -->
@@ -139,4 +136,5 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">ربط مستوى الرنين &amp; مع الاشعارات</string>
     <!-- global cleartext penalties -->
+    <!-- Face Unlock -->
 </resources>

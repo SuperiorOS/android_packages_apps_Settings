@@ -25,8 +25,9 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">дата сборки, информация о сборке</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Сбросить статистику</string>
-    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
+    <string name="battery_stats_reset">Очистить данные об использовании?</string>
+    <string name="battery_stats_message">Данные об использовании батареи будут потеряны</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +216,6 @@
     <string name="adaptive_playback_explainer">Адаптивное воспроизведение автоматически приостанавливает медиа когда звук выключен и возобновляет автоматически при восстановлении громкости в течение заданного времени.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
-    <!-- Theming -->
-    <string name="themes_title">Цвет акцента</string>
-    <string name="themes_summary">Выбор цвета</string>
-    <string name="accent_color">Выбор акцента RGB</string>
-    <string name="accent_summary">Системный производитель акцентов</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Палитра цветов</string>
     <!-- Navbar length -->
@@ -391,4 +387,8 @@
     <!-- global cleartext penalties -->
     <string name="cleartext_network_policy_title">Ограничить сетевой трафик в чистом виде</string>
     <string name="cleartext_network_policy_summary">Блокирует весь Non-TLS сетевой трафик. Требуется настройка DNS. Примечание: без явных исключений Tor и большинство VPN не будут работать</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Разрешить разблокировку лицом на экране блокировки</string>
+    <string name="face_unlock_method_default">Когда экран включен</string>
+    <string name="face_unlock_method_swipe">При проведении пальцем по экрану блокировки</string>
 </resources>

@@ -16,41 +16,96 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">Wersja SuperiorOS</string>
+    <string name="superior_version_default">Nieznana</string>
+    <string name="keywords_superior_version">Wersja SuperiorOS, wersja superioros</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Nazwa kodowa urządzenia</string>
+    <string name="build_date">Data kompilacji</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">data kompilacji, informacje o kompilacji</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Wyzerować statystyki?</string>
+    <string name="battery_stats_message">Statystyki użycia baterii zostaną wyzerowane</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Sklep Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura baterii</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Platforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Całkowita pamięć RAM</string>
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Znajdź czytnik linii papilarnych na froncie swojego telefonu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Znajdź czytnik linii papilarnych na lewej krawędzi swojego telefonu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Znajdź czytnik linii papilarnych na prawej krawędzi swojego telefonu.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Znajdź czytnik linii papilarnych na froncie swojego urządzenia.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Znajdź czytnik linii papilarnych na lewej krawędzi swojego urządzenia.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Znajdź czytnik linii papilarnych na prawej krawędzi swojego urządzenia.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Znajdź czytnik linii papilarnych na froncie swojego tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Znajdź czytnik linii papilarnych na lewej krawędzi swojego tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Znajdź czytnik linii papilarnych na prawej krawędzi swojego tabletu.</string>
     <!-- Superior Settings -->
+    <string name="superior_settings_dash_title">Gadżety Superior</string>
+    <string name="superior_settings_summary">Dodatkowe funkcje</string>
     <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Dźwięk podłączenia ładowarki</string>
+    <string name="charging_vibro_title">Wibracja przy podłączeniu ładowarki</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Dźwięk zrzutu ekranu</string>
     <!-- Advanced powermenu -->
+    <string name="global_actions_title">Menu zasilania</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Kolor diody</string>
+    <string name="value_equals_default">domyślne</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Szybkie odblokowanie</string>
+    <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie po wprowadzeniu poprawnego kodu PIN/hasła</string>
     <!-- About phone screen,  SELinux status -->
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Wyłączony</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_unit">stopni</string>
+    <string name="display_rotation_0_title">0 stopni</string>
+    <string name="display_rotation_90_title">90 stopni</string>
+    <string name="display_rotation_180_title">180 stopni</string>
+    <string name="display_rotation_270_title">270 stopni</string>
     <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Wibracja przy dotknięciu</string>
     <!-- Ambient Display wake gestures -->
     <!-- Doze on charge -->
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
     <!-- Fp gesture -->
     <!-- Volume rocker gestures -->
     <!-- Ambient music ticker -->
     <!-- Running services toggle -->
     <!-- Back Gestures -->
     <!-- Custom actions -->
+    <string name="action_search">Asystent</string>
+    <string name="action_voice_search">Wyszukiwanie głosowe</string>
+    <string name="action_launch_camera">Aparat</string>
+    <string name="action_flashlight">Latarka</string>
+    <string name="action_volume_panel">Panel głośności</string>
+    <string name="action_screen_off">Wyłącz ekran</string>
+    <string name="action_screenshot">Zrzut ekranu</string>
+    <string name="action_app_action">Aplikacja</string>
     <!-- Long back swipe options -->
     <!-- Pulse -->
     <!-- Navbar Pill hide -->
     <!-- Adaptive Playback -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Theming -->
     <!-- Themes customization -->
     <!-- Navbar length -->
     <!-- Ambient music ticker location -->
@@ -71,4 +126,5 @@
     <!-- Battery health -->
     <!-- Volume link notification -->
     <!-- global cleartext penalties -->
+    <!-- Face Unlock -->
 </resources>

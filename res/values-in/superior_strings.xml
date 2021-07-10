@@ -25,8 +25,9 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">tanggal pembuatan, info pembuatan</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Atur ulang statistik</string>
+    <string name="battery_stats_reset">Atur ulang statistik baterai?</string>
     <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +216,6 @@
     <string name="adaptive_playback_explainer">Pemutaran Adaptif secara otomatis menjeda media saat volume dimatikan dan akan dilanjutkan secara otomatis saat volume dipulihkan dalam waktu yang ditentukan.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
-    <!-- Theming -->
-    <string name="themes_title">Warna aksen</string>
-    <string name="themes_summary">Pemilih aksen</string>
-    <string name="accent_color">Pemilih aksen RGB</string>
-    <string name="accent_summary">Buat bebas aksen sistem</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Macam-macam warna</string>
     <!-- Navbar length -->
@@ -388,4 +384,8 @@
     <!-- global cleartext penalties -->
     <string name="cleartext_network_policy_title">Batasi teks bersih lalu lintas jaringan</string>
     <string name="cleartext_network_policy_summary">Memblokir semua lalu lintas jaringan non-TLS. Memerlukan konfigurasi DNS Pribadi. Catatan: Tanpa pengecualian eksplisit, Tor dan sebagian besar VPN tidak akan berfungsi</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Izinkan face unlock di layar kunci</string>
+    <string name="face_unlock_method_default">Saat layar dihidupkan</string>
+    <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
 </resources>

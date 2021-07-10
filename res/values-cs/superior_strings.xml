@@ -25,8 +25,9 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">datum kompilace, info o kompilaci</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_reset">Vynulovat statistiky?</string>
     <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Obchod Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +216,6 @@
     <string name="adaptive_playback_explainer">Adaptivní přehrávání automaticky pozastaví média, když je hlasitost ztlumena a automaticky se obnoví při obnově hlasitosti v daném čase.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
-    <!-- Theming -->
-    <string name="themes_title">Barvy zvýraznění</string>
-    <string name="themes_summary">Výběr barvy zvýraznění</string>
-    <string name="accent_color">Výběr RGB barev zvýraznění</string>
-    <string name="accent_summary">Barva zvýraznění pro celý systém</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Nastavení barev</string>
     <!-- Navbar length -->
@@ -391,4 +387,8 @@
     <!-- global cleartext penalties -->
     <string name="cleartext_network_policy_title">Omezit nešifrovaný síťový provoz</string>
     <string name="cleartext_network_policy_summary">Blokuje veškerý provoz sítě kromě TLS. Vyžaduje konfiguraci soukromého DNS. Poznámka: Bez výslovných výjimek nebudou Tor a většina VPN fungovat</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Povolit odemknutí obličejem na obrazovce uzamčení</string>
+    <string name="face_unlock_method_default">Když je obrazovka zapnutá</string>
+    <string name="face_unlock_method_swipe">Při přejetí prstem na uzamčené obrazovce</string>
 </resources>

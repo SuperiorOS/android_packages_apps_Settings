@@ -25,8 +25,9 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">yapı tarihi, yapı bilgisi</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">İstatistikleri sıfırla</string>
-    <string name="battery_stats_message">Pil kullanım geçmişi sıfırlanacak</string>
+    <string name="battery_stats_reset">Kullanım verileri temizlensin mi?</string>
+    <string name="battery_stats_message">Pil kullanım verileri kaybolacak</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google play</string>
     <!-- Manage applications, package string displayed in app snippet -->
@@ -215,11 +216,6 @@
     <string name="adaptive_playback_explainer">Uyarlanabilir oynatma, ses tamamen kapatıldığında medyayı otomatik olarak duraklatır ve ayarlanan süre içinde ses tekrar açıldığında otomatik olarak devam eder.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Kayıtlı kulaklıklar</string>
-    <!-- Theming -->
-    <string name="themes_title">Vurgu rengi</string>
-    <string name="themes_summary">Vurgu seçici</string>
-    <string name="accent_color">RGB Vurgu seçici</string>
-    <string name="accent_summary">Sistem çapında vurgu oluşturucu</string>
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">Renk seçin</string>
     <!-- Navbar length -->
@@ -389,4 +385,8 @@
     <!-- global cleartext penalties -->
     <string name="cleartext_network_policy_title">Açık metin ağ trafiğini kısıtla</string>
     <string name="cleartext_network_policy_summary">TLS dışı tüm ağ trafiğini engeller. Özel DNS yapılandırması gerektirir. Not: Açık muafiyetler olmadan Tor ve çoğu VPN çalışmaz</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Kilit ekranında yüz kilidini açmaya izin ver</string>
+    <string name="face_unlock_method_default">Ekran açıldığında</string>
+    <string name="face_unlock_method_swipe">Kilit ekranında kaydırırken</string>
 </resources>

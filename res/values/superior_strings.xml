@@ -447,9 +447,12 @@
     <!-- Switch styles -->
     <string name="switch_style_title">Switch style</string>
     <string name="switch_default">Default</string>
+    <string name="switch_contained">Contained</string>
     <string name="switch_telegram">Telegram</string>
     <string name="switch_md2">Material Design 2</string>
+    <string name="switch_retro">Retro</string>
     <string name="switch_oos">OxygenOS 11</string>
+    <string name="switch_android12">Android 12</string>
 
     <!-- Density category -->
     <string name="density_category">Density options</string>

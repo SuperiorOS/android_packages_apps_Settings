@@ -460,4 +460,7 @@
     <!-- Clock style -->
     <string name="clock_style_title">Clock style</string>
     <string name="clock_style_summary">Customize lockscreen clock</string>
+
+    <!-- Styles and wallpapers -->
+    <string name="wallpaper_settings_summary">Accents, Icon packs, Icon shapes</string>
 </resources>

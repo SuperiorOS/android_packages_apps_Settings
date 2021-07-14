@@ -203,6 +203,7 @@
         <com.android.settingslib.RestrictedPreference
             android:key="wallpaper"
             android:title="@string/wallpaper_settings_title"
+            android:summary="@string/wallpaper_settings_summary"
             android:icon="@drawable/ic_styles"
             settings:keywords="@string/keywords_display_wallpaper"
             settings:useAdminDisabledSummary="true"

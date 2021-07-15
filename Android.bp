@@ -31,7 +31,8 @@ android_library {
            "SuperiorSettings/src/**/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.superior.settings"],
+    aaptflags: ["--extra-packages com.superior.settings",
+                "--extra-packages com.factor.bouncy"],
 
     resource_dirs: ["res",
                     "SuperiorSettings/res"
@@ -66,6 +67,7 @@ android_library {
         "faceunlock_framework",
         "airbnb-lottie",
         "androidx.dynamicanimation_dynamicanimation",
+        "bouncy",
     ],
 
     libs: [
@@ -105,4 +107,10 @@ android_app {
 android_library_import {
     name: "contextualcards",
     aars: ["libs/contextualcards.aar"],
+}
+
+android_library_import {
+    name: "bouncy",
+    aars: ["libs/bouncy-release.aar"],
+    sdk_version: "current",
 }

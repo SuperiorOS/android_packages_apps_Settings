@@ -64,6 +64,10 @@
     public <init>(android.content.Context);
 }
 
+# bouncy
+-keep class com.factor.bouncy.BouncyNestedScrollView { *; }
+-keep class com.factor.bouncy.BouncyRecyclerView { *; }
+
 # Keep classes that extends SliceBackgroundWorker, which are used by reflection.
 -keepclasseswithmembers class * extends com.android.settings.slices.SliceBackgroundWorker {
     public <init>(android.content.Context, android.net.Uri);

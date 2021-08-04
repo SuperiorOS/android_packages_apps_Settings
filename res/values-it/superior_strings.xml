@@ -339,4 +339,20 @@
     <string name="face_unlock_method_title">Consenti sblocco con il volto sulla schermata di blocco</string>
     <string name="face_unlock_method_default">Quando lo schermo è acceso</string>
     <string name="face_unlock_method_swipe">Quando si scorre sulla schermata di blocco</string>
+    <!-- Switch styles -->
+    <string name="switch_style_title">Cambia stile</string>
+    <string name="switch_default">Predefinito</string>
+    <string name="switch_contained">Contenuto</string>
+    <string name="switch_telegram">Telegramma</string>
+    <string name="switch_md2">Design del materiale 2</string>
+    <string name="switch_retro">Retrò</string>
+    <string name="switch_oos">OxygenOS 11</string>
+    <string name="switch_android12">Android 12</string>
+    <!-- Density category -->
+    <string name="density_category">Opzioni di densità</string>
+    <!-- Clock style -->
+    <string name="clock_style_title">Stile orologio</string>
+    <string name="clock_style_summary">Personalizza l\'orologio della schermata di blocco</string>
+    <!-- Styles and wallpapers -->
+    <string name="wallpaper_settings_summary">Accenti, pacchetti di icone, forme di icone</string>
 </resources>

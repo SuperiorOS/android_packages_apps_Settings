@@ -388,4 +388,20 @@
     <string name="face_unlock_method_title">Izinkan face unlock di layar kunci</string>
     <string name="face_unlock_method_default">Saat layar dihidupkan</string>
     <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
+    <!-- Switch styles -->
+    <string name="switch_style_title">Gaya Beralih</string>
+    <string name="switch_default">Bawaan</string>
+    <string name="switch_contained">Terkandung</string>
+    <string name="switch_telegram">Telegram</string>
+    <string name="switch_md2">Desain Material 2</string>
+    <string name="switch_retro">Retro</string>
+    <string name="switch_oos">OxygenOS 11</string>
+    <string name="switch_android12">Android 12</string>
+    <!-- Density category -->
+    <string name="density_category">Opsi kepadatan</string>
+    <!-- Clock style -->
+    <string name="clock_style_title">Gaya jam</string>
+    <string name="clock_style_summary">Sesuaikan jam layar kunci</string>
+    <!-- Styles and wallpapers -->
+    <string name="wallpaper_settings_summary">Aksen, Paket ikon, Bentuk ikon</string>
 </resources>

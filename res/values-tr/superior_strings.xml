@@ -389,4 +389,20 @@
     <string name="face_unlock_method_title">Kilit ekranında yüz kilidini açmaya izin ver</string>
     <string name="face_unlock_method_default">Ekran açıldığında</string>
     <string name="face_unlock_method_swipe">Kilit ekranında kaydırırken</string>
+    <!-- Switch styles -->
+    <string name="switch_style_title">Değiştirme stili</string>
+    <string name="switch_default">Varsayılan</string>
+    <string name="switch_contained">Sıkışık</string>
+    <string name="switch_telegram">Telegram</string>
+    <string name="switch_md2">Metaryel tasarım 2</string>
+    <string name="switch_retro">Eski still</string>
+    <string name="switch_oos">OxygenOS 11</string>
+    <string name="switch_android12">Android 12</string>
+    <!-- Density category -->
+    <string name="density_category">Ekran yoğunluğu</string>
+    <!-- Clock style -->
+    <string name="clock_style_title">Saat stili</string>
+    <string name="clock_style_summary">Kilit ekranı saatini özelleştirin</string>
+    <!-- Styles and wallpapers -->
+    <string name="wallpaper_settings_summary">Vurgu renkleri, Simge paketleri, Simge şekilleri</string>
 </resources>

@@ -388,4 +388,8 @@
     <string name="face_unlock_method_title">Cho phép mở khóa bằng khuôn mặt trên màn hình khóa</string>
     <string name="face_unlock_method_default">Khi màn hình được bật</string>
     <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
+    <!-- Switch styles -->
+    <!-- Density category -->
+    <!-- Clock style -->
+    <!-- Styles and wallpapers -->
 </resources>

@@ -391,4 +391,20 @@
     <string name="face_unlock_method_title">Разрешить разблокировку лицом на экране блокировки</string>
     <string name="face_unlock_method_default">Когда экран включен</string>
     <string name="face_unlock_method_swipe">При проведении пальцем по экрану блокировки</string>
+    <!-- Switch styles -->
+    <string name="switch_style_title">Переключить стиль</string>
+    <string name="switch_default">По умолчанию</string>
+    <string name="switch_contained">Содержит</string>
+    <string name="switch_telegram">Telegram</string>
+    <string name="switch_md2">Material Design 2</string>
+    <string name="switch_retro">Ретро</string>
+    <string name="switch_oos">OxygenOS 11</string>
+    <string name="switch_android12">Android 12</string>
+    <!-- Density category -->
+    <string name="density_category">Настройки плотности экрана</string>
+    <!-- Clock style -->
+    <string name="clock_style_title">Стиль часов</string>
+    <string name="clock_style_summary">Настроить часы на экране блокировки</string>
+    <!-- Styles and wallpapers -->
+    <string name="wallpaper_settings_summary">Акценты, пакеты иконок, формы иконок</string>
 </resources>

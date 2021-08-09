@@ -25,6 +25,7 @@
 
     <com.android.settings.superior.preferences.SpringScrollView
         android:id="@+id/main_content_scrollable_container"
+        android:layout_marginTop="26dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">

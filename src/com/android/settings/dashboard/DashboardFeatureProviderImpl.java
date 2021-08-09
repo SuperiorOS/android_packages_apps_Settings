@@ -367,6 +367,8 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
                 iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_google_settings);
             } else if (tile.getPackageName().equals("com.google.android.apps.wellbeing")) {
                 iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_wellbeing_settings);
+            } else if (tile.getPackageName().equals("com.xiaomi.parts")) {
+                iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_device_settings);
             } else if (forceRoundedIcon
                     && !TextUtils.equals(mContext.getPackageName(), tile.getPackageName())) {
                 iconDrawable = new AdaptiveIcon(mContext, iconDrawable);

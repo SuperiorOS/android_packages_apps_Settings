@@ -26,6 +26,14 @@
         android:order="-200"/>
 
     <Preference
+        android:order="-195"
+        settings:iconSpaceReserved="false"
+        android:selectable="false"
+        android:title="@string/top_level_connectivity"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
@@ -46,6 +54,14 @@
     <Preference 
         android:layout="@layout/divider" 
         android:order="-170"/>
+
+    <Preference
+        android:order="-165"
+        settings:iconSpaceReserved="false"
+        android:selectable="false"
+        android:title="@string/top_level_personalize"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
 
     <Preference
         android:key="top_level_superior_settings"
@@ -91,7 +107,15 @@
 
     <Preference 
         android:layout="@layout/divider" 
-        android:order="-100"/>
+        android:order="-105"/>
+
+    <Preference
+        android:order="-100"
+        settings:iconSpaceReserved="false"
+        android:selectable="false"
+        android:title="@string/top_level_security"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
 
     <Preference
         android:key="top_level_privacy"
@@ -131,6 +155,15 @@
     <Preference 
         android:layout="@layout/divider" 
         android:order="-90"/>
+
+    <Preference
+        android:order="-80"
+        settings:iconSpaceReserved="false"
+        android:selectable="false"
+        android:title="@string/top_level_others"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
+
 
     <Preference
         android:key="top_level_accessibility"

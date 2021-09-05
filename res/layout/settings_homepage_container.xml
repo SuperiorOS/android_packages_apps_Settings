@@ -23,7 +23,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.android.settings.superior.preferences.SpringScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/main_content_scrollable_container"
         android:layout_marginTop="26dp"
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                 android:background="?android:attr/windowBackground"/>
 
         </LinearLayout>
-    </com.android.settings.superior.preferences.SpringScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

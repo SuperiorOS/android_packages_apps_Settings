@@ -405,4 +405,12 @@
     <string name="clock_style_summary">Personalizar o relógio da tela de bloqueio</string>
     <!-- Styles and wallpapers -->
     <string name="wallpaper_settings_summary">Acentos, pacotes de ícones, formatos dos ícones</string>
+    <!-- Power Button Fingerprint -->
+    <string name="fingerprint_power_button_press_title">Pressione para desbloquear</string>
+    <string name="fingerprint_power_button_press_off_summary">Toque no botão liga/desliga para desbloquear com impressão digital quando a tela estiver desligada</string>
+    <string name="fingerprint_power_button_press_on_summary">Pressione o botão liga/desliga para desbloquear com impressão digital quando a tela estiver desligada</string>
+    <!-- Dashboard categories -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
 </resources>

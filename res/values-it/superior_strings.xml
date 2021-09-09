@@ -294,7 +294,57 @@
     <string name="applock_unlocked_apps">App sbloccate</string>
     <string name="applock_lock_after_title">Blocca app dopo</string>
     <string name="applock_lock_after_instantly">Immediatamente</string>
+    <string name="applock_lock_after_15_seconds">15 secondi</string>
+    <string name="applock_lock_after_screen_off">Schermo spento</string>
+    <string name="applock_lock_after_summary">L\'app verrà bloccata dopo il fine tempo selezionato</string>
+    <string name="applock_lock_after_instantly_summary">L\'app verrà bloccata istantaneamente quando chiusa</string>
+    <string name="applock_lock_after_15_seconds_summary">L\'app verrà bloccata 15 secondi dopo la chiusura</string>
+    <string name="applock_lock_after_screen_off_summary">L\'app verrà bloccata quando lo schermo è spento</string>
+    <string name="applock_notification_info">Puoi mostrare/nascondere il contenuto della notifica in base all\'app facendo clic sull\'icona di notifica mostrata nelle preferenze di ciascuna app bloccata</string>
+    <string name="applock_show_notif">Visualizzazione del contenuto della notifica</string>
+    <string name="applock_hide_notif">Nascondere il contenuto della notifica</string>
+    <string name="applock_setup">Configura l\'armadietto delle app</string>
+    <string name="applock_overlay_summary">Questa funzione non è disponibile perché questa app è bloccata</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 app bloccata</item>
+        <item quantity="other">%d app bloccata</item>
+    </plurals>
+    <string name="keywords_applock_settings">blocco app, blocco app, blocco app, blocco app</string>
     <!-- LiveDisplay -->
+    <string name="live_display_summary">Ottimizza lo schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
+    <string name="live_display_mode">Modalità display</string>
+    <string name="live_display_color_temperature_title">Temperatura di colore</string>
+    <string name="live_display_color_temperature_summary">Giorno: <xliff:g id="giorno_temperatura">%1$d</xliff:g>K  Notte: <xliff:g id="notte_temperatura">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="gradi">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Giorno</string>
+    <string name="live_display_night">Notte</string>
+    <string name="live_display_outdoor_mode_title">Modalità esterna automatica</string>
+    <string name="live_display_outdoor_mode_summary">Aumenta automaticamente la luminosità e la saturazione sotto la luce diretta del sole</string>
+    <string name="live_display_anti_flicker_title">Anti sfarfallio</string>
+    <string name="live_display_anti_flicker_summary">Previene lo sfarfallio esteso e riduce l\'affaticamento degli occhi in condizioni di scarsa illuminazione. Potrebbe ridurre la precisione del colore e influire sul modo in cui vengono visualizzati alcuni elementi.</string>
+    <string name="live_display_low_power_title">Ridurre il consumo di energia</string>
+    <string name="live_display_low_power_summary">Regola il display per il minor consumo di energia senza degradazione</string>
+    <string name="live_display_enhance_color_title">Migliora i colori</string>
+    <string name="live_display_enhance_color_summary">Migliora la vivacità del colore di tonalità della carne, paesaggi e altre immagini</string>
+    <string name="live_display_color_profile_title">Profilo colore</string>
+    <string name="live_display_color_profile_standard_title">Standard</string>
+    <string name="live_display_color_profile_standard_summary">Colori accurati e bianchi brillanti</string>
+    <string name="live_display_color_profile_natural_title">Naturale</string>
+    <string name="live_display_color_profile_natural_summary">Colori realistici e tonalità della pelle</string>
+    <string name="live_display_color_profile_dynamic_title">Dinamico</string>
+    <string name="live_display_color_profile_dynamic_summary">Colori esaltati e bianchi brillanti</string>
+    <string name="live_display_color_profile_cinema_title">Cinema</string>
+    <string name="live_display_color_profile_cinema_summary">Perfetta riproduzione dei colori per i video</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+    <string name="live_display_color_profile_astronomy_summary">Rosso intenso per preservare la visione notturna</string>
+    <string name="live_display_color_profile_photography_title">Fotografia</string>
+    <string name="live_display_color_profile_photography_summary">Perfetta riproduzione dei colori per le foto</string>
+    <string name="live_display_color_profile_basic_title">Di base</string>
+    <string name="live_display_color_profile_basic_summary">Usa il display non calibrato</string>
+    <string name="live_display_color_profile_adaptive_title">Adattivo</string>
+    <string name="live_display_color_profile_adaptive_summary">I colori si adattano alle condizioni ambientali</string>
+    <string name="live_display_color_profile_reading_title">Lettura</string>
+    <string name="live_display_color_profile_reading_summary">Colori più caldi per meno affaticamento degli occhi</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Colori accurati allo spazio colore sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
@@ -355,4 +405,17 @@
     <string name="clock_style_summary">Personalizza l\'orologio della schermata di blocco</string>
     <!-- Styles and wallpapers -->
     <string name="wallpaper_settings_summary">Accenti, pacchetti di icone, forme di icone</string>
+    <!-- Power Button Fingerprint -->
+    <string name="fingerprint_power_button_press_title">Premi per sbloccare</string>
+    <string name="fingerprint_power_button_press_off_summary">Tocca il pulsante di accensione per sbloccare con l\'impronta digitale quando lo schermo è spento</string>
+    <string name="fingerprint_power_button_press_on_summary">Premi saldamente il pulsante di accensione per sbloccare con l\'impronta digitale quando lo schermo è spento</string>
+    <!-- Dashboard categories -->
+    <string name="top_level_connectivity">Connettività</string>
+    <string name="top_level_personalize">Personalizzare</string>
+    <string name="top_level_security">Sicurezza</string>
+    <string name="top_level_others">Altri</string>
+    <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">Scegli una dimensione del modello</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
 </resources>

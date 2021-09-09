@@ -141,4 +141,9 @@
     <!-- Density category -->
     <!-- Clock style -->
     <!-- Styles and wallpapers -->
+    <!-- Power Button Fingerprint -->
+    <!-- Dashboard categories -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
 </resources>

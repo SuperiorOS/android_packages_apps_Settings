@@ -389,7 +389,27 @@
     <string name="face_unlock_method_default">Khi màn hình được bật</string>
     <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
     <!-- Switch styles -->
+    <string name="switch_style_title">Chuyển đổi phong cách</string>
+    <string name="switch_default">Mặc định</string>
+    <string name="switch_contained">Contained</string>
+    <string name="switch_telegram">Telegram</string>
+    <string name="switch_md2">Material Design 2</string>
+    <string name="switch_retro">Hoài cổ</string>
+    <string name="switch_oos">OxygenOS 11</string>
+    <string name="switch_android12">Android 12</string>
     <!-- Density category -->
+    <string name="density_category">Tùy chọn mật độ</string>
     <!-- Clock style -->
+    <string name="clock_style_title">Kiểu đồng hồ</string>
+    <string name="clock_style_summary">Tùy chỉnh đồng hồ trên màn hình khóa</string>
     <!-- Styles and wallpapers -->
+    <string name="wallpaper_settings_summary">Gói biểu tượng, kích cỡ, cấu trúc</string>
+    <!-- Power Button Fingerprint -->
+    <string name="fingerprint_power_button_press_title">Nhấn để mở khoá</string>
+    <string name="fingerprint_power_button_press_off_summary">Chạm vào nút nguồn để mở khóa bằng vân tay khi màn hình tắt</string>
+    <string name="fingerprint_power_button_press_on_summary">Nhấn nút nguồn để mở khóa bằng vân tay khi màn hình tắt</string>
+    <!-- Dashboard categories -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
 </resources>

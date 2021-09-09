@@ -16,8 +16,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Superior OS version -->
+    <string name="superior_version">SuperiorOS versiyası</string>
+    <string name="superior_version_default">Bilinmir</string>
+    <string name="keywords_superior_version">SuperiorOS versiyası, superior versiyası</string>
     <!-- About phone screen, build date -->
+    <string name="about_device_name">Cihaz kod adı</string>
+    <string name="build_date">Quruluş tarixi</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">quruluş tarixi, quruluş məlumatı</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">İstifadə verilənləri təmizlənsin?</string>
     <!-- App details: open play store link if app is user installed -->
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
@@ -75,4 +83,9 @@
     <!-- Density category -->
     <!-- Clock style -->
     <!-- Styles and wallpapers -->
+    <!-- Power Button Fingerprint -->
+    <!-- Dashboard categories -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
 </resources>

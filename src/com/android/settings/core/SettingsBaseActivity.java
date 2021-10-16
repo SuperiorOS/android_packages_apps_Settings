@@ -142,6 +142,14 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
         mToolbar = toolbar;
     }
 
+    public CollapsingToolbarLayout getCollapsingToolbarLayout() {
+        return mCollapsingToolbarLayout;
+    }
+
+    public AppBarLayout getAppBarLayout() {
+        return mAppBarLayout;
+    }
+
     @Override
     public boolean onNavigateUp() {
         if (!super.onNavigateUp()) {

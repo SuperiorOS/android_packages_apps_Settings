@@ -54,4 +54,8 @@
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 
+    <!--Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons">Combined signal icons in status bar</string>
+    <string name="combined_status_bar_signal_icons_summary">Show combined signal icons in status bar</string>
+
 </resources>

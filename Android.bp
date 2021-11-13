@@ -112,6 +112,7 @@ android_library {
         "telephony_flags_core_java_lib",
         "setupdesign-lottie-loading-layout",
         "com.github.bumptech.glide_glide",
+        "VendorSupport-preference",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

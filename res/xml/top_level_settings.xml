@@ -44,7 +44,7 @@
         android:key="top_level_superior_settings"
         android:title="@string/superior_settings_dash_title"
         android:summary="@string/superior_settings_summary"
-        android:icon="@drawable/ic_settings_superior"
+        android:icon="@drawable/ic_settings_superior_homepage"
         android:order="-135"
         android:fragment="com.superior.settings.SuperiorSettings"/>
 

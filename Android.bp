@@ -89,6 +89,7 @@ android_library {
         "SettingsLibActivityEmbedding",
         "Settings-change-ids",
         "faceunlock_framework",
+        "VendorSupport-preference",
     ],
 
     libs: [

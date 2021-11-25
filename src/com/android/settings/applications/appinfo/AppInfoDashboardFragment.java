@@ -21,6 +21,7 @@ import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import android.app.Activity;
 import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
+import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -42,7 +43,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import androidx.annotation.VisibleForTesting;
-
+import com.android.internal.util.superior.SuperiorUtils
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
@@ -216,8 +217,8 @@ public class AppInfoDashboardFragment extends DashboardFragment
         super.onCreate(icicle);
         mFinishing = false;
         final Activity activity = getActivity();
-        mDpm = (DevicePolicyManager) activity.getSystemService(Context.DEVICE_POLICY_SERVICE);
-        mUserManager = (UserManager) activity.getSystemService(Context.USER_SERVICE);
+        mDpm = activity.getSystemService(DevicePolicyManager.class);
+        mUserManager = activity.getSystemService(UserManager.class);
         mPm = activity.getPackageManager();
         if (!ensurePackageInfoAvailable(activity)) {
             return;
@@ -377,8 +378,11 @@ public class AppInfoDashboardFragment extends DashboardFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        Context mContext = getContext();
-        if (com.android.internal.util.superior.SuperiorUtils.isPackageInstalled(mContext,"com.android.vending")) {
+        // Utils.isSystemPackage doesn't include all aosp built apps, like Contacts etc. Add them
+        // and grab the Google Play Store itself (com.android.vending) in the process
+        if (SuperiorUtils.isPackageInstalled(getContext(), "com.android.vending", false)
+                && !Utils.isSystemPackage(getResources(), mPm, mPackageInfo)
+                && !isAospOrStore(mAppEntry.info.packageName)) {
             menu.add(0, PLAY_STORE, 0, R.string.app_play_store)
                     .setIcon(R.drawable.ic_menu_play_store)
                     .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
@@ -408,10 +412,6 @@ public class AppInfoDashboardFragment extends DashboardFragment
             RestrictedLockUtilsInternal.setMenuItemAsDisabledByAdmin(getActivity(),
                     uninstallUpdatesItem, mAppsControlDisallowedAdmin);
         }
-        // Utils.isSystemPackage doesn't include all aosp built apps, like Contacts etc. Add them
-        // and grab the Google Play Store itself (com.android.vending) in the process
-        menu.findItem(PLAY_STORE).setVisible(!Utils.isSystemPackage(getContext().getResources(), mPm, mPackageInfo)
-                && !isAospOrStore(mAppEntry.info.packageName));
     }
 
     @Override
@@ -426,8 +426,9 @@ public class AppInfoDashboardFragment extends DashboardFragment
             case PLAY_STORE:
                 openPlayStore(mAppEntry.info.packageName);
                 return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -451,26 +452,15 @@ public class AppInfoDashboardFragment extends DashboardFragment
 
     @VisibleForTesting
     boolean shouldShowUninstallForAll(AppEntry appEntry) {
-        boolean showIt = true;
-        if (mUpdatedSysApp) {
-            showIt = false;
-        } else if (appEntry == null) {
-            showIt = false;
-        } else if ((appEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
-            showIt = false;
-        } else if (mPackageInfo == null || mDpm.packageHasActiveAdmins(mPackageInfo.packageName)) {
-            showIt = false;
-        } else if (UserHandle.myUserId() != 0) {
-            showIt = false;
-        } else if (mUserManager.getUsers().size() < 2) {
-            showIt = false;
-        } else if (getNumberOfUserWithPackageInstalled(mPackageName) < 2
-                && (appEntry.info.flags & ApplicationInfo.FLAG_INSTALLED) != 0) {
-            showIt = false;
-        } else if (AppUtils.isInstant(appEntry.info)) {
-            showIt = false;
-        }
-        return showIt;
+        return !(mUpdatedSysApp || appEntry == null
+            || (appEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0
+            || mPackageInfo == null
+            || mDpm.packageHasActiveAdmins(mPackageInfo.packageName)
+            || UserHandle.myUserId() != 0
+            || mUserManager.getUsers().size() < 2
+            || (getNumberOfUserWithPackageInstalled(mPackageName) < 2
+                && (appEntry.info.flags & ApplicationInfo.FLAG_INSTALLED) != 0)
+            || AppUtils.isInstant(appEntry.info));
     }
 
     @VisibleForTesting
@@ -522,12 +512,15 @@ public class AppInfoDashboardFragment extends DashboardFragment
 
     private void openPlayStore(String packageName) {
         // Launch an intent to the play store entry
-        String playURL = "https://play.google.com/store/apps/details?id=" + packageName;
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(playURL));
-        startActivity(i);
+        final String playURL = "https://play.google.com/store/apps/details?id=" + packageName;
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(playURL)));
+        } catch (ActivityNotFoundException e) {
+            Log.e(TAG, "Unable to resolve activity for opening playstore app entry");
+        }
     }
-     private boolean isAospOrStore(String packageName) {
+
+    private boolean isAospOrStore(String packageName) {
         return packageName.contains("com.android");
     }
 

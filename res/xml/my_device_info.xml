@@ -55,17 +55,16 @@
             settings:enableCopying="true"/ -->
     </PreferenceCategory>
 
-    <PreferenceCategory
+<!--
+     <PreferenceCategory
         android:title="@string/my_device_info_legal_category_title">
 
-        <!-- Legal information -->
-        <!--<Preference
+        <Preference
             android:key="legal_container"
             android:order="15"
             android:title="@string/legal_information"
-            android:fragment="com.android.settings.LegalSettings"/>-->
+            android:fragment="com.android.settings.LegalSettings"/>
 
-        <!-- Regulatory labels -->
         <Preference
             android:key="regulatory_info"
             android:order="16"
@@ -73,13 +72,12 @@
             <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
         </Preference>
 
-        <!-- Safety & regulatory manual -->
         <Preference
             android:key="safety_info"
             android:order="17"
             android:title="@string/safety_and_regulatory_info"/>
     </PreferenceCategory>
-
+-->
     <PreferenceCategory
         android:key="device_detail_category"
         android:selectable="false"

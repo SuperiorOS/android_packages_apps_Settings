@@ -128,11 +128,9 @@
 
     <!-- Fullscreen gestures -->
     <string name="navbar_category">Navigation bar</string>
-    <string name="fullscreen_gestures_title">Fullscreen gestures</string>
-    <string name="fullscreen_gestures_summary">Hide navbar pill and keyboard space</string>
 
     <!-- Gesture navbar length -->
     <string name="gesture_navbar_length_title">Pill length</string>
-    <string name="short_label">Short</string>
+    <string name="hide_label">Hidden</string>
     <string name="long_label">Long</string>
 </resources>

@@ -21,5 +21,5 @@
     <path
         android:pathData="M3,4V8H21V4H3ZM21,20H3V16H21V20ZM7,17H5V19H7V17ZM5,7H7V5H5V7ZM3,14H21V10H3V14ZM7,11H5V13H7V11Z"
         android:fillType="evenOdd"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:fillColor="?android:attr/colorAccent"/>
 </vector>

@@ -21,8 +21,8 @@
     <path
         android:pathData="M9.5,4V2H14.5V4H16.67C17.4,4 18,4.6 18,5.33V15V20.67C18,21.4 17.4,22 16.66,22H7.33C6.6,22 6,21.4 6,20.67V15V5.33C6,4.6 6.6,4 7.33,4H9.5ZM8,15V20H16V15V6H8V15Z"
         android:fillType="evenOdd"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:fillColor="?android:attr/colorAccent"/>
     <path
         android:pathData="M16.67,22H7.33C6.6,22 6,21.4 6,20.67V5.33C6,4.6 6.6,4 7.33,4H16.67C17.4,4 18,4.6 18,5.33V20.67C18,21.4 17.4,22 16.67,22Z"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:fillColor="?android:attr/colorAccent"/>
 </vector>

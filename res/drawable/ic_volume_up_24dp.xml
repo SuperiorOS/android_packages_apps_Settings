@@ -21,11 +21,11 @@
     <path
         android:pathData="M3,15V9H7L12,4V20L7,15H3ZM10,15.17V8.83L7.83,11H5V13H7.83L10,15.17Z"
         android:fillType="evenOdd"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:fillColor="?android:attr/colorAccent"/>
     <path
         android:pathData="M16.5,12C16.5,10.23 15.48,8.71 14,7.97V16.02C15.48,15.29 16.5,13.77 16.5,12Z"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:fillColor="?android:attr/colorAccent"/>
     <path
         android:pathData="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.85 14,18.71V20.77C18.01,19.86 21,16.28 21,12C21,7.72 18.01,4.14 14,3.23Z"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:fillColor="?android:attr/colorAccent"/>
 </vector>

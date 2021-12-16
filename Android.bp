@@ -51,7 +51,8 @@ android_library {
     aaptflags: ["--extra-packages com.superior.settings"],
 
     resource_dirs: ["res",
-                    "SuperiorSettings/res"
+                    "SuperiorSettings/res",
+                    "res-pixel"
     ],
 
     static_libs: [
@@ -82,7 +83,10 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "lottie",
         "VendorSupport-preference",
+        "SettingsGoogle-lib",
     ],
+    manifest: "AndroidManifest.xml",
+    additional_manifests: ["SettingsGoogle-Manifest.xml"],
 
     libs: [
         "telephony-common",

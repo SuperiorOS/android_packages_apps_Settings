@@ -68,6 +68,12 @@
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
             settings:keywords="@string/keywords_dark_ui_mode"/>
 
+        <SwitchPreference
+            android:title="@string/pitch_colors"
+            android:key="pitch_theme"
+            android:summary="@string/pitch_colors_summary"
+            android:dependency="dark_ui_mode" />
+
         <Preference
             android:key="font_size"
             android:title="@string/title_font_size"

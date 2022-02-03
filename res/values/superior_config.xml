@@ -7,4 +7,7 @@
 
      <!-- Show battery cycle count -->
      <bool name="config_show_battery_cycle_count" translatable="false">false</bool>
+
+     <!-- Fingerprint -->
+     <bool name="config_is_front_facing_fps" translatable="false">false</bool>
 </resources>

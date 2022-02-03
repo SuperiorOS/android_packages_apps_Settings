@@ -76,4 +76,12 @@
      <!-- Force LTE_CA -->
      <string name="force_lte_ca">Force LTE CA</string>
      <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
+
+     <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+     <string name="fingerprint_enroll_find_sensor_message_front">Locate the fingerprint sensor on
+          the front of your phone.</string>
+     <string name="fingerprint_enroll_find_sensor_message_rear">Locate the fingerprint sensor on the
+          back of your phone.</string>
+     <string name="fingerprint_enroll_find_sensor_message_side">Locate the fingerprint sensor on the
+          side of your phone.</string>
 </resources>

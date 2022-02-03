@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2022 The SuperiorOS Project
+<!--
+     Copyright (C) 2018-2022 SuperiorOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +15,7 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
-    <bool name="configShowDeviceSensitiveInfo">false</bool>
-
-    <!-- Whether to show min/max refresh rate in display settings -->
-    <bool name="config_show_refresh_rate_controls">false</bool>
-
-    <!-- Indicates whether device has a front facing fingerprint sensor (not udfps). -->
-    <bool name="config_is_front_facing_fps" translatable="false">false</bool>
-
+<resources>
+    <!-- Fingerprint -->
+    <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
 </resources>

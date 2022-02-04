@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 AOSP-Krypton Project
+ * Copyright (C) 2021-2022 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,6 +42,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.settings.R
 import com.google.android.material.appbar.AppBarLayout
 
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
+import kotlinx.coroutines.withContext
+
 /**
  * [Fragment] that hosts a [RecyclerView] with a vertical
  * list of application info. Items display an icon, name
@@ -50,35 +58,43 @@ import com.google.android.material.appbar.AppBarLayout
  */
 abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.OnActionExpandListener {
 
+    private val mutex = Mutex()
+
+    private lateinit var fragmentScope: CoroutineScope
     private lateinit var appBarLayout: AppBarLayout
     private lateinit var packageManager: PackageManager
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: AppListAdapter
-    private lateinit var packageList: List<PackageInfo>
+
+    private val packageList = mutableListOf<PackageInfo>()
 
     private var searchText = ""
-    private var category: Int = CATEGORY_USER_ONLY
-    private var customFilter: ((PackageInfo) -> Boolean)? = null
-    private var comparator: ((PackageInfo, PackageInfo) -> Int)? = null
-    private var listener: ((List<String>) -> Unit)? = null
+    private var displayCategory: Int = CATEGORY_USER_ONLY
+    private var packageFilter: ((PackageInfo) -> Boolean) = { true }
+    private var packageComparator: ((PackageInfo, PackageInfo) -> Int) = { a, b ->
+        getLabel(a).compareTo(getLabel(b))
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        fragmentScope = CoroutineScope(Dispatchers.Main)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-        activity!!.let {
-            it.setTitle(getTitle())
-            appBarLayout = it.findViewById(R.id.app_bar)
-        }
-        packageManager = context!!.packageManager
-        packageList = packageManager.getInstalledPackages(0)
+        appBarLayout = requireActivity().findViewById(R.id.app_bar)
+        packageManager = requireContext().packageManager
+        packageList.addAll(packageManager.getInstalledPackages(0))
     }
 
     /**
-     * Override this function to set the title res id of this fragment.
+     * Override this function to set the title of this fragment.
      */
     abstract protected fun getTitle(): Int
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        requireActivity().setTitle(getTitle())
         adapter = AppListAdapter()
         recyclerView = view.findViewById<RecyclerView>(R.id.apps_list).also {
             it.layoutManager = LinearLayoutManager(context)
@@ -104,8 +120,12 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
             override fun onQueryTextSubmit(query: String) = false
 
             override fun onQueryTextChange(newText: String): Boolean {
-                searchText = newText
-                refreshList()
+                fragmentScope.launch {
+                    mutex.withLock {
+                        searchText = newText
+                    }
+                    refreshList()
+                }
                 return true
             }
         })
@@ -127,6 +147,11 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
         return true
     }
 
+    override fun onDetach() {
+        fragmentScope.cancel()
+        super.onDetach()
+    }
+
     /**
      * Set the type of apps that should be displayed in the list.
      * Defaults to [CATEGORY_USER_ONLY].
@@ -135,7 +160,11 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
      * [CATEGORY_USER_ONLY], [CATEGORY_BOTH]
      */
     fun setDisplayCategory(category: Int) {
-        this.category = category
+        fragmentScope.launch {
+            mutex.withLock {
+                displayCategory = category
+            }
+        }
     }
 
     /**
@@ -144,54 +173,69 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
      * @param customFilter a function that takes a [PackageInfo] and
      * returns a [Boolean] indicating whether to show the item or not. 
      */
-    fun setCustomFilter(customFilter: ((packageInfo: PackageInfo) -> Boolean)?) {
-        this.customFilter = customFilter
-        refreshList()
+    fun setCustomFilter(customFilter: ((packageInfo: PackageInfo) -> Boolean)) {
+        fragmentScope.launch {
+            mutex.withLock {
+                packageFilter = customFilter
+            }
+        }
     }
 
     /**
-     * Set a [Comparator] for sorting the elements in the list. Can be
-     * set to null to sort based on their labels.
+     * Set a [Comparator] for sorting the elements in the list..
      *
      * @param comparator a function that takes two [PackageInfo]'s and returns
      * an [Int] representing their relative priority.
      */
-    fun setComparator(comparator: ((a: PackageInfo, b: PackageInfo) -> Int)?) {
-        this.comparator = comparator
-        refreshList()
+    fun setComparator(comparator: ((a: PackageInfo, b: PackageInfo) -> Int)) {
+        fragmentScope.launch {
+            mutex.withLock {
+                packageComparator = comparator
+            }
+        }
     }
 
     /**
-     * Called when user selects an item.
-     * 
+     * Called when user selected list is updated.
+     *
      * @param list a [List<String>] of selected items.
      */
     open protected fun onListUpdate(list: List<String>) {}
 
-    private fun refreshList() {
-        var list = packageList.filter {
-            when(category) {
-                CATEGORY_SYSTEM_ONLY -> it.applicationInfo.isSystemApp()
-                CATEGORY_USER_ONLY -> !it.applicationInfo.isSystemApp()
-                else -> true
+    /**
+     * Called when user selected an application.
+     *
+     * @param packageName the package name of the selected app.
+     */
+    open protected fun onAppSelected(packageName: String) {}
+
+    /**
+     * Called when user deselected an application.
+     *
+     * @param packageName the package name of the deselected app.
+     */
+    open protected fun onAppDeselected(packageName: String) {}
+
+    protected fun refreshList() {
+        fragmentScope.launch {
+            val list = withContext(Dispatchers.Default) {
+                mutex.withLock {
+                    packageList.filter {
+                        when (displayCategory) {
+                            CATEGORY_SYSTEM_ONLY -> it.applicationInfo.isSystemApp()
+                            CATEGORY_USER_ONLY -> !it.applicationInfo.isSystemApp()
+                            else -> true
+                        } &&
+                        getLabel(it).contains(searchText, true) &&
+                        packageFilter(it)
+                    }.sortedWith(packageComparator).map { appInfofromPackage(it) }
+                }
             }
-        }.filter {
-            getLabel(it).contains(searchText, true)
+            adapter.submitList(list)
         }
-        list = customFilter?.let { customFilter ->
-            list.filter {
-                customFilter(it)
-            }
-        } ?: list
-        list = comparator?.let {
-            list.sortedWith(it)
-        } ?: list.sortedWith { a, b ->
-            getLabel(a).compareTo(getLabel(b))
-        }
-        if (::adapter.isInitialized) adapter.submitList(list.map { appInfoFromPackageInfo(it) })
     }
 
-    private fun appInfoFromPackageInfo(packageInfo: PackageInfo) =
+    private fun appInfofromPackage(packageInfo: PackageInfo): AppInfo =
         AppInfo(
             packageInfo.packageName,
             getLabel(packageInfo),
@@ -201,65 +245,42 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
     private fun getLabel(packageInfo: PackageInfo) =
         packageInfo.applicationInfo.loadLabel(packageManager).toString()
 
-    private inner class AppListAdapter: ListAdapter<AppInfo, AppListViewHolder>(itemCallback) {
-        private val selectedIndices = mutableSetOf<Int>()
-        private val initialList: MutableList<String>
-
-        init {
-            initialList = getInitialCheckedList().toMutableList()
-        }
+    private inner class AppListAdapter :
+            ListAdapter<AppInfo, AppListViewHolder>(itemCallback)
+    {
+        private val checkedList = getInitialCheckedList().toMutableList()
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
             AppListViewHolder(layoutInflater.inflate(
                 R.layout.apps_list_item, parent, false))
 
         override fun onBindViewHolder(holder: AppListViewHolder, position: Int) {
-            getItem(position).let {
-                holder.label.setText(it.label)
-                holder.packageName.setText(it.packageName)
-                holder.icon.setImageDrawable(it.icon)
-                holder.itemView.setOnClickListener {
-                    if (selectedIndices.contains(position)){
-                        selectedIndices.remove(position)
-                    } else {
-                        selectedIndices.add(position)
-                    }
-                    notifyItemChanged(position)
-                    onListUpdate(getSelectedPackages())
+            val item = getItem(position)
+            val pkg = item.packageName
+            holder.label.setText(item.label)
+            holder.packageName.setText(pkg)
+            holder.icon.setImageDrawable(item.icon)
+            holder.checkBox.setChecked(checkedList.contains(pkg))
+            holder.itemView.setOnClickListener {
+                if (checkedList.contains(pkg)){
+                    checkedList.remove(pkg)
+                    onAppDeselected(pkg)
+                } else {
+                    checkedList.add(pkg)
+                    onAppSelected(pkg)
                 }
-                if (initialList.contains(it.packageName)) {
-                    initialList.remove(it.packageName)
-                    selectedIndices.add(position)
-                }
-                holder.checkBox.setChecked(selectedIndices.contains(position))
+                notifyItemChanged(position)
+                onListUpdate(checkedList.toList())
             }
         }
-
-        override fun submitList(list: List<AppInfo>?) {
-            selectedIndices.clear()
-            super.submitList(list)
-        }
-
-        private fun getSelectedPackages(): List<String> =
-            selectedIndices.map {
-                getItem(it)
-            }.map {
-                it.packageName
-            }.toList()
     }
 
-    private class AppListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val icon: ImageView
-        val label: TextView
-        val packageName: TextView
-        val checkBox: CheckBox
-
-        init {
-            icon = itemView.findViewById(R.id.icon)
-            label = itemView.findViewById(R.id.label)
-            packageName = itemView.findViewById(R.id.packageName)
-            checkBox = itemView.findViewById(R.id.checkBox)
-        }
+    private class AppListViewHolder(itemView: View) :
+            RecyclerView.ViewHolder(itemView) {
+        val icon: ImageView = itemView.findViewById(R.id.icon)
+        val label: TextView = itemView.findViewById(R.id.label)
+        val packageName: TextView = itemView.findViewById(R.id.packageName)
+        val checkBox: CheckBox = itemView.findViewById(R.id.checkBox)
     }
 
     private data class AppInfo(
@@ -275,7 +296,7 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
         const val CATEGORY_USER_ONLY = 1
         const val CATEGORY_BOTH = 2
 
-        private val itemCallback = object: DiffUtil.ItemCallback<AppInfo>() {
+        private val itemCallback = object : DiffUtil.ItemCallback<AppInfo>() {
             override fun areItemsTheSame(oldInfo: AppInfo, newInfo: AppInfo) =
                 oldInfo.packageName == newInfo.packageName
 

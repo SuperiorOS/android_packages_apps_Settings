@@ -202,4 +202,9 @@
     <string name="dc_dimming_info">Reduces eye strain in low light conditions by minimizing screen flicker. May result in reduced image quality and poor color production, or higher power consumption.</string>
     <string name="dc_dimming_main_switch_title">Use DC Dimming</string>
     <string name="keywords_display_dc_dimming">dc dimming, anti, flicker, eye, strain</string>
+
+    <!-- Per-app volume control -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Allow to set different volume levels for each app</string>
 </resources>

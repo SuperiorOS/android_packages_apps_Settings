@@ -52,7 +52,6 @@
     <!-- Back swipe actions -->
     <string-array name="swipe_actions_entries" translatable="false">
         <item>@string/action_nothing</item>
-        <item>@string/action_search</item>
         <item>@string/action_voice_search</item>
         <item>@string/action_launch_camera</item>
         <item>@string/action_flashlight</item>
@@ -70,7 +69,6 @@
 
     <string-array name="swipe_actions_values" translatable="false">
         <item>0</item>
-        <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>

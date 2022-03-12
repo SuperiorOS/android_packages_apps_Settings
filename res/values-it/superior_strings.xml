@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Superior OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="selinux_status">Stato di SELinux</string>
+    <string name="selinux_status_disabled">Disabilitato</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Forzato</string>
+    <string name="superior_version">Versione SuperiorOS</string>
+    <string name="superior_version_default">Sconosciuto</string>
+    <string name="keywords_superior_version">Versione SuperiorOS, versione superiore</string>
+    <string name="about_device_name">Nome in codice dispositivo</string>
+    <string name="build_date">Data di costruzione</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">data di costruzione, informazioni sulla costruzione</string>
+    <string name="device_info_protected_single_press">Tocca per mostrare le informazioni</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Opzioni di densità</string>
+    <string name="notification_log_summary">Mostra il registro della cronologia delle notifiche</string>
+    <string name="battery_stats_reset">Azzera le statistiche</string>
+    <string name="battery_stats_message">Le statistiche della cronologia della batteria verranno ripristinate</string>
+    <string name="superior_settings_dash_title">Prelibatezze Superior</string>
+    <string name="superior_settings_summary">Funzioni aggiuntive</string>
+    <string name="screenshot_shutter_sound_title">Suono di cattura schermo</string>
+    <string name="increasing_ring_volume_option_title">Volume della suoneria incrementale</string>
+    <string name="increasing_ring_min_volume_title">Avvia volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Tempo di accelerazione</string>
+    <string name="unlock_scramble_pin_layout_title">Disposizione casuale</string>
+    <string name="unlock_scramble_pin_layout_summary">Cambia la disposizione grafica dei numeri del PIN per lo sblocco del dispositivo</string>
+    <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando viene inserito il PIN/password corretti</string>
+    <string name="back_gesture_haptic_title">Riscontro tattile</string>
+    <string name="back_gesture_haptic_summary">Abilita l\'effetto tick tattile sul gesto indietro</string>
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">In basso</string>
+    <string name="back_options_dialog_title">Opzioni</string>
+    <string name="back_height_message">Porzione dello schermo utilizzabile per il gesto indietro.</string>
+    <string name="action_nothing">Nessuna azione</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Recenti</string>
+    <string name="action_search">Assistente</string>
+    <string name="action_voice_search">Ricerca vocale</string>
+    <string name="action_launch_camera">Fotocamera</string>
+    <string name="action_last_app">Ultima app</string>
+    <string name="action_splitscreen">Schermo diviso</string>
+    <string name="action_flashlight">Torcia</string>
+    <string name="action_clear_notifications">Cancella notifiche</string>
+    <string name="action_volume_panel">Pannello volume</string>
+    <string name="action_screen_off">Schermo spento</string>
+    <string name="action_notifications">Notifiche</string>
+    <string name="action_power_menu">Menù Accensione</string>
+    <string name="action_screenshot">Immagine schermo</string>
+    <string name="action_qs_panel">Pannello impostazioni rapide</string>
+    <string name="action_app_action">Applicazione</string>
+    <string name="action_ringer_modes">Modalità suoneria</string>
+    <string name="kill_app">Chiudi l\'app in primo piano</string>
+    <string name="recent_app_toggle">Cambia app recente</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opzioni avanzate per i gesti</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalizza i gesti e imposta azioni personalizzate</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzate</string>
+    <string name="swipe_app_select_summary">Seleziona un\'app da avviare con l\'azione di compressione</string>
+    <string name="long_back_swipe_timeout_title">Pausa dell\'azione di scorrimento lungo</string>
+    <string name="left_swipe_actions_title">Azione di scorrimento prolungato a sinistra</string>
+    <string name="left_swipe_app_action_title">Seleziona l\'app di scorrimento prolungato a sinistra</string>
+    <string name="right_swipe_actions_title">Azione di scorrimento prolungato a destra</string>
+    <string name="right_swipe_app_action_title">Seleziona l\'app di scorrimento prolungato a destra</string>
+    <string name="left_vertical_swipe_actions_title">Azione di scorrimento verticale a sinistra</string>
+    <string name="left_vertical_swipe_app_action_title">Seleziona l\'app di scorrimento verticale a sinistra</string>
+    <string name="right_vertical_swipe_actions_title">Azione di scorrimento verticale a destra</string>
+    <string name="right_vertical_swipe_app_action_title">Seleziona l\'app di scorrimento verticale a destra</string>
+    <string name="gesture_nav_tweaks_footer_info">Per scegliere un\'attività dell\'app specifica per l\'azione, premi a lungo su qualsiasi app nel selettore delle app.\n\nSe viene visualizzato il programma di avvio, scorri nella parte inferiore dello schermo per attivare l\'azione.</string>
+    <string name="back_swipe_extended_title">Azione di scorrimento estesa</string>
+    <string name="back_swipe_extended_summary">Attivare l\'azione con uno scorrimento più ampio (più della metà delle dimensioni del display) o uno scorrimento a L (più a lungo in verticale)</string>
+    <string name="touch_sensitivity_title">Aumenta la sensibilità al tocco</string>
+    <string name="touch_sensitivity_summary">Migliora il tocco quando si utilizza la protezione dello schermo</string>
+    <string name="keywords_touch_sensitivity">tocco, sensibilità, sensibile, protezione dello schermo, pellicola, reattivo, reattività</string>
+    <string name="wifi_timeout">Disattiva automaticamente il Wi-Fi</string>
+    <string name="wifi_timeout_summary">Il Wi-Fi si spegnerà dopo <xliff:g id="timeout_description">%1$s</xliff:g> se nessuna rete è connessa</string>
+    <string name="wifi_timeout_summary2">Disabilitato</string>
+    <string name="wifi_timeout_summary_never">Mai</string>
+    <string name="wifi_timeout_summary_15secs">15 secondi</string>
+    <string name="wifi_timeout_summary_30secs">30 secondi</string>
+    <string name="wifi_timeout_summary_1min">1 minuto</string>
+    <string name="wifi_timeout_summary_2mins">2 minuti</string>
+    <string name="wifi_timeout_summary_5mins">5 minuti</string>
+    <string name="wifi_timeout_summary_10mins">10 minuti</string>
+    <string name="wifi_timeout_summary_30mins">30 minuti</string>
+    <string name="wifi_timeout_summary_1hour">1 ora</string>
+    <string name="wifi_timeout_summary_2hours">2 ore</string>
+    <string name="wifi_timeout_summary_4hours">4 ore</string>
+    <string name="wifi_timeout_summary_8hours">8 ore</string>
+    <string name="bluetooth_timeout">Tempo scaduto Bluetooth</string>
+    <string name="bluetooth_timeout_summary">Il Bluetooth si spegnerà dopo <xliff:g id="timeout_description">%1$s</xliff:g> se nessun dispositivo è connesso</string>
+    <string name="bluetooth_timeout_summary2">Non disattivare automaticamente il Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Mai</string>
+    <string name="bluetooth_timeout_summary_15secs">15 secondi</string>
+    <string name="bluetooth_timeout_summary_30secs">30 secondi</string>
+    <string name="bluetooth_timeout_summary_1min">1 minuto</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minuti</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minuti</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minuti</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minuti</string>
+    <string name="bluetooth_timeout_summary_1hour">1 ora</string>
+    <string name="bluetooth_timeout_summary_2hours">2 ore</string>
+    <string name="bluetooth_timeout_summary_4hours">4 ore</string>
+    <string name="bluetooth_timeout_summary_8hours">8 ore</string>
+    <string name="pulse_on_new_tracks_title">Musica ambientale ticchettante</string>
+    <string name="pulse_on_new_tracks_summary">Mostra Ambient Display quando viene riprodotta una nuova traccia musicale</string>
+    <string name="ambient_wake_gestures_title">Gesti di attivazione ambientale</string>
+    <string name="ambient_wake_gestures_summary">Mostra Ambient Display invece della normale schermata di blocco con gesti di riattivazione</string>
+    <string name="connected_tws_device_saved_title">Auricolari salvati</string>
+    <string name="min_refresh_rate_title">Frequenza di aggiornamento minima</string>
+    <string name="max_refresh_rate_title">Frequenza di aggiornamento massima</string>
+    <string name="battery_saver_refresh_rate_title">Riduci la frequenza di aggiornamento</string>
+    <string name="battery_saver_refresh_rate_summary">Usa la frequenza di aggiornamento dello schermo di 60 Hz per risparmiare energia quando il risparmio batteria è attivo</string>
+    <string name="security_settings_face_settings_footer_custom">Lo sblocco con il volto ti consente di sbloccare il tuo dispositivo guardandolo. Tieni presente:\n\n● Il tuo dispositivo potrebbe sbloccarsi ogni volta che lo guardi.\n● Il tuo dispositivo può essere sbloccato da qualcun altro se lo tiene davanti al tuo viso mentre i tuoi occhi sono aperti.\n● Il tuo il dispositivo può anche essere sbloccato da qualcuno che ti somiglia molto, come un bambino o un fratello identico.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_custom">I dati registrati dallo sblocco facciale verranno eliminati in modo permanente e sicuro. Dopo la rimozione, avrai bisogno del tuo PIN, sequenza o password per sbloccare il telefono.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Rimuovi la scansione facciale esistente e crea una nuova scansione</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ripeti la scansione del viso</string>
+    <string name="face_redo_confirm_btn">Ripeti</string>
+    <string name="face_redo_warning_msg">Vuoi rimuovere la scansione facciale esistente e crearne una nuova?</string>
+    <string name="face_unlock_method_title">Consenti sblocco con il volto sulla schermata di blocco</string>
+    <string name="face_unlock_method_default">Quando lo schermo è acceso</string>
+    <string name="face_unlock_method_swipe">Quando si scorre sulla schermata di blocco</string>
+</resources>

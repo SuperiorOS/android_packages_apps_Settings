@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Superior OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Deshabilitado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="superior_version">Version de SuperiorOS</string>
+    <string name="superior_version_default">Desconocido</string>
+    <string name="keywords_superior_version">Versión de SuperiorOS, versión de superior</string>
+    <string name="about_device_name">Nombre código del dispositivo</string>
+    <string name="build_date">Fecha de compilación</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">fecha de compilación, informacion d compilación</string>
+    <string name="device_info_protected_single_press">Toca para mostrar información</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Opciones de dimensión</string>
+    <string name="notification_log_summary">Mostrar el registro del historial de notificaciónes</string>
+    <string name="battery_stats_reset">Restablecer estadísticas</string>
+    <string name="battery_stats_message">El historial de estadísticas de la batería se va a restablecer</string>
+    <string name="superior_settings_dash_title">Superior Goodies</string>
+    <string name="superior_settings_summary">Funciones extra</string>
+    <string name="screenshot_shutter_sound_title">Sonido de captura de pantalla</string>
+    <string name="increasing_ring_volume_option_title">Aumento del volumen del timbre</string>
+    <string name="increasing_ring_min_volume_title">Iniciar volumen</string>
+    <string name="increasing_ring_ramp_up_time_title">Rampa hasta el tiempo</string>
+    <string name="unlock_scramble_pin_layout_title">Diseño revuelto</string>
+    <string name="unlock_scramble_pin_layout_summary">Codificar el diseño del PIN al desbloquear el dispositivo</string>
+    <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando la contraseña/PIN correctos fueron escritos</string>
+    <string name="back_gesture_haptic_title">Retroalimentación háptica</string>
+    <string name="back_gesture_haptic_summary">Habilitar el efecto de marca háptica en el gesto de retroceso</string>
+    <string name="back_height_low_label">Lleno</string>
+    <string name="back_height_high_label">Botón</string>
+    <string name="back_options_dialog_title">Opciones</string>
+    <string name="back_height_message">Cantidad de altura de la pantalla utilizada como región táctil para el gesto de retroceso.</string>
+    <string name="action_nothing">Sin acción</string>
+    <string name="action_menu">Menú</string>
+    <string name="action_app_switch">Recientes</string>
+    <string name="action_search">Asistente</string>
+    <string name="action_voice_search">Búsqueda por voz</string>
+    <string name="action_launch_camera">Cámara</string>
+    <string name="action_last_app">Última aplicación</string>
+    <string name="action_splitscreen">Pantalla dividida</string>
+    <string name="action_flashlight">Linterna</string>
+    <string name="action_clear_notifications">Limpiar notificaciones</string>
+    <string name="action_volume_panel">Panel de volumen</string>
+    <string name="action_screen_off">Pantalla apagada</string>
+    <string name="action_notifications">Notificaciones</string>
+    <string name="action_power_menu">Menu de apagado</string>
+    <string name="action_screenshot">Captura de pantalla</string>
+    <string name="action_qs_panel">Panel de ajustes rápidos</string>
+    <string name="action_app_action">Aplicación</string>
+    <string name="action_ringer_modes">Modos de timbre</string>
+    <string name="kill_app">Matar aplicación en primer plano</string>
+    <string name="recent_app_toggle">Cambiar aplicación reciente</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opciones de gestos avanzadas</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalizar gestos y elegir acciones personalizadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzado</string>
+    <string name="swipe_app_select_summary">Seleccione una aplicación para iniciar con la acción de apretar</string>
+    <string name="long_back_swipe_timeout_title">Tiempo de espera de acción de deslizamiento largo</string>
+    <string name="left_swipe_actions_title">Acción de deslizamiento largo a la izquierda</string>
+    <string name="left_swipe_app_action_title">Seleccionar aplicación de deslizamiento largo a la izquierda</string>
+    <string name="right_swipe_actions_title">Acción de deslizamiento rápido a la derecha</string>
+    <string name="right_swipe_app_action_title">Seleccionar aplicación de deslizamiento largo a la derecha</string>
+    <string name="left_vertical_swipe_actions_title">Acción de deslizamiento largo vertical a la izquierda</string>
+    <string name="left_vertical_swipe_app_action_title">Seleccionar aplicación de deslizamiento largo vertical a la izquierda</string>
+    <string name="right_vertical_swipe_actions_title">Acción de deslizamiento largo vertical a la derecha</string>
+    <string name="right_vertical_swipe_app_action_title">Seleccionar aplicación de deslizamiento largo vertical a la derecha</string>
+    <string name="gesture_nav_tweaks_footer_info">Para elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones.\n\nSi se muestra el iniciador, deslice el dedo en el área inferior de la pantalla para activar la acción.</string>
+    <string name="back_swipe_extended_title">Acción de deslizamiento extendido</string>
+    <string name="back_swipe_extended_summary">Active la acción con un deslizamiento más ancho (más de la mitad del tamaño de la pantalla) o un deslizamiento en L (verticalmente lo suficientemente largo)</string>
+    <string name="touch_sensitivity_title">Aumentar la sensibilidad táctil</string>
+    <string name="touch_sensitivity_summary">Mejora el tacto al usar protectores de pantalla</string>
+    <string name="keywords_touch_sensitivity">toque, sensibilidad, sensible, protector de pantalla, película, receptivo, capacidad de respuesta</string>
+    <string name="wifi_timeout">Desactivar el Wi-Fi automáticamente</string>
+    <string name="wifi_timeout_summary">El Wi-Fi se desactivará después de <xliff:g id="timeout_description">%1$s</xliff:g> si no hay una red conectada</string>
+    <string name="wifi_timeout_summary2">Deshabilitado</string>
+    <string name="wifi_timeout_summary_never">Nunca</string>
+    <string name="wifi_timeout_summary_15secs">15 segundos</string>
+    <string name="wifi_timeout_summary_30secs">30 segundos</string>
+    <string name="wifi_timeout_summary_1min">1 minuto</string>
+    <string name="wifi_timeout_summary_2mins">2 minutos</string>
+    <string name="wifi_timeout_summary_5mins">5 minutos</string>
+    <string name="wifi_timeout_summary_10mins">10 minutos</string>
+    <string name="wifi_timeout_summary_30mins">30 minutos</string>
+    <string name="wifi_timeout_summary_1hour">1 hora</string>
+    <string name="wifi_timeout_summary_2hours">2 horas</string>
+    <string name="wifi_timeout_summary_4hours">4 horas</string>
+    <string name="wifi_timeout_summary_8hours">8 horas</string>
+    <string name="bluetooth_timeout">Tiempo de espera de Bluetooth</string>
+    <string name="bluetooth_timeout_summary">El Bluetooth se desactivará después de <xliff:g id="timeout_description">%1$s</xliff:g> si no hay dispositivos conectados</string>
+    <string name="bluetooth_timeout_summary2">No desactivar automaticamente el Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nunca</string>
+    <string name="bluetooth_timeout_summary_15secs">15 segundos</string>
+    <string name="bluetooth_timeout_summary_30secs">30 segundos</string>
+    <string name="bluetooth_timeout_summary_1min">1 minuto</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minutos</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minutos</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minutos</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minutos</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hora</string>
+    <string name="bluetooth_timeout_summary_2hours">2 horas</string>
+    <string name="bluetooth_timeout_summary_4hours">4 horas</string>
+    <string name="bluetooth_timeout_summary_8hours">8 horas</string>
+    <string name="pulse_on_new_tracks_title">Marcador de música ambiental</string>
+    <string name="pulse_on_new_tracks_summary">Mostrar pantalla de ambiente cuando una nueva pista se reproduce</string>
+    <string name="ambient_wake_gestures_title">Gestos de despertar ambiental</string>
+    <string name="ambient_wake_gestures_summary">Muestre la pantalla ambiental en lugar de losckreen normales en los gestos de activación</string>
+    <string name="connected_tws_device_saved_title">Auriculares guardados</string>
+    <string name="min_refresh_rate_title">Frecuencia de actualización mínima</string>
+    <string name="max_refresh_rate_title">Frecuencia de actualización maxima</string>
+    <string name="battery_saver_refresh_rate_title">Reducir frecuencia de actualización</string>
+    <string name="battery_saver_refresh_rate_summary">Usar una frecuencia de actualización de 60 Hz para ahorrar batería cuando el ahorro de batería esta encendida</string>
+</resources>

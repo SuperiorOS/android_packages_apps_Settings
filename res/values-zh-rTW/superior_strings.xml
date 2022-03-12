@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Superior OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="selinux_status">SELinux 狀態</string>
+    <string name="selinux_status_disabled">已停用</string>
+    <string name="selinux_status_permissive">縱容</string>
+    <string name="selinux_status_enforcing">強制執行</string>
+    <string name="superior_version">SuperiorOS 版本</string>
+    <string name="superior_version_default">未知</string>
+    <string name="keywords_superior_version">Superior 版本</string>
+    <string name="about_device_name">裝置代號</string>
+    <string name="build_date">版本生成日期</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">版本生成日期，關於此版本</string>
+    <string name="device_info_protected_single_press">輕觸顯示詳細資料</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">密度選項</string>
+    <string name="notification_log_summary">顯示通知歷史日誌</string>
+    <string name="battery_stats_reset">重設統計數據</string>
+    <string name="battery_stats_message">電池歷史統計數據將被重設</string>
+    <string name="superior_settings_dash_title">Superior 好康</string>
+    <string name="superior_settings_summary">附加功能</string>
+    <string name="screenshot_shutter_sound_title">螢幕擷取音效</string>
+    <string name="increasing_ring_volume_option_title">增加鈴聲音量</string>
+    <string name="increasing_ring_min_volume_title">起始音量</string>
+    <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
+    <string name="unlock_scramble_pin_layout_title">隨機排序</string>
+    <string name="unlock_scramble_pin_layout_summary">解鎖裝置時隨機排列PIN碼</string>
+    <string name="unlock_quick_unlock_control_title">快速解鎖</string>
+    <string name="unlock_quick_unlock_control_summary">當正確輸入 PIN 碼/密碼 時直接解鎖</string>
+    <string name="back_gesture_haptic_title">震動回饋</string>
+    <string name="back_gesture_haptic_summary">啟用返回手勢的震動反饋</string>
+    <string name="back_height_low_label">高</string>
+    <string name="back_height_high_label">低</string>
+    <string name="back_options_dialog_title">選項</string>
+    <string name="back_height_message">可觸發返回手勢的範圍</string>
+    <string name="action_nothing">無</string>
+    <string name="action_menu">選單</string>
+    <string name="action_app_switch">最近的應用程式</string>
+    <string name="action_search">助理</string>
+    <string name="action_voice_search">語音搜尋</string>
+    <string name="action_launch_camera">相機</string>
+    <string name="action_last_app">最後使用的應用程式</string>
+    <string name="action_splitscreen">分割螢幕</string>
+    <string name="action_flashlight">手電筒</string>
+    <string name="action_clear_notifications">清除通知</string>
+    <string name="action_volume_panel">音量控制</string>
+    <string name="action_screen_off">關閉螢幕</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_power_menu">電源選單</string>
+    <string name="action_screenshot">螢幕擷取</string>
+    <string name="action_qs_panel">控制中心</string>
+    <string name="action_app_action">應用程式</string>
+    <string name="action_ringer_modes">鈴聲模式</string>
+    <string name="kill_app">關閉背景應用程式</string>
+    <string name="recent_app_toggle">切換最近的應用程式</string>
+    <string name="navbar_gesture_tweaks_pref_title">進階手勢選項</string>
+    <string name="navbar_gesture_tweaks_pref_summary">自訂手勢與動作</string>
+    <string name="navbar_gesture_tweaks_cat_title">進階設定</string>
+    <string name="swipe_app_select_summary">擠壓時啟動的應用程式</string>
+    <string name="long_back_swipe_timeout_title">長滑逾時</string>
+    <string name="left_swipe_actions_title">向左長滑操作</string>
+    <string name="left_swipe_app_action_title">選擇向左長滑啟動的應用程式</string>
+    <string name="right_swipe_actions_title">向右長滑操作</string>
+    <string name="right_swipe_app_action_title">選擇向右長滑啟動的應用程式</string>
+    <string name="left_vertical_swipe_actions_title">左側垂直滑動觸發動作</string>
+    <string name="left_vertical_swipe_app_action_title">選擇左側垂直滑動時啟動的應用程式</string>
+    <string name="right_vertical_swipe_actions_title">右側垂直滑動觸發動作</string>
+    <string name="right_vertical_swipe_app_action_title">選擇右側垂直滑動時啟動的應用程式</string>
+    <string name="gesture_nav_tweaks_footer_info">在應用選擇器中長按應用程式，可以設定手勢動作來觸發一個應用程式活動。 \n\n在啟動器使用期間，在螢幕底部滑動可以觸發手勢動作。</string>
+    <string name="back_swipe_extended_title">附加滑動手勢</string>
+    <string name="back_swipe_extended_summary">較長的滑動距離 (超過螢幕的一半) 或做垂直滑動 (垂直距離需夠長) 可以觸發手勢</string>
+    <string name="touch_sensitivity_title">提高觸摸靈敏度</string>
+    <string name="touch_sensitivity_summary">在使用螢幕保護貼時提高觸摸靈敏度</string>
+    <string name="keywords_touch_sensitivity">觸摸、靈敏度、靈敏、螢幕保護貼、薄膜、反應、反應能力</string>
+    <string name="wifi_timeout">自動關閉 Wi-Fi</string>
+    <string name="wifi_timeout_summary">如果沒有連接網路，則在 <xliff:g id="timeout_description">%1$s</xliff:g> 後關閉 Wi-Fi</string>
+    <string name="wifi_timeout_summary2">已停用</string>
+    <string name="wifi_timeout_summary_never">永不</string>
+    <string name="wifi_timeout_summary_15secs">15 秒</string>
+    <string name="wifi_timeout_summary_30secs">30 秒</string>
+    <string name="wifi_timeout_summary_1min">1 分鐘</string>
+    <string name="wifi_timeout_summary_2mins">2 分鐘</string>
+    <string name="wifi_timeout_summary_5mins">5 分鐘</string>
+    <string name="wifi_timeout_summary_10mins">10 分鐘</string>
+    <string name="wifi_timeout_summary_30mins">30 分鐘</string>
+    <string name="wifi_timeout_summary_1hour">1 小時</string>
+    <string name="wifi_timeout_summary_2hours">2 小時</string>
+    <string name="wifi_timeout_summary_4hours">4 小時</string>
+    <string name="wifi_timeout_summary_8hours">8 小時</string>
+    <string name="bluetooth_timeout">藍牙連接逾時</string>
+    <string name="bluetooth_timeout_summary">如果沒有連接到任何裝置，藍牙將在<xliff:g id="timeout_description">%1$s</xliff:g>後自動關閉</string>
+    <string name="bluetooth_timeout_summary2">不要自動關閉藍牙</string>
+    <string name="bluetooth_timeout_summary_never">永不</string>
+    <string name="bluetooth_timeout_summary_15secs">15 秒</string>
+    <string name="bluetooth_timeout_summary_30secs">30 秒</string>
+    <string name="bluetooth_timeout_summary_1min">1 分鐘</string>
+    <string name="bluetooth_timeout_summary_2mins">2 分鐘</string>
+    <string name="bluetooth_timeout_summary_5mins">5 分鐘</string>
+    <string name="bluetooth_timeout_summary_10mins">10 分鐘</string>
+    <string name="bluetooth_timeout_summary_30mins">30 分鐘</string>
+    <string name="bluetooth_timeout_summary_1hour">1 小時</string>
+    <string name="bluetooth_timeout_summary_2hours">2 小時</string>
+    <string name="bluetooth_timeout_summary_4hours">4 小時</string>
+    <string name="bluetooth_timeout_summary_8hours">8 小時</string>
+    <string name="pulse_on_new_tracks_title">微光螢幕音樂控制器</string>
+    <string name="pulse_on_new_tracks_summary">播放新的音樂時顯示微光螢幕</string>
+    <string name="ambient_wake_gestures_title">螢幕喚醒手勢</string>
+    <string name="ambient_wake_gestures_summary">使用喚醒手勢後顯示微光螢幕，而不顯示鎖定畫面</string>
+    <string name="connected_tws_device_saved_title">已儲存的耳機</string>
+    <string name="min_refresh_rate_title">最低螢幕刷新率</string>
+    <string name="max_refresh_rate_title">最高螢幕刷新率</string>
+    <string name="battery_saver_refresh_rate_title">降低螢幕刷新率</string>
+    <string name="battery_saver_refresh_rate_summary">開啟省電模式時使用 60 Hz 螢幕刷新率以減少耗電</string>
+    <string name="security_settings_face_settings_footer_custom">臉部辨識解鎖讓您看著手機就能解鎖手機。請記住：\n\n● 直視手機可能意外將其解鎖。\n● 其他人可以在您睜開眼睛時將其放在您的面前進行解鎖。\n● 與您相貌很相似的人可能會將您的手機解鎖，例如您的孩子或孿兄弟姊妹。</string>
+    <string name="security_settings_face_settings_remove_dialog_details_custom">透過 [臉部辨識解鎖] 記錄的資料將會安全地、永久刪除。移除後，解鎖您的手機將需要使用 PIN、圖案或密碼。</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">移除現有的臉部資料並重新掃描</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">重新執行臉部掃描</string>
+    <string name="face_redo_confirm_btn">再做一次</string>
+    <string name="face_redo_warning_msg">您要移除現有的臉部資料，並建立新的資料嗎？</string>
+    <string name="face_unlock_method_title">允許使用臉部辨識解鎖手機</string>
+    <string name="face_unlock_method_default">當螢幕開啟時</string>
+    <string name="face_unlock_method_swipe">在鎖定畫面滑動時</string>
+</resources>

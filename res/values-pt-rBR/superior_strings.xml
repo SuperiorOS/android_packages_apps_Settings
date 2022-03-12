@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Superior OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_settings_footer_custom">O desbloqueio facial permite que o despositivo seja desbloqueado com o seu olhar. Tenha em mente:\n\n● Pode ser que seu dispositivo seja desbloqueado a qualquer momento que você olhar para ele.\n.● Seu dispositivo pode ser desbloqueado por alguém se ele for posto em frente ao seu rosto enquanto seus olhos estiverem abertos.\n● Seu dispositivo também pode ser desbloqueado por alguém parecido com você, como uma criança ou um irmão idêntico.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_custom">Os dados gravados pelo desbloqueio facial serão excluídos permanentemente e com segurança. Após a remoção, você precisará de seu PIN, padrão, ou senha para desbloquear seu celular.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Remover escaneamento facial existente e criar um novo</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refazer escaneamento facial</string>
+    <string name="face_redo_confirm_btn">Refazer</string>
+    <string name="face_redo_warning_msg">Deseja remover o escaneamento facial existente e criar um novo?</string>
+    <string name="face_unlock_method_title">Permitir desbloqueio facial na tela de bloqueio</string>
+    <string name="face_unlock_method_default">Quando a tela estiver ligada</string>
+    <string name="face_unlock_method_swipe">Ao deslizar na tela de bloqueio</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Superior OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dinonaktifkan</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="superior_version">Versi SuperiorOS</string>
+    <string name="superior_version_default">Tidak diketahui</string>
+    <string name="keywords_superior_version">Versi SuperiorOS, versi superior</string>
+    <string name="about_device_name">Nama Kode Perangkat</string>
+    <string name="build_date">Tanggal pembuatan</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">tanggal pembuatan, info pembuatan</string>
+    <string name="device_info_protected_single_press">Sentuh untuk melihat info</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Opsi kepadatan</string>
+    <string name="notification_log_summary">Tampilkan log riwayat notifikasi</string>
+    <string name="battery_stats_reset">Atur ulang statistik</string>
+    <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <string name="superior_settings_dash_title">Superior Goodies</string>
+    <string name="superior_settings_summary">Fitur Tambahan</string>
+    <string name="screenshot_shutter_sound_title">Suara tangkapan layar</string>
+    <string name="increasing_ring_volume_option_title">Meningkatkan volume dering</string>
+    <string name="increasing_ring_min_volume_title">Mulai volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Waktu penguatan</string>
+    <string name="unlock_scramble_pin_layout_title">Acak tata letak</string>
+    <string name="unlock_scramble_pin_layout_summary">Acak tata letak PIN ketika membuka kunci perangkat</string>
+    <string name="unlock_quick_unlock_control_title">Buka kunci cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/kata sandi yang benar dimasukkan</string>
+    <string name="back_gesture_haptic_title">Umpan balik haptik</string>
+    <string name="back_gesture_haptic_summary">Aktifkan efek getaran pada tombol gestur kembali</string>
+    <string name="back_height_low_label">Penuh</string>
+    <string name="back_height_high_label">Bawah</string>
+    <string name="back_options_dialog_title">Opsi</string>
+    <string name="back_height_message">Jumlah ketinggian layar digunakan sebagai daerah yang dapat disentuh untuk gestur kembali.</string>
+    <string name="action_nothing">Tidak ada tindakan</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Baru-baru ini</string>
+    <string name="action_search">Asisten</string>
+    <string name="action_voice_search">Penelusuran suara</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Aplikasi terakhir</string>
+    <string name="action_splitscreen">Belah layar</string>
+    <string name="action_flashlight">Senter</string>
+    <string name="action_clear_notifications">Bersihkan notifikasi</string>
+    <string name="action_volume_panel">Panel volume</string>
+    <string name="action_screen_off">Layar mati</string>
+    <string name="action_notifications">Notifikasi</string>
+    <string name="action_power_menu">Menu daya</string>
+    <string name="action_screenshot">Tangkapan Layar</string>
+    <string name="action_qs_panel">Panel Setelan Cepat</string>
+    <string name="action_app_action">Aplikasi</string>
+    <string name="action_ringer_modes">Mode dering</string>
+    <string name="kill_app">Tutup paksa aplikasi saat ini</string>
+    <string name="recent_app_toggle">Beralih aplikasi baru-baru ini</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opsi gestur lanjutan</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Kustomisasi gestur dan atur tindakan khusus</string>
+    <string name="navbar_gesture_tweaks_cat_title">Lanjutan</string>
+    <string name="swipe_app_select_summary">Pilih aplikasi untuk memulai dengan tindakan tekan</string>
+    <string name="long_back_swipe_timeout_title">Batas waktu usap panjang</string>
+    <string name="left_swipe_actions_title">Tindakan usap panjang ke kiri</string>
+    <string name="left_swipe_app_action_title">Pilih aplikasi usap panjang ke kiri</string>
+    <string name="right_swipe_actions_title">Tindakan usap panjang ke kanan</string>
+    <string name="right_swipe_app_action_title">Pilih aplikasi usap panjang ke kanan</string>
+    <string name="left_vertical_swipe_actions_title">Tindakan usap L ke kiri vertikal</string>
+    <string name="left_vertical_swipe_app_action_title">Pilih aplikasi usap ke kiri vertikal</string>
+    <string name="right_vertical_swipe_actions_title">Tindakan usap L ke kanan vertikal</string>
+    <string name="right_vertical_swipe_app_action_title">Pilih aplikasi usap ke kanan vertikal</string>
+    <string name="gesture_nav_tweaks_footer_info">Untuk memilih aktivitas aplikasi tertentu untuk tindakan, tekan lama pada aplikasi apa pun di pemilih aplikasi.\n\nJika peluncur ditampilkan, lakukan usap di bagian paling bawah layar untuk memicu tindakan.</string>
+    <string name="back_swipe_extended_title">Tindakan mengusap yang diperpanjang</string>
+    <string name="back_swipe_extended_summary">Memicu tindakan pada mengusap yang lebih lebar (lebih dari setengah ukuran tampilan), atau mengusap L (cukup panjang secara vertikal)</string>
+    <string name="touch_sensitivity_title">Tingkatkan sensitivitas sentuhan</string>
+    <string name="touch_sensitivity_summary">Tingkatkan sentuhan saat menggunakan pelindung layar</string>
+    <string name="keywords_touch_sensitivity">sentuhan, sensitivitas, sensitif, pelindung layar, film, responsif, responsivitas</string>
+    <string name="wifi_timeout">Matikan Wi-Fi secara otomatis</string>
+    <string name="wifi_timeout_summary">Wi-Fi akan dimatikan setelah <xliff:g id="timeout_description">%1$s</xliff:g> jika tidak ada jaringan terhubung</string>
+    <string name="wifi_timeout_summary2">Dinonaktifkan</string>
+    <string name="wifi_timeout_summary_never">Jangan pernah</string>
+    <string name="wifi_timeout_summary_15secs">15 detik</string>
+    <string name="wifi_timeout_summary_30secs">30 detik</string>
+    <string name="wifi_timeout_summary_1min">1 menit</string>
+    <string name="wifi_timeout_summary_2mins">2 menit</string>
+    <string name="wifi_timeout_summary_5mins">5 menit</string>
+    <string name="wifi_timeout_summary_10mins">10 menit</string>
+    <string name="wifi_timeout_summary_30mins">30 menit</string>
+    <string name="wifi_timeout_summary_1hour">1 jam</string>
+    <string name="wifi_timeout_summary_2hours">2 jam</string>
+    <string name="wifi_timeout_summary_4hours">4 jam</string>
+    <string name="wifi_timeout_summary_8hours">8 jam</string>
+    <string name="bluetooth_timeout">Batas waktu Bluetooth</string>
+    <string name="bluetooth_timeout_summary">Bluetooth akan dimatikan setelah <xliff:g id="timeout_description">%1$s</xliff:g> jika tidak ada perangkat terhubung</string>
+    <string name="bluetooth_timeout_summary2">Jangan matikan Bluetooth secara otomatis</string>
+    <string name="bluetooth_timeout_summary_never">Jangan pernah</string>
+    <string name="bluetooth_timeout_summary_15secs">15 detik</string>
+    <string name="bluetooth_timeout_summary_30secs">30 detik</string>
+    <string name="bluetooth_timeout_summary_1min">1 menit</string>
+    <string name="bluetooth_timeout_summary_2mins">2 menit</string>
+    <string name="bluetooth_timeout_summary_5mins">5 menit</string>
+    <string name="bluetooth_timeout_summary_10mins">10 menit</string>
+    <string name="bluetooth_timeout_summary_30mins">30 menit</string>
+    <string name="bluetooth_timeout_summary_1hour">1 jam</string>
+    <string name="bluetooth_timeout_summary_2hours">2 jam</string>
+    <string name="bluetooth_timeout_summary_4hours">4 jam</string>
+    <string name="bluetooth_timeout_summary_8hours">8 jam</string>
+    <string name="pulse_on_new_tracks_title">Ticker musik ambien</string>
+    <string name="pulse_on_new_tracks_summary">Tampilkan Tampilan Ambien saat trek musik baru diputar</string>
+    <string name="ambient_wake_gestures_title">Gestur bangun ambien</string>
+    <string name="ambient_wake_gestures_summary">Tampilkan Tampilan Ambien sebagai ganti dari layar kunci normal pada gestur bangun</string>
+    <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
+    <string name="min_refresh_rate_title">Kecepatan refresh minimum</string>
+    <string name="max_refresh_rate_title">Kecepatan refresh maksimum</string>
+    <string name="battery_saver_refresh_rate_title">Kurangi kecepatan refresh</string>
+    <string name="battery_saver_refresh_rate_summary">Gunakan kecepatan refresh layar 60 Hz untuk menghemat daya saat Penghemat Baterai aktif</string>
+    <string name="security_settings_face_settings_footer_custom">Buka kunci dengan wajah memungkinkan Anda membuka kunci perangkat dengan melihatnya. Perhatikan:\n\n● Perangkat Anda dapat terbuka kuncinya setiap kali Anda melihatnya.\n● Perangkat Anda dapat dibuka kuncinya oleh orang lain jika mereka memegangnya di depan wajah Anda saat mata Anda terbuka.\n● Perangkat Anda juga dapat dibuka oleh seseorang yang sangat mirip dengan Anda, seperti anak kecil atau saudara kandung yang identik.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_custom">Data yang disimpan dengan metode pengenalan wajah akan dihapus dan diamankan secara permanen. Setelah dihapus, Anda akan memerlukan PIN, pola, atau kata sandi untuk membuka ponsel Anda.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Hapus pemindaian wajah yang ada dan buat pemindaian baru</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ulangi pemindaian wajah</string>
+    <string name="face_redo_confirm_btn">Ulangi</string>
+    <string name="face_redo_warning_msg">Apakah Anda ingin menghapus pemindaian wajah yang ada dan membuat pemindaian baru?</string>
+    <string name="face_unlock_method_title">Izinkan face unlock di layar kunci</string>
+    <string name="face_unlock_method_default">Saat layar dihidupkan</string>
+    <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
+</resources>

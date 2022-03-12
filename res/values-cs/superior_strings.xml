@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Superior OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="selinux_status">Stav SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+    <string name="superior_version">Verze SuperiorOS</string>
+    <string name="superior_version_default">Neznámá</string>
+    <string name="keywords_superior_version">Verze SuperiorOS, verze superior</string>
+    <string name="about_device_name">Kódové označení zařízení</string>
+    <string name="build_date">Datum sestavení</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">datum sestavení, info o sestavení</string>
+    <string name="device_info_protected_single_press">Klepnutím zobrazit informace</string>
+    <string name="app_play_store">Obchod Play</string>
+    <string name="density_category">Možnosti hustoty zobrazení</string>
+    <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
+    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
+    <string name="superior_settings_dash_title">Nastavení Superior</string>
+    <string name="superior_settings_summary">Speciální funkce</string>
+    <string name="screenshot_shutter_sound_title">Zvuk při snímku obrazovky</string>
+    <string name="increasing_ring_volume_option_title">Narůstající hlasitost vyzvánění</string>
+    <string name="increasing_ring_min_volume_title">Počáteční hlasitost</string>
+    <string name="increasing_ring_ramp_up_time_title">Doba zesilování</string>
+    <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
+    <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení pro zadání PINu při odemykání zařízení</string>
+    <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
+    <string name="unlock_quick_unlock_control_summary">Automatické odemknutí, pokud je zadán správný PIN/heslo</string>
+    <string name="back_gesture_haptic_title">Hmatová odezva</string>
+    <string name="back_gesture_haptic_summary">Povolit efekt krátkého zavibrování při použití gesta „Zpět“</string>
+    <string name="back_height_low_label">Plná</string>
+    <string name="back_height_high_label">Spodní</string>
+    <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
+    <string name="action_nothing">Žádná akce</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Nedávné</string>
+    <string name="action_search">Asistent</string>
+    <string name="action_voice_search">Hlasové vyhledávání</string>
+    <string name="action_launch_camera">Fotoaparát</string>
+    <string name="action_last_app">Poslední aplikace</string>
+    <string name="action_splitscreen">Rozdělená obrazovka</string>
+    <string name="action_flashlight">Svítilna</string>
+    <string name="action_clear_notifications">Vymazat oznámení</string>
+    <string name="action_volume_panel">Panel hlasitosti</string>
+    <string name="action_screen_off">Vypnout obrazovku</string>
+    <string name="action_notifications">Oznámení</string>
+    <string name="action_power_menu">Menu napájení</string>
+    <string name="action_screenshot">Snímek obrazovky</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_app_action">Aplikace</string>
+    <string name="action_ringer_modes">Režimy vyzvánění</string>
+    <string name="kill_app">Ukončit aplikaci na popředí</string>
+    <string name="recent_app_toggle">Přepnout nedávné aplikace</string>
+    <string name="navbar_gesture_tweaks_pref_title">Rozšířené možnosti gest</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Přizpůsobte gesta a nastavte vlastní akce</string>
+    <string name="navbar_gesture_tweaks_cat_title">Pokročilé</string>
+    <string name="swipe_app_select_summary">Vyberte aplikaci, která se spustí při zmáčknutí</string>
+    <string name="long_back_swipe_timeout_title">Časový limit akce dlouhým přejetím vlevo</string>
+    <string name="left_swipe_actions_title">Akce dlouhým přejetím vlevo</string>
+    <string name="left_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vlevo</string>
+    <string name="right_swipe_actions_title">Akce dlouhým přejetím vpravo</string>
+    <string name="right_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vpravo</string>
+    <string name="left_vertical_swipe_actions_title">Akce svislým L přejetím vlevo</string>
+    <string name="left_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vlevo</string>
+    <string name="right_vertical_swipe_actions_title">Akce svislým L přejetím vpravo</string>
+    <string name="right_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vpravo</string>
+    <string name="gesture_nav_tweaks_footer_info">Chcete-li vybrat konkrétní aktivitu aplikace pro akci, podržte stisknutou libovolnou aplikaci ve výběru aplikací.\n\nPokud se zobrazuje spouštěč, proveďte akci přejetím prstem v dolní dolní části obrazovky.</string>
+    <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
+    <string name="back_swipe_extended_summary">Aktivovat akci širším přejetím (více než polovina velikosti displeje) nebo gestem L (dostatečně svisle)</string>
+    <string name="touch_sensitivity_title">Zvýšení citlivosti dotyku</string>
+    <string name="touch_sensitivity_summary">Vylepšuje dotyk při použití ochranného skla/fólie</string>
+    <string name="keywords_touch_sensitivity">dotyk, citlivost, citlivý, ochranné sklo, fólie, reakce, reagující</string>
+    <string name="wifi_timeout">Automaticky vypnout Wi\u2011Fi</string>
+    <string name="wifi_timeout_summary">Wi-Fi se vypne za <xliff:g id="timeout_description">%1$s</xliff:g>, pokud není připojena žádná síť</string>
+    <string name="wifi_timeout_summary2">Vypnuto</string>
+    <string name="wifi_timeout_summary_never">Nikdy</string>
+    <string name="wifi_timeout_summary_15secs">15 sek.</string>
+    <string name="wifi_timeout_summary_30secs">30 sek.</string>
+    <string name="wifi_timeout_summary_1min">1 min.</string>
+    <string name="wifi_timeout_summary_2mins">2 min.</string>
+    <string name="wifi_timeout_summary_5mins">5 min.</string>
+    <string name="wifi_timeout_summary_10mins">10 min.</string>
+    <string name="wifi_timeout_summary_30mins">30 min.</string>
+    <string name="wifi_timeout_summary_1hour">1 hod.</string>
+    <string name="wifi_timeout_summary_2hours">2 hod.</string>
+    <string name="wifi_timeout_summary_4hours">4 hod.</string>
+    <string name="wifi_timeout_summary_8hours">8 hod.</string>
+    <string name="bluetooth_timeout">Časový limit Bluetooth</string>
+    <string name="bluetooth_timeout_summary">Pokud nejsou připojena žádná zařízení, Bluetooth se vypne za <xliff:g id="timeout_description">%1$s</xliff:g></string>
+    <string name="bluetooth_timeout_summary2">Automaticky nevypínat Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nikdy</string>
+    <string name="bluetooth_timeout_summary_15secs">15 sek.</string>
+    <string name="bluetooth_timeout_summary_30secs">30 sek.</string>
+    <string name="bluetooth_timeout_summary_1min">1 min.</string>
+    <string name="bluetooth_timeout_summary_2mins">2 min.</string>
+    <string name="bluetooth_timeout_summary_5mins">5 min.</string>
+    <string name="bluetooth_timeout_summary_10mins">10 min.</string>
+    <string name="bluetooth_timeout_summary_30mins">30 min.</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hod.</string>
+    <string name="bluetooth_timeout_summary_2hours">2 hod.</string>
+    <string name="bluetooth_timeout_summary_4hours">4 hod.</string>
+    <string name="bluetooth_timeout_summary_8hours">8 hod.</string>
+    <string name="pulse_on_new_tracks_title">Hudební oznámení na Ambientním displeji</string>
+    <string name="pulse_on_new_tracks_summary">Zobrazit Ambientní displej po spuštění nové hudební skladby</string>
+    <string name="ambient_wake_gestures_title">Gesta pro probuzení</string>
+    <string name="ambient_wake_gestures_summary">Zobrazit Ambientní displej namísto normální zamykací obrazovky při probuzení</string>
+    <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
+    <string name="min_refresh_rate_title">Minimální obnovovací frekvence</string>
+    <string name="max_refresh_rate_title">Maximální obnovovací frekvence</string>
+    <string name="battery_saver_refresh_rate_title">Snížit obnovovací frekvenci</string>
+    <string name="battery_saver_refresh_rate_summary">Když je zapnut spořič baterie, použít obnovovací frekvenci 60 Hz pro úsporu energie</string>
+    <string name="security_settings_face_settings_footer_custom">Odemknutí obličejem vám umožní odemknout zařízení pohledem. Mějte na paměti:\n\n● Vaše zařízení se může odemknout, kdykoli se na něj podíváte.\n● Vaše zařízení může odemknout někdo jiný, pokud jej drží před vaší tváří, zatímco máte otevřené oči.\n● Vaše zařízení může odemknout také někdo, kdo vypadá podobně jako vy, například dítě nebo identický sourozenec.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_custom">Data, která se při odemknutí obličeje uloží, budou trvale a bezpečně smazána. Pokud chcete odemknout telefon po jejich odstranění, musíte zadat kód PIN, gesto nebo heslo.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
+    <string name="face_redo_confirm_btn">Znovu</string>
+    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
+    <string name="face_unlock_method_title">Povolit odemknutí obličejem na obrazovce uzamčení</string>
+    <string name="face_unlock_method_default">Když je obrazovka zapnutá</string>
+    <string name="face_unlock_method_swipe">Při přejetí prstem na uzamčené obrazovce</string>
+</resources>

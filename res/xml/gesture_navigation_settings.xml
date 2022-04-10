@@ -87,4 +87,13 @@
         android:fragment="com.android.settings.gestures.GestureTweaksSettings"
         settings:allowDividerAbove="false"/>
 
+    <PreferenceCategory
+        android:title="@string/navbar_category">
+
+        <com.superior.support.preferences.SystemSettingSwitchPreference
+            android:key="navigation_bar_ime_space"
+            android:title="@string/navigation_bar_ime_space_title"
+            android:summary="@string/navigation_bar_ime_space_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
 </PreferenceScreen>

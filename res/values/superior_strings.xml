@@ -259,4 +259,9 @@
     <!-- 3 Button Navbar options -->
     <string name="navbar_invert_layout_title">Invert navigation bar layout</string>
     <string name="navbar_invert_info">Invert navigation bar layout</string>
+
+    <!-- IME button space -->
+    <string name="navbar_category">Navigation bar</string>
+    <string name="navigation_bar_ime_space_title">IME button space</string>
+    <string name="navigation_bar_ime_space_summary">Show IME button space below keyboard</string>
 </resources>

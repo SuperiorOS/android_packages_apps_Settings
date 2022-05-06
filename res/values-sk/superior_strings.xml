@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2022 The Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Verzia SuperiorOS</string>
+    <string name="superior_version_default">Neznáma</string>
+    <string name="keywords_superior_version">Verzia SuperiorOS, verzia superior</string>
+    <string name="about_device_name">Kódové označenie zariadenia</string>
+    <string name="build_date">Dátum zostavenia</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">dátum zostavenia, informácie o zostavení</string>
+    <string name="selinux_status">Stav SELinux</string>
+    <string name="selinux_status_disabled">Vypnuté</string>
+    <string name="selinux_status_permissive">Mierne</string>
+    <string name="selinux_status_enforcing">Výnútené</string>
+    <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
+    <string name="device_info_protected_single_press">Kliknutím zobrazíte informácie</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Možnosti hustoty zobrazenia</string>
+    <string name="notification_log_summary">Zobraziť protokol histórie oznámení</string>
+    <string name="battery_stats_reset">Vynulovať štatistiky</string>
+    <string name="battery_stats_message">Chystáte sa obnoviť históriu štatistiky batérie</string>
+    <string name="superior_settings_dash_title">Nastavenie Superior</string>
+    <string name="superior_settings_summary">Špeciálne funkcie</string>
+    <string name="min_refresh_rate_title">Minimálna obnovovacia frekvencia</string>
+    <string name="max_refresh_rate_title">Maximálna obnovovacia frekvencia</string>
+    <string name="battery_saver_refresh_rate_title">Znížiť obnovovaciu frekvenciu</string>
+    <string name="battery_saver_refresh_rate_summary">Použiť obnovovaciu frekvenciu 60 Hz ak je zapnutý šetrič batérie</string>
+    <string name="screenshot_shutter_sound_title">Zvuk snímky obrazovky</string>
+    <string name="volume_link_notification_title">Prepojiť hlasitosti zvonenia a oznámení</string>
+    <string name="app_notification_sound_timeout_title">Minimálny čas medzi zvukmi oznámenia</string>
+    <string name="app_notification_sound_timeout_summary_template">Povoliť zvuky alebo vibrácie nie viac ako raz za <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Bez obmedzení</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekúnd</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekúnd</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minúta</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minút</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minút</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minút</string>
+    <string name="wifi_timeout">Automaticky vypnúť Wi-Fi</string>
+    <string name="wifi_timeout_summary">Wi‑Fi bude vypnutá po <xliff:g id="timeout_description">%1$s</xliff:g>, pokiaľ nie je pripojená žiadna sieť</string>
+    <string name="wifi_timeout_summary2">Vypnuté</string>
+    <string name="wifi_timeout_summary_never">Nikdy</string>
+    <string name="wifi_timeout_summary_15secs">15 sekúnd</string>
+    <string name="wifi_timeout_summary_30secs">30 sekúnd</string>
+    <string name="wifi_timeout_summary_1min">1 minúta</string>
+    <string name="wifi_timeout_summary_2mins">2 minúty</string>
+    <string name="wifi_timeout_summary_5mins">5 minút</string>
+    <string name="wifi_timeout_summary_10mins">10 minút</string>
+    <string name="wifi_timeout_summary_30mins">30 minút</string>
+    <string name="wifi_timeout_summary_1hour">1 hodina</string>
+    <string name="wifi_timeout_summary_2hours">2 hodiny</string>
+    <string name="wifi_timeout_summary_4hours">4 hodiny</string>
+    <string name="wifi_timeout_summary_8hours">8 hodín</string>
+    <string name="bluetooth_timeout">Časový limit Bluetooth</string>
+    <string name="bluetooth_timeout_summary">Bluetooth sa vypne po <xliff:g id="timeout_description">%1$s</xliff:g> ak nebude pripojený</string>
+    <string name="bluetooth_timeout_summary2">Nevypínať automaticky bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nikdy</string>
+    <string name="bluetooth_timeout_summary_15secs">15 sekúnd</string>
+    <string name="bluetooth_timeout_summary_30secs">30 sekúnd</string>
+    <string name="bluetooth_timeout_summary_1min">1 minúta</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minúty</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minút</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minút</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minút</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hodina</string>
+    <string name="bluetooth_timeout_summary_2hours">2 hodiny</string>
+    <string name="bluetooth_timeout_summary_4hours">4 hodiny</string>
+    <string name="bluetooth_timeout_summary_8hours">8 hodín</string>
+    <string name="smallest_tick_label">Vyp.</string>
+    <string name="greatest_tick_label">Polovica obrazovky</string>
+    <string name="gesture_back_deadzone_label">Mrtvá oblasť</string>
+    <string name="back_sensitivity_dialog_message_cust">\nPomocou prvého a druhého vyhľadávacieho panelu nakonfigurujte citlivosť prejdenia späť, posledným vyhľadávacím panelom nastavte mŕtvu oblasť obrazovky, na ktorej nemožno použiť potiahnutie prstom, aby nedochádzalo ku konfliktom s gestami v aplikáciách.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstráňte existujúcu naskenovanú tvár a vytvoriť nový sken</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovať tvár</string>
+    <string name="face_redo_confirm_btn">Znovu</string>
+    <string name="face_redo_warning_msg">Chcete odstrániť existujúcu naskenovanú tvár a vytvoriť nový sken?</string>
+    <string name="face_unlock_method_title">Povoliť odomknutie tvárou na obrazovke uzamknutia</string>
+    <string name="face_unlock_method_default">Keď je obrazovka zapnutá</string>
+    <string name="face_unlock_method_swipe">Pri prejdení prstom cez obrazovku uzamknutia</string>
+    <string name="battery_temp">Teplota batérie</string>
+    <string name="duration_less_than_one_minute">Menej ako 1 minúta</string>
+    <string name="screen_time_summary_usage_today">Dnes %1$s</string>
+    <string name="adaptive_playback_screen_title">Adaptívne prehrávanie</string>
+    <string name="adaptive_playback_enabled">Použiť Adaptívne prehrávania</string>
+    <string name="adaptive_playback_disabled_summary">Vyp.</string>
+    <string name="adaptive_playback_intro_text">Adaptívne prehrávanie automaticky pozastaví médiá, keď je hlasitosť stlmená a automaticky sa obnoví pri obnove hlasitosti v danom čase.</string>
+    <string name="adaptive_playback_timeout_title">Použiť tento časový limit</string>
+    <string name="adaptive_playback_timeout_none">Bez časového limitu</string>
+    <string name="adaptive_playback_timeout_none_summary">Zap. (bez časového limitu)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 sekúnd</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Zap. (30 sekúnd)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minúta</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Zap. (1 minúta)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minúty</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Zap. (2 minúty)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minút</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Zap. (5 minút)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minút</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Zap. (10 minút)</string>
+    <string name="back_gesture_haptic_title">Hmatová odozva</string>
+    <string name="back_gesture_haptic_summary">Povoliť efekt krátkeho zavibrovania pri použití gesta \"Späť\"</string>
+    <string name="action_nothing">Žiadna akcia</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Nedávne</string>
+    <string name="action_search">Asistent</string>
+    <string name="action_voice_search">Hlasové vyhľadávanie</string>
+    <string name="action_launch_camera">Fotoaparát</string>
+    <string name="action_last_app">Posledná aplikácia</string>
+    <string name="action_splitscreen">Rozdelená obrazovka</string>
+    <string name="action_flashlight">Svietidlo</string>
+    <string name="action_clear_notifications">Vymazať oznámenia</string>
+    <string name="action_volume_panel">Panel hlasitosti</string>
+    <string name="action_screen_off">Vypnúť obrazovku</string>
+    <string name="action_notifications">Oznámenia</string>
+    <string name="action_power_menu">Ponuka Napájanie</string>
+    <string name="action_screenshot">Snímka obrazovky</string>
+    <string name="action_qs_panel">Panel rýchlych nastavení</string>
+    <string name="action_app_action">Aplikácie</string>
+    <string name="action_ringer_modes">Režim vyzváňania</string>
+    <string name="kill_app">Ukončiť aplikáciu na popredí</string>
+    <string name="recent_app_toggle">Prepnúť nedávne aplikácie</string>
+    <string name="navbar_gesture_tweaks_pref_title">Rozšírené možnosti gest</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Prispôsobte gesta a nastavte vlastné akcie</string>
+    <string name="navbar_gesture_tweaks_cat_title">Pokročilé</string>
+    <string name="swipe_app_select_summary">Vyberte aplikáciu, ktorú chcete spustiť stlačením</string>
+    <string name="long_back_swipe_timeout_title">Časový limit akcie dlhého potiahnutia</string>
+    <string name="left_swipe_actions_title">Akcia ľavého dlhého potiahnutia</string>
+    <string name="left_swipe_app_action_title">Vybrať aplikáciu pre ľavé dlhé potiahnutie</string>
+    <string name="right_swipe_actions_title">Akcia pravého dlhého potiahnutia</string>
+    <string name="right_swipe_app_action_title">Vybrať aplikáciu pre pravé dlhé potiahnutie</string>
+    <string name="left_vertical_swipe_actions_title">Akcia zvislým L prejdením vľavo</string>
+    <string name="left_vertical_swipe_app_action_title">Vyberte aplikáciu zvislým prejdením vľavo</string>
+    <string name="right_vertical_swipe_actions_title">Akcia zvislým L prejdením vpravo</string>
+    <string name="right_vertical_swipe_app_action_title">Vyberte aplikáciu zvislým prejdením vpravo</string>
+    <string name="gesture_nav_tweaks_footer_info">Ak chcete vybrať konkrétnu aktivitu aplikácie pre akciu, podržte stlačenú ľubovoľnú aplikáciu vo výbere aplikácií.\n\nAk sa zobrazuje spúšťač, vykonajte akciu prejdením prstom v dolnej dolnej časti obrazovky.</string>
+    <string name="back_swipe_extended_title">Pokročilé akcie prejdením</string>
+    <string name="back_swipe_extended_summary">Aktivovať akciu širším prejdením (viac ako polovica veľkosti displeja) alebo gestom L (dostatočne zvisle)</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhľadajte snímač odtlačkov prstov na prednej strane tabletu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Vyhľadajte snímač odtlačkov prstov na prednej strane zariadenia.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Vyhľadajte snímač odtlačkov prstov na prednej strane telefónu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Vyhľadajte snímač odtlačkov prstov na zadnej strane tabletu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Vyhľadajte snímač odtlačkov prstov na zadnej strane zariadenia.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Vyhľadajte snímač odtlačkov prstov na zadnej strane telefónu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Vyhľadajte snímač odtlačkov prstov na bočnej strane tabletu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Vyhľadajte snímač odtlačkov prstov na bočnej strane zariadenia.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Vyhľadajte snímač odtlačkov prstov na  bočnej strane telefónu.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Dotknite sa senzora na prednej strane tabletu.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Dotknite sa senzora na prednej strane zariadenia.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Dotknite sa senzora na prednej strane telefónu.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Dotknite sa senzora na zadnej strane tabletu.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Dotknite sa senzora na zadnej strane zariadenia.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Dotknite sa senzora na zadnej strane telefónu.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Dotknite sa senzora na bočnej strane tabletu.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Dotknite sa senzora na bočnej strane zariadenia.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Dotknite sa senzora na bočnej strane telefónu.</string>
+    <string name="battery_light_settings">Kontrolka nabíjania batérie</string>
+    <string name="battery_light_summary">Správanie LED kontrolky batérie pri DND, nízky stav batérie</string>
+    <string name="battery_light_enable">Svetelná signalizácia batérie</string>
+    <string name="battery_light_allow_on_dnd_title">LED signalizácia batérie aj v režime „Nerušiť“</string>
+    <string name="battery_light_low_blinking_title">Blikať pri nízkom stave batérie</string>
+    <string name="battery_light_cat">Farba LED pri nabíjaní</string>
+    <string name="battery_light_low_color">Slabá batéria</string>
+    <string name="battery_light_medium_color">Stredná úroveň</string>
+    <string name="battery_light_full_color">Skoro nabitá batéria</string>
+    <string name="battery_light_reallyfull_color">Úplne nabitá (100%)</string>
+</resources>

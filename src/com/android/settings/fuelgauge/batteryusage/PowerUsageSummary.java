@@ -238,7 +238,11 @@ public class PowerUsageSummary extends PowerUsageBase implements
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
 
-        mBatteryTempPref.setSummary(BatteryInfo.batteryTemp / 10 + " °C");
+        if (BatteryInfo.batteryTemp != 0f) {
+            mBatteryTempPref.setSummary(BatteryInfo.batteryTemp / 10 + " °C");
+        } else {
+            mBatteryTempPref.setSummary(getResources().getString(R.string.status_unavailable));
+        }
     }
 
     @VisibleForTesting

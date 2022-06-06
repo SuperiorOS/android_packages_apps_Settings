@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2022 The Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Versión de SuperiorOS</string>
+    <string name="superior_version_default">Desconocido</string>
+    <string name="keywords_superior_version">Versión de SuperiorOS, versión superior</string>
+    <string name="about_device_name">Nombre código del dispositivo</string>
+    <string name="build_date">Fecha de compilación</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">fecha de compilación, información de compilación</string>
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Deshabilitado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="device_info_protected_single_press">Toca para mostrar información</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Opciones de densidad</string>
+    <string name="notification_log_summary">Mostrar registro del historial de notificaciones</string>
+    <string name="battery_stats_reset">Restablecer estadísticas</string>
+    <string name="battery_stats_message">El historial de estadísticas de la batería se va a restablecer</string>
+    <string name="superior_settings_summary">Funciones extra</string>
+    <string name="min_refresh_rate_title">Tasa de refresco mínima</string>
+    <string name="max_refresh_rate_title">Tasa de refresco máxima</string>
+    <string name="battery_saver_refresh_rate_title">Reducir la tasa de refresco</string>
+    <string name="battery_saver_refresh_rate_summary">Usar una tasa de refresco de 60 Hz para reducir el consumo de energía cuando el Ahorro de batería esté activado</string>
+    <string name="screenshot_shutter_sound_title">Sonido de captura de pantalla</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+    <string name="wifi_timeout">Desactivar el Wi-Fi automáticamente</string>
+    <string name="wifi_timeout_summary2">Deshabilitado</string>
+    <string name="wifi_timeout_summary_never">Nunca</string>
+    <string name="wifi_timeout_summary_15secs">15 segundos</string>
+    <string name="wifi_timeout_summary_30secs">30 segundos</string>
+    <string name="wifi_timeout_summary_1min">1 minuto</string>
+    <string name="wifi_timeout_summary_2mins">2 minutos</string>
+    <string name="wifi_timeout_summary_5mins">5 minutos</string>
+    <string name="wifi_timeout_summary_10mins">10 minutos</string>
+    <string name="wifi_timeout_summary_30mins">30 minutos</string>
+    <string name="wifi_timeout_summary_1hour">1 hora</string>
+    <string name="wifi_timeout_summary_2hours">2 horas</string>
+    <string name="wifi_timeout_summary_4hours">4 horas</string>
+    <string name="wifi_timeout_summary_8hours">8 horas</string>
+    <string name="bluetooth_timeout">Tiempo de espera de Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nunca</string>
+    <string name="bluetooth_timeout_summary_15secs">15 segundos</string>
+    <string name="bluetooth_timeout_summary_30secs">30 segundos</string>
+    <string name="bluetooth_timeout_summary_1min">1 minuto</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minutos</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minutos</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minutos</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minutos</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hora</string>
+    <string name="bluetooth_timeout_summary_2hours">2 horas</string>
+    <string name="bluetooth_timeout_summary_4hours">4 horas</string>
+    <string name="bluetooth_timeout_summary_8hours">8 horas</string>
+    <string name="smallest_tick_label">Apagado</string>
+    <string name="battery_temp">Temperatura de la batería</string>
+    <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
+    <string name="screen_time_summary_usage_today">%1$s hoy</string>
+    <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuto</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutos</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutos</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutos</string>
+    <string name="action_app_switch">Recientes</string>
+    <string name="action_search">Asistente</string>
+    <string name="action_voice_search">Búsqueda por voz</string>
+    <string name="action_launch_camera">Cámara</string>
+    <string name="action_last_app">Última aplicación</string>
+    <string name="action_splitscreen">Pantalla dividida</string>
+    <string name="action_flashlight">Linterna</string>
+    <string name="action_clear_notifications">Descartar notificaciones</string>
+    <string name="action_volume_panel">Panel de volumen</string>
+    <string name="action_notifications">Notificaciones</string>
+    <string name="action_power_menu">Menu de apagado</string>
+    <string name="action_screenshot">Captura de pantalla</string>
+    <string name="action_app_action">Aplicación</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opciones de gestos avanzadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzado</string>
+    <string name="battery_light_settings">Luz de carga de la batería</string>
+    <string name="battery_light_summary">Comportamiento del led de carga en el modo No Molestar y batería baja</string>
+    <string name="battery_light_enable">Led de batería</string>
+    <string name="battery_light_allow_on_dnd_title">Led de batería en modo No Molestar</string>
+    <string name="battery_light_low_blinking_title">Led intermitente con batería baja</string>
+    <string name="battery_light_cat">Color del led cuando se está cargando</string>
+    <string name="battery_light_low_color">Batería baja</string>
+    <string name="battery_light_medium_color">Batería a la mitad</string>
+    <string name="battery_light_full_color">Batería casi cargada</string>
+    <string name="battery_light_reallyfull_color">Batería cargada (100%)</string>
+</resources>

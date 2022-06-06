@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2022 The Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">SuperiorOS バージョン</string>
+    <string name="superior_version_default">不明</string>
+    <string name="keywords_superior_version">SuperiorOS バージョン、superior バージョン</string>
+    <string name="about_device_name">端末のコードネーム</string>
+    <string name="build_date">ビルド日時</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">ビルド日時、ビルド情報</string>
+    <string name="selinux_status">SELinux ステータス</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
+    <string name="device_info_protected_single_press">タップで情報を表示</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">解像度オプション</string>
+    <string name="notification_log_summary">通知履歴ログを表示する</string>
+    <string name="battery_stats_reset">統計のリセット</string>
+    <string name="battery_stats_message">バッテリーの使用統計はリセットされます</string>
+    <string name="superior_settings_dash_title">Superior な贈り物</string>
+    <string name="superior_settings_summary">追加の機能を設定する</string>
+    <string name="min_refresh_rate_title">最小リフレッシュレート</string>
+    <string name="max_refresh_rate_title">最大リフレッシュレート</string>
+    <string name="battery_saver_refresh_rate_title">リフレッシュレートを減らす</string>
+    <string name="battery_saver_refresh_rate_summary">バッテリーセーバー有効時に電池消費を抑えるために60Hzのリフレッシュレートを使用する</string>
+    <string name="screenshot_shutter_sound_title">スクリーンショットの音</string>
+    <string name="volume_link_notification_title">着信と通知の音量をリンク</string>
+    <string name="app_notification_sound_timeout_title">通知音の最小間隔</string>
+    <string name="app_notification_sound_timeout_summary_template"><xliff:g id="duration">%1$s</xliff:g>間に1回以上の通知音または振動を許可しない</string>
+    <string name="app_notification_sound_timeout_value_none">無制限</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10秒</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30秒</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1分</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5分</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10分</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30分</string>
+    <string name="wifi_timeout">Wi-Fi を自動的にオフにする</string>
+    <string name="wifi_timeout_summary">ネットワークに接続していない場合は<xliff:g id="timeout_description">%1$s</xliff:g>後に Wi-Fi はオフになります</string>
+    <string name="wifi_timeout_summary2">無効</string>
+    <string name="wifi_timeout_summary_never">なし</string>
+    <string name="wifi_timeout_summary_15secs">15秒</string>
+    <string name="wifi_timeout_summary_30secs">30秒</string>
+    <string name="wifi_timeout_summary_1min">1分</string>
+    <string name="wifi_timeout_summary_2mins">2分</string>
+    <string name="wifi_timeout_summary_5mins">5分</string>
+    <string name="wifi_timeout_summary_10mins">10分</string>
+    <string name="wifi_timeout_summary_30mins">30分</string>
+    <string name="wifi_timeout_summary_1hour">1時間</string>
+    <string name="wifi_timeout_summary_2hours">2時間</string>
+    <string name="wifi_timeout_summary_4hours">4時間</string>
+    <string name="wifi_timeout_summary_8hours">8時間</string>
+    <string name="bluetooth_timeout">Bluetooth の制限時間</string>
+    <string name="bluetooth_timeout_summary">端末が接続されていない場合は<xliff:g id="timeout_description">%1$s</xliff:g>後に Bluetooth はオフになります</string>
+    <string name="bluetooth_timeout_summary2">自動的に Bluetooth をオフにしない</string>
+    <string name="bluetooth_timeout_summary_never">なし</string>
+    <string name="bluetooth_timeout_summary_15secs">15秒</string>
+    <string name="bluetooth_timeout_summary_30secs">30秒</string>
+    <string name="bluetooth_timeout_summary_1min">1分</string>
+    <string name="bluetooth_timeout_summary_2mins">2分</string>
+    <string name="bluetooth_timeout_summary_5mins">5分</string>
+    <string name="bluetooth_timeout_summary_10mins">10分</string>
+    <string name="bluetooth_timeout_summary_30mins">30分</string>
+    <string name="bluetooth_timeout_summary_1hour">1時間</string>
+    <string name="bluetooth_timeout_summary_2hours">2時間</string>
+    <string name="bluetooth_timeout_summary_4hours">4時間</string>
+    <string name="bluetooth_timeout_summary_8hours">8時間</string>
+    <string name="smallest_tick_label">OFF</string>
+    <string name="greatest_tick_label">半画面</string>
+    <string name="gesture_back_deadzone_label">非認識範囲</string>
+    <string name="back_sensitivity_dialog_message_cust">最初と2番目のシークバーで戻るジェスチャースワイプ感度を編集し、最後のシークバーでスワイプを認識しない画面領域を設定し、アプリ内ジェスチャーとの競合を回避します。</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">既存の顔スキャンを削除して新しいスキャンを作成する</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">顔スキャンを再実行</string>
+    <string name="face_redo_confirm_btn">やり直す</string>
+    <string name="face_redo_warning_msg">既存の顔スキャンを削除して新しいスキャンを作成しますか?</string>
+    <string name="face_unlock_method_title">ロック画面での顔認証ロック解除を許可</string>
+    <string name="face_unlock_method_default">画面が点灯した時</string>
+    <string name="face_unlock_method_swipe">ロック画面をスワイプした時</string>
+    <string name="battery_temp">バッテリー温度</string>
+    <string name="duration_less_than_one_minute">1分未満</string>
+    <string name="screen_time_summary_usage_today">本日: %1$s</string>
+    <string name="adaptive_playback_screen_title">アダプティブ再生</string>
+    <string name="adaptive_playback_enabled">アダプティブ再生を使用</string>
+    <string name="adaptive_playback_disabled_summary">OFF</string>
+    <string name="adaptive_playback_intro_text">音量をミュートにした時はメディアを自動的に一時停止し、設定時間内に音量が元に戻ったら自動的に再開されます。</string>
+    <string name="adaptive_playback_timeout_title">使用する使用時間</string>
+    <string name="adaptive_playback_timeout_none">制限なし</string>
+    <string name="adaptive_playback_timeout_none_summary">ON (制限なし)</string>
+    <string name="adaptive_playback_timeout_30_secs">30秒</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">ON (30秒)</string>
+    <string name="adaptive_playback_timeout_1_min">1分</string>
+    <string name="adaptive_playback_timeout_1_min_summary">ON (1分)</string>
+    <string name="adaptive_playback_timeout_2_min">2分</string>
+    <string name="adaptive_playback_timeout_2_min_summary">ON (2分)</string>
+    <string name="adaptive_playback_timeout_5_min">5分</string>
+    <string name="adaptive_playback_timeout_5_min_summary">ON (5分)</string>
+    <string name="adaptive_playback_timeout_10_min">10分</string>
+    <string name="adaptive_playback_timeout_10_min_summary">ON (10分)</string>
+    <string name="back_gesture_haptic_title">振動フィードバック</string>
+    <string name="back_gesture_haptic_summary">戻るジェスチャーの振動を有効化する</string>
+    <string name="action_nothing">なし</string>
+    <string name="action_menu">メニュー</string>
+    <string name="action_app_switch">アプリ履歴</string>
+    <string name="action_search">アシスタント</string>
+    <string name="action_voice_search">音声検索</string>
+    <string name="action_launch_camera">カメラ</string>
+    <string name="action_last_app">直前のアプリ</string>
+    <string name="action_splitscreen">画面分割</string>
+    <string name="action_flashlight">フラッシュライト</string>
+    <string name="action_clear_notifications">通知を消去</string>
+    <string name="action_volume_panel">音量パネル</string>
+    <string name="action_screen_off">画面を消灯</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_power_menu">電源メニュー</string>
+    <string name="action_screenshot">スクリーンショット</string>
+    <string name="action_qs_panel">クイック設定パネル</string>
+    <string name="action_app_action">アプリ</string>
+    <string name="action_ringer_modes">着信モード</string>
+    <string name="kill_app">表示中のアプリを終了</string>
+    <string name="recent_app_toggle">直前のアプリの切り替え</string>
+    <string name="navbar_gesture_tweaks_pref_title">高度なジェスチャーオプション</string>
+    <string name="navbar_gesture_tweaks_pref_summary">ジェスチャーを編集してカスタムアクションを設定する</string>
+    <string name="navbar_gesture_tweaks_cat_title">高度な設定</string>
+    <string name="swipe_app_select_summary">握りアクションで起動するアプリを選択する</string>
+    <string name="long_back_swipe_timeout_title">長いスワイプアクションの制限時間</string>
+    <string name="left_swipe_actions_title">長い左スワイプアクション</string>
+    <string name="left_swipe_app_action_title">長い左スワイプアクションのアプリ選択</string>
+    <string name="right_swipe_actions_title">長い右スワイプアクション</string>
+    <string name="right_swipe_app_action_title">長い右スワイプアクションのアプリ選択</string>
+    <string name="left_vertical_swipe_actions_title">垂直左Lスワイプのアクション</string>
+    <string name="left_vertical_swipe_app_action_title">垂直左スワイプアプリを選択</string>
+    <string name="right_vertical_swipe_actions_title">垂直右Lスワイプのアクション</string>
+    <string name="right_vertical_swipe_app_action_title">垂直右スワイプアプリを選択</string>
+    <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押しして下さい。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
+    <string name="back_swipe_extended_title">拡張スワイプアクション</string>
+    <string name="back_swipe_extended_summary">より広いスワイプ (少なくとも画面の半分より広い) か、「L」スワイプ (縦の方が長い) でアクションを起動する。</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">タブレット前面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">端末前面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">スマートフォン前面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">タブレット背面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">端末背面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">スマートフォン背面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">タブレット側面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">端末側面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">スマートフォン左側にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">タブレット前面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">端末前面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">スマートフォン前面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">タブレット背面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">端末背面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">スマートフォン前面にある指紋認証センサーを探します</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">タブレット側面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">端末側面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">スマートフォン側面にある指紋認証センサーをタッチして下さい</string>
+    <string name="battery_light_settings">バッテリーライト</string>
+    <string name="battery_light_summary">サイレント時と電池残量が少ない時のバッテリーライトの動作を設定する</string>
+    <string name="battery_light_enable">バッテリーライト</string>
+    <string name="battery_light_allow_on_dnd_title">Do Not Disturb 中のライト</string>
+    <string name="battery_light_low_blinking_title">残量低下時の点滅</string>
+    <string name="battery_light_cat">充電時の色</string>
+    <string name="battery_light_low_color">残量低下</string>
+    <string name="battery_light_medium_color">中程度</string>
+    <string name="battery_light_full_color">ほぼ充電完了</string>
+    <string name="battery_light_reallyfull_color">充電完了</string>
+</resources>

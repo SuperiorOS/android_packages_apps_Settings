@@ -149,4 +149,32 @@
     <string name="gesture_nav_tweaks_footer_info">Para escolher uma atividade de aplicativo específica para a ação, pressione e segure qualquer aplicativo no seletor de aplicativos. \n\nSe o iniciador estiver sendo exibido, deslize o dedo na área inferior da tela para acionar a ação.</string>
     <string name="back_swipe_extended_title">Ação ao fazer um deslize estendido</string>
     <string name="back_swipe_extended_summary">Ação do gatilho em um deslize mais amplo (mais de metade do tamanho da exibição) ou um deslize L (verticalmente mais longo o suficiente)</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Localize o sensor de impressão de digital na parte frontal do seu tablet</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Localize o sensor de impressão de digital da parte frontal do seu aparelho</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Localize o sensor de impressão digital na parte frontal do seu telefone</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Localize o sensor de impressão digital na parte traseira do seu tablet</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Localize o sensor de impressão digital na parte traseira do seu dispositivo</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Localize o sensor de impressão digital na parte traseira do seu telefone</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Localize o sensor de impressão digital na lateral do seu tablet</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Localize o sensor de digital na lateral do seu dispositivo</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Localize o sensor de impressão digital na lateral do seu telefone</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Toque no sensor na parte frontal do seu tablet</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Toque no sensor na parte frontal do seu dispositivo</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Toque no sensor na parte frontal do seu telefone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Toque no sensor na parte traseira do seu tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Toque no sensor na parte traseira do seu dispositivo.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Toque no sensor na parte traseira do seu telefone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Toque no sensor na parte lateral do seu tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Toque no sensor na parte lateral do seu dispositivo.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Toque no sensor na parte lateral do seu telefone.</string>
+    <string name="battery_light_settings">Luz de carregamento da bateria</string>
+    <string name="battery_light_summary">Comportamento da luz de carregamento enquanto em DND, bateria fraca</string>
+    <string name="battery_light_enable">Luz de carregamento</string>
+    <string name="battery_light_allow_on_dnd_title">Luz de carregamento no modo \"Não Pertube\"</string>
+    <string name="battery_light_low_blinking_title">Luz piscante quando a bateria estiver fraca</string>
+    <string name="battery_light_cat">Cor da luz da bateria ao carregar</string>
+    <string name="battery_light_low_color">Bateria fraca</string>
+    <string name="battery_light_medium_color">Bateria média</string>
+    <string name="battery_light_full_color">Bateria quase carregada</string>
+    <string name="battery_light_reallyfull_color">Bateria cheia (100)</string>
 </resources>

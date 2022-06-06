@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2022 The Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version_default">未知</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="selinux_status">SELinux 狀態</string>
+    <string name="selinux_status_permissive">許可</string>
+    <string name="selinux_status_enforcing">強制執行</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="battery_stats_reset">重設統計數據</string>
+    <string name="battery_stats_message">電池歷史統計數據將被重設</string>
+    <string name="min_refresh_rate_title">最低螢幕刷新率</string>
+    <string name="max_refresh_rate_title">最高螢幕刷新率</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感測器位於平板正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">指紋感測器位於裝置正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">指紋感測器位於手機正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">指紋感測器位於平板背面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">指紋感測器位於裝置背面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">指紋感測器位於手機背面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">指紋感測器位於平板側面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">指紋感測器位於裝置側面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">指紋感測器位於手機側面。</string>
+    <string name="battery_light_settings">充電指示燈</string>
+    <string name="battery_light_low_color">低電量</string>
+    <string name="battery_light_medium_color">中等電量</string>
+    <string name="battery_light_full_color">接近滿電</string>
+    <string name="battery_light_reallyfull_color">滿電量 (100)</string>
+</resources>

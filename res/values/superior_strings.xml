@@ -113,4 +113,7 @@
 
      <!-- App details: open play store link if app is user installed -->
      <string name="app_play_store">Play Store</string>
+
+     <!-- Summary for the top level wallpapers settings [CHAR LIMIT=NONE]-->
+     <string name="wallpaper_dashboard_custom_summary">Colors, themed icons, app grid</string>
 </resources>

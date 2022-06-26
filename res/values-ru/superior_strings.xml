@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2022 The Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Версия SuperiorOS</string>
+    <string name="superior_version_default">Неизвестно</string>
+    <string name="keywords_superior_version">Версия SuperiorOS, версия superior</string>
+    <string name="about_device_name">Название устройства</string>
+    <string name="build_date">Дата сборки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">дата сборки, сведения о сборке</string>
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключен</string>
+    <string name="selinux_status_permissive">Разрешающий</string>
+    <string name="selinux_status_enforcing">Принудительный</string>
+    <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+    <string name="device_info_protected_single_press">Нажмите, чтобы показать информацию</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Настройки плотности</string>
+    <string name="notification_log_summary">Показать журнал истории уведомлений</string>
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
+    <string name="superior_settings_dash_title">Достоинства Superior</string>
+    <string name="superior_settings_summary">Дополнительные функции</string>
+    <string name="min_refresh_rate_title">Минимальная частота обновления</string>
+    <string name="max_refresh_rate_title">Максимальная частота обновления</string>
+    <string name="battery_saver_refresh_rate_title">Уменьшить частоту обновления</string>
+    <string name="battery_saver_refresh_rate_summary">Использовать частоту обновления экрана на 60 Гц для экономии заряда батареи</string>
+    <string name="screenshot_shutter_sound_title">Звук скриншота</string>
+    <string name="volume_link_notification_title">Связать громкость звонка и уведомлений</string>
+    <string name="app_notification_sound_timeout_title">Минимальный интервал между звуками уведомлений</string>
+    <string name="app_notification_sound_timeout_summary_template">Разрешить звуки или вибрацию не более чем один раз каждые <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Нет ограничений</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 минута</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
+    <string name="wifi_timeout">Выключать Wi-Fi автоматически</string>
+    <string name="wifi_timeout_summary">Wi-Fi будет выключен через <xliff:g id="timeout_description">%1$s</xliff:g> если нет подключения к сети</string>
+    <string name="wifi_timeout_summary2">Отключен</string>
+    <string name="wifi_timeout_summary_never">Никогда</string>
+    <string name="wifi_timeout_summary_15secs">15 секунд</string>
+    <string name="wifi_timeout_summary_30secs">30 секунд</string>
+    <string name="wifi_timeout_summary_1min">1 минута</string>
+    <string name="wifi_timeout_summary_2mins">2 минуты</string>
+    <string name="wifi_timeout_summary_5mins">5 минут</string>
+    <string name="wifi_timeout_summary_10mins">10 минут</string>
+    <string name="wifi_timeout_summary_30mins">30 минут</string>
+    <string name="wifi_timeout_summary_1hour">1 час</string>
+    <string name="wifi_timeout_summary_2hours">2 часа</string>
+    <string name="wifi_timeout_summary_4hours">4 часа</string>
+    <string name="wifi_timeout_summary_8hours">8 часов</string>
+    <string name="bluetooth_timeout">Ожидание Bluetooth</string>
+    <string name="bluetooth_timeout_summary">Bluetooth будет выключен через <xliff:g id="timeout_description">%1$s</xliff:g>, если нет подключенных устройств</string>
+    <string name="bluetooth_timeout_summary2">Не выключать Bluetooth автоматически</string>
+    <string name="bluetooth_timeout_summary_never">Никогда</string>
+    <string name="bluetooth_timeout_summary_15secs">15 секунд</string>
+    <string name="bluetooth_timeout_summary_30secs">30 секунд</string>
+    <string name="bluetooth_timeout_summary_1min">1 минута</string>
+    <string name="bluetooth_timeout_summary_2mins">2 минуты</string>
+    <string name="bluetooth_timeout_summary_5mins">5 минут</string>
+    <string name="bluetooth_timeout_summary_10mins">10 минут</string>
+    <string name="bluetooth_timeout_summary_30mins">30 минут</string>
+    <string name="bluetooth_timeout_summary_1hour">1 час</string>
+    <string name="bluetooth_timeout_summary_2hours">2 часа</string>
+    <string name="bluetooth_timeout_summary_4hours">4 часа</string>
+    <string name="bluetooth_timeout_summary_8hours">8 часов</string>
+    <string name="smallest_tick_label">Выкл</string>
+    <string name="greatest_tick_label">Половина экрана</string>
+    <string name="gesture_back_deadzone_label">Мертвая зона</string>
+    <string name="back_sensitivity_dialog_message_cust">Использовать первую и вторую панель поиска для настройки чувствительности прокрутки, последняя панель поиска, чтобы установить мертвую зону поверх экрана, где невозможно провести взмах, чтобы избежать конфликтов с жестом внутри приложений.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Удалить использующийся снимок лица и создать новый</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Повторное сканирование лица</string>
+    <string name="face_redo_confirm_btn">Повторить</string>
+    <string name="face_redo_warning_msg">Удалить использующийся снимок лица и создать новый?</string>
+    <string name="face_unlock_method_title">Разрешить разблокировку лицом на экране блокировки</string>
+    <string name="face_unlock_method_default">Когда экран включен</string>
+    <string name="face_unlock_method_swipe">При проведении пальцем по экрану блокировки</string>
+    <string name="battery_temp">Температура батареи</string>
+    <string name="duration_less_than_one_minute">Менее 1 минуты</string>
+    <string name="screen_time_summary_usage_today">%1$s сегодня</string>
+    <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_enabled">Использовать адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Выкл</string>
+    <string name="adaptive_playback_intro_text">Автоматически приостанавливает воспроизведение медиа при отключении громкости и автоматически возобновляет его при увеличении громкости в течение заданного времени.</string>
+    <string name="adaptive_playback_timeout_title">Использовать время ожидания</string>
+    <string name="adaptive_playback_timeout_none">Без времени ожидания</string>
+    <string name="adaptive_playback_timeout_none_summary">Вкл. (без ожидания)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Вкл. (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Вкл. (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Вкл. (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Вкл. (5 минут)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Вкл. (10 минут)</string>
+    <string name="back_gesture_haptic_title">Виброотклик</string>
+    <string name="back_gesture_haptic_summary">Включить вибрацию для жеста \"Назад\"</string>
+    <string name="action_nothing">Нет действий</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_app_switch">Недавние</string>
+    <string name="action_search">Помощник</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_last_app">Последнее приложение</string>
+    <string name="action_splitscreen">Разделить экран</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Экран выключен</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_power_menu">Меню питания</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
+    <string name="action_app_action">Применение</string>
+    <string name="action_ringer_modes">Режимы звонка</string>
+    <string name="kill_app">Закрыть текущее приложение</string>
+    <string name="recent_app_toggle">Переключить недавнее приложение</string>
+    <string name="action_open_recents">Открыть недавние</string>
+    <string name="navbar_gesture_tweaks_pref_title">Расширенные настройки жестов</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Настройка жестов и настройка пользовательских действий</string>
+    <string name="navbar_gesture_tweaks_cat_title">Расширенный</string>
+    <string name="swipe_app_select_summary">Выберите приложение для запуска с помощью действия сжатия</string>
+    <string name="long_back_swipe_timeout_title">Длительность действий задержки смахивания </string>
+    <string name="left_swipe_actions_title">Действие при длительном смахивании влево</string>
+    <string name="left_swipe_app_action_title">Выберите приложение для длительного смахивания влево</string>
+    <string name="right_swipe_actions_title">Действие при длительном смахивании вправо</string>
+    <string name="right_swipe_app_action_title">Выберите приложение для длительного смахивания вправо</string>
+    <string name="left_vertical_swipe_actions_title">Вертикальное действие слева L-смахивание</string>
+    <string name="left_vertical_swipe_app_action_title">Выберите приложение для вертикального смахивания влево</string>
+    <string name="right_vertical_swipe_actions_title">Вертикальное действие справа L-смахивание</string>
+    <string name="right_vertical_swipe_app_action_title">Выберите приложение для вертикального смахивания вправо</string>
+    <string name="gesture_nav_tweaks_footer_info">Чтобы выбрать конкретное действие приложения для действия, нажмите и удерживайте любое приложение в средстве выбора приложений.\n\nЕсли отображается панель запуска, проведите по экрану в самом низу экрана, чтобы вызвать действие.</string>
+    <string name="back_swipe_extended_title">Расширенное действие смахивания</string>
+    <string name="back_swipe_extended_summary">Запуск действия при длинном смахивании (более чем на половину экрана) или L-свайпе (от края и вверх)</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Найдите датчик отпечатков пальцев на задней поверхности вашего планшета.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Сканер отпечатка пальцев расположен на задней части смартфона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Найдите датчик отпечатков пальцев на передней панели телефона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Найдите датчик отпечатков пальцев на задней панели планшета.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Найдите датчик отпечатков пальцев на задней панели устройства.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Найдите датчик отпечатка пальца на задней панели телефона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Найдите датчик отпечатка пальца сбоку планшета.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Найдите датчик отпечатка пальца сбоку вашего устройства.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Найдите датчик отпечатка пальца сбоку вашего телефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Коснитесь датчика на передней панели вашего планшета.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Коснитесь датчика на передней панели вашего устройства.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Коснитесь датчика на передней панели вашего устройства.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Коснитесь датчика на задней панели вашего планшета.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Коснитесь датчика на задней панели вашего устройства.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Коснитесь датчика на задней панели вашего устройства.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Коснитесь датчика на боковой панели вашего планшета.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Коснитесь датчика на боковой панели вашего устройства.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Коснитесь датчика на боковой панели вашего устройства.</string>
+    <string name="battery_light_settings">Индикатор зарядки батареи</string>
+    <string name="battery_light_summary">Поведение индикации батареи в режиме \"Не беспокоить\", низкий заряд батареи</string>
+    <string name="battery_light_enable">Индикация батареи</string>
+    <string name="battery_light_allow_on_dnd_title">Индикация батареи в режиме \"Не беспокоить\"</string>
+    <string name="battery_light_low_blinking_title">Мигание при низком заряде батареи</string>
+    <string name="battery_light_cat">Цвет индикатора батареи при зарядке</string>
+    <string name="battery_light_low_color">Низкий заряд батареи</string>
+    <string name="battery_light_medium_color">Средний заряд батареи</string>
+    <string name="battery_light_full_color">Почти полный заряд батареи</string>
+    <string name="battery_light_reallyfull_color">Полный заряд батареи (100%)</string>
+    <string name="show_navbar_gesture_bar_title">Панель жестов</string>
+    <string name="show_navbar_gesture_bar_summary">Показывать панель жестов в нижней части экрана</string>
+    <string name="game_space_title">Игровое пространство</string>
+    <string name="game_space_summary">Улучшите свой игровой опыт</string>
+</resources>

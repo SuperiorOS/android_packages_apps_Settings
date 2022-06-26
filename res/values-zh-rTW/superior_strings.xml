@@ -39,4 +39,6 @@
     <string name="battery_light_medium_color">中等電量</string>
     <string name="battery_light_full_color">接近滿電</string>
     <string name="battery_light_reallyfull_color">滿電量 (100)</string>
+    <string name="show_navbar_gesture_bar_title">手勢列</string>
+    <string name="game_space_title">遊戲空間</string>
 </resources>

@@ -133,6 +133,7 @@
     <string name="action_ringer_modes">Režim vyzváňania</string>
     <string name="kill_app">Ukončiť aplikáciu na popredí</string>
     <string name="recent_app_toggle">Prepnúť nedávne aplikácie</string>
+    <string name="action_open_recents">Otvoriť nedávne</string>
     <string name="navbar_gesture_tweaks_pref_title">Rozšírené možnosti gest</string>
     <string name="navbar_gesture_tweaks_pref_summary">Prispôsobte gesta a nastavte vlastné akcie</string>
     <string name="navbar_gesture_tweaks_cat_title">Pokročilé</string>
@@ -177,4 +178,8 @@
     <string name="battery_light_medium_color">Stredná úroveň</string>
     <string name="battery_light_full_color">Skoro nabitá batéria</string>
     <string name="battery_light_reallyfull_color">Úplne nabitá (100%)</string>
+    <string name="show_navbar_gesture_bar_title">Panel gest</string>
+    <string name="show_navbar_gesture_bar_summary">Zobraziť panel gestá v dolnej časti obrazovky</string>
+    <string name="game_space_title">Herný priestor</string>
+    <string name="game_space_summary">Vylepšite svoj herný zážitok</string>
 </resources>

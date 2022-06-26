@@ -17,8 +17,33 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="superior_version">SuperiorOS-Version</string>
     <string name="superior_version_default">Unbekannt</string>
+    <string name="keywords_superior_version">SuperiorOS-Version, Superior Version</string>
+    <string name="about_device_name">Codename des Geräts</string>
+    <string name="build_date">Erstellungsdatum</string>
+    <string name="build_date_default">01.01.2015-0000</string>
+    <string name="keywords_build_date">Erstellungsdatum, Info zum Erstellung</string>
+    <string name="selinux_status">SELinux-Status</string>
     <string name="selinux_status_disabled">Deaktiviert</string>
+    <string name="selinux_status_permissive">Moderat</string>
+    <string name="selinux_status_enforcing">Erzwinge</string>
+    <string name="connected_tws_device_saved_title">Gespeicherte Earbuds</string>
+    <string name="device_info_protected_single_press">Antippen, um Info anzuzeigen</string>
     <string name="app_play_store">Google Play</string>
+    <string name="density_category">Dichteoptionen</string>
+    <string name="notification_log_summary">Benachrichtigungsverlauf anzeigen</string>
+    <string name="battery_stats_reset">Statistiken zurücksetzen</string>
+    <string name="battery_stats_message">Akkustatistiken werden zurückgesetzt</string>
+    <string name="superior_settings_dash_title">Superior Goodies</string>
+    <string name="superior_settings_summary">Zusatzfunktionen</string>
+    <string name="min_refresh_rate_title">Minimale Aktualisierungsrate</string>
+    <string name="max_refresh_rate_title">Maximale Aktualisierungsrate</string>
+    <string name="battery_saver_refresh_rate_title">Reduziere Aktualisierungsrate</string>
+    <string name="battery_saver_refresh_rate_summary">Verwenden Sie eine Bildschirmaktualisierungsrate von 60 Hz, um Energie zu sparen, wenn der Energiesparmodus aktiviert ist</string>
+    <string name="screenshot_shutter_sound_title">Bildschirmfoto-Auslöseton</string>
+    <string name="volume_link_notification_title">Klingelton- &amp; Benachrichtigungslautstärke verbinden</string>
+    <string name="app_notification_sound_timeout_title">Minimale Zeit zwischen Benachrichtigungstönen</string>
+    <string name="app_notification_sound_timeout_summary_template">Töne und Vibrationen nur alle <xliff:g id="duration">%1$s</xliff:g> zulassen</string>
+    <string name="app_notification_sound_timeout_value_none">Keine Beschränkung</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 Sekunden</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 Sekunden</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 Minute</string>
@@ -26,6 +51,9 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 Minuten</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 Minuten</string>
     <string name="wifi_timeout">WLAN automatisch ausschalten</string>
+    <string name="wifi_timeout_summary">WLAN wird <xliff:g id="timeout_description">%1$s</xliff:g> ausgeschaltet, wenn kein Netzwerk verbunden ist</string>
+    <string name="wifi_timeout_summary2">Deaktiviert</string>
+    <string name="wifi_timeout_summary_never">Nie</string>
     <string name="wifi_timeout_summary_15secs">15 Sekunden</string>
     <string name="wifi_timeout_summary_30secs">30 Sekunden</string>
     <string name="wifi_timeout_summary_1min">1 Minute</string>
@@ -37,5 +65,121 @@
     <string name="wifi_timeout_summary_2hours">2 Stunden</string>
     <string name="wifi_timeout_summary_4hours">4 Stunden</string>
     <string name="wifi_timeout_summary_8hours">8 Stunden</string>
+    <string name="bluetooth_timeout">Bluetooth automatisch ausschalten</string>
+    <string name="bluetooth_timeout_summary">Bluetooth wird <xliff:g id="timeout_description">%1$s</xliff:g> ausgeschaltet, wenn kein Gerät verbunden ist</string>
+    <string name="bluetooth_timeout_summary2">Bluetooth nicht automatisch ausschalten</string>
+    <string name="bluetooth_timeout_summary_never">Nie</string>
+    <string name="bluetooth_timeout_summary_15secs">15 Sekunden</string>
+    <string name="bluetooth_timeout_summary_30secs">30 Sekunden</string>
+    <string name="bluetooth_timeout_summary_1min">1 Minute</string>
+    <string name="bluetooth_timeout_summary_2mins">2 Minuten</string>
+    <string name="bluetooth_timeout_summary_5mins">5 Minuten</string>
+    <string name="bluetooth_timeout_summary_10mins">10 Minuten</string>
+    <string name="bluetooth_timeout_summary_30mins">30 Minuten</string>
+    <string name="bluetooth_timeout_summary_1hour">1 Stunde</string>
+    <string name="bluetooth_timeout_summary_2hours">2 Stunden</string>
+    <string name="bluetooth_timeout_summary_4hours">4 Stunden</string>
+    <string name="bluetooth_timeout_summary_8hours">8 Stunden</string>
+    <string name="smallest_tick_label">Aus</string>
+    <string name="greatest_tick_label">Halber Bildschirm</string>
+    <string name="gesture_back_deadzone_label">Tote Zone</string>
+    <string name="back_sensitivity_dialog_message_cust">Verwenden Sie die erste und zweite Suchleiste, um die Empfindlichkeit für das Zurückwischen zu konfigurieren, die letzte Suchleiste, um einen toten Bereich oben auf dem Bildschirm festzulegen, in dem das Wischen nicht ausgelöst werden kann, um Konflikte mit In-App-Gesten zu vermeiden.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Entfernen Sie einen vorhandenen Gesichtsscan und erstellen Sie einen neuen Scan</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Gesichtsscan wiederholen</string>
+    <string name="face_redo_confirm_btn">Wiederholen</string>
+    <string name="face_redo_warning_msg">Möchten Sie den vorhandenen Gesichtsscan entfernen und einen neuen erstellen?</string>
+    <string name="face_unlock_method_title">Gesichtsentsperrung auf dem Sperrbildschirm zulassen</string>
+    <string name="face_unlock_method_default">Wenn der Bildschirm eingeschaltet ist</string>
+    <string name="face_unlock_method_swipe">Beim Wischen auf dem Sperrbildschirm</string>
+    <string name="battery_temp">Batterietemperatur</string>
+    <string name="duration_less_than_one_minute">Weniger als 1 Minute</string>
     <string name="screen_time_summary_usage_today">%1$s Heute</string>
+    <string name="adaptive_playback_screen_title">Adaptive Wiedergabe</string>
+    <string name="adaptive_playback_enabled">Verwenden Sie die adaptive Wiedergabe</string>
+    <string name="adaptive_playback_disabled_summary">Aus</string>
+    <string name="adaptive_playback_intro_text">Hält Medien automatisch an, wenn die Lautstärke stummgeschaltet wird, und wird automatisch fortgesetzt, wenn die Lautstärke innerhalb der festgelegten Zeit wiederhergestellt wird.</string>
+    <string name="adaptive_playback_timeout_title">Verwenden Sie eine Zeitüberschreitung von</string>
+    <string name="adaptive_playback_timeout_none">Keine Zeitüberschreitung</string>
+    <string name="adaptive_playback_timeout_none_summary">Ein (kein Zeitüberschreitung)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 Sekunden</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">An (30 Sekunden)</string>
+    <string name="adaptive_playback_timeout_1_min">1 Minute</string>
+    <string name="adaptive_playback_timeout_1_min_summary">An (1 Minute)</string>
+    <string name="adaptive_playback_timeout_2_min">2 Minuten</string>
+    <string name="adaptive_playback_timeout_2_min_summary">An (2 Minuten)</string>
+    <string name="adaptive_playback_timeout_5_min">5 Minuten</string>
+    <string name="adaptive_playback_timeout_5_min_summary">An (5 Minuten)</string>
+    <string name="adaptive_playback_timeout_10_min">10 Minuten</string>
+    <string name="adaptive_playback_timeout_10_min_summary">An (10 Minuten)</string>
+    <string name="back_gesture_haptic_title">Haptisches Feedback</string>
+    <string name="back_gesture_haptic_summary">Aktivieren Sie den haptischen Tick-Effekt bei der Zurück-Geste</string>
+    <string name="action_nothing">Keine Aktion</string>
+    <string name="action_menu">Menü</string>
+    <string name="action_app_switch">Anwendungsverlauf</string>
+    <string name="action_search">Assistent</string>
+    <string name="action_voice_search">Sprachsuche</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Vorherige App</string>
+    <string name="action_splitscreen">Geteilter Bildschirm</string>
+    <string name="action_flashlight">Taschenlampe</string>
+    <string name="action_clear_notifications">Alle Benachrichtigungen löschen</string>
+    <string name="action_volume_panel">Lautstärkeregler</string>
+    <string name="action_screen_off">Bildschirm aus</string>
+    <string name="action_notifications">Benachrichtigungen</string>
+    <string name="action_power_menu">Ein-/Aus-Menü</string>
+    <string name="action_screenshot">Bildschirmfoto</string>
+    <string name="action_qs_panel">Schnelleinstellungen</string>
+    <string name="action_app_action">Anwendung</string>
+    <string name="action_ringer_modes">Klingelton-Modus</string>
+    <string name="kill_app">App im Vordergrund beenden</string>
+    <string name="recent_app_toggle">Aktuelle App wechseln</string>
+    <string name="action_open_recents">Zuletzt geöffnet</string>
+    <string name="navbar_gesture_tweaks_pref_title">Erweiterte Gestenoptionen</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Passen Sie Gesten an und legen Sie benutzerdefinierte Aktionen fest</string>
+    <string name="navbar_gesture_tweaks_cat_title">Erweitert</string>
+    <string name="swipe_app_select_summary">Wählen Sie eine App aus, die mit der Squeeze-Aktion gestartet werden soll</string>
+    <string name="long_back_swipe_timeout_title">Zeitüberschreitung bei langer Wischaktion</string>
+    <string name="left_swipe_actions_title">Langes Wischen nach links</string>
+    <string name="left_swipe_app_action_title">Wählen Sie die lange Linkswisch-App aus</string>
+    <string name="right_swipe_actions_title">Langes Wischen nach rechts</string>
+    <string name="right_swipe_app_action_title">Wählen Sie die lange rechte Swipe-App aus</string>
+    <string name="left_vertical_swipe_actions_title">Vertikale L-Swipe-Aktion nach links</string>
+    <string name="left_vertical_swipe_app_action_title">Wählen Sie die vertikale Wisch-App nach links</string>
+    <string name="right_vertical_swipe_actions_title">Vertikale L-Swipe-Aktion nach rechts</string>
+    <string name="right_vertical_swipe_app_action_title">Wählen Sie die vertikale Wisch-App nach rechts</string>
+    <string name="gesture_nav_tweaks_footer_info">Um eine bestimmte App-Aktivität für die Aktion auszuwählen, drücke lange auf eine beliebige App in der App-Auswahl.\n\nWenn der Launcher angezeigt wird, streiche ganz unten auf dem Bildschirm, um die Aktion auszulösen.</string>
+    <string name="back_swipe_extended_title">Erweiterte Wischaktion</string>
+    <string name="back_swipe_extended_summary">Auslösen der Aktion bei breiterem Wischen (mehr als die Hälfte der Anzeigegröße) oder einem L-Wischen (vertikal länger genug)</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Suchen Sie den Fingerabdrucksensor auf der Vorderseite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Suchen Sie den Fingerabdrucksensor auf der Vorderseite Ihres Geräts.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Suchen Sie den Fingerabdrucksensor auf der Vorderseite Ihres Telefons.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Suchen Sie den Fingerabdrucksensor auf der Rückseite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Suchen Sie den Fingerabdrucksensor auf der Rückseite Ihres Geräts.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Suchen Sie den Fingerabdrucksensor auf der Rückseite Ihres Telefons.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Suchen Sie den Fingerabdrucksensor an der Seite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Suchen Sie den Fingerabdrucksensor an der Seite Ihres Geräts.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Suchen Sie den Fingerabdrucksensor an der Seite Ihres Telefons.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Berühren Sie den Sensor auf der Vorderseite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Berühren Sie den Sensor auf der Vorderseite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Berühren Sie den Sensor auf der Vorderseite Ihres Telefons.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Berühren Sie den Sensor auf der Rückseite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Berühren Sie den Sensor auf der Rückseite Ihres Geräts.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Berühren Sie den Sensor auf der Rückseite Ihres Telefons.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Berühren Sie den Sensor an der Seite Ihres Tablets.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Berühren Sie den Sensor an der Seite Ihres Geräts.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Berühren Sie den Sensor an der Seite Ihres Telefons.</string>
+    <string name="battery_light_settings">Akku Lade-LED</string>
+    <string name="battery_light_summary">Batterielichtverhalten bei DND, schwache Batterie</string>
+    <string name="battery_light_enable">Akku-LED</string>
+    <string name="battery_light_allow_on_dnd_title">Akku-LED bei aktivem \"Bitte nicht stören\"-Modus</string>
+    <string name="battery_light_low_blinking_title">Blinkendes Licht bei schwacher Batterie</string>
+    <string name="battery_light_cat">LED-Farbe beim Laden</string>
+    <string name="battery_light_low_color">Niedriger Akkustand</string>
+    <string name="battery_light_medium_color">Mittlerer Akkustand</string>
+    <string name="battery_light_full_color">Akku fast voll</string>
+    <string name="battery_light_reallyfull_color">Voll geladen (100%)</string>
+    <string name="show_navbar_gesture_bar_title">Gestenleiste</string>
+    <string name="show_navbar_gesture_bar_summary">Zeigen Sie die Gestenleiste am unteren Bildschirmrand an</string>
+    <string name="game_space_title">Spiele</string>
+    <string name="game_space_summary">Verbessern Sie Ihr Spielerlebnis</string>
 </resources>

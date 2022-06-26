@@ -133,6 +133,7 @@
     <string name="action_ringer_modes">着信モード</string>
     <string name="kill_app">表示中のアプリを終了</string>
     <string name="recent_app_toggle">直前のアプリの切り替え</string>
+    <string name="action_open_recents">履歴を開く</string>
     <string name="navbar_gesture_tweaks_pref_title">高度なジェスチャーオプション</string>
     <string name="navbar_gesture_tweaks_pref_summary">ジェスチャーを編集してカスタムアクションを設定する</string>
     <string name="navbar_gesture_tweaks_cat_title">高度な設定</string>
@@ -177,4 +178,8 @@
     <string name="battery_light_medium_color">中程度</string>
     <string name="battery_light_full_color">ほぼ充電完了</string>
     <string name="battery_light_reallyfull_color">充電完了</string>
+    <string name="show_navbar_gesture_bar_title">ジェスチャーバー</string>
+    <string name="show_navbar_gesture_bar_summary">ジェスチャーバーを画面の下部に表示する</string>
+    <string name="game_space_title">ゲームスペース</string>
+    <string name="game_space_summary">ゲーム体験を向上させる</string>
 </resources>

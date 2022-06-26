@@ -133,6 +133,7 @@
     <string name="action_ringer_modes">Modos de toque</string>
     <string name="kill_app">Fechar aplicativo em primeiro plano</string>
     <string name="recent_app_toggle">Alternar aplicativo recente</string>
+    <string name="action_open_recents">Abrir recentes</string>
     <string name="navbar_gesture_tweaks_pref_title">Opções de gestos avançados</string>
     <string name="navbar_gesture_tweaks_pref_summary">Personalizar gestos e definir ações personalizadas</string>
     <string name="navbar_gesture_tweaks_cat_title">Avançado</string>
@@ -177,4 +178,8 @@
     <string name="battery_light_medium_color">Bateria média</string>
     <string name="battery_light_full_color">Bateria quase carregada</string>
     <string name="battery_light_reallyfull_color">Bateria cheia (100)</string>
+    <string name="show_navbar_gesture_bar_title">Barra de gestos</string>
+    <string name="show_navbar_gesture_bar_summary">Mostrar barra de gestos na parte inferior da tela</string>
+    <string name="game_space_title">Espaço de Jogo</string>
+    <string name="game_space_summary">Melhore sua experiência em jogos</string>
 </resources>

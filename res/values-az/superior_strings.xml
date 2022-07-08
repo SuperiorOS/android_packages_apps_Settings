@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2022 The Superior OS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">SuperiorOS versiyası</string>
+    <string name="superior_version_default">Bilinmir</string>
+    <string name="keywords_superior_version">SuperiorOS versiyası, superior versiyası</string>
+    <string name="about_device_name">Cihaz kod adı</string>
+    <string name="build_date">Quruluş tarixi</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">quruluş tarixi, quruluş məlumatı</string>
+    <string name="selinux_status">SELinux vəziyyəti</string>
+    <string name="selinux_status_disabled">Sıradan çıxarıldı</string>
+    <string name="selinux_status_permissive">İcazə verən</string>
+    <string name="selinux_status_enforcing">Məcburi</string>
+    <string name="connected_tws_device_saved_title">Saxlanılmış Qulaqlıqlar</string>
+    <string name="device_info_protected_single_press">Məlumatı göstərmək üçün toxunun</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="density_category">Sıxlıq seçimləri</string>
+    <string name="notification_log_summary">Bildiriş tarixçə jurnalını göstər</string>
+    <string name="battery_stats_reset">Statistikaları sıfırla</string>
+    <string name="battery_stats_message">Batareya tarixçəsi statistikaları sıfırlanacaq</string>
+    <string name="superior_settings_dash_title">Superior özəlləşdirmələri</string>
+    <string name="superior_settings_summary">Ekstra özəlliklər</string>
+    <string name="min_refresh_rate_title">Minimum təzələnmə sürəti</string>
+    <string name="max_refresh_rate_title">Maksimum təzələnmə sürəti</string>
+    <string name="battery_saver_refresh_rate_title">Təzələmə sürətini azalt</string>
+    <string name="battery_saver_refresh_rate_summary">Batareya Qənaəti açıq olanda enerjiyə qənaət etmək üçün 60 Hz təzələnmə sürətini istifadə edin</string>
+    <string name="screenshot_shutter_sound_title">Ekran şəkli səsi</string>
+    <string name="volume_link_notification_title">Zəng səsi və bildiriş səs səviyyələrini birləşdir</string>
+    <string name="app_notification_sound_timeout_title">Bildiriş səsləri arası ən az vaxt</string>
+    <string name="app_notification_sound_timeout_summary_template">Bir dəfədən çox olmayaraq hər <xliff:g id="duration">%1$s</xliff:g> də bir titrəmə və ya səsə icazə ver</string>
+    <string name="app_notification_sound_timeout_value_none">Məhdudiyyət yoxdur</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 saniyə</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 saniyə</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 dəqiqə</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 dəqiqə</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 dəqiqə</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 dəqiqə</string>
+    <string name="wifi_timeout">Wi-Fi-ı avtomatik söndür</string>
+    <string name="wifi_timeout_summary">Wi-Fi, heç bir şəbəkəyə qoşulmayıbsa <xliff:g id="timeout_description">%1$s</xliff:g> sonra söndürüləcək</string>
+    <string name="wifi_timeout_summary2">Sıradan çıxarıldı</string>
+    <string name="wifi_timeout_summary_never">Heç vaxt</string>
+    <string name="wifi_timeout_summary_15secs">15 saniyə</string>
+    <string name="wifi_timeout_summary_30secs">30 saniyə</string>
+    <string name="wifi_timeout_summary_1min">1 dəqiqə</string>
+    <string name="wifi_timeout_summary_2mins">2 dəqiqə</string>
+    <string name="wifi_timeout_summary_5mins">5 dəqiqə</string>
+    <string name="wifi_timeout_summary_10mins">10 dəqiqə</string>
+    <string name="wifi_timeout_summary_30mins">30 dəqiqə</string>
+    <string name="wifi_timeout_summary_1hour">1 saat</string>
+    <string name="wifi_timeout_summary_2hours">2 saat</string>
+    <string name="wifi_timeout_summary_4hours">4 saat</string>
+    <string name="wifi_timeout_summary_8hours">8 saat</string>
+    <string name="bluetooth_timeout">Bluetooth bitmə vaxtı</string>
+    <string name="bluetooth_timeout_summary">Bluetooth, heç bir cihaza qoşulmayıbsa <xliff:g id="timeout_description">%1$s</xliff:g> sonra söndürüləcək</string>
+    <string name="bluetooth_timeout_summary2">Bluetooth-u avtomatik söndürmə</string>
+    <string name="bluetooth_timeout_summary_never">Heç vaxt</string>
+    <string name="bluetooth_timeout_summary_15secs">15 saniyə</string>
+    <string name="bluetooth_timeout_summary_30secs">30 saniyə</string>
+    <string name="bluetooth_timeout_summary_1min">1 dəqiqə</string>
+    <string name="bluetooth_timeout_summary_2mins">2 dəqiqə</string>
+    <string name="bluetooth_timeout_summary_5mins">5 dəqiqə</string>
+    <string name="bluetooth_timeout_summary_10mins">10 dəqiqə</string>
+    <string name="bluetooth_timeout_summary_30mins">30 dəqiqə</string>
+    <string name="bluetooth_timeout_summary_1hour">1 saat</string>
+    <string name="bluetooth_timeout_summary_2hours">2 saat</string>
+    <string name="bluetooth_timeout_summary_4hours">4 saat</string>
+    <string name="bluetooth_timeout_summary_8hours">8 saat</string>
+    <string name="smallest_tick_label">Bağlı</string>
+    <string name="greatest_tick_label">Yarı ekran</string>
+    <string name="gesture_back_deadzone_label">Ölü zona</string>
+    <string name="back_sensitivity_dialog_message_cust">Geri sürüşdürmə həssaslığını konfiqurasiya etmək üçün birinci və ikinci axtarış sətrini istifadə edin. Tətbiq daxili jestlərlə ziddiyətlərin qarşısını almaq və ekranın üst hissəsində sürüşdürmənin tətiklənə bilməyəcəyi bir ölü zona tənzimləmək üçün son axtarış sətrini istifadə edin.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Mövcud üz skanını çıxarın və yenisini əlavə edin</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Üz skanını yenidən et</string>
+    <string name="face_redo_confirm_btn">Təkrar et</string>
+    <string name="face_redo_warning_msg">Mövcud üz skanını çıxartmaq və yenisini yaratmaq istəyirsiniz?</string>
+    <string name="face_unlock_method_title">Kilid ekranında üzlə kilid açmağa icazə ver</string>
+    <string name="face_unlock_method_default">Ekran açılanda</string>
+    <string name="face_unlock_method_swipe">Kilid ekranında sürüşdürəndə</string>
+    <string name="battery_temp">Batareya temperaturu</string>
+    <string name="duration_less_than_one_minute">1 dəqiqədən az</string>
+    <string name="screen_time_summary_usage_today">Bu gün %1$s</string>
+    <string name="adaptive_playback_screen_title">Adaptiv oynatma</string>
+    <string name="adaptive_playback_enabled">Adaptiv oynatmanı istifadə et</string>
+    <string name="adaptive_playback_disabled_summary">Bağlı</string>
+    <string name="adaptive_playback_intro_text">Səsi tam kəsəndə mediaya avtomatik fasilə verir və təyin edilən vaxt ərzində səs açılanda avtomatik davam etdirir.</string>
+    <string name="adaptive_playback_timeout_title">Bitmə vaxtı istifadə et</string>
+    <string name="adaptive_playback_timeout_none">Bitmə vaxtı yoxdur</string>
+    <string name="adaptive_playback_timeout_none_summary">Açıqdır (bitmə vaxtı olmadan)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 saniyə</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Açıqdır (30 saniyə)</string>
+    <string name="adaptive_playback_timeout_1_min">1 dəqiqə</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Açıqdır (1 dəqiqə)</string>
+    <string name="adaptive_playback_timeout_2_min">2 dəqiqə</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Açıqdır (2 dəqiqə)</string>
+    <string name="adaptive_playback_timeout_5_min">5 dəqiqə</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Açıqdır (5 dəqiqə)</string>
+    <string name="adaptive_playback_timeout_10_min">10 dəqiqə</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Açıqdır (10 dəqiqə)</string>
+    <string name="back_gesture_haptic_title">Toxunuş əks əlaqəsi</string>
+    <string name="back_gesture_haptic_summary">Geri hərəkətində toxunuş tik effektini fəallaşdır</string>
+    <string name="action_nothing">Hərəkət yoxdur</string>
+    <string name="action_menu">Menyu</string>
+    <string name="action_app_switch">Sonuncular</string>
+    <string name="action_search">Köməkçi</string>
+    <string name="action_voice_search">Səsli axtarış</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Son tətbiq</string>
+    <string name="action_splitscreen">Bölünmüş ekran</string>
+    <string name="action_flashlight">Fənər</string>
+    <string name="action_clear_notifications">Bildirişləri təmizlə</string>
+    <string name="action_volume_panel">Səs paneli</string>
+    <string name="action_screen_off">Ekranı bağla</string>
+    <string name="action_notifications">Bildirişlər</string>
+    <string name="action_power_menu">Güc menyusu</string>
+    <string name="action_screenshot">Ekran şəkli</string>
+    <string name="action_qs_panel">Cəld tənzm. paneli</string>
+    <string name="action_app_action">Tətbiq</string>
+    <string name="action_ringer_modes">Zəng səsi rejimləri</string>
+    <string name="kill_app">Önplan tətbiqlərini bağla</string>
+    <string name="recent_app_toggle">Son tətbiqə keç</string>
+    <string name="action_open_recents">Sonuncuları aç</string>
+    <string name="navbar_gesture_tweaks_pref_title">Qabaqcıl jest seçimləri</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Jestləri özəlləşdirin və özəl əməliyyatları tənzimləyin</string>
+    <string name="navbar_gesture_tweaks_cat_title">Qabaqcıl</string>
+    <string name="swipe_app_select_summary">Sıxma əməliyyatı ilə başladılacaq bir tətbiq seçin</string>
+    <string name="long_back_swipe_timeout_title">Uzun sürüşdürmə əməliyyatının bitmə vaxtı</string>
+    <string name="left_swipe_actions_title">Uzun sola sürüşdürmə əməliyyatı</string>
+    <string name="left_swipe_app_action_title">Sola uzun sürüşdürmə tətbiqini seçin</string>
+    <string name="right_swipe_actions_title">Uzun sağa sürüşdürmə əməliyyatı</string>
+    <string name="right_swipe_app_action_title">Sağa uzun sürüşdürmə tətbiqini seçin</string>
+    <string name="left_vertical_swipe_actions_title">Şaquli sola L sürüşdürmə əməliyyatı</string>
+    <string name="left_vertical_swipe_app_action_title">Sola şaquli sürüşdürmə tətbiqini seçin</string>
+    <string name="right_vertical_swipe_actions_title">Şaquli sağa L sürüşdürmə əməliyyatı</string>
+    <string name="right_vertical_swipe_app_action_title">Sağa şaquli sürüşdürmə tətbiqini seçin</string>
+    <string name="gesture_nav_tweaks_footer_info">Əməliyyatı icra edəcək müəyyən bir tətbiq fəaliyyəti seçmək üçün tətbiq seçicidəki istənilən bir tətbiqə uzun basın.\n\nƏgər başladıcı göstərilirsə, əməliyyatı başlatmaq üçün ekranın ən alt hissəsindəki sürüşdürməni edin.</string>
+    <string name="back_swipe_extended_title">Genişləndirilmiş sürüşdürmə əməliyyatı</string>
+    <string name="back_swipe_extended_summary">Daha uzun sürüşdürmədə (ekran ölçüsünün yarısından çoxu) və ya bir L sürüşdürməsində (şaquli olaraq yetərincə uzun) əməliyyatı başladın</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Planşetinizin ön tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Cihazınızın ön tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Telefonunuzun ön tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Planşetinizin arxa tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Cihazınızın arxa tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Telefonunuzun arxa tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Planşetinizin yan tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Cihazınızın yan tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Telefonunuzun yan tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Planşetinizin ön tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Cihazınızın ön tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Telefonunuzun ön tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Planşetinizin arxa tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Cihazınızın arxa tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Telefonunuzun arxa tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Planşetinizin yan tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Cihazınızın yan tərəfindəki sensora toxunun.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Telefonunuzun yan tərəfindəki sensora toxunun.</string>
+    <string name="battery_light_settings">Enerji yığma işığı</string>
+    <string name="battery_light_summary">Narahat etməyin rejimində batareya işığı davranışı, zəif batareya</string>
+    <string name="battery_light_enable">Batareya işığı</string>
+    <string name="battery_light_allow_on_dnd_title">Narahat etmə rejimində batareya işığı</string>
+    <string name="battery_light_low_blinking_title">Zəif batareyada işığı yandırıb söndür</string>
+    <string name="battery_light_cat">Enerji yığarkən batareya işığı rəngi</string>
+    <string name="battery_light_low_color">Zəif batareya</string>
+    <string name="battery_light_medium_color">Orta səviyyə batareya</string>
+    <string name="battery_light_full_color">Tamamilə dolmuş batareya</string>
+    <string name="battery_light_reallyfull_color">Tam (100) dolu batareya</string>
+    <string name="show_navbar_gesture_bar_title">Jest sətri</string>
+    <string name="show_navbar_gesture_bar_summary">Ekranın alt hissəsində jest sətrini göstər</string>
+    <string name="game_space_title">Oyun sahəsi</string>
+    <string name="game_space_summary">Oyun təcrübənizi artırın</string>
+</resources>

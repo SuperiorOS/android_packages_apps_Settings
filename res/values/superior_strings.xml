@@ -123,4 +123,7 @@
     <!-- Battery temperature -->
     <string name="battery_temperature">Battery temperature</string>
 
+    <!-- Summary for list to control apps that ignore battery saving restrictions -->
+    <string name="high_power_apps_summary">Battery optimization availability</string>
+
 </resources>

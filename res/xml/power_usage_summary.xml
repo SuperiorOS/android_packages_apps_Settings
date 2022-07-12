@@ -69,6 +69,12 @@
         android:title="@string/low_battery_light_title"
         android:summary="@string/low_battery_light_summary"
         settings:controller="com.android.settings.notification.BatteryLightPreferenceController"/>
+    <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:summary="@string/high_power_apps_summary">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
 
     <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
         android:key="battery_temperature"

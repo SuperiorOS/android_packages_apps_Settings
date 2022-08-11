@@ -73,6 +73,9 @@ android_library {
         // External dependencies
         "androidx.navigation_navigation-fragment-ktx",
         "androidx.window_window-java",
+        "androidx.fragment_fragment",
+        "androidx.fragment_fragment-ktx",
+        "androidx.lifecycle_lifecycle-runtime-ktx",
         "gson",
         "guava",
 
@@ -118,6 +121,10 @@ android_library {
         "com.github.bumptech.glide_glide",
         "VendorSupport-preference",
         "kotlin-stdlib",
+        "SettingsLibMainSwitchPreference",
+        "kotlinx_coroutines_android",
+        "kotlinx_coroutines",
+        "androidx.preference_preference-ktx",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

@@ -182,4 +182,13 @@
     <string name="show_navbar_gesture_bar_summary">Ekranın alt kısmında hareket çubuğunu göster</string>
     <string name="game_space_title">Oyun alanı</string>
     <string name="game_space_summary">Oyun deneyiminizi geliştirin</string>
+    <string name="keywords_pulse_ambient_light_display">bildirim, bildirimler, kenar, ışık, renk, renk</string>
+    <string name="pulse_ambient_light_text">Kenar aydınlatması, bir bildirim aldığınızda ekranınızın parlamasını sağlar. Bu, telefon uyku modundayken pulsenin ne zaman geldiğini anlamanızı kolaylaştırır.</string>
+    <string name="pulse_ambient_light_title">Kenar aydınlatması</string>
+    <string name="pulse_ambient_light_summary">Bildirim geldiğinde ortam ekranın yan kenarlarını aydınlat</string>
+    <string name="ambient_notification_light_accent_title">Sistem vurgu rengi</string>
+    <string name="ambient_notification_light_color_automatic_title">Bildirim rengi</string>
+    <string name="pulse_ambient_light_color">Pulse verirken, kullan</string>
+    <string name="navbar_invert_layout_title">Gezinme çubuğu düzenini ters çevir</string>
+    <string name="navbar_invert_info">Gezinme çubuğu düzenini ters çevir</string>
 </resources>

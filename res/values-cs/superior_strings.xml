@@ -182,4 +182,13 @@
     <string name="show_navbar_gesture_bar_summary">Zobrazit panel gesta v dolní části obrazovky</string>
     <string name="game_space_title">Herní prostor</string>
     <string name="game_space_summary">Vylepšete svůj herní zážitek</string>
+    <string name="keywords_pulse_ambient_light_display">oznámení, hrana, světlo, barva</string>
+    <string name="pulse_ambient_light_text">Nasvícení okrajů způsobí, že se obrazovka při přijetí oznámení rozsvítí. Díky tomu je snazší zjistit, kdy přijde oznámení, když je telefon v režimu spánku.</string>
+    <string name="pulse_ambient_light_title">Nasvícení okrajů</string>
+    <string name="pulse_ambient_light_summary">Rozsvítit boční okraje obrazovky po přijetí oznámení</string>
+    <string name="ambient_notification_light_accent_title">Systémová barva zvýraznění</string>
+    <string name="ambient_notification_light_color_automatic_title">Barva oznámení</string>
+    <string name="pulse_ambient_light_color">Při pulzování se použije</string>
+    <string name="navbar_invert_layout_title">Převrátit rozložení navigačního panelu</string>
+    <string name="navbar_invert_info">Převrátit rozložení navigačního panelu</string>
 </resources>

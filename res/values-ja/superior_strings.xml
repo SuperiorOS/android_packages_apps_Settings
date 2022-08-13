@@ -182,4 +182,13 @@
     <string name="show_navbar_gesture_bar_summary">ジェスチャーバーを画面の下部に表示する</string>
     <string name="game_space_title">ゲームスペース</string>
     <string name="game_space_summary">ゲーム体験を向上させる</string>
+    <string name="keywords_pulse_ambient_light_display">通知、エッジ、ライト、色</string>
+    <string name="pulse_ambient_light_text">エッジライトは通知を受信した時に画面を光らせます。これにより端末が Doze モードの間でパルスを受け取った時に簡単に把握することができます。</string>
+    <string name="pulse_ambient_light_title">エッジライト</string>
+    <string name="pulse_ambient_light_summary">通知の点滅で画面の両端をライトアップする</string>
+    <string name="ambient_notification_light_accent_title">システムアクセントの色</string>
+    <string name="ambient_notification_light_color_automatic_title">通知の色</string>
+    <string name="pulse_ambient_light_color">点滅時に使用されます</string>
+    <string name="navbar_invert_layout_title">ナビゲーションバーレイアウトの反転</string>
+    <string name="navbar_invert_info">ナビゲーションバーのレイアウトを反転する</string>
 </resources>

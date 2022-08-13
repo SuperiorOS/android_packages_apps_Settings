@@ -182,4 +182,12 @@
     <string name="show_navbar_gesture_bar_summary">Ekranın alt hissəsində jest sətrini göstər</string>
     <string name="game_space_title">Oyun sahəsi</string>
     <string name="game_space_summary">Oyun təcrübənizi artırın</string>
+    <string name="keywords_pulse_ambient_light_display">bildiriş, bildirişlər, kənar, işıq, rəng, rəng</string>
+    <string name="pulse_ambient_light_text">Kənar işıqlandırma, bir bildiriş alanda ekranı parlaq edir. Bu, telefon yuxu rejimində ikən nəbzi nə vaxt aldığınızı anlamağı asanlaşdırır.</string>
+    <string name="pulse_ambient_light_title">Kənar işıqlandırma</string>
+    <string name="pulse_ambient_light_summary">Bildiriş ekranında ekranın yan kənarlarını işıqlandır</string>
+    <string name="ambient_notification_light_accent_title">Sistem vurğu rəngi</string>
+    <string name="ambient_notification_light_color_automatic_title">Bildiriş rəngi</string>
+    <string name="navbar_invert_layout_title">Hərəkət sətri düzümünü tərsinə çevir</string>
+    <string name="navbar_invert_info">Hərəkət sətri düzümünü tərsinə çevir</string>
 </resources>

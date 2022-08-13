@@ -182,4 +182,13 @@
     <string name="show_navbar_gesture_bar_summary">Показывать панель жестов в нижней части экрана</string>
     <string name="game_space_title">Игровое пространство</string>
     <string name="game_space_summary">Улучшите свой игровой опыт</string>
+    <string name="keywords_pulse_ambient_light_display">уведомление, уведомления, края, подсветка, цветовой, цвет</string>
+    <string name="pulse_ambient_light_text">Подсветка краев заставляет ваш экран светиться, когда вы получаете уведомление. Это облегчает определение того, когда вы получаете пульс, когда телефон находится в режиме ожидания.</string>
+    <string name="pulse_ambient_light_title">Подсветка краёв экрана</string>
+    <string name="pulse_ambient_light_summary">Подсвечивать края экрана при получении уведомления</string>
+    <string name="ambient_notification_light_accent_title">Цвет акцента системы</string>
+    <string name="ambient_notification_light_color_automatic_title">Цвет уведомлений</string>
+    <string name="pulse_ambient_light_color">При пульсации, использовать</string>
+    <string name="navbar_invert_layout_title">Инвертировать ракладку панели навигации</string>
+    <string name="navbar_invert_info">Инвертировать ракладку панели навигации</string>
 </resources>

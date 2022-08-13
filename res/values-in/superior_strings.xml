@@ -182,4 +182,13 @@
     <string name="show_navbar_gesture_bar_summary">Tampilkan bilah gestur di bagian bawah layar</string>
     <string name="game_space_title">Ruang Game</string>
     <string name="game_space_summary">Tingkatkan pengalaman bermain game Anda</string>
+    <string name="keywords_pulse_ambient_light_display">pemberitahuan, tepi, cahaya, warna</string>
+    <string name="pulse_ambient_light_text">Pencahayaan tepi membuat layar Anda bersinar saat Anda menerima notifikasi. Ini memudahkan untuk mengetahui kapan Anda mendapatkan notifikasi saat ponsel dalam mode tidur.</string>
+    <string name="pulse_ambient_light_title">Pencahayaan tepi layar</string>
+    <string name="pulse_ambient_light_summary">Menambahkan pencahayaan sisi samping pada layar saat ada notifikasi baru</string>
+    <string name="ambient_notification_light_accent_title">Warna aksen sistem</string>
+    <string name="ambient_notification_light_color_automatic_title">Warna Notifikasi</string>
+    <string name="pulse_ambient_light_color">Saat menyala, gunakan</string>
+    <string name="navbar_invert_layout_title">Balikkan tata letak bilah navigasi</string>
+    <string name="navbar_invert_info">Balikkan tata letak bilah navigasi</string>
 </resources>

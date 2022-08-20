@@ -41,17 +41,18 @@ class SimEidPreferenceController(context: Context, preferenceKey: String) :
     BasePreferenceController(context, preferenceKey) {
     private var slotSimStatus: SlotSimStatus? = null
     private var eidStatus: EidStatus? = null
-    private lateinit var preference: TelephonyPreferenceDialog
-    private lateinit var eid: String
+    private val preference: TelephonyPreferenceDialog by lazy { TelephonyPreferenceDialog(context, null) }
+    private var eid: String = ""
 
     fun init(slotSimStatus: SlotSimStatus?, eidStatus: EidStatus?) {
         this.slotSimStatus = slotSimStatus
         this.eidStatus = eidStatus
+        updateState(null) // Update the state when initializing
     }
 
     override fun getAvailabilityStatus(): Int {
         if (!SubscriptionUtil.isSimHardwareVisible(mContext)) return UNSUPPORTED_ON_DEVICE
-        eid = eidStatus?.eid ?: ""
+        eid = eidStatus?.eid.orEmpty()
         val isAvailable = mContext.userManager.isAdminUser &&
             !Utils.isWifiOnly(mContext) &&
             eid.isNotEmpty()
@@ -60,7 +61,6 @@ class SimEidPreferenceController(context: Context, preferenceKey: String) :
 
     override fun displayPreference(screen: PreferenceScreen) {
         super.displayPreference(screen)
-        preference = screen.findPreference(preferenceKey)!!
         val title = getTitle()
         preference.title = title
         preference.dialogTitle = title
@@ -89,20 +89,22 @@ class SimEidPreferenceController(context: Context, preferenceKey: String) :
     }
 
     private fun updateDialog() {
-        val dialog = preference.dialog ?: return
-        dialog.window?.setFlags(
-            WindowManager.LayoutParams.FLAG_SECURE,
-            WindowManager.LayoutParams.FLAG_SECURE
-        )
-        dialog.setCanceledOnTouchOutside(false)
-        val textView = dialog.findViewById<TextView>(R.id.esim_id_value)
-        textView.text = PhoneNumberUtil.expandByTts(eid)
+        val dialog = preference.dialog
+        if (dialog != null) {
+            dialog.window?.setFlags(
+                WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE
+            )
+            dialog.setCanceledOnTouchOutside(false)
+            val textView = dialog.findViewById<TextView>(R.id.esim_id_value)
+            textView?.text = PhoneNumberUtil.expandByTts(eid)
 
-        val qrCodeView = dialog.findViewById<ImageView>(R.id.esim_id_qrcode)
-        qrCodeView.setImageBitmap(getEidQrCode(eid))
+            val qrCodeView = dialog.findViewById<ImageView>(R.id.esim_id_qrcode)
+            qrCodeView?.setImageBitmap(getEidQrCode(eid))
 
-        // After "Tap to show", eid is displayed on preference.
-        preference.summary = textView.text
+            // After "Tap to show", eid is displayed on preference.
+            preference.summary = textView?.text
+        }
     }
 
     override fun handlePreferenceTreeClick(preference: Preference): Boolean {

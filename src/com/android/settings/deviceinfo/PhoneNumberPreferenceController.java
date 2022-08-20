@@ -30,6 +30,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.network.SubscriptionUtil;
+import com.android.settingslib.DeviceInfoUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,24 +53,15 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return mTelephonyManager.isVoiceCapable() ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return mContext.getString(R.string.device_info_protected_single_press);
-    }
-
-    @Override
-    public boolean handlePreferenceTreeClick(Preference preference) {
-        final int simSlotNumber = mPreferenceList.indexOf(preference);
-        if (simSlotNumber == -1) {
-            return false;
+        if (mTapped) {
+            return getFirstPhoneNumber();
         }
-        mTapped = true;
-        final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
-        simStatusPreference.setSummary(getPhoneNumber(simSlotNumber));
-        return true;
+        return mContext.getString(R.string.device_info_protected_single_press);
     }
 
     @Override
@@ -80,6 +72,7 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
         }
         final Preference preference = screen.findPreference(getPreferenceKey());
         final PreferenceCategory category = screen.findPreference(KEY_PREFERENCE_CATEGORY);
+        preference.setCopyingEnabled(false);
         mPreferenceList.add(preference);
 
         final int phonePreferenceOrder = preference.getOrder();
@@ -90,7 +83,9 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
             multiSimPreference.setCopyingEnabled(true);
             multiSimPreference.setOrder(phonePreferenceOrder + simSlotNumber);
             multiSimPreference.setKey(KEY_PHONE_NUMBER + simSlotNumber);
+            multiSimPreference.setSelectable(false);
             category.addPreference(multiSimPreference);
+            multiSimPreference.setCopyingEnabled(false);
             mPreferenceList.add(multiSimPreference);
         }
     }
@@ -100,7 +95,7 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
         for (int simSlotNumber = 0; simSlotNumber < mPreferenceList.size(); simSlotNumber++) {
             final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
             simStatusPreference.setTitle(getPreferenceTitle(simSlotNumber));
-            simStatusPreference.setSummary(getSummary());
+            simStatusPreference.setSummary(mContext.getString(R.string.device_info_protected_single_press));
         }
     }
 
@@ -109,16 +104,38 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
         return mTapped;
     }
 
+    @Override
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        final int simSlotNumber = mPreferenceList.indexOf(preference);
+        if (simSlotNumber == -1) {
+            return false;
+        }
+        mTapped = !mTapped;
+        final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
+        simStatusPreference.setSummary(mTapped ? getPhoneNumber(simSlotNumber)
+                : mContext.getString(R.string.device_info_protected_single_press));
+        simStatusPreference.setCopyingEnabled(mTapped);
+        return true;
+    }
+
+    private CharSequence getFirstPhoneNumber() {
+        final List<SubscriptionInfo> subscriptionInfoList =
+                mSubscriptionManager.getActiveSubscriptionInfoList();
+        if (subscriptionInfoList == null || subscriptionInfoList.isEmpty()) {
+            return mContext.getText(R.string.device_info_default);
+        }
+
+        // For now, We only return first result for slice view.
+        return getFormattedPhoneNumber(subscriptionInfoList.get(0));
+    }
+
     private CharSequence getPhoneNumber(int simSlot) {
         final SubscriptionInfo subscriptionInfo = getSubscriptionInfo(simSlot);
         if (subscriptionInfo == null) {
             return mContext.getText(R.string.device_info_default);
         }
 
-        if (mContext.getResources().getBoolean(R.bool.configShowDeviceSensitiveInfo) || mTapped) {
-            return getFormattedPhoneNumber(subscriptionInfo);
-        }
-        return mContext.getString(R.string.device_info_protected_single_press);
+        return getFormattedPhoneNumber(subscriptionInfo);
     }
 
     private CharSequence getPreferenceTitle(int simSlot) {
@@ -143,7 +160,7 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
     protected CharSequence getFormattedPhoneNumber(SubscriptionInfo subscriptionInfo) {
-        final String phoneNumber = SubscriptionUtil.getBidiFormattedPhoneNumber(mContext,
+        final String phoneNumber = DeviceInfoUtils.getBidiFormattedPhoneNumber(mContext,
                 subscriptionInfo);
         return TextUtils.isEmpty(phoneNumber) ? mContext.getString(R.string.device_info_default)
                 : phoneNumber;

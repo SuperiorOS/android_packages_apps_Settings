@@ -116,7 +116,7 @@ public class SimStatusPreferenceControllerTest {
         });
         doReturn(BasePreferenceController.AVAILABLE).when(mController).getAvailabilityStatus();
         when(mScreen.getContext()).thenReturn(mContext);
-        final String categoryKey = "device_detail_category";
+        final String categoryKey = "basic_info_category";
         when(mScreen.findPreference(categoryKey)).thenReturn(mCategory);
         final String baseEntryKey = "sim_status";
         when(mScreen.findPreference(baseEntryKey)).thenReturn(mPreference);

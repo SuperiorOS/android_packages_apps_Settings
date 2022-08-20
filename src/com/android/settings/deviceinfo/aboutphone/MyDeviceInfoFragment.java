@@ -27,17 +27,14 @@ import android.os.UserManager;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.deviceinfo.BluetoothAddressPreferenceController;
 import com.android.settings.deviceinfo.BuildNumberPreferenceController;
 import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.deviceinfo.FccEquipmentIdPreferenceController;
 import com.android.settings.deviceinfo.FeedbackPreferenceController;
-import com.android.settings.deviceinfo.IpAddressPreferenceController;
 import com.android.settings.deviceinfo.ManualPreferenceController;
 import com.android.settings.deviceinfo.RegulatoryInfoPreferenceController;
 import com.android.settings.deviceinfo.SafetyInfoPreferenceController;
 import com.android.settings.deviceinfo.UptimePreferenceController;
-import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.widget.EntityHeaderController;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -94,15 +91,13 @@ public class MyDeviceInfoFragment extends DashboardFragment
           Context context, MyDeviceInfoFragment fragment, Lifecycle lifecycle) {
     final List<AbstractPreferenceController> controllers = new ArrayList<>();
 
-    controllers.add(new IpAddressPreferenceController(context, getSettingsLifecycle()));
-    controllers.add(new WifiMacAddressPreferenceController(context, getSettingsLifecycle()));
-    controllers.add(new BluetoothAddressPreferenceController(context, getSettingsLifecycle()));
     controllers.add(new RegulatoryInfoPreferenceController(context));
     controllers.add(new SafetyInfoPreferenceController(context));
     controllers.add(new ManualPreferenceController(context));
     controllers.add(new FeedbackPreferenceController(fragment, context));
     controllers.add(new FccEquipmentIdPreferenceController(context));
     controllers.add(new UptimePreferenceController(context, lifecycle));
+    controllers.add(new SuperiorInfoPreferenceController(context));
     return controllers;
   }
 
@@ -112,39 +107,6 @@ public class MyDeviceInfoFragment extends DashboardFragment
       return;
     }
     super.onActivityResult(requestCode, resultCode, data);
-  }
-
-  private void initHeader() {
-    // TODO: Migrate into its own controller.
-    final LayoutPreference headerPreference =
-        getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
-    final boolean shouldDisplayHeader = getContext().getResources().getBoolean(
-        R.bool.config_show_device_header_in_device_info);
-    headerPreference.setVisible(shouldDisplayHeader);
-    if (!shouldDisplayHeader) {
-      return;
-    }
-    final View headerView = headerPreference.findViewById(R.id.entity_header);
-    final Activity context = getActivity();
-    final Bundle bundle = getArguments();
-    final EntityHeaderController controller = EntityHeaderController
-        .newInstance(context, this, headerView)
-        .setButtonActions(EntityHeaderController.ActionType.ACTION_NONE,
-            EntityHeaderController.ActionType.ACTION_NONE);
-
-    // TODO: There may be an avatar setting action we can use here.
-    final int iconId = bundle.getInt("icon_id", 0);
-    if (iconId == 0) {
-      final UserManager userManager = (UserManager) getActivity().getSystemService(
-          Context.USER_SERVICE);
-      final UserInfo info = Utils.getExistingUser(userManager,
-          android.os.Process.myUserHandle());
-      controller.setLabel(info.name);
-      controller.setIcon(
-          com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
-    }
-
-    controller.done(true /* rebindActions */);
   }
 
   @Override

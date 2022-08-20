@@ -27,7 +27,6 @@
         android:title="@string/about_device_name"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
     <!-- Superior version -->
@@ -67,18 +66,9 @@
         android:key="base_band"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
-    <!-- Build date -->
-    <Preference 
-        android:key="build_date"
-        android:title="@string/build_date"
-        android:summary="@string/build_date_default"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
-
+        
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
@@ -87,13 +77,12 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Build -->
-    <!--Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
+    <!-- Build date -->
+    <Preference 
+        android:key="build_date"
+        android:title="@string/build_date"
+        android:summary="@string/build_date_default"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
 </PreferenceScreen>

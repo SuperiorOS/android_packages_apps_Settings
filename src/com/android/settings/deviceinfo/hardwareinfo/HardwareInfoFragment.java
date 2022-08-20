@@ -25,6 +25,9 @@ import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.deviceinfo.BluetoothAddressPreferenceController;
+import com.android.settings.deviceinfo.IpAddressPreferenceController;
+import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
 import com.android.settings.deviceinfo.simstatus.EidStatus;
 import com.android.settings.deviceinfo.simstatus.SimEidPreferenceController;
@@ -84,6 +87,10 @@ public class HardwareInfoFragment extends DashboardFragment {
     final ExecutorService executor = Executors.newSingleThreadExecutor();
     final Lifecycle lifecycle = getSettingsLifecycle();
     final SlotSimStatus slotSimStatus = new SlotSimStatus(context, executor, lifecycle);
+
+    controllers.add(new IpAddressPreferenceController(context, lifecycle));
+    controllers.add(new WifiMacAddressPreferenceController(context, lifecycle));
+    controllers.add(new BluetoothAddressPreferenceController(context, lifecycle));
 
     Consumer<String> imeiInfoList = imeiKey -> {
       ImeiInfoPreferenceController imeiRecord =

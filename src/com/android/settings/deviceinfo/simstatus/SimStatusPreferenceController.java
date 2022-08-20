@@ -42,7 +42,7 @@ import java.util.List;
 
 public class SimStatusPreferenceController extends BasePreferenceController {
 
-    private static final String KEY_PREFERENCE_CATEGORY = "device_detail_category";
+    private static final String KEY_PREFERENCE_CATEGORY = "basic_info_category";
 
     private Fragment mFragment;
     private SlotSimStatus mSlotSimStatus;

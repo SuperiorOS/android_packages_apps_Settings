@@ -47,11 +47,6 @@ public class HardwareInfoPreferenceController extends BasePreferenceController {
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
-    @Override
-    public CharSequence getSummary() {
-        return getDeviceModel();
-    }
-
     public static String getDeviceModel() {
         FutureTask<String> msvSuffixTask = new FutureTask<>(() -> DeviceInfoUtils.getMsvSuffix());
 

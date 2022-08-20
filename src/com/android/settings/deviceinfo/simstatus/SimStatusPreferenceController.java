@@ -38,7 +38,7 @@ public class SimStatusPreferenceController extends
         AbstractSimStatusImeiInfoPreferenceController implements PreferenceControllerMixin {
 
     private static final String KEY_SIM_STATUS = "sim_status";
-    private static final String KEY_PREFERENCE_CATEGORY = "device_detail_category";
+    private static final String KEY_PREFERENCE_CATEGORY = "basic_info_category";
 
     private final TelephonyManager mTelephonyManager;
     private final SubscriptionManager mSubscriptionManager;

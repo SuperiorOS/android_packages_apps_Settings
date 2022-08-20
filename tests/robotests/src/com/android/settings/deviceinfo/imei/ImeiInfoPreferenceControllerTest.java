@@ -81,7 +81,7 @@ public class ImeiInfoPreferenceControllerTest {
         doReturn(AVAILABLE).when(mController).getAvailabilityStatus();
         when(mScreen.getContext()).thenReturn(mContext);
         doReturn(mSecondSimPreference).when(mController).createNewPreference(mContext);
-        final String categoryKey = "device_detail_category";
+        final String categoryKey = "basic_info_category";
         when(mScreen.findPreference(categoryKey)).thenReturn(mCategory);
         ReflectionHelpers.setField(mController, "mTelephonyManager", mTelephonyManager);
         when(mScreen.findPreference(mController.getPreferenceKey())).thenReturn(mPreference);

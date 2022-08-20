@@ -74,7 +74,7 @@ public class SimStatusPreferenceControllerTest {
         mController = spy(new SimStatusPreferenceController(mContext, mFragment));
         doReturn(true).when(mController).isAvailable();
         when(mScreen.getContext()).thenReturn(mContext);
-        final String categoryKey = "device_detail_category";
+        final String categoryKey = "basic_info_category";
         when(mScreen.findPreference(categoryKey)).thenReturn(mCategory);
         doReturn(mSecondSimPreference).when(mController).createNewPreference(mContext);
         ReflectionHelpers.setField(mController, "mTelephonyManager", mTelephonyManager);

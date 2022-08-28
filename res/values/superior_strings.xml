@@ -160,4 +160,7 @@
      <string name="proximity_wake_title">Prevent accidental wake-up</string>
      <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
+     <!-- Game Space -->
+     <string name="game_space_title">Game Space</string>
+     <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>

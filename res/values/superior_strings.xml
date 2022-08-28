@@ -179,4 +179,7 @@
     <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
     <string name="private_dns_mode_quad9">Quad9 DNS</string>
 
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>

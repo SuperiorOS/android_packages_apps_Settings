@@ -63,4 +63,8 @@
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
+    <!-- Superior Lab -->
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">The place where we do experiments</string>
+
 </resources>

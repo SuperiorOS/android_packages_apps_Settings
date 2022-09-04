@@ -53,7 +53,16 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java", "src/**/*.kt",
+           "SuperiorLab/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.superior.lab"],
+
+    resource_dirs: [
+        "res",
+        "SuperiorLab/res",
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -91,6 +100,7 @@ android_library {
         "Settings-change-ids",
         "faceunlock_framework",
         "VendorSupport-preference",
+        "kotlin-stdlib",
     ],
 
     libs: [

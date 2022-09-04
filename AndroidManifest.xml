@@ -4489,6 +4489,19 @@
             </intent-filter>
         </activity>
 
+        <!-- SuperiorLab -->
+        <activity android:name=".Settings$SuperiorLabActivity"
+            android:label="@string/superior_lab_dash_title"
+            android:icon="@drawable/ic_homepage_superior"
+            android:exported="true"
+            android:parentActivityName="com.android.settings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.superior.lab.SuperiorLab" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>

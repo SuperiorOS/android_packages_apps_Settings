@@ -77,4 +77,7 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Touch the sensor on the side of your device.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Touch the sensor on the side of your phone.</string>
 
+    <!-- Superior Lab -->
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">The place where we do experiments</string>
 </resources>

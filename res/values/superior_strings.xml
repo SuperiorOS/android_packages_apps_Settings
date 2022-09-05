@@ -16,32 +16,37 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, Superior OS version -->
-    <string name="superior_version">SuperiorOS version</string>
-    <string name="superior_version_default">Unknown</string>
-    <string name="keywords_superior_version">SuperiorOS version, superior version</string>
+     <!-- About phone screen, Superior OS version -->
+     <string name="superior_version">SuperiorOS version</string>
+     <string name="superior_version_default">Unknown</string>
+     <string name="keywords_superior_version">SuperiorOS version, superior version</string>
 
-    <!-- About phone screen, build date -->
-    <string name="about_device_name">Device Codename</string>
-    <string name="build_date">Build date</string>
-    <string name="build_date_default">2015-01-01-0000</string>
-    <string name="keywords_build_date">build date, build info</string>
+     <!-- About phone screen, build date -->
+     <string name="about_device_name">Device Codename</string>
+     <string name="build_date">Build date</string>
+     <string name="build_date_default">2015-01-01-0000</string>
+     <string name="keywords_build_date">build date, build info</string>
 
-    <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+     <!-- Notification log -->
+     <string name="notification_log_summary">Show notifications history log</string>
 
-    <!-- Hardware info -->
-    <string name="soc_model">SoC Model</string>
-    <string name="total_ram">Total RAM</string>
+     <!-- Hardware info -->
+     <string name="soc_model">SoC Model</string>
+     <string name="total_ram">Total RAM</string>
 
-    <!-- General -->
-    <string name="copied_to_clipboard">Copied to clipboard</string>
-    <string name="longpress_to_clipboard">Long-press to copy</string>
+     <!-- General -->
+     <string name="copied_to_clipboard">Copied to clipboard</string>
+     <string name="longpress_to_clipboard">Long-press to copy</string>
 
-    <!-- Package details --> 
-    <string name="package_details_group_title">Package details</string>
-    <string name="package_name">Package name</string>
-    <string name="package_version">Package version</string> 
-    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+     <!-- Package details -->
+     <string name="package_details_group_title">Package details</string>
+     <string name="package_name">Package name</string>
+     <string name="package_version">Package version</string>
+     <string name="package_version_text">
+          <xliff:g id="version_num">%1$s</xliff:g>
+     </string>
 
+     <!-- Warning message for the sd card setup -->
+     <string name="storage_warning_internal">Warning: This option may not work properly or lead to
+          data loss and is therefore not recommended!</string>
 </resources>

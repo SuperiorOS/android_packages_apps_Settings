@@ -45,6 +45,7 @@ android_library {
     ],
 
     srcs: ["src/**/*.java",
+           "src/**/*.kt",
            "SuperiorSettings/src/**/*.java",
     ],
 
@@ -62,6 +63,7 @@ android_library {
         "androidx.core_core",
         "androidx.appcompat_appcompat",
         "androidx.cardview_cardview",
+        "androidx.fragment_fragment-ktx",
         "androidx.preference_preference",
         "androidx.recyclerview_recyclerview",
         "com.google.android.material_material",

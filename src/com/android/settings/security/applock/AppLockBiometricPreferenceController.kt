@@ -37,7 +37,7 @@ class AppLockBiometricPreferenceController(
 
     override fun getAvailabilityStatus(): Int {
         val biometricsAllowed = biometricManager.canAuthenticate(
-            Authenticators.BIOMETRIC_STRONG) == BiometricManager.BIOMETRIC_SUCCESS
+            Authenticators.BIOMETRIC_WEAK) == BiometricManager.BIOMETRIC_SUCCESS
         return if (biometricsAllowed)
             AVAILABLE
         else

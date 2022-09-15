@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Možnosti hustoty zobrazenia</string>
     <string name="notification_log_summary">Zobraziť protokol histórie oznámení</string>
-    <string name="battery_stats_reset">Vynulovať štatistiky</string>
-    <string name="battery_stats_message">Chystáte sa obnoviť históriu štatistiky batérie</string>
     <string name="superior_settings_dash_title">Nastavenie Superior</string>
     <string name="superior_settings_summary">Špeciálne funkcie</string>
     <string name="min_refresh_rate_title">Minimálna obnovovacia frekvencia</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">Žiadna akcia</string>
     <string name="action_menu">Menu</string>
     <string name="action_app_switch">Nedávne</string>
-    <string name="action_search">Asistent</string>
     <string name="action_voice_search">Hlasové vyhľadávanie</string>
     <string name="action_launch_camera">Fotoaparát</string>
     <string name="action_last_app">Posledná aplikácia</string>

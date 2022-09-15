@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Dichteoptionen</string>
     <string name="notification_log_summary">Benachrichtigungsverlauf anzeigen</string>
-    <string name="battery_stats_reset">Statistiken zurücksetzen</string>
-    <string name="battery_stats_message">Akkustatistiken werden zurückgesetzt</string>
     <string name="superior_settings_dash_title">Superior Goodies</string>
     <string name="superior_settings_summary">Zusatzfunktionen</string>
     <string name="min_refresh_rate_title">Minimale Aktualisierungsrate</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">Keine Aktion</string>
     <string name="action_menu">Menü</string>
     <string name="action_app_switch">Anwendungsverlauf</string>
-    <string name="action_search">Assistent</string>
     <string name="action_voice_search">Sprachsuche</string>
     <string name="action_launch_camera">Kamera</string>
     <string name="action_last_app">Vorherige App</string>

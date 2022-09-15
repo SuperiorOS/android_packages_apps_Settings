@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">解像度オプション</string>
     <string name="notification_log_summary">通知履歴ログを表示する</string>
-    <string name="battery_stats_reset">統計のリセット</string>
-    <string name="battery_stats_message">バッテリーの使用統計はリセットされます</string>
     <string name="superior_settings_dash_title">Superior な贈り物</string>
     <string name="superior_settings_summary">追加の機能を設定する</string>
     <string name="min_refresh_rate_title">最小リフレッシュレート</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">なし</string>
     <string name="action_menu">メニュー</string>
     <string name="action_app_switch">アプリ履歴</string>
-    <string name="action_search">アシスタント</string>
     <string name="action_voice_search">音声検索</string>
     <string name="action_launch_camera">カメラ</string>
     <string name="action_last_app">直前のアプリ</string>
@@ -191,4 +188,26 @@
     <string name="pulse_ambient_light_color">点滅時に使用されます</string>
     <string name="navbar_invert_layout_title">ナビゲーションバーレイアウトの反転</string>
     <string name="navbar_invert_info">ナビゲーションバーのレイアウトを反転する</string>
+    <string name="navbar_category">ナビゲーションバー</string>
+    <string name="navigation_bar_ime_space_title">IME ボタンのスペース</string>
+    <string name="navigation_bar_ime_space_summary">キーボードの下に IME ボタンのスペースを表示する</string>
+    <string name="search">検索</string>
+    <string name="search_apps">アプリを検索</string>
+    <string name="app_lock_title">アプリロック</string>
+    <string name="app_lock_summary_singular">1個のアプリが保護されています</string>
+    <string name="app_lock_summary_plural"><xliff:g example="2" id="Number of applications">%1$d</xliff:g>個のアプリが保護されています</string>
+    <string name="app_lock_authentication_dialog_title">ロック解除</string>
+    <string name="app_lock_packages_title">保護されたアプリ</string>
+    <string name="app_lock_packages_summary">生体認証や端末認証で保護するアプリを選択する</string>
+    <string name="app_lock_timeout_title">自動ロックの時間</string>
+    <string name="app_lock_timeout_summary">バックグラウンドでロック解除中のアプリをロックするまでの時間です</string>
+    <string name="app_lock_notifications_title">通知を消去</string>
+    <string name="app_lock_notifications_summary">         選択されたアプリがロックされると、通知の内容は非表示になり破棄されます。
+          Heads Up 通知は自動的に無効化されます。
+     </string>
+    <string name="app_lock_notifications_disabled_summary">アプリを最初に保護する</string>
+    <string name="app_lock_footer_text">制限時間後にバブルは自動的に解除されます</string>
+    <string name="app_lock_biometrics_allowed_title">生体認証でのロック解除を有効化</string>
+    <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
+    <string name="unlock_quick_unlock_control_summary">正しい PIN/パスワード が入力された時はロックを自動的に解除する</string>
 </resources>

@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Možnosti hustoty zobrazení</string>
     <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
-    <string name="battery_stats_reset">Vynulovat statistiky</string>
-    <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
     <string name="superior_settings_dash_title">Nastavení Superior</string>
     <string name="superior_settings_summary">Speciální funkce</string>
     <string name="min_refresh_rate_title">Minimální obnovovací frekvence</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">Žádná akce</string>
     <string name="action_menu">Menu</string>
     <string name="action_app_switch">Nedávné</string>
-    <string name="action_search">Asistent</string>
     <string name="action_voice_search">Hlasové vyhledávání</string>
     <string name="action_launch_camera">Fotoaparát</string>
     <string name="action_last_app">Poslední aplikace</string>
@@ -191,4 +188,26 @@
     <string name="pulse_ambient_light_color">Při pulzování se použije</string>
     <string name="navbar_invert_layout_title">Převrátit rozložení navigačního panelu</string>
     <string name="navbar_invert_info">Převrátit rozložení navigačního panelu</string>
+    <string name="navbar_category">Navigační panel</string>
+    <string name="navigation_bar_ime_space_title">Prostor pro přepínač IME</string>
+    <string name="navigation_bar_ime_space_summary">Zobrazit prostor pro tlačítko IME pod klávesnicí</string>
+    <string name="search">Hledat</string>
+    <string name="search_apps">Hledat v aplikacích</string>
+    <string name="app_lock_title">Zámek aplikací</string>
+    <string name="app_lock_summary_singular">Chráněné aplikace: 1</string>
+    <string name="app_lock_summary_plural">Chráněné aplikace: <xliff:g example="2" id="Number of applications">%1$d</xliff:g></string>
+    <string name="app_lock_authentication_dialog_title">Odemknout</string>
+    <string name="app_lock_packages_title">Chráněné aplikace</string>
+    <string name="app_lock_packages_summary">Vyberte aplikace, které chcete chránit pomocí biometrických údajů nebo přihlašovacími údaji zařízení</string>
+    <string name="app_lock_timeout_title">Doba autom. zamknutí</string>
+    <string name="app_lock_timeout_summary">Doba, po které by měla být odemčená aplikace na pozadí zamčena</string>
+    <string name="app_lock_notifications_title">Sbalit oznámení</string>
+    <string name="app_lock_notifications_summary">          Obsah oznámení se u vybraných aplikací při jejich uzamčení skryje a sbalí.
+          Plovoucí oznámení budou automaticky vypnuty.
+     </string>
+    <string name="app_lock_notifications_disabled_summary">Nejprve chránit aplikaci</string>
+    <string name="app_lock_footer_text">Bubliny se po uplynutí časového limitu automaticky zruší</string>
+    <string name="app_lock_biometrics_allowed_title">Povolit biometriku pro odemykání</string>
+    <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
+    <string name="unlock_quick_unlock_control_summary">Odemknout zařízení automaticky po zadání správného PINu/hesla</string>
 </resources>

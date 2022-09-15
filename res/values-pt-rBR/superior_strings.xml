@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Opções de densidade</string>
     <string name="notification_log_summary">Mostrar histórico de notificações</string>
-    <string name="battery_stats_reset">Redefinir estatísticas</string>
-    <string name="battery_stats_message">Os históricos e estatísticas da bateria serão redefinidos</string>
     <string name="superior_settings_dash_title">Superior Brindes</string>
     <string name="superior_settings_summary">Recursos adicionais</string>
     <string name="min_refresh_rate_title">Taxa de atualização mínima</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">Nenhuma ação</string>
     <string name="action_menu">Menu</string>
     <string name="action_app_switch">Recentes</string>
-    <string name="action_search">Assistente</string>
     <string name="action_voice_search">Pesquisa por voz</string>
     <string name="action_launch_camera">Câmera</string>
     <string name="action_last_app">Último app</string>

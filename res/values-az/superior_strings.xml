@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Sıxlıq seçimləri</string>
     <string name="notification_log_summary">Bildiriş tarixçə jurnalını göstər</string>
-    <string name="battery_stats_reset">Statistikaları sıfırla</string>
-    <string name="battery_stats_message">Batareya tarixçəsi statistikaları sıfırlanacaq</string>
     <string name="superior_settings_dash_title">Superior özəlləşdirmələri</string>
     <string name="superior_settings_summary">Ekstra özəlliklər</string>
     <string name="min_refresh_rate_title">Minimum təzələnmə sürəti</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">Hərəkət yoxdur</string>
     <string name="action_menu">Menyu</string>
     <string name="action_app_switch">Sonuncular</string>
-    <string name="action_search">Köməkçi</string>
     <string name="action_voice_search">Səsli axtarış</string>
     <string name="action_launch_camera">Kamera</string>
     <string name="action_last_app">Son tətbiq</string>
@@ -191,4 +188,26 @@
     <string name="pulse_ambient_light_color">Yanıb sönərkən, istifadə et</string>
     <string name="navbar_invert_layout_title">Hərəkət sətri düzümünü tərsinə çevir</string>
     <string name="navbar_invert_info">Hərəkət sətri düzümünü tərsinə çevir</string>
+    <string name="navbar_category">Hərəkət sətri</string>
+    <string name="navigation_bar_ime_space_title">IME düymə boşluğu</string>
+    <string name="navigation_bar_ime_space_summary">Klaviaturanın altındakı IME düymə boşluğunu göstər</string>
+    <string name="search">Axtar</string>
+    <string name="search_apps">Tətbiq axtar</string>
+    <string name="app_lock_title">Tətbiq kilidi</string>
+    <string name="app_lock_summary_singular">1 tətbiq qorunur</string>
+    <string name="app_lock_summary_plural"><xliff:g example="2" id="Number of applications">%1$d</xliff:g> tətbiq qorunur</string>
+    <string name="app_lock_authentication_dialog_title">Kilidi aç</string>
+    <string name="app_lock_packages_title">Qorunan tətbiqlər</string>
+    <string name="app_lock_packages_summary">Biometrik və ya cihaz kimlik məlumatları ilə qorunacaq tətbiqləri seçin</string>
+    <string name="app_lock_timeout_title">Avto-kilid bitmə vaxtı</string>
+    <string name="app_lock_timeout_summary">Arxaplanda kilidi açılmış bir tətbiqin kilidlənməsi üçün müddət</string>
+    <string name="app_lock_notifications_title">Bildirişləri yığcamlaşdır</string>
+    <string name="app_lock_notifications_summary">          Seçilmiş tətbiqlər kilidlənəndə bildiriş məzmunu gizlədiləcək və yığcamlaşdırılacaq.
+          Açılan başlıq bildirişləri avtomatik olaraq sıradan çıxarılacaq.
+     </string>
+    <string name="app_lock_notifications_disabled_summary">Əvvəlcə bir tətbiqi qoruyun</string>
+    <string name="app_lock_footer_text">Şarlar vaxt bitdikdən sonra avtomatik bağlanacaq</string>
+    <string name="app_lock_biometrics_allowed_title">Kilid açma üçün biometrikləri fəallaşdır</string>
+    <string name="unlock_quick_unlock_control_title">Cəld kilid açma</string>
+    <string name="unlock_quick_unlock_control_summary">Düzgün PIN/parol daxil edilərsə kilidi avtomatik aç</string>
 </resources>

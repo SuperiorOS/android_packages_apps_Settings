@@ -21,8 +21,6 @@
     <string name="selinux_status_permissive">許可</string>
     <string name="selinux_status_enforcing">強制執行</string>
     <string name="app_play_store">Google Play</string>
-    <string name="battery_stats_reset">重設統計數據</string>
-    <string name="battery_stats_message">電池歷史統計數據將被重設</string>
     <string name="min_refresh_rate_title">最低螢幕刷新率</string>
     <string name="max_refresh_rate_title">最高螢幕刷新率</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感測器位於平板正面。</string>
@@ -41,4 +39,11 @@
     <string name="battery_light_reallyfull_color">滿電量 (100)</string>
     <string name="show_navbar_gesture_bar_title">手勢列</string>
     <string name="game_space_title">遊戲空間</string>
+    <string name="navbar_category">導覽列</string>
+    <string name="search">搜尋</string>
+    <string name="search_apps">搜尋 app</string>
+    <string name="app_lock_title">app 鎖</string>
+    <string name="app_lock_summary_singular">1 個 app 受到保護</string>
+    <string name="app_lock_authentication_dialog_title">解鎖</string>
+    <string name="app_lock_packages_title">受保護的 app</string>
 </resources>

@@ -30,8 +30,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Opciones de densidad</string>
     <string name="notification_log_summary">Mostrar registro del historial de notificaciones</string>
-    <string name="battery_stats_reset">Restablecer estadísticas</string>
-    <string name="battery_stats_message">El historial de estadísticas de la batería se va a restablecer</string>
     <string name="superior_settings_summary">Funciones extra</string>
     <string name="min_refresh_rate_title">Tasa de refresco mínima</string>
     <string name="max_refresh_rate_title">Tasa de refresco máxima</string>
@@ -81,7 +79,6 @@
     <string name="adaptive_playback_timeout_5_min">5 minutos</string>
     <string name="adaptive_playback_timeout_10_min">10 minutos</string>
     <string name="action_app_switch">Recientes</string>
-    <string name="action_search">Asistente</string>
     <string name="action_voice_search">Búsqueda por voz</string>
     <string name="action_launch_camera">Cámara</string>
     <string name="action_last_app">Última aplicación</string>

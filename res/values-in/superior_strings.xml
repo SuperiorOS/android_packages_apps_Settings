@@ -31,8 +31,6 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Opsi kepadatan</string>
     <string name="notification_log_summary">Tampilkan log riwayat notifikasi</string>
-    <string name="battery_stats_reset">Atur ulang statistik</string>
-    <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
     <string name="superior_settings_dash_title">Setelan Superior</string>
     <string name="superior_settings_summary">Fitur Tambahan</string>
     <string name="min_refresh_rate_title">Kecepatan refresh minimum</string>
@@ -116,7 +114,6 @@
     <string name="action_nothing">Tidak ada tindakan</string>
     <string name="action_menu">Menu</string>
     <string name="action_app_switch">Baru-baru ini</string>
-    <string name="action_search">Asisten</string>
     <string name="action_voice_search">Penelusuran suara</string>
     <string name="action_launch_camera">Kamera</string>
     <string name="action_last_app">Aplikasi terakhir</string>
@@ -191,4 +188,26 @@
     <string name="pulse_ambient_light_color">Saat menyala, gunakan</string>
     <string name="navbar_invert_layout_title">Balikkan tata letak bilah navigasi</string>
     <string name="navbar_invert_info">Balikkan tata letak bilah navigasi</string>
+    <string name="navbar_category">Bilah navigasi</string>
+    <string name="navigation_bar_ime_space_title">Ruang tombol IME</string>
+    <string name="navigation_bar_ime_space_summary">Tampilkan ruang tombol IME di bawah keyboard</string>
+    <string name="search">Cari</string>
+    <string name="search_apps">Cari aplikasi</string>
+    <string name="app_lock_title">Kunci Aplikasi</string>
+    <string name="app_lock_summary_singular">1 aplikasi dilindungi</string>
+    <string name="app_lock_summary_plural"><xliff:g example="2" id="Number of applications">%1$d</xliff:g> aplikasi dilindungi</string>
+    <string name="app_lock_authentication_dialog_title">Buka</string>
+    <string name="app_lock_packages_title">Aplikasi dilindungi</string>
+    <string name="app_lock_packages_summary">Pilih aplikasi yang akan dilindungi dengan biometrik atau kredensial perangkat</string>
+    <string name="app_lock_timeout_title">Batas waktu penguncian otomatis</string>
+    <string name="app_lock_timeout_summary">Durasi waktu setelah aplikasi yang tidak terkunci di latar belakang harus dikunci</string>
+    <string name="app_lock_notifications_title">Matikan notifikasi</string>
+    <string name="app_lock_notifications_summary">          Konten notifikasi akan disembunyikan dan dimatikan untuk aplikasi yang dipilih saat terkunci.
+          Notifikasi mengambang akan dinonaktifkan secara otomatis.
+     </string>
+    <string name="app_lock_notifications_disabled_summary">Lindungi aplikasi terlebih dahulu</string>
+    <string name="app_lock_footer_text">Gelembung akan ditutup secara otomatis setelah waktu habis</string>
+    <string name="app_lock_biometrics_allowed_title">Aktifkan biometrik untuk membuka kunci</string>
+    <string name="unlock_quick_unlock_control_title">Buka kunci cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/kata sandi yang benar dimasukkan</string>
 </resources>

@@ -30,8 +30,8 @@
 
         <TextView
             android:id="@+id/homepage_title"
-            android:text="@string/settings_label"
-            style="@style/HomepageTitleText"
+            android:text="@string/dashboard_random4"
+            style="@style/custom_toolbar.Expanded"
             android:layout_width="0dp"
             android:layout_weight="1" />
 

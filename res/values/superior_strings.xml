@@ -207,6 +207,34 @@
     <string name="back_swipe_extended_title">Extended swipe action</string>
     <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
 
+    <!-- Dashboard messages -->
+    <string name="dashboard_morning1">Good Morning!</string>
+    <string name="dashboard_morning2">The Sun is up!</string>
+    <string name="dashboard_morning3">A nice morning..</string>
+    <string name="dashboard_morning4">Have a great day..</string>
+    <string name="dashboard_morning5">A brand new day..</string>
+    <string name="dashboard_noon1">Good Afternoon.</string>
+    <string name="dashboard_noon2">Enjoy the Sunset.</string>
+    <string name="dashboard_noon3">Welcome Home..</string>
+    <string name="dashboard_noon4">Enjoy the day!</string>
+    <string name="dashboard_noon5">Welcome back..</string>
+    <string name="dashboard_early_night1">Good Evening..</string>
+    <string name="dashboard_early_night2">Time for dinner!</string>
+    <string name="dashboard_night3">Sweet Dreams!</string>
+    <string name="dashboard_night4">Time to sleep now..</string>
+    <string name="dashboard_night5">Good Night!</string>
+    <string name="dashboard_midnight1">It\'s Late night already..</string>
+    <string name="dashboard_midnight2">You need some help..</string>
+    <string name="dashboard_midnight3">Get some sleep..</string>
+    <string name="dashboard_midnight4">Take some rest already..</string>
+    <string name="dashboard_midnight5">Sleeping late is bad for you..</string>
+    <string name="dashboard_random1">Be Superior</string>
+    <string name="dashboard_random2">The searchbar is pixels below..</string>
+    <string name="dashboard_random3">Hi Owner!</string>
+    <string name="dashboard_random4">Settings</string>
+    <string name="dashboard_random5">Hi User!</string>
+    <string name="dashboard_random6">What\'s up?</string>
+
     <!-- Running Services -->
     <string name="background_processes_settings_title">Process in background</string>
 

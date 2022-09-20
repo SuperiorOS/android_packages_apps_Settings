@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright 2022 SuperiorOS
+     Copyright 2022-2023 The Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,38 +16,75 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Random summary -->
-    <string-array name="superiorlab_summaries">
-        <item>Warning: Insanely cool stuff ahead!</item>
-        <item>Some interesting tagline. Blah blah blah...</item>
-        <item>Get ready to be blown to the world of imagination</item>
-        <item>Its features lickin\' good</item>
-        <item>Look out! Behind you!</item>
-        <item>All things being equal, you are bound to lose.</item>
-        <item>What I need is a MATURE RELATIONSHIP with a FLOPPY DISK</item>
-        <item>Never let your schooling interfere with your education</item>
-        <item>Your life would be very empty if you had nothing to regret</item>
-        <item>Fame may be fleeting but obscurity is forever</item>
-        <item>This entry will self-destruct in five minutes</item>
-        <item>Things are not always what they seem</item>
-        <item>Some assembly required</item>
-        <item>He who laughs last didn\'t get the joke</item>
-        <item>If everything is coming your way then you\'re in the wrong lane</item>
-        <item>Where there\'s a will, there\'s an Inheritance Tax</item>
-        <item>This is an unauthorized cybernetic announcement</item>
-        <item>No stopping or standing</item>
-        <item>If I am elected, I will hand out free waffles on Tempelhofer Feld!</item>
-        <item>When all other means of communication fail, try words</item>
-        <item>Never eat anything bigger than your head</item>
-        <item>Excessive login or logout messages are a sure sign of senility</item>
-        <item>Customize till you want it</item>
-        <item>Think less, customize more</item>
-        <item>FBI: Feature Base Isolation</item>
-        <item>This is what awesome looks like</item>
-        <item>With great features comes great responsibility</item>
-        <item>Don\'t dream it. Do it</item>
-        <item>Proudly brought to you without donations</item>
-    </string-array>
+     <!-- Random summary -->
+     <string-array name="superiorlab_summaries">
+          <item>Warning: Insanely cool stuff ahead!</item>
+          <item>Some interesting tagline. Blah blah blah...</item>
+          <item>Get ready to be blown to the world of imagination</item>
+          <item>Its features lickin\' good</item>
+          <item>Look out! Behind you!</item>
+          <item>All things being equal, you are bound to lose.</item>
+          <item>What I need is a MATURE RELATIONSHIP with a FLOPPY DISK</item>
+          <item>Never let your schooling interfere with your education</item>
+          <item>Your life would be very empty if you had nothing to regret</item>
+          <item>Fame may be fleeting but obscurity is forever</item>
+          <item>This entry will self-destruct in five minutes</item>
+          <item>Things are not always what they seem</item>
+          <item>Some assembly required</item>
+          <item>He who laughs last didn\'t get the joke</item>
+          <item>If everything is coming your way then you\'re in the wrong lane</item>
+          <item>Where there\'s a will, there\'s an Inheritance Tax</item>
+          <item>This is an unauthorized cybernetic announcement</item>
+          <item>No stopping or standing</item>
+          <item>If I am elected, I will hand out free waffles on Tempelhofer Feld!</item>
+          <item>When all other means of communication fail, try words</item>
+          <item>Never eat anything bigger than your head</item>
+          <item>Excessive login or logout messages are a sure sign of senility</item>
+          <item>Customize till you want it</item>
+          <item>Think less, customize more</item>
+          <item>FBI: Feature Base Isolation</item>
+          <item>This is what awesome looks like</item>
+          <item>With great features comes great responsibility</item>
+          <item>Don\'t dream it. Do it</item>
+          <item>Proudly brought to you without donations</item>
+     </string-array>
 
+     <!-- contextual dashboard messages-->
+     <string-array name="dashboard_morning">
+          <item>@string/dashboard_morning1</item>
+          <item>@string/dashboard_morning2</item>
+          <item>@string/dashboard_morning3</item>
+          <item>@string/dashboard_morning4</item>
+          <item>@string/dashboard_morning5</item>
+     </string-array>
+     <string-array name="dashboard_midnight">
+          <item>@string/dashboard_midnight1</item>
+          <item>@string/dashboard_midnight2</item>
+          <item>@string/dashboard_midnight4</item>
+          <item>@string/dashboard_midnight5</item>
+     </string-array>
+     <string-array name="dashboard_early_night">
+          <item>@string/dashboard_early_night1</item>
+          <item>@string/dashboard_early_night2</item>
+     </string-array>
+     <string-array name="dashboard_night">
+          <item>@string/dashboard_night3</item>
+          <item>@string/dashboard_night4</item>
+          <item>@string/dashboard_night5</item>
+     </string-array>
+     <string-array name="dashboard_noon">
+          <item>@string/dashboard_noon1</item>
+          <item>@string/dashboard_noon2</item>
+          <item>@string/dashboard_noon3</item>
+          <item>@string/dashboard_noon4</item>
+          <item>@string/dashboard_noon5</item>
+     </string-array>
+     <string-array name="dashboard_random">
+          <item>@string/dashboard_random1</item>
+          <item>@string/dashboard_random2</item>
+          <item>@string/dashboard_random3</item>
+          <item>@string/dashboard_random4</item>
+          <item>@string/dashboard_random5</item>
+          <item>@string/dashboard_random6</item>
+     </string-array>
 </resources>
-

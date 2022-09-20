@@ -221,4 +221,8 @@
     <!-- Face enroll Pixel -->
     <color name="face_enroll_check_color">#42a5f5</color>
     <color name="face_enroll_icon_color">#42a5f5</color>
+    
+    <!-- Settings Header -->
+    <color name="op_control_text_color_secondary">@color/op_control_text_color_secondary_light</color>
+    <color name="op_control_text_color_secondary_light">#66000000</color>
 </resources>

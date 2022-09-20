@@ -78,7 +78,7 @@
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
     <dimen name="search_bar_height">52dp</dimen>
-    <dimen name="search_bar_text_size">20sp</dimen>
+    <dimen name="search_bar_text_size">18sp</dimen>
     <dimen name="search_bar_corner_radius">28dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
     <dimen name="search_bar_padding_start">4dp</dimen>
@@ -488,4 +488,7 @@
     <dimen name="contrast_button_text_size">14sp</dimen>
     <dimen name="contrast_button_text_spacing">4dp</dimen>
     <dimen name="contrast_button_horizontal_spacing">16dp</dimen>
+    
+    <!-- Header Messages -->
+    <dimen name="header_text_size_contextual">34sp</dimen>
 </resources>

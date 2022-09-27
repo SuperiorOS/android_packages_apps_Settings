@@ -53,6 +53,10 @@ android_library {
 
     resource_dirs: ["res",
                     "SuperiorSettings/res"
+    srcs: ["src/**/*.java", "src/**/*.kt", "src-sos/**/*.java"],
+    resource_dirs: [
+        "res",
+        "res-sos",
     ],
 
     static_libs: [
@@ -145,7 +149,7 @@ filegroup {
 // over all the sources together.
 filegroup {
     name: "Settings_srcs",
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java", "src/**/*.kt", "src-sos/**/*.java"],
 }
 
 filegroup {

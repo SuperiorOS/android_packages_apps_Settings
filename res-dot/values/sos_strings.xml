@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022 The sosOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="sos_dashboard_device">About phone</string>
+    <string name="sos_dashboard_account">Account</string>
+    <string name="sos_dashboard_network">Internet</string>
+    <string name="sos_dashboard_conectivity">Connectivity</string>    
+    <string name="sos_dashboard_display">Display</string>
+    <string name="sos_dashboard_battery">Battery</string>
+    <string name="sos_dashboard_sound">Sound</string>
+    <string name="sos_dashboard_apps">Apps</string>
+    <string name="sos_dashboard_notif">Notifications</string>
+    <string name="sos_dashboard_storage">Storage</string>
+    <string name="sos_dashboard_privacy">Privacy</string>    
+    <string name="sos_dashboard_location">Location</string>
+    <string name="sos_dashboard_security">Security</string>
+    <string name="sos_dashboard_accessibility">Accessibility</string>
+    <string name="sos_dashboard_system">Other</string>    
+    <string name="sos_dashboard_support">Support</string>
+
+    <!-- Dashboard categories -->
+    <string name="sos_dashboard_updates">System Updates</string>
+    <string name="sos_updates_status_updated">No new updates</string>
+    <string name="sos_updates_status_new">New update available</string>
+
+    <string name="top_level_connectivity">Connectivity</string>
+    <string name="top_level_personalize">Personalize</string>
+    <string name="top_level_security" translatable="false">@string/security_settings_title</string>
+    <string name="top_level_others">Others</string>
+
+</resources>

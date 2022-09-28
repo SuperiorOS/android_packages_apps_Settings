@@ -68,7 +68,7 @@ public class TopLevelSettings extends DashboardFragment implements
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.top_level_settings;
+        return R.xml.sos_top_level_settings;
     }
 
     @Override
@@ -172,6 +172,16 @@ public class TopLevelSettings extends DashboardFragment implements
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
         final PreferenceScreen screen = getPreferenceScreen();
+        for (int i = 0; i < screen.getPreferenceCount(); i++) {
+            Preference pref = screen.getPreference(i);
+            boolean isValid = pref.isEnabled() && pref.isVisible() && pref.getTitle() != null;
+            if (isValid && pref.getLayoutResource() != R.layout.sos_dashboard_preference_top && 
+                pref.getLayoutResource() != R.layout.sos_dashboard_preference_full && 
+                pref.getLayoutResource() != R.layout.sos_dashboard_preference_phone && 
+                pref.getLayoutResource() != R.layout.sos_dashboard_preference_bottom) {
+                pref.setLayoutResource(R.layout.sos_dashboard_preference_middle);
+            }
+        }
         if (screen == null) {
             return;
         }
@@ -256,7 +266,7 @@ public class TopLevelSettings extends DashboardFragment implements
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.top_level_settings) {
+            new BaseSearchIndexProvider(R.xml.sos_top_level_settings) {
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2022 The sosOS Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="top_level_settings">
+
+    <Preference
+        android:key="top_level_about_device"
+        android:order="-205"
+        android:title="@string/sos_dashboard_device"
+        android:summary="@string/summary_placeholder"
+        settings:layout="@layout/sos_dashboard_preference_phone"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+    <Preference
+        android:key="top_level_system_updayes"
+        android:order="-204"
+        android:title="@string/sos_dashboard_updates"
+        android:summary="@string/sos_updates_status_updated"
+        settings:layout="@layout/sos_dashboard_preference_bottom"
+        settings:controller="com.sos.settings.SystemUpdatesPreferenceController"/>
+
+
+    <PreferenceCategory
+        android:order="-200"
+        android:selectable="false"
+        android:title="@string/top_level_connectivity"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
+
+    <Preference
+        android:key="top_level_network"
+        android:order="-190"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/network_dashboard_title"
+        android:fragment="com.android.settings.network.NetworkDashboardFragment"
+        settings:layout="@layout/sos_dashboard_preference_top"
+        settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController" />
+
+    <Preference
+        android:key="top_level_connected_devices"
+        android:order="-180"
+        android:summary="@string/connected_devices_dashboard_default_summary"
+        android:title="@string/connected_devices_dashboard_title"
+        android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
+        settings:layout="@layout/sos_dashboard_preference_bottom"
+        settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController" />
+
+    <PreferenceCategory
+        android:order="-170"
+        android:selectable="false"
+        android:title="@string/top_level_personalize"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
+
+    <Preference
+        android:key="top_level_display"
+        android:order="-109"
+        android:summary="@string/display_dashboard_summary"
+        android:title="@string/display_settings"
+        android:fragment="com.android.settings.DisplaySettings"
+        settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"
+        settings:layout="@layout/sos_dashboard_preference_top"/>
+    
+    <Preference
+        android:key="top_level_sound"
+        android:order="-108"
+        android:summary="@string/sound_dashboard_summary"
+        android:title="@string/sound_settings"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        android:fragment="com.android.settings.notification.SoundSettings"/>
+
+    <Preference
+        android:key="top_level_battery"
+        android:order="-107"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/power_usage_summary_title"
+        settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"/>
+
+    <Preference
+        android:key="top_level_notification"
+        android:order="-106"
+        android:title="@string/configure_notification_settings"
+        android:summary="@string/notification_dashboard_summary"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        android:fragment="com.android.settings.notification.ConfigureNotificationSettings"/>
+
+    <Preference
+        android:key="top_level_apps"
+        android:order="-105"
+        android:summary="@string/app_and_notification_dashboard_summary"
+        android:title="@string/app_and_notification_dashboard_title"
+        settings:layout="@layout/sos_dashboard_preference_bottom"
+        android:fragment="com.android.settings.applications.AppDashboardFragment"/>
+
+    <PreferenceCategory
+        android:order="-100"
+        android:selectable="false"
+        android:title="@string/top_level_security"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
+
+    <Preference
+        android:key="top_level_privacy"
+        android:order="-99"
+        android:summary="@string/privacy_dashboard_summary"
+        android:title="@string/privacy_dashboard_title"
+        settings:layout="@layout/sos_dashboard_preference_top"
+        android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"/>
+
+    <Preference
+        android:key="top_level_security"
+        android:order="-98"
+        android:summary="@string/security_dashboard_summary"
+        android:title="@string/security_settings_title"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        android:fragment="com.android.settings.security.SecuritySettings"
+        settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
+
+    <Preference
+        android:key="top_level_location"
+        android:order="-97"
+        android:summary="@string/location_settings_loading_app_permission_stats"
+        android:title="@string/location_settings_title"
+        settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        android:fragment="com.android.settings.location.LocationSettings"/>
+
+    <Preference
+        android:key="top_level_accounts"
+        android:order="-96"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/account_dashboard_title"
+        settings:layout="@layout/sos_dashboard_preference_bottom"
+        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController" 
+        android:fragment="com.android.settings.accounts.AccountDashboardFragment"/>
+
+    <PreferenceCategory
+        android:order="-90"
+        android:selectable="false"
+        android:title="@string/top_level_others"
+        settings:shouldDisableView="false"
+        settings:enabled="false" />
+    
+    <Preference
+        android:key="top_level_accessibility"
+        android:order="-20"
+        android:summary="@string/accessibility_settings_summary"
+        android:title="@string/accessibility_settings"
+        settings:layout="@layout/sos_dashboard_preference_top"
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+        settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController" />
+
+    <Preference
+        android:key="top_level_storage"
+        android:order="-11"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/storage_settings"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
+        settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController" />
+
+    <Preference
+        android:key="top_level_support"
+        android:order="10"
+        android:summary="@string/support_summary"
+        android:title="@string/page_tab_title_support"
+        settings:layout="@layout/sos_dashboard_preference_middle"
+        settings:controller="com.android.settings.support.SupportPreferenceController"/>
+
+    <Preference
+        android:key="top_level_system"
+        android:order="20"
+        android:summary="@string/system_dashboard_summary"
+        android:title="@string/header_category_system"
+        settings:layout="@layout/sos_dashboard_preference_bottom"
+        android:fragment="com.android.settings.system.SystemDashboardFragment"/>
+
+</PreferenceScreen>

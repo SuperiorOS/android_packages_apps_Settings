@@ -144,7 +144,7 @@
     <string name="left_vertical_swipe_app_action_title">垂直左スワイプアプリを選択</string>
     <string name="right_vertical_swipe_actions_title">垂直右Lスワイプのアクション</string>
     <string name="right_vertical_swipe_app_action_title">垂直右スワイプアプリを選択</string>
-    <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押しして下さい。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
+    <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押ししてください。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
     <string name="back_swipe_extended_title">拡張スワイプアクション</string>
     <string name="back_swipe_extended_summary">より広いスワイプ (少なくとも画面の半分より広い) か、「L」スワイプ (縦の方が長い) でアクションを起動する。</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">タブレット前面にある指紋認証センサーを探します</string>
@@ -156,15 +156,15 @@
     <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">タブレット側面にある指紋認証センサーを探します</string>
     <string name="fingerprint_enroll_find_sensor_message_side" product="device">端末側面にある指紋認証センサーを探します</string>
     <string name="fingerprint_enroll_find_sensor_message_side" product="default">スマートフォン左側にある指紋認証センサーを探します</string>
-    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">タブレット前面にある指紋認証センサーをタッチして下さい</string>
-    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">端末前面にある指紋認証センサーをタッチして下さい</string>
-    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">スマートフォン前面にある指紋認証センサーをタッチして下さい</string>
-    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">タブレット背面にある指紋認証センサーをタッチして下さい</string>
-    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">端末背面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">タブレット前面にある指紋認証センサーをタッチしてください</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">端末前面にある指紋認証センサーをタッチしてください</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">スマートフォン前面にある指紋認証センサーをタッチしてください</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">タブレット背面にある指紋認証センサーをタッチしてください</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">端末背面にある指紋認証センサーをタッチしてください</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">スマートフォン前面にある指紋認証センサーを探します</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">タブレット側面にある指紋認証センサーをタッチして下さい</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">端末側面にある指紋認証センサーをタッチして下さい</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">スマートフォン側面にある指紋認証センサーをタッチして下さい</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">タブレット側面にある指紋認証センサーをタッチしてください</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">端末側面にある指紋認証センサーをタッチしてください</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">スマートフォン側面にある指紋認証センサーをタッチしてください</string>
     <string name="battery_light_settings">バッテリーライト</string>
     <string name="battery_light_summary">サイレント時と電池残量が少ない時のバッテリーライトの動作を設定する</string>
     <string name="battery_light_enable">バッテリーライト</string>

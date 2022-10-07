@@ -15,14 +15,68 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">SuperiorOS 版本</string>
     <string name="superior_version_default">未知</string>
+    <string name="about_device_name">裝置代號</string>
+    <string name="build_date">建置日期</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="selinux_status">SELinux 狀態</string>
+    <string name="selinux_status_disabled">已停用</string>
     <string name="selinux_status_permissive">許可</string>
     <string name="selinux_status_enforcing">強制執行</string>
+    <string name="connected_tws_device_saved_title">已儲存的耳機</string>
+    <string name="device_info_protected_single_press">輕觸顯示詳細資料</string>
     <string name="app_play_store">Google Play</string>
+    <string name="density_category">密度選項</string>
+    <string name="superior_settings_summary">額外功能</string>
     <string name="min_refresh_rate_title">最低螢幕刷新率</string>
     <string name="max_refresh_rate_title">最高螢幕刷新率</string>
+    <string name="battery_saver_refresh_rate_title">降低更新率</string>
+    <string name="battery_saver_refresh_rate_summary">開啟省電模式時使用 60 Hz 螢幕更新率以減少耗電</string>
+    <string name="screenshot_shutter_sound_title">螢幕快照音效</string>
+    <string name="volume_link_notification_title">連結鈴聲與通知音量</string>
+    <string name="app_notification_sound_timeout_value_none">不限制</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 分鐘</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 分鐘</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 分鐘</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 分鐘</string>
+    <string name="wifi_timeout">自動關閉 Wi-Fi</string>
+    <string name="wifi_timeout_summary">如果沒有連接網路，則在 <xliff:g id="timeout_description">%1$s</xliff:g> 後關閉 Wi-Fi</string>
+    <string name="wifi_timeout_summary2">已停用</string>
+    <string name="wifi_timeout_summary_never">永不</string>
+    <string name="wifi_timeout_summary_15secs">15 秒</string>
+    <string name="wifi_timeout_summary_30secs">30 秒</string>
+    <string name="wifi_timeout_summary_1min">1 分鐘</string>
+    <string name="wifi_timeout_summary_2mins">2 分鐘</string>
+    <string name="wifi_timeout_summary_5mins">5 分鐘</string>
+    <string name="wifi_timeout_summary_10mins">10 分鐘</string>
+    <string name="wifi_timeout_summary_30mins">30 分鐘</string>
+    <string name="wifi_timeout_summary_1hour">1 小時</string>
+    <string name="wifi_timeout_summary_2hours">2 小時</string>
+    <string name="wifi_timeout_summary_4hours">4 小時</string>
+    <string name="adaptive_playback_timeout_30_secs">30 秒</string>
+    <string name="adaptive_playback_timeout_1_min">1 分鐘</string>
+    <string name="adaptive_playback_timeout_2_min">2 分鐘</string>
+    <string name="adaptive_playback_timeout_5_min">5 分鐘</string>
+    <string name="adaptive_playback_timeout_10_min">10 分鐘</string>
+    <string name="back_gesture_haptic_title">震動回饋</string>
+    <string name="action_nothing">無動作</string>
+    <string name="action_menu">選單</string>
+    <string name="action_voice_search">語音搜尋</string>
+    <string name="action_launch_camera">相機</string>
+    <string name="action_flashlight">手電筒</string>
+    <string name="action_clear_notifications">清除通知</string>
+    <string name="action_volume_panel">音量面板</string>
+    <string name="action_screen_off">關閉螢幕</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_power_menu">電源選單</string>
+    <string name="action_screenshot">螢幕快照</string>
+    <string name="action_qs_panel">快速設定面板</string>
+    <string name="action_app_action">應用程式</string>
+    <string name="action_ringer_modes">鈴聲模式</string>
+    <string name="navbar_gesture_tweaks_cat_title">進階</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感測器位於平板正面。</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="device">指紋感測器位於裝置正面。</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="default">指紋感測器位於手機正面。</string>
@@ -46,4 +100,6 @@
     <string name="app_lock_summary_singular">1 個 app 受到保護</string>
     <string name="app_lock_authentication_dialog_title">解鎖</string>
     <string name="app_lock_packages_title">受保護的 app</string>
+    <string name="unlock_quick_unlock_control_title">快速解鎖</string>
+    <string name="unlock_quick_unlock_control_summary">當正確輸入 PIN 碼/密碼 時直接解鎖</string>
 </resources>

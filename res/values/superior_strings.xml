@@ -207,4 +207,9 @@
     <!-- AdGuard DNS Option -->
     <string name="private_dns_mode_adguard" translatable="false">AdGuard DNS</string>
 
+    <!-- DNS -->
+    <string name="private_dns_mode_open_dns">Open DNS</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+
 </resources>

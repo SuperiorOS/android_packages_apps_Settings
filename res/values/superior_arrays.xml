@@ -79,4 +79,20 @@
         <item>600000</item>
         <item>1800000</item>
     </string-array>
+
+    <string-array name="custom_theme_entries" translatable="false">
+        <item>@string/custom_theme_default</item>
+        <item>@string/custom_theme_black</item>
+        <item>@string/custom_theme_vivid</item>
+        <item>@string/custom_theme_snowpaintdrop</item>
+        <item>@string/custom_theme_espresso</item>
+    </string-array>
+
+    <string-array name="custom_theme_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>

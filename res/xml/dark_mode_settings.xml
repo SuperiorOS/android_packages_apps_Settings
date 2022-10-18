@@ -73,11 +73,13 @@
         settings:searchable="false"
         settings:controller="com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController" />
 
-    <com.superior.support.preferences.SecureSettingSwitchPreference
-        android:key="system_black_theme"
-        android:dependency="dark_ui_activated"
-        android:title="@string/system_black_theme_title"
-        android:summary="@string/system_black_theme_summary"
-        android:defaultValue="false" />
+    <com.superior.support.preferences.SecureSettingListPreference
+        android:key="system_custom_theme"
+        android:title="@string/custom_theme_title"
+        android:summary="%s"
+        android:entries="@array/custom_theme_entries"
+        android:entryValues="@array/custom_theme_values"
+        android:defaultValue="0"
+        android:dependency="dark_ui_activated" />
 
 </PreferenceScreen>

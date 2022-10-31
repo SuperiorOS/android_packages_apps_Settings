@@ -392,5 +392,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.SuperiorLabActivity.class.getName(),
+            Settings.PreviouslyConnectedDeviceDashboardActivity.class.getName(),
     };
 }

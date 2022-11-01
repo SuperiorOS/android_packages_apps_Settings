@@ -4614,6 +4614,12 @@
                 android:value="com.superior.lab.SuperiorLab" />
         </activity>
 
+        <!-- Face enroll -->
+        <activity android:theme="@style/SudThemeGlif.Light"
+                  android:name="com.android.settings.biometrics.face.FaceEnrollActivityDirector"
+                  android:exported="true"
+                  android:screenOrientation="portrait"/>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
 
         <!-- Phone and bluetooth device battery data -->

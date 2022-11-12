@@ -31,6 +31,8 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Настройки плотности</string>
     <string name="notification_log_summary">Показать журнал истории уведомлений</string>
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
     <string name="superior_settings_dash_title">Достоинства Superior</string>
     <string name="superior_settings_summary">Дополнительные функции</string>
     <string name="min_refresh_rate_title">Минимальная частота обновления</string>
@@ -114,6 +116,7 @@
     <string name="action_nothing">Нет действий</string>
     <string name="action_menu">Меню</string>
     <string name="action_app_switch">Недавние</string>
+    <string name="action_search">Помощник</string>
     <string name="action_voice_search">Голосовой поиск</string>
     <string name="action_launch_camera">Камера</string>
     <string name="action_last_app">Последнее приложение</string>
@@ -210,4 +213,6 @@
     <string name="app_lock_biometrics_allowed_title">Включить биометрию для разблокировки</string>
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
     <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически при вводе правильного PIN-кода/пароля</string>
+    <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
+    <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать вырез</string>
 </resources>

@@ -31,6 +31,8 @@
     <string name="app_play_store">Google play</string>
     <string name="density_category">Ekran yoğunluğu</string>
     <string name="notification_log_summary">Bildirim geçmişi günlüğünü göster</string>
+    <string name="battery_stats_reset">İstatistikleri sıfırla</string>
+    <string name="battery_stats_message">Pil geçmişi istatistikleri sıfırlanacak</string>
     <string name="superior_settings_dash_title">Süperior özelleştirmeleri</string>
     <string name="superior_settings_summary">Ekstra özellikler</string>
     <string name="min_refresh_rate_title">Minimum yenileme hızı</string>
@@ -114,6 +116,7 @@
     <string name="action_nothing">Eylem yok</string>
     <string name="action_menu">Menü</string>
     <string name="action_app_switch">Son uygulamalar</string>
+    <string name="action_search">Asistan</string>
     <string name="action_voice_search">Sesli arama</string>
     <string name="action_launch_camera">Kamera</string>
     <string name="action_last_app">Son uygulama</string>
@@ -210,4 +213,6 @@
     <string name="app_lock_biometrics_allowed_title">Kilit açmak için biyometri kullan</string>
     <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
     <string name="unlock_quick_unlock_control_summary">Doğru Pin/Şifre girildiğinde otomatik olarak kilidi aç</string>
+    <string name="display_cutout_force_fullscreen_title">Tam ekran uygulamaları</string>
+    <string name="display_cutout_force_fullscreen_summary">Uygulamaları çentik alanını yoksaymaya zorla</string>
 </resources>

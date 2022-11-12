@@ -31,6 +31,8 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Sıxlıq seçimləri</string>
     <string name="notification_log_summary">Bildiriş tarixçə jurnalını göstər</string>
+    <string name="battery_stats_reset">Statistikaları sıfırla</string>
+    <string name="battery_stats_message">Batareya tarixçəsi statistikaları sıfırlanacaq</string>
     <string name="superior_settings_dash_title">Superior özəlləşdirmələri</string>
     <string name="superior_settings_summary">Ekstra özəlliklər</string>
     <string name="min_refresh_rate_title">Minimum təzələnmə sürəti</string>
@@ -114,6 +116,7 @@
     <string name="action_nothing">Hərəkət yoxdur</string>
     <string name="action_menu">Menyu</string>
     <string name="action_app_switch">Sonuncular</string>
+    <string name="action_search">Köməkçi</string>
     <string name="action_voice_search">Səsli axtarış</string>
     <string name="action_launch_camera">Kamera</string>
     <string name="action_last_app">Son tətbiq</string>
@@ -210,4 +213,6 @@
     <string name="app_lock_biometrics_allowed_title">Kilid açma üçün biometrikləri fəallaşdır</string>
     <string name="unlock_quick_unlock_control_title">Cəld kilid açma</string>
     <string name="unlock_quick_unlock_control_summary">Düzgün PIN/parol daxil edilərsə kilidi avtomatik aç</string>
+    <string name="display_cutout_force_fullscreen_title">Tam ekran tətbiqlər</string>
+    <string name="display_cutout_force_fullscreen_summary">Tətbiqləri çərtik sahəsini yox saymağa məcbur et</string>
 </resources>

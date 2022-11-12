@@ -31,6 +31,8 @@
     <string name="app_play_store">Google Play</string>
     <string name="density_category">Opsi kepadatan</string>
     <string name="notification_log_summary">Tampilkan log riwayat notifikasi</string>
+    <string name="battery_stats_reset">Setel ulang statistik</string>
+    <string name="battery_stats_message">Statistik penggunaan baterai akan disetel ulang</string>
     <string name="superior_settings_dash_title">Setelan Superior</string>
     <string name="superior_settings_summary">Fitur Tambahan</string>
     <string name="min_refresh_rate_title">Kecepatan refresh minimum</string>
@@ -114,6 +116,7 @@
     <string name="action_nothing">Tidak ada tindakan</string>
     <string name="action_menu">Menu</string>
     <string name="action_app_switch">Baru-baru ini</string>
+    <string name="action_search">Asisten</string>
     <string name="action_voice_search">Penelusuran suara</string>
     <string name="action_launch_camera">Kamera</string>
     <string name="action_last_app">Aplikasi terakhir</string>
@@ -210,4 +213,6 @@
     <string name="app_lock_biometrics_allowed_title">Aktifkan biometrik untuk membuka kunci</string>
     <string name="unlock_quick_unlock_control_title">Buka kunci cepat</string>
     <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/kata sandi yang benar dimasukkan</string>
+    <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
+    <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan jarak notch</string>
 </resources>

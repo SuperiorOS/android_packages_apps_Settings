@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2022 SuperiorOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
+    <string name="face_redo_confirm_btn">Znovu</string>
+    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
+    <string name="face_unlock_method_title">Povolit odemknutí obličejem na obrazovce uzamčení</string>
+    <string name="face_unlock_method_default">Když je obrazovka zapnutá</string>
+    <string name="face_unlock_method_swipe">Při přejetí prstem na uzamčené obrazovce</string>
+    <string name="superior_version">Verze SuperiorOS</string>
+    <string name="superior_version_default">Neznámá</string>
+    <string name="keywords_superior_version">Verze SuperiorOS, verze superior</string>
+    <string name="about_device_name">Kódové označení zařízení</string>
+    <string name="build_date">Datum sestavení</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">datum sestavení, info o sestavení</string>
+    <string name="device_info_protected_single_press">Klepnutím zobrazit informace</string>
+    <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
+    <string name="min_refresh_rate_title">Minimální obnovovací frekvence</string>
+    <string name="max_refresh_rate_title">Maximální obnovovací frekvence</string>
+    <string name="battery_saver_refresh_rate_title">Snížit obnovovací frekvenci</string>
+    <string name="battery_saver_refresh_rate_summary">Když je zapnut spořič baterie, použít obnovovací frekvenci 60 Hz pro úsporu energie</string>
+    <string name="copied_to_clipboard">Zkopírováno do schránky</string>
+    <string name="longpress_to_clipboard">Přidržením zkopírovat</string>
+    <string name="package_details_group_title">Detail balíčku</string>
+    <string name="package_name">Název balíčku</string>
+    <string name="package_version">Verze balíčku</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">Stav SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">Místo, kde provádíme experimenty</string>
+    <string name="navbar_invert_layout_title">Převrátit rozložení navigačního panelu</string>
+    <string name="navbar_invert_info">Prohodit tlačítka \"Zpět\" a \"Nedávné\" na navigačním panelu</string>
+    <string name="tethering_allow_vpn_upstreams_title">Umožnit klientům používat VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Povolit klientům hotspotu používat připojení VPN tohoto zařízení pro upstream konektivitu</string>
+    <string name="system_black_theme_title">Použít černý motiv</string>
+    <string name="system_black_theme_summary">Vynutit černou barvu pozadí</string>
+    <string name="prevent_ringing_option_cycle">Přepínání mezi režimy</string>
+    <string name="prevent_ringing_option_cycle_summary">Zap. (přepínání mezi režimy)</string>
+    <string name="screenshot_shutter_sound_title">Zvuk při snímku obrazovky</string>
+    <string name="volume_link_notification_title">Sjednotit hlasitosti vyzvánění a oznámení</string>
+    <string name="ring_volume_unlinked_option_title">Hlasitost vyzvánění</string>
+    <string name="density_category">Možnosti hustoty zobrazení</string>
+    <string name="low_battery_light_title">Kontrolka nízkého stavu baterie</string>
+    <string name="low_battery_light_summary">Blikání LED kontrolky baterie při nízkém stavu</string>
+    <string name="display_cutout_force_fullscreen_title">Aplikace přes celou obrazovku</string>
+    <string name="display_cutout_force_fullscreen_summary">Vynutit, aby aplikace ignorovaly výřez v displeji</string>
+    <string name="search">Hledat</string>
+    <string name="search_apps">Hledat v aplikacích</string>
+    <string name="customization_category_title">Dodatečné úpravy</string>
+    <string name="hidden_apps_title">Skryté aplikace</string>
+    <string name="hidden_apps_summary">Aplikace, které by měly být skryty před spouštěčem. Vyžaduje restart spouštěče, aby se změny projevily</string>
+    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
+    <string name="game_space_title">Herní prostor</string>
+    <string name="game_space_summary">Vylepšete svůj herní zážitek</string>
+    <string name="battery_temperature">Teplota baterie</string>
+    <string name="high_power_apps_summary">Dostupnost optimalizace baterie</string>
+    <string name="navbar_category">Navigační panel</string>
+    <string name="gesture_navbar_length_title">Délka pilulky</string>
+    <string name="hide_label">Nezobrazovat</string>
+    <string name="long_label">Dlouhá</string>
+    <string name="back_height_low_label">Plná</string>
+    <string name="back_height_high_label">Spodní</string>
+    <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
+    <string name="back_gesture_haptic_title">Hmatová odezva</string>
+    <string name="back_gesture_haptic_summary">Povolit efekt krátkého zavibrování při použití gesta „Zpět“</string>
+</resources>

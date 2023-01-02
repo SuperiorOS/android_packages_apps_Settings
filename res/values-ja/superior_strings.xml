@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2022 SuperiorOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_unlock_redo_face_scan_summary">既存の顔スキャンを削除して新しいスキャンを作成する</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">顔スキャンを再実行</string>
+    <string name="face_redo_confirm_btn">やり直す</string>
+    <string name="face_redo_warning_msg">既存の顔スキャンを削除して新しいスキャンを作成しますか?</string>
+    <string name="face_unlock_method_title">ロック画面での顔認証ロック解除を許可</string>
+    <string name="face_unlock_method_default">画面が点灯した時</string>
+    <string name="face_unlock_method_swipe">ロック画面をスワイプした時</string>
+    <string name="superior_version">SuperiorOS version</string>
+    <string name="superior_version_default">不明</string>
+    <string name="keywords_superior_version">SuperiorOS version, superior version</string>
+    <string name="about_device_name">端末のコードネーム</string>
+    <string name="build_date">ビルド日時</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">ビルド日時、ビルド情報</string>
+    <string name="device_info_protected_single_press">タップして情報を表示</string>
+    <string name="notification_log_summary">通知履歴を表示</string>
+    <string name="min_refresh_rate_title">最小リフレッシュレート</string>
+    <string name="max_refresh_rate_title">最大リフレッシュレート</string>
+    <string name="battery_saver_refresh_rate_title">リフレッシュレートを下げる</string>
+    <string name="battery_saver_refresh_rate_summary">バッテリーセーバーがオンになっている時にリフレッシュレートを60Hzに変更してバッテリーを節約する</string>
+    <string name="copied_to_clipboard">クリップボードにコピーしました</string>
+    <string name="longpress_to_clipboard">長押しでコピー</string>
+    <string name="package_details_group_title">パッケージの詳細</string>
+    <string name="package_name">パッケージ名</string>
+    <string name="package_version">パッケージのバージョン</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">SELinux ステータス</string>
+    <string name="selinux_status_disabled">無効</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">The place where we do experiments</string>
+    <string name="navbar_invert_layout_title">ナビゲーションバーのレイアウトを反転</string>
+    <string name="navbar_invert_info">ナビゲーションバーの戻るとアプリ履歴を入れ替える</string>
+    <string name="tethering_allow_vpn_upstreams_title">クライアントの VPN 使用を許可</string>
+    <string name="tethering_allow_vpn_upstreams_summary">この端末の VPN 接続をホットスポットのクライアントが送信接続に使うことを許可する</string>
+    <string name="system_black_theme_title">ピュアブラック</string>
+    <string name="system_black_theme_summary">背景にピュアブラックを使用します</string>
+    <string name="prevent_ringing_option_cycle">サイクルスルーモード</string>
+    <string name="prevent_ringing_option_cycle_summary">ON (サイクルスルーモード)</string>
+    <string name="screenshot_shutter_sound_title">スクリーンショットの音</string>
+    <string name="volume_link_notification_title">着信音と通知の音量を合わせる</string>
+    <string name="ring_volume_unlinked_option_title">着信音の音量</string>
+    <string name="density_category">解像度オプション</string>
+    <string name="low_battery_light_title">残量低下時のライト</string>
+    <string name="low_battery_light_summary">残量低下時は LED を点滅させる</string>
+    <string name="display_cutout_force_fullscreen_title">全画面表示</string>
+    <string name="display_cutout_force_fullscreen_summary">アプリのノッチ領域を無視します</string>
+    <string name="search">検索</string>
+    <string name="search_apps">アプリを検索</string>
+    <string name="customization_category_title">追加のカスタマイズ</string>
+    <string name="hidden_apps_title">非表示のアプリ</string>
+    <string name="hidden_apps_summary">ランチャーアプリから非表示になるアプリです。変更を反映させるにはランチャーの再起動が必要です。</string>
+    <string name="battery_stats_reset">統計のリセット</string>
+    <string name="battery_stats_message">バッテリーの使用統計はリセットされます</string>
+    <string name="game_space_title">ゲームスペース</string>
+    <string name="game_space_summary">ゲーム体験の強化</string>
+    <string name="battery_temperature">バッテリー温度</string>
+    <string name="high_power_apps_summary">アプリ毎のバッテリーの最適化</string>
+    <string name="navbar_category">ナビゲーションバー</string>
+    <string name="gesture_navbar_length_title">ジェスチャーバーの長さ</string>
+    <string name="hide_label">非表示</string>
+    <string name="long_label">長い</string>
+    <string name="back_height_low_label">全画面</string>
+    <string name="back_height_high_label">下部</string>
+    <string name="back_options_dialog_title">オプション</string>
+    <string name="back_height_message">戻るジェスチャーに使用される操作可能な画面領域の高さです</string>
+    <string name="back_gesture_haptic_title">触覚フィードバック</string>
+    <string name="back_gesture_haptic_summary">ジェスチャーの戻るで触覚フィードバックを有効化</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2022 SuperiorOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Mövcud üz skanını sil və yeni bir skan yarat</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Üz skanını yenidən et</string>
+    <string name="face_redo_confirm_btn">Təkrar et</string>
+    <string name="face_redo_warning_msg">Mövcud üz skanını silib yenisini yaratmaq istəyirsiniz?</string>
+    <string name="face_unlock_method_title">Kilid ekranında üzlə kilid açmağa icazə ver</string>
+    <string name="face_unlock_method_default">Ekran açılanda</string>
+    <string name="face_unlock_method_swipe">Kilid ekranında sürüşdürəndə</string>
+    <string name="superior_version">SuperiorOS versiyası</string>
+    <string name="superior_version_default">Bilinmir</string>
+    <string name="keywords_superior_version">SuperiorOS versiyası, superior versiyası</string>
+    <string name="about_device_name">Cihaz kod adı</string>
+    <string name="build_date">Quruluş tarixi</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">quruluş tarixi, quruluş məlumatı</string>
+    <string name="device_info_protected_single_press">Məlumatı göstərmək üçün toxunun</string>
+    <string name="notification_log_summary">Bildiriş tarixçə jurnalını göstər</string>
+    <string name="min_refresh_rate_title">Minimum təzələmə sürəti</string>
+    <string name="max_refresh_rate_title">Maksimum təzələmə sürəti</string>
+    <string name="battery_saver_refresh_rate_title">Təzələmə sürətini azalt</string>
+    <string name="battery_saver_refresh_rate_summary">Batareya Qənaəti açıq olanda enerjiyə qənaət etmək üçün 60 Hz təzələnmə sürətini istifadə edin</string>
+    <string name="copied_to_clipboard">Lövhəyə kopyalandı</string>
+    <string name="longpress_to_clipboard">Kopyalamaq üçün uzun basın</string>
+    <string name="package_details_group_title">Paket detalları</string>
+    <string name="package_name">Paket adı</string>
+    <string name="package_version">Paket versiyası</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">SELinux vəziyyəti</string>
+    <string name="selinux_status_disabled">Sıradan çıxarıldı</string>
+    <string name="selinux_status_permissive">İcazə verən</string>
+    <string name="selinux_status_enforcing">Məcburi</string>
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">Təcrübə keçirdiyimiz yer</string>
+    <string name="navbar_invert_layout_title">Hərəkət sətri düzümünü tərsinə çevir</string>
+    <string name="navbar_invert_info">Hərəkət sətrində \"Geri\" və \"Sonuncular\" düymələrinin yerini dəyişdir</string>
+    <string name="tethering_allow_vpn_upstreams_title">Müştərilərin VPN istifadəsinə icazə ver</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Hotspot istifadəçilərinin bağlantıları arasında bu cihazın VPN bağlantısını istifadə etməsinə icazə ver</string>
+    <string name="system_black_theme_title">Qara tema istifadə et</string>
+    <string name="system_black_theme_summary">Qara arxaplan rənglərini məcbur et</string>
+    <string name="prevent_ringing_option_cycle">Rejimlər arasında keçid</string>
+    <string name="prevent_ringing_option_cycle_summary">Açıq (rejimlər arasında keçid)</string>
+    <string name="screenshot_shutter_sound_title">Ekran şəkli səsi</string>
+    <string name="volume_link_notification_title">Zəng səsi və bildiriş səs səviyyələrini birləşdir</string>
+    <string name="ring_volume_unlinked_option_title">Zəng səsi səviyyəsi</string>
+    <string name="density_category">Sıxlıq seçimləri</string>
+    <string name="low_battery_light_title">Zəif batareya işığı</string>
+    <string name="low_battery_light_summary">Batareya zəifləyəndə LED yanıb sönür</string>
+    <string name="display_cutout_force_fullscreen_title">Tam ekran tətbiqlər</string>
+    <string name="display_cutout_force_fullscreen_summary">Tətbiqləri çərtik sahəsini yox saymağa məcbur et</string>
+    <string name="search">Axtar</string>
+    <string name="search_apps">Tətbiq axtar</string>
+    <string name="customization_category_title">Ekstra özəlləşdirmələr</string>
+    <string name="hidden_apps_title">Gizli tətbiqlər</string>
+    <string name="hidden_apps_summary">Başladıcıda gizlədilməli tətbiqlər. Dəyişikliklərin qüvvəyə minməsi üçün başladıcını yenidən başlatmaq lazımdır</string>
+    <string name="battery_stats_reset">Statistikaları sıfırla</string>
+    <string name="battery_stats_message">Batareya tarixçəsi statistikaları sıfırlanacaq</string>
+    <string name="game_space_title">Oyun sahəsi</string>
+    <string name="game_space_summary">Oyun təcrübənizi artırın</string>
+    <string name="battery_temperature">Batareya temperaturu</string>
+    <string name="high_power_apps_summary">Batareya optimallaşdırma mövcudluğu</string>
+    <string name="navbar_category">Hərəkət sətri</string>
+    <string name="gesture_navbar_length_title">Sətir uzunluğu</string>
+    <string name="hide_label">Gizli</string>
+    <string name="long_label">Uzun</string>
+    <string name="back_height_low_label">Tam</string>
+    <string name="back_height_high_label">Alt</string>
+    <string name="back_options_dialog_title">Seçimlər</string>
+    <string name="back_height_message">Geri hərəkəti üçün toxunula bilən sahə olaraq istifadə olunan ekran hündürlüyünün miqdarı.</string>
+    <string name="back_gesture_haptic_title">Toxunuş əks əlaqəsi</string>
+    <string name="back_gesture_haptic_summary">Geri hərəkətində toxunuş tik effektini fəallaşdır</string>
+</resources>

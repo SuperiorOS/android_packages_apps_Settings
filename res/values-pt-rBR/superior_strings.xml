@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2022 SuperiorOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Fazer um novo escaneamento facial e remover o existente</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refazer escaneamento facial</string>
+    <string name="face_redo_confirm_btn">Refazer</string>
+    <string name="face_redo_warning_msg">Deseja remover o escaneamento facial existente e criar um novo?</string>
+    <string name="face_unlock_method_title">Permitir desbloqueio facial na tela de bloqueio</string>
+    <string name="face_unlock_method_default">Quando a tela estiver ligada</string>
+    <string name="face_unlock_method_swipe">Ao deslizar na tela de bloqueio</string>
+    <string name="superior_version">Versão da SuperiorOS</string>
+    <string name="superior_version_default">Desconhecida</string>
+    <string name="keywords_superior_version">Versão do SuperiorOS, versão superior</string>
+    <string name="about_device_name">Nome do dispositivo</string>
+    <string name="build_date">Data da compilação</string>
+    <string name="build_date_default">01-01-2015-0000</string>
+    <string name="keywords_build_date">data da compilação, informações da compilação</string>
+    <string name="device_info_protected_single_press">Toque para mostrar informações</string>
+    <string name="notification_log_summary">Mostrar histórico de notificações</string>
+    <string name="min_refresh_rate_title">Taxa de atualização mínima</string>
+    <string name="max_refresh_rate_title">Taxa de atualização máxima</string>
+    <string name="battery_saver_refresh_rate_title">Reduzir taxa de atualização</string>
+    <string name="battery_saver_refresh_rate_summary">Usar taxa de atualização da tela de 60Hz para economizar energia quando o modo economia de bateria estiver ativado</string>
+    <string name="copied_to_clipboard">Copiado para área de transferência</string>
+    <string name="longpress_to_clipboard">Pressione e segure para copiar</string>
+    <string name="package_details_group_title">Detalhes do pacote</string>
+    <string name="package_name">Nome do pacote</string>
+    <string name="package_version">Versão do pacote</string>
+    <string name="package_version_text"><xliff:g id="version_num">-%1$s</xliff:g></string>
+    <string name="selinux_status">Status do SELinux</string>
+    <string name="selinux_status_disabled">Desativado</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Impondo</string>
+    <string name="superior_lab_dash_title">Laboratório SuperiorOs</string>
+    <string name="superior_lab_summary">O lugar onde nós fazemos experimentos</string>
+    <string name="navbar_invert_layout_title">Inverter o layout da barra de navegação</string>
+    <string name="navbar_invert_info">Inverter os botões \"Voltar\" e \"Recentes\" na barra de navegação</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permitir que clientes usem VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir que os clientes do ponto de acesso utilizem a conexão deste dispositivo\u2019s para se conectar a VPN</string>
+    <string name="system_black_theme_title">Usar tema preto</string>
+    <string name="system_black_theme_summary">Forçar fundo preto</string>
+    <string name="prevent_ringing_option_cycle">Alternar entre modos</string>
+    <string name="prevent_ringing_option_cycle_summary">Ligado (alternar entre modos)</string>
+    <string name="screenshot_shutter_sound_title">Som de captura de tela</string>
+    <string name="volume_link_notification_title">Associar volumes de toque e notificação</string>
+    <string name="ring_volume_unlinked_option_title">Volume do toque</string>
+    <string name="density_category">Opções de densidade</string>
+    <string name="low_battery_light_title">Led de bateria fraca</string>
+    <string name="low_battery_light_summary">Piscar led quando a bateria estiver fraca</string>
+    <string name="display_cutout_force_fullscreen_title">Aplicativos em tela cheia</string>
+    <string name="display_cutout_force_fullscreen_summary">Forçar aplicativos a ignorar o espaço do notch</string>
+    <string name="search">Pesquisar</string>
+    <string name="search_apps">Pesquisar aplicativos</string>
+    <string name="customization_category_title">Personalizações extras</string>
+    <string name="hidden_apps_title">Aplicativos ocultos</string>
+    <string name="hidden_apps_summary">Aplicativos que ficarão ocultos no launcher. É necessário reiniciar o launcher para que entre em vigor</string>
+    <string name="battery_stats_reset">Redefinir estatísticas</string>
+    <string name="battery_stats_message">O histórico e estatísticas da bateria serão redefinidos</string>
+    <string name="game_space_title">Espaço de Jogo</string>
+    <string name="game_space_summary">Melhore sua experiência em jogos</string>
+    <string name="battery_temperature">Temperatura da bateria</string>
+    <string name="high_power_apps_summary">Otimização da bateria</string>
+    <string name="navbar_category">Barra de navegação</string>
+    <string name="gesture_navbar_length_title">Comprimento da barra</string>
+    <string name="hide_label">Oculto</string>
+    <string name="long_label">Longo</string>
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Inferior</string>
+    <string name="back_options_dialog_title">Opções</string>
+    <string name="back_height_message">Altura de tela usada como região tocável para o gesto de voltar.</string>
+    <string name="back_gesture_haptic_title">Retorno tátil</string>
+    <string name="back_gesture_haptic_summary">Vibrar no gesto de voltar</string>
+</resources>

@@ -83,4 +83,13 @@
     <string name="back_height_message">Geri hareketi için dokunmatik bölge olarak kullanılan ekran yüksekliği miktarı.</string>
     <string name="back_gesture_haptic_title">Dokunma geri bildirimi</string>
     <string name="back_gesture_haptic_summary">Geri hareketinde dokunumsal tıklama efektini etkinleştir</string>
+    <string name="display_rotation_title">Rotation settings</string>
+    <string name="display_rotation_enabled">Auto-rotation is enabled</string>
+    <string name="display_rotation_disabled">Auto-rotation is disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
 </resources>

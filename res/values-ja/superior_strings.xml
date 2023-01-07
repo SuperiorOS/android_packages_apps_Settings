@@ -83,4 +83,13 @@
     <string name="back_height_message">戻るジェスチャーに使用される操作可能な画面領域の高さです</string>
     <string name="back_gesture_haptic_title">触覚フィードバック</string>
     <string name="back_gesture_haptic_summary">ジェスチャーの戻るで触覚フィードバックを有効化</string>
+    <string name="display_rotation_title">回転の設定</string>
+    <string name="display_rotation_enabled">画面の自動回転は有効です</string>
+    <string name="display_rotation_disabled">画面の自動回転は無効です</string>
+    <string name="display_rotation_unit">角度</string>
+    <string name="display_rotation_category_title">回転モード</string>
+    <string name="display_rotation_0_title">0度</string>
+    <string name="display_rotation_90_title">90度</string>
+    <string name="display_rotation_180_title">180度</string>
+    <string name="display_rotation_270_title">270度</string>
 </resources>

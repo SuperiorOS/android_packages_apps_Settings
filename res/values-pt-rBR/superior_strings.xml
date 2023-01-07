@@ -83,4 +83,13 @@
     <string name="back_height_message">Altura de tela usada como região tocável para o gesto de voltar.</string>
     <string name="back_gesture_haptic_title">Retorno tátil</string>
     <string name="back_gesture_haptic_summary">Vibrar no gesto de voltar</string>
+    <string name="display_rotation_title">Configurações de rotação</string>
+    <string name="display_rotation_enabled">Rotação automática ativada</string>
+    <string name="display_rotation_disabled">Rotação automática desativada</string>
+    <string name="display_rotation_unit">graus</string>
+    <string name="display_rotation_category_title">Modos de rotação</string>
+    <string name="display_rotation_0_title">0 graus</string>
+    <string name="display_rotation_90_title">90 graus</string>
+    <string name="display_rotation_180_title">180 graus</string>
+    <string name="display_rotation_270_title">270 graus</string>
 </resources>

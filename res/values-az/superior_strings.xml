@@ -83,4 +83,13 @@
     <string name="back_height_message">Geri hərəkəti üçün toxunula bilən sahə olaraq istifadə olunan ekran hündürlüyünün miqdarı.</string>
     <string name="back_gesture_haptic_title">Toxunuş əks əlaqəsi</string>
     <string name="back_gesture_haptic_summary">Geri hərəkətində toxunuş tik effektini fəallaşdır</string>
+    <string name="display_rotation_title">Döndərmə tənzimləmələri</string>
+    <string name="display_rotation_enabled">Avto-döndərmə fəaldır</string>
+    <string name="display_rotation_disabled">Avto-döndərmə sıradan çıxarıldı</string>
+    <string name="display_rotation_unit">dərəcə</string>
+    <string name="display_rotation_category_title">Döndərmə rejimi</string>
+    <string name="display_rotation_0_title">0 dərəcə</string>
+    <string name="display_rotation_90_title">90 dərəcə</string>
+    <string name="display_rotation_180_title">180 dərəcə</string>
+    <string name="display_rotation_270_title">270 dərəcə</string>
 </resources>

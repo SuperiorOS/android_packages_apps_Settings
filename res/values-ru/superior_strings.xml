@@ -14,6 +14,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Удалить использующийся снимок лица и создать новый</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Повторное сканирование лица</string>
+    <string name="face_redo_confirm_btn">Повторить</string>
+    <string name="face_redo_warning_msg">Вы хотите удалить существующий снимок лица и создать новый?</string>
+    <string name="face_unlock_method_title">Разрешить разблокировку лицом на экране блокировки</string>
+    <string name="face_unlock_method_default">Когда экран включен</string>
+    <string name="face_unlock_method_swipe">При проведении пальцем по экрану блокировки</string>
     <string name="superior_version">Версия SuperiorOS</string>
     <string name="superior_version_default">Неизвестно</string>
     <string name="keywords_superior_version">Версия SuperiorOS, версия superior</string>
@@ -57,6 +64,11 @@
     <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать вырез</string>
     <string name="search">Поиск</string>
     <string name="search_apps">Поиск приложений</string>
+    <string name="customization_category_title">Дополнительные настройки</string>
+    <string name="hidden_apps_title">Скрытые приложения</string>
+    <string name="hidden_apps_summary">Приложения, которые должны быть скрыты из лаунчера. Требуется перезагрузка лаунчера, чтобы изменения вступили в силу</string>
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
     <string name="game_space_title">Игровое пространство</string>
     <string name="game_space_summary">Улучшайте свои впечатления от игр</string>
     <string name="battery_temperature">Температура батареи</string>
@@ -65,6 +77,19 @@
     <string name="gesture_navbar_length_title">Длина полосы</string>
     <string name="hide_label">Скрытый</string>
     <string name="long_label">Длинный</string>
+    <string name="back_height_low_label">Полный</string>
+    <string name="back_height_high_label">Снизу</string>
+    <string name="back_options_dialog_title">Параметры</string>
+    <string name="back_height_message">Высота экрана, используемая в качестве сенсорной области для жеста \"Назад\".</string>
     <string name="back_gesture_haptic_title">Виброотклик</string>
     <string name="back_gesture_haptic_summary">Включить вибрацию для жеста \"Назад\"</string>
+    <string name="display_rotation_title">Параметры вращения</string>
+    <string name="display_rotation_enabled">Автоповорот включен</string>
+    <string name="display_rotation_disabled">Автоповорот выключен</string>
+    <string name="display_rotation_unit">градусов</string>
+    <string name="display_rotation_category_title">Режимы поворота</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
 </resources>

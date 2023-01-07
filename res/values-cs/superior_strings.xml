@@ -83,4 +83,13 @@
     <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
     <string name="back_gesture_haptic_title">Hmatová odezva</string>
     <string name="back_gesture_haptic_summary">Povolit efekt krátkého zavibrování při použití gesta „Zpět“</string>
+    <string name="display_rotation_title">Nastavení otáčení</string>
+    <string name="display_rotation_enabled">Automatické otáčení povoleno</string>
+    <string name="display_rotation_disabled">Automatické otáčení zakázáno</string>
+    <string name="display_rotation_unit">stupně</string>
+    <string name="display_rotation_category_title">Režimy otáčení</string>
+    <string name="display_rotation_0_title">0°</string>
+    <string name="display_rotation_90_title">90°</string>
+    <string name="display_rotation_180_title">180°</string>
+    <string name="display_rotation_270_title">270°</string>
 </resources>

@@ -182,6 +182,13 @@
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
 
+        <Preference
+            android:key="display_cutout_force_fullscreen_settings"
+            android:title="@string/display_cutout_force_fullscreen_title"
+            android:summary="@string/display_cutout_force_fullscreen_summary"
+            android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+            settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+
         <ListPreference
             android:key="theme"
             android:title="@string/device_theme"
@@ -191,24 +198,5 @@
             android:key="vr_display_pref"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/customization_category_title">
-
-        <Preference
-            android:key="display_cutout_force_fullscreen_settings"
-            android:title="@string/display_cutout_force_fullscreen_title"
-            android:summary="@string/display_cutout_force_fullscreen_summary"
-            android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
-            settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
-
-        <!-- Hidden apps -->
-        <Preference
-            android:key="hidden_apps"
-            android:title="@string/hidden_apps_title"
-            android:summary="@string/hidden_apps_summary"
-            android:persistent="false"
-            android:fragment="com.android.settings.display.HiddenAppSettingsFragment" />
     </PreferenceCategory>
 </PreferenceScreen>

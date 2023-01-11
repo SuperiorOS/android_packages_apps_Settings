@@ -75,6 +75,8 @@ import com.android.settings.wifi.WifiTrackerLibProvider;
 import com.android.settings.wifi.WifiTrackerLibProviderImpl;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
+import com.superior.android.settings.fuelgauge.PowerUsageFeatureProviderSuperiorImpl;
+
 /**
  * {@link FeatureFactory} implementation for AOSP Settings.
  */
@@ -123,8 +125,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public PowerUsageFeatureProvider getPowerUsageFeatureProvider(Context context) {
         if (mPowerUsageFeatureProvider == null) {
-            mPowerUsageFeatureProvider = new PowerUsageFeatureProviderImpl(
-                    context.getApplicationContext());
+            mPowerUsageFeatureProvider = new PowerUsageFeatureProviderSuperiorImpl(context);
         }
         return mPowerUsageFeatureProvider;
     }

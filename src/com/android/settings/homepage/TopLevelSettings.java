@@ -22,6 +22,7 @@ import static com.android.settingslib.search.SearchIndexable.MOBILE;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -76,6 +77,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private boolean mScrollNeeded = true;
     private boolean mFirstStarted = true;
     private ActivityEmbeddingController mActivityEmbeddingController;
+    private boolean gAppsExists;
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -116,6 +118,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        // Check if Google Apps exist and set the gAppsExists flag accordingly
+        gAppsExists = checkIfGoogleAppsExist(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
         updateLabSummary();
@@ -220,6 +224,18 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         return taskInfo.numActivities == 1;
     }
 
+    private boolean checkIfGoogleAppsExist(Context context) {
+        // Perform the necessary check to determine if Google Apps exist
+        // For example, you might use PackageManager to check for the existence of a Google app package
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            packageManager.getPackageInfo("com.google.android.gsf", 0);
+            return true; // Google Apps exist
+        } catch (PackageManager.NameNotFoundException e) {
+            return false; // Google Apps do not exist
+        }
+    }
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -238,6 +254,40 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 icon.setTint(tintColor);
             }
         });
+        onSetPrefCard();
+    }
+
+    private void onSetPrefCard() {
+        final PreferenceScreen screen = getPreferenceScreen();
+        final int count = screen.getPreferenceCount();
+        for (int i = 0; i < count; i++) {
+            final Preference preference = screen.getPreference(i);
+
+            String key = preference.getKey();
+            if (key.equals("top_level_network")
+            	|| key.equals("top_level_superior_lab")
+            	|| key.equals("top_level_apps")
+            	|| key.equals("top_level_accessibility")
+            	|| key.equals("top_level_emergency")
+                || key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.superioros_dashboard_preference_top);
+            } else if (key.equals("top_level_battery")
+            	|| key.equals("top_level_display")
+            	|| key.equals("top_level_security")
+            	|| key.equals("top_level_privacy")
+            	|| key.equals("top_level_safety_center")
+            	|| key.equals("top_level_storage")
+            	|| key.equals("top_level_wellbeing")
+            	|| key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.superioros_dashboard_preference_middle);
+            } else if ("top_level_google".equals(key)){
+                preference.setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
+            } else if (key.equals("top_level_accounts") && gAppsExists){
+                preference.setLayoutResource(R.layout.superioros_dashboard_preference_middle);
+            } else {
+                preference.setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
+            }
+       }
     }
 
     @Override

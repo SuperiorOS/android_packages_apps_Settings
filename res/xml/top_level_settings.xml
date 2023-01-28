@@ -42,10 +42,36 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:key="top_level_superior_lab"
+        android:title="@string/superior_lab_dash_title"
+        android:icon="@drawable/ic_settings_superior"
+        android:order="-130"
+        android:fragment="com.superior.lab.SuperiorLab"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.DisplaySettings"
+        android:icon="@drawable/ic_settings_display_white"
+        android:key="top_level_display"
+        android:order="-120"
+        android:title="@string/display_settings"
+        android:summary="@string/display_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_display"
+        settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
+
+    <com.android.settings.widget.RestrictedHomepagePreference
+        android:icon="@drawable/ic_settings_wallpaper_white"
+        android:key="top_level_wallpaper"
+        android:order="-110"
+        android:title="@string/wallpaper_settings_title"
+        android:summary="@string/wallpaper_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_wallpaper"
+        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
         android:icon="@drawable/ic_apps"
         android:key="top_level_apps"
-        android:order="-140"
+        android:order="-100"
         android:title="@string/apps_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_apps"/>
@@ -54,7 +80,7 @@
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
         android:icon="@drawable/ic_notifications"
         android:key="top_level_notifications"
-        android:order="-130"
+        android:order="-90"
         android:title="@string/configure_notification_settings"
         android:summary="@string/notification_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_notifications"/>
@@ -63,24 +89,17 @@
         android:fragment="com.android.settings.fuelgauge.batteryusage.PowerUsageSummary"
         android:icon="@drawable/ic_settings_battery_white"
         android:key="top_level_battery"
-        android:order="-120"
+        android:order="-80"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_battery"
         settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-        android:key="top_level_superior_lab"
-        android:title="@string/superior_lab_dash_title"
-        android:icon="@drawable/ic_settings_superior"
-        android:order="-110"
-        android:fragment="com.superior.lab.SuperiorLab"/>
-
-    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
         android:icon="@drawable/ic_storage_white"
         android:key="top_level_storage"
-        android:order="-100"
+        android:order="-70"
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_storage"
@@ -90,29 +109,10 @@
         android:fragment="com.android.settings.notification.SoundSettings"
         android:icon="@drawable/ic_volume_up_24dp"
         android:key="top_level_sound"
-        android:order="-90"
+        android:order="-65"
         android:title="@string/sound_settings"
         android:summary="@string/sound_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_sound"/>
-
-    <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.DisplaySettings"
-        android:icon="@drawable/ic_settings_display_white"
-        android:key="top_level_display"
-        android:order="-80"
-        android:title="@string/display_settings"
-        android:summary="@string/display_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_display"
-        settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
-
-    <com.android.settings.widget.RestrictedHomepagePreference
-        android:icon="@drawable/ic_settings_wallpaper_white"
-        android:key="top_level_wallpaper"
-        android:order="-70"
-        android:title="@string/wallpaper_settings_title"
-        android:summary="@string/wallpaper_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_wallpaper"
-        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"

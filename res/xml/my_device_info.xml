@@ -46,7 +46,7 @@
         android:title="@string/build_number"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"
         settings:enableCopying="true"
-        settings:layout="@layout/superior_dashboard_preference_middle" />
+        settings:layout="@layout/superioros_dashboard_preference_middle" />
 
     <!-- Model & hardware -->
     <Preference
@@ -78,7 +78,7 @@
         android:selectable="false"
         android:summary="@string/summary_placeholder"
         android:title="@string/status_up_time"
-        settings:layout="@layout/superior_dashboard_preference_top" />
+        settings:layout="@layout/superioros_dashboard_preference_top" />
 
 
     <!-- Legal information -->

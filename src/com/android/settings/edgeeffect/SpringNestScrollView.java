@@ -691,7 +691,6 @@ public class SpringNestScrollView extends NestedScrollView {
         public void onAbsorb(int i) {
             SpringNestScrollView.this.finishScrollWithVelocity(((float) i) * mVelocityMultiplier);
             SpringNestScrollView.this.mDistance = 0.0f;
-            triggerVibration(getContext());
         }
 
         public void onPull(float f, float f2) {

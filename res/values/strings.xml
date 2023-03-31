@@ -13017,4 +13017,5 @@
 
     <!--Text for Stylus Pointer Icon preference -->
     <string name="show_stylus_pointer_icon">Show pointer while hovering</string>
+
 </resources>

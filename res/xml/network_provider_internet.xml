@@ -116,4 +116,13 @@
         android:summary="@string/cellular_security_summary"
         android:order="30"
         settings:controller="com.android.settings.network.CellularSecurityPreferenceController"/>
+
+    <Preference
+        android:fragment="com.android.settings.superior.networktraffic.NetworkTrafficSettings"
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:icon="@drawable/ic_settings_network_traffic"
+        android:order="35"
+        android:summary="@string/network_traffic_state_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>

@@ -256,4 +256,9 @@
     <!-- Separate ring & notification toggle -->
     <string name="volume_separate_notification_title">Separated Ring and Notification</string>
     <string name="volume_separate_notification_summary">Allow controlling each stream individually</string>
+    
+    <!-- Ambient wake toggles -->
+    <string name="doze_gesture_ambient_title">Show Ambient</string>
+    <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
+
 </resources>

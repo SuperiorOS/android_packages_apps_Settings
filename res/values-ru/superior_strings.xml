@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022 SuperiorOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Удалить использующийся снимок лица и создать новый</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Повторное сканирование лица</string>
+    <string name="face_redo_confirm_btn">Повторить</string>
+    <string name="face_redo_warning_msg">Вы хотите удалить существующий снимок лица и создать новый?</string>
+    <string name="face_unlock_method_title">Разрешить разблокировку лицом на экране блокировки</string>
+    <string name="face_unlock_method_default">Когда экран включен</string>
+    <string name="face_unlock_method_swipe">При проведении пальцем по экрану блокировки</string>
+    <string name="skip_biometric_auth_confirmation_title">Пропустить подтверждение вручную</string>
+    <string name="superior_version">Версия SuperiorOS</string>
+    <string name="superior_version_default">Неизвестно</string>
+    <string name="keywords_superior_version">Версия SuperiorOS, версия superior</string>
+    <string name="about_device_name">Устройство</string>
+    <string name="build_date">Дата сборки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">дата сборки, сведения о сборке</string>
+    <string name="device_info_protected_single_press">Нажмите, чтобы показать информацию</string>
+    <string name="notification_log_summary">Показать историю уведомлений</string>
+    <string name="min_refresh_rate_title">Минимальная частота обновления</string>
+    <string name="max_refresh_rate_title">Максимальная частота обновления</string>
+    <string name="battery_saver_refresh_rate_title">Уменьшить частоту обновления</string>
+    <string name="battery_saver_refresh_rate_summary">Использовать частоту обновления экрана на 60 Гц для экономии заряда батареи</string>
+    <string name="copied_to_clipboard">Скопировано в буфер обмена</string>
+    <string name="longpress_to_clipboard">Удерживать для копирования</string>
+    <string name="package_details_group_title">Сведения о пакете</string>
+    <string name="package_name">Название пакета</string>
+    <string name="package_version">Версия пакета</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключен</string>
+    <string name="selinux_status_permissive">Разрешающий</string>
+    <string name="selinux_status_enforcing">Принудительный</string>
+    <string name="superior_lab_dash_title">Настройки Superior</string>
+    <string name="superior_lab_summary">Место, где мы проводим эксперименты</string>
+    <string name="density_category">Настройки плотности</string>
+    <string name="tethering_allow_vpn_upstreams_title">Разрешить клиентам использовать VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Разрешать клиентам точки доступа использовать это устройство\u2019с VPN соединениями для повышения подключения</string>
+    <string name="system_black_theme_title">Использовать темную тему</string>
+    <string name="system_black_theme_summary">Принудительный черный цвет фона</string>
+    <string name="battery_temperature">Температура батареи</string>
+    <string name="high_power_apps_summary">Наличие оптимизации батареи</string>
+    <string name="navbar_invert_layout_title">Инвертировать ракладку панели навигации</string>
+    <string name="navbar_invert_info">Поменять местами кнопки \"Назад\" и \"Недавние\" на панели навигации</string>
+    <string name="prevent_ringing_option_cycle">Циклическое переключение режимов</string>
+    <string name="prevent_ringing_option_cycle_summary">Вкл. (циклический переход между режимами)</string>
+    <string name="screenshot_shutter_sound_title">Звук скриншота</string>
+    <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
+    <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать вырез</string>
+    <string name="search">Поиск</string>
+    <string name="search_apps">Искать приложения</string>
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
+    <string name="low_battery_light_title">Низкий заряд батареи</string>
+    <string name="low_battery_light_summary">Мигать светодиодом при низком заряде батареи</string>
+    <string name="platform_revision">Платформа</string>
+    <string name="total_ram">Всего ОЗУ</string>
+    <string name="superior_processor_title">Процессор</string>
+    <string name="superior_storage_code_title">Хранилище</string>
+    <string name="superior_battery_type_title">Батарея</string>
+    <string name="superior_screen_title">Экран</string>
+    <string name="net_info">Сеть</string>
+    <string name="mod_info">@string/model_info</string>
+    <string name="id_info">Идентификаторы</string>
+    <string name="model_summary">Модель, номер телефона, IMEI и т.д.</string>
+    <string name="model_name">Состояние устройства</string>
+    <string name="legal_summary">Юридическая информация</string>
+    <string name="navbar_category">Панель навигации</string>
+    <string name="gesture_navbar_length_title">Длина панели жестов</string>
+    <string name="hide_label">Скрыть</string>
+    <string name="long_label">Длинный</string>
+    <string name="back_height_low_label">Полный</string>
+    <string name="back_height_high_label">Снизу</string>
+    <string name="back_options_dialog_title">Параметры</string>
+    <string name="back_height_message">Высота экрана, используемая в качестве сенсорной области для жеста \"Назад\".</string>
+    <string name="display_rotation_title">Параметры вращения</string>
+    <string name="display_rotation_enabled">Автоповорот включен</string>
+    <string name="display_rotation_disabled">Автоповорот выключен</string>
+    <string name="display_rotation_unit">градусов</string>
+    <string name="display_rotation_category_title">Режим поворота</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
+    <string name="app_lock_title">Блокировка приложений</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Количество приложений">%1$d</xliff:g> приложений защищено</item>
+        <item quantity="few"><xliff:g example="10" id="Количество приложений">%1$d</xliff:g> приложения защищены</item>
+        <item quantity="many"><xliff:g example="10" id="Количество приложений">%1$d</xliff:g> приложения защищены</item>
+        <item quantity="other"><xliff:g example="10" id="Количество приложений">%1$d</xliff:g> приложения защищены</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Разблокировать</string>
+    <string name="enable_debugging">Включить отладку</string>
+    <string name="disable_debugging">Отключить отладку</string>
+    <string name="app_lock_packages_title">Защищенные приложения</string>
+    <string name="app_lock_packages_summary">Выберите приложения для защиты с помощью биометрических данных или пароля</string>
+    <string name="app_lock_timeout_title">Время автоблокировки</string>
+    <string name="app_lock_timeout_summary">Длительность времени, после которого приложение в фоновом режиме должно быть заблокировано</string>
+    <string name="app_lock_notifications_title">Сворачивать уведомления</string>
+    <string name="app_lock_notifications_summary">          Содержимое уведомлений будет скрыто и свернуто для выбранных приложений, когда они будут заблокированы.
+          Всплывающие уведомления будут автоматически отключены.
+     </string>
+    <string name="app_lock_notifications_disabled_summary">Сначала защитите приложение</string>
+    <string name="app_lock_biometrics_allowed_title">Включить биометрию для разблокировки</string>
+    <string name="app_lock_footer_text">Всплывающие уведомления будут автоматически удалены по истечении времени</string>
+    <string name="enable_protection">Включить защиту</string>
+    <string name="hide_from_launcher_title">Скрыть из лаунчера</string>
+    <string name="hide_from_launcher_summary">        Запретить отображение этого приложения в лаунчере. Требуется перезапуск лаунчера, чтобы изменения вступили в силу.
+    </string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Найдите датчик отпечатков пальцев на задней поверхности вашего устройства.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Найдите датчик отпечатков пальцев на передней панели устройства.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Найдите датчик отпечатков пальцев на передней панели телефона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Найдите датчик отпечатков пальцев на задней панели планшета.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Найдите датчик отпечатков пальцев на задней панели устройства.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Найдите датчик отпечатков пальцев на задней панели телефона.</string>
+    <string name="high_touch_sensitivity_title">Режим \"В перчатках\"</string>
+    <string name="high_touch_sensitivity_summary">Увеличить чувствительность экрана для возможности работы в перчатках</string>
+    <string name="high_touch_polling_rate_title">Высокий уровень опроса касания</string>
+    <string name="high_touch_polling_rate_summary">Увеличить скорость опроса сенсорного экрана</string>
+    <string name="dc_dimming_title">Уменьшение мерцания</string>
+    <string name="dc_dimming_info">Снижает нагрузку на глаза в условиях низкой освещенности за счет уменьшения мерцания экрана. Может привести к снижению качества изображения и ухудшению цветопередачи, а также к увеличению энергопотребления.</string>
+    <string name="dc_dimming_main_switch_title">Использовать уменьшение мерцания</string>
+    <string name="keywords_display_dc_dimming">уменьшение мерцания, мерцание, глаз, напряжение</string>
+    <string name="app_volume">Громкость приложений</string>
+    <string name="app_volume_title">Громкость для каждого приложения</string>
+    <string name="app_volume_summary">Разрешить устанавливать разные уровни громкости для каждого приложения</string>
+    <string name="private_dns_mode_open_dns">Open DNS</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+    <string name="game_space_title">Игровое пространство</string>
+    <string name="game_space_summary">Улучшайте свои впечатления от игр</string>
+    <string name="back_gesture_haptic_title">Виброотклик</string>
+    <string name="back_gesture_haptic_summary">Включить виброотклик для жеста \"Назад\"</string>
+    <string name="action_nothing">Нет действий</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_app_switch">Недавние</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_last_app">Последнее приложение</string>
+    <string name="action_splitscreen">Разделить экран</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Экран выключен</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_power_menu">Меню питания</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
+    <string name="action_app_action">Приложение</string>
+    <string name="action_ringer_modes">Режимы звонка</string>
+    <string name="kill_app">Закрыть текущее приложение</string>
+    <string name="recent_app_toggle">Переключить недавнее приложение</string>
+    <string name="navbar_gesture_tweaks_pref_title">Расширенные настройки жестов</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Настройка жестов и настройка пользовательских действий</string>
+    <string name="navbar_gesture_tweaks_cat_title">Расширенный</string>
+    <string name="swipe_app_select_summary">Выберите приложение, которое хотите запустить при сжатии</string>
+    <string name="long_back_swipe_timeout_title">Длительность действий задержки смахивания </string>
+    <string name="left_swipe_actions_title">Действие при длительном смахивании влево</string>
+    <string name="left_swipe_app_action_title">Выберите приложение для длительного смахивания влево</string>
+    <string name="right_swipe_actions_title">Действие при длительном смахивании вправо</string>
+    <string name="right_swipe_app_action_title">Выберите приложение для длительного смахивания вправо</string>
+    <string name="left_vertical_swipe_actions_title">Вертикальное действие слева L-смахивание</string>
+    <string name="left_vertical_swipe_app_action_title">Выберите приложение для вертикального смахивания влево</string>
+    <string name="right_vertical_swipe_actions_title">Вертикальное действие справа L-смахивание</string>
+    <string name="right_vertical_swipe_app_action_title">Выберите приложение для вертикального смахивания вправо</string>
+    <string name="gesture_nav_tweaks_footer_info">Чтобы выбрать конкретное действие приложения для действия, нажмите и удерживайте любое приложение в средстве выбора приложений.\n\nЕсли отображается панель запуска, проведите по экрану в самом низу экрана, чтобы вызвать действие.</string>
+    <string name="back_swipe_extended_title">Расширенное действие смахивания</string>
+    <string name="back_swipe_extended_summary">Запуск действия при длительном смахивании (более чем на половину экрана), или L-смахивание (от края и вверх)</string>
+    <string name="lock_settings_picker_pattern_size_message">Выберите размер шаблона</string>
+    <string name="lockpattern_settings_enable_error_path_title">Показать ошибка шаблона</string>
+    <string name="lockpattern_settings_enable_dots_title">Показывать точки шаблона</string>
+    <string name="immersive_navigation_title">Инвертировать навигацию</string>
+    <string name="immersive_navigation_summary">Скрыть полоску жестов и отступ панели навигации.</string>
+</resources>

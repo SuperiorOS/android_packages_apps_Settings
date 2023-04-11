@@ -149,4 +149,8 @@
      <string name="charging_control_target_time_title">Target time to full charge</string>
      <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
      <string name="charging_control_limit_title">Limit</string>
+
+     <!-- Ambient wake toggles -->
+     <string name="doze_gesture_ambient_title">Show Ambient</string>
+     <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
 </resources>

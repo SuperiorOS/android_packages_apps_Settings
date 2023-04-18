@@ -55,6 +55,8 @@
           the front of your phone.</string>
      <string name="fingerprint_enroll_find_sensor_message_rear">Locate the fingerprint sensor on the
           back of your phone.</string>
+     <string name="fingerprint_enroll_find_sensor_message_side">Locate the fingerprint sensor on the
+          side of your phone.</string>
 
      <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint
      sensor -->

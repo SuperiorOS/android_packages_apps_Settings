@@ -110,6 +110,10 @@
           <item>@string/dashboard_morning4</item>
           <item>@string/dashboard_morning5</item>
      </string-array>
+     <string-array name="dashboard_morning_greetings">
+          <item>@string/dashboard_morning_greeting1</item>
+          <item>@string/dashboard_morning_greeting2</item>
+     </string-array>
      <string-array name="dashboard_midnight">
           <item>@string/dashboard_midnight1</item>
           <item>@string/dashboard_midnight2</item>
@@ -139,6 +143,19 @@
           <item>@string/dashboard_random4</item>
           <item>@string/dashboard_random5</item>
           <item>@string/dashboard_random6</item>
+     </string-array>
+     <string-array name="dashboard_random_greetings">
+          <item>@string/dashboard_random_greetings1</item>
+          <item>@string/dashboard_random_greetings2</item>
+          <item>@string/dashboard_random_greetings3</item>
+          <item>@string/dashboard_random_greetings4</item>
+     </string-array>
+     <string-array name="settings_random">
+          <item>@string/settings_random1</item>
+          <item>@string/settings_random2</item>
+          <item>@string/settings_random3</item>
+          <item>@string/settings_random4</item>
+          <item>@string/settings_random5</item>
      </string-array>
 
     <!-- Face Unlock -->

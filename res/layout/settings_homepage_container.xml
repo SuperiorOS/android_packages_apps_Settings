@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018 The Android Open Source Project
-     Copyright (C) 2021 ShapeShiftOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -39,31 +38,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            
-   <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:touchscreenBlocksFocus="false"
-        android:keyboardNavigationCluster="false">
-        <LinearLayout
-            android:id="@+id/app_bar_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
-            <include
-                android:id="@+id/homepage_app_bar_regular_phone_view"
-                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
-
-            <include
-                android:id="@+id/homepage_app_bar_two_pane_view"
-                layout="@layout/settings_homepage_app_bar_two_pane_layout"
-                android:visibility="gone"/>
-        </LinearLayout>
-    </com.google.android.material.appbar.AppBarLayout>
 
             <include
                 android:id="@+id/suggestion_container_two_pane"
@@ -86,4 +60,29 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </com.android.settings.edgeeffect.SpringNestScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:touchscreenBlocksFocus="false"
+        android:keyboardNavigationCluster="false">
+        <LinearLayout
+            android:id="@+id/app_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <include
+                android:id="@+id/homepage_app_bar_regular_phone_view"
+                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
+
+            <include
+                android:id="@+id/homepage_app_bar_two_pane_view"
+                layout="@layout/settings_homepage_app_bar_two_pane_layout"
+                android:visibility="gone"/>
+         </LinearLayout>
+      </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

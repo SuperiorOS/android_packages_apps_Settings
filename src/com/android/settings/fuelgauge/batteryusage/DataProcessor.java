@@ -184,6 +184,9 @@ public final class DataProcessor {
             final Map<Long, Map<String, BatteryHistEntry>> batteryHistoryMap) {
         final long startTime = System.currentTimeMillis();
         final List<Long> rawTimestampList = new ArrayList<>(batteryHistoryMap.keySet());
+        // Timestamp should not after current system time,
+        // avoid case users changed time to future then changed back
+        rawTimestampList.removeIf(timestamp -> timestamp > startTime);
         final Map<Long, Map<String, BatteryHistEntry>> resultMap = new HashMap();
         if (rawTimestampList.isEmpty()) {
             Log.d(TAG, "empty batteryHistoryMap in getHistoryMapWithExpectedTimestamps()");

@@ -18,35 +18,35 @@
 
     <!-- Random summary -->
     <string-array name="superiorlab_summaries">
-        <item>Warning: Insanely cool stuff ahead!</item>
-        <item>Some interesting tagline. Blah blah blah...</item>
-        <item>Get ready to be blown to the world of imagination</item>
-        <item>Its features lickin\' good</item>
-        <item>Look out! Behind you!</item>
-        <item>All things being equal, you are bound to lose.</item>
-        <item>What I need is a MATURE RELATIONSHIP with a FLOPPY DISK</item>
-        <item>Never let your schooling interfere with your education</item>
-        <item>Your life would be very empty if you had nothing to regret</item>
-        <item>Fame may be fleeting but obscurity is forever</item>
-        <item>This entry will self-destruct in five minutes</item>
-        <item>Things are not always what they seem</item>
-        <item>Some assembly required</item>
-        <item>He who laughs last didn\'t get the joke</item>
-        <item>If everything is coming your way then you\'re in the wrong lane</item>
-        <item>Where there\'s a will, there\'s an Inheritance Tax</item>
-        <item>This is an unauthorized cybernetic announcement</item>
-        <item>No stopping or standing</item>
-        <item>If I am elected, I will hand out free waffles on Tempelhofer Feld!</item>
-        <item>When all other means of communication fail, try words</item>
-        <item>Never eat anything bigger than your head</item>
-        <item>Excessive login or logout messages are a sure sign of senility</item>
-        <item>Customize till you want it</item>
-        <item>Think less, customize more</item>
-        <item>FBI: Feature Base Isolation</item>
-        <item>This is what awesome looks like</item>
-        <item>With great features comes great responsibility</item>
-        <item>Don\'t dream it. Do it</item>
-        <item>Proudly brought to you without donations</item>
+        <item>@string/superiorlab_summaries_1</item>
+        <item>@string/superiorlab_summaries_2</item>
+        <item>@string/superiorlab_summaries_3</item>
+        <item>@string/superiorlab_summaries_4</item>
+        <item>@string/superiorlab_summaries_5</item>
+        <item>@string/superiorlab_summaries_6</item>
+        <item>@string/superiorlab_summaries_7</item>
+        <item>@string/superiorlab_summaries_8</item>
+        <item>@string/superiorlab_summaries_9</item>
+        <item>@string/superiorlab_summaries_10</item>
+        <item>@string/superiorlab_summaries_11</item>
+        <item>@string/superiorlab_summaries_12</item>
+        <item>@string/superiorlab_summaries_13</item>
+        <item>@string/superiorlab_summaries_14</item>
+        <item>@string/superiorlab_summaries_15</item>
+        <item>@string/superiorlab_summaries_16</item>
+        <item>@string/superiorlab_summaries_17</item>
+        <item>@string/superiorlab_summaries_18</item>
+        <item>@string/superiorlab_summaries_19</item>
+        <item>@string/superiorlab_summaries_20</item>
+        <item>@string/superiorlab_summaries_21</item>
+        <item>@string/superiorlab_summaries_22</item>
+        <item>@string/superiorlab_summaries_23</item>
+        <item>@string/superiorlab_summaries_24</item>
+        <item>@string/superiorlab_summaries_25</item>
+        <item>@string/superiorlab_summaries_26</item>
+        <item>@string/superiorlab_summaries_27</item>
+        <item>@string/superiorlab_summaries_28</item>
+        <item>@string/superiorlab_summaries_29</item>
     </string-array>
 
     <!-- Back swipe actions -->
@@ -153,13 +153,13 @@
 
     <!-- App lock timeout -->
     <string-array name="app_lock_timeout_entries">
-        <item>5 seconds</item>
-        <item>10 seconds</item>
-        <item>30 seconds</item>
-        <item>1 minute</item>
-        <item>5 minutes</item>
-        <item>10 minutes</item>
-        <item>30 minutes</item>
+        <item>@string/app_lock_timeout_5secs</item>
+        <item>@string/app_lock_timeout_10secs</item>
+        <item>@string/app_lock_timeout_30secs</item>
+        <item>@string/app_lock_timeout_1min</item>
+        <item>@string/app_lock_timeout_5mins</item>
+        <item>@string/app_lock_timeout_10mins</item>
+        <item>@string/app_lock_timeout_30mins</item>
     </string-array>
 
     <string-array name="app_lock_timeout_values" translatable="false">

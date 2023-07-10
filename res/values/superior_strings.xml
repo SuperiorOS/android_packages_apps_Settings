@@ -323,4 +323,44 @@
     <string name="hide_from_launcher_summary">
         Prevent this application from showing up in launcher. Requires a launcher restart for changes to take effect.
     </string>
+
+    <!-- Random summary -->
+    <string name="superiorlab_summaries_1">Warning: Insanely cool stuff ahead!</string>
+    <string name="superiorlab_summaries_2">Some interesting tagline. Blah blah blah...</string>
+    <string name="superiorlab_summaries_3">Get ready to be blown to the world of imagination</string>
+    <string name="superiorlab_summaries_4">Its features lickin\' good</string>
+    <string name="superiorlab_summaries_5">Look out! Behind you!</string>
+    <string name="superiorlab_summaries_6">All things being equal, you are bound to lose.</string>
+    <string name="superiorlab_summaries_7">What I need is a MATURE RELATIONSHIP with a FLOPPY DISK</string>
+    <string name="superiorlab_summaries_8">Never let your schooling interfere with your education</string>
+    <string name="superiorlab_summaries_9">Your life would be very empty if you had nothing to regret</string>
+    <string name="superiorlab_summaries_10">Fame may be fleeting but obscurity is forever</string>
+    <string name="superiorlab_summaries_11">This entry will self-destruct in five minutes</string>
+    <string name="superiorlab_summaries_12">Things are not always what they seem</string>
+    <string name="superiorlab_summaries_13">Some assembly required</string>
+    <string name="superiorlab_summaries_14">He who laughs last didn\'t get the joke</string>
+    <string name="superiorlab_summaries_15">If everything is coming your way then you\'re in the wrong lane</string>
+    <string name="superiorlab_summaries_16">Where there\'s a will, there\'s an Inheritance Tax</string>
+    <string name="superiorlab_summaries_17">This is an unauthorized cybernetic announcement</string>
+    <string name="superiorlab_summaries_18">No stopping or standing</string>
+    <string name="superiorlab_summaries_19">If I am elected, I will hand out free waffles on Tempelhofer Feld!</string>
+    <string name="superiorlab_summaries_20">When all other means of communication fail, try words</string>
+    <string name="superiorlab_summaries_21">Never eat anything bigger than your head</string>
+    <string name="superiorlab_summaries_22">Excessive login or logout messages are a sure sign of senility</string>
+    <string name="superiorlab_summaries_23">Customize till you want it</string>
+    <string name="superiorlab_summaries_24">Think less, customize more</string>
+    <string name="superiorlab_summaries_25">FBI: Feature Base Isolation</string>
+    <string name="superiorlab_summaries_26">This is what awesome looks like</string>
+    <string name="superiorlab_summaries_27">With great features comes great responsibility</string>
+    <string name="superiorlab_summaries_28">Don\'t dream it. Do it</string>
+    <string name="superiorlab_summaries_29">Proudly brought to you without donations</string>
+
+    <!-- App lock timeout -->
+    <string name="app_lock_timeout_5secs">5 seconds</string>
+    <string name="app_lock_timeout_10secs">10 seconds</string>
+    <string name="app_lock_timeout_30secs">30 seconds</string>
+    <string name="app_lock_timeout_1min">1 minute</string>
+    <string name="app_lock_timeout_5mins">5 minutes</string>
+    <string name="app_lock_timeout_10mins">10 minutes</string>
+    <string name="app_lock_timeout_30mins">30 minutes</string>
 </resources>

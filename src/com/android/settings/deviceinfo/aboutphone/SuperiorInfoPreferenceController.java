@@ -50,7 +50,7 @@ public class SuperiorInfoPreferenceController extends AbstractPreferenceControll
         final TextView battery = (TextView) superiorInfoPreference.findViewById(R.id.battery_type_message);
         final TextView infoScreen = (TextView) superiorInfoPreference.findViewById(R.id.screen_message);
         processor.setText(SuperiorSpecUtils.getProcessorModel());
-        storage.setText(String.valueOf(SuperiorSpecUtils.getTotalInternalMemorySize()) + "GB ROM + " + String.valueOf(SuperiorSpecUtils.getTotalRAM()) + "GB RAM");
+        storage.setText(String.valueOf(SuperiorSpecUtils.getTotalInternalMemorySize()) + "GB ROM + " + SuperiorSpecUtils.getTotalRAM() + " RAM");
         battery.setText(SuperiorSpecUtils.getBatteryCapacity(mContext) + " mAh");
         infoScreen.setText(SuperiorSpecUtils.getScreenRes(mContext));
     }

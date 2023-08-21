@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022-2023 The SuperiorOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Verze SuperiorOS</string>
+    <string name="superior_version_default">Neznámá</string>
+    <string name="keywords_superior_version">Verze SuperiorOS, verze superior</string>
+    <string name="about_device_name">Zařízení</string>
+    <string name="build_date">Datum sestavení</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">datum sestavení, info o sestavení</string>
+    <string name="device_info_protected_single_press">Klepnutím zobrazit informace</string>
+    <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
+    <string name="min_refresh_rate_title">Minimální obnovovací frekvence</string>
+    <string name="max_refresh_rate_title">Maximální obnovovací frekvence</string>
+    <string name="battery_saver_refresh_rate_title">Snížit obnovovací frekvenci</string>
+    <string name="battery_saver_refresh_rate_summary">Když je zapnut spořič baterie, použít obnovovací frekvenci 60 Hz pro úsporu energie</string>
+    <string name="copied_to_clipboard">Zkopírováno do schránky</string>
+    <string name="longpress_to_clipboard">Přidržením zkopírovat</string>
+    <string name="package_details_group_title">Detail balíčku</string>
+    <string name="package_name">Název balíčku</string>
+    <string name="package_version">Verze balíčku</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">Stav SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">Místo, kde provádíme experimenty</string>
+    <string name="density_category">Možnosti hustoty zobrazení</string>
+    <string name="tethering_allow_vpn_upstreams_title">Umožnit klientům používat VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Povolit klientům hotspotu používat připojení VPN tohoto zařízení pro upstream konektivitu</string>
+    <string name="system_black_theme_title">Použít černý motiv</string>
+    <string name="system_black_theme_summary">Vynutit černou barvu pozadí</string>
+    <string name="battery_temperature">Teplota baterie</string>
+    <string name="high_power_apps_summary">Dostupnost optimalizace baterie</string>
+    <string name="navbar_invert_layout_title">Převrátit rozložení navigačního panelu</string>
+    <string name="navbar_invert_info">Prohodit tlačítka \"Zpět\" a \"Nedávné\" na navigačním panelu</string>
+    <string name="prevent_ringing_option_cycle">Přepínání mezi režimy</string>
+    <string name="prevent_ringing_option_cycle_summary">Zap. (přepínání mezi režimy)</string>
+    <string name="screenshot_shutter_sound_title">Zvuk při snímku obrazovky</string>
+    <string name="display_cutout_force_fullscreen_title">Aplikace přes celou obrazovku</string>
+    <string name="display_cutout_force_fullscreen_summary">Vynutit, aby aplikace ignorovaly výřez v displeji</string>
+    <string name="search">Hledat</string>
+    <string name="search_apps">Hledat v aplikacích</string>
+    <string name="customization_category_title">Dodatečné úpravy</string>
+    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
+    <string name="low_battery_light_title">Kontrolka nízkého stavu baterie</string>
+    <string name="low_battery_light_summary">Blikání LED kontrolky baterie při nízkém stavu</string>
+    <string name="platform_revision">Platforma</string>
+    <string name="total_ram">Celkem RAM</string>
+    <string name="superior_processor_title">Procesor</string>
+    <string name="superior_storage_code_title">Úložiště</string>
+    <string name="superior_battery_type_title">Baterie</string>
+    <string name="superior_screen_title">Displej</string>
+    <string name="net_info">Síť</string>
+    <string name="mod_info">@string/model_info</string>
+    <string name="id_info">Identifikátory</string>
+    <string name="model_summary">Model, telefonní číslo, IMEI atd.</string>
+    <string name="model_name">Stav zařízení</string>
+    <string name="legal_summary">Licence a právní předpisy</string>
+    <string name="navbar_category">Navigační panel</string>
+    <string name="gesture_navbar_length_title">Délka pilulky</string>
+    <string name="hide_label">Nezobrazovat</string>
+    <string name="long_label">Dlouhá</string>
+    <string name="back_height_low_label">Plná</string>
+    <string name="back_height_high_label">Spodní</string>
+    <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
+    <string name="display_rotation_title">Nastavení otáčení</string>
+    <string name="display_rotation_enabled">Automatické otáčení povoleno</string>
+    <string name="display_rotation_disabled">Automatické otáčení zakázáno</string>
+    <string name="display_rotation_unit">stupně</string>
+    <string name="display_rotation_category_title">Režimy otáčení</string>
+    <string name="display_rotation_0_title">0°</string>
+    <string name="display_rotation_90_title">90°</string>
+    <string name="display_rotation_180_title">180°</string>
+    <string name="display_rotation_270_title">270°</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhledejte snímač otisků prstů na přední straně tabletu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Vyhledejte snímač otisků prstů na přední straně zařízení.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Vyhledejte snímač otisků prstů na přední straně telefonu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Vyhledejte snímač otisků prstů na zadní straně tabletu.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Vyhledejte snímač otisků prstů na zadní straně zařízení.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Vyhledejte snímač otisků prstů na zadní straně telefonu.</string>
+    <string name="high_touch_sensitivity_title">Vysoká citlivost dotyku</string>
+    <string name="high_touch_sensitivity_summary">Zvýšení citlivosti dotykové vrstvy, což umožňuje používání v rukavicích</string>
+    <string name="high_touch_polling_rate_title">Vysoká vzorkovací frekvence pro dotyk</string>
+    <string name="high_touch_polling_rate_summary">Zvýšení vzorkovací frekvence dotykové obrazovky</string>
+    <string name="app_volume">Hlasitost aplikace</string>
+    <string name="app_volume_title">Ovládání hlasitosti pro jednotlivé aplikace</string>
+    <string name="app_volume_summary">Umožnit nastavení různých úrovní hlasitosti pro každou aplikaci</string>
+    <string name="private_dns_mode_open_dns">Open DNS</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+    <string name="game_space_title">Herní prostor</string>
+    <string name="game_space_summary">Vylepšete své herní prostředí</string>
+    <string name="action_nothing">Žádná akce</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Nedávné</string>
+    <string name="action_voice_search">Hlasové vyhledávání</string>
+    <string name="action_launch_camera">Fotoaparát</string>
+    <string name="action_last_app">Poslední aplikace</string>
+    <string name="action_splitscreen">Rozdělená obrazovka</string>
+    <string name="action_flashlight">Svítilna</string>
+    <string name="action_clear_notifications">Vymazat oznámení</string>
+    <string name="action_volume_panel">Panel hlasitosti</string>
+    <string name="action_screen_off">Vypnout obrazovku</string>
+    <string name="action_notifications">Oznámení</string>
+    <string name="action_power_menu">Menu napájení</string>
+    <string name="action_screenshot">Snímek obrazovky</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_app_action">Aplikace</string>
+    <string name="action_ringer_modes">Režimy vyzvánění</string>
+    <string name="kill_app">Ukončit aplikaci na popředí</string>
+    <string name="recent_app_toggle">Přepnout nedávné aplikace</string>
+    <string name="navbar_gesture_tweaks_pref_title">Rozšířené možnosti gest</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Přizpůsobte gesta a nastavte vlastní akce</string>
+    <string name="navbar_gesture_tweaks_cat_title">Pokročilé</string>
+    <string name="swipe_app_select_summary">Vyberte aplikaci, která se spustí při zmáčknutí</string>
+    <string name="long_back_swipe_timeout_title">Časový limit akce dlouhým přejetím vlevo</string>
+    <string name="left_swipe_actions_title">Akce dlouhým přejetím vlevo</string>
+    <string name="left_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vlevo</string>
+    <string name="right_swipe_actions_title">Akce dlouhým přejetím vpravo</string>
+    <string name="right_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vpravo</string>
+    <string name="left_vertical_swipe_actions_title">Akce svislým L přejetím vlevo</string>
+    <string name="left_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vlevo</string>
+    <string name="right_vertical_swipe_actions_title">Akce svislým L přejetím vpravo</string>
+    <string name="right_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vpravo</string>
+    <string name="gesture_nav_tweaks_footer_info">Chcete-li vybrat konkrétní aktivitu aplikace pro akci, podržte stisknutou libovolnou aplikaci ve výběru aplikací.\n\nPokud se zobrazuje spouštěč, proveďte akci přejetím prstem v dolní dolní části obrazovky.</string>
+    <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
+    <string name="back_swipe_extended_summary">Aktivovat akci širším přejetím (více než polovina velikosti displeje) nebo gestem L (dostatečně svisle)</string>
+    <string name="dashboard_morning1">Začni svůj den pozitivně!</string>
+    <string name="dashboard_morning2">Slunce vychází!</string>
+    <string name="dashboard_morning3">Dobré ráno</string>
+    <string name="dashboard_morning4">Další den života</string>
+    <string name="dashboard_morning5">Novy den</string>
+    <string name="dashboard_morning_greeting1">Dobré ráno</string>
+    <string name="dashboard_morning_greeting2">Dobrý den</string>
+    <string name="dashboard_noon1">Užívej si života</string>
+    <string name="dashboard_noon2">Užij si západ slunce</string>
+    <string name="dashboard_noon3">Vítej doma</string>
+    <string name="dashboard_noon4">Ať máte krásný den!</string>
+    <string name="dashboard_noon5">Vítej zpět</string>
+    <string name="dashboard_noon_greeting1">Dobré odpoledne</string>
+    <string name="dashboard_early_night1">Přichází noc</string>
+    <string name="dashboard_early_night2">Je čas na večeři!</string>
+    <string name="dashboard_early_night_greeting1">Dobrý večer</string>
+    <string name="dashboard_night3">Sladké sny!</string>
+    <string name="dashboard_night4">Je čas jít spát</string>
+    <string name="dashboard_night5">Dobrou noc!</string>
+    <string name="dashboard_night_greetings1">Dobrou noc</string>
+    <string name="dashboard_midnight1">Užij si ticho</string>
+    <string name="dashboard_midnight2">Potřebuješ pomoc</string>
+    <string name="dashboard_midnight3">Trochu se prospi</string>
+    <string name="dashboard_midnight4">Odpočívej</string>
+    <string name="dashboard_midnight5">Spíš dlouho?</string>
+    <string name="dashboard_random1">Ahoj         </string>
+    <string name="dashboard_random2">Nazdar       </string>
+    <string name="dashboard_random3">Namaste     </string>
+    <string name="dashboard_random4">Dobrý den    </string>
+    <string name="dashboard_random5">こんにちは     </string>
+    <string name="dashboard_random6">Co se děje  </string>
+    <string name="dashboard_random_greetings1">Zkus najít nějaká velikonoční vajíčka!</string>
+    <string name="dashboard_random_greetings2">Zlepši se!</string>
+    <string name="dashboard_random_greetings3">Zkus použít pole pro vyhledávání!</string>
+    <string name="dashboard_random_greetings4">Ať máš krásný den!</string>
+    <string name="settings_random1">Hledáš něco?</string>
+    <string name="settings_random2">Najdi a uvidíš</string>
+    <string name="settings_random3">Hledej a najdeš</string>
+    <string name="settings_random4">Právo nálezce</string>
+    <string name="settings_random5">Nastavení vyhledávání</string>
+    <string name="settings_random6">Dream big and dare to fail</string>
+    <string name="default_user">Uživatel</string>
+    <string name="background_processes_settings_title">Proces na pozadí</string>
+    <string name="lock_settings_picker_pattern_size_message">Zvolit velikost vzoru</string>
+    <string name="lockpattern_settings_enable_error_path_title">Zobrazit cestu chybného gesta</string>
+    <string name="lockpattern_settings_enable_dots_title">Zobrazit body gesta</string>
+    <string name="immersive_navigation_title">Navigace přes celou obrazovku</string>
+    <string name="immersive_navigation_summary">Skrýt pilulku gest a odsazení navigačního panelu.</string>
+    <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
+    <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
+    <string name="volume_link_notification_title">Sjednotit hlasitosti vyzvánění a oznámení</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
+    <string name="face_redo_confirm_btn">Znovu</string>
+    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
+    <string name="face_unlock_method_title">Povolit odemknutí obličejem na obrazovce uzamčení</string>
+    <string name="face_unlock_method_default">Když je obrazovka zapnutá</string>
+    <string name="face_unlock_method_swipe">Při přejetí prstem na uzamčené obrazovce</string>
+    <string name="fingerprint_wake_unlock_title">K odemčení použijte otisk prstu</string>
+    <string name="fingerprint_wake_unlock_touch">Naslouchá událostem, když je obrazovka vypnutá</string>
+    <string name="fingerprint_wake_unlock_press">Naslouchá událostem, pouze když je obrazovka zapnutá</string>
+    <string name="smart_5g_title">Chytré 5G</string>
+    <string name="smart_5g_summary">Automatické přepnutí mezi 5G a 4G ke snížení spotřeby baterie</string>
+    <string name="doze_gesture_ambient_title">Zobrazit ambientní displej</string>
+    <string name="doze_gesture_ambient_summary">Zobrazit Ambientní displej namísto úplného probuzení obrazovky</string>
+    <string name="app_lock_title">Zámek aplikací</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> aplikace je chráněna</item>
+        <item quantity="few"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> aplikace jsou chráněny</item>
+        <item quantity="many"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> aplikací je chráněno</item>
+        <item quantity="other"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> aplikací je chráněno</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Odemknout</string>
+    <string name="enable_debugging">Aktivovat ladění aplikace</string>
+    <string name="disable_debugging">Deaktivovat ladění aplikace</string>
+    <string name="app_lock_packages_title">Chráněné aplikace</string>
+    <string name="app_lock_packages_summary">Vyberte aplikace, které chcete chránit pomocí biometrických údajů nebo přihlašovacími údaji zařízení</string>
+    <string name="app_lock_timeout_title">Doba autom. zamknutí</string>
+    <string name="app_lock_timeout_summary">Doba, po které by měla být odemčená aplikace na pozadí zamčena</string>
+    <string name="app_lock_notifications_title">Sbalit oznámení</string>
+    <string name="app_lock_notifications_summary">          Obsah oznámení se u vybraných aplikací při jejich uzamčení skryje a sbalí.
+          Plovoucí oznámení budou automaticky vypnuty.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Nejprve chránit aplikaci</string>
+    <string name="app_lock_biometrics_allowed_title">Povolit biometriku pro odemykání</string>
+    <string name="app_lock_footer_text">Bubliny se po uplynutí časového limitu automaticky zruší</string>
+    <string name="enable_protection">Povolit ochranu</string>
+    <string name="hide_from_launcher_title">Skrýt ze spouštěče</string>
+    <string name="hide_from_launcher_summary">        Zabránit zobrazení této aplikace ve spouštěči. Aby se změny projevily, je třeba restartovat spouštěč.
+    </string>
+    <string name="superiorlab_summaries_1">Varování: Čeká vás šíleně skvělá věc!</string>
+    <string name="superiorlab_summaries_2">Zajímavý slogan. Bla bla bla...</string>
+    <string name="superiorlab_summaries_3">Připravte se na to, že se přenesete do světa fantazie</string>
+    <string name="superiorlab_summaries_4">Jeho vlastnosti jsou skvělé</string>
+    <string name="superiorlab_summaries_5">Pozor! Za tebou!</string>
+    <string name="superiorlab_summaries_6">Za stejných podmínek musíte prohrát.</string>
+    <string name="superiorlab_summaries_7">Potřebuji VYZRÁLÝ VZTAH s FLOPPY DISKEM</string>
+    <string name="superiorlab_summaries_8">Nikdy nedovolte, aby vaše školní docházka zasahovala do vašeho vzdělání</string>
+    <string name="superiorlab_summaries_9">Váš život by byl velmi prázdný, kdybyste neměli čeho litovat</string>
+    <string name="superiorlab_summaries_10">Sláva je možná pomíjivá, ale neznámost je věčná</string>
+    <string name="superiorlab_summaries_11">Tento záznam se za pět minut sám zničí</string>
+    <string name="superiorlab_summaries_12">Věci nejsou vždy takové, jaké se zdají být</string>
+    <string name="superiorlab_summaries_13">Vyžadují se některé montážní úkony</string>
+    <string name="superiorlab_summaries_14">Kdo se směje poslední, nepochopil vtip</string>
+    <string name="superiorlab_summaries_15">Pokud se k vám všechno blíží, jste ve špatném jízdním pruhu</string>
+    <string name="superiorlab_summaries_16">Kde je závěť, tam je i dědická daň</string>
+    <string name="superiorlab_summaries_17">Toto je neautorizované kybernetické oznámení</string>
+    <string name="superiorlab_summaries_18">Žádné zastavování nebo stání</string>
+    <string name="superiorlab_summaries_19">Pokud budu zvolen, budu na Sněžce rozdávat vafle zdarma!</string>
+    <string name="superiorlab_summaries_20">Když všechny ostatní komunikační prostředky selžou, zkuste slova</string>
+    <string name="superiorlab_summaries_21">Nikdy nejezte nic, co je větší než vaše hlava</string>
+    <string name="superiorlab_summaries_22">Nadměrné množství zpráv o přihlášení nebo odhlášení je neklamnou známkou senility</string>
+    <string name="superiorlab_summaries_23">Přizpůsobte si to podle svých představ</string>
+    <string name="superiorlab_summaries_24">Méně přemýšlejte, více se přizpůsobte</string>
+    <string name="superiorlab_summaries_25">FBI: Izolace základny funkcí</string>
+    <string name="superiorlab_summaries_26">Takhle vypadá úžasná věc</string>
+    <string name="superiorlab_summaries_27">S velkými funkcemi přichází i velká odpovědnost</string>
+    <string name="superiorlab_summaries_28">O tom se vám nezdá. Udělejte to</string>
+    <string name="superiorlab_summaries_29">Hrdě vám to přinášíme bez darů</string>
+    <string name="app_lock_timeout_5secs">5 sekund</string>
+    <string name="app_lock_timeout_10secs">10 sekund</string>
+    <string name="app_lock_timeout_30secs">30 sekund</string>
+    <string name="app_lock_timeout_1min">1 minuta</string>
+    <string name="app_lock_timeout_5mins">5 minut</string>
+    <string name="app_lock_timeout_10mins">10 minut</string>
+    <string name="app_lock_timeout_30mins">30 minut</string>
+    <string name="back_gesture_haptic_title">Hmatová odezva</string>
+    <string name="back_gesture_haptic_summary">Povolit efekt krátkého zavibrování při použití gesta „Zpět“</string>
+</resources>

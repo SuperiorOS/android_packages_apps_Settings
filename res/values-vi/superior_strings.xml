@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022-2023 The SuperiorOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Phiên bản SuperiorOS</string>
+    <string name="superior_version_default">Không xác định</string>
+    <string name="keywords_superior_version">Phiên bản SuperiorOS, phiên bản superior</string>
+    <string name="about_device_name">Thiết bị</string>
+    <string name="build_date">Ngày dựng</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">ngày dựng, thông tin bản dựng</string>
+    <string name="device_info_protected_single_press">Chạm để hiện thông tin</string>
+    <string name="notification_log_summary">Hiển thị nhật ký lịch sử thông báo</string>
+    <string name="min_refresh_rate_title">Tốc độ làm mới tối thiểu</string>
+    <string name="max_refresh_rate_title">Tốc độ làm mới tối đa</string>
+    <string name="battery_saver_refresh_rate_title">Giảm tốc độ làm mới</string>
+    <string name="battery_saver_refresh_rate_summary">Sử dụng màn hình 60 Hz để tiết kiệm pin khi bật Trình tiết kiệm pin</string>
+    <string name="copied_to_clipboard">Đã sao chép vào khay nhớ tạm</string>
+    <string name="longpress_to_clipboard">Nhấn giữ để sao chép</string>
+    <string name="package_details_group_title">Chi tiết ứng dụng</string>
+    <string name="package_name">Tên ứng dụng</string>
+    <string name="package_version">Phiên bản ứng dụng</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">Trạng thái SELinux</string>
+    <string name="selinux_status_disabled">Vô hiệu hóa</string>
+    <string name="selinux_status_permissive">Cho phép</string>
+    <string name="selinux_status_enforcing">Thực thi</string>
+    <string name="superior_lab_dash_title">Tùy chỉnh Superior</string>
+    <string name="superior_lab_summary">Nơi chúng tôi làm thí nghiệm</string>
+    <string name="density_category">Tùy chọn mật độ</string>
+    <string name="tethering_allow_vpn_upstreams_title">Cho phép máy khách sử dụng VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Cho phép hotspot các máy khách sử dụng các kết nối VPN của thiết bị\u2019 này để kết nối đến máy chủ</string>
+    <string name="system_black_theme_title">Sử dụng chủ đề tối</string>
+    <string name="system_black_theme_summary">Buộc màu nền đen</string>
+    <string name="battery_temperature">Nhiệt độ pin</string>
+    <string name="high_power_apps_summary">Không tối ưu hóa pin</string>
+    <string name="navbar_invert_layout_title">Đảo ngược bố cục thanh điều hướng</string>
+    <string name="navbar_invert_info">Hoán đổi nút \"Quay về\" và \"Gần đây\" trên thanh điều hướng</string>
+    <string name="prevent_ringing_option_cycle">Chuyển qua từng cảnh</string>
+    <string name="prevent_ringing_option_cycle_summary">Bật (chuyển đổi qua các chế độ)</string>
+    <string name="screenshot_shutter_sound_title">Âm thanh chụp màn hình</string>
+    <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
+    <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua tai thỏ</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="search_apps">Tìm kiếm ứng dụng</string>
+    <string name="customization_category_title">Tùy chỉnh bổ sung</string>
+    <string name="battery_stats_reset">Đặt lại số liệu thống kê</string>
+    <string name="battery_stats_message">Thống kê lịch sử pin sẽ được thiết lập lại</string>
+    <string name="low_battery_light_title">Đèn pin yếu</string>
+    <string name="low_battery_light_summary">Đèn LED nhấp nháy khi mức pin yếu</string>
+    <string name="platform_revision">Nền tảng</string>
+    <string name="total_ram">Tổng RAM</string>
+    <string name="superior_processor_title">Bộ xử lý</string>
+    <string name="superior_storage_code_title">Lưu trữ</string>
+    <string name="superior_battery_type_title">Pin</string>
+    <string name="superior_screen_title">Màn hình</string>
+    <string name="net_info">Mạng</string>
+    <string name="mod_info">@string/model_info</string>
+    <string name="id_info">Định danh</string>
+    <string name="model_summary">Kiểu máy, số điện thoại, IMEI, vv</string>
+    <string name="model_name">Tình trạng thiết bị</string>
+    <string name="legal_summary">Điều khoản và dữ liệu</string>
+    <string name="navbar_category">Thanh điều hướng</string>
+    <string name="gesture_navbar_length_title">Chiều dài thanh cử chỉ</string>
+    <string name="hide_label">Ẩn</string>
+    <string name="long_label">Dài</string>
+    <string name="back_height_low_label">Đầy đủ</string>
+    <string name="back_height_high_label">Dưới cùng</string>
+    <string name="back_options_dialog_title">Tùy chỉnh</string>
+    <string name="back_height_message">Chiều cao màn hình được sử dụng làm vùng có thể chạm cho cử chỉ quay lại.</string>
+    <string name="display_rotation_title">Cài đặt xoay</string>
+    <string name="display_rotation_enabled">Tự động xoay được bật</string>
+    <string name="display_rotation_disabled">Tự động xoay bị tắt</string>
+    <string name="display_rotation_unit">độ</string>
+    <string name="display_rotation_category_title">Chế độ xoay</string>
+    <string name="display_rotation_0_title">0 độ</string>
+    <string name="display_rotation_90_title">90 độ</string>
+    <string name="display_rotation_180_title">180 độ</string>
+    <string name="display_rotation_270_title">270 độ</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Vị trí cảm biến vân tay trên mặt trước máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Vị trí cảm biến vân tay ở mặt trước của thiết bị.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Vị trí cảm biến vân tay ở mặt trước của điện thoại.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Xác định vị trí cảm biến vân tay ở mặt trước thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Vị trí cảm biến vân tay ở mặt sau thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Xác định cảm biến vân tay ở mặt sau điện thoại của bạn.</string>
+    <string name="high_touch_sensitivity_title">Độ nhạy cảm ứng cao</string>
+    <string name="high_touch_sensitivity_summary">Tăng độ nhạy của màn hình cảm ứng để có thể sử dụng khi đeo găng tay</string>
+    <string name="high_touch_polling_rate_title">Tần số quét cảm ứng cao</string>
+    <string name="high_touch_polling_rate_summary">Tăng tần số quét của màn hình cảm ứng</string>
+    <string name="app_volume">Âm thanh ứng dụng</string>
+    <string name="app_volume_title">Kiểm soát âm lượng mỗi ứng dụng</string>
+    <string name="app_volume_summary">Cho phép đặt các mức âm lượng khác nhau cho từng ứng dụng</string>
+    <string name="private_dns_mode_open_dns">Open DNS</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+    <string name="game_space_title">Không gian trò chơi</string>
+    <string name="game_space_summary">Cải thiện trải nghiệm chơi game</string>
+    <string name="action_nothing">Không có hành động</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Đa nhiệm</string>
+    <string name="action_voice_search">Tìm kiếm bằng giọng nói</string>
+    <string name="action_launch_camera">Máy ảnh</string>
+    <string name="action_last_app">Ứng dụng cuối cùng</string>
+    <string name="action_splitscreen">Chia đôi màn hình</string>
+    <string name="action_flashlight">Đèn pin</string>
+    <string name="action_clear_notifications">Xóa thông báo</string>
+    <string name="action_volume_panel">Bảng điều chỉnh âm lượng</string>
+    <string name="action_screen_off">Tắt màn hình</string>
+    <string name="action_notifications">Thông báo</string>
+    <string name="action_power_menu">Menu nguồn</string>
+    <string name="action_screenshot">Chụp ảnh màn hình</string>
+    <string name="action_qs_panel">Bảng cài đặt nhanh</string>
+    <string name="action_app_action">Ứng dụng</string>
+    <string name="action_ringer_modes">Chế độ chuông</string>
+    <string name="kill_app">Xoá ứng dụng dưới nền</string>
+    <string name="recent_app_toggle">Chuyển đổi ứng dụng</string>
+    <string name="navbar_gesture_tweaks_pref_title">Cài đặt cử chỉ nâng cao</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Tùy chỉnh cử chỉ và thiết lập hành động tùy chỉnh</string>
+    <string name="navbar_gesture_tweaks_cat_title">Nâng cao</string>
+    <string name="swipe_app_select_summary">Chọn một ứng dụng để khởi chạy với cử chỉ quay lại</string>
+    <string name="long_back_swipe_timeout_title">Thời gian chờ hành động vuốt dài</string>
+    <string name="left_swipe_actions_title">Thao tác vuốt trái dài</string>
+    <string name="left_swipe_app_action_title">Chọn ứng dụng vuốt dài bên trái</string>
+    <string name="right_swipe_actions_title">Thao tác vuốt dài phải</string>
+    <string name="right_swipe_app_action_title">Chọn ứng dụng vuốt dài bên phải</string>
+    <string name="left_vertical_swipe_actions_title">Thao tác vuốt dọc trái</string>
+    <string name="left_vertical_swipe_app_action_title">Chọn ứng dụng vuốt bên trái</string>
+    <string name="right_vertical_swipe_actions_title">Thao tác vuốt dọc phải</string>
+    <string name="right_vertical_swipe_app_action_title">Chọn ứng dụng vuốt dọc sang phải</string>
+    <string name="gesture_nav_tweaks_footer_info">Để chọn một hoạt động của ứng dụng cụ thể cho một hành động, nhấn giữ một ứng dụng bất kì trong bộ chọn ứng dụng.\n\nNếu trình khởi chạy đang được hiển thị, hãy vuốt lên từ khu vực phía dưới màn hình để thực hiện hành động.</string>
+    <string name="back_swipe_extended_title">Hành động vuốt mở rộng</string>
+    <string name="back_swipe_extended_summary">Kích hoạt hành động khi vuốt rộng hơn (hơn một nửa kích thước màn hình) hoặc vuốt dài (đủ dài theo chiều dọc)</string>
+    <string name="dashboard_morning1">Hãy bắt đầu ngày mới một cách tích cực!</string>
+    <string name="dashboard_morning2">Mặt trời lên rồi!</string>
+    <string name="dashboard_morning3">Một buổi sáng tốt lành</string>
+    <string name="dashboard_morning4">Thêm một ngày để sống</string>
+    <string name="dashboard_morning5">Một ngày mới</string>
+    <string name="dashboard_morning_greeting1">Chào buổi sáng</string>
+    <string name="dashboard_morning_greeting2">Ngày tốt lành</string>
+    <string name="dashboard_noon1">Sống cuộc sống của bạn</string>
+    <string name="dashboard_noon2">Tận hưởng hoàng hôn</string>
+    <string name="dashboard_noon3">Chào mừng đến với</string>
+    <string name="dashboard_noon4">Hãy tận hưởng một ngày!</string>
+    <string name="dashboard_noon5">Chào mừng bạn quay lại</string>
+    <string name="dashboard_noon_greeting1">Chào buổi chiều</string>
+    <string name="dashboard_early_night1">Đêm sắp đến</string>
+    <string name="dashboard_early_night2">Đến giờ ăn tối!</string>
+    <string name="dashboard_early_night_greeting1">Chào buổi tối</string>
+    <string name="dashboard_night3">Chúc bạn có những giấc mơ đẹp!</string>
+    <string name="dashboard_night4">Đến giờ đi ngủ</string>
+    <string name="dashboard_night5">Chúc ngủ ngon!</string>
+    <string name="dashboard_night_greetings1">Chúc ngủ ngon</string>
+    <string name="dashboard_midnight1">Đã khuya rồi</string>
+    <string name="dashboard_midnight2">Bạn cần một số trợ giúp</string>
+    <string name="dashboard_midnight3">Có được một giấc ngủ ngon</string>
+    <string name="dashboard_midnight4">Nghỉ ngơi một chút đã</string>
+    <string name="dashboard_midnight5">Ngủ muộn có hại cho bạn?</string>
+    <string name="dashboard_random1">Chào         </string>
+    <string name="dashboard_random2">Xin chào       </string>
+    <string name="dashboard_random3">Xin chào     </string>
+    <string name="dashboard_random4">Ngày tốt lành    </string>
+    <string name="dashboard_random5">Xin chào     </string>
+    <string name="dashboard_random6">Có chuyện gì vậy  </string>
+    <string name="dashboard_random_greetings1">Cố gắng tìm một số quả trứng Phục sinh!</string>
+    <string name="dashboard_random_greetings2">Superior!</string>
+    <string name="dashboard_random_greetings3">Hãy thử sử dụng thanh tìm kiếm!</string>
+    <string name="dashboard_random_greetings4">Tận hưởng ngày của bạn!</string>
+    <string name="settings_random1">Tìm kiếm thứ gì đó?</string>
+    <string name="settings_random2">Tìm và bạn sẽ thấy</string>
+    <string name="settings_random3">Tìm kiếm và bạn sẽ tìm thấy</string>
+    <string name="settings_random4">Người giữ công cụ tìm kiếm</string>
+    <string name="settings_random5">Tìm kiếm cài đặt</string>
+    <string name="settings_random6">Ước mơ lớn và dám thất bại</string>
+    <string name="default_user">Người dùng</string>
+    <string name="background_processes_settings_title">Tạm dừng trong nền</string>
+    <string name="lock_settings_picker_pattern_size_message">Chọn kích cỡ mẫu hình</string>
+    <string name="lockpattern_settings_enable_error_path_title">Hiện lỗi mẫu hình</string>
+    <string name="lockpattern_settings_enable_dots_title">Hiện dấu chấm mẫu hình</string>
+    <string name="immersive_navigation_title">Điều hướng toàn màn hình</string>
+    <string name="immersive_navigation_summary">Ẩn viên cử chỉ và phần đệm thanh điều hướng.</string>
+    <string name="proximity_wake_title">Ngăn chặn vô tình mở khóa</string>
+    <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận để mở màn hình</string>
+    <string name="volume_link_notification_title">Liên kết âm lượng nhạc chuông &amp; thông báo</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Xóa quét khuôn mặt hiện có và tạo quét khuôn mặt mới</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Quét lại khuôn mặt</string>
+    <string name="face_redo_confirm_btn">Làm lại thao tác</string>
+    <string name="face_redo_warning_msg">Bạn có muốn xóa quét khuôn mặt hiện có và tạo quét khuôn mặt mới không?</string>
+    <string name="face_unlock_method_title">Cho phép mở khóa bằng khuôn mặt trên màn hình khóa</string>
+    <string name="face_unlock_method_default">Khi màn hình được bật lên</string>
+    <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
+    <string name="fingerprint_wake_unlock_title">Chạm vào cảm biến vân tay để mở khoá</string>
+    <string name="fingerprint_wake_unlock_touch">Quét vân tay ngay cả khi màn hình tắt</string>
+    <string name="fingerprint_wake_unlock_press">Chỉ quét vân tay khi màn hình bật</string>
+    <string name="smart_5g_title">5G Thông minh</string>
+    <string name="smart_5g_summary">Tự động chuyển đổi giữa mạng 5G và 4G để giảm tiêu thụ pin</string>
+    <string name="doze_gesture_ambient_title">Hiển thị màn hình xem nhanh</string>
+    <string name="doze_gesture_ambient_summary">Hiển thị màn hình xem nhanh thay vì đánh thức hoàn toàn màn hình</string>
+    <string name="app_lock_title">Khóa ứng dụng</string>
+    <plurals name="app_lock_summary">
+        <item quantity="other"><xliff:g example="1" id="Số lượng ứng dụng">%1$d</xliff:g> ứng dụng được bảo vệ
+<xliff:g example="10" id="Số lượng ứng dụng">%1$d</xliff:g> ứng dụng được bảo vệ</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Mở khóa</string>
+    <string name="enable_debugging">Bật chế độ gỡ lỗi</string>
+    <string name="disable_debugging">Vô hiệu gỡ lỗi</string>
+    <string name="app_lock_packages_title">Các ứng dụng được bảo vệ</string>
+    <string name="app_lock_packages_summary">Chọn các ứng dụng để bảo vệ bằng sinh trắc học hoặc thông tin đăng nhập thiết bị</string>
+    <string name="app_lock_timeout_title">Hẹn giờ tự động khóa</string>
+    <string name="app_lock_timeout_summary">Khoảng thời gian mà ứng dụng dưới nền tự động bị khoá</string>
+    <string name="app_lock_notifications_title">Thu gọn thông báo</string>
+    <string name="app_lock_notifications_summary">Nội dung thông báo sẽ bị ẩn và thu gọn đối với các ứng dụng đã chọn khi chúng bị khóa.
+           Thông báo cảnh báo sẽ tự động bị tắt.    </string>
+    <string name="app_lock_notifications_disabled_summary">Đầu tiên hãy khoá một ứng dụng</string>
+    <string name="app_lock_biometrics_allowed_title">Mở khoá bằng sinh trắc học</string>
+    <string name="app_lock_footer_text">Bong bóng sẽ tự động bị loại bỏ sau khi hết thời gian chờ</string>
+    <string name="enable_protection">Bật bảo vệ</string>
+    <string name="hide_from_launcher_title">Ẩn khỏi trình khởi chạy</string>
+    <string name="hide_from_launcher_summary">Không cho ứng dụng này hiển thị trong launcher. Cần khởi động lại launcher để thay đổi được áp dụng.
+    </string>
+    <string name="superiorlab_summaries_1">Cảnh báo: Những thứ cực kỳ thú vị phía trước!</string>
+    <string name="superiorlab_summaries_2">Một số khẩu hiệu thú vị. Vân vân...</string>
+    <string name="superiorlab_summaries_3">Hãy sẵn sàng để được thổi vào thế giới của trí tưởng tượng</string>
+    <string name="superiorlab_summaries_4">Tính năng của nó rất tốt</string>
+    <string name="superiorlab_summaries_5">Coi chừng! Đằng sau bạn!</string>
+    <string name="superiorlab_summaries_6">Tất cả mọi thứ đều bình đẳng, bạn chắc chắn sẽ thua.</string>
+    <string name="superiorlab_summaries_7">Cái tôi cần là một MỐI QUAN HỆ TRƯỞNG THÀNH với một ĐĨA MỀM</string>
+    <string name="superiorlab_summaries_8">Không bao giờ để trường học của bạn can thiệp vào giáo dục của bạn</string>
+    <string name="superiorlab_summaries_9">Cuộc sống của bạn sẽ rất trống rỗng nếu bạn không có gì để hối tiếc</string>
+    <string name="superiorlab_summaries_10">Sự nổi tiếng có thể thoáng qua nhưng sự mù mờ là mãi mãi</string>
+    <string name="superiorlab_summaries_11">Mục nhập này sẽ tự hủy sau năm phút</string>
+    <string name="superiorlab_summaries_12">Mọi việc không bao giờ được như ta mong đợi</string>
+    <string name="superiorlab_summaries_13">Yêu cầu một số lắp ráp</string>
+    <string name="superiorlab_summaries_14">Người cười cuối cùng không hiểu trò đùa</string>
+    <string name="superiorlab_summaries_15">Nếu mọi thứ đang đến theo cách của bạn thì bạn đang đi sai làn đường</string>
+    <string name="superiorlab_summaries_16">Ở đâu có di chúc, ở đó có Thuế thừa kế</string>
+    <string name="superiorlab_summaries_17">Đây là một thông báo điều khiển học trái phép</string>
+    <string name="superiorlab_summaries_18">Không dừng hoặc đứng</string>
+    <string name="superiorlab_summaries_19">Nếu tôi đắc cử, tôi sẽ phát bánh quế miễn phí cho Tempelhofer Feld!</string>
+    <string name="superiorlab_summaries_20">Khi tất cả các phương tiện giao tiếp khác đều thất bại, hãy thử từ ngữ</string>
+    <string name="superiorlab_summaries_21">Không bao giờ ăn bất cứ thứ gì lớn hơn đầu của bạn</string>
+    <string name="superiorlab_summaries_22">Thông báo đăng nhập hoặc đăng xuất quá nhiều là một dấu hiệu chắc chắn của tuổi già</string>
+    <string name="superiorlab_summaries_23">Tùy chỉnh cho đến khi bạn muốn</string>
+    <string name="superiorlab_summaries_24">Suy nghĩ ít hơn, tùy chỉnh nhiều hơn</string>
+    <string name="superiorlab_summaries_25">FBI: Cách ly cơ sở tính năng</string>
+    <string name="superiorlab_summaries_26">Đây là những gì tuyệt vời trông giống như</string>
+    <string name="superiorlab_summaries_27">Với các tính năng tuyệt vời đi kèm với trách nhiệm lớn</string>
+    <string name="superiorlab_summaries_28">Đừng mơ nó. Làm đi</string>
+    <string name="superiorlab_summaries_29">Tự hào mang đến cho bạn mà không cần đóng góp</string>
+    <string name="app_lock_timeout_5secs">5 giây</string>
+    <string name="app_lock_timeout_10secs">10 giây</string>
+    <string name="app_lock_timeout_30secs">30 giây</string>
+    <string name="app_lock_timeout_1min">1 phút</string>
+    <string name="app_lock_timeout_5mins">5 phút</string>
+    <string name="app_lock_timeout_10mins">10 phút</string>
+    <string name="app_lock_timeout_30mins">30 phút</string>
+    <string name="back_gesture_haptic_title">Phản hồi xúc giác</string>
+    <string name="back_gesture_haptic_summary">Kích hoạt hiệu ứng xúc giác trên cử chỉ quay lại</string>
+</resources>

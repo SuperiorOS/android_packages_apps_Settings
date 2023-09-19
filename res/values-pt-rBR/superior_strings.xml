@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022-2023 The SuperiorOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Versão da SuperiorOS</string>
+    <string name="superior_version_default">Desconhecida</string>
+    <string name="keywords_superior_version">Versão do SuperiorOS, versão superior</string>
+    <string name="about_device_name">Dispositivo</string>
+    <string name="build_date">Data da compilação</string>
+    <string name="build_date_default">01-01-2015-0000</string>
+    <string name="keywords_build_date">data da compilação, informações da compilação</string>
+    <string name="device_info_protected_single_press">Toque para mostrar informações</string>
+    <string name="notification_log_summary">Mostrar histórico de notificações</string>
+    <string name="min_refresh_rate_title">Taxa de atualização mínima</string>
+    <string name="max_refresh_rate_title">Taxa de atualização máxima</string>
+    <string name="battery_saver_refresh_rate_title">Reduzir taxa de atualização</string>
+    <string name="battery_saver_refresh_rate_summary">Usar taxa de atualização da tela de 60Hz para economizar energia quando o modo economia de bateria estiver ativado</string>
+    <string name="copied_to_clipboard">Copiado para área de transferência</string>
+    <string name="longpress_to_clipboard">Pressione e segure para copiar</string>
+    <string name="package_details_group_title">Detalhes do pacote</string>
+    <string name="package_name">Nome do pacote</string>
+    <string name="package_version">Versão do pacote</string>
+    <string name="package_version_text"><xliff:g id="version_num">-%1$s</xliff:g></string>
+    <string name="selinux_status">Status do SELinux</string>
+    <string name="selinux_status_disabled">Desativado</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Impondo</string>
+    <string name="superior_lab_dash_title">Laboratório SuperiorOs</string>
+    <string name="superior_lab_summary">O lugar onde nós fazemos experimentos</string>
+    <string name="density_category">Opções de densidade</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permitir que clientes usem VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir que os clientes do ponto de acesso utilizem a conexão deste dispositivo\u2019s para se conectar a VPN</string>
+    <string name="system_black_theme_title">Usar tema preto</string>
+    <string name="system_black_theme_summary">Forçar fundo preto</string>
+    <string name="battery_temperature">Temperatura da bateria</string>
+    <string name="high_power_apps_summary">Disponibilidade de otimização da bateria</string>
+    <string name="navbar_invert_layout_title">Inverter o layout da barra de navegação</string>
+    <string name="navbar_invert_info">Inverter os botões \"Voltar\" e \"Recentes\" na barra de navegação</string>
+    <string name="prevent_ringing_option_cycle">Alternar entre modos</string>
+    <string name="prevent_ringing_option_cycle_summary">Ligado (alternar entre modos)</string>
+    <string name="screenshot_shutter_sound_title">Som de captura de tela</string>
+    <string name="display_cutout_force_fullscreen_title">Aplicativos em tela cheia</string>
+    <string name="display_cutout_force_fullscreen_summary">Forçar aplicativos a ignorar o espaço do entalhe</string>
+    <string name="search">Pesquisar</string>
+    <string name="search_apps">Pesquisar aplicativos</string>
+    <string name="customization_category_title">Personalizações extras</string>
+    <string name="battery_stats_reset">Redefinir estatísticas</string>
+    <string name="battery_stats_message">O histórico e estatísticas da bateria serão redefinidos</string>
+    <string name="low_battery_light_title">Led de bateria fraca</string>
+    <string name="low_battery_light_summary">Piscar led quando a bateria estiver fraca</string>
+    <string name="platform_revision">Plataforma</string>
+    <string name="total_ram">Total de memória RAM</string>
+    <string name="superior_processor_title">Processador</string>
+    <string name="superior_storage_code_title">Armazenamento</string>
+    <string name="superior_battery_type_title">Bateria</string>
+    <string name="superior_screen_title">Tela</string>
+    <string name="net_info">Rede</string>
+    <string name="mod_info">@string/informações</string>
+    <string name="id_info">Identificadores</string>
+    <string name="model_summary">Modelo, número de telefone, IMEI, etc</string>
+    <string name="model_name">Status do dispositivo</string>
+    <string name="legal_summary">Licença e dados</string>
+    <string name="navbar_category">Barra de navegação</string>
+    <string name="gesture_navbar_length_title">Comprimento da barra</string>
+    <string name="hide_label">Oculto</string>
+    <string name="long_label">Longo</string>
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Inferior</string>
+    <string name="back_options_dialog_title">Opções</string>
+    <string name="back_height_message">Altura de tela usada como região tocável para o gesto de voltar.</string>
+    <string name="display_rotation_title">Configurações de rotação</string>
+    <string name="display_rotation_enabled">Rotação automática ativada</string>
+    <string name="display_rotation_disabled">Rotação automática desativada</string>
+    <string name="display_rotation_unit">graus</string>
+    <string name="display_rotation_category_title">Modos de rotação</string>
+    <string name="display_rotation_0_title">0 graus</string>
+    <string name="display_rotation_90_title">90 graus</string>
+    <string name="display_rotation_180_title">180 graus</string>
+    <string name="display_rotation_270_title">270 graus</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Localize o sensor de impressão de digital na parte frontal do seu tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Localize o sensor de impressão digital na parte frontal do seu dispositivo.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Localize o sensor de impressão digital na parte frontal do seu telefone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Localize o sensor de impressão digital na parte traseira do seu tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Localize o sensor de impressão digital na parte traseira do seu dispositivo.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Localize o sensor de impressão digital na parte traseira do seu telefone.</string>
+    <string name="high_touch_sensitivity_title">Alta sensibilidade ao toque</string>
+    <string name="high_touch_sensitivity_summary">Aumenta a sensibilidade da tela para poder ser usada com luvas</string>
+    <string name="high_touch_polling_rate_title">Melhorar sensibilidade de toque</string>
+    <string name="high_touch_polling_rate_summary">Aumenta a taxa de resposta ao tocar na tela</string>
+    <string name="app_volume">Volume do aplicativo</string>
+    <string name="app_volume_title">Controle de volume por aplicativo</string>
+    <string name="app_volume_summary">Permite definir diferentes níveis de volume para cada aplicativo</string>
+    <string name="private_dns_mode_open_dns">Open DNS</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+    <string name="game_space_title">Espaço de Jogo</string>
+    <string name="game_space_summary">Melhore sua experiência em jogos</string>
+    <string name="action_nothing">Nenhuma ação</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Recentes</string>
+    <string name="action_voice_search">Pesquisa por voz</string>
+    <string name="action_launch_camera">Câmera</string>
+    <string name="action_last_app">Último aplicativo</string>
+    <string name="action_splitscreen">Dividir tela</string>
+    <string name="action_flashlight">Lanterna</string>
+    <string name="action_clear_notifications">Limpar notificações</string>
+    <string name="action_volume_panel">Painel de volume</string>
+    <string name="action_screen_off">Tela desligada</string>
+    <string name="action_notifications">Notificações</string>
+    <string name="action_power_menu">Menu de energia</string>
+    <string name="action_screenshot">Captura de tela</string>
+    <string name="action_qs_panel">Painel de configurações rápidas</string>
+    <string name="action_app_action">Aplicação</string>
+    <string name="action_ringer_modes">Modos de toque</string>
+    <string name="kill_app">Fechar aplicativo em primeiro plano</string>
+    <string name="recent_app_toggle">Alternar aplicativo recente</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opções de gestos avançados</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalizar gestos e definir ações personalizadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avançado</string>
+    <string name="swipe_app_select_summary">Selecione um aplicativo a ser aberto ao pressionar</string>
+    <string name="long_back_swipe_timeout_title">Tempo limite do deslize longo</string>
+    <string name="left_swipe_actions_title">Ação do deslize longo à esquerda</string>
+    <string name="left_swipe_app_action_title">Selecionar aplicativo de deslize longo para a esquerda</string>
+    <string name="right_swipe_actions_title">Ação do deslize longo à direita</string>
+    <string name="right_swipe_app_action_title">Selecionar aplicativo de deslize longo para a direita</string>
+    <string name="left_vertical_swipe_actions_title">Ação ao fazer um L vertical para a esquerda</string>
+    <string name="left_vertical_swipe_app_action_title">Selecionar aplicativo ao deslizar verticalmente para a esquerda</string>
+    <string name="right_vertical_swipe_actions_title">Ação ao fazer um L vertical para a direita</string>
+    <string name="right_vertical_swipe_app_action_title">Selecionar aplicativo ao deslizar verticalmente para a direita</string>
+    <string name="gesture_nav_tweaks_footer_info">Para escolher uma atividade de aplicativo específica para a ação, pressione e segure qualquer aplicativo no seletor de aplicativos. \n\nSe o iniciador estiver sendo exibido, deslize o dedo na área inferior da tela para acionar a ação.</string>
+    <string name="back_swipe_extended_title">Ação ao fazer um deslize estendido</string>
+    <string name="back_swipe_extended_summary">Acione a ação com um deslize mais amplo (mais da metade do tamanho da tela) ou com um deslize em L (verticalmente suficiente)</string>
+    <string name="dashboard_morning1">Comece o seu dia positivamente!</string>
+    <string name="dashboard_morning2">O sol está no céu!</string>
+    <string name="dashboard_morning3">Uma bela manhã</string>
+    <string name="dashboard_morning4">Outro dia para viver</string>
+    <string name="dashboard_morning5">Um novo dia</string>
+    <string name="dashboard_morning_greeting1">Bom dia</string>
+    <string name="dashboard_morning_greeting2">Bom dia</string>
+    <string name="dashboard_noon1">Viva sua vida</string>
+    <string name="dashboard_noon2">Aproveite o pôr do sol</string>
+    <string name="dashboard_noon3">Bem-vindo ao lar</string>
+    <string name="dashboard_noon4">Aproveite o dia!</string>
+    <string name="dashboard_noon5">Bem-vindo de volta</string>
+    <string name="dashboard_noon_greeting1">Boa tarde</string>
+    <string name="dashboard_early_night1">A noite está chegando</string>
+    <string name="dashboard_early_night2">É hora de jantar!</string>
+    <string name="dashboard_early_night_greeting1">Boa noite</string>
+    <string name="dashboard_night3">Bons sonhos!</string>
+    <string name="dashboard_night4">Hora de dormir agora</string>
+    <string name="dashboard_night5">Durma bem!</string>
+    <string name="dashboard_night_greetings1">Boa noite</string>
+    <string name="dashboard_midnight1">Aproveite o silêncio</string>
+    <string name="dashboard_midnight2">Precisa de ajuda</string>
+    <string name="dashboard_midnight3">Durma um pouco</string>
+    <string name="dashboard_midnight4">Descanse</string>
+    <string name="dashboard_midnight5">Dormindo tarde?</string>
+    <string name="dashboard_random1">Ei         </string>
+    <string name="dashboard_random2">Olá       </string>
+    <string name="dashboard_random3">Namaste     </string>
+    <string name="dashboard_random4">Bom dia    </string>
+    <string name="dashboard_random5">こんにちは     </string>
+    <string name="dashboard_random6">E aí  </string>
+    <string name="dashboard_random_greetings1">Tente encontrar algum easter egg!</string>
+    <string name="dashboard_random_greetings2">Seja Superior!</string>
+    <string name="dashboard_random_greetings3">Tente usar a barra de pesquisa!</string>
+    <string name="dashboard_random_greetings4">Aproveite seu dia!</string>
+    <string name="settings_random1">Procurando por algo?</string>
+    <string name="settings_random2">Encontre e você verá</string>
+    <string name="settings_random3">Procure e você encontrará</string>
+    <string name="settings_random4">Achado não é roubado</string>
+    <string name="settings_random5">Procurar nas configurações</string>
+    <string name="settings_random6">Sonhe grande e ousa falhar</string>
+    <string name="default_user">Usuário</string>
+    <string name="background_processes_settings_title">Processo em segundo plano</string>
+    <string name="lock_settings_picker_pattern_size_message">Escolha o tamanho do padrão</string>
+    <string name="lockpattern_settings_enable_error_path_title">Mostrar erro de padrão</string>
+    <string name="lockpattern_settings_enable_dots_title">Exibir pontos no padrão</string>
+    <string name="immersive_navigation_title">Navegação imersiva</string>
+    <string name="immersive_navigation_summary">Ocultar a pílula de gestos e barra de navegação.</string>
+    <string name="proximity_wake_title">Evitar despertar acidental</string>
+    <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar a tela</string>
+    <string name="volume_link_notification_title">Associar volumes de toque &amp; notificação</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Fazer um novo escaneamento facial e remover o existente</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refazer escaneamento facial</string>
+    <string name="face_redo_confirm_btn">Refazer</string>
+    <string name="face_redo_warning_msg">Deseja remover o escaneamento facial existente e criar um novo?</string>
+    <string name="face_unlock_method_title">Permitir desbloqueio facial na tela de bloqueio</string>
+    <string name="face_unlock_method_default">Quando a tela estiver ligada</string>
+    <string name="face_unlock_method_swipe">Ao deslizar na tela de bloqueio</string>
+    <string name="fingerprint_wake_unlock_title">Toque na impressão digital para desbloquear</string>
+    <string name="fingerprint_wake_unlock_touch">Responde por eventos enquanto a tela está desligada</string>
+    <string name="fingerprint_wake_unlock_press">Responde a eventos somente quando a tela estiver ligada</string>
+    <string name="smart_5g_title">5G inteligente</string>
+    <string name="smart_5g_summary">Alternar automaticamente entre 5G e 4G para reduzir o consumo de bateria</string>
+    <string name="doze_gesture_ambient_title">Mostrar ambiente</string>
+    <string name="doze_gesture_ambient_summary">Pulsar exibição ambiente ao invés de ligar completamente a tela</string>
+    <string name="app_lock_title">Bloqueio de apps</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Número de aplicativos">%1$d</xliff:g> o aplicativo está protegido</item>
+        <item quantity="other"><xliff:g example="10" id="Número de aplicativos">%1$d</xliff:g> aplicativos estão protegidos</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Desbloquear</string>
+    <string name="enable_debugging">Ativar depuração</string>
+    <string name="disable_debugging">Desativar depuração</string>
+    <string name="app_lock_packages_title">Aplicativos protegidos</string>
+    <string name="app_lock_packages_summary">Selecione os aplicativos para proteger com dados biométricos ou credenciais do dispositivo</string>
+    <string name="app_lock_timeout_title">Tempo de bloqueio automático</string>
+    <string name="app_lock_timeout_summary">Tempo previsto para bloquear um aplicativo em segundo plano</string>
+    <string name="app_lock_notifications_title">Ocultar notificações</string>
+    <string name="app_lock_notifications_summary">          O conteúdo das notificações serão ocultadas e recolhidas para os aplicativos selecionados quando forem bloqueados.
+          Notificações flutuantes serão desativadas automaticamente.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Primeiro proteja um aplicativo</string>
+    <string name="app_lock_biometrics_allowed_title">Habilitar biometria para desbloquear</string>
+    <string name="app_lock_footer_text">Balões de notificações serão automaticamente dispersos após o tempo limite</string>
+    <string name="enable_protection">Ativar proteção</string>
+    <string name="hide_from_launcher_title">Ocultar do launcher</string>
+    <string name="hide_from_launcher_summary">        Impeça que esse aplicativo apareça na sua gaveta de apps. É necessário reiniciar o launcher para que as alterações tenham efeito.
+    </string>
+    <string name="superiorlab_summaries_1">Aviso: coisas insanamente legais pela frente!</string>
+    <string name="superiorlab_summaries_2">Alguns slogans interessantes. Blá blá blá...</string>
+    <string name="superiorlab_summaries_3">Prepare-se para ser levado ao mundo da imaginação</string>
+    <string name="superiorlab_summaries_4">Suas características são bonitas</string>
+    <string name="superiorlab_summaries_5">Cuidado! Atrás de você!</string>
+    <string name="superiorlab_summaries_6">Todas as coisas sendo iguais, você está fadado a perder.</string>
+    <string name="superiorlab_summaries_7">O que eu preciso é de um RELACIONAMENTO com um LEITOR DE DISQUETE</string>
+    <string name="superiorlab_summaries_8">Nunca deixe sua escola interferir na sua educação</string>
+    <string name="superiorlab_summaries_9">Sua vida seria muito vazia se você não tivesse nada para se arrepender</string>
+    <string name="superiorlab_summaries_10">A fama pode ser passageira, mas a obscuridade é para sempre</string>
+    <string name="superiorlab_summaries_11">Esta entrada se autodestruirá em cinco minutos</string>
+    <string name="superiorlab_summaries_12">As coisas nem sempre são o que elas parecem</string>
+    <string name="superiorlab_summaries_13">Alguma montagem é necessária</string>
+    <string name="superiorlab_summaries_14">Quem riu pela última vez não conseguiu a piada</string>
+    <string name="superiorlab_summaries_15">Se tudo está vindo para o seu caminho, você está na faixa errada</string>
+    <string name="superiorlab_summaries_16">Onde há vontade, há uma taxa de herança</string>
+    <string name="superiorlab_summaries_17">Este é um anúncio cibernético não autorizado</string>
+    <string name="superiorlab_summaries_18">Sem paradas ou descansos</string>
+    <string name="superiorlab_summaries_19">Se eu for eleito, vou distribuir waffles grátis no shopping!</string>
+    <string name="superiorlab_summaries_20">Quando todas as outras formas de comunicação falharem, tente as palavras</string>
+    <string name="superiorlab_summaries_21">Nunca coma nada maior que sua cabeça</string>
+    <string name="superiorlab_summaries_22">Mensagens excessivas de login ou logout são um sinal claro de senilidade</string>
+    <string name="superiorlab_summaries_23">Personalize o que quiser</string>
+    <string name="superiorlab_summaries_24">Pense menos, personalize mais</string>
+    <string name="superiorlab_summaries_25">FBI: Feature Base Isolation</string>
+    <string name="superiorlab_summaries_26">Isso é como o incrível se parece</string>
+    <string name="superiorlab_summaries_27">Com grandes recursos vem uma grande responsabilidade</string>
+    <string name="superiorlab_summaries_28">Não sonhe. Faça</string>
+    <string name="superiorlab_summaries_29">Orgulhosamente trazido a você sem doações</string>
+    <string name="app_lock_timeout_5secs">5 segundos</string>
+    <string name="app_lock_timeout_10secs">10 segundos</string>
+    <string name="app_lock_timeout_30secs">30 segundos</string>
+    <string name="app_lock_timeout_1min">1 minuto</string>
+    <string name="app_lock_timeout_5mins">5 minuto</string>
+    <string name="app_lock_timeout_10mins">10 minutos</string>
+    <string name="app_lock_timeout_30mins">30 minutos</string>
+    <string name="back_gesture_haptic_title">Retorno tátil</string>
+    <string name="back_gesture_haptic_summary">Ativar o efeito tátil no gesto de voltar</string>
+</resources>

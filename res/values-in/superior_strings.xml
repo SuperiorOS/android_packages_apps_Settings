@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022-2023 The SuperiorOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Versi SuperiorOS</string>
+    <string name="superior_version_default">Tidak diketahui</string>
+    <string name="keywords_superior_version">Versi SuperiorOS, versi superior</string>
+    <string name="about_device_name">Perangkat</string>
+    <string name="build_date">Tanggal pembuatan</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">tanggal pembuatan, info pembuatan</string>
+    <string name="device_info_protected_single_press">Ketuk untuk menampilkan info</string>
+    <string name="notification_log_summary">Tampilkan log riwayat notifikasi</string>
+    <string name="min_refresh_rate_title">Kecepatan refresh minimum</string>
+    <string name="max_refresh_rate_title">Kecepatan refresh maksimum</string>
+    <string name="battery_saver_refresh_rate_title">Kurangi kecepatan refresh</string>
+    <string name="battery_saver_refresh_rate_summary">Gunakan kecepatan refresh layar 60 Hz untuk menghemat daya saat Penghemat Baterai aktif</string>
+    <string name="copied_to_clipboard">Disalin ke papan klip</string>
+    <string name="longpress_to_clipboard">Tekan lama untuk menyalin</string>
+    <string name="package_details_group_title">Rincian paket</string>
+    <string name="package_name">Nama paket</string>
+    <string name="package_version">Versi paket</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dinonaktifkan</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="superior_lab_dash_title">Lab Superior</string>
+    <string name="superior_lab_summary">Tempat kami melakukan eksperimen</string>
+    <string name="density_category">Opsi kepadatan</string>
+    <string name="tethering_allow_vpn_upstreams_title">Izinkan klien untuk menggunakan VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat ini untuk konektivitas upstream</string>
+    <string name="system_black_theme_title">Gunakan tema gelap</string>
+    <string name="system_black_theme_summary">Paksa warna latar belakang hitam</string>
+    <string name="battery_temperature">Suhu Baterai</string>
+    <string name="high_power_apps_summary">Ketersediaan pengoptimalan baterai</string>
+    <string name="navbar_invert_layout_title">Balikkan tata letak bilah navigasi</string>
+    <string name="navbar_invert_info">Tukar posisi tombol \"Kembali\" dan tombol \"Terbaru\" di bilah navigasi</string>
+    <string name="prevent_ringing_option_cycle">Melalui mode siklus</string>
+    <string name="prevent_ringing_option_cycle_summary">Aktif (Melalui mode siklus)</string>
+    <string name="screenshot_shutter_sound_title">Suara tangkapan layar</string>
+    <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
+    <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan ruang notch</string>
+    <string name="search">Cari</string>
+    <string name="search_apps">Cari aplikasi</string>
+    <string name="customization_category_title">Kustomisasi Tambahan</string>
+    <string name="battery_stats_reset">Setel ulang statistik</string>
+    <string name="battery_stats_message">Statistik penggunaan baterai akan disetel ulang</string>
+    <string name="low_battery_light_title">Lampu baterai lemah</string>
+    <string name="low_battery_light_summary">Kedipkan LED saat baterai lemah</string>
+    <string name="platform_revision">Plaform</string>
+    <string name="total_ram">Total RAM</string>
+    <string name="superior_processor_title">Prosesor</string>
+    <string name="superior_storage_code_title">Penyimpanan</string>
+    <string name="superior_battery_type_title">Baterai</string>
+    <string name="superior_screen_title">Layar</string>
+    <string name="net_info">Jaringan</string>
+    <string name="mod_info">@string/model_info</string>
+    <string name="id_info">Pengidentifikasi</string>
+    <string name="model_summary">Model, nomor telepon, IMEI, dll</string>
+    <string name="model_name">Status perangkat</string>
+    <string name="legal_summary">Lisensi dan legal</string>
+    <string name="navbar_category">Bilah navigasi</string>
+    <string name="gesture_navbar_length_title">Panjang gestur bilah navigasi</string>
+    <string name="hide_label">Sembunyikan</string>
+    <string name="long_label">Panjang</string>
+    <string name="back_height_low_label">Penuh</string>
+    <string name="back_height_high_label">Bawah</string>
+    <string name="back_options_dialog_title">Opsi</string>
+    <string name="back_height_message">Jumlah ketinggian layar digunakan sebagai daerah yang dapat disentuh untuk gestur kembali.</string>
+    <string name="display_rotation_title">Setelan rotasi</string>
+    <string name="display_rotation_enabled">Rotasi otomatis diaktifkan</string>
+    <string name="display_rotation_disabled">Rotasi otomatis dinonaktifkan</string>
+    <string name="display_rotation_unit">derajat</string>
+    <string name="display_rotation_category_title">Mode rotasi</string>
+    <string name="display_rotation_0_title">0 derajat</string>
+    <string name="display_rotation_90_title">90 derajat</string>
+    <string name="display_rotation_180_title">180 derajat</string>
+    <string name="display_rotation_270_title">270 derajat</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Temukan sensor sidik jari di bagian depan tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Temukan sensor sidik jari di bagian depan perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Temukan sensor sidik jari di bagian depan ponsel Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Temukan sensor sidik jari di bagian belakang tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Temukan sensor sidik jari di bagian belakang perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Temukan sensor sidik jari di bagian belakang ponsel Anda.</string>
+    <string name="high_touch_sensitivity_title">Sensitivitas sentuh tinggi</string>
+    <string name="high_touch_sensitivity_summary">Meningkatkan kepekaan layar sentuh sehingga dapat digunakan saat mengenakan sarung tangan</string>
+    <string name="high_touch_polling_rate_title">Tingkat agresivitas sentuhan</string>
+    <string name="high_touch_polling_rate_summary">Tingkatkan agresivitas layar sentuh</string>
+    <string name="app_volume">Volume aplikasi</string>
+    <string name="app_volume_title">Kontrol volume per aplikasi</string>
+    <string name="app_volume_summary">Izinkan untuk mengatur tingkat volume yang berbeda untuk setiap aplikasi</string>
+    <string name="private_dns_mode_open_dns">Open DNS</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+    <string name="game_space_title">Ruang Game</string>
+    <string name="game_space_summary">Tingkatkan pengalaman bermain game Anda</string>
+    <string name="action_nothing">Tidak ada tindakan</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Baru-baru ini</string>
+    <string name="action_voice_search">Penelusuran suara</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Aplikasi terakhir</string>
+    <string name="action_splitscreen">Belah layar</string>
+    <string name="action_flashlight">Lampu Senter</string>
+    <string name="action_clear_notifications">Bersihkan notifikasi</string>
+    <string name="action_volume_panel">Panel volume</string>
+    <string name="action_screen_off">Layar mati</string>
+    <string name="action_notifications">Notifikasi</string>
+    <string name="action_power_menu">Menu daya</string>
+    <string name="action_screenshot">Tangkapan layar</string>
+    <string name="action_qs_panel">Panel Setelan Cepat</string>
+    <string name="action_app_action">Aplikasi</string>
+    <string name="action_ringer_modes">Mode dering</string>
+    <string name="kill_app">Tutup paksa aplikasi saat ini</string>
+    <string name="recent_app_toggle">Beralih aplikasi baru-baru ini</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opsi gestur lanjutan</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Kustomisasi gestur dan atur tindakan khusus</string>
+    <string name="navbar_gesture_tweaks_cat_title">Lanjutan</string>
+    <string name="swipe_app_select_summary">Pilih aplikasi untuk memulai dengan tindakan tekan</string>
+    <string name="long_back_swipe_timeout_title">Batas waktu usap panjang</string>
+    <string name="left_swipe_actions_title">Tindakan usap panjang ke kiri</string>
+    <string name="left_swipe_app_action_title">Pilih aplikasi usap panjang ke kiri</string>
+    <string name="right_swipe_actions_title">Tindakan usap panjang ke kanan</string>
+    <string name="right_swipe_app_action_title">Pilih aplikasi usap panjang ke kanan</string>
+    <string name="left_vertical_swipe_actions_title">Tindakan usap L ke kiri vertikal</string>
+    <string name="left_vertical_swipe_app_action_title">Pilih aplikasi usap ke kiri vertikal</string>
+    <string name="right_vertical_swipe_actions_title">Tindakan usap L ke kanan vertikal</string>
+    <string name="right_vertical_swipe_app_action_title">Pilih aplikasi usap ke kanan vertikal</string>
+    <string name="gesture_nav_tweaks_footer_info">Untuk memilih aktivitas aplikasi tertentu untuk tindakan, tekan lama pada aplikasi apa pun di pemilih aplikasi.\n\nJika peluncur ditampilkan, lakukan usap di bagian paling bawah layar untuk memicu tindakan.</string>
+    <string name="back_swipe_extended_title">Tindakan mengusap yang diperpanjang</string>
+    <string name="back_swipe_extended_summary">Memicu tindakan pada mengusap yang lebih lebar (lebih dari setengah ukuran tampilan), atau mengusap L (cukup panjang secara vertikal)</string>
+    <string name="dashboard_morning1">Mulailah harimu dengan positif!</string>
+    <string name="dashboard_morning2">Matahari sudah terbit!</string>
+    <string name="dashboard_morning3">Pagi yang indah</string>
+    <string name="dashboard_morning4">Hari lain untuk hidup</string>
+    <string name="dashboard_morning5">Hari baru</string>
+    <string name="dashboard_morning_greeting1">Selamat pagi</string>
+    <string name="dashboard_morning_greeting2">Hari yang indah</string>
+    <string name="dashboard_noon1">Hidupkan harimu</string>
+    <string name="dashboard_noon2">Nikmati senjamu</string>
+    <string name="dashboard_noon3">Selamat datang di rumah</string>
+    <string name="dashboard_noon4">Nikmati harimu!</string>
+    <string name="dashboard_noon5">Selamat datang kembali</string>
+    <string name="dashboard_noon_greeting1">Selamat sore</string>
+    <string name="dashboard_early_night1">Malam akan datang</string>
+    <string name="dashboard_early_night2">Waktunya makan malam!</string>
+    <string name="dashboard_early_night_greeting1">Selamat malam</string>
+    <string name="dashboard_night3">Mimpi indah!</string>
+    <string name="dashboard_night4">Waktunya untuk tidur</string>
+    <string name="dashboard_night5">Tidur yang nyenyak!</string>
+    <string name="dashboard_night_greetings1">Selamat malam</string>
+    <string name="dashboard_midnight1">Nikmati keheningan</string>
+    <string name="dashboard_midnight2">Kamu butuh bantuan</string>
+    <string name="dashboard_midnight3">Tidurlah</string>
+    <string name="dashboard_midnight4">Beristirahatlah</string>
+    <string name="dashboard_midnight5">Tidur larut malam?</string>
+    <string name="dashboard_random1">Hai         </string>
+    <string name="dashboard_random2">Halo       </string>
+    <string name="dashboard_random3">Namaste     </string>
+    <string name="dashboard_random4">Hari yang indah    </string>
+    <string name="dashboard_random5">こんにちは     </string>
+    <string name="dashboard_random6">Apa kabar  </string>
+    <string name="dashboard_random_greetings1">Cobalah untuk menemukan beberapa easter eggs!</string>
+    <string name="dashboard_random_greetings2">Jadilah Unggul!</string>
+    <string name="dashboard_random_greetings3">Coba gunakan bilah pencarian!</string>
+    <string name="dashboard_random_greetings4">Nikmati harimu!</string>
+    <string name="settings_random1">Mencari sesuatu?</string>
+    <string name="settings_random2">Temukan dan kau akan melihat</string>
+    <string name="settings_random3">Carilah dan kau akan temukan</string>
+    <string name="settings_random4">Terkadang kamu tidak bisa lari dari pikiranmu</string>
+    <string name="settings_random5">Pencarian setelan</string>
+    <string name="settings_random6">Bermimpilah besar dan berani gagal</string>
+    <string name="default_user">Pengguna</string>
+    <string name="background_processes_settings_title">Proses di latar belakang</string>
+    <string name="lock_settings_picker_pattern_size_message">Pilih ukuran pola</string>
+    <string name="lockpattern_settings_enable_error_path_title">Tampilkan kesalahan pola</string>
+    <string name="lockpattern_settings_enable_dots_title">Tampilkan titik-titik pola</string>
+    <string name="immersive_navigation_title">Navigasi Imersif</string>
+    <string name="immersive_navigation_summary">Sembunyikan pil gestur dan lapisan bilah navigasi.</string>
+    <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
+    <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>
+    <string name="volume_link_notification_title">Hubungkan volume dering &amp; notifikasi</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Hapus pemindaian wajah yang ada dan buat pemindaian baru</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ulangi pemindaian wajah</string>
+    <string name="face_redo_confirm_btn">Ulangi</string>
+    <string name="face_redo_warning_msg">Apakah Anda ingin menghapus pemindaian wajah yang ada dan membuat pemindaian baru?</string>
+    <string name="face_unlock_method_title">Izinkan face unlock di layar kunci</string>
+    <string name="face_unlock_method_default">Saat layar dihidupkan</string>
+    <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
+    <string name="fingerprint_wake_unlock_title">Sentuh sensor sidik jari untuk membuka kunci</string>
+    <string name="fingerprint_wake_unlock_touch">Mendeteksi saat layar mati</string>
+    <string name="fingerprint_wake_unlock_press">Hanya mendeteksi setelah layar menyala</string>
+    <string name="smart_5g_title">5G Cerdas</string>
+    <string name="smart_5g_summary">Secara otomatis beralih antara 5G dan 4G untuk mengurangi konsumsi baterai</string>
+    <string name="doze_gesture_ambient_title">Tampilkan Ambien</string>
+    <string name="doze_gesture_ambient_summary">Tampilkan Tampilan Ambien alih-alih sepenuhnya membangunkan layar</string>
+    <string name="app_lock_title">Kunci Aplikasi</string>
+    <plurals name="app_lock_summary">
+        <item quantity="other"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> aplikasi dilindungi</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Buka</string>
+    <string name="enable_debugging">Aktifkan debugging</string>
+    <string name="disable_debugging">Nonaktifkan debugging</string>
+    <string name="app_lock_packages_title">Aplikasi dilindungi</string>
+    <string name="app_lock_packages_summary">Pilih aplikasi yang akan dilindungi dengan biometrik atau kredensial perangkat</string>
+    <string name="app_lock_timeout_title">Batas waktu penguncian otomatis</string>
+    <string name="app_lock_timeout_summary">Durasi waktu setelah aplikasi yang tidak terkunci di latar belakang harus dikunci</string>
+    <string name="app_lock_notifications_title">Matikan notifikasi</string>
+    <string name="app_lock_notifications_summary">          Konten notifikasi akan disembunyikan dan dimatikan untuk aplikasi yang dipilih saat terkunci.
+          Notifikasi mengambang akan dinonaktifkan secara otomatis.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Lindungi aplikasi terlebih dahulu</string>
+    <string name="app_lock_biometrics_allowed_title">Aktifkan biometrik untuk membuka kunci</string>
+    <string name="app_lock_footer_text">Gelembung akan ditutup secara otomatis setelah waktu habis</string>
+    <string name="enable_protection">Aktifkan perlindungan</string>
+    <string name="hide_from_launcher_title">Sembunyikan dari peluncur</string>
+    <string name="hide_from_launcher_summary">        Cegah aplikasi ini muncul di peluncur. Membutuhkan mulai ulang peluncur agar perubahan diterapkan.
+    </string>
+    <string name="superiorlab_summaries_1">Peringatan: Hal-Hal yang keren ada di depan!</string>
+    <string name="superiorlab_summaries_2">Beberapa semboyan yang menarik. Hehehehe...</string>
+    <string name="superiorlab_summaries_3">Bersiaplah untuk terlempar ke dunia isekai </string>
+    <string name="superiorlab_summaries_4">Fitur-fiturnya sangat bagus </string>
+    <string name="superiorlab_summaries_5">Mencari apa! Dibelakang kamu!</string>
+    <string name="superiorlab_summaries_6">Bila anda menganggap semua sama, Anda pasti akan kalah.</string>
+    <string name="superiorlab_summaries_7">Yang saya butuhkan adalah HUBUNGAN SUAMI-ISTRI dengan GULING WAIFU </string>
+    <string name="superiorlab_summaries_8">Jangan biarkan pemerin anda mengganggu pendidikan Anda</string>
+    <string name="superiorlab_summaries_9">Hidup anda akan sangat kosong jika anda tidak tobat</string>
+    <string name="superiorlab_summaries_10">Piral mungkin cepat berlalu tetapi ketidak bertahan selamanya</string>
+    <string name="superiorlab_summaries_11">Pintu masuk ini akan hancur sendiri dalam lima menit</string>
+    <string name="superiorlab_summaries_12">Jangan lihat dari luar saja</string>
+    <string name="superiorlab_summaries_13">Diperlukan beberapa T*DN</string>
+    <string name="superiorlab_summaries_14">Elo yang ketawa suka telat, berarti candaan bukan untuk elo</string>
+    <string name="superiorlab_summaries_15">Jika semuanya berjalan sesuai keinginan Anda, maka Anda berada di jalur yang sesat</string>
+    <string name="superiorlab_summaries_16">Di mana ada warisan, ada Ditjen Pajak </string>
+    <string name="superiorlab_summaries_17">Sebuah keluaran yang tidak valid</string>
+    <string name="superiorlab_summaries_18">Ga bole berhenti atau berdiri</string>
+    <string name="superiorlab_summaries_19">Jika Saya terpilih, Saya akan membasmi korupsi di wakanda!</string>
+    <string name="superiorlab_summaries_20">Ketika cara komunikasi lain tidak berhasil, coba omongkan</string>
+    <string name="superiorlab_summaries_21">Jangan pernah makan sesuatu yang lebih besar dari kepala Anda</string>
+    <string name="superiorlab_summaries_22">Masuk telinga kanan, keluar telinga kiri adalah anda seorang yang pelupa</string>
+    <string name="superiorlab_summaries_23">Sesuaikan Kostumisasi sampai anda puas</string>
+    <string name="superiorlab_summaries_24">Jangan banyak mikir, sesuaikan lebih banyak lagi</string>
+    <string name="superiorlab_summaries_25">S*mbo: Isolasi Basis Fitur</string>
+    <string name="superiorlab_summaries_26">Seperti inilah tampilan yang bagus</string>
+    <string name="superiorlab_summaries_27">Dengan fitur hebat datanglah tanggung jawab besar</string>
+    <string name="superiorlab_summaries_28">Berhenti Halu. Tatap Kenyataan </string>
+    <string name="superiorlab_summaries_29">Dengan bangga dibawa kepada anda tanpa donasi</string>
+    <string name="app_lock_timeout_5secs">5 detik</string>
+    <string name="app_lock_timeout_10secs">10 detik</string>
+    <string name="app_lock_timeout_30secs">30 detik</string>
+    <string name="app_lock_timeout_1min">1 menit</string>
+    <string name="app_lock_timeout_5mins">5 menit</string>
+    <string name="app_lock_timeout_10mins">10 menit</string>
+    <string name="app_lock_timeout_30mins">30 menit</string>
+    <string name="back_gesture_haptic_title">Umpan balik haptik</string>
+    <string name="back_gesture_haptic_summary">Aktifkan efek getaran pada gestur kembali</string>
+</resources>

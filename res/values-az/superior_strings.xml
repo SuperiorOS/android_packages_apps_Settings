@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022-2023 The SuperiorOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">SuperiorOS versiyası</string>
+    <string name="superior_version_default">Bilinmir</string>
+    <string name="keywords_superior_version">SuperiorOS versiyası, superior versiyası</string>
+    <string name="about_device_name">Cihaz</string>
+    <string name="build_date">Quruluş tarixi</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">quruluş tarixi, quruluş məlumatı</string>
+    <string name="device_info_protected_single_press">Məlumatı göstərmək üçün toxunun</string>
+    <string name="notification_log_summary">Bildiriş tarixçə jurnalını göstər</string>
+    <string name="min_refresh_rate_title">Minimum təzələmə sürəti</string>
+    <string name="max_refresh_rate_title">Maksimum təzələmə sürəti</string>
+    <string name="battery_saver_refresh_rate_title">Təzələmə sürətini azalt</string>
+    <string name="battery_saver_refresh_rate_summary">Batareya Qənaəti açıq olanda enerjiyə qənaət etmək üçün 60 Hz təzələnmə sürətini istifadə edin</string>
+    <string name="copied_to_clipboard">Lövhəyə kopyalandı</string>
+    <string name="longpress_to_clipboard">Kopyalamaq üçün uzun basın</string>
+    <string name="package_details_group_title">Paket detalları</string>
+    <string name="package_name">Paket adı</string>
+    <string name="package_version">Paket versiyası</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">SELinux vəziyyəti</string>
+    <string name="selinux_status_disabled">Sıradan çıxarıldı</string>
+    <string name="selinux_status_permissive">İcazə verən</string>
+    <string name="selinux_status_enforcing">Məcburi</string>
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">Təcrübə keçirdiyimiz yer</string>
+    <string name="density_category">Sıxlıq seçimləri</string>
+    <string name="tethering_allow_vpn_upstreams_title">Müştərilərin VPN istifadəsinə icazə ver</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Hotspot istifadəçilərinin bağlantıları arasında bu cihazın VPN bağlantısını istifadə etməsinə icazə ver</string>
+    <string name="system_black_theme_title">Qara tema istifadə et</string>
+    <string name="system_black_theme_summary">Qara arxaplan rənglərini məcbur et</string>
+    <string name="battery_temperature">Batareya temperaturu</string>
+    <string name="high_power_apps_summary">Batareya optimallaşdırma mövcudluğu</string>
+    <string name="navbar_invert_layout_title">Hərəkət sətri düzümünü tərsinə çevir</string>
+    <string name="navbar_invert_info">Hərəkət sətrində \"Geri\" və \"Sonuncular\" düymələrinin yerini dəyişdir</string>
+    <string name="prevent_ringing_option_cycle">Rejimlər arasında keçid</string>
+    <string name="prevent_ringing_option_cycle_summary">Açıq (rejimlər arasında keçid)</string>
+    <string name="screenshot_shutter_sound_title">Ekran şəkli səsi</string>
+    <string name="display_cutout_force_fullscreen_title">Tam ekran tətbiqlər</string>
+    <string name="display_cutout_force_fullscreen_summary">Tətbiqləri çərtik sahəsini yox saymağa məcbur et</string>
+    <string name="search">Axtar</string>
+    <string name="search_apps">Tətbiq axtar</string>
+    <string name="customization_category_title">Ekstra özəlləşdirmələr</string>
+    <string name="battery_stats_reset">Statistikaları sıfırla</string>
+    <string name="battery_stats_message">Batareya tarixçəsi statistikaları sıfırlanacaq</string>
+    <string name="low_battery_light_title">Zəif batareya işığı</string>
+    <string name="low_battery_light_summary">Batareya zəifləyəndə LED yanıb sönür</string>
+    <string name="platform_revision">Platforma</string>
+    <string name="total_ram">Cəmi RAM</string>
+    <string name="superior_processor_title">Prosessor</string>
+    <string name="superior_storage_code_title">Anbar</string>
+    <string name="superior_battery_type_title">Batareya</string>
+    <string name="superior_screen_title">Ekran</string>
+    <string name="net_info">Şəbəkə</string>
+    <string name="mod_info">@string/model_info</string>
+    <string name="id_info">İdentifikatorlar</string>
+    <string name="model_summary">Model, telefon nömrəsi, IMEI və s.</string>
+    <string name="model_name">Cihazın vəziyyəti</string>
+    <string name="legal_summary">Lisenziya və hüquqi</string>
+    <string name="navbar_category">Hərəkət sətri</string>
+    <string name="gesture_navbar_length_title">Sətir uzunluğu</string>
+    <string name="hide_label">Gizli</string>
+    <string name="long_label">Uzun</string>
+    <string name="back_height_low_label">Tam</string>
+    <string name="back_height_high_label">Alt</string>
+    <string name="back_options_dialog_title">Seçimlər</string>
+    <string name="back_height_message">Geri hərəkəti üçün toxunula bilən sahə olaraq istifadə olunan ekran hündürlüyünün miqdarı.</string>
+    <string name="display_rotation_title">Döndərmə tənzimləmələri</string>
+    <string name="display_rotation_enabled">Avto-döndərmə fəaldır</string>
+    <string name="display_rotation_disabled">Avto-döndərmə sıradan çıxarıldı</string>
+    <string name="display_rotation_unit">dərəcə</string>
+    <string name="display_rotation_category_title">Döndərmə rejimi</string>
+    <string name="display_rotation_0_title">0 dərəcə</string>
+    <string name="display_rotation_90_title">90 dərəcə</string>
+    <string name="display_rotation_180_title">180 dərəcə</string>
+    <string name="display_rotation_270_title">270 dərəcə</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Planşetinizin ön tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Cihazınızın ön tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Telefonunuzun ön tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Planşetinizin arxa tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Cihazınızın arxa tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Telefonunuzun arxa tərəfindəki barmaq izi sensorunu tapın.</string>
+    <string name="high_touch_sensitivity_title">Yüksək toxunuş həssaslığı</string>
+    <string name="high_touch_sensitivity_summary">Toxunuş həssaslığını artıraraq əlcəklə istifadəni mümkün edər</string>
+    <string name="high_touch_polling_rate_title">Yüksək toxunuş yoxlama dərəcəsi</string>
+    <string name="high_touch_polling_rate_summary">Toxunaqlı ekran yoxlama dərəcəsini artırın</string>
+    <string name="app_volume">Tətbiq səs səviyyəsi</string>
+    <string name="app_volume_title">Hər tətbiq üçün səs səviyyəsinə nəzarət</string>
+    <string name="app_volume_summary">Hər tətbiq üçün fərqli səs səviyyələri tənzimləməyə icazə ver</string>
+    <string name="private_dns_mode_open_dns">DNS-i aç</string>
+    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
+    <string name="private_dns_mode_quad9">Quad9 DNS</string>
+    <string name="game_space_title">Oyun sahəsi</string>
+    <string name="game_space_summary">Oyun təcrübənizi artırın</string>
+    <string name="action_nothing">Hərəkət yoxdur</string>
+    <string name="action_menu">Menyu</string>
+    <string name="action_app_switch">Sonuncular</string>
+    <string name="action_voice_search">Səsli axtarış</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Son tətbiq</string>
+    <string name="action_splitscreen">Bölünmüş ekran</string>
+    <string name="action_flashlight">Fənər</string>
+    <string name="action_clear_notifications">Bildirişləri təmizlə</string>
+    <string name="action_volume_panel">Səs paneli</string>
+    <string name="action_screen_off">Ekranı söndür</string>
+    <string name="action_notifications">Bildirişlər</string>
+    <string name="action_power_menu">Güc menyusu</string>
+    <string name="action_screenshot">Ekran şəkli</string>
+    <string name="action_qs_panel">Cəld tənzm. paneli</string>
+    <string name="action_app_action">Tətbiq</string>
+    <string name="action_ringer_modes">Zəng səsi rejimləri</string>
+    <string name="kill_app">Önplan tətbiqlərini bağla</string>
+    <string name="recent_app_toggle">Son tətbiqə keç</string>
+    <string name="navbar_gesture_tweaks_pref_title">Qabaqcıl jest seçimləri</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Jestləri özəlləşdirin və özəl əməliyyatları tənzimləyin</string>
+    <string name="navbar_gesture_tweaks_cat_title">Qabaqcıl</string>
+    <string name="swipe_app_select_summary">Sıxma əməliyyatı ilə başladılacaq bir tətbiq seçin</string>
+    <string name="long_back_swipe_timeout_title">Uzun sürüşdürmə əməliyyatının bitmə vaxtı</string>
+    <string name="left_swipe_actions_title">Uzun sola sürüşdürmə əməliyyatı</string>
+    <string name="left_swipe_app_action_title">Sola uzun sürüşdürmə tətbiqini seçin</string>
+    <string name="right_swipe_actions_title">Uzun sağa sürüşdürmə əməliyyatı</string>
+    <string name="right_swipe_app_action_title">Sağa uzun sürüşdürmə tətbiqini seçin</string>
+    <string name="left_vertical_swipe_actions_title">Şaquli sola L sürüşdürmə əməliyyatı</string>
+    <string name="left_vertical_swipe_app_action_title">Sola şaquli sürüşdürmə tətbiqini seçin</string>
+    <string name="right_vertical_swipe_actions_title">Şaquli sağa L sürüşdürmə əməliyyatı</string>
+    <string name="right_vertical_swipe_app_action_title">Sağa şaquli sürüşdürmə tətbiqini seçin</string>
+    <string name="gesture_nav_tweaks_footer_info">Əməliyyatı icra edəcək müəyyən bir tətbiq fəaliyyəti seçmək üçün tətbiq seçicidəki istənilən bir tətbiqə uzun basın.\n\nƏgər başladıcı göstərilirsə, əməliyyatı başlatmaq üçün ekranın ən alt hissəsindəki sürüşdürməni edin.</string>
+    <string name="back_swipe_extended_title">Genişləndirilmiş sürüşdürmə əməliyyatı</string>
+    <string name="back_swipe_extended_summary">Daha uzun sürüşdürmədə (ekran ölçüsünün yarısından çoxu) və ya bir L sürüşdürməsində (şaquli olaraq yetərincə uzun) əməliyyatı başladın</string>
+    <string name="dashboard_morning1">Günə pozitiv başla!</string>
+    <string name="dashboard_morning2">Gün doğdu!</string>
+    <string name="dashboard_morning3">Gözəl bir sabah</string>
+    <string name="dashboard_morning4">Yaşanacaq bir gün daha</string>
+    <string name="dashboard_morning5">Yeni bir gün</string>
+    <string name="dashboard_morning_greeting1">Günaydın</string>
+    <string name="dashboard_morning_greeting2">Gününüz xoş keçsin</string>
+    <string name="dashboard_noon1">Həyatını yaşa</string>
+    <string name="dashboard_noon2">Gün batımından həzz al</string>
+    <string name="dashboard_noon3">Evə xoş gəldin</string>
+    <string name="dashboard_noon4">Gününüzdən zövq alın!</string>
+    <string name="dashboard_noon5">Təkrar xoş gəldin</string>
+    <string name="dashboard_noon_greeting1">Günortanız xeyir</string>
+    <string name="dashboard_early_night1">Gecə gəlir</string>
+    <string name="dashboard_early_night2">Şam yeməyinin vaxtıdır!</string>
+    <string name="dashboard_early_night_greeting1">Axşamınız xeyir</string>
+    <string name="dashboard_night3">Şirin yuxular!</string>
+    <string name="dashboard_night4">İndi yatmaq vaxtıdır</string>
+    <string name="dashboard_night5">Şirin yuxular!</string>
+    <string name="dashboard_night_greetings1">Gecəniz xeyrə</string>
+    <string name="dashboard_midnight1">Sakitlikdən həzz al</string>
+    <string name="dashboard_midnight2">Kömək lazımdır</string>
+    <string name="dashboard_midnight3">Bir az yuxula</string>
+    <string name="dashboard_midnight4">Dincəl</string>
+    <string name="dashboard_midnight5">Gec yatırsan?</string>
+    <string name="dashboard_random1">Salam         </string>
+    <string name="dashboard_random2">Salam       </string>
+    <string name="dashboard_random3">Salam     </string>
+    <string name="dashboard_random4">Gününüz xoş keçsin    </string>
+    <string name="dashboard_random5">Salam     </string>
+    <string name="dashboard_random6">Nə var nə yox  </string>
+    <string name="dashboard_random_greetings1">Bir az pasxa yumurtası tapmağa çalış!</string>
+    <string name="dashboard_random_greetings2">Superior ol!</string>
+    <string name="dashboard_random_greetings3">Axtarış sətrini istifadə etməyə çalış!</string>
+    <string name="dashboard_random_greetings4">Gününüz xoş keçsin!</string>
+    <string name="settings_random1">Nəsə axtarırsan?</string>
+    <string name="settings_random2">Tap və görəcəksən</string>
+    <string name="settings_random3">Axtar və tapacaqsan</string>
+    <string name="settings_random4">Kim tapsa onundur</string>
+    <string name="settings_random5">Axtarış tənzimləmələri</string>
+    <string name="settings_random6">Böyük düşün və uğursuz olmağa cəsarət et</string>
+    <string name="default_user">İstifadəçi</string>
+    <string name="background_processes_settings_title">Proses arxaplandadır</string>
+    <string name="lock_settings_picker_pattern_size_message">Naxış ölçüsünü seçin</string>
+    <string name="lockpattern_settings_enable_error_path_title">Naxış xətalarını göstər</string>
+    <string name="lockpattern_settings_enable_dots_title">Naxış nöqtələrini göstər</string>
+    <string name="immersive_navigation_title">İmmersiv naviqasiya</string>
+    <string name="immersive_navigation_summary">Jest nişanını və hərəkət sətri dolğusunu gizlət.</string>
+    <string name="proximity_wake_title">Təsadüfi oyandırmaların qarşısını al</string>
+    <string name="proximity_wake_summary">Ekran oyandırmazdan əvvəl yaxnlıq sensoru yoxlaması</string>
+    <string name="volume_link_notification_title">Zəng səsi və bildiriş səs səviyyələrini birləşdir</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Mövcud üz skanını sil və yeni bir skan yarat</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Üz skanını yenidən et</string>
+    <string name="face_redo_confirm_btn">Təkrar et</string>
+    <string name="face_redo_warning_msg">Mövcud üz skanını silib yenisini yaratmaq istəyirsiniz?</string>
+    <string name="face_unlock_method_title">Kilid ekranında üzlə kilid açmağa icazə ver</string>
+    <string name="face_unlock_method_default">Ekran açılanda</string>
+    <string name="face_unlock_method_swipe">Kilid ekranında sürüşdürəndə</string>
+    <string name="fingerprint_wake_unlock_title">Kilidi açmaq üçün barmaz izinə toxunun</string>
+    <string name="fingerprint_wake_unlock_touch">Ekran sönülü ikən tədbirləri dinləyir</string>
+    <string name="fingerprint_wake_unlock_press">Yalnız ekran açıq ikən tədbirləri dinləyir</string>
+    <string name="smart_5g_title">Ağıllı 5G</string>
+    <string name="smart_5g_summary">Batareya sərfiyyatını azaltmaq üçün 5G və 4G arasında avtomatik keçid edin</string>
+    <string name="doze_gesture_ambient_title">Ambient-i göstər</string>
+    <string name="doze_gesture_ambient_summary">Ekranı tam oyandırmaq əvəzinə Ambient Ekranı göstər</string>
+    <string name="app_lock_title">Tətbiq kilidi</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> tətbiq qorunur</item>
+        <item quantity="other"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> tətbiq qorunur</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Kilidi aç</string>
+    <string name="enable_debugging">Sazlamanı fəallaşdır</string>
+    <string name="disable_debugging">Sazlamanı sıradan çıxart</string>
+    <string name="app_lock_packages_title">Qorunan tətbiqlər</string>
+    <string name="app_lock_packages_summary">Biometrik və ya cihaz kimlik məlumatları ilə qorunacaq tətbiqləri seçin</string>
+    <string name="app_lock_timeout_title">Avto-kilid bitmə vaxtı</string>
+    <string name="app_lock_timeout_summary">Arxaplanda kilidi açılmış bir tətbiqin kilidlənməsi üçün müddət</string>
+    <string name="app_lock_notifications_title">Bildirişləri yığcamlaşdır</string>
+    <string name="app_lock_notifications_summary">          Seçilmiş tətbiqlər kilidlənəndə bildiriş məzmunu gizlədiləcək və yığcamlaşdırılacaq.
+          Açılan başlıq bildirişləri avtomatik olaraq sıradan çıxarılacaq.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Əvvəlcə bir tətbiqi qoruyun</string>
+    <string name="app_lock_biometrics_allowed_title">Kilid açma üçün biometrikləri fəallaşdır</string>
+    <string name="app_lock_footer_text">Şarlar vaxt bitdikdən sonra avtomatik bağlanacaq</string>
+    <string name="enable_protection">Qorumanı fəallaşdır</string>
+    <string name="hide_from_launcher_title">Başladıcıdan gizlət</string>
+    <string name="hide_from_launcher_summary">        Bu tətbiqin başladıcıda görünməsinin qarşısını alın. Dəyişikliklərin qüvvəyə minməsi üçün başladıcı yenidən başladılmalıdır.
+    </string>
+    <string name="superiorlab_summaries_1">Xəbərdarlıq: Qarşıda inanılmaz dərəcədə gözəl şeylər var!</string>
+    <string name="superiorlab_summaries_2">Bəzi maraqlı sloqanlar. Bla bla bla...</string>
+    <string name="superiorlab_summaries_3">Xəyal dünyasına uçmağa hazır olun</string>
+    <string name="superiorlab_summaries_4">Özəllikləri yaxşıdır</string>
+    <string name="superiorlab_summaries_5">Diqqət! Arxandadır!</string>
+    <string name="superiorlab_summaries_6">Hər şey bərabər olduqda, məğlub olmağa məhkumsunuz.</string>
+    <string name="superiorlab_summaries_7">Mənə lazım olan FLOOPY DISK ilə YETKİN MÜNASİBƏTDİR</string>
+    <string name="superiorlab_summaries_8">Heç vaxt məktəbinizin təhsilinizə mane olmasına imkan verməyin</string>
+    <string name="superiorlab_summaries_9">Peşman olacaq bir şeyiniz olmasaydı, həyatınız çox boş olardı</string>
+    <string name="superiorlab_summaries_10">Şöhrət keçici ola bilər, amma bilinməzlik əbədidir</string>
+    <string name="superiorlab_summaries_11">Bu giriş beş dəqiqə ərzində özünü məhv edəcək</string>
+    <string name="superiorlab_summaries_12">Bəzi şeylər həmişə göründüyü kimi deyil</string>
+    <string name="superiorlab_summaries_13">Bir az montaj tələb olunur</string>
+    <string name="superiorlab_summaries_14">Son gülən zarafatı anlamadı</string>
+    <string name="superiorlab_summaries_15">Hər şey qaydasındadırsa, deməli yanlış zolaqdasan</string>
+    <string name="superiorlab_summaries_16">Harada vəsiyyət var, orda Vərəsəlik Vergisi var</string>
+    <string name="superiorlab_summaries_17">Bu, icazəsiz bir kibernetik elandır</string>
+    <string name="superiorlab_summaries_18">Dayanmaq və ya durmaq yoxdur</string>
+    <string name="superiorlab_summaries_19">Seçilsəm, Tempelhofer Feld-də pulsuz vafli paylayacağam!</string>
+    <string name="superiorlab_summaries_20">Bütün digər ünsiyyət vasitələri uğursuz olduqda, sözləri sınayın</string>
+    <string name="superiorlab_summaries_21">Heç vaxt başından böyük bir şey yemə</string>
+    <string name="superiorlab_summaries_22">Həddindən artıq giriş və ya çıxış mesajları qocalığın dəqiq bir əlamətidir</string>
+    <string name="superiorlab_summaries_23">İstədiyiniz qədər özəlləşdirin</string>
+    <string name="superiorlab_summaries_24">Daha az düşün, daha çox özəlləşdir</string>
+    <string name="superiorlab_summaries_25">FBI: Özəllik Baza İzolyasiyası</string>
+    <string name="superiorlab_summaries_26">Möhtəşəm görünən budur</string>
+    <string name="superiorlab_summaries_27">Möhtəşəm özəlliklər möhtəşəm məsuliyyət gətirir</string>
+    <string name="superiorlab_summaries_28">Xəyal qurma. Et</string>
+    <string name="superiorlab_summaries_29">İanələr olmadan qürurla sizə gətirildi</string>
+    <string name="app_lock_timeout_5secs">5 saniyə</string>
+    <string name="app_lock_timeout_10secs">10 saniyə</string>
+    <string name="app_lock_timeout_30secs">30 saniyə</string>
+    <string name="app_lock_timeout_1min">1 dəqiqə</string>
+    <string name="app_lock_timeout_5mins">5 dəqiqə</string>
+    <string name="app_lock_timeout_10mins">10 dəqiqə</string>
+    <string name="app_lock_timeout_30mins">30 dəqiqə</string>
+    <string name="back_gesture_haptic_title">Toxunuş əks-əlaqəsi</string>
+    <string name="back_gesture_haptic_summary">Geri jestində toxunuş tik effektini fəallaşdır</string>
+</resources>

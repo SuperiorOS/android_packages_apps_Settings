@@ -68,7 +68,6 @@
     <string name="superior_battery_type_title">Bateria</string>
     <string name="superior_screen_title">Tela</string>
     <string name="net_info">Rede</string>
-    <string name="mod_info">@string/informações</string>
     <string name="id_info">Identificadores</string>
     <string name="model_summary">Modelo, número de telefone, IMEI, etc</string>
     <string name="model_name">Status do dispositivo</string>

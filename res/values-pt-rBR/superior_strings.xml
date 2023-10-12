@@ -102,9 +102,6 @@
     <string name="app_volume">Volume do aplicativo</string>
     <string name="app_volume_title">Controle de volume por aplicativo</string>
     <string name="app_volume_summary">Permite definir diferentes níveis de volume para cada aplicativo</string>
-    <string name="private_dns_mode_open_dns">Open DNS</string>
-    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
-    <string name="private_dns_mode_quad9">Quad9 DNS</string>
     <string name="game_space_title">Espaço de Jogo</string>
     <string name="game_space_summary">Melhore sua experiência em jogos</string>
     <string name="action_nothing">Nenhuma ação</string>

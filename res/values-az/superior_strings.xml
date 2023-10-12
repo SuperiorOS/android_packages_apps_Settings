@@ -68,7 +68,6 @@
     <string name="superior_battery_type_title">Batareya</string>
     <string name="superior_screen_title">Ekran</string>
     <string name="net_info">Şəbəkə</string>
-    <string name="mod_info">@string/model_info</string>
     <string name="id_info">İdentifikatorlar</string>
     <string name="model_summary">Model, telefon nömrəsi, IMEI və s.</string>
     <string name="model_name">Cihazın vəziyyəti</string>
@@ -103,9 +102,6 @@
     <string name="app_volume">Tətbiq səs səviyyəsi</string>
     <string name="app_volume_title">Hər tətbiq üçün səs səviyyəsinə nəzarət</string>
     <string name="app_volume_summary">Hər tətbiq üçün fərqli səs səviyyələri tənzimləməyə icazə ver</string>
-    <string name="private_dns_mode_open_dns">DNS-i aç</string>
-    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
-    <string name="private_dns_mode_quad9">Quad9 DNS</string>
     <string name="game_space_title">Oyun sahəsi</string>
     <string name="game_space_summary">Oyun təcrübənizi artırın</string>
     <string name="action_nothing">Hərəkət yoxdur</string>

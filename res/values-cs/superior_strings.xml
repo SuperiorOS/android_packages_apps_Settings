@@ -68,7 +68,6 @@
     <string name="superior_battery_type_title">Baterie</string>
     <string name="superior_screen_title">Displej</string>
     <string name="net_info">Síť</string>
-    <string name="mod_info">@string/model_info</string>
     <string name="id_info">Identifikátory</string>
     <string name="model_summary">Model, telefonní číslo, IMEI atd.</string>
     <string name="model_name">Stav zařízení</string>
@@ -103,9 +102,6 @@
     <string name="app_volume">Hlasitost aplikace</string>
     <string name="app_volume_title">Ovládání hlasitosti pro jednotlivé aplikace</string>
     <string name="app_volume_summary">Umožnit nastavení různých úrovní hlasitosti pro každou aplikaci</string>
-    <string name="private_dns_mode_open_dns">Open DNS</string>
-    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
-    <string name="private_dns_mode_quad9">Quad9 DNS</string>
     <string name="game_space_title">Herní prostor</string>
     <string name="game_space_summary">Vylepšete své herní prostředí</string>
     <string name="action_nothing">Žádná akce</string>

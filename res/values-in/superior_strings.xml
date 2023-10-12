@@ -68,7 +68,6 @@
     <string name="superior_battery_type_title">Baterai</string>
     <string name="superior_screen_title">Layar</string>
     <string name="net_info">Jaringan</string>
-    <string name="mod_info">@string/model_info</string>
     <string name="id_info">Pengidentifikasi</string>
     <string name="model_summary">Model, nomor telepon, IMEI, dll</string>
     <string name="model_name">Status perangkat</string>
@@ -103,9 +102,6 @@
     <string name="app_volume">Volume aplikasi</string>
     <string name="app_volume_title">Kontrol volume per aplikasi</string>
     <string name="app_volume_summary">Izinkan untuk mengatur tingkat volume yang berbeda untuk setiap aplikasi</string>
-    <string name="private_dns_mode_open_dns">Open DNS</string>
-    <string name="private_dns_mode_cleanbrowsing">Cleanbrowsing DNS</string>
-    <string name="private_dns_mode_quad9">Quad9 DNS</string>
     <string name="game_space_title">Ruang Game</string>
     <string name="game_space_summary">Tingkatkan pengalaman bermain game Anda</string>
     <string name="action_nothing">Tidak ada tindakan</string>

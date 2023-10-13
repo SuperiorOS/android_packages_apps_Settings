@@ -22,6 +22,7 @@ import static com.android.settingslib.applications.ApplicationsState.AppEntry;
 import static com.android.settingslib.applications.ApplicationsState.AppFilter;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.util.Log;
 
 import com.android.settings.Utils;
@@ -74,13 +75,21 @@ public class AppStateClonedAppsBridge extends AppStateBaseBridge{
 
     @Override
     protected void updateExtraInfo(AppEntry app, String pkg, int uid) {
-        // Display package if allowlisted but not yet cloned.
-        // Or if the app is present in clone profile alongwith being in allowlist.
-        if (mAllowedApps.contains(pkg) && ((!mCloneProfileApps.contains(pkg) || (app.isCloned)))) {
-            app.extraInfo = Boolean.TRUE;
+        // Display user package if installed but not yet cloned.
+        // Or if the app is present in clone profile alongwith being installed.
+        if(FILTER_USER_APPS.filterApp(app)){
+            if (!mCloneProfileApps.contains(pkg) || app.isCloned) {
+                app.extraInfo = Boolean.TRUE;
+            } else {
+                app.extraInfo = Boolean.FALSE;
+            }
         } else {
             app.extraInfo = Boolean.FALSE;
         }
+    }
+
+    private static boolean hasFlag(int flags, int flag) {
+        return (flags & flag) != 0;
     }
 
     public static final AppFilter FILTER_APPS_CLONE =
@@ -98,4 +107,20 @@ public class AppStateClonedAppsBridge extends AppStateBaseBridge{
                     return (Boolean) entry.extraInfo;
                 }
             };
+
+    public static final AppFilter FILTER_USER_APPS = new AppFilter() {
+        @Override
+        public void init() {
+        }
+
+        @Override
+        public boolean filterApp(AppEntry entry) {
+            if (entry.hasLauncherEntry) {
+                if (!hasFlag(entry.info.flags, ApplicationInfo.FLAG_SYSTEM) && !hasFlag(entry.info.flags, ApplicationInfo.FLAG_UPDATED_SYSTEM_APP)){
+                    return true;
+                }
+            }
+            return false;
+        }
+    };
 }

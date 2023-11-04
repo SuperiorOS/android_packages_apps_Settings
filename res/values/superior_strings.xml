@@ -149,6 +149,9 @@
      <string name="proximity_wake_title">Prevent accidental wake-up</string>
      <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
+     <!-- String for removal of sensitive info on about, depending on tap -->
+     <string name="device_info_protected_single_press">Tap to show info</string>
+
      <!-- Game Space -->
      <string name="game_space_title">Game Space</string>
      <string name="game_space_summary">Enhance your gaming experience</string>

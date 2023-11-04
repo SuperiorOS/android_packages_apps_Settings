@@ -91,4 +91,7 @@
           your phone.</string>
      <string name="fingerprint_enroll_touch_dialog_message_side">Touch the sensor on the side of
           your phone.</string>
+
+     <!-- String for removal of sensitive info on about, depending on tap -->
+     <string name="device_info_protected_single_press">Tap to show info</string>
 </resources>

@@ -145,6 +145,9 @@
      <string name="high_touch_polling_rate_title">High touch polling rate</string>
      <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
 
+     <!-- String for removal of sensitive info on about, depending on tap -->
+     <string name="device_info_protected_single_press">Tap to show info</string>
+
      <!-- Game Space -->
      <string name="game_space_title">Game Space</string>
      <string name="game_space_summary">Enhance your gaming experience</string>

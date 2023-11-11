@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022-2023 The SuperiorOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="superior_version">Versiune SuperiorOS</string>
+    <string name="superior_version_default">Necunoscută</string>
+    <string name="keywords_superior_version">Versiunea SuperiorOS, versiune superioară</string>
+    <string name="about_device_name">Dispozitiv</string>
+    <string name="build_date">Dată compilare</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">data compilării, informație despre compilare</string>
+    <string name="device_info_protected_single_press">Atinge pentru informații</string>
+    <string name="notification_log_summary">Afișare istoric notificări</string>
+    <string name="min_refresh_rate_title">Rata minimă de reîmprospătare</string>
+    <string name="max_refresh_rate_title">Rata maximă de reîmprospătare</string>
+    <string name="battery_saver_refresh_rate_title">Reduce rata de reîmprospătare</string>
+    <string name="battery_saver_refresh_rate_summary">Folosește rata de împrospătare a ecranului 60 Hz pentru a economisi energie atunci când Economizorul de baterie este pornit</string>
+    <string name="copied_to_clipboard">Copiat în clipboard</string>
+    <string name="longpress_to_clipboard">Apăsare lungă pentru a copia</string>
+    <string name="package_details_group_title">Detalii pachet</string>
+    <string name="package_name">Nume pachet</string>
+    <string name="package_version">Versiune pachet</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+    <string name="selinux_status">Stare SELinux</string>
+    <string name="selinux_status_disabled">Dezactivat</string>
+    <string name="selinux_status_permissive">Permisiv</string>
+    <string name="selinux_status_enforcing">Obligatoriu</string>
+    <string name="superior_lab_dash_title">Superior Lab</string>
+    <string name="superior_lab_summary">Locul în care facem experimente</string>
+    <string name="density_category">Opțiuni densitate</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permite clienților să utilizeze VPN-uri</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permite clienților hotspot-ului să utilizeze conexiunile VPN ale acestui dispozitiv pentru conexiunea upstream</string>
+    <string name="system_black_theme_title">Folosește tema neagră</string>
+    <string name="system_black_theme_summary">Forțează culori negre de fundal</string>
+    <string name="battery_temperature">Temperatura bateriei</string>
+    <string name="high_power_apps_summary">Disponibilitatea optimizării bateriei</string>
+    <string name="navbar_invert_layout_title">Inversează aspectul barei de navigare</string>
+    <string name="navbar_invert_info">Schimbarea butoanelor \"Înapoi\" și \"Recente\" din bara de navigare</string>
+    <string name="prevent_ringing_option_cycle">Ciclu între moduri</string>
+    <string name="prevent_ringing_option_cycle_summary">Pornit (ciclu între moduri)</string>
+    <string name="screenshot_shutter_sound_title">Sunet captură de ecran</string>
+    <string name="display_cutout_force_fullscreen_title">Aplicații ecran complet</string>
+    <string name="display_cutout_force_fullscreen_summary">Forțează aplicațiile să ignore spațiul pentru decupaj</string>
+    <string name="search">Căutare</string>
+    <string name="search_apps">Căutare aplicații</string>
+    <string name="customization_category_title">Personalizări suplimentare</string>
+    <string name="battery_stats_reset">Resetare statistici</string>
+    <string name="battery_stats_message">Statisticile privind istoricul bateriei vor fi resetate</string>
+    <string name="low_battery_light_title">Lumină baterie descărcată</string>
+    <string name="low_battery_light_summary">Clipire LED când bateria este descărcată</string>
+    <string name="platform_revision">Platformă</string>
+    <string name="total_ram">RAM total</string>
+    <string name="superior_processor_title">Procesor</string>
+    <string name="superior_storage_code_title">Stocare</string>
+    <string name="superior_battery_type_title">Baterie</string>
+    <string name="superior_screen_title">Ecran</string>
+    <string name="net_info">Rețea</string>
+    <string name="id_info">Identificatori</string>
+    <string name="model_summary">Model, număr de telefon, IMEI, etc</string>
+    <string name="model_name">Stare dispozitiv</string>
+    <string name="legal_summary">Licențe și legi</string>
+    <string name="navbar_category">Bară de navigare</string>
+    <string name="gesture_navbar_length_title">Lungime bară de gesturi</string>
+    <string name="hide_label">Ascunsă</string>
+    <string name="long_label">Lungă</string>
+    <string name="back_height_low_label">Completă</string>
+    <string name="back_height_high_label">Jos</string>
+    <string name="back_options_dialog_title">Opțiuni</string>
+    <string name="back_height_message">Valoarea înălțimii ecranului utilizată ca regiune pentru gestul de înapoi.</string>
+    <string name="display_rotation_title">Setări de rotație</string>
+    <string name="display_rotation_enabled">Rotire automată activată</string>
+    <string name="display_rotation_disabled">Rotire automată dezactivată</string>
+    <string name="display_rotation_unit">grade</string>
+    <string name="display_rotation_category_title">Moduri de rotație</string>
+    <string name="display_rotation_0_title">0 grade</string>
+    <string name="display_rotation_90_title">90 de grade</string>
+    <string name="display_rotation_180_title">180 de grade</string>
+    <string name="display_rotation_270_title">270 de grade</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Găsește senzorul de amprentă pe partea din față a tabletei.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Găsește senzorul de amprentă pe partea din față a dispozitivului.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Găsește senzorul de amprentă pe partea din față a telefonului.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Găsește senzorul de amprentă pe partea din spate a tabletei.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Găsește senzorul de amprentă pe partea din spate a dispozitivului.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Găsește senzorul de amprentă pe partea din spate a telefonului.</string>
+    <string name="high_touch_sensitivity_title">Sensibilitate crescută la atingere</string>
+    <string name="high_touch_sensitivity_summary">Crește sensibilitatea ecranului tactil astfel încât acesta poate fi utilizat în timp ce se poartă mănuși</string>
+    <string name="high_touch_polling_rate_title">Rată ridicată de sondare la atingere</string>
+    <string name="high_touch_polling_rate_summary">Crește rata de interogare a ecranului tactil</string>
+    <string name="app_volume">Volum aplicație</string>
+    <string name="app_volume_title">Control volum per-aplicație</string>
+    <string name="app_volume_summary">Permite setarea nivelelor de volum diferite pentru fiecare aplicație</string>
+    <string name="game_space_title">Spațiu de jocuri</string>
+    <string name="game_space_summary">Îmbunătățește-ți experiența de joc</string>
+    <string name="action_nothing">Nicio acțiune</string>
+    <string name="action_menu">Meniu</string>
+    <string name="action_app_switch">Recente</string>
+    <string name="action_voice_search">Căutare vocală</string>
+    <string name="action_launch_camera">Cameră</string>
+    <string name="action_last_app">Ultima aplicație</string>
+    <string name="action_splitscreen">Ecran divizat</string>
+    <string name="action_flashlight">Lanternă</string>
+    <string name="action_clear_notifications">Elimină notificările</string>
+    <string name="action_volume_panel">Panou de volum</string>
+    <string name="action_screen_off">Închidere ecran</string>
+    <string name="action_notifications">Notificări</string>
+    <string name="action_power_menu">Meniu buton de pornire</string>
+    <string name="action_screenshot">Captură de ecran</string>
+    <string name="action_qs_panel">Panou setări rapide</string>
+    <string name="action_app_action">Aplicație</string>
+    <string name="action_ringer_modes">Moduri de sonerie</string>
+    <string name="kill_app">Închide aplicația din prim-plan</string>
+    <string name="recent_app_toggle">Schimbă aplicația recentă</string>
+    <string name="navbar_gesture_tweaks_pref_title">Opțiuni avansate pentru gesturi</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalizează gesturile și setează acțiuni personalizate</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avansat</string>
+    <string name="swipe_app_select_summary">Selectează o aplicație pentru a o lansa cu acțiunea de apăsare</string>
+    <string name="long_back_swipe_timeout_title">Interval de acțiune glisare lungă</string>
+    <string name="left_swipe_actions_title">Acțiune glisare lungă la stânga</string>
+    <string name="left_swipe_app_action_title">Selectează aplicația la glisare stânga lungă</string>
+    <string name="right_swipe_actions_title">Acțiune glisare lungă la dreapta</string>
+    <string name="right_swipe_app_action_title">Selectează aplicația la glisare dreapta lungă</string>
+    <string name="left_vertical_swipe_actions_title">Acțiune L-glisare verticală stânga</string>
+    <string name="left_vertical_swipe_app_action_title">Selectează aplicația la glisare stânga verticală</string>
+    <string name="right_vertical_swipe_actions_title">Acțiune de L-glisare verticală dreapta</string>
+    <string name="right_vertical_swipe_app_action_title">Selectează aplicația la glisare dreapta verticală</string>
+    <string name="gesture_nav_tweaks_footer_info">Pentru a alege o activitate specifică a aplicației pentru acțiune, apasă lung pe orice aplicație din selectorul de aplicații.\n\nDacă se afișează lansatorul, glisează în partea de jos a ecranului pentru a declanșa acțiunea.</string>
+    <string name="back_swipe_extended_title">Acțiune glisare extinsă</string>
+    <string name="back_swipe_extended_summary">Declanșează o acțiune cu glisare mai largă (mai mult de jumătate din dimensiunea afișajului) sau o glisare în L (suficient de lungă pe verticală)</string>
+    <string name="dashboard_morning1">Începe ziua ta pozitiv!</string>
+    <string name="dashboard_morning2">Soarele este sus!</string>
+    <string name="dashboard_morning3">O dimineață frumoasă</string>
+    <string name="dashboard_morning4">Încă o zi de trăit</string>
+    <string name="dashboard_morning5">O nouă zi</string>
+    <string name="dashboard_morning_greeting1">Bună dimineața</string>
+    <string name="dashboard_morning_greeting2">O zi bună</string>
+    <string name="dashboard_noon1">Trăiește-ți viața</string>
+    <string name="dashboard_noon2">Bucură-te de apus</string>
+    <string name="dashboard_noon3">Bun venit acasă</string>
+    <string name="dashboard_noon4">Bucură-te de zi!</string>
+    <string name="dashboard_noon5">Bun venit înapoi</string>
+    <string name="dashboard_noon_greeting1">Bună ziua</string>
+    <string name="dashboard_early_night1">Noaptea vine</string>
+    <string name="dashboard_early_night2">E timpul pentru cină!</string>
+    <string name="dashboard_early_night_greeting1">Bună seara</string>
+    <string name="dashboard_night3">Vise plăcute!</string>
+    <string name="dashboard_night4">E timpul să dormi</string>
+    <string name="dashboard_night5">Somn ușor!</string>
+    <string name="dashboard_night_greetings1">Noapte bună</string>
+    <string name="dashboard_midnight1">Bucură-te de tăcere</string>
+    <string name="dashboard_midnight2">Ai nevoie de ajutor</string>
+    <string name="dashboard_midnight3">Odihnește-te</string>
+    <string name="dashboard_midnight4">Odihnește-te</string>
+    <string name="dashboard_midnight5">Dormi târziu?</string>
+    <string name="dashboard_random1">Salut,         </string>
+    <string name="dashboard_random2">Bună       </string>
+    <string name="dashboard_random3">Namaste     </string>
+    <string name="dashboard_random4">O zi bună    </string>
+    <string name="dashboard_random5">Bună ziua     </string>
+    <string name="dashboard_random6">Ce este  </string>
+    <string name="dashboard_random_greetings1">Încearcă să găsești niște ouă de Paști!</string>
+    <string name="dashboard_random_greetings2">Fii superior!</string>
+    <string name="dashboard_random_greetings3">Încearcă să folosești bara de căutare!</string>
+    <string name="dashboard_random_greetings4">Bucură-te de zi!</string>
+    <string name="settings_random1">Cauți ceva?</string>
+    <string name="settings_random2">Găsește și vei vedea</string>
+    <string name="settings_random3">Caută și vei găsi</string>
+    <string name="settings_random4">Cine găsește păstrează</string>
+    <string name="settings_random5">Caută în setări</string>
+    <string name="settings_random6">Visează îndrăzneț și ai curaj să greșești</string>
+    <string name="default_user">Utilizator</string>
+    <string name="background_processes_settings_title">Procesare în fundal</string>
+    <string name="lock_settings_picker_pattern_size_message">Alege dimensiunea modelului</string>
+    <string name="lockpattern_settings_enable_error_path_title">Afișare eroare model</string>
+    <string name="lockpattern_settings_enable_dots_title">Afișare puncte model</string>
+    <string name="immersive_navigation_title">Navigare imersivă</string>
+    <string name="immersive_navigation_summary">Ascunde bara pentru gesturi și umplutura barei de navigare.</string>
+    <string name="proximity_wake_title">Previne trezirea accidentală</string>
+    <string name="proximity_wake_summary">Verifică senzorul de proximitate înainte de trezirea ecranului</string>
+    <string name="volume_link_notification_title">Leagă volumele de apel și notificare</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Elimină scanarea feței existente și creează una nouă</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refă scanarea feței</string>
+    <string name="face_redo_confirm_btn">Refă</string>
+    <string name="face_redo_warning_msg">Dorești să elimini scanarea feței existente și să creezi una nouă?</string>
+    <string name="face_unlock_method_title">Permite deblocarea facială pe ecranul de blocare</string>
+    <string name="face_unlock_method_default">La pornirea ecranului</string>
+    <string name="face_unlock_method_swipe">La glisarea ecranului de blocare</string>
+    <string name="fingerprint_wake_unlock_title">Atinge amprenta pentru a debloca</string>
+    <string name="fingerprint_wake_unlock_touch">Ascultă evenimente în timp ce ecranul este oprit</string>
+    <string name="fingerprint_wake_unlock_press">Ascultă evenimente numai după ce ecranul este pornit</string>
+    <string name="smart_5g_title">5G inteligent</string>
+    <string name="smart_5g_summary">Comută automat între 5G și 4G pentru a reduce consumul bateriei</string>
+    <string name="doze_gesture_ambient_title">Afișare ecran ambiental</string>
+    <string name="doze_gesture_ambient_summary">Se afișează afișajul ambient în loc de trezirea completă a ecranului</string>
+    <string name="app_lock_title">Blocare aplicații</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> aplicație este protejată</item>
+        <item quantity="few"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> aplicații sunt protejate</item>
+        <item quantity="other"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> aplicații sunt protejate</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Deblocare</string>
+    <string name="enable_debugging">Activare depanare</string>
+    <string name="disable_debugging">Dezactivare depanare</string>
+    <string name="app_lock_packages_title">Aplicații protejate</string>
+    <string name="app_lock_packages_summary">Selectează aplicațiile pentru a le proteja cu datele biometrice sau datele de autentificare ale dispozitivului</string>
+    <string name="app_lock_timeout_title">Timp de expirare pentru blocare automată</string>
+    <string name="app_lock_timeout_summary">Durata de timp după care o aplicație deblocată în fundal ar trebui să fie blocată</string>
+    <string name="app_lock_notifications_title">Notificări</string>
+    <string name="app_lock_notifications_summary">Conținutul notificărilor va fi ascuns și restrâns pentru aplicațiile selectate atunci când acestea sunt blocate.
+          Notificările plutitoare vor fi dezactivate automat.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Protejează mai întâi o aplicație</string>
+    <string name="app_lock_biometrics_allowed_title">Activează datele biometrice pentru deblocare</string>
+    <string name="app_lock_footer_text">Bulele vor fi eliminate automat după expirarea timpului</string>
+    <string name="enable_protection">Activează protecția</string>
+    <string name="hide_from_launcher_title">Ascunde din lansator</string>
+    <string name="hide_from_launcher_summary">Împiedică afișarea acestei aplicații în lansator. Necesită o repornire a lansatorului pentru ca modificările să aibă efect.
+    </string>
+    <string name="superiorlab_summaries_1">Atenție: Lucruri grozave înainte!</string>
+    <string name="superiorlab_summaries_2">Câteva slogane interesante. Bla bla bla...</string>
+    <string name="superiorlab_summaries_3">Pregătește-te să fii aruncat în aer în lumea imaginației</string>
+    <string name="superiorlab_summaries_4">Caracteristicile sale sunt bune</string>
+    <string name="superiorlab_summaries_5">Privește! În spatele tău!</string>
+    <string name="superiorlab_summaries_6">Toate lucrurile fiind la fel, e sigur că pierzi.</string>
+    <string name="superiorlab_summaries_7">Ce am nevoie este o RELAȚIE MATURĂ cu o DISK FLOPPY</string>
+    <string name="superiorlab_summaries_8">Nu lăsa școala să interfereze cu educația ta</string>
+    <string name="superiorlab_summaries_9">Viața ta ar fi monotonă dacă nu ai regreta nimic</string>
+    <string name="superiorlab_summaries_10">Faima poate fi trecătoare, dar obscuritatea este pentru totdeauna</string>
+    <string name="superiorlab_summaries_11">Acest mesaj se va auto-distruge în cinci minute</string>
+    <string name="superiorlab_summaries_12">Lucrurile nu sunt întotdeauna ceea ce par</string>
+    <string name="superiorlab_summaries_13">Necesită asamblare</string>
+    <string name="superiorlab_summaries_14">Cel care râde ultimul nu a prins gluma</string>
+    <string name="superiorlab_summaries_15">Dacă totul vine în calea ta, atunci ești pe banda greșită</string>
+    <string name="superiorlab_summaries_16">Acolo unde există testament, există o taxă de succesiune</string>
+    <string name="superiorlab_summaries_17">Acesta este un anunț cibernetic neautorizat</string>
+    <string name="superiorlab_summaries_18">Fără oprire sau staționare</string>
+    <string name="superiorlab_summaries_19">Dacă voi fi ales, voi împărți gratuit vafe pe Tempelhofer Feld!</string>
+    <string name="superiorlab_summaries_20">Atunci când toate celelalte mijloace de comunicare eșuează, încearcă prin cuvinte</string>
+    <string name="superiorlab_summaries_21">Nu mânca niciodată nimic mai mare decât capul tău</string>
+    <string name="superiorlab_summaries_22">Mesajele excesive de conectare sau deconectare sunt un semn sigur de senilitate</string>
+    <string name="superiorlab_summaries_23">Personalizează până când dorești</string>
+    <string name="superiorlab_summaries_24">Gândește mai puțin, personalizează mai mult</string>
+    <string name="superiorlab_summaries_25">FBI: Feature Base Isolation</string>
+    <string name="superiorlab_summaries_26">Așa arată minunat</string>
+    <string name="superiorlab_summaries_27">Cu caracteristici grozave vine o mare responsabilitate</string>
+    <string name="superiorlab_summaries_28">Nu visa. Fă-o</string>
+    <string name="superiorlab_summaries_29">Adus cu mândrie fără donații</string>
+    <string name="app_lock_timeout_5secs">5 de secunde</string>
+    <string name="app_lock_timeout_10secs">10 secunde</string>
+    <string name="app_lock_timeout_30secs">30 de secunde</string>
+    <string name="app_lock_timeout_1min">1 minut</string>
+    <string name="app_lock_timeout_5mins">5 minute</string>
+    <string name="app_lock_timeout_10mins">10 minute</string>
+    <string name="app_lock_timeout_30mins">30 de minute</string>
+    <string name="back_gesture_haptic_title">Reacție tactilă</string>
+    <string name="back_gesture_haptic_summary">Activare vibrație pentru gestul Înapoi</string>
+</resources>

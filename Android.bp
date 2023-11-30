@@ -54,11 +54,18 @@ android_library {
         "SpaPrivilegedLib-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+        "SuperiorLab/src/**/*.java",
+        "SuperiorLab/src/**/*.kt",
+    ],
+    aaptflags: ["--extra-packages com.superior.lab"],
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "SuperiorLab/res",
     ],
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -106,6 +113,7 @@ android_library {
         "androidx.room_room-runtime",
         "SystemUIUnfoldLib",
         "VendorSupport-preference",
+        "kotlin-stdlib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

@@ -55,7 +55,10 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "SuperiorLab/src/**/*.java",
+        "SuperiorLab/src/**/*.kt",
     ],
+    aaptflags: ["--extra-packages com.superior.lab"],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
@@ -64,6 +67,7 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
+        "SuperiorLab/res",
     ],
     static_libs: [
         // External dependencies
@@ -113,6 +117,7 @@ android_library {
         "setupdesign-lottie-loading-layout",
         "com.github.bumptech.glide_glide",
         "VendorSupport-preference",
+        "kotlin-stdlib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

@@ -137,4 +137,9 @@
      <string name="three_finger_gesture">Swipe to screenshot</string>
      <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 
+     <!-- Navbar options -->
+     <string name="navbar_invert_layout_title">Invert navigation bar layout</string>
+     <string name="navbar_invert_info">Swap the \"Back\" and \"Recents\" buttons on the navigation
+          bar</string>
+
 </resources>

@@ -40,6 +40,13 @@
         android:title="@string/twilight_mode_location_off_dialog_message"
         settings:controller="com.android.settings.display.TwilightLocationPreferenceController"/>
 
+    <com.superior.support.preferences.SecureSettingSwitchPreference
+        android:key="system_black_theme"
+        android:title="@string/system_black_theme_title"
+        android:summary="@string/system_black_theme_summary"
+        android:dependency="dark_ui_activated"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="dark_ui_auto_mode"
         android:title="@string/dark_ui_auto_mode_title"

@@ -25,4 +25,8 @@
      <!-- Indicates whether device has a side mounted fingerprint sensor,
          but a dedicated one, i.e. not embedded in the power button. -->
      <bool name="config_is_side_fps" translatable="false">false</bool>
+
+     <!-- Whether device supports increased touch sensitvity -->
+    <bool name="config_supportTouchPollingMode">false</bool>
+
 </resources>

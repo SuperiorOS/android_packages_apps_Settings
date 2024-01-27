@@ -204,8 +204,39 @@
      <string name="back_swipe_extended_title">Extended swipe action</string>
      <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
 
-    <!-- Black theme -->
-    <string name="system_black_theme_title">Use black theme</string>
-    <string name="system_black_theme_summary">Force black background colors</string>
+     <!-- Black theme -->
+     <string name="system_black_theme_title">Use black theme</string>
+     <string name="system_black_theme_summary">Force black background colors</string>
+
+     <!-- Battery Info -->
+     <string name="battery_info_summary">Show detailed battery information</string>
+     <!-- Battery Info: Technology -->
+     <string name="battery_technology">Technology</string>
+     <string name="battery_technology_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Health -->
+     <string name="battery_health">Health</string>
+     <string name="battery_health_good">Good</string>
+     <string name="battery_health_overheat">Overheat</string>
+     <string name="battery_health_dead">Dead</string>
+     <string name="battery_health_over_voltage">Over voltage</string>
+     <string name="battery_health_unspecified_failure">Unspecified failure</string>
+     <string name="battery_health_cold">Cold</string>
+     <string name="battery_health_unknown">Unknown</string>
+     <!-- Battery Info: Temperature -->
+     <string name="battery_temperature">Temperature</string>
+     <string name="battery_temperature_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Voltage -->
+     <string name="battery_voltage">Voltage</string>
+     <string name="battery_voltage_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Charge Counter -->
+     <string name="battery_charge_counter_summary">%1$d mAh</string>
+     <!-- Battery Info: Design Capacity -->
+     <string name="battery_design_capacity">Design capacity</string>
+     <string name="battery_design_capacity_summary">%1$d mAh</string>
+     <string name="battery_design_capacity_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Maximum Capacity -->
+     <string name="battery_maximum_capacity">Maximum capacity</string>
+     <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
+     <string name="battery_maximum_capacity_not_available">@string/battery_cycle_count_not_available</string>
 
 </resources>

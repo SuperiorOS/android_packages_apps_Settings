@@ -123,11 +123,13 @@
 
      <!-- High touch sensitivity -->
      <string name="high_touch_sensitivity_title">High touch sensitivity</string>
-     <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+     <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be
+          used while wearing gloves</string>
 
      <!-- Touchscreen hovering -->
      <string name="touchscreen_hovering_title">Touchscreen hovering</string>
-     <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
+     <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web
+          browsers, remote desktops, etc</string>
 
      <!-- High touch polling rate -->
      <string name="high_touch_polling_rate_title">High touch polling rate</string>
@@ -139,20 +141,23 @@
      <string name="charging_control_enable_title">Enable charging control</string>
      <string name="charging_control_mode_title">Charging mode</string>
      <string name="charging_control_mode_auto_title">Automatic schedule</string>
-     <string name="charging_control_mode_auto_summary">Automatically determine when to start charging based on alarms set</string>
+     <string name="charging_control_mode_auto_summary">Automatically determine when to start
+          charging based on alarms set</string>
      <string name="charging_control_mode_custom_title">Custom schedule</string>
      <string name="charging_control_mode_custom_summary">Set a target time to full charge</string>
      <string name="charging_control_mode_limit_title">Limit charging</string>
      <string name="charging_control_mode_limit_summary">Limit charging to a certain percentage</string>
      <string name="charging_control_start_time_title">Start time</string>
-     <string name="charging_control_start_time_summary">Charging control activates when you start charging after %s</string>
+     <string name="charging_control_start_time_summary">Charging control activates when you start
+          charging after %s</string>
      <string name="charging_control_target_time_title">Target time to full charge</string>
      <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
      <string name="charging_control_limit_title">Limit</string>
 
      <!-- Ambient wake toggles -->
      <string name="doze_gesture_ambient_title">Show Ambient</string>
-     <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
+     <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the
+          screen up</string>
 
      <!-- Misc gesture settings -->
      <string name="back_gesture_haptic_title">Haptic feedback</string>
@@ -162,7 +167,8 @@
      <string name="back_height_low_label">Full</string>
      <string name="back_height_high_label">Bottom</string>
      <string name="back_options_dialog_title">Options</string>
-     <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
+     <string name="back_height_message">Amount of screen height used as touchable region for back
+          gesture.</string>
 
      <!-- Custom actions -->
      <string name="action_nothing">No action</string>
@@ -185,7 +191,7 @@
      <string name="action_ringer_modes">Ringer modes</string>
      <string name="kill_app">Kill foreground app</string>
      <string name="recent_app_toggle">Switch recent app</string>
- 
+
      <!-- Long swipe gestures -->
      <string name="navbar_gesture_tweaks_pref_title">Advanced gestures options</string>
      <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
@@ -200,13 +206,16 @@
      <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
      <string name="right_vertical_swipe_actions_title">Vertical right L-swipe action</string>
      <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
-     <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the apps picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+     <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action,
+          long press on any app in the apps picker.\n\nIf launcher is showing, do the swipe at the
+          very bottom area of the screen to trigger the action.</string>
      <string name="back_swipe_extended_title">Extended swipe action</string>
-     <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
+     <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of
+          display size), or a L swipe (vertically longer enough)</string>
 
-    <!-- Black theme -->
-    <string name="system_black_theme_title">Use black theme</string>
-    <string name="system_black_theme_summary">Force black background colors</string>
+     <!-- Black theme -->
+     <string name="system_black_theme_title">Use black theme</string>
+     <string name="system_black_theme_summary">Force black background colors</string>
 
      <!-- Pocket judge -->
      <string name="pocket_judge_title">Pocket detection</string>
@@ -214,7 +223,8 @@
 
      <!-- Navbar options -->
      <string name="navbar_invert_layout_title">Invert navigation bar layout</string>
-     <string name="navbar_invert_info">Swap the \"Back\" and \"Recents\" buttons on the navigation bar</string>
+     <string name="navbar_invert_info">Swap the \"Back\" and \"Recents\" buttons on the navigation
+          bar</string>
 
      <!-- Navbar options -->
      <string name="dashboard_morning1">Start your day positively!</string>
@@ -242,12 +252,12 @@
      <string name="dashboard_midnight3">Get some sleep</string>
      <string name="dashboard_midnight4">Take rest</string>
      <string name="dashboard_midnight5">Sleeping late?</string>
-     <string name="dashboard_random1">Hey         </string>
-     <string name="dashboard_random2">Hello       </string>
-     <string name="dashboard_random3">Namaste     </string>
-     <string name="dashboard_random4">Good day    </string>
-     <string name="dashboard_random5">Welcome     </string>
-     <string name="dashboard_random6">What\'s up  </string>
+     <string name="dashboard_random1">Hey </string>
+     <string name="dashboard_random2">Hello </string>
+     <string name="dashboard_random3">Namaste </string>
+     <string name="dashboard_random4">Good day </string>
+     <string name="dashboard_random5">Welcome </string>
+     <string name="dashboard_random6">What\'s up </string>
      <string name="dashboard_random_greetings1">Try to find some easter eggs!</string>
      <string name="dashboard_random_greetings2">Be Superior!!!</string>
      <string name="dashboard_random_greetings3">Try using the search bar!</string>
@@ -260,4 +270,34 @@
      <string name="settings_random6">Dream big and dare to fail</string>
      <string name="default_user">User</string>
 
+     <!-- Battery Info -->
+     <string name="battery_info_summary">Show detailed battery information</string>
+     <!-- Battery Info: Technology -->
+     <string name="battery_technology">Technology</string>
+     <string name="battery_technology_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Health -->
+     <string name="battery_health">Health</string>
+     <string name="battery_health_good">Good</string>
+     <string name="battery_health_overheat">Overheat</string>
+     <string name="battery_health_dead">Dead</string>
+     <string name="battery_health_over_voltage">Over voltage</string>
+     <string name="battery_health_unspecified_failure">Unspecified failure</string>
+     <string name="battery_health_cold">Cold</string>
+     <string name="battery_health_unknown">Unknown</string>
+     <!-- Battery Info: Temperature -->
+     <string name="battery_temperature">Temperature</string>
+     <string name="battery_temperature_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Voltage -->
+     <string name="battery_voltage">Voltage</string>
+     <string name="battery_voltage_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Charge Counter -->
+     <string name="battery_charge_counter_summary">%1$d mAh</string>
+     <!-- Battery Info: Design Capacity -->
+     <string name="battery_design_capacity">Design capacity</string>
+     <string name="battery_design_capacity_summary">%1$d mAh</string>
+     <string name="battery_design_capacity_not_available">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Maximum Capacity -->
+     <string name="battery_maximum_capacity">Maximum capacity</string>
+     <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
+     <string name="battery_maximum_capacity_not_available">@string/battery_cycle_count_not_available</string>
 </resources>

@@ -20,6 +20,7 @@ import android.content.Context;
 
 import com.android.settings.fuelgauge.batterytip.BatteryTipPolicy;
 import com.android.settings.fuelgauge.batterytip.detectors.LowBatteryDetector;
+import com.android.settings.R;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 
 import java.util.List;
@@ -39,7 +40,7 @@ public class BatterySettingsFeatureProviderImpl implements BatterySettingsFeatur
 
     @Override
     public boolean isBatteryInfoEnabled(Context context) {
-        return true;
+        return context.getResources().getBoolean(R.bool.config_show_battery_info);
     }
 
     @Override

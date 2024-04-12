@@ -25,12 +25,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.android.settings.R;
+
 public class RefreshRateUtils {
 
     private static final String TAG = "RefreshRateUtils";
 
     static final int DEFAULT_REFRESH_RATE = 60;
-    static final int DEFAULT_MIN_REFRESH_RATE = 0; // matches fwb. should be 60 though?
+    static final int DEFAULT_MIN_REFRESH_RATE = 60;
 
     private Context mContext;
     private List<Integer> mRefreshRates;
@@ -39,7 +41,7 @@ public class RefreshRateUtils {
     RefreshRateUtils(Context context) {
         mContext = context;
         mRefreshRates = getRefreshRates();
-        mMinRefreshRate = Collections.min(mRefreshRates);
+        mMinRefreshRate = getMinRefreshRateFromConfig();
         mMaxRefreshRate = Collections.max(mRefreshRates);
     }
 
@@ -84,11 +86,22 @@ public class RefreshRateUtils {
                 Settings.System.PEAK_REFRESH_RATE, (float) refreshRate);
     }
 
+    private int getMinRefreshRateFromConfig() {
+        int minRefreshRate;
+        try {
+            minRefreshRate = mContext.getResources().getInteger(R.integer.default_min_refresh_rate);
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to retrieve default_min_refresh_rate from config, using default", e);
+            minRefreshRate = getMinRefreshRate();
+        }
+        return minRefreshRate;
+    }
+
     private int getMinRefreshRate() {
         final int minRefreshRate = Math.round(Settings.System.getFloat(
                 mContext.getContentResolver(), Settings.System.MIN_REFRESH_RATE,
                 (float) DEFAULT_MIN_REFRESH_RATE));
-        return minRefreshRate == DEFAULT_MIN_REFRESH_RATE ? DEFAULT_MIN_REFRESH_RATE
+        return minRefreshRate == mMinRefreshRate ? mMinRefreshRate
                 : roundToNearestRefreshRate(minRefreshRate, false);
     }
 
@@ -103,7 +116,7 @@ public class RefreshRateUtils {
 
     void setCurrentRefreshRate(int refreshRate) {
         setPeakRefreshRate(refreshRate);
-        setMinRefreshRate(isVrrEnabled() ? DEFAULT_MIN_REFRESH_RATE : refreshRate);
+        setMinRefreshRate(isVrrEnabled() ? mMinRefreshRate : refreshRate);
     }
 
     boolean isVrrPossible() {
@@ -111,10 +124,10 @@ public class RefreshRateUtils {
     }
 
     boolean isVrrEnabled() {
-        return getMinRefreshRate() <= DEFAULT_MIN_REFRESH_RATE;
+        return getMinRefreshRate() <= mMinRefreshRate;
     }
 
     void setVrrEnabled(boolean enable) {
-        setMinRefreshRate(enable ? DEFAULT_MIN_REFRESH_RATE : getCurrentRefreshRate());
+        setMinRefreshRate(enable ? mMinRefreshRate : getCurrentRefreshRate());
     }
 }

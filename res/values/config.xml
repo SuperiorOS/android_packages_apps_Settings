@@ -16,6 +16,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Default min refresh rate -->
+    <integer name="default_min_refresh_rate" translatable="false">60</integer>
+
     <!-- If false, MIN is displayed. If true, MSID is displayed. -->
     <bool name="config_msid_enable" translatable="false">false</bool>
 

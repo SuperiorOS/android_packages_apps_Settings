@@ -10,13 +10,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import androidx.fragment.app.FragmentActivity;
-import androidx.window.R;
+//import androidx.window.R;
+import com.android.settings.R;
 import com.google.android.setupcompat.template.FooterBarMixin;
 import com.google.android.setupcompat.template.FooterButton;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.util.ThemeHelper;
-
 public class FaceEnrollConfirmation extends FragmentActivity {
     private FooterBarMixin mFooterBarMixin;
     private boolean mNextClicked;
@@ -46,7 +46,7 @@ public class FaceEnrollConfirmation extends FragmentActivity {
             public final void onClick(View view) {
                 FaceEnrollConfirmation.this.onButtonPositive(view);
             }
-        }).setButtonType(5).setTheme(R.style.SudGlifButton_Primary).build());
+        }).setButtonType(5).setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Primary).build());
     }
 
     @Override

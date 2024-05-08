@@ -49,7 +49,7 @@
         android:key="density"
         android:title="@string/developer_smallest_width" />
 
-    <SSwitchPreferenceCompat
+    <SwitchPreferenceCompat
         android:key="toggle_force_bold_text"
         android:persistent="false"
         android:title="@string/force_bold_text"

@@ -19,4 +19,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/system_navigation_title"
-    settings:keywords="@string/keywords_system_navigation"/>
+    settings:keywords="@string/keywords_system_navigation">
+
+    <SwitchPreferenceCompat
+        android:key="search_gesture_press_hold"
+        android:title="@string/search_gesture_feature_title"
+        android:summary="@string/search_gesture_feature_summary"
+        android:order="100"
+        settings:highlightableMenuKey="@string/menu_key_system"
+        settings:controller="com.android.settings.gestures.NavigationSettingsOmniController"
+        settings:allowDividerAbove="true"
+        />
+
+</PreferenceScreen>

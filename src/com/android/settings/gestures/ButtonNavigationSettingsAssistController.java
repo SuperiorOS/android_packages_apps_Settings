@@ -20,6 +20,7 @@ import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVE
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 
 import android.content.Context;
+import android.provider.DeviceConfig;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -29,6 +30,9 @@ import com.android.settings.core.TogglePreferenceController;
  * Configures behaviour of long press home button to invoke assistant app gesture.
  */
 public class ButtonNavigationSettingsAssistController extends TogglePreferenceController {
+
+    static final String LONG_PRESS_HOME_BUTTON_TO_SEARCH = "long_press_home_button_to_search";
+    static final String NAMESPACE_LAUNCHER = "launcher";
 
     public ButtonNavigationSettingsAssistController(Context context, String key) {
         super(context, key);
@@ -55,13 +59,20 @@ public class ButtonNavigationSettingsAssistController extends TogglePreferenceCo
                 || SystemNavigationPreferenceController.isOverlayPackageAvailable(mContext,
                 NAV_BAR_MODE_3BUTTON_OVERLAY)) {
             return AVAILABLE;
+        }        
+        else if (isFlagEnabled()) {
+            return 3;
+        } else {
+            return UNSUPPORTED_ON_DEVICE;
         }
-
-        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public int getSliceHighlightMenuRes() {
         return R.string.menu_key_system;
+    }
+
+    public static boolean isFlagEnabled() {
+        return DeviceConfig.getBoolean(NAMESPACE_LAUNCHER, LONG_PRESS_HOME_BUTTON_TO_SEARCH, true);
     }
 }

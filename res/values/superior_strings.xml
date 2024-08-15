@@ -272,6 +272,9 @@
 
      <!-- Battery Info -->
      <string name="battery_info_summary">Show detailed battery information</string>
+     <string name="battery_info_footer">Values in this section are provided by OEM and may or may
+          not be an accurate representation of reality and/or may or may not only update after
+          battery recalibration or a full factory reset.\nTreat these as estimates only.</string>
      <!-- Battery Info: Technology -->
      <string name="battery_technology">Technology</string>
      <string name="battery_technology_not_available">@string/battery_cycle_count_not_available</string>

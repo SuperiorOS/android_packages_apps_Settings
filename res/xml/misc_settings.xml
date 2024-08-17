@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        android:key="misc_settings"
+        android:title="@string/misc_settings_title">
+
+        <!-- Google Play Integrity -->
+        <com.superior.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pihooks.pi"
+            android:title="@string/pi_spoof_title"
+            android:summary="@string/pi_spoof_summary"
+            android:defaultValue="true" />
+   
+</PreferenceScreen>

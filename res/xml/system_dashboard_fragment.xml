@@ -46,6 +46,14 @@
         android:fragment="com.android.settings.inputmethod.TrackpadSettings"
         settings:controller="com.android.settings.inputmethod.TrackpadSettingsController"/>
 
+    <!-- Misc Settings -->
+    <Preference
+        android:key="misc_settings"
+        android:title="@string/misc_settings_title"
+        android:icon="@drawable/ic_misc_settings"
+        android:order="-252"
+        android:fragment="com.android.settings.superior.misc.MiscSettings"/>
+
     <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"

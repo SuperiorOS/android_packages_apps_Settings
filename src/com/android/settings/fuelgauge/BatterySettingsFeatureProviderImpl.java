@@ -20,7 +20,6 @@ import android.content.Context;
 
 import com.android.settings.fuelgauge.batterytip.BatteryTipPolicy;
 import com.android.settings.fuelgauge.batterytip.detectors.LowBatteryDetector;
-import com.android.settings.R;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 
 import java.util.List;
@@ -30,17 +29,17 @@ public class BatterySettingsFeatureProviderImpl implements BatterySettingsFeatur
 
     @Override
     public boolean isManufactureDateAvailable(Context context, long manufactureDateMs) {
-        return manufactureDateMs > 1_609_459_200_000L; // 2021-01-01
+        return false;
     }
 
     @Override
     public boolean isFirstUseDateAvailable(Context context, long firstUseDateMs) {
-        return firstUseDateMs > 1_609_459_200_000L; // 2021-01-01
+        return false;
     }
 
     @Override
     public boolean isBatteryInfoEnabled(Context context) {
-        return context.getResources().getBoolean(R.bool.config_show_battery_info);
+        return false;
     }
 
     @Override

@@ -627,10 +627,14 @@ public class BatteryEntry {
                 iconId = R.drawable.ic_settings_aod;
                 break;
             default:
-                String fieldName = DebugUtils.constantToString(
-                        BatteryConsumer.class, "POWER_COMPONENT_", powerComponentId);
-                Log.w(TAG, "unknown attribute:" + fieldName);
-                name = context.getResources().getString(R.string.header_category_system) + " (" + fieldName + ")";
+                Log.w(
+                        TAG,
+                        "unknown attribute:"
+                                + DebugUtils.constantToString(
+                                        BatteryConsumer.class,
+                                        "POWER_COMPONENT_",
+                                        powerComponentId));
+                name = null;
                 iconId = R.drawable.ic_power_system;
                 break;
         }

@@ -77,6 +77,15 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
     private static final String TAG = "DashboardFragment";
     private static final long TIMEOUT_MILLIS = 50L;
 
+    private static final List<String> ACCOUNT_INJECTED_KEYS = Arrays.asList(
+        "top_level_google",
+        "dashboard_tile_pref_com.google.android.gms.backup.component.BackupOrRestoreSettingsActivity"
+    );
+
+    private static final List<String> SECURITY_PRIVACY_INJECTED_KEYS = Arrays.asList(
+        "top_level_wellbeing"
+    );
+
     @VisibleForTesting
     final ArrayMap<String, List<DynamicDataObserver>> mDashboardTilePrefKeys = new ArrayMap<>();
     private final Map<Class, List<AbstractPreferenceController>> mPreferenceControllers =
@@ -560,9 +569,9 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                     if (tile.hasGroupKey()
                             && mDashboardTilePrefKeys.containsKey(tile.getGroupKey())) {
                         group = screen.findPreference(tile.getGroupKey());
-                    } else if ("top_level_google".equals(key)) {
+                    } else if (ACCOUNT_INJECTED_KEYS.contains(key)) {
                         group = screen.findPreference("top_level_account_category");
-                    } else if ("top_level_wellbeing".equals(key)) {
+                    } else if (SECURITY_PRIVACY_INJECTED_KEYS.contains(key)) {
                         group = screen.findPreference("top_level_security_privacy_category");
                     }
                     if (group instanceof PreferenceCategory) {
